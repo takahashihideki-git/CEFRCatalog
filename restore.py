@@ -12,6 +12,7 @@ def load_all(root="."):
         "inventory":  L("inventory_170to25.json"),          # No(str)->行為名
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
         "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
+        "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
         "prototypes": json.load(open(os.path.join(root,"prototypes","prototypes_4types.json"),encoding="utf-8")),
     }
 if __name__ == "__main__":
@@ -22,4 +23,7 @@ if __name__ == "__main__":
     assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==170
     assert len(set(D["inventory"].values()))==25
     assert len(D["prototypes"])==4
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為25 / 範型4")
+    from collections import Counter
+    assert dict(Counter(p["block"] for p in D["partition"].values())) == {
+        "やり取り":306,"仲介":251,"受容":197,"how well":182,"産出・談話構築":132,"方略":104,"複言語":52}, "区分分割の不一致"
+    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為25 / 範型4 / 区分分割7")
