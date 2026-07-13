@@ -1,0 +1,20 @@
+# 原典（CoE配布ファイル。権利上コミットしない。data/descriptors_en_1224.json に許諾テキストを収録済み）
+CEFR_Descriptors__2020_.xlsx
+*_Descriptors_*.xlsx
+
+# 公式日本語版PDF（ゲーテ翻訳著作物・別権利）
+cefr-cv-jap*.pdf
+cefr_cv_ja*
+
+# 作業中間物
+__pycache__/
+*.pyc
+*.tmp
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 展開元アーカイブ
+CEFRCatalog_repo.zip

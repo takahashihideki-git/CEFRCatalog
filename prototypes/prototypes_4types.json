@@ -1,0 +1,618 @@
+{
+ "苦情クレーム": {
+  "title": "苦情・クレーム（Complaining）",
+  "type": "指示的（directive）＋表出的要素",
+  "essence": "相手（店・機関・個人）に、現状が期待に反することを伝え、是正を求める。非難と要求の二面を持ち、両者のバランスが行為の成否を決める。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 544,
+    "en": "Can point out when something is wrong (e.g. \"The food is cold\" or \"There is no light in my room\").",
+    "jp": "何かがおかしいと指摘できる。",
+    "exponents": [
+     "Excuse me, the food is cold.",
+     "Sorry, there is no light in my room.",
+     "Excuse me, this is not what I ordered."
+    ],
+    "scene": "レストランやホテルで、出されたもの・状態が違うとき、その事実を一言告げる。",
+    "howwell": "社会言語的適切さ（最小）：Excuse me / Sorry を頭に置けるか。",
+    "l1": "日本語話者は「事実の指摘」を非難と感じて言い出せない傾向。英語では The food is cold. と現状を述べること自体は失礼でなく、むしろ必要な情報提供。黙って我慢する方が不自然。ただし頭に Excuse me を欠くと唐突。",
+    "delta": "（起点）行為の最小形。まだ是正要求は含まず、問題の存在を告げるだけ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 533,
+    "en": "Can make a complaint.",
+    "jp": "苦情を言える。",
+    "exponents": [
+     "Excuse me, I ordered the pasta but this is a pizza. Could you change it, please?",
+     "I'm sorry, but the room is really noisy. Would it be possible to move to another one?",
+     "There seems to be a problem with the bill — I think we've been charged twice."
+    ],
+    "scene": "注文違い・部屋の問題・請求の誤りなど、具体的な不都合について、是正を求めるところまで言う。",
+    "howwell": "社会言語的適切さ＋叙述の正確さ：問題の describe と要求の request を一続きにできるか。",
+    "l1": "日本語の「すみません、これ頼んでないんですけど……」は語尾を濁して相手に察してもらう構造。英語では Could you change it? まで言い切らないと要求が伝わらず、問題提起だけで終わると「ただ不機嫌な人」になる。緩衝（I'm sorry but / There seems to be）＋明示的要求、の二点セットが鍵。",
+    "delta": "A2からの飛躍：問題の指摘に「是正の要求」が加わる。行為が完結する最初のレベル。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 532,
+    "en": "Can cope with less routine situations in shops, post offices, banks, e.g. returning an unsatisfactory purchase.",
+    "jp": "満足できない買い物の返品など、非日常的な状況に対処できる。",
+    "exponents": [
+     "I bought this shirt yesterday, but there's a hole in the sleeve. I'd like to return it, please.",
+     "This isn't working properly — can I get a refund or an exchange?",
+     "I'd like to return this. Do you need the receipt?"
+    ],
+    "scene": "店で不良品を返品する、想定外のやりとり（理由の説明・レシートの授受）に対応する。",
+    "howwell": "柔軟さ：相手の反応（レシートは？交換か返金か）に応じて言い足せるか。",
+    "l1": "返品は日本でも増えたが、英語圏では「正当な権利の行使」であり、過度に低姿勢だと逆に不審。I'd like to return this と平叙で切り出してよい。「返品してもらえますか」を Can I possibly...? と過剰に婉曲化すると、かえって要領を得ない。",
+    "delta": "同じB1でも、単発の苦情から「一連のやりとりへの対処」へ。相手の応答を捌く柔軟さが問われる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 526,
+    "en": "Can cope linguistically to negotiate a solution to a dispute like an undeserved traffic ticket, financial responsibility for damage in a flat, or blame regarding an accident.",
+    "jp": "不当な交通違反切符、損害の金銭的責任、事故の責めなど、争いの解決を交渉できる。",
+    "exponents": [
+     "I understand your position, but I don't think I'm liable for this. The damage was already there when I moved in.",
+     "I'd like to contest this. Could you tell me exactly which regulation I'm supposed to have broken?",
+     "I'm willing to cover part of it, but not the full amount — let me explain why."
+    ],
+    "scene": "責任の所在が争われる場面で、相手の主張を受けつつ自分の立場を通し、着地点を探る。",
+    "howwell": "叙述の正確さ＋柔軟さ＋社会言語的適切さ：反論しつつ関係を壊さない語調の制御。",
+    "l1": "日本語話者は対立局面で沈黙するか、逆に感情的に強く出るかの両極に振れやすい。英語の交渉苦情は I understand X, but Y（相手の承認→自分の主張）という型が定石で、冷静に but でつなぐ。謝罪の I'm sorry を安易に挟むと責任を認めた含意になり不利。",
+    "delta": "苦情から「交渉」へ。一方的要求ではなく、相手の立場の承認と自分の譲歩限度の提示が入る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 527,
+    "en": "Can outline a case for compensation, using persuasive language to demand satisfaction and state clearly the limits to any concession they are prepared to make.",
+    "jp": "説得力ある言葉で補償を求め、譲歩できる限度を明確に述べられる。",
+    "exponents": [
+     "Given the inconvenience caused, I believe a full refund plus compensation for the extra costs is reasonable.",
+     "I'm prepared to accept a replacement, but only if it's delivered by Friday — otherwise I'll expect a refund.",
+     "This has cost me two days of work. I'd like that reflected in whatever you're offering."
+    ],
+    "scene": "実害が生じた案件で、補償の根拠を筋道立てて示し、受け入れ条件と限度を明言する。",
+    "howwell": "叙述の正確さ（最大）＋話題の展開：根拠→要求→条件を論理的に積む構成力。",
+    "l1": "「譲歩の限度を明示する」は日本語の交渉文化と最も遠い。日本語では限度をあえて曖昧にして含みで交渉するが、英語では but only if... / otherwise I'll... と条件と帰結を言語化するのが誠実で強い。曖昧なままだと足元を見られる。",
+    "delta": "交渉に「論理的な根拠づけ」と「条件の明示的言語化」が加わる。口頭系列の到達点。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 638,
+    "en": "Can compose basic formal e-mails/letters (e.g. to make a complaint and request action).",
+    "jp": "基本的な公式メール・手紙（苦情を述べ対応を求める）を書ける。",
+    "exponents": [
+     "Dear Sir or Madam, I am writing to complain about the delayed delivery of my order (#12345). I would like to request a full refund.",
+     "I ordered the item on 3 May, but it has still not arrived. Please let me know how you intend to resolve this."
+    ],
+    "scene": "遅延・不良・誤請求について、公式メールで苦情と対応要求を伝える。",
+    "howwell": "社会言語的適切さ（書面レジスター）：I am writing to... の定型と Dear/Yours の枠を守れるか。",
+    "l1": "日本語のビジネス苦情メールは長い前置き（お世話になっております＋クッション）から入るが、英語は I am writing to complain about... と冒頭で用件を明示するのが正しい作法。前置きを長くすると要領を得ない印象。",
+    "delta": "口頭B1と並行して、書面系列が独立に立ち上がる。定型（I am writing to）とレジスターの獲得が核。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2+",
+    "no": 629,
+    "en": "Can compose a forceful but polite letter of complaint, including supporting details and a statement of the desired outcome.",
+    "jp": "裏づけの詳細と望む結果を明記した、力強くも丁寧な苦情の手紙を書ける。",
+    "exponents": [
+     "Despite my email of 3 May, the issue remains unresolved. I have now been waiting three weeks for a replacement.",
+     "I trust you will appreciate my frustration and arrange a full refund within seven days."
+    ],
+    "scene": "一度目の苦情が解決されない案件で、経緯を裏づけつつ、丁寧さを保って強く要求する。",
+    "howwell": "話題の展開＋社会言語的適切さ：forceful と polite を両立させる語調設計。",
+    "l1": "「力強くも丁寧に」の両立が難所。日本語話者は polite に振れすぎて要求が弱まるか、直訳的に強く書いて無礼になるか。英語は I trust you will... / I would appreciate it if... で、丁寧な形式のまま圧をかける定型がある。この「丁寧な強さ」の語彙庫を持つことが鍵。",
+    "delta": "書面B1+からの飛躍：単発の苦情から、経緯の裏づけ・望む結果の明記・語調の制御へ。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2+",
+    "no": 628,
+    "en": "Can compose formal correspondence such as letters of enquiry, request, application and complaint using appropriate register, structure and conventions.",
+    "jp": "適切なレジスター・構成・慣習で、問い合わせ・依頼・応募・苦情の公式通信文を書ける。",
+    "exponents": [
+     "I am writing with reference to invoice #789, which appears to contain an error.",
+     "I would be grateful if you could look into this matter and respond at your earliest convenience."
+    ],
+    "scene": "苦情を含む各種公式通信を、型・レジスター・慣習に則って書き分ける。",
+    "howwell": "社会言語的適切さ（慣習の体系）：with reference to / at your earliest convenience 等の定型群の運用。",
+    "l1": "英語の公式通信は定型表現の体系（with reference to, I would be grateful if, at your earliest convenience）で動く。日本語の敬語体系とは別物なので、日本語敬語を英語に写そうとせず、英語独自の formal 定型を丸ごと語彙として習得する必要がある。",
+    "delta": "個別の苦情から「公式通信文一般の型」への一般化。苦情が他の書面行為（依頼・応募）と型を共有すると気づく段。"
+   },
+   {
+    "mode": "書面",
+    "level": "C1",
+    "no": 625,
+    "en": "Can, with good expression and accuracy, compose formal correspondence such as letters of clarification, application, recommendation, reference, complaint, sympathy and condolence.",
+    "jp": "うまい表現と正確さで、明確化・応募・推薦・苦情・弔慰などの公式通信文を書ける。",
+    "exponents": [
+     "While I appreciate that delays can occur, a three-week silence following my formal complaint is difficult to justify.",
+     "I would ask that you treat this as a matter of urgency and confirm your proposed resolution in writing."
+    ],
+    "scene": "洗練を要する公式通信で、含意・語調・正確さを制御して苦情を述べる。",
+    "howwell": "叙述の正確さ＋柔軟さ（最大）：含意・皮肉・緩衝を精密に制御する表現力。",
+    "l1": "C1では While I appreciate that..., ... is difficult to justify のような、譲歩節で相手を立てつつ論理で追い込む高度な緩衝が要る。日本語の高等な苦情（慇懃な圧）に感覚は近いが、英語独自のレトリックなので、日本語の語感からの類推は危険。個別の表現を範例で覚える段階。",
+    "delta": "B2+からの到達点：正確さに加え「うまい表現（good expression）」＝含意と語調の精密制御。書面系列の頂点。"
+   }
+  ],
+  "discussion": "【緩衝（mitigation）が行為の背骨である】\n英語の苦情を貫く原理は「非難性の緩衝」である。同じ事実（料理が冷たい）を、A2では Excuse me を頭に置くだけ、B1では There seems to be... で事実を非人称化し、B2+では I understand your position, but... で相手を立て、C1では While I appreciate that... と譲歩節で包む——レベルが上がるとは、緩衝の技法が精緻化することにほかならない。この行為において how well の主軸は一貫して社会言語的適切さであり、文法的正確さではない。文法的に完璧な The food is cold and I want a new one now. は、B1の緩衝された表現より「下手」なのである。\n\n【日本語話者にとっての二重の壁】\n第一の壁は「言い出せない」こと。日本語文化では苦情＝関係を損なう行為とされ、我慢が美徳になりやすい。だが英語圏では、正当な苦情は消費者の権利であり情報提供でもあって、黙る方が不自然に映る。第二の壁は、言い出せた場合に「振れすぎる」こと——過度に低姿勢で要求が伝わらないか、直訳的に強く出て無礼になるかの両極。英語の苦情は「丁寧な形式を保ったまま要求を明示する」ことを求めるが、これは日本語の「察してもらう」構造とも「けんか腰」とも異なる第三の様式であり、明示的に学ぶしかない。\n\n【苦情は依頼と背中合わせである】\n「部屋が寒い」（苦情）は「暖房を入れてほしい」（依頼）と表裏一体で、多くの苦情は是正の依頼を含意する。25行為インベントリで苦情と依頼を別立てにしたが、実運用では連続する。苦情を教えるとき、是正要求（依頼）まで一続きで示さないと、行為が完結しない——日本語話者が問題提起だけで止まりがちなのは、この連続性が母語で言語化されないためでもある。\n\n【口頭と書面は別の行為に近い】\nCEFRが苦情を口頭スケール（Obtaining goods and services）と書面スケール（Correspondence）に分けて記述しているのは示唆的である。口頭の苦情は即時・対面で、緩衝も即興的（Excuse me, sorry）。書面の苦情は経緯の裏づけ・構成・レジスターが前面に出て、定型表現の体系（I am writing to, I would be grateful if）で動く。学習者にとっては習得順序も異なり、口頭A2から始まる系列と、書面B1+から始まる系列は、並行して別々に登らせるのが自然である。\n\n【なぜこの行為が範型に適するか】\n苦情は、発語内行為25種の中でも、L1語用論的転移が最も激しく、かつレベル差分が最も明瞭に観察できる。緩衝技法の精緻化としてA2→C1が一直線に読め、how wellの主軸（社会言語的適切さ）が行為全体を貫く。他の24行為を作り込む際、この「緩衝の精緻化」「言い出せない／振れすぎるの二重の壁」「隣接行為との連続」「口頭・書面の分岐」という4つの観察軸が、そのまま点検リストになる。"
+ },
+ "挨拶別れ安否": {
+  "title": "挨拶・別れ・安否（Greeting, Leave-taking & Phatic exchange）",
+  "type": "交話的（phatic）── 情報伝達より関係の確立・維持が目的",
+  "essence": "出会いと別れの区切りに定型表現を交わし、相手との社会的接触を開き・保ち・閉じる。内容の正しさより、型の適切さとテンポが行為の成否を決める。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 453,
+    "en": "Can understand and use basic, formulaic expressions such as \"Yes\", \"No\", \"Excuse me\", \"Please\", \"Thank you\", \"No thank you\", \"Sorry\".",
+    "jp": "「はい」「いいえ」「すみません」「お願いします」「ありがとう」「けっこうです」「ごめんなさい」などの基本的な決まり文句を理解し、使える。",
+    "exponents": [
+     "Yes. / No.",
+     "Thank you. / No thank you.",
+     "Excuse me. / Sorry.",
+     "Please."
+    ],
+    "scene": "あらゆる接触の潤滑油となる最小の定型語を、適切な場面で口にする。",
+    "howwell": "社会言語的適切さ（最小単位）：型を型として口に出せるか。",
+    "l1": "No thank you を「いいえ、結構です」の丁寧な断りとして使えず、単に No と言って冷たく響くことがある。また Sorry と Excuse me の使い分け（謝罪／呼びかけ・断り）が日本語の「すみません」に一括されるため混同しやすい。",
+    "delta": "（起点）語彙ですらなく「機能語の塊」。関係の潤滑油の最小部品。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 455,
+    "en": "Can greet people, state their name and take leave in a simple way.",
+    "jp": "挨拶し、名前を名乗り、簡単な方法で別れを告げられる。",
+    "exponents": [
+     "Hello. / Hi.",
+     "I'm Kenji.",
+     "Goodbye. / Bye.",
+     "See you."
+    ],
+    "scene": "初対面や店・受付で、挨拶し名乗り、辞去する。会話の開閉の枠。",
+    "howwell": "社会言語的適切さ：出会いと別れの型をペアで押さえられるか。",
+    "l1": "別れ際の See you. や Bye. を言わずに立ち去る、あるいは Goodbye だけで済ませて素っ気なくなる。日本語の「じゃあ」「どうも」に当たる軽い辞去表現の層が薄い。",
+    "delta": "定型語から「会話の開閉」へ。挨拶と別れは対で機能する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 451,
+    "en": "Can make an introduction and use basic greeting and leave-taking expressions.",
+    "jp": "紹介をし、基本的な挨拶や別れの表現を使える。",
+    "exponents": [
+     "Good morning. / Good afternoon.",
+     "This is my friend, Aya.",
+     "Nice to meet you.",
+     "Have a nice day!"
+    ],
+    "scene": "他者を紹介し、時間帯に応じた挨拶と、別れ際の一言を添える。",
+    "howwell": "社会言語的適切さ：時間帯・相手による型の選択。",
+    "l1": "Nice to meet you.（初対面）と Nice to see you.（再会）の別を知らず、再会でも meet を使ってしまう。Have a nice day! のような別れ際の「気遣いの一言」を添える習慣が乏しく、挨拶が短く切れる。",
+    "delta": "Pre-A1からの差分：時間帯別（morning/afternoon）と紹介（This is...）が加わり、型が場面分化する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 452,
+    "en": "Can ask how people are and react to news.",
+    "jp": "人の調子を尋ね、知らせに反応できる。",
+    "exponents": [
+     "How are you? — Fine, thanks. And you?",
+     "How's it going?",
+     "That's great! / Oh, I'm sorry to hear that."
+    ],
+    "scene": "相手の近況・体調を尋ね、返ってきた知らせに感情で応じる。",
+    "howwell": "社会言語的適切さ＋テンポ：定型的な問い返し（And you?）の即応。",
+    "l1": "How are you? を「本当に体調を訊く質問」と受け取り、長々と実際の状態を答えてしまう。英語では儀礼的な往復（Fine, thanks. And you?）が基本で、中身より往復のテンポが大事。この phatic な性質が日本語話者に最も伝わりにくい。",
+    "delta": "一方向の挨拶から「往復」へ。相手の応答に反応する対話性が入る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 444,
+    "en": "Can use simple, everyday, polite forms of greeting and address.",
+    "jp": "簡単な日常の丁寧な挨拶や呼びかけの表現形式を使える。",
+    "exponents": [
+     "Good evening, Mr. Tanaka.",
+     "Excuse me, sir. / Excuse me, madam.",
+     "How do you do?（改まった初対面）"
+    ],
+    "scene": "目上や公的な相手に、丁寧なレジスターで挨拶し呼びかける。",
+    "howwell": "社会言語的適切さ（レジスター）：親しさ／改まりで型を選び分けられるか。",
+    "l1": "英語の呼びかけには sir/madam や Mr./Ms.＋姓があるが、日本語の「〜さん」を万能に使う感覚で first name を使い、目上に馴れ馴れしく響く。逆に過度に Mr. を連発して不自然になることも。相手との距離に応じた呼称選択は明示的な学習を要する。",
+    "delta": "A1からの差分：中立な挨拶から「丁寧なレジスター」の選択へ。呼びかけ（address）が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 438,
+    "en": "Can establish social contact (e.g. greetings and farewells, introductions, giving thanks).",
+    "jp": "社交的接触（挨拶と別れ、紹介、感謝など）を確立できる。",
+    "exponents": [
+     "Hi, I don't think we've met — I'm Kenji.",
+     "It was really nice talking to you.",
+     "Thanks so much for having me. / Let's keep in touch."
+    ],
+    "scene": "パーティや職場で、自ら関係を開き、会話を交わし、良い印象で閉じる一連。",
+    "howwell": "社会言語的適切さ＋柔軟さ：開始・維持・終了を状況に合わせて束ねる。",
+    "l1": "関係を自分から「開く」定型（I don't think we've met）や、良い印象で「閉じる」定型（It was nice talking to you / keep in touch）の層が薄く、挨拶が入口だけで終わりがち。日本語では別れの挨拶が定型的に厚いのに、英語ではその機能表現を別途習得しないと使えない。",
+    "delta": "個別の挨拶から「社交的接触の確立」へ。開始〜維持〜終了を一続きの営みとして統合する到達点。"
+   },
+   {
+    "mode": "書面",
+    "level": "Pre-A1",
+    "no": 686,
+    "en": "Can post simple online greetings, using basic formulaic expressions and emoticons.",
+    "jp": "基本的な決まり文句と絵文字を使って、簡単なオンラインの挨拶を投稿できる。",
+    "exponents": [
+     "Happy birthday! 🎉",
+     "Good luck! 😊",
+     "Congrats!"
+    ],
+    "scene": "SNSやチャットで、定型句＋絵文字の短い挨拶を投稿する。",
+    "howwell": "社会言語的適切さ（オンライン・レジスター）：くだけた場の型と絵文字の運用。",
+    "l1": "日本語のオンライン儀礼（「おめでとう🎊」）の感覚は近いが、英語の Congrats! / Happy belated birthday!（遅れた誕生日祝い）のような口語省略形を知らず、硬い Congratulations に留まる。絵文字の使用も控えめすぎることがある。",
+    "delta": "（書面起点）口頭の定型語が、オンラインでは絵文字と結んで機能する。"
+   },
+   {
+    "mode": "書面",
+    "level": "A1",
+    "no": 648,
+    "en": "Can compose a short, simple postcard.",
+    "jp": "短く簡単なはがきを書ける。",
+    "exponents": [
+     "Dear Aya, Greetings from Kyoto! The temples are beautiful. See you soon, Kenji",
+     "Hi Mom, Having a great time here. Weather is lovely. Love, Kenji"
+    ],
+    "scene": "旅先などから、近況の一言を添えた短いはがきを書く。",
+    "howwell": "社会言語的適切さ（書面枠）：Dear... と結び（Love/See you soon）の枠を守れるか。",
+    "l1": "はがき・手紙の結びの語（Love, / Best, / See you soon,）の層が薄く、日本語の「それでは」を直訳して不自然になる。宛名の Dear は日本語の「親愛なる」より軽く日常的、という温度感も掴みにくい。",
+    "delta": "オンライン挨拶からの差分：書面の「枠」（宛名・本文・結び）が加わる。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 682,
+    "en": "Can engage in basic social communication online (e.g. a simple message on a virtual card for special occasions, sharing news and making/confirming arrangements to meet).",
+    "jp": "オンラインで基本的な社交（特別な機会のカードへの一言、近況共有、会う約束の設定・確認など）ができる。",
+    "exponents": [
+     "Congratulations on your new job! So happy for you.",
+     "Long time no see! How have you been?",
+     "Shall we meet around 7? — Sounds good, see you then!"
+    ],
+    "scene": "オンラインで、祝い・近況・約束の確認まで含む社交的なやりとりをする。",
+    "howwell": "社会言語的適切さ＋テンポ：非同期のやりとりで型と応答を回す。",
+    "l1": "Long time no see! のような口語定型や、約束確認の Sounds good, see you then! のテンポある応答が出てこず、事務的な確認に終始しがち。日本語のオンライン社交の「クッション」を英語の口語定型に置き換える必要がある。",
+    "delta": "はがきの一方向から、オンラインの「往復する社交」へ。約束の設定・確認まで機能が広がる書面系列の到達点。"
+   }
+  ],
+  "discussion": "【この行為に「上級」は無い ── 儀礼型の本質】\n苦情がA2からC1まで長い梯子を持つのに対し、挨拶・別れ・安否はPre-A1からA2+に完全に収まり、B1以上に記述文が一つも無い。これは欠落ではなく、交話的（phatic）行為の本質である。挨拶に高度な熟達は存在しない ── C2話者も \"Hi, how are you?\" と言う。CEFRがこの行為を初級だけで記述し尽くしているのは、関係の潤滑という機能が、初級の定型表現でほぼ充足されるからである。したがってこの行為のカタログは「レベルを上る」構造ではなく、「初級の型を、いかに場に合わせて選ぶか」という水平の広がりを持つ。\n\n【難しさは「レベル」ではなく「レジスターとテンポ」にある】\nでは日本語話者にとって易しいかというと逆で、難所がレベル軸と直交する二つの次元に潜む。第一はレジスター（親しさ・改まりの選択）。sir/madam、Mr.＋姓、first name、ニックネームの使い分けは、日本語の「〜さん」一括感覚では捌けず、相手との距離を英語の呼称体系で測り直す必要がある。第二はテンポ。How are you? — Fine, thanks. And you? の往復は、中身ではなく「間髪入れず型を返す」ことに意味がある。この二つは文法でも語彙でもなく、how well の軸でいえば社会言語的適切さに全面的に属する。\n\n【How are you? は質問ではない ── phatic の核心的誤解】\n日本語話者が最もつまずくのは、儀礼的な問いを情報要求と受け取ることである。How are you? に実際の体調を長々答える、How's it going? に詰まる ── これは英語力ではなく、phatic communion（意味の交換ではなく接触の確認そのものが目的の発話）という概念が母語で意識されないために起こる。この行為を教えるとき、「中身より往復」「型は型として回す」という phatic の性質そのものを明示的に伝えることが、どの実例よりも効く。\n\n【開始は言えるが、維持と終了が言えない】\n日本語話者の挨拶は入口（Hello, Nice to meet you）に偏り、関係を「閉じる」定型（It was nice talking to you / Let's keep in touch / Have a nice day）の層が決定的に薄い。日本語では別れの挨拶がむしろ厚い（「それでは失礼します」「お世話になりました」）のに英語で出てこないのは、機能が同じでも表現が一対一で写らず、英語側の閉じる定型を別個の語彙として持っていないためである。カタログでは開始・維持・終了を必ず三点セットで示し、とりわけ終了の定型を厚くする。\n\n【範型としての検証 ── 苦情型との対比で見えたこと】\n苦情（指示型）では「緩衝の精緻化」がレベル軸を貫いたが、挨拶（儀礼型）ではレベル軸がほぼ消え、代わりに「レジスター選択」「テンポ」「phaticの理解」という水平の難しさが前面に出た。これは範型が行為の類型ごとに異なる顔を持つことを示す。指示型の点検軸（緩衝・二重の壁・隣接行為・口頭書面）はそのままでは効かず、儀礼型には「レベルの梯子が短い／無い」「難所がレジスターとテンポに移る」「phatic性の明示的説明が要る」という別の点検軸が要る。25行為を作り込む際は、まず各行為が指示型・儀礼型・主張型・表出型のどれに属するかを見極め、類型ごとの点検軸を当てるのが正しい ── 単一のテンプレートを全行為に機械適用してはならない。"
+ },
+ "事実質問応答": {
+  "title": "事実情報の質問と応答（Asking & answering factual questions）",
+  "type": "主張的（assertive）── 世界の事実を尋ね、真偽の判断を伴って答える",
+  "essence": "名前・時刻・場所・予定などの事実情報を、質問と応答のペアで往復させる。行為の核は情報の正確な授受であり、緩衝もレジスターも二次的。疑問文の構造そのものが遂行の要となる。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 579,
+    "en": "Can tell people their name and ask other people their names.",
+    "jp": "自分の名前を名乗り、他の人に名前を尋ねられる。",
+    "exponents": [
+     "What's your name? — My name is Kenji. / I'm Kenji.",
+     "And you? What's your name?"
+    ],
+    "scene": "初対面で名前を尋ね合う、最も基本的な情報交換。",
+    "howwell": "文法的正確さ（疑問文の骨格）：What's your name? の語順を作れるか。",
+    "l1": "日本語は「お名前は？」と述語を略しても成立するが、英語は What is your name? と疑問詞＋be動詞＋主語の語順が必須。主語を落として Name? だけだと幼稚か無礼に響く。疑問文の骨格そのものが最初の壁。",
+    "delta": "（起点）疑問文の最小形。事実の授受の最小単位。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 585,
+    "en": "Can ask very simple questions for information, such as \"What is this?\" and understand one- or two-word answers.",
+    "jp": "「これは何?」等の簡単な情報の質問をし、1〜2語の答えを理解できる。",
+    "exponents": [
+     "What is this? — It's a key.",
+     "What's that in English?"
+    ],
+    "scene": "物を指して名称を尋ね、短い答えを受け取る。",
+    "howwell": "文法的正確さ＋受容：What疑問文と一語応答の理解。",
+    "l1": "答えの It's a key. の It's を省いて A key と答えるのは英語でも自然だが、日本語話者は逆に「これはキーです」に引きずられ This is key.（冠詞落ち）としがち。冠詞は日本語に無い範疇なので、事実応答のたびに落ちる。",
+    "delta": "名前から一般の事物へ。What+be動詞の疑問を汎用化。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 581,
+    "en": "Can ask and tell what day, time of day and date it is.",
+    "jp": "何曜日か、一日のうちのいつか、何日かを尋ね、言える。",
+    "exponents": [
+     "What day is it today? — It's Monday.",
+     "What time is it? — It's half past three.",
+     "What's the date today? — It's the 5th of July."
+    ],
+    "scene": "曜日・時刻・日付という定型的事実を尋ね合う。",
+    "howwell": "文法的正確さ（非人称の it）：時刻・日付の it is 構文。",
+    "l1": "時刻・曜日の主語 it（It's Monday）は日本語に対応物が無く、主語を落として Monday. とだけ答えがち。また half past three（3時半）like の英語独特の時刻表現は、日本語の「3時半」から直訳できず、型として覚える必要がある。",
+    "delta": "事物から「定型的事実（時・日付）」へ。非人称itの構文が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 575,
+    "en": "Can ask and answer questions about themselves and other people, where they live, people they know, things they have.",
+    "jp": "自分や他の人、住んでいる場所、知っている人、持っているものについて質問し、答えられる。",
+    "exponents": [
+     "Where do you live? — I live in Osaka.",
+     "Do you have any brothers or sisters? — Yes, I have one sister.",
+     "Who's that? — That's my friend Aya."
+    ],
+    "scene": "居住地・家族・所有物など、身辺の事実を双方向に尋ね合う。",
+    "howwell": "文法的正確さ（一般動詞の疑問）：do/does を使った疑問文の構築。",
+    "l1": "Where do you live? の do は日本語に対応が無く、Where you live? と do を落とす誤りが頻発。日本語の疑問は語尾（〜か）だけで作れるため、英語の「助動詞doを前に立てる」操作が身につきにくい。主張型の中核的な文法的つまずき。",
+    "delta": "Pre-A1からの飛躍：be動詞疑問から一般動詞疑問（do支持）へ。扱う事実も身辺全般に拡大。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 572,
+    "en": "Can ask and answer simple questions about an event (e.g. ask where and when it took place, who was there and what it was like).",
+    "jp": "出来事について簡単な質問をし答えられる（どこで・いつ・誰が・どうだったか）。",
+    "exponents": [
+     "Where was the party? — It was at Kenji's place.",
+     "How was it? — It was really fun.",
+     "Who was there? — Aya and some people from work."
+    ],
+    "scene": "済んだ出来事について、場所・時・参加者・様子を尋ね合う。",
+    "howwell": "文法的正確さ（過去時制）：was/were と過去疑問の運用。",
+    "l1": "過去の出来事なので was/were や did が要るが、日本語話者は時制標示を落として Where the party? / How it was?（語順崩れ）としやすい。日本語の過去「〜だった」は英語の時制ほど厳密な一致を求めないため、疑問文中の時制保持が弱い。",
+    "delta": "現在の事実から「過去の出来事」へ。過去時制の疑問・応答が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 570,
+    "en": "Can ask for and give directions referring to a map or plan.",
+    "jp": "地図や見取り図を参照しながら道順を尋ね、教えられる。",
+    "exponents": [
+     "How do I get to the station? — Go straight and turn left at the bank.",
+     "Is it far? — No, about five minutes on foot.",
+     "Where are we now? — We're here, near the museum."
+    ],
+    "scene": "地図を見ながら、目的地への行き方を尋ね教え合う。",
+    "howwell": "叙述の正確さ＋文法（命令文の道案内）：方向表現の連鎖。",
+    "l1": "道案内の応答は命令文（Go straight, Turn left）を使うが、日本語話者は命令形が強く聞こえると感じて避け、遠回しにしがち。英語では道案内の命令文は失礼でなく標準。また前置詞（at the bank, on your right）の選択が日本語の助詞感覚とずれる。",
+    "delta": "口頭事実交換の応用：静的事実から「空間的手順の授受」へ。命令文応答が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 563,
+    "en": "Can ask and answer questions about habits and routines.",
+    "jp": "習慣や日課について質問し、答えられる。",
+    "exponents": [
+     "What time do you usually get up? — Around seven.",
+     "How often do you exercise? — Twice a week.",
+     "Do you always take the train? — Usually, yes."
+    ],
+    "scene": "日常の習慣・頻度について尋ね合う。",
+    "howwell": "文法的正確さ（頻度・習慣の現在形）：頻度副詞と現在形の運用。",
+    "l1": "頻度副詞（usually, often, twice a week）の位置が日本語と異なり、I usually get up... の語中位置を外して文末や文頭に置きがち。また習慣を表す現在形と進行形の別（I take the train / I'm taking）が、日本語の「〜している」一括感覚で混同される。",
+    "delta": "単発の出来事から「反復する習慣」へ。頻度表現と習慣の現在形が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 565,
+    "en": "Can ask and answer questions about plans and intentions.",
+    "jp": "計画や意図について質問し、答えられる。",
+    "exponents": [
+     "What are you doing this weekend? — I'm meeting some friends.",
+     "Are you going to travel this summer? — Yes, I'm planning to.",
+     "What time will you arrive? — Probably around six."
+    ],
+    "scene": "予定・意図について尋ね合う。",
+    "howwell": "文法的正確さ（未来表現の選択）：will / be going to / 現在進行形の使い分け。",
+    "l1": "英語の未来表現は三系統（will＝その場の決定・予測、be going to＝既定の意図、現在進行形＝手配済みの予定）あるが、日本語の「〜する／〜するつもり」の二分では捌けず、どれを使うか判断できない。この使い分けは主張型・未来事実の最大の難所。",
+    "delta": "過去・現在の事実から「未来の予定・意図」へ。未来表現の体系が加わる。主張型口頭系列の到達点。"
+   },
+   {
+    "mode": "書面",
+    "level": "A1",
+    "no": 643,
+    "en": "Can convey personal information of a routine nature, for example in a short e-mail or letter introducing themselves.",
+    "jp": "日常的な個人情報を伝えられる（自己紹介する短いメールなど）。",
+    "exponents": [
+     "Hi, I'm Kenji. I'm from Osaka and I work at a software company.",
+     "I have two cats and I like hiking. What about you?"
+    ],
+    "scene": "自己紹介のメールで、身辺の事実情報を文章で伝える。",
+    "howwell": "文法的正確さ（平叙文の事実記述）：I am / I have / I work の平叙連鎖。",
+    "l1": "口頭では往復で成立するが、書面では自己完結した平叙文を連ねる必要がある。日本語話者は主語 I の反復を冗長に感じて落としがちだが、英語では各文に主語が要る。話し言葉の省略を書면に持ち込むと非文になる。",
+    "delta": "（書面起点）口頭の質問応答が、書面では一方向の事実記述として立ち上がる。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 642,
+    "en": "Can exchange information by texting, e-mail or short letter, responding to questions from the other person (e.g. about a new product or activity).",
+    "jp": "テキスト・メール・短い手紙で情報を交換できる（相手の質問に答えながら）。",
+    "exponents": [
+     "Q: When does the event start? — A: It starts at 2 pm on Saturday.",
+     "Q: Where is it? — A: At the community hall, near the station."
+    ],
+    "scene": "メールやテキストで、相手の質問に答えつつ事実情報をやりとりする。",
+    "howwell": "文法的正確さ＋叙述の正確さ：問いに対応した事実の返信。",
+    "l1": "書面の非同期往復では、相手の質問の時制・焦点に合わせて答える必要があるが、日本語話者は質問を受け止めず自分の言いたい情報を返しがち（質問と応答のかみ合わせのずれ）。英語のQ&Aは問いの構造に応答を対応させる明示性が要る。",
+    "delta": "自己紹介の一方向から、書面の「往復する情報交換」へ。書面系列の到達点。"
+   }
+  ],
+  "discussion": "【主張型の核は疑問文の構造そのものである】\n苦情（指示型）の核が緩衝、挨拶（儀礼型）の核がレジスターとテンポだったのに対し、事実情報の質問と応答（主張型）の核は、疑問文と応答の文法構造そのものにある。この行為で一貫して効く how well 軸は社会言語的適切さではなく文法的正確さである。What's your name? / Where do you live? / What are you doing this weekend? ── レベルが上がるとは、扱える疑問の時制と法が広がること（be動詞疑問→do支持疑問→過去疑問→未来表現の三系統）にほかならない。緩衝もレジスターも、この行為ではほぼ問われない。\n\n【日本語話者のつまずきは「疑問文の作り方」に集中する】\n指示型・儀礼型のL1問題が語用論（言い出せない、phaticの誤解）だったのに対し、主張型のL1問題は純粋に文法・統語に寄る。第一に do 支持 ── 日本語は語尾「〜か」だけで疑問を作れるため、Where do you live? の do を立てる操作が身につかず Where you live? が頻発する。第二に時制の保持 ── 疑問文中で was/did を落とす。第三に冠詞と主語 ── This is key. / 主語Iの脱落。これらは語用論的配慮ではなく、日本語に存在しない文法範疇（助動詞do、厳密な時制一致、冠詞）が事実の授受のたびに露出する現象である。したがってこの行為のL1注意は「文化」ではなく「構造」を突くものになる。\n\n【未来表現の三系統が唯一の高度な難所】\n主張型はおおむね平明だが、一点だけ質的な難所がある ── 未来の予定・意図（A2+）を表す will / be going to / 現在進行形の使い分けである。日本語の「〜する／〜するつもり」の二分では英語の三系統に対応できない。ここだけは文法項目の暗記では足りず、話者の心的態度（その場の決定か、既定の意図か、手配済みか）と結びつけて教える必要がある。カタログではこの一点を厚く扱う。\n\n【口頭は往復、書面は自己完結】\n情報交換はCEFRでは圧倒的に口頭（Information exchange スケール）に記述が集中し、書面はCorrespondence由来の情報記述が少数あるのみ。この非対称は本質的で、事実の授受は本来リアルタイムの往復（Q — A）に最も自然に宿る。書面に移ると、口頭の省略（主語や述語の脱落）が使えず、自己完結した平叙文を連ねる必要が生じる ── 話し言葉の省略を書面に持ち込むと非文になる、という書面固有の壁が現れる。\n\n【範型としての検証 ── 主張型の点検軸】\n主張型に効く点検軸は、指示型・儀礼型と異なる。(1) レベル軸は「疑問の時制・法の拡大」として明快に立つ（初級で出尽くすが、内部に文法的段階がある）。(2) L1注意は語用論ではなく統語（do支持・時制・冠詞・主語）を突く。(3) how well の主軸は文法的正確さ。(4) 唯一の高度な難所は未来表現の三系統。(5) 口頭往復と書面自己完結の差。この5点が、同じ主張型の他行為（自己に関する情報提供、経験・出来事の叙述、問題・事情の説明など）を作る際の点検リストになる。ただし主張型内でも「経験・出来事の叙述」は疑問応答ではなく一方向の語りなので、疑問文構造の軸が効かない可能性がある ── これは汎用性検証で確かめるべき論点である。"
+ },
+ "意見表明": {
+  "title": "意見・見解の表明（Expressing opinions & views）",
+  "type": "表出的（expressive）＋主張的要素 ── 話者の心的態度（賛否・評価）を表明し、根拠で支える",
+  "essence": "ある事柄について自分の立場・評価・信念を述べ、レベルが上がるほど根拠と論拠で支え、他者の見解と関係づける。主張の中身より、立場表明の型と、対立を許容する作法が要となる。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 479,
+    "en": "Can express opinions in a limited way.",
+    "jp": "意見を限られた形で表明できる。",
+    "exponents": [
+     "I think it's good.",
+     "I like it. / I don't like it.",
+     "For me, it's too expensive."
+    ],
+    "scene": "身近な事柄に、ごく短く賛否や評価を述べる。",
+    "howwell": "文法（I think 節）：I think + 文 の骨格。",
+    "l1": "I think を付けずに It's good. と言い切ると断定に響く。日本語は「〜と思う」を多用して主観を和らげるが、英語でも I think は立場表明の基本枠。ただし日本語の「思う」ほど義務的ではなく、乱発すると自信なさげにも響く、という温度差がある。",
+    "delta": "（起点）意見表明の最小形。I think＋評価語のみ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 473,
+    "en": "Can exchange opinions and compare things and people using simple language.",
+    "jp": "簡単な言葉で意見を交換し、物や人を比較できる。",
+    "exponents": [
+     "I think summer is better than winter.",
+     "This one is nicer, but that one is cheaper.",
+     "What do you think? — I agree. / I'm not sure."
+    ],
+    "scene": "二つの選択肢を比べ、意見を交換し合う。",
+    "howwell": "文法（比較級）＋社会言語的適切さ：比較構文と同意/留保の応答。",
+    "l1": "比較級（better than, nicer）の構造は日本語の「〜より」と語順が逆で作りにくい。また I'm not sure.（やんわり不同意）のような中間的応答の層が薄く、賛成か沈黙かの二択になりがち。",
+    "delta": "単独の意見から「意見の交換と比較」へ。比較と応答の往復が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 471,
+    "en": "Can express beliefs, opinions and agreement and disagreement politely.",
+    "jp": "信念・意見・賛否を丁寧に表明できる。",
+    "exponents": [
+     "I see your point, but I think...",
+     "I agree with you up to a point.",
+     "Actually, I don't really think that's true."
+    ],
+    "scene": "議論の中で、賛成・反対を相手を立てつつ丁寧に表明する。",
+    "howwell": "社会言語的適切さ（不同意の緩衝）：反対を丁寧に包めるか。",
+    "l1": "ここが表出型最大のL1難所。日本語話者は不同意を避けて曖昧にするか、逆に But that's wrong. と裸で否定して角を立てるかに振れる。英語は I see your point, but... / I'm not sure I agree で、相手をまず受けてから反対する型が定石。この「受けてから返す」二段構えは明示的に教える必要がある。",
+    "delta": "A2+からの飛躍：単なる評価から「賛否の丁寧な表明」へ。不同意の緩衝が中心課題に。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 464,
+    "en": "Can express their thoughts about abstract or cultural topics such as music or films.",
+    "jp": "音楽や映画などの抽象的・文化的な話題について考えを表現できる。",
+    "exponents": [
+     "What I like about this film is how it handles memory.",
+     "It's not really my kind of music, but I can see why people love it.",
+     "The story felt a bit slow, but the ending made up for it."
+    ],
+    "scene": "映画・音楽など抽象度の高い対象に、込み入った感想を述べる。",
+    "howwell": "叙述の正確さ＋語彙範囲：抽象的評価の語彙と構造。",
+    "l1": "抽象的対象の評価は、日本語では「よかった／いまいち」で済ませがちだが、英語では what I like about X is... のような焦点化構文や、譲歩（but I can see why...）を使って立場を立体的に述べる。この構文の層を持たないと、抽象評価が幼く聞こえる。",
+    "delta": "身近な物から「抽象的・文化的対象」へ。評価語彙と焦点化構文が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 462,
+    "en": "Can account for and sustain their opinions in discussion by providing relevant explanations, arguments and comments.",
+    "jp": "適切な説明・論拠・コメントを提供して、議論の中で自分の意見を述べ、支持できる。",
+    "exponents": [
+     "I'd argue that... for two reasons. First,... Second,...",
+     "That's a fair point, but the evidence actually suggests otherwise.",
+     "I stand by what I said, because..."
+    ],
+    "scene": "議論で自分の立場を、根拠を挙げて主張し、反論にも耐えて維持する。",
+    "howwell": "話題の展開＋叙述の正確さ：意見を論拠で構造的に支える。",
+    "l1": "「意見を論拠で支え、維持する」は日本語話者に不慣れ。日本語の議論は結論を曖昧に残す作法もあるが、英語では I'd argue that... because... と立場と根拠を明示し、反論されても I stand by... と保持することが誠実とされる。撤回しすぎると立場が無いと見なされる。",
+    "delta": "B1+からの飛躍：感想の表明から「論拠で支え維持する主張」へ。表出が論証に接続する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 670,
+    "en": "Can evaluate, restate and challenge arguments in professional or academic live online chat and discussion.",
+    "jp": "専門的・学術的なライブのオンライン議論で、論を評価・言い直し・反論できる。",
+    "exponents": [
+     "If I understand your position correctly, you're saying... — but that assumes...",
+     "I'd push back on that slightly. The data you cite doesn't quite support...",
+     "Let me reframe: the real question isn't X, it's Y."
+    ],
+    "scene": "専門的議論で、相手の論を正確に捉え直し、的確に反論・再構成する。",
+    "howwell": "叙述の正確さ＋柔軟さ（最大）：論の評価・言い直し・反論の精密制御。",
+    "l1": "C1では相手の論を restate（言い直して確認）してから challenge する高度な型が要る。日本語話者は相手の論の要約確認を飛ばして直接反論しがちで、議論がかみ合わない。If I understand you correctly...→but... の型は、正確さと礼節を両立させる英語アカデミック議論の作法として明示的に習得を要する。",
+    "delta": "B2からの到達点：主張の維持から「他者の論の評価・再構成・反論」へ。表出型口頭系列の頂点。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 683,
+    "en": "Can make brief positive or negative comments online about embedded links and media using a repertoire of basic language.",
+    "jp": "埋め込みリンクやメディアに、基本的な言葉で短い肯定・否定コメントをオンラインでできる。",
+    "exponents": [
+     "Love this! 😍",
+     "Not for me, sorry.",
+     "So true!"
+    ],
+    "scene": "SNSの投稿やリンクに、短い賛否のコメントを付ける。",
+    "howwell": "社会言語的適切さ（オンライン簡略表現）：口語的な短評の型。",
+    "l1": "英語オンラインの超短評（So true! / Not for me / This!）の語彙が乏しく、硬い I think this is good. で返しがち。日本語の「わかる」「それな」に当たる口語共感表現を、英語の型として別途持つ必要がある。",
+    "delta": "（書面起点）口頭の意見表明が、オンラインでは超短評として立ち上がる。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 677,
+    "en": "Can post a comprehensible contribution in an online discussion on a familiar topic of interest, provided they can prepare the text beforehand.",
+    "jp": "事前に準備できれば、関心のある身近な話題のオンライン議論に理解可能な投稿ができる。",
+    "exponents": [
+     "I think the article raises a good point about remote work, but it overlooks the cost side.",
+     "In my experience, this approach works better for small teams."
+    ],
+    "scene": "準備の上で、オンライン議論に理由を添えた意見を投稿する。",
+    "howwell": "叙述の正確さ（書面）：準備された、自己完結した意見投稿。",
+    "l1": "書面の意見投稿では、口頭の往復に頼れず、立場＋理由を一つの投稿で自己完結させる必要がある。日本語話者は結論を最後に置き前置きを長くしがちだが、英語オンライン議論は要点先行（I think X, but Y）が読まれやすい。",
+    "delta": "超短評から「理由を添えた議論への投稿」へ。準備を挟んだ自己完結した表明。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 635,
+    "en": "Can compose personal letters giving news and expressing thoughts about abstract or cultural topics such as music or film.",
+    "jp": "近況を伝え、音楽や映画などの抽象的・文化的話題についての考えを表現する個人的な手紙を書ける。",
+    "exponents": [
+     "I finally watched that film you recommended. I loved the visuals, though the plot lost me a bit.",
+     "Lately I've been getting into jazz — there's something about it that really calms me down."
+    ],
+    "scene": "私信で、近況とともに文化的対象への考えを綴る。",
+    "howwell": "叙述の正確さ＋語彙範囲：私信レジスターでの抽象的感想。",
+    "l1": "私信での考えの表明は、口語的親密さと一定の内容を両立させる。日本語の手紙の様式（時候の挨拶等）を英語に持ち込むと不自然で、英語私信は近況と感想を地続きに書く。この様式差は書面ならではの注意点。",
+    "delta": "議論投稿から「私信での考えの表明」へ。親密なレジスターでの抽象的感想。書面系列の到達点。"
+   }
+  ],
+  "discussion": "【表出型の核は「不同意を許容する作法」である】\n苦情（指示型）の核が緩衝、挨拶（儀礼型）がレジスターとテンポ、事実Q&A（主張型）が疑問文構造だったのに対し、意見・見解の表明（表出型）の核は、立場の表明と、とりわけ対立を許容し丁寧に扱う作法にある。レベルが上がるとは、意見を「述べる」だけから、根拠で「支え」、他者の論と「関係づけ」、最終的に「評価・再構成・反論する」へと、社会的な議論の営みへ深化することである。効く how well 軸は、低位では文法（I think節・比較級）だが、B1以降は社会言語的適切さと叙述の正確さ（論拠の構造）へ移る。\n\n【最大のL1難所は「受けてから返す」不同意の型】\n日本語話者にとって表出型の中心的困難は、不同意の扱いにある。日本語文化では公然の不同意が回避されやすく、その結果、英語でも二つの失敗形に振れる ── 曖昧にして立場を消すか、But that's wrong. と裸で否定して角を立てるか。英語の作法は第三の道で、I see your point, but... / That's a fair point, but... と、まず相手を受けてから反対する二段構えである。この「受けてから返す」型は、B1で登場しC1まで一貫して深化する（C1では相手の論を restate してから challenge する）。表出型カタログの背骨は、この不同意の作法の段階的精緻化として引くべきである。\n\n【意見は「維持」まで含めて一つの行為である】\n主張型の事実Q&Aが単発の授受で完結するのに対し、意見表明はB2で「維持する（sustain）」が加わる点が質的に異なる。I stand by what I said, because... ── 反論されても根拠とともに立場を保つことが、英語では誠実さとされる。日本語話者は対立を避けて安易に撤回しがちだが、それは英語の議論では「立場が無い」と受け取られる。表明・支持・維持を一続きの行為として示すことが、この行為のカタログの要点である。\n\n【抽象的対象には専用の構文がある】\nB1+以降、評価対象が身近な物から抽象的・文化的対象（音楽・映画・思想）へ移ると、what I like about X is... の焦点化構文や、I can see why..., though... の譲歩構文が要る。日本語の「よかった／いまいち」の二元では抽象評価が幼く響く。この構文層は語彙ではなく「立場を立体的に述べる型」であり、表出型に固有の習得課題である。\n\n【範型としての検証 ── 表出型の点検軸】\n表出型に効く点検軸：(1) レベル軸は「表明→支持→維持→評価・反論」という議論の深化として長く立つ（苦情型に似て梯子が長い）。(2) L1注意の中心は不同意の作法（受けてから返す）。(3) how well の主軸は低位で文法、B1以降は社会言語的適切さ＋叙述の正確さへ移動する。(4) 意見の「維持」が行為の一部。(5) 抽象的対象用の焦点化・譲歩構文。この5点が、同じ表出型の他行為（感情の表出、好悪の表明、感謝・詫び・祝意など）を作る際の点検リストになる。ただし表出型内でも「感謝・詫び」は定型性が高く儀礼型に近い顔を持つ可能性があり、「感情の表出」は不同意の作法が効かない ── 表出型は内部の振れ幅が大きく、汎用性検証で下位分化を確かめる必要がある。"
+ }
+}
