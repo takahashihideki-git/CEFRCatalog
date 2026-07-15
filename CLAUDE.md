@@ -19,7 +19,9 @@ python3 analysis/partition.py # block_partition_1224.json を再生成し7区分
 新しい範型（`prototypes/*_prototype.py`）を追加・変更したときは、機械検証も併せて行う。周をまたぐ不変条件は引き継ぎ書§4にある通り：
 
 - **No. が正準ID**。原文（`en`）とレベルは `data/descriptors_en_1224.json` と一致すること
-- **範型は10列＋DISCUSSION 5段落**。`.py` と統合JSON（`prototypes_4types.json` / `verification_expressive.json`）の内容が完全一致すること
+- **範型は10列＋DISCUSSION 5段落**。`.py` と統合JSON（`prototypes_4types.json` / `verification_expressive.json` / `verification_assertive.json`）の内容が完全一致すること。統合JSONは行為名をトップキーにした dict、行dictの列キーは `mode,level,no,en,jp,exponents,scene,howwell,l1,delta`（py注記の `l1_note` ではなく **`l1`** が正準）
+
+**作業訳を直すときは二重管理に注意**。作業訳は生成ソース `analysis/ja_tr1〜9.py`（`JA1〜JA9` dict）と成果物 `data/working_translations_1224.json` の両方にある。片方だけ直すと生成経路がずれる。両方を同期修正し、`ja_tr*.py` 合成 == JSON 全1,224件一致を確認してから `restore.py` を通す。
 
 解像度を上げるのは中身であって器ではない。器（スキーマ）を変えるときは引き継ぎ書に判断を書き足す。
 
