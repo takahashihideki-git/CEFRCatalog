@@ -1,0 +1,148 @@
+# -*- coding: utf-8 -*-
+# 第1カタログ 検証範型その3：発語内行為「事実情報の授受」（主張型の検証①）
+# 検証課題：事実Q&A範型（主張型代表）の点検軸、特に「疑問文構造の梯子」が一方向伝達を含むこの行為に効くか。
+# 副課題：§7懸案「授受↔質問応答の統合可否」への証拠提出。
+ACT_TITLE = "事実情報の授受（Giving & receiving factual information）"
+ACT_TYPE  = "主張的（assertive）── 世界の事実を入手し、保存し、確実に引き渡す。核は疑問文の構造ではなく情報の管理"
+ACT_ESSENCE = "数量・段取り・詳細といった事実情報を、調べ、受け取り、照合し、歪めずに相手へ渡す。レベルが上がるとは、扱える情報の量と粒度が増し、伝達の信頼性（確認・照合・再構成）が管理されることである。"
+
+# (mode, level, no, en, jp, exponents, scene, howwell, l1_note, delta)
+ROWS = [
+ ("口頭","A2",541,
+  'Can give and receive information about quantities, numbers, prices, etc.',
+  "量・数・価格などについての情報を伝え合える。",
+  ["How much is it? — It's twelve fifty.", "Two kilos of rice, please.", "It's thirty euros a night."],
+  "買い物や注文で、量・数・値段の数字をやり取りする。",
+  "文法的正確さ（数詞・単位・通貨）：数の聞き取りと産出。",
+  "数字は事実授受の最初の砦。thirteen/thirty の強勢対の聞き分け、万進法からの桁変換（10万= a hundred thousand）、単位の可算性（two coffees / two cups of coffee）。日本語の助数詞体系（〜個・〜枚・〜本）は英語では単位名詞への写像になる。",
+  "（起点）数値という最も裸の事実の授受。"),
+ ("口頭","A2",568,
+  'Can exchange limited information on familiar and routine operational matters.',
+  "身近で日常的な業務上の事柄について、限られた情報を交換できる。",
+  ["The meeting starts at ten.", "Which room is it? — Room 302.", "We need three more chairs."],
+  "職場や日常の決まった段取りについて、限られた範囲の情報を交換する。",
+  "文法的正確さ（枠内の事実）：時刻・場所・数量を文に正しく載せる。",
+  "「限られた」とは、既知の枠（いつ・どこ・いくつ）に情報を流し込む段階ということ。この段階の主な事故は前置詞の選択（at ten / on Monday / in Room 302）で、日本語の「に」一本が英語では at/on/in に分岐する。",
+  "数値から、業務の段取りという枠つきの事実へ。授受はまだ既知の枠の穴埋めである。"),
+ ("口頭","A2+",562,
+  'Can deal with practical everyday demands: finding out and passing on straightforward factual information.',
+  "実際的な日常の要求に対処できる：率直な事実情報を調べ、伝える。",
+  ["I'll find out and let you know.", "The pharmacy closes at eight — I checked."],
+  "頼まれた事実を調べ、その結果を相手に伝える。",
+  "伝達の完結性：調べる→伝えるの二段を一人で運びきる。",
+  "find out（調べて知るに至る）と know の相の区別が、日本語「知る／知っている」と非対称。また調べた結果を伝えるとき伝聞・情報源の標識（apparently / they said / according to...）を落とすと自分の断定になる ── 日本語「〜だそうです」の写像先を型として持つ必要がある。",
+  "その場の交換から、時間差のある伝達（finding out → passing on）へ。授受が「使いの往復」になり、一方向伝達の相が現れる。"),
+ ("口頭","B1",557,
+  'Can find out and pass on straightforward factual information.',
+  "率直な事実情報を調べ、伝えられる。",
+  ["Could you tell me the check-in time?", "— The hotel says check-in is from three."],
+  "第三者から事実情報を入手し、別の相手に引き渡す。",
+  "正確さ（内容の保存）：入手した情報を歪めずに運ぶ。",
+  "引き渡しの事故点は二つ：時制の扱い（The hotel said check-in was... と後退させるか、現在の事実として保つか）と、話者交替に伴う人称の付け替え（you→I→they）。日本語は主語を立てないため、誰の発言・誰の事情かの標識が転移で落ちやすい。",
+  "A2+の562とほぼ同文言で、「実際的な日常の要求」という条件句だけが外れる ── 行為の切れ目でなく条件の緩和でレベルが刻まれている。統合判定（§7）に関わる観察。"),
+ ("口頭","B1",559,
+  'Can obtain more detailed information.',
+  "より詳しい情報を入手できる。",
+  ["Could you give me more details about the schedule?", "What exactly does the price include?"],
+  "得た情報に追い質問を重ね、より詳しい情報を引き出す。",
+  "語彙範囲＋談話（追い質問の型）：exactly / specifically / What about...? による詳細化。",
+  "詳細化の道具は疑問詞の精密化（What exactly... / How much of...）。日本語の「詳しく教えてください」という一括依頼と違い、英語は詳細の軸を指定して掘る ── どの軸を掘るかを言語化する習慣ごと学ぶ必要がある。",
+  "一往復の授受から、掘り下げの連鎖へ。ここで授受が談話になる。"),
+ ("口頭","B1+",555,
+  'Can exchange, check and confirm accumulated factual information on familiar routine and non-routine matters within their field with some confidence.',
+  "自分の分野の身近な日常的・非日常的な事柄について、蓄積した事実情報をある程度自信をもって交換・照合・確認できる。",
+  ["So just to confirm, the order was placed on the 12th, right?", "Let me double-check the figures with you."],
+  "蓄積した情報を相手と突き合わせ、齟齬がないかを照合・確認する。",
+  "談話運営＋正確さ：確認のメタ発話（Just to confirm... / So you're saying...）。",
+  "確認は日本語では相槌と復唱で暗黙に行われがちだが、英語では明示的なメタ発話（Just to confirm / If I understood correctly）で行う ── 復唱だけでは確認として伝わらない。この明示化の型はこの行為固有の新しいL1難所で、統語ではなく確認行動の文化差である。",
+  "情報の授受に「照合」という品質管理の層が乗る。B1+の本質（with some confidence）は管理の自動化。"),
+ ("口頭","B1+",591,
+  'Can carry out a prepared interview, checking and confirming information, though they may occasionally have to ask for repetition if the other person\u2019s response is rapid or extended.',
+  "相手の返答が速かったり長かったりする場合に時々繰り返しを求める必要はあっても、情報を確認しながら準備した面接を行える。",
+  ["You said you joined in 2019 — is that correct?", "Sorry, could you say that again, please?"],
+  "準備した質問枠に沿って聞き取りを進め、要所で情報を確認する。",
+  "談話運営（準備された枠の運用）＋方略（繰り返し要求）。",
+  "難所は準備した枠から外れた速い・長い返答への対処。Could you say that again? を恥ではなく手続きとして使えるかが分水嶺で、日本語話者最大の敵は聞き返し回避（分かったふり）。確認の道具立ては555と同じ ── 照合・確認の軸が制度化された場面に乗った形。",
+  "授受が制度化された枠（面接・聞き取り）で運用される。新しい道具は増えず、既存の軸が場面に固定される。"),
+ ("口頭","B2",554,
+  'Can pass on detailed information reliably.',
+  "詳細な情報を確実に伝達できる。",
+  ["Let me walk you through the details.", "The figures are as follows: ...", "That's one-five — fifteen."],
+  "詳細な情報を、落ちや歪みなく確実に相手へ伝達する。",
+  "伝達の信頼性（reliably）：順序立て・言い直し・要点の再掲による確実さの管理。",
+  "reliably は文型ではなく話者の技能への評価であり、その中身は信頼性の作法の束 ── 順序立て（First... then...）、数値の言い直し（that's one-five, fifteen）、要点の再掲。日本語話者は詳細を経緯の時系列で流しがちで、聞き手の必要に合わせた重要度順への再構成が壁になる。",
+  "口頭系列の到達点。梯子の頂点にあるのは高度な文法ではなく、伝達の信頼性という運用の質である。"),
+ # ── 書面・オンライン系列 ──
+ ("書面","A1",649,
+  'Can compose a short, very simple message (e.g. a text message) to friends to give them a piece of information or to ask them a question.',
+  "友人に情報を伝えたり質問したりする、短くごく簡単なメッセージ（テキストメッセージなど）を書ける。",
+  ["Party at 7 tonight. Can you come?", "The bus leaves at 9."],
+  "友人への短いメッセージで、情報を一つ伝えるか、一つ質問する。",
+  "定型＋基本文型：情報1粒を落とさず載せる。",
+  "メッセージの省略体（冠詞・be動詞の脱落）は英語でも許容されるが、疑問文の語順と疑問符は保つ必要がある。時刻表現では「7時から」の「から」を from と直訳する事故（× from 7 ── 開始時点は at 7 が自然）が典型。",
+  "（書面系列の起点）情報1粒＋質問1つの最小形。"),
+ ("書面","A2",659,
+  'Can formulate short, simple notes and messages relating to matters in areas of immediate need.',
+  "差し迫った必要のある領域の事柄について、短く簡単なメモや伝言を作成できる。",
+  ["Out of milk — could you buy some?", "Dentist at 3pm. Back by 5."],
+  "差し迫った用件のメモ・伝言を残す。",
+  "簡潔さと必要情報の充足：電報体の規約。",
+  "英語のメモ省略体にも規約があり、主語の省略は許容されるが時刻・場所の前置詞は残す（Dentist at 3pm）。日本語のメモ体をそのまま写すと、by 5（5時までに戻る）のような必須の関係標識が落ちる。",
+  "宛先が「その場にいない相手」になり、文脈補完が効かないぶん自己完結性が要求され始める。"),
+ ("書面","A2+",642,
+  'Can exchange information by text message, by e-mail or in short letters, responding to questions from the other person (e.g. about a new product or activity).',
+  "相手からの質問に答えながら、テキストメッセージ・メール・短い手紙で情報（新製品や活動についてなど）を交換できる。",
+  ["Thanks for your questions — the workshop is on the 14th, and yes, beginners are welcome."],
+  "相手の質問に答える形で、メールやメッセージで情報を往復させる。",
+  "応答の対応づけ：どの質問への答えかを明示する。",
+  "複数の質問への応答で対応関係が崩れやすい。英語のメールは質問ごとに答える（列挙・インライン返信）のが規約で、日本語の「まとめてご回答いたします」型をそのまま写すと、どの答えがどの質問かが曖昧になる。",
+  "書面の授受が往復（responding to questions）になる。口頭の対話性が書面に入り込む段階。"),
+ ("書面","A2+",679,
+  'Can introduce themselves and manage simple exchanges online, asking and answering questions and exchanging ideas on predictable everyday topics, provided enough time is allowed to formulate responses, and that they interact with one interlocutor at a time.',
+  "応答を組み立てる時間が十分あり、一度に一人の相手とやりとりするなら、自己紹介をし、予測可能な日常の話題について質問し答え、アイディアを交換する簡単なオンラインのやりとりをこなせる。",
+  ["Hi, I'm new here. Is this group for beginners?", "— Yes! We meet online every Tuesday."],
+  "オンラインで自己紹介し、日常話題の簡単な質疑をこなす（時間の余裕と1対1が条件）。",
+  "条件付き運用：応答時間と相手数という補助輪の明示。",
+  "書き言葉でありながらテンポが会話に近い中間態。この段階の補助輪は「組み立てる時間」と「相手は一人」で、B1以降これが外れる。日本語話者には、考えてから書けるオンラインは口頭より参入しやすい ── 授受の練習場として使える。",
+  "書面授受が同期的なやり取りへ近づく中間形。条件句がそのままレベルの刻みになっている。"),
+ ("書面","B1",656,
+  'Can formulate notes conveying simple information of immediate relevance to friends, service people, teachers and others who feature in their everyday life, getting across comprehensibly the points they feel are important.',
+  "友人・サービス業者・教師など日常生活に登場する人々に、直接関わりのある簡単な情報を伝えるメモを作成し、重要と思う点を理解可能な形で伝えられる。",
+  ["Ms Tanaka — the plumber can only come Thursday morning. Please leave the key with the neighbour if you're out."],
+  "日常の関係者へ、要点が確実に伝わる実用メモを書く。",
+  "情報の選別：重要点を落とさず、伝わる順に並べる。",
+  "「重要と思う点を理解可能な形で」は情報の優先順位づけの問題。用件を先頭に置く英語メモの慣習と、経緯から入る日本語の作文習慣が衝突する ── 結論先行への再構成が、この段階の見えにくい壁。",
+  "定型メモから、相手の行動を導く実用文へ。書面の「自己完結性」が情報選別の技能に成長する。"),
+ ("書面","B1",640,
+  'Can compose basic e-mails/letters of a factual nature (e.g. to request information or to ask for and give confirmation).',
+  "事実に関わる基本的なメールや手紙（情報を求める、確認を求め与えるなど）を書ける。",
+  ["I am writing to request information about your summer courses.", "Could you confirm my booking for 12 August?"],
+  "情報請求・確認のメールや手紙を、事実ベースで書く。",
+  "書面の型：request / confirm の定型構文。",
+  "request / confirm の運用と、依頼疑問の書面形（Could you... / I would appreciate...）。「ご確認ください」を Please confirm で済ませてよい場面と、より遠隔化した形が要る場面 ── 書面レジスターの階段の入口に立つ。",
+  "私的メッセージから、用件別の型を持つ書簡へ。口頭B1+（555）と同じ「確認」の軸が、書面でも核になる。"),
+ ("書面","B2",633,
+  'Can compose non-routine professional letters, using appropriate structure and conventions, provided these are restricted to matters of fact.',
+  "事実の事柄に限られていれば、適切な構成と慣習を使って、非日常的な職業上の手紙を書ける。",
+  ["Further to our telephone conversation, I am writing to confirm the delivery schedule as follows: ..."],
+  "職業上の非日常的な手紙を、適切な構成と慣習で書く（内容は事実の事柄に限る）。",
+  "社会言語的適切さ（構成と慣習）＋正確さ：制度化された型の中での事実伝達。",
+  "ビジネス書簡の構成規約（Further to... / as follows / 列挙）の習得は、日本語ビジネス文書の冒頭儀礼を直訳しない訓練と表裏。重要なのは但し書き ── 「事実の事柄に限る」。意見や交渉が入ればこのレベルを超えると、CEFR自身が事実伝達の境界に線を引いている。",
+  "書面系列の到達点。感謝・詫び（No.632）と同じCorrespondence B2帯の「レジスターの制度化」が、主張型でも再現する。"),
+]
+
+DISCUSSION = """\
+【疑問文構造の軸は効かない ── 梯子の中身は情報管理】
+事実Q&A範型の主軸「疑問の時制・法の拡大」は、この行為ではほぼ効かない。授受の梯子は limited（A2）→ straightforward（A2+/B1）→ more detailed（B1）→ accumulated ＋ check and confirm（B1+）→ detailed reliably（B2）という、情報の量・粒度・信頼性の階段であって、文法の段階ではない。how well の主軸も移動する ── A2帯では文法的正確さ（数詞・前置詞）が主役だが、B1以降は談話運営（追い質問・確認・順序立て）と伝達の信頼性に主役が交代する。Q&A範型が「唯一の高度な難所」とした未来表現の三系統も現れない（授受は現在・過去の事実が中心）。同じ主張型の中で、点検軸がここまで入れ替わる。
+
+【Q&Aと授受はレベル帯が相補的 ── 統合仮説の証拠】
+Q&A（Pre-A1〜A2+）と授受（A1〜B2、実質A2〜B2）はレベル帯がほぼ相補的で、同じ Information exchange スケールを分け合っている。境界のA2/A2+帯では、A2+のNo.562とB1のNo.557がほぼ同文言（「実際的な日常の要求」という条件句が外れるだけ）── CEFRは行為の切れ目ではなく条件の緩和でレベルを刻んでいる。この分布は、両行為が一本の梯子の二相 ── 下段＝疑問文という構造の習得、上段＝情報管理という運用の成熟 ── である可能性を強く示唆する。§7の懸案「授受↔質問応答の統合可否」に対し、本検証は統合肯定の証拠を提出する。ただし相が違えばL1注意の中身（統語 vs 談話）は別立てになるため、統合するなら「一行為二相」の設計が要る。最終判定は第2周。
+
+【B1+の照合・確認 ── この行為固有の新軸】
+check and confirm はQ&A範型に無かった軸である。日本語では確認は相槌と復唱で暗黙に行われるが、英語では Just to confirm / So you're saying / Let me double-check という明示的なメタ発話で行い、復唱だけでは確認として伝わらない。この明示化の型は統語でも語彙でもなく、確認行動の文化差というL1難所である。面接（No.591）でも同じ道具が使われ、Could you say that again? を恥ではなく手続きとして運用できるかが分水嶺 ── 日本語話者最大の敵は聞き返し回避（分かったふり）で、確認の軸はそれを正面から扱う。伝聞・情報源の標識（they said / apparently）も同系の新軸で、落とすと他者の情報が自分の断定にすり替わる。
+
+【口頭は往復、書面は自己完結 ── 唯一生き残った軸と、書面B2の制度化の再現】
+Q&A範型の第五軸「口頭往復・書面自己完結」は、この行為でもそのまま効く ── 唯一の全域軸である。書面系列は文脈補完が効かないぶん、自己完結性が階段になる：情報1粒（A1・649）→ 電報体の規約（A2・659）→ 質問との対応づけ（A2+・642）→ 重要度順の情報選別（B1・656）。そして書面B2（No.633）はレジスターの制度化であり、儀礼的表出の検証で見つけた「書面フォーマル一段」（感謝・詫びのNo.632）と同じ Correspondence B2帯の現象が、主張型でも再現した。この一段は類型を横断する書面固有の到達点として、テンプレートの共通軸に昇格させる価値がある。ただし633の但し書き「事実の事柄に限る」は本質的で、CEFR自身が事実伝達と意見・交渉の間に境界線を引いている。
+
+【範型検証の記録 ── 主張型は「構造の行為」と「運用の行為」に分かれる】
+Q&A範型の点検軸5点の効き：(1) 疑問の時制・法の梯子 ── 効かない。梯子は情報管理（量・粒度・信頼性）。(2) 統語のL1注意（do支持・時制・冠詞）── A2帯のみ。B1以降は談話のL1注意（伝聞標識・対応づけ・確認のメタ発話・重要度順の再構成）に交代。(3) 文法的正確さ主軸 ── A2帯のみ。上段は談話運営＋伝達の信頼性。(4) 未来表現の三系統 ── 効かない。(5) 口頭往復・書面自己完結 ── 効く（唯一の全域軸）。新たに要る軸：情報の粒度と信頼性の梯子、照合・確認のメタ発話、伝聞・情報源の標識、書面フォーマル一段（儀礼型と共通 ── 類型横断軸の候補）。判定：主張型は「構造の行為」（Q&A：疑問文文法が主軸、Pre-A1〜A2+）と「運用の行為」（授受：情報管理が主軸、A2〜B2）の二相を持ち、レベル帯の相補性と境界記述文の同文言性から、同一梯子の下段と上段である可能性が高い。統合可否の最終判定は第2周に委ね、本検証は統合（一行為二相）を支持する証拠を記録する。"""
