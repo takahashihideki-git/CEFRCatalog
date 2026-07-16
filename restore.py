@@ -9,7 +9,7 @@ def load_all(root="."):
     return {
         "descriptors": L("descriptors_en_1224.json"),      # No(str)->{scheme,mode,activity,scale,level,en}
         "translations": L("working_translations_1224.json"),# No(str)->和訳
-        "inventory":  L("inventory_170to24.json"),          # No(str)->行為名
+        "inventory":  L("inventory_170to23.json"),          # No(str)->行為名
         "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
         "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     assert len(D["translations"])==1224
     assert set(D["descriptors"])==set(D["translations"]), "No不一致"
     assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==170
-    assert len(set(D["inventory"].values()))==24
+    assert len(set(D["inventory"].values()))==23
     assert len(D["prototypes"])==4
     from collections import Counter
     assert dict(Counter(p["block"] for p in D["partition"].values())) == {
@@ -55,8 +55,10 @@ if __name__ == "__main__":
             check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
             n_verif_acts += 1
     assert n_verif_acts == 5, "検証範型の行為数不一致"
-    ph = D["phases"]["事実情報の授受"]
-    qa, kanri = set(ph["質問応答相（構造）"]), set(ph["情報管理相（運用）"])
-    juju = {int(n) for n,a in D["inventory"].items() if a=="事実情報の授受"}
-    assert qa | kanri == juju and not (qa & kanri) and len(juju)==30, "二相分割の不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為24 / 二相30 / 範型4照合 / 検証範型5照合 / 区分分割7")
+    PHASE_SIZES = {"事実情報の授受": 30, "明確化・繰り返しの要求": 17}
+    for act, expected in PHASE_SIZES.items():
+        parts = [set(v) for v in D["phases"][act].values() if isinstance(v, list)]
+        union = set().union(*parts)
+        members = {int(n) for n, a in D["inventory"].items() if a == act}
+        assert sum(len(p) for p in parts) == len(union) == expected and union == members, f"二相分割の不一致 {act}"
+    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為23 / 二相30+17 / 範型4照合 / 検証範型5照合 / 区分分割7")

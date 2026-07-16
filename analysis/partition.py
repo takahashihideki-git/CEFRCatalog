@@ -19,7 +19,7 @@ EXPECTED_SUB = {"篩採用": 170, "篩除外": 74, "篩対象外": 62}
 
 def build():
     D = lambda f: json.load(open(os.path.join(ROOT, "data", f), encoding="utf-8"))
-    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_244.json"), D("inventory_170to24.json")
+    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_244.json"), D("inventory_170to23.json")
     part = {}
     for no, d in desc.items():
         sch, mo = d["scheme"].lower(), d["mode"]
