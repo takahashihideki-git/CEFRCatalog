@@ -15,11 +15,11 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 
 EXPECTED = {"やり取り": 306, "仲介": 251, "受容": 197, "how well": 182,
             "産出・談話構築": 132, "方略": 104, "複言語": 52}
-EXPECTED_SUB = {"篩採用": 170, "篩除外": 74, "篩対象外": 62}
+EXPECTED_SUB = {"篩採用": 182, "篩除外": 83, "篩対象外": 41}  # 第2周-5でFormal discussion 21件を掛け直し（判断(r)）
 
 def build():
     D = lambda f: json.load(open(os.path.join(ROOT, "data", f), encoding="utf-8"))
-    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_244.json"), D("inventory_170to23.json")
+    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_265.json"), D("inventory_182to23.json")
     part = {}
     for no, d in desc.items():
         sch, mo = d["scheme"].lower(), d["mode"]
@@ -53,7 +53,7 @@ def verify(part, desc, inv):
     sub = Counter(p.get("sub") for p in part.values() if p["block"] == "やり取り")
     assert dict(sub) == EXPECTED_SUB, f"やり取り内訳の不一致: {dict(sub)}"
     adopted = {n for n, p in part.items() if p.get("sub") == "篩採用"}
-    assert adopted == set(inv), "篩採用170とインベントリの不一致"
+    assert adopted == set(inv), "篩採用とインベントリの不一致"
 
 if __name__ == "__main__":
     part = build()

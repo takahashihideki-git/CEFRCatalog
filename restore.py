@@ -9,11 +9,11 @@ def load_all(root="."):
     return {
         "descriptors": L("descriptors_en_1224.json"),      # No(str)->{scheme,mode,activity,scale,level,en}
         "translations": L("working_translations_1224.json"),# No(str)->和訳
-        "inventory":  L("inventory_170to23.json"),          # No(str)->行為名
+        "inventory":  L("inventory_182to23.json"),          # No(str)->行為名
         "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
         "cross_axes": L("cross_axes.json"),                 # 横断軸＋行為分類（下位系・梯子型、第2周-4）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
-        "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
+        "verdicts":   L("sieve_verdicts_265.json"),         # No(str)->{verdict,reason,note}
         "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
         "prototypes": json.load(open(os.path.join(root,"prototypes","prototypes_4types.json"),encoding="utf-8")),
         "verifications": {f: json.load(open(os.path.join(root,"prototypes",f),encoding="utf-8"))
@@ -25,7 +25,8 @@ if __name__ == "__main__":
     assert len(D["descriptors"])==1224
     assert len(D["translations"])==1224
     assert set(D["descriptors"])==set(D["translations"]), "No不一致"
-    assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==170
+    assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==182
+    assert len(D["verdicts"])==265
     assert len(set(D["inventory"].values()))==23
     assert len(D["prototypes"])==4
     from collections import Counter
@@ -56,7 +57,7 @@ if __name__ == "__main__":
             check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
             n_verif_acts += 1
     assert n_verif_acts == 5, "検証範型の行為数不一致"
-    PHASE_SIZES = {"事実情報の授受": 30, "明確化・繰り返しの要求": 17}
+    PHASE_SIZES = {"事実情報の授受": 31, "明確化・繰り返しの要求": 17}
     for act, expected in PHASE_SIZES.items():
         parts = [set(v) for v in D["phases"][act].values() if isinstance(v, list)]
         union = set().union(*parts)
@@ -70,4 +71,4 @@ if __name__ == "__main__":
     assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 8, "検証済件数の不一致"
     assert {a for a,c in cx.items() if c["梯子型"]=="二相接続型"} == set(D["phases"].keys()), "二相接続型とact_phasesの不一致"
     assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為23 / 二相30+17 / 分類23・下位系12 / 範型4照合 / 検証範型5照合 / 区分分割7")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩265・ADOPT182 / 行為23 / 二相31+17 / 分類23・下位系12 / 範型4照合 / 検証範型5照合 / 区分分割7")
