@@ -16,7 +16,7 @@ ROWS = [
   "日本語は「お名前は？」と述語を略しても成立するが、英語は What is your name? と疑問詞＋be動詞＋主語の語順が必須。主語を落として Name? だけだと幼稚か無礼に響く。疑問文の骨格そのものが最初の壁。",
   "（起点）疑問文の最小形。事実の授受の最小単位。"),
  ("口頭","Pre-A1",585,
-  'Can ask very simple questions for information, such as "What is this?" and understand one- or two-word answers.',
+  'Can ask very simple questions for information, such as “What is this?” and understand one- or two-word/sign answers.',
   "「これは何?」等の簡単な情報の質問をし、1〜2語の答えを理解できる。",
   ["What is this? — It's a key.",
    "What's that in English?"],

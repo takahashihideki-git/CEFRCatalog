@@ -14,6 +14,9 @@ def load_all(root="."):
         "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
         "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
         "prototypes": json.load(open(os.path.join(root,"prototypes","prototypes_4types.json"),encoding="utf-8")),
+        "verifications": {f: json.load(open(os.path.join(root,"prototypes",f),encoding="utf-8"))
+                          for f in ("verification_expressive.json","verification_assertive.json",
+                                    "verification_directive.json","verification_phatic.json")},
     }
 if __name__ == "__main__":
     D = load_all()
@@ -26,4 +29,29 @@ if __name__ == "__main__":
     from collections import Counter
     assert dict(Counter(p["block"] for p in D["partition"].values())) == {
         "やり取り":306,"仲介":251,"受容":197,"how well":182,"産出・談話構築":132,"方略":104,"複言語":52}, "区分分割の不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為25 / 範型4 / 区分分割7")
+    # 全範型照合（引き継ぎ書§7・範型検証パッチ）
+    KNOWN_ISSUES = {642, 643}   # §7(b) 他行為借用。第2周の粒度判定で解決後、空にする
+    PROTO_ACT = {"苦情クレーム":"苦情・クレーム","挨拶別れ安否":"挨拶・別れ・安否",
+                 "事実質問応答":"事実情報の質問と応答","意見表明":"意見・見解の表明"}
+    VERIF_ACT = {"感謝詫び祝意":"感謝・詫び・祝意","感情の表出":"感情の表出",
+                 "事実情報の授受":"事実情報の授受","依頼・要求":"依頼・要求","会話の開始・維持":"会話の開始・維持"}
+    def check_rows(rows, act, jp_is_tr, exempt=False):
+        for r in rows:
+            no = str(r["no"])
+            if exempt and r["no"] in KNOWN_ISSUES:
+                print(f"  警告: No.{no} は既知の借用問題（§7(b)・第2周で解決予定）── 照合を免除")
+                continue
+            assert r["en"] == D["descriptors"][no]["en"], f"原文不一致 No.{no}"
+            assert r["level"] == D["descriptors"][no]["level"], f"レベル不一致 No.{no}"
+            assert D["inventory"].get(no) == act, f"行為所属不一致 No.{no}"
+            if jp_is_tr:
+                assert r["jp"] == D["translations"][no], f"訳不一致 No.{no}"
+    for name, proto in D["prototypes"].items():
+        check_rows(proto["rows"], PROTO_ACT[name], jp_is_tr=False, exempt=True)   # 4範型のjpは手書きグロス（訳と別物）。642/643の借用免除は4範型内に限る（検証範型の642は授受の正当な行）
+    n_verif_acts = 0
+    for vf, V in D["verifications"].items():
+        for name, proto in V.items():
+            check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
+            n_verif_acts += 1
+    assert n_verif_acts == 5, "検証範型の行為数不一致"
+    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為25 / 範型4照合 / 検証範型5照合 / 区分分割7")

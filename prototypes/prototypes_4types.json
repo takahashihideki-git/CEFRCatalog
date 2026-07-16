@@ -8,7 +8,7 @@
     "mode": "口頭",
     "level": "A2",
     "no": 544,
-    "en": "Can point out when something is wrong (e.g. \"The food is cold\" or \"There is no light in my room\").",
+    "en": "Can point out when something is wrong (e.g. “The food is cold” or “There is no light in my room”).",
     "jp": "何かがおかしいと指摘できる。",
     "exponents": [
      "Excuse me, the food is cold.",
@@ -156,7 +156,7 @@
     "mode": "口頭",
     "level": "Pre-A1",
     "no": 453,
-    "en": "Can understand and use basic, formulaic expressions such as \"Yes\", \"No\", \"Excuse me\", \"Please\", \"Thank you\", \"No thank you\", \"Sorry\".",
+    "en": "Can understand and use basic, formulaic expressions such as “Yes”, “No”, “Excuse me”, “Please”, “Thank you”, “No thank you”, “Sorry”.",
     "jp": "「はい」「いいえ」「すみません」「お願いします」「ありがとう」「けっこうです」「ごめんなさい」などの基本的な決まり文句を理解し、使える。",
     "exponents": [
      "Yes. / No.",
@@ -325,7 +325,7 @@
     "mode": "口頭",
     "level": "Pre-A1",
     "no": 585,
-    "en": "Can ask very simple questions for information, such as \"What is this?\" and understand one- or two-word answers.",
+    "en": "Can ask very simple questions for information, such as “What is this?” and understand one- or two-word/sign answers.",
     "jp": "「これは何?」等の簡単な情報の質問をし、1〜2語の答えを理解できる。",
     "exponents": [
      "What is this? — It's a key.",
@@ -570,8 +570,8 @@
     "mode": "書面",
     "level": "A2",
     "no": 683,
-    "en": "Can make brief positive or negative comments online about embedded links and media using a repertoire of basic language.",
-    "jp": "埋め込みリンクやメディアに、基本的な言葉で短い肯定・否定コメントをオンラインでできる。",
+    "en": "Can make brief positive or negative comments online about embedded links and media using a repertoire of basic language, though they will generally have to refer to an online translation tool and other resources.",
+    "jp": "概してオンライン翻訳ツールその他の資料を参照する必要はあるが、埋め込みリンクやメディアに、基本的な言葉で短い肯定・否定コメントをオンラインでできる。",
     "exponents": [
      "Love this! 😍",
      "Not for me, sorry.",
@@ -586,8 +586,8 @@
     "mode": "書面",
     "level": "B1",
     "no": 677,
-    "en": "Can post a comprehensible contribution in an online discussion on a familiar topic of interest, provided they can prepare the text beforehand.",
-    "jp": "事前に準備できれば、関心のある身近な話題のオンライン議論に理解可能な投稿ができる。",
+    "en": "Can post a comprehensible contribution in an online discussion on a familiar topic of interest, provided they can prepare the text beforehand and use online tools to fill gaps in language and check accuracy.",
+    "jp": "事前に準備でき、言語の穴埋めや正確さの確認にオンラインツールを使えば、関心のある身近な話題のオンライン議論に理解可能な投稿ができる。",
     "exponents": [
      "I think the article raises a good point about remote work, but it overlooks the cost side.",
      "In my experience, this approach works better for small teams."
