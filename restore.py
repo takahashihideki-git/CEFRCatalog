@@ -11,6 +11,7 @@ def load_all(root="."):
         "translations": L("working_translations_1224.json"),# No(str)->和訳
         "inventory":  L("inventory_170to23.json"),          # No(str)->行為名
         "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
+        "cross_axes": L("cross_axes.json"),                 # 横断軸＋行為分類（下位系・梯子型、第2周-4）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
         "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
         "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
@@ -61,4 +62,12 @@ if __name__ == "__main__":
         union = set().union(*parts)
         members = {int(n) for n, a in D["inventory"].items() if a == act}
         assert sum(len(p) for p in parts) == len(union) == expected and union == members, f"二相分割の不一致 {act}"
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為23 / 二相30+17 / 範型4照合 / 検証範型5照合 / 区分分割7")
+    cx = D["cross_axes"]["行為分類"]
+    assert set(cx.keys()) == set(D["inventory"].values()), "行為分類とインベントリの不一致"
+    for act, c in cx.items():
+        assert c["出自類型"] == D["act_type"][act], f"出自類型の不一致 {act}"
+        assert c["梯子型"] in {"管理梯子型","定型履行型","外部化型","二相接続型"}, f"梯子型の不正値 {act}"
+    assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 8, "検証済件数の不一致"
+    assert {a for a,c in cx.items() if c["梯子型"]=="二相接続型"} == set(D["phases"].keys()), "二相接続型とact_phasesの不一致"
+    assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
+    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為23 / 二相30+17 / 分類23・下位系12 / 範型4照合 / 検証範型5照合 / 区分分割7")
