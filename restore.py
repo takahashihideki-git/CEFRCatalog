@@ -9,7 +9,8 @@ def load_all(root="."):
     return {
         "descriptors": L("descriptors_en_1224.json"),      # No(str)->{scheme,mode,activity,scale,level,en}
         "translations": L("working_translations_1224.json"),# No(str)->和訳
-        "inventory":  L("inventory_170to25.json"),          # No(str)->行為名
+        "inventory":  L("inventory_170to24.json"),          # No(str)->行為名
+        "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
         "verdicts":   L("sieve_verdicts_244.json"),         # No(str)->{verdict,reason,note}
         "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
@@ -24,15 +25,15 @@ if __name__ == "__main__":
     assert len(D["translations"])==1224
     assert set(D["descriptors"])==set(D["translations"]), "No不一致"
     assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==170
-    assert len(set(D["inventory"].values()))==25
+    assert len(set(D["inventory"].values()))==24
     assert len(D["prototypes"])==4
     from collections import Counter
     assert dict(Counter(p["block"] for p in D["partition"].values())) == {
         "やり取り":306,"仲介":251,"受容":197,"how well":182,"産出・談話構築":132,"方略":104,"複言語":52}, "区分分割の不一致"
     # 全範型照合（引き継ぎ書§7・範型検証パッチ）
-    KNOWN_ISSUES = {642, 643}   # §7(b) 他行為借用。第2周の粒度判定で解決後、空にする
+    KNOWN_ISSUES = set()        # §7(b)は第2周-1（授受↔Q&A統合）で解決済み。新規の借用が出たらここへ
     PROTO_ACT = {"苦情クレーム":"苦情・クレーム","挨拶別れ安否":"挨拶・別れ・安否",
-                 "事実質問応答":"事実情報の質問と応答","意見表明":"意見・見解の表明"}
+                 "事実質問応答":"事実情報の授受","意見表明":"意見・見解の表明"}
     VERIF_ACT = {"感謝詫び祝意":"感謝・詫び・祝意","感情の表出":"感情の表出",
                  "事実情報の授受":"事実情報の授受","依頼・要求":"依頼・要求","会話の開始・維持":"会話の開始・維持"}
     def check_rows(rows, act, jp_is_tr, exempt=False):
@@ -54,4 +55,8 @@ if __name__ == "__main__":
             check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
             n_verif_acts += 1
     assert n_verif_acts == 5, "検証範型の行為数不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為25 / 範型4照合 / 検証範型5照合 / 区分分割7")
+    ph = D["phases"]["事実情報の授受"]
+    qa, kanri = set(ph["質問応答相（構造）"]), set(ph["情報管理相（運用）"])
+    juju = {int(n) for n,a in D["inventory"].items() if a=="事実情報の授受"}
+    assert qa | kanri == juju and not (qa & kanri) and len(juju)==30, "二相分割の不一致"
+    print("復元検証OK: descriptors1224 / translations1224 / ADOPT170 / 行為24 / 二相30 / 範型4照合 / 検証範型5照合 / 区分分割7")
