@@ -1,0 +1,137 @@
+{
+ "問題・事情の説明": {
+  "title": "問題・事情の説明（Explaining problems & circumstances）── 全数シート",
+  "scope": "全数（8件。口頭8）",
+  "type": "主張的（assertive）── 何が起きているか、なぜ問題かを伝わる形で述べる。下位系＝叙述系、梯子型＝管理梯子型（管理課題＝説明の精密さ、A1〜B2。第3周-5第三陣で確定）",
+  "essence": "何が起きているか、なぜ問題なのかを相手に伝わる形で説明する。梯子は説明の精密さ ── 身振り込みの一点表示から、症状の記述、理由の明示、譲歩を導く説明へ。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 600,
+    "en": "Can state in simple language the nature of a problem to a health professional and answer simple questions such as “Does that hurt?” even though they have to rely on gestures and body language to reinforce the message.",
+    "jp": "身振りやボディランゲージでメッセージを補強しながらでも、医療従事者に問題の性質を簡単な言葉で述べ、「そこは痛みますか」のような簡単な質問に答えられる。",
+    "exponents": [
+     "My head hurts.",
+     "It hurts here.（押さえて） — Does that hurt? — Yes, a little."
+    ],
+    "scene": "医療従事者に問題の性質を簡単な言葉で述べ、「そこは痛みますか」等の簡単な質問に答える（身振りの補強つき）。",
+    "howwell": "部位＋hurts の最小構文と Yes/No 応答。",
+    "l1": "症状語彙の不足で受診をためらいがちだが、この段のCEFRの要求は正しい病名でなく「部位を指して hurts」── それで医療は動く。",
+    "delta": "（起点）説明は一点（どこが・痛い）から始まる。質問に答える形の説明で、主導権はまだ聞き手側。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 598,
+    "en": "Can indicate in simple language the nature of a problem to a health professional, perhaps using gestures and body language.",
+    "jp": "身振りやボディランゲージを使ってでも、医療従事者に問題の性質を簡単な言葉で示せる。",
+    "exponents": [
+     "My stomach hurts.",
+     "I feel sick.（お腹を押さえて）"
+    ],
+    "scene": "医療従事者に問題の性質を簡単な言葉で示す（身振り・ボディランゲージ併用可）。",
+    "howwell": "部位＋hurts と I feel ... の症状枠。",
+    "l1": "痛みの言い分け（hurt/ache/sick）は日本語の「痛い・気持ち悪い」と一対一に対応しない ── 枠ごと（My X hurts / I feel sick）覚える。",
+    "delta": "応答（600）から自発の表示へ。545（取引）後半とほぼ同文言のスケール再掲対 ── 二行保持・相互参照。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 596,
+    "en": "Can describe to a doctor very basic symptoms and ailments such as a cold or the flu.",
+    "jp": "風邪やインフルエンザのようなごく基本的な症状や不調を医師に説明できる。",
+    "exponents": [
+     "I have a cold. I've had a cough since Monday.",
+     "I think I have the flu."
+    ],
+    "scene": "風邪やインフルエンザのようなごく基本的な症状・不調を医師に説明する。",
+    "howwell": "症状の複数提示と期間（since/for）の付加。",
+    "l1": "「いつから」が抜けると診断情報は半減する ── since Monday / for three days は説明の必須成分で、日本語では文末に来る情報を早めに出す。",
+    "delta": "一点の表示から、複数症状＋経過という記述へ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 593,
+    "en": "Can describe symptoms in a simple way and ask for advice when using health services, and can understand the answer, provided this is given clearly in everyday language.",
+    "jp": "日常語で明確に答えてもらえれば、医療サービスを利用する際に症状を簡単に説明し、助言を求め、答えを理解できる。",
+    "exponents": [
+     "I've had a headache for three days. Should I take anything?",
+     "Is it serious?"
+    ],
+    "scene": "医療サービス利用時に症状を簡単に説明して助言を求め、日常語での答えを理解する。",
+    "howwell": "説明→助言要求→理解の三手の接続。",
+    "l1": "説明して黙って診てもらう型から、Should I ...? まで進む「質問する患者」への切替 ── 説明は助言を引き出すための土台になる（→助言シート相互参照）。",
+    "delta": "説明が目的（助言の獲得）と結合する。回答が日常語で与えられるという支え条件つき。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 590,
+    "en": "Can provide concrete information required in an interview/consultation (e.g. describe symptoms to a doctor), but with limited precision.",
+    "jp": "面接や相談で求められる具体的な情報（医師に症状を説明するなど）を提供できるが、正確さは限られる。",
+    "exponents": [
+     "The pain started after I fell. It's worse when I walk.",
+     "It's a sharp pain. It comes and goes."
+    ],
+    "scene": "面接・相談で求められる具体的な情報（医師への症状説明など）を提供する。ただし正確さは限られる。",
+    "howwell": "叙述の正確さ ── 性質・条件・経過の記述。",
+    "l1": "痛みの性質は擬態語（ズキズキ・シクシク）の直訳では出ない ── 記述軸（鋭さ sharp／持続 comes and goes／条件 when I walk）に置き換える。",
+    "delta": "説明の中身が聞き手の要求水準で測られ始める。「正確さは限られる」の但し書きが上段への余白を測る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 465,
+    "en": "Can explain why something is a problem.",
+    "jp": "なぜ問題なのかを説明できる。",
+    "exponents": [
+     "The problem is that we don't have enough time.",
+     "It's a problem because the deadline is next week."
+    ],
+    "scene": "なぜ問題なのかを説明する（友人との議論）。",
+    "howwell": "理由標識（because / The problem is that ...）の運用。",
+    "l1": "「問題です」で止めて「なぜ」を言語化しない癖 ── 問題性は共有知識ではなく、明示して初めて共有される。",
+    "delta": "対象が症状（身体）から事態（状況）へ一般化し、「なぜ」が説明の核心になる。511と部分同文言のスケール再掲対。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 511,
+    "en": "Can explain why something is a problem, discuss what to do next, and compare and contrast alternatives.",
+    "jp": "なぜ問題なのかを説明し、次に何をするか話し合い、選択肢を比較・対照できる。",
+    "exponents": [
+     "The problem is the cost. We could rent instead — it's cheaper, but slower.",
+     "If we do it this way, we can save time."
+    ],
+    "scene": "協働作業で、なぜ問題かを説明し、次に何をするか話し合い、選択肢を比較・対照する。",
+    "howwell": "説明→提案→比較の運び（談話の束）。",
+    "l1": "問題の指摘だけで代案を出さないと非難に響く ── 説明と提案の接続が協働の作法（→提案シート467/508相互参照）。",
+    "delta": "465の説明が協働の文脈に埋め込まれ、提案・比較と束になる ── 465を含む同文言のスケール再掲対、二行保持・相互参照。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 529,
+    "en": "Can explain a problem which has arisen and make it clear that the provider of the service/customer must make a concession.",
+    "jp": "生じた問題を説明し、サービス提供者／客が譲歩すべきことを明確にできる。",
+    "exponents": [
+     "The washing machine broke again a week after the repair. I think a replacement is fair.",
+     "I understand the policy, but this is the third time."
+    ],
+    "scene": "生じた問題を説明し、サービス提供者／客が譲歩すべきことを明確にする。",
+    "howwell": "説明と要求の分離と接続 ── 事実の積み上げで譲歩を導く。",
+    "l1": "事実説明の段に感情を混ぜると苦情の「振れすぎ」に落ちる ── 説明の正確さがそのまま交渉力になる、が この段の分業。",
+    "delta": "到達点で説明は交渉の道具になる ── 苦情・クレーム帯（628系）の隣接領域で、譲歩要求を支える説明（→苦情シート相互参照）。"
+   }
+  ],
+  "discussion": [
+   "【管理課題の梯子 ── 説明の精密さ、一点からなぜへ】 一点表示（600）→自発表示（598）→複数症状＋経過（596）→助言要求と結合（593）→性質の記述（590）→理由の明示（465）→提案との束（511）→譲歩を導く説明（529）。梯子の実体は説明の精密さ（cross_axesの管理課題と一致）で、下段は語彙と構文（症状枠・期間）、中段から談話（理由標識・束）へ重心が移る。",
+   "【場面 ── 医療が下段の訓練場、B1+で議論・協働へ一般化】 A1〜B1+の主戦場は医療窓口（Interviewingスケール由来）で、身振り併用（600/598）という支えが下段を支える。B1+で対象が事態一般（465/511）へ開き、B2で取引の紛争（529）に届く ── 説明という営みが、身体から状況へ、私事から交渉へと領分を広げる。",
+   "【往復・応答の点検 ── 説明は応答として始まり、自発化する】 起点600は医師の質問に答える形（Does that hurt? — Yes）で、する側と受ける側が最初から往復に埋まっている。受け手は医療者・サービス提供者役割で片側往復だが、(n)の病理はここでは「言い足りない」に現れる ── 遠慮による情報の出し渋りが誤診・不利な裁定に直結する。",
+   "【全行口頭 ── (o)判定＝書面系列なし】 書面の問題説明は655（伝言の授受＝問題を説明する伝言）と苦情の書面系列（628帯）に吸収されており、本行為の帳簿は口頭のみ。判定＝書面系列なし（会話維持と同区分）。",
+   "【点検総括・語彙裁定】 スケール再掲対2件（545/598・465/511、いずれも二行保持・相互参照 ── 511は465の完全包含＋拡張という新しい形の対で、場面横断性に加えて「束への埋め込み」を示す）。梯子型＝管理梯子型で確定。語彙裁定（判断(s)）：flu（596・A2+行）＝記述文由来（such as a cold or the flu）、cough（596・A2+行）＝症状スロット（(s)-1）として保持。"
+  ]
+ }
+}

@@ -9,12 +9,12 @@ def load_all(root="."):
     return {
         "descriptors": L("descriptors_en_1224.json"),      # No(str)->{scheme,mode,activity,scale,level,en}
         "translations": L("working_translations_1224.json"),# No(str)->和訳
-        "inventory":  L("inventory_182to22.json"),          # No(str)->行為名
+        "inventory":  L("inventory_183to22.json"),          # No(str)->行為名
         "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
         "cross_axes": L("cross_axes.json"),                 # 横断軸＋行為分類（下位系・梯子型、第2周-4）
         "templates":  L("ladder_templates.json"),           # 梯子型別テンプレート（様式総括、第3周-4・判断(u)）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
-        "verdicts":   L("sieve_verdicts_265.json"),         # No(str)->{verdict,reason,note}
+        "verdicts":   L("sieve_verdicts_266.json"),         # No(str)->{verdict,reason,note}
         "partition":  L("block_partition_1224.json"),        # No(str)->{block, sub?} 四本柱＋横串の区分
         "prototypes": json.load(open(os.path.join(root,"prototypes","prototypes_4types.json"),encoding="utf-8")),
         "verifications": {f: json.load(open(os.path.join(root,"prototypes",f),encoding="utf-8"))
@@ -26,8 +26,8 @@ if __name__ == "__main__":
     assert len(D["descriptors"])==1224
     assert len(D["translations"])==1224
     assert set(D["descriptors"])==set(D["translations"]), "No不一致"
-    assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==182
-    assert len(D["verdicts"])==265
+    assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==183
+    assert len(D["verdicts"])==266
     assert len(set(D["inventory"].values()))==22
     assert len(D["prototypes"])==4
     from collections import Counter
@@ -69,6 +69,19 @@ if __name__ == "__main__":
         "catalog_conversation.json":  ("会話の開始・維持",  5, "会話維持5"),
         "catalog_emotion.json":       ("感情の表出",        8, "感情8"),
         "catalog_clarification.json": ("明確化・繰り返しの要求", 17, "明確化17"),
+        "catalog_transaction.json":   ("取引（購入・注文）", 12, "取引12"),
+        "catalog_problemexplain.json":("問題・事情の説明",    8, "問題説明8"),
+        "catalog_proposal.json":      ("提案・誘い・計画の相談", 8, "提案8"),
+        "catalog_interview.json":     ("面接での質問と応答",  6, "面接6"),
+        "catalog_message.json":       ("伝言の授受",          7, "伝言7"),
+        "catalog_selfinfo.json":      ("自己に関する情報提供", 5, "自己情報5"),
+        "catalog_enquiry.json":       ("問い合わせ",          3, "問い合わせ3"),
+        "catalog_directions.json":    ("道案内の依頼と提供",  3, "道案内3"),
+        "catalog_advice.json":        ("助言",                3, "助言3"),
+        "catalog_agreement.json":     ("同意・不同意",        3, "同意不同意3"),
+        "catalog_experience.json":    ("経験・出来事の叙述",  1, "経験叙述1"),
+        "catalog_application.json":   ("応募・出願",          1, "応募1"),
+        "catalog_instructionresponse.json": ("指示への応答",  1, "指示応答1"),
     }
     cat_done = []
     for fn, (act, n_rows, tag) in CATALOGS.items():
@@ -100,7 +113,7 @@ if __name__ == "__main__":
     for act, c in cx.items():
         assert c["出自類型"] == D["act_type"][act], f"出自類型の不一致 {act}"
         assert c["梯子型"] in {"管理梯子型","定型履行型","外部化型","二相接続型"}, f"梯子型の不正値 {act}"
-    assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 9, "検証済件数の不一致"
+    assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 22, "検証済件数の不一致"
     assert {a for a,c in cx.items() if c["梯子型"]=="二相接続型"} == set(D["phases"].keys()), "二相接続型とact_phasesの不一致"
     assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
     # 梯子型別テンプレート（第3周-4・判断(u)）── cross_axes・帳簿との整合
@@ -114,4 +127,4 @@ if __name__ == "__main__":
     ext_acts = set(lt["梯子型"]["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩265・ADOPT182 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg)
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg)

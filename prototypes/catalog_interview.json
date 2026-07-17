@@ -1,0 +1,107 @@
+{
+ "面接での質問と応答": {
+  "title": "面接での質問と応答（Interviewing & being interviewed）── 全数シート",
+  "scope": "全数（6件。口頭6）",
+  "type": "主張的（assertive）── 面接という構造化された場で答え、伝え、尋ねる。下位系＝情報授受系、梯子型＝管理梯子型（管理課題＝主導権の移行、A2〜B2+。第3周-5第三陣で確定）",
+  "essence": "面接という構造化された場で、答え、自分を理解させ、話題を持ち出し、やがて尋ねる側に回る。梯子は主導権の移行 ── 依存的な応答から、話題の提起、そして質問の設計へ。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 597,
+    "en": "Can answer simple questions and respond to simple statements in an interview.",
+    "jp": "面接で簡単な質問に答え、簡単な発言に応じられる。",
+    "exponents": [
+     "I worked in a restaurant for two years.",
+     "Yes, I like working with people."
+    ],
+    "scene": "面接で簡単な質問に答え、簡単な発言に応じる。",
+    "howwell": "質問への正対 ── 訊かれたことに、結論から答える。",
+    "l1": "謙遜の緩衝（「大したことはないのですが」）は英語面接では情報ゼロの前置き ── 答えを先に、修飾は後に。",
+    "delta": "（起点）応答のみの段 ── 主導権は完全に面接者の側にある。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 595,
+    "en": "Can make themselves understood in an interview and communicate ideas and information on familiar topics, provided they can ask for clarification occasionally, and are given some help to express what they want to.",
+    "jp": "時々明確化を求められ、言いたいことの表現に多少の助けがあれば、面接で自分を理解させ、身近な話題についての考えや情報を伝えられる。",
+    "exponents": [
+     "Sorry, could you say that again? — Ah, you mean my job. I worked at a bookshop.",
+     "I want to work here because I like your shop."
+    ],
+    "scene": "時々明確化を求め、表現の助けを得ながら、面接で自分を理解させ、身近な話題の考え・情報を伝える。",
+    "howwell": "修復（聞き返し）を使いながらの伝達の完遂。",
+    "l1": "面接での聞き返し（→明確化シート）は減点でなく運用力 ── 黙って外すより、訊いて当てるほうが評価される。",
+    "delta": "「答える」から「理解させる」へ ── 伝達の責任が自分側に移り始める。明確化・表現の助けという支え条件つき。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 592,
+    "en": "Can take some initiative in an interview/consultation (e.g. to bring up a new subject) but is very dependent on the interviewer in the interaction.",
+    "jp": "面接や相談で多少の主導権を取れる（新しい話題を持ち出すなど）が、やりとりでは面接者に大きく依存する。",
+    "exponents": [
+     "Can I ask about the training?",
+     "There's one more thing I'd like to say."
+    ],
+    "scene": "面接・相談で多少の主導権を取る（新しい話題の提起など）。ただしやりとりは面接者に大きく依存する。",
+    "howwell": "話題提起の切り出し定型（Can I ask ... / One more thing ...）。",
+    "l1": "面接で自分から話題を出すことは越権でなく評価対象 ── 「訊かれるまで待つ」型からの離脱がこの段の課題。",
+    "delta": "主導権の初穂 ── 「大きく依存する」の但し書きが、上段までの距離を測る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 594,
+    "en": "Can use a prepared questionnaire to carry out a structured interview, with some spontaneous follow-up questions.",
+    "jp": "準備した質問票を使って構造化された面接を行い、いくらか自発的な追加質問もできる。",
+    "exponents": [
+     "How long have you lived here? — I see. And what do you like about the area?",
+     "（質問票を見ながら）OK, next question: ..."
+    ],
+    "scene": "準備した質問票で構造化された面接を行い、いくらか自発的な追加質問もする。",
+    "howwell": "台本と即興の併用 ── 質問票の運用に follow-up を一問挟む。",
+    "l1": "質問票の直進は面接でなく音読 ── 回答を受けての追加質問（740＝明確化シートの「問いの組み立て」）が一問挟めるかが「面接する側」の入口。",
+    "delta": "役割が反転する段 ── 答える側から尋ねる側へ。ただし質問票という台本の支えつき。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 589,
+    "en": "Can take the initiative in an interview, and expand and develop ideas with little help or prodding from an interviewer.",
+    "jp": "面接で主導権を取り、面接者の助けや促しをほとんど受けずにアイディアを広げ、展開できる。",
+    "exponents": [
+     "Let me tell you about a project I worked on last year.",
+     "That connects to another point I'd like to make."
+    ],
+    "scene": "面接で主導権を取り、面接者の助けや促しをほとんど受けずにアイディアを広げ、展開する。",
+    "howwell": "自走する展開 ── 促し不要の談話構築。",
+    "l1": "一問一答の等間隔応答から、一つの答えを立体化して広げる型へ ── 「簡潔こそ美徳」の応答観との較差が最大化する段。",
+    "delta": "592の「大きく依存」が外れる ── 支え条件の脱落によるレベル刻み（562/557型）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 588,
+    "en": "Can carry out an effective, fluent interview, departing spontaneously from prepared questions, following up and probing interesting replies.",
+    "jp": "準備した質問から自発的に離れ、興味深い回答を追いかけて掘り下げながら、効果的で流暢な面接を行える。",
+    "exponents": [
+     "You said you changed jobs — what led to that?",
+     "That's interesting. Could you give me an example?"
+    ],
+    "scene": "準備した質問から自発的に離れ、興味深い回答を追いかけて掘り下げ、効果的で流暢な面接を行う。",
+    "howwell": "追跡と深掘りの設計（follow up and probe）。",
+    "l1": "台本の厳守が誠実さである文化から、台本からの逸脱が技能である場へ ── 594の「いくらか」の追加質問が全面化する。",
+    "delta": "594の台本の支えが外れ、面接の設計者になる ── 尋ねる側の到達点（授受489の質問設計と通底、→授受シート相互参照）。"
+   }
+  ],
+  "discussion": [
+   "【管理課題の梯子 ── 主導権の移行】 応答のみ（597）→伝達責任（595）→話題提起（592）→台本つきの役割反転（594）→自走（589）→設計（588）。梯子の実体は主導権の所在（cross_axesの管理課題と一致）で、支え条件の脱落が二系統で刻む ── 答える側（592「大きく依存」→589）と尋ねる側（594「質問票」→588）。いずれも562/557型の条件緩和。",
+   "【場面固定型の管理梯子 ── 場が行為を定義する】 就職面接・診察相談・調査面接を貫く「面接」という場面固定の行為で、レベルを刻むのは場のフォーマルさでなく主導権の精度 ── 授受シート②が指摘した「フォーマルさの梯子ではなく精度の梯子」の面接版。No.591（照合・確認、授受帳簿B1+）は判断(k)付随の裁定どおり授受に留置、相互参照。",
+   "【往復・応答の点検 ── 二役が同一行為の中で梯子を上る】 答える側（597/595/592/589）と行う側（594/588）が一つの行為に同居し、梯子の途中（B1）で役割が反転する ── 四役完備（依頼）とも最上段反転（取引・明確化）とも異なる「梯子内反転」。面接という場が問う側・問われる側の双方を学習者の役割として持つためで、往復類型の第四の形。",
+   "【全行口頭 ── (o)判定＝書面系列なし】 書面の応募は応募・出願（641）へ、書面の照会は問い合わせ（637）へ分属し、本行為の帳簿は口頭のみ。判定＝書面系列なし。",
+   "【点検総括・語彙裁定】 梯子型＝管理梯子型で確定。588の「深掘り」は明確化740（暗黙の発掘）・授受489（質問の設計）と最上段で合流し、B2+〜C1帯に「問いの設計」という行為横断の技能圏があることを示す。語彙裁定（判断(s)）：フラグなし（part-time・app は実例の書き換えで回避）。"
+  ]
+ }
+}

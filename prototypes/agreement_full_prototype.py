@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+"""第3周-5第三陣：同意・不同意3件の全数シート。
+判断(w)：外部化型（仮）から管理梯子型へ昇格。全行口頭。
+実行すると prototypes/catalog_agreement.json を生成する。"""
+import json, os
+
+ACT = '同意・不同意'
+TITLE = '同意・不同意（Agreeing & disagreeing）── 全数シート'
+SCOPE = '全数（3件。口頭3）'
+TYPE_ = '主張的（assertive）── 相手の発話・依頼への応諾のスタンスを表明し、管理する。下位系＝協調調整系、梯子型＝管理梯子型（管理課題＝応諾の管理、A2+〜C1。判断(w)・第3周-5第三陣で外部化型から昇格）'
+ESSENCE = '相手の発話・依頼への応諾のスタンスを表明し、管理する。梯子は応諾の管理 ── 裸の賛否から、留保・条件つきの同意へ、そして外交的な不同意へ。'
+
+ROWS = [
+(476, '口頭', ["I agree. / I don't agree.", "Me too. / I don't think so."],
+ "他者に賛成・反対する。",
+ "賛否の直言定型の在庫。",
+ "裸の I don't agree. は日本語感覚では強すぎるが、この段のCEFRはまず「言える」ことを求める ── 緩衝は上段の課題であって、言わない理由にならない。",
+ "（起点）応諾スタンスの二値表明。意見表明の評価相（479）と隣接するが、対象が命題でなく相手の発話。"),
+(428, '口頭', ["I can lend it to you, but I need it back by Friday.", "I'd like to help, but I'm not sure — can I think about it until tomorrow?"],
+ "留保やためらいを示し、依頼への同意や許可に条件をつけ、自分の立場への理解を求める。",
+ "条件つき応諾の構造（yes＋条件＋立場理解の要求）。",
+ "「いいですよ」の反射的な即諾から、条件を言語化した同意へ ── 無条件の yes は英語では文字どおり無条件になる。断らずに守る技術がこの段。",
+ "二値（476）の間に留保・条件のスペクトルが開く ── 応諾が管理の対象になる。依頼・許可の文脈を跨ぐ（→依頼シート相互参照）。"),
+(488, '口頭', ["I see the point of this plan, but I have some concerns about the schedule.", "With respect, I'd take a different view on that point."],
+ "会議で批判や反対を外交的に表明する。",
+ "外交的緩衝の設計（受けてから返す・部分への限定・代替の示唆）。",
+ "全否定に聞こえない反対の組み立て ── 受け（I see ...）＋限定（on that point）が、意見表明の対立管理と同じ作法を応諾の側で要求する。",
+ "到達点＝不同意の外交化。判断(r)でC1段として追加され、帯を立たせた当の行。"),
+]
+
+ORDER = [476, 428, 488]
+
+DISCUSSION = [
+"【昇格判定（判断(w)）── 管理梯子型へ】 仮判定は外部化型（意見表明への外部化）だったが、判断(r)の488追加で帯がA2+〜C1に立ち、3段の中身が一貫して応諾スタンスの管理の精緻化 ── 裸の賛否（476）→留保・条件（428）→外交的緩衝（488）── である以上、管理課題（応諾の管理）を持つ管理梯子型と判定する。3件は管理梯子型の最小構成。",
+"【意見表明との分業 ── 立てる行為と受ける行為】 意見・見解の表明＝自分の立場を立て、維持し、防衛する。同意・不同意＝相手の発話・依頼への応諾を管理する。428が意見でなく依頼・許可への同意を扱うことがこの分業の証拠で、応諾の管理は命題への賛否（討議）と資源の貸し借り（生活）を貫く独立の軸である ── 外部化ではなく隣接。",
+"【往復・応答の点検 ── 本行為自体が「受けの行為」】 同意・不同意は常に相手の先行発話への応答であり、(n)軸の「受け側」がまるごと行為化したもの（指示への応答と同族）。488の「受けてから返す」は、受けの信号（I see ...）を不同意の内部に組み込む ── 相槌（会話維持）が対立局面で構造化された姿。",
+"【全行口頭 ── (o)判定＝書面系列なし】 書面の同意は取引705（規約への同意）・オンライン協働の帳簿に吸収され、本行為の帳簿は口頭のみ。判定＝書面系列なし。",
+"【点検総括・語彙裁定】 昇格により管理梯子型10・外部化型7（帳簿はladder_templates／cross_axesに反映済み）。A2+以前の空白は、下段の賛否が Yes/Me too という応答在庫（会話維持・感情の帳簿）で足りるためと読める。語彙裁定（判断(s)）：フラグなし。",
+]
+
+def build(root="."):
+    desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
+    tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
+    by_no = {r[0]: r for r in ROWS}
+    rows = []
+    for no in ORDER:
+        _, mode, ex, scene, hw, l1, delta = by_no[no]
+        d = desc[str(no)]
+        rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
+                     "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
+    return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
+                  "rows": rows, "discussion": DISCUSSION}}
+
+if __name__ == "__main__":
+    here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)
+    data = build(root)
+    json.dump(data, open(os.path.join(here, 'catalog_agreement.json'), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    rows = data[ACT]["rows"]
+    assert len(rows) == 3 and len(DISCUSSION) == 5
+    print(f"catalog_agreement.json 生成OK: {len(rows)}行（口頭{sum(1 for r in rows if r['mode']=='口頭')}）")

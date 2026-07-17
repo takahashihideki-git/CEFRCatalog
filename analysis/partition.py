@@ -15,11 +15,11 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 
 EXPECTED = {"やり取り": 306, "仲介": 251, "受容": 197, "how well": 182,
             "産出・談話構築": 132, "方略": 104, "複言語": 52}
-EXPECTED_SUB = {"篩採用": 182, "篩除外": 83, "篩対象外": 41}  # 第2周-5でFormal discussion 21件を掛け直し（判断(r)）
+EXPECTED_SUB = {"篩採用": 183, "篩除外": 83, "篩対象外": 40}  # 第2周-5でFormal discussion 21件を掛け直し（判断(r)）、第3周-5でNo.612を単独採用（判断(v)）
 
 def build():
     D = lambda f: json.load(open(os.path.join(ROOT, "data", f), encoding="utf-8"))
-    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_265.json"), D("inventory_182to22.json")
+    desc, verd, inv = D("descriptors_en_1224.json"), D("sieve_verdicts_266.json"), D("inventory_183to22.json")
     part = {}
     for no, d in desc.items():
         sch, mo = d["scheme"].lower(), d["mode"]

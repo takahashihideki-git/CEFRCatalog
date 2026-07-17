@@ -1,0 +1,62 @@
+{
+ "問い合わせ": {
+  "title": "問い合わせ（Enquiries）── 全数シート",
+  "scope": "全数（3件。口頭1＋書面2）",
+  "type": "指示的（directive）── 持っていない情報・条件を、持っている相手に照会する。下位系＝依頼系、梯子型＝管理梯子型（管理課題＝要求の精密化、A2〜B2。第3周-5第三陣で確定）",
+  "essence": "持っていない情報・条件を、持っている相手に照会する。梯子は要求の精密化 ── 在庫の有無の二値質問から、広告への開いた照会、複雑なサービスへの要件提示へ。",
+  "rows": [
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 706,
+    "en": "Can ask basic questions about the availability of a product or feature.",
+    "jp": "商品や機能の有無について基本的な質問ができる。",
+    "exponents": [
+     "Do you have this in blue?",
+     "Is this size available?"
+    ],
+    "scene": "商品・機能の有無について基本的な質問をする。",
+    "howwell": "有無質問の定型（Do you have ... / Is ... available）。",
+    "l1": "「〜はありますか」の直訳 Is there ...? でなく、在庫照会は Do you have ...? が標準 ── 存在文と所有文の使い分けの最初の実務。",
+    "delta": "（起点）問い合わせの最小形＝有無の二値質問。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 637,
+    "en": "Can reply to an advertisement in writing and ask for further information on items that interest them.",
+    "jp": "広告に文書で返信し、関心のある品目についてさらに情報を求められる。",
+    "exponents": [
+     "I am writing about the apartment in your advertisement. Could you tell me more about the heating and the monthly costs?",
+     "Is the bike in the photo still for sale?"
+    ],
+    "scene": "広告に文書で返信し、関心のある品目についてさらに情報を求める。",
+    "howwell": "照会の書面定型（I am writing about ... / Could you tell me more about ...）。",
+    "l1": "何の広告かの明示を冒頭に ── 相手は多数の広告を出している前提で書く。用件の特定が返事の速さを決める。",
+    "delta": "二値（706）から開いた情報要求へ。書面照会の型が立つ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 528,
+    "en": "Can state requirements and ask detailed questions regarding more complex services, e.g. rental agreements.",
+    "jp": "賃貸契約など、より複雑なサービスについて、要件を述べ、詳細な質問ができる。",
+    "exponents": [
+     "We need a two-year rental starting in April. What are the rules if we end it early?",
+     "Does the rent include repairs?"
+    ],
+    "scene": "賃貸契約など、より複雑なサービスについて要件を述べ、詳細な質問をする。",
+    "howwell": "要件提示＋詳細質問の二段構成。",
+    "l1": "要件を先に述べる（We need ...）ことで質問が絞れる ── 質問だけを重ねる照会は往復が嵩み、相手の提案も的を外す。",
+    "delta": "情報を求めるだけでなく、自分の要件を差し出して照合する ── 取引の条件交渉（695）の一歩手前（→取引シート相互参照）。"
+   }
+  ],
+  "discussion": [
+   "【管理課題の梯子 ── 要求の精密化】 有無の二値（706）→開いた照会（637）→要件の照合（528）。3件と薄いが、求めるものの精密さが単調に上がる軸は明瞭で、cross_axesの管理課題と一致 ── 管理梯子型で確定（仮判定どおり）。",
+   "【場面 ── 商取引の周縁】 在庫・広告・契約と、いずれも取引の手前の情報収集局面。取引（537「必要な情報をすべて得る」）との分業は、537が対面窓口での完遂、本行為が照会という行為型そのものを受け持つ点にある。",
+   "【往復・応答の点検 ── 片側往復】 問い合わせる側のみが学習者の役割で、受け手はサービス提供者役割（苦情・取引下段と同じ片側往復）。取引と異なり最上段の役割反転はない ── 照会への応対は取引691（サービス役）の帳簿に吸収される。",
+   "【口頭1・書面2 ── (o)判定＝非成立（B2未達型）】 Correspondence系列は637（B1+）止まりでB2帯に届かず、判定＝非成立（B2未達型）。口頭の上端528は取引・交渉の語彙圏に接する。",
+   "【点検総括・語彙裁定】 3件全てが依頼系の「情報の依頼」特化形で、依頼シート（物・行為の依頼）との分業が下位系内で立つ。語彙裁定（判断(s)）：available（706・A2行）＝記述文由来（availability of a product or feature）として保持。heating・advertisement（637行）は収録内で通過。"
+  ]
+ }
+}
