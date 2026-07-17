@@ -1,0 +1,141 @@
+{
+ "感情の表出": {
+  "title": "感情の表出（Expressing & responding to feelings）── 全数シート",
+  "scope": "全数（8件。口頭3＋書面5）",
+  "type": "表出的（expressive）── 下位系＝感情叙述系、梯子型＝管理梯子型（管理課題＝叙述解像度：決まり文句→種類の分化と応答→度合いと意味づけ）",
+  "essence": "自分の感情を名指し、その度合いと出来事にとっての意味を言語化し、相手の感情や知らせに感情で応じる。レベルが上がるとは、感情語彙の解像度（種類→度合い→意味づけ）が上がることである。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 447,
+    "en": "Can express how they are feeling, using very basic stock expressions.",
+    "jp": "ごく基本的な決まり文句を使って、自分の気分を表現できる。",
+    "exponents": [
+     "I'm happy. / I'm tired.",
+     "I'm so excited!",
+     "That's great! / Oh no!"
+    ],
+    "scene": "いまの気分・体調を、決まり文句一つで口にする。",
+    "howwell": "語彙（基本感情語）：I'm + 感情形容詞の骨格と、ごく基本の感嘆定型。",
+    "l1": "日本語の感情表現は「嬉しい」「疲れた」と主語を立てない形容詞述語だが、英語は I'm + 形容詞で主語の明示が要る。最初の構造的難所は -ed/-ing の別（excited/exciting, bored/boring）── I'm boring.（私は退屈な人間だ）事故はこの段階から始まる。",
+    "delta": "（起点）感情表出の最小形。決まり文句の貼り付けで、種類はまだ happy/sad/tired 程度の粗さ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 437,
+    "en": "Can express and respond to feelings such as surprise, happiness, sadness, interest and indifference.",
+    "jp": "驚き・喜び・悲しみ・関心・無関心などの感情を表現し、それに応じられる。",
+    "exponents": [
+     "Really? That's amazing!",
+     "I'm so sorry to hear that.",
+     "To be honest, I'm not that interested."
+    ],
+    "scene": "会話の中で自分の感情を種類で言い分け、相手の感情や知らせに感情で応じる。",
+    "howwell": "語彙範囲（感情の種類分化）＋社会言語的適切さ：相手の感情への応答定型を持てるか。",
+    "l1": "難所は「応じる」側にある。日本語の相槌（へえ、そうなんだ）は感情の名指しを避けて成立するが、英語は That's amazing! / I'm sorry to hear that. と感情語で明示的に反応するのが定石で、この応答定型の在庫が薄いと沈黙が冷淡に響く。また無関心の表明は日本語では回避されがちで、to be honest / not that... の緩衝を添えて言う型ごと学ぶ必要がある。",
+    "delta": "決まり文句から「種類の分化＋往復」へ。express に respond が加わり、感情表出が対話的になる。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 639,
+    "en": "Can compose personal letters describing experiences, feelings and events in some detail.",
+    "jp": "経験・感情・出来事をある程度詳しく描写する個人的な手紙を書ける。",
+    "exponents": [
+     "I've just come back from Kyoto — it was such a special trip.",
+     "I was really nervous at first, but everyone was so friendly."
+    ],
+    "scene": "私的な手紙・メッセージで、経験と出来事に感情を絡めてある程度詳しく書く。",
+    "howwell": "叙述の正確さ：経験・感情・出来事の三点を時間軸の上で絡めて記述できるか。",
+    "l1": "感情を単独で述べるのでなく、出来事の経過と絡めて書く（at first ... but ...）時間軸上の感情変化の記述が核。日本語の手紙は季節と定型句の層が厚く個人的感情の開示は薄めで、英語の私信に期待される開示量との較差がある ── 何を書けば「詳しく」なのかの感覚ごと調整が要る。",
+    "delta": "書面系列の起点。感情が経験・出来事との三つ組で叙述される。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 678,
+    "en": "Can make personal online postings about experiences, feelings and events and respond individually to the comments of others in some detail, though lexical limitations sometimes cause repetition and inappropriate formulation.",
+    "jp": "語彙の制約から時に繰り返しや不適切な表現が生じるものの、経験・感情・出来事についての個人的なオンライン投稿をし、他者のコメントにある程度詳しく個別に応じられる。",
+    "exponents": [
+     "Had an amazing weekend at the beach — feeling so refreshed!",
+     "— Thanks! Yes, the weather was perfect."
+    ],
+    "scene": "SNSに経験と感想を投稿し、ついたコメントに個別に返信する。",
+    "howwell": "語彙範囲（記述文が語彙制約を明示する唯一の行）＋応答の往復。",
+    "l1": "SNSの感情共有には英語圏固有の言語化慣習（feeling + 形容詞、so + 形容詞の増幅）があるが、日本語SNSでは感情表現が絵文字・スタンプに外注されがちで、言語化された感情共有の在庫が育ちにくい。CEFR自身が「繰り返しと不適切な表現」を明記するとおり、この段階の制約は語彙 ── amazing 一語の使い回しがその典型。",
+    "delta": "手紙の一方向から、投稿＋コメント返信の往復へ。応答の対話性がオンラインで前面に出る。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 636,
+    "en": "Can compose letters expressing different opinions and giving detailed accounts of personal feelings and experiences.",
+    "jp": "異なる意見を表明し、個人的な感情や経験を詳しく述べる手紙を書ける。",
+    "exponents": [
+     "I see it a bit differently — for me, moving away was the right decision.",
+     "Looking back, I realise how anxious I was during those months."
+    ],
+    "scene": "手紙の中で、相手と異なる見解を述べつつ、自分の感情と経験を詳しく振り返る。",
+    "howwell": "叙述の正確さ＋社会言語的適切さ：感情叙述に意見の差異表明が同居する境界的な一行。",
+    "l1": "ここで初めて意見表明範型の軸（不同意の緩衝：I see it a bit differently）が部分的に接続する。ただし主役はあくまで感情・経験の詳述で、意見の差異はその文脈に置かれる。振り返りの型（Looking back, I realise...）は過去の感情への現在からのメタ視点で、日本語の「今思えば」に対応が良い数少ない箇所。",
+    "delta": "感情の詳述に「異なる意見の表明」が加わり、意見表明系との境界がここで接する。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 676,
+    "en": "Can post online accounts of social events, experiences and activities referring to embedded links and media and sharing personal feelings.",
+    "jp": "埋め込みリンクやメディアに言及し、個人的な感想を共有しながら、社交行事・経験・活動についてオンラインに投稿できる。",
+    "exponents": [
+     "Here are some photos from Saturday's reunion — it was wonderful to see everyone again.",
+     "Can't believe how fast the day went."
+    ],
+    "scene": "行事や活動の報告投稿に、写真・リンクへの言及と自分の感想を織り込む。",
+    "howwell": "話題の展開：メディアへの言及と感情の共有を一つの投稿に構成できるか。",
+    "l1": "投稿が「感情の一言」から「行事の記録＋感想」の構成体になる段階。日本語のSNS報告文化との機能対応は良いが、感想部分を絵文字で済ませず言語化する慣習の差は678と共通。Can't believe how... のような感嘆の口語定型が構成の中で感情の山を作る。",
+    "delta": "単発の感情表明から、記録と感想を統合した投稿へ。書面ならではの構成の軸が入る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 431,
+    "en": "Can convey degrees of emotion and highlight the personal significance of events and experiences.",
+    "jp": "感情の度合いを伝え、出来事や経験の個人的な意味を強調できる。",
+    "exponents": [
+     "I was absolutely devastated.",
+     "It meant a lot to me — more than I expected.",
+     "I can't tell you how relieved I was."
+    ],
+    "scene": "経験を語りながら、感情の強さを段階づけ、その出来事が自分にとって持つ意味を際立たせる。",
+    "howwell": "叙述の正確さ＋語彙使いこなし（強度の段階づけ）：強意副詞と語彙の強度階層、意味づけの言語化。",
+    "l1": "度合いは強意副詞（absolutely, utterly）と語彙自体の強度階層（sad < upset < devastated）の二層で作るが、日本語話者は very + 基本語（very sad 一本槍）に潰しがち。コロケーション制約（absolutely devastated ○ / very devastated ×）も語彙使いこなしの壁。「個人的な意味の強調」は出来事の事実でなく自分にとっての意味を語るメタ的な一段で、「感動しました」型の総称的評価では代替できない。",
+    "delta": "種類の分化から「度合いの段階づけ＋意味づけ」へ。口頭系列の到達点で、これ以上（C1）の記述文は無い ── 先は文体の領域。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2",
+    "no": 630,
+    "en": "Can compose letters conveying degrees of emotion and highlighting the personal significance of events and experiences and commenting on the correspondent’s news and views.",
+    "jp": "感情の度合いを伝え、出来事や経験の個人的な意味を強調し、相手の近況や見解にコメントする手紙を書ける。",
+    "exponents": [
+     "I was deeply moved by your letter.",
+     "Your news made my day — you've worked so hard for this.",
+     "That year changed how I see my family."
+    ],
+    "scene": "手紙で、感情の強さと出来事の意味を書き分け、相手の近況・見解にも感情を込めてコメントする。",
+    "howwell": "叙述の正確さ＋社会言語的適切さ：自分の感情の度合いと、相手の知らせへの感情的応答の二方向。",
+    "l1": "口頭B2の「度合い＋意味づけ」に、相手の近況への感情的コメント（I'm thrilled for you / made my day）が加わる。この応答部分は祝意・気遣いの定型群と接し、B1（437）で入った「応じる」軸の書面到達形。自分語りだけで手紙を埋め、相手の知らせへの応答を落とすのは日本語話者の私信でも起こる偏りで、二方向性そのものを型として意識する必要がある。",
+    "delta": "書面系列の到達点。度合い・意味づけ・相手への応答の三要素が揃い、口頭B2と対をなす。"
+   }
+  ],
+  "discussion": [
+   "【管理梯子の背骨 ── 叙述解像度の三段】 管理課題＝叙述解像度。儀礼的表出（感謝・詫び・祝意）でレベル軸が消えたのと対照的に、この行為には A2→B2 の実質的な梯子がある。その中身は苦情の梯子（対立の管理）とも意見表明の梯子（表明→支持→維持→反論）とも別物で、決まり文句（A2・447：I'm + 基本感情語）→ 種類の分化と応答（B1・437／書面 639・678：感情を言い分け、相手の感情に応じる）→ 度合いの段階づけと意味づけ（B2・431／書面 630：強度を刻み、出来事が自分に持つ意味を際立たせる）という解像度の階段である。C1 以上が無いのは欠落ではなく、感情表出の can do は B2 で言語的に完成し、それ以上は文体・修辞（how well）の領域に移るためと読める ── 管理梯子型のうち、梯子が B2 で言語的完成に達する型の代表例。",
+   "【L1難所 ── 作法ではなく解像度と開示】 意見表明の L1 中心軸だった不同意の作法はこの行為ではほぼ効かず、難所は四つ。(a) 強度の潰れ：英語側の語彙階層（sad < upset < devastated）を在庫していないため、very ＋基本語に一本化される。(b) -ed/-ing 事故：exciting/excited の対立が A2 から一貫して続く構造的な穴。(c) 開示量の較差：感情の明示的な名指しは日本語では察しと相槌、SNS では絵文字に外注されがちで、英語圏の言語化された感情共有の慣習との間に「どこまで言葉にするか」の較差がある。(d) 応答定型の欠落：That's amazing! / I'm sorry to hear that. のような相手の感情・知らせへの反応の型が無いと、沈黙が冷淡に響く。作法（適切さ）が要るのは (d) だけで、しかも不同意ではなく共感の作法である ── how well の主軸も、他行為で主役だった社会言語的適切さではなく、叙述の正確さ＋語彙（範囲と使いこなし）に移る。No.678 が CEFR 全記述文でも珍しく語彙の制約を明記していることが、この行為の律速段階が語彙であることの内部証拠になっている。",
+   "【隣接行為との境界 ── 表出型内部の結節点】 この行為は三方向で他行為と接する。第一に、B1（437）で入る「応じる」構造は、儀礼的表出の授受構造（詫びを受ける・礼に応える）と同型で、往復性という軸がここにも顔を出す。第二に、書面 B1+（636）では異なる見解の表明が感情叙述と同居し、意見表明系との境界が接する ── CEFR 自身が両行為を一つの記述文に束ねている以上、この境界は分類の便宜であって運用では連続する。第三に、書面 B2（630）の「相手の近況・見解への感情を込めたコメント」は祝意・気遣いの定型群と接する。感情の表出は表出型内部の結節点であり、意見表明系とも儀礼的表出系とも地続きでありながら、主軸（解像度）はどちらとも違う。",
+   "【口頭書面と書面フォーマル一段 ── 条件への反例、私的系列は制度化しない】 書面系列5件（639・678・636・676・630）は私的な手紙・SNS の系列であり、B1 帯に厚い（経験と感情の絡み・投稿と返信・見解の同居・メディア言及）。ここで判断(o)の適用条件に反例が出る：Correspondence 系列は B2（630）まで伸びるのに、630 の中身は感情の度合い・出来事の意味づけ・相手の近況への感情的コメント ── 叙述解像度の最終段であって、「適切な構造と内容」型のレジスターの制度化ではない。つまり「Correspondence 系列が B2 帯まで伸びる」は制度化段の必要条件であって十分条件ではない。成立3例（632 詫びの制度形・633 業務書簡・628 苦情）はいずれも業務・公式の Correspondence が B2 帯に達する行為であり、私的 Correspondence が B2 に達する本行為では、行為自身の梯子がそのまま B2 を占める。判定は非成立（私的系列型）として記録し、適用条件の精緻化（業務系列／私的系列の判別を条件に加える）を裁定に付す。",
+   "【点検総括と語彙裁定】 往復・応答（判断(n)）の点検：する側＝感情の名指しと叙述、受ける側＝共感の応答定型（437 で記述文レベルに明文化 ── 往復軸がこの行為では B1 の梯子の段そのものになっている）、断る・返す型＝ネガティブな知らせへの応答（I'm sorry to hear that.）。受け在庫の欠落が冷淡さに化ける往復軸の病理は、L1 難所 (d) と一体である。書面 678 の返信（コメントへの個別応答）は書面側の受け在庫。語彙裁定（判断(s)）：refreshed（678・B1 行、B2 語）── SNS の感想投稿の自然な感情語彙であり、この行為の律速段階が語彙解像度であることを踏まえ、B1 行の実例語として保持を裁定（超過裁定につき本段落に保全、判断(s)-3）。他の実例は検証範型①から変更なし（685 reply の裁定は感謝詫びシートの裁定を継承）。"
+  ]
+ }
+}

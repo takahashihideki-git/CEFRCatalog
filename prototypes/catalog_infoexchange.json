@@ -1,0 +1,485 @@
+{
+ "事実情報の授受": {
+  "title": "事実情報の授受（Giving & receiving factual information）── 全数シート",
+  "scope": "全数（31件。口頭24＋書面7。二相：質問応答相〔構造〕15＋情報管理相〔運用〕16）",
+  "type": "主張的（assertive）── 世界の事実を尋ね、答え、確実に引き渡す。下位系＝情報授受系、梯子型＝二相接続型（下段＝質問応答相〔構造〕、上段＝情報管理相〔運用〕。判断(k)・第2周-1統合）",
+  "essence": "事実を尋ね、答え、引き渡す。下段では「尋ねる文が作れる」ことが、上段では「情報を確実に運べる」ことが梯子を刻む。レベルが上がるとは、主語が疑問文から情報そのものへ移ることである。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 579,
+    "en": "Can tell people their name and ask other people their names.",
+    "jp": "自分の名前を名乗り、他の人に名前を尋ねられる。",
+    "exponents": [
+     "My name is Ken. / I'm Ken.",
+     "What's your name?"
+    ],
+    "scene": "初対面で名乗り、相手の名前を尋ねる。最初の情報交換。",
+    "howwell": "定型の丸ごと運用：What's your name? を塊として言えるか。",
+    "l1": "「お名前は？」の感覚で Your name? と名詞だけを上げ調子で言いがち。疑問文の枠（What's ...?）を最初から塊で入れる。",
+    "delta": "（質問応答相の起点）情報交換の最小単位＝名前。疑問文はまだ文法ではなく決まり文句である。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 581,
+    "en": "Can ask and tell what day, time of day and date it is.",
+    "jp": "何曜日か、一日のうちのいつか、何日かを尋ね、言える。",
+    "exponents": [
+     "What day is it today?",
+     "What time is it?",
+     "It's Monday. / It's ten o'clock."
+    ],
+    "scene": "曜日・時刻・日付を尋ね、答える。",
+    "howwell": "定型＋数の語彙：曜日・月・時刻表現の在庫。",
+    "l1": "日本語の「今日何曜日？」は主語不要だが、英語は What day is it? と it が要る。it を落として What day today? となりがち。",
+    "delta": "名前から暦・時刻へ。答えの側に数詞体系が入り、語彙の負荷が初めて出る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 582,
+    "en": "Can ask for and give a date of birth.",
+    "jp": "生年月日を尋ね、答えられる。",
+    "exponents": [
+     "When is your birthday?",
+     "My birthday is May 5th."
+    ],
+    "scene": "生年月日・誕生日を尋ね、答える。",
+    "howwell": "序数と月名：日付の言い方の規約。",
+    "l1": "日付の序数（May fifth）を基数で May five と言いがち。日本語の「5月5日」に序数の痕跡がないため。",
+    "delta": "暦の一般知識から自分の情報へ。個人情報の交換が始まる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 583,
+    "en": "Can ask for and give a phone number.",
+    "jp": "電話番号を尋ね、教えられる。",
+    "exponents": [
+     "What's your phone number?",
+     "It's 090-1234-5678."
+    ],
+    "scene": "電話番号を尋ね、教える。",
+    "howwell": "数字列の受け渡し精度：一桁ずつ読む規約と聞き取り。",
+    "l1": "数字列は一桁ずつが英語の規約。zero/oh の揺れ、日本語式に二桁で区切る癖との切替が要る。",
+    "delta": "情報の正確な受け渡しという、のちの「信頼性」軸の萌芽が数字列に現れる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 584,
+    "en": "Can tell people their age and ask people about their age.",
+    "jp": "自分の年齢を言え、人に年齢を尋ねられる。",
+    "exponents": [
+     "How old are you?",
+     "I'm seven years old."
+    ],
+    "scene": "年齢を言い、尋ねる。",
+    "howwell": "定型：How old ...? の塊。",
+    "l1": "How old are you? を直訳的に失礼と感じて避けがちだが、子ども同士・学習場面では標準の情報質問である（成人相手の運用は別の作法に属す）。",
+    "delta": "What 系から How 系へ疑問詞が広がる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "Pre-A1",
+    "no": 585,
+    "en": "Can ask very simple questions for information, such as “What is this?” and understand one- or two-word/sign answers.",
+    "jp": "「これは何ですか」のようなごく簡単な情報の質問をし、1〜2語の答えを理解できる。",
+    "exponents": [
+     "What is this? / What's that?",
+     "It's a pen."
+    ],
+    "scene": "目の前の物が何かを尋ね、1〜2語の答えを理解する。",
+    "howwell": "指示詞＋最小疑問文：this/that の使い分けと、単語レベルの応答理解。",
+    "l1": "this/that の二分が日本語のコソアド三分（これ・それ・あれ）と食い違い、that の守備範囲（それ＋あれ）に慣れが要る。",
+    "delta": "個人情報から環境の事物へ。疑問文が「世界を尋ねる道具」になる起点。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 574,
+    "en": "Can ask and answer simple questions, initiate and respond to simple statements in areas of immediate need or on very familiar topics.",
+    "jp": "差し迫った必要のある領域やごく身近な話題について、簡単な質問をし、答え、簡単な発言を始め、それに応じられる。",
+    "exponents": [
+     "Do you like music? — Yes, I do. / No, I don't.",
+     "I have a dog. — Oh, really?"
+    ],
+    "scene": "ごく身近な話題で、質問し、答え、簡単な発言を切り出し、それに応じる。",
+    "howwell": "文法的正確さ（do 支持の骨格）：Yes, I do. の型で答えられるか。",
+    "l1": "do 支持は日本語に対応物を持たない最初の壁。Do you ...? に Yes, I like. と答える誤りが、応答の型（Yes, I do.）で防げる。",
+    "delta": "決まり文句の疑問文から、do 支持という「作れる疑問文」へ。質問応答相の文法的核心。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 575,
+    "en": "Can ask and answer questions about themselves and other people, where they live, people they know, things they have.",
+    "jp": "自分や他の人、住んでいる場所、知っている人、持っているものについて質問し、答えられる。",
+    "exponents": [
+     "Where do you live?",
+     "Who is she?",
+     "Do you have any brothers or sisters?"
+    ],
+    "scene": "自分と他者の基本情報（住まい・知人・持ち物）を尋ねあう。",
+    "howwell": "疑問詞疑問文の展開：Where / Who / What ＋ do 支持の組み合わせ。",
+    "l1": "疑問詞疑問文の語順（疑問詞→do→主語→動詞）が日本語の語順（〜はどこ？）と逆転し、Where you live? の語順崩れが定番の穴。",
+    "delta": "Yes/No 疑問文から疑問詞疑問文へ。尋ねられる情報の種類が一気に広がる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 578,
+    "en": "Can name the colour of clothes or other familiar objects and can ask the colour of such objects.",
+    "jp": "衣服や身近な物の色の名前を言え、そうした物の色を尋ねられる。",
+    "exponents": [
+     "What colour is your bag?",
+     "It's blue."
+    ],
+    "scene": "衣服や身近な物の色を言い、尋ねる。",
+    "howwell": "語彙（色彩語）＋「疑問詞＋名詞」型（What colour ...?）。",
+    "l1": "What colour ...? の疑問詞＋名詞型は、日本語「何色？」が一語であるため What is colour? と分解されがち。",
+    "delta": "疑問詞が名詞と結合する型（What colour / What time）の獲得。"
+   },
+   {
+    "mode": "書面",
+    "level": "A1",
+    "no": 649,
+    "en": "Can compose a short, very simple message (e.g. a text message) to friends to give them a piece of information or to ask them a question.",
+    "jp": "友人に情報を伝えたり質問したりする、短くごく簡単なメッセージ（テキストメッセージなど）を書ける。",
+    "exponents": [
+     "Party at 7 tonight. Can you come?",
+     "The bus leaves at 9."
+    ],
+    "scene": "友人への短いメッセージで、情報を一つ伝えるか、一つ質問する。",
+    "howwell": "定型＋基本文型：情報1粒を落とさず載せる。",
+    "l1": "メッセージの省略体（冠詞・be動詞の脱落）は英語でも許容されるが、疑問文の語順と疑問符は保つ必要がある。時刻表現では「7時から」の「から」を from と直訳する事故（× from 7 ── 開始時点は at 7 が自然）が典型。",
+    "delta": "（書面系列の起点）情報1粒＋質問1つの最小形。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 569,
+    "en": "Can ask and answer questions about what they do at work and in their free time.",
+    "jp": "仕事や余暇に何をするかについて質問し、答えられる。",
+    "exponents": [
+     "What do you do in your free time?",
+     "I usually play tennis."
+    ],
+    "scene": "仕事や余暇にすることを尋ねあう。",
+    "howwell": "現在形の習慣用法＋頻度副詞。",
+    "l1": "職業を尋ねる What do you do? は直訳では出ない塊。「仕事は何？」から What is your job? だけで止まりがち。",
+    "delta": "事実の点（名前・番号）から生活の面（習慣）へ。時制の運用が入る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 570,
+    "en": "Can ask for and give directions referring to a map or plan.",
+    "jp": "地図や見取り図を参照しながら道順を尋ね、教えられる。",
+    "exponents": [
+     "How can I get to the station?",
+     "Go straight and turn left at the bank."
+    ],
+    "scene": "地図や見取り図を見ながら道順を尋ね、教える。",
+    "howwell": "空間表現の在庫＋命令形の指示。",
+    "l1": "道案内の定型の前置詞選択。日本語の「銀行を左」に引かれて turn left the bank と前置詞が落ちる。",
+    "delta": "情報が「答え」から「手順」へ。聞き手が実行できる形で渡す ── 上段の「確実に運ぶ」の遠い祖先。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 572,
+    "en": "Can ask and answer simple questions about an event (e.g. ask where and when it took place, who was there and what it was like).",
+    "jp": "出来事について簡単な質問をし、答えられる（どこでいつ起きたか、誰がいたか、どうだったかを尋ねるなど）。",
+    "exponents": [
+     "When and where was it?",
+     "Who was there?",
+     "What was it like?"
+    ],
+    "scene": "出来事について、いつ・どこで・誰が・どうだったかを尋ねあう。",
+    "howwell": "過去形の疑問文運用：was / did の作り分け。",
+    "l1": "be 動詞過去と一般動詞過去の疑問文の作り分け（Was it ...? / Did it ...?）が混線しやすい。",
+    "delta": "現在から過去へ。出来事を尋ねる基本セット（when / where / who / what ... like）が揃う。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 541,
+    "en": "Can give and receive information about quantities, numbers, prices, etc.",
+    "jp": "量・数・価格などについての情報を伝え合える。",
+    "exponents": [
+     "How much is it? — It's twelve fifty.",
+     "Two kilos of rice, please.",
+     "It's thirty euros a night."
+    ],
+    "scene": "買い物や注文で、量・数・値段の数字をやり取りする。",
+    "howwell": "文法的正確さ（数詞・単位・通貨）：数の聞き取りと産出。",
+    "l1": "数字は事実授受の最初の砦。thirteen/thirty の強勢対の聞き分け、万進法からの桁変換（10万= a hundred thousand）、単位の可算性（two coffees / two cups of coffee）。日本語の助数詞体系（〜個・〜枚・〜本）は英語では単位名詞への写像になる。",
+    "delta": "（情報管理相の起点）数値という最も裸の事実の授受。疑問文が作れるようになった学習者に、次に問われるのは運ぶ中身の管理である。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 568,
+    "en": "Can exchange limited information on familiar and routine operational matters.",
+    "jp": "身近で日常的な業務上の事柄について、限られた情報を交換できる。",
+    "exponents": [
+     "The meeting starts at ten.",
+     "Which room is it? — Room 302.",
+     "We need three more chairs."
+    ],
+    "scene": "職場や日常の決まった段取りについて、限られた範囲の情報を交換する。",
+    "howwell": "文法的正確さ（枠内の事実）：時刻・場所・数量を文に正しく載せる。",
+    "l1": "「限られた」とは、既知の枠（いつ・どこ・いくつ）に情報を流し込む段階ということ。この段階の主な事故は前置詞の選択（at ten / on Monday / in Room 302）で、日本語の「に」一本が英語では at/on/in に分岐する。",
+    "delta": "数値から、業務の段取りという枠つきの事実へ。授受はまだ既知の枠の穴埋めである。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 659,
+    "en": "Can formulate short, simple notes and messages relating to matters in areas of immediate need.",
+    "jp": "差し迫った必要のある領域の事柄について、短く簡単なメモや伝言を作成できる。",
+    "exponents": [
+     "Out of milk — could you buy some?",
+     "Dentist at 3pm. Back by 5."
+    ],
+    "scene": "差し迫った用件のメモ・伝言を残す。",
+    "howwell": "簡潔さと必要情報の充足：電報体の規約。",
+    "l1": "英語のメモ省略体にも規約があり、主語の省略は許容されるが時刻・場所の前置詞は残す（Dentist at 3pm）。日本語のメモ体をそのまま写すと、by 5（5時までに戻る）のような必須の関係標識が落ちる。",
+    "delta": "宛先が「その場にいない相手」になり、文脈補完が効かないぶん自己完結性が要求され始める。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 563,
+    "en": "Can ask and answer questions about habits and routines.",
+    "jp": "習慣や日課について質問し、答えられる。",
+    "exponents": [
+     "How often do you play tennis?",
+     "I go swimming twice a week."
+    ],
+    "scene": "習慣や日課を尋ねあう。",
+    "howwell": "頻度表現の精度：How often と「回数＋a week」。",
+    "l1": "頻度の答えの語順。日本語「週2回」から week twice の順になりがちで、twice a week の型を塊で要する。",
+    "delta": "569 の習慣質問が頻度・定期性の精度を得る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 564,
+    "en": "Can ask and answer questions about pastimes and past activities.",
+    "jp": "娯楽や過去の活動について質問し、答えられる。",
+    "exponents": [
+     "What did you do last weekend?",
+     "Have you ever been to Kyoto?"
+    ],
+    "scene": "娯楽や過去の活動を尋ねあう。",
+    "howwell": "過去形と経験の尋ね方の広がり。",
+    "l1": "経験の Have you ever ...? と単純過去 Did you ...? の使い分け ── 日本語は両方「〜したことある？／した？」で、完了相の別が立ちにくい。",
+    "delta": "572 の出来事質問が自分たちの経験へ向く。過去質問の在庫が厚くなる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 565,
+    "en": "Can ask and answer questions about plans and intentions.",
+    "jp": "計画や意図について質問し、答えられる。",
+    "exponents": [
+     "What are you going to do this weekend?",
+     "Are you doing anything tonight?"
+    ],
+    "scene": "計画・意図を尋ねあう。",
+    "howwell": "未来表現の使い分け（be going to／現在進行形）。",
+    "l1": "will／be going to／現在進行形の三系統が日本語の「〜するつもり」一本に潰れ、すべて will になりがち。",
+    "delta": "過去・現在に未来が加わり、質問応答相の時制三面が完成する。ここが下段の到達点 ── この先、梯子の主語は疑問文から情報そのものへ移る（相境界）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 562,
+    "en": "Can deal with practical everyday demands: finding out and passing on straightforward factual information.",
+    "jp": "実際的な日常の要求に対処できる：率直な事実情報を調べ、伝える。",
+    "exponents": [
+     "I'll find out and let you know.",
+     "The pharmacy closes at eight — I checked."
+    ],
+    "scene": "頼まれた事実を調べ、その結果を相手に伝える。",
+    "howwell": "伝達の完結性：調べる→伝えるの二段を一人で運びきる。",
+    "l1": "find out（調べて知るに至る）と know の相の区別が、日本語「知る／知っている」と非対称。また調べた結果を伝えるとき伝聞・情報源の標識（apparently / they said / according to...）を落とすと自分の断定になる ── 日本語「〜だそうです」の写像先を型として持つ必要がある。",
+    "delta": "その場の交換から、時間差のある伝達（finding out → passing on）へ。授受が「使いの往復」になり、一方向伝達の相が現れる。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2+",
+    "no": 642,
+    "en": "Can exchange information by text message, by e-mail or in short letters, responding to questions from the other person (e.g. about a new product or activity).",
+    "jp": "相手からの質問に答えながら、テキストメッセージ・メール・短い手紙で情報（新製品や活動についてなど）を交換できる。",
+    "exponents": [
+     "Thanks for your questions — the workshop is on the 14th, and yes, beginners are welcome."
+    ],
+    "scene": "相手の質問に答える形で、メールやメッセージで情報を往復させる。",
+    "howwell": "応答の対応づけ：どの質問への答えかを明示する。",
+    "l1": "複数の質問への応答で対応関係が崩れやすい。英語のメールは質問ごとに答える（列挙・インライン返信）のが規約で、日本語の「まとめてご回答いたします」型をそのまま写すと、どの答えがどの質問かが曖昧になる。",
+    "delta": "書面の授受が往復（responding to questions）になる。口頭の対話性が書面に入り込む段階。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2+",
+    "no": 679,
+    "en": "Can introduce themselves and manage simple exchanges online, asking and answering questions and exchanging ideas on predictable everyday topics, provided enough time is allowed to formulate responses, and that they interact with one interlocutor at a time.",
+    "jp": "応答を組み立てる時間が十分あり、一度に一人の相手とやりとりするなら、自己紹介をし、予測可能な日常の話題について質問し答え、アイディアを交換する簡単なオンラインのやりとりをこなせる。",
+    "exponents": [
+     "Hi, I'm new here. Is this group for beginners?",
+     "— Yes! We meet online every Tuesday."
+    ],
+    "scene": "オンラインで自己紹介し、日常話題の簡単な質疑をこなす（時間の余裕と1対1が条件）。",
+    "howwell": "条件付き運用：応答時間と相手数という補助輪の明示。",
+    "l1": "書き言葉でありながらテンポが会話に近い中間態。この段階の補助輪は「組み立てる時間」と「相手は一人」で、B1以降これが外れる。日本語話者には、考えてから書けるオンラインは口頭より参入しやすい ── 授受の練習場として使える。",
+    "delta": "書面授受が同期的なやり取りへ近づく中間形。条件句がそのままレベルの刻みになっている。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 557,
+    "en": "Can find out and pass on straightforward factual information.",
+    "jp": "率直な事実情報を調べ、伝えられる。",
+    "exponents": [
+     "Could you tell me the check-in time?",
+     "— The hotel says check-in is from three."
+    ],
+    "scene": "第三者から事実情報を入手し、別の相手に引き渡す。",
+    "howwell": "正確さ（内容の保存）：入手した情報を歪めずに運ぶ。",
+    "l1": "引き渡しの事故点は二つ：時制の扱い（The hotel said check-in was... と後退させるか、現在の事実として保つか）と、話者交替に伴う人称の付け替え（you→I→they）。日本語は主語を立てないため、誰の発言・誰の事情かの標識が転移で落ちやすい。",
+    "delta": "A2+ の 562 とほぼ同文言で、「実際的な日常の要求」という条件句だけが外れる ── 行為の切れ目でなく条件の緩和でレベルが刻まれている。相境界をまたぐ接続証拠（判断(k)、562/557型）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 559,
+    "en": "Can obtain more detailed information.",
+    "jp": "より詳しい情報を入手できる。",
+    "exponents": [
+     "Could you give me more details about the schedule?",
+     "What exactly does the price include?"
+    ],
+    "scene": "得た情報に追い質問を重ね、より詳しい情報を引き出す。",
+    "howwell": "語彙範囲＋談話（追い質問の型）：exactly / specifically / What about...? による詳細化。",
+    "l1": "詳細化の道具は疑問詞の精密化（What exactly... / How much of...）。日本語の「詳しく教えてください」という一括依頼と違い、英語は詳細の軸を指定して掘る ── どの軸を掘るかを言語化する習慣ごと学ぶ必要がある。",
+    "delta": "一往復の授受から、掘り下げの連鎖へ。ここで授受が談話になる。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 640,
+    "en": "Can compose basic e-mails/letters of a factual nature (e.g. to request information or to ask for and give confirmation).",
+    "jp": "事実に関わる基本的なメールや手紙（情報を求める、確認を求め与えるなど）を書ける。",
+    "exponents": [
+     "I am writing to request information about your summer courses.",
+     "Could you confirm my booking for 12 August?"
+    ],
+    "scene": "情報請求・確認のメールや手紙を、事実ベースで書く。",
+    "howwell": "書面の型：request / confirm の定型構文。",
+    "l1": "request / confirm の運用と、依頼疑問の書面形（Could you... / I would appreciate...）。「ご確認ください」を Please confirm で済ませてよい場面と、より遠隔化した形が要る場面 ── 書面レジスターの階段の入口に立つ。",
+    "delta": "私的メッセージから、用件別の型を持つ書簡へ。口頭B1+（555）と同じ「確認」の軸が、書面でも核になる。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 656,
+    "en": "Can formulate notes conveying simple information of immediate relevance to friends, service people, teachers and others who feature in their everyday life, getting across comprehensibly the points they feel are important.",
+    "jp": "友人・サービス業者・教師など日常生活に登場する人々に、直接関わりのある簡単な情報を伝えるメモを作成し、重要と思う点を理解可能な形で伝えられる。",
+    "exponents": [
+     "Ms Tanaka — the plumber can only come Thursday morning. Please leave the key with the neighbour if you're out."
+    ],
+    "scene": "日常の関係者へ、要点が確実に伝わる実用メモを書く。",
+    "howwell": "情報の選別：重要点を落とさず、伝わる順に並べる。",
+    "l1": "「重要と思う点を理解可能な形で」は情報の優先順位づけの問題。用件を先頭に置く英語メモの慣習と、経緯から入る日本語の作文習慣が衝突する ── 結論先行への再構成が、この段階の見えにくい壁。",
+    "delta": "定型メモから、相手の行動を導く実用文へ。書面の「自己完結性」が情報選別の技能に成長する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 555,
+    "en": "Can exchange, check and confirm accumulated factual information on familiar routine and non-routine matters within their field with some confidence.",
+    "jp": "自分の分野の身近な日常的・非日常的な事柄について、蓄積した事実情報をある程度自信をもって交換・照合・確認できる。",
+    "exponents": [
+     "So just to confirm, the order was placed on the 12th, right?",
+     "Let me double-check the figures with you."
+    ],
+    "scene": "蓄積した情報を相手と突き合わせ、齟齬がないかを照合・確認する。",
+    "howwell": "談話運営＋正確さ：確認のメタ発話（Just to confirm... / So you're saying...）。",
+    "l1": "確認は日本語では相槌と復唱で暗黙に行われがちだが、英語では明示的なメタ発話（Just to confirm / If I understood correctly）で行う ── 復唱だけでは確認として伝わらない。この明示化の型はこの行為固有の新しいL1難所で、統語ではなく確認行動の文化差である。",
+    "delta": "情報の授受に「照合」という品質管理の層が乗る。B1+の本質（with some confidence）は管理の自動化。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 591,
+    "en": "Can carry out a prepared interview, checking and confirming information, though they may occasionally have to ask for repetition if the other person’s response is rapid or extended.",
+    "jp": "相手の返答が速かったり長かったりする場合に時々繰り返しを求める必要はあっても、情報を確認しながら準備した面接を行える。",
+    "exponents": [
+     "You said you joined in 2019 — is that correct?",
+     "Sorry, could you say that again, please?"
+    ],
+    "scene": "準備した質問枠に沿って聞き取りを進め、要所で情報を確認する。",
+    "howwell": "談話運営（準備された枠の運用）＋方略（繰り返し要求）。",
+    "l1": "難所は準備した枠から外れた速い・長い返答への対処。Could you say that again? を恥ではなく手続きとして使えるかが分水嶺で、日本語話者最大の敵は聞き返し回避（分かったふり）。確認の道具立ては555と同じ ── 照合・確認の軸が制度化された場面に乗った形。",
+    "delta": "授受が制度化された枠（面接・聞き取り）で運用される。新しい道具は増えず、既存の軸が場面に固定される。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 554,
+    "en": "Can pass on detailed information reliably.",
+    "jp": "詳細な情報を確実に伝達できる。",
+    "exponents": [
+     "Let me walk you through the details.",
+     "The figures are as follows: ...",
+     "That's one-five — fifteen."
+    ],
+    "scene": "詳細な情報を、落ちや歪みなく確実に相手へ伝達する。",
+    "howwell": "伝達の信頼性（reliably）：順序立て・言い直し・要点の再掲による確実さの管理。",
+    "l1": "reliably は文型ではなく話者の技能への評価であり、その中身は信頼性の作法の束 ── 順序立て（First... then...）、数値の言い直し（that's one-five, fifteen）、要点の再掲。日本語話者は詳細を経緯の時系列で流しがちで、聞き手の必要に合わせた重要度順への再構成が壁になる。",
+    "delta": "口頭系列の到達点。梯子の頂点にあるのは高度な文法ではなく、伝達の信頼性という運用の質である。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2",
+    "no": 633,
+    "en": "Can compose non-routine professional letters, using appropriate structure and conventions, provided these are restricted to matters of fact.",
+    "jp": "事実の事柄に限られていれば、適切な構成と慣習を使って、非日常的な職業上の手紙を書ける。",
+    "exponents": [
+     "Further to our telephone conversation, I am writing to confirm the delivery schedule as follows: ..."
+    ],
+    "scene": "職業上の非日常的な手紙を、適切な構成と慣習で書く（内容は事実の事柄に限る）。",
+    "howwell": "社会言語的適切さ（構成と慣習）＋正確さ：制度化された型の中での事実伝達。",
+    "l1": "ビジネス書簡の構成規約（Further to... / as follows / 列挙）の習得は、日本語ビジネス文書の冒頭儀礼を直訳しない訓練と表裏。重要なのは但し書き ── 「事実の事柄に限る」。意見や交渉が入ればこのレベルを超えると、CEFR自身が事実伝達の境界に線を引いている。",
+    "delta": "書面系列の到達点。感謝・詫び（No.632）と同じCorrespondence B2帯の「レジスターの制度化」が、主張型でも再現する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 489,
+    "en": "Can follow up questions by probing for more detail and can reformulate questions if these are misunderstood.",
+    "jp": "詳細を掘り下げる質問で追及し、質問が誤解されたら言い換えられる。",
+    "exponents": [
+     "Could you be more specific?",
+     "Let me put the question another way."
+    ],
+    "scene": "会議で、答えの詳細を掘り下げて追い質問し、質問が誤解されたら言い換える。",
+    "howwell": "談話運営の頂点：質問を道具として設計・運用し、誤解を修復する。",
+    "l1": "質問の言い換えは「同じ質問の繰り返し」ではなく別ルートでの再設計。日本語の会議では質問の再構成が失礼と感じられがちで、修復をためらう。",
+    "delta": "上段の到達点：情報を引き出す側の技能が、照合（B1+）→信頼性（B2）を越えて、質問そのものの設計・修復に至る。"
+   }
+  ],
+  "discussion": [
+   "【一本の梯子 ── 疑問文が作れることから、情報を運べることへ】 二相接続型の全数シート第2号（第1号＝意見31）。下段＝質問応答相（構造、Pre-A1〜A2+、15件）：名前・時刻・番号という決まり文句の疑問文（Pre-A1）から、do 支持（A1・574）、疑問詞疑問文の語順（575）、過去の疑問文（572・564）、未来表現の三系統（565）へと、「尋ねる文が作れる」ことが梯子を刻む。上段＝情報管理相（運用、A1〜C1、16件）：limited（A2・568）→ straightforward（A2+・562／B1・557）→ more detailed（559）→ check and confirm（B1+・555）→ detailed reliably（B2・554）→ 質問の設計・修復（C1・489）という情報の量・粒度・信頼性の階段であって、文法の段階ではない。相境界は A2+/B1 帯にあり、562→557 の条件緩和（条件句が外れるだけの同文言対）が、切れ目のない一本の梯子である証拠になっている（判断(k)の接続証拠、562/557型＝意見の 480→448 と同型）。how well の主役も相境界で交代する ── 下段は文法的正確さ（do 支持・語順・時制）、上段は談話運営と伝達の信頼性。",
+   "【場面の広がり ── 自分の半径から制度の場へ】 下段の場面は自分の半径（名前・年齢・住まい・色・習慣・計画）に閉じ、尋ねる相手も対面の知り合いである。上段に入ると、使いの往復（562）・業務の段取り（568）・準備した面接（591）・会議での追及（489）と、情報が制度的な場で運用されるようになる。ただしレベルを刻むのは場のフォーマルさではなく情報管理の精度である ── 面接（B1+・591）は新しい道具を増やさず既存の軸を場面に固定するだけであり、C1 の頂点（489）も改まった言い方ではなく、質問の再設計という運用技能である。フォーマルさの梯子ではなく精度の梯子 ── この点が、同じ上段でも管理課題が対人対立に向かう苦情との違いになる。",
+   "【往復・応答の点検 ── ask and answer が対で書かれた行為】 テンプレート要件（判断(n)）の点検：下段の記述文はほぼすべて ask and answer / ask and tell と往復を明記し、する側と受ける側が最初から対で梯子を上る ── 四役完備（依頼）とも片側往復（苦情）とも異なる、対称往復の行為である。断る・返す型に相当するのは、答えられないときの返し（I'm not sure. / Let me check.）と聞き返し・確認（Could you say that again? / Just to confirm ...）であり、B1+ の照合・確認（555）が受け側在庫の中核をなす。日本語話者最大の敵は聞き返し回避（分かったふり）で、確認のメタ発話を恥ではなく手続きとして運用できるかが上段の分水嶺になる。日本語では確認が相槌と復唱で暗黙に行われるのに対し、英語では明示的なメタ発話で行う ── この明示化の型は統語でも語彙でもなく、確認行動の文化差という L1 難所である。伝聞・情報源の標識（they said / apparently）を落とすと他者の情報が自分の断定にすり替わる ── 受けた情報を第三者へ渡すときの受け側作法もここに属す。",
+   "【口頭は往復、書面は自己完結 ── 書面フォーマル一段の成立】 口頭系列24件が対話の往復で深まるのに対し、書面系列7件は文脈補完が効かないぶん自己完結性が階段になる：情報1粒＋質問1つの最小形（A1・649）→ 電報体の規約（A2・659）→ 質問との対応づけ（A2+・642）とオンラインの同期的往復（679）→ 用件別の型（B1・640）と重要度順の情報選別（656）→ そして書面 B2（633）で「適切な構造と内容」というレジスターの制度化に至る。書面フォーマル一段（判断(o)）は成立 ── 633 は3値判別の成立側3例の一つ（632・633・628）であり、業務書簡というフォーマル系列が B2 帯に達している。633 の但し書き「事実の事柄に限る」は本質的で、CEFR 自身が事実伝達と意見・交渉の間に引いた境界線として、この行為の輪郭を外から確定している。",
+   "【統合根拠と点検総括・語彙裁定】 統合根拠：判断(k)（第2周-1、質問応答↔授受の一行為二相統合）。証拠は (1) レベル帯の相補性（下段 Pre-A1〜A2+／上段 A1〜C1）、(2) 562/557 の条件緩和型接続、(3) 同一 Information exchange スケールの分有。相境界で L1 注意は質的に転換する ── 下段は統語（do 支持・疑問詞語順・時制の疑問文・it の脱落）、上段は談話（確認のメタ発話・伝聞標識・重要度順の再構成）。この転換点ゆえに、統合後も二相の別立て記述を保つ（一行為二相、act_phases.json が正準）。語彙裁定（判断(s)）：新規16行の実例は各レベルの語彙枠内で作成（スロット語彙の固有名詞 Ken / Kyoto は実例の登場人物・地名として正当、判断(s)-1 の枠）。継承15行のうち検証範型③で未裁定だった超過3語を量産時裁定（判断(s)-3）：pharmacy（562・A2+行）＝場所スロット、workshop（642・A2+行）＝行事スロット、plumber（656・B1行）＝職業スロット ── いずれもレベル保証は行為の枠（The X closes at ... — I checked. 等）に適用し、スロット名詞は可変域として保持（判断(s)-1）。keynote（会話維持427）は未収録につき allowlist 記載。"
+  ]
+ }
+}

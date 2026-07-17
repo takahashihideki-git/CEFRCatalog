@@ -65,6 +65,9 @@ if __name__ == "__main__":
         "catalog_greeting.json":      ("挨拶・別れ・安否",  9, "挨拶9"),
         "catalog_thanksapology.json": ("感謝・詫び・祝意",  6, "感謝詫び6"),
         "catalog_request.json":       ("依頼・要求",        6, "依頼6"),
+        "catalog_infoexchange.json":  ("事実情報の授受",   31, "授受31"),
+        "catalog_conversation.json":  ("会話の開始・維持",  5, "会話維持5"),
+        "catalog_emotion.json":       ("感情の表出",        8, "感情8"),
     }
     cat_done = []
     for fn, (act, n_rows, tag) in CATALOGS.items():
