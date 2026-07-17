@@ -4,3 +4,6 @@ oh	CEFR-J未収録の間投詞。A1級の定型応答（Oh, I'm sorry / Oh reall
 goodbye	CEFR-J未収録（bye は A1 収録）。別れの基本定型
 congratulations	CEFR-J未収録の祝意定型。書面 Pre-A1〜A2 の中核 exponent
 congrats	CEFR-J未収録。congratulations の短縮形（書面カジュアル）
+ah	CEFR-J未収録の間投詞（oh同族）。応答の受けの定型
+hmm	CEFR-J未収録の間投詞。保留・思案の合図（512の受け在庫）
+wow	CEFR-J未収録の間投詞。驚きの反応定型（681のSNS受け在庫）

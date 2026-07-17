@@ -9,7 +9,7 @@ def load_all(root="."):
     return {
         "descriptors": L("descriptors_en_1224.json"),      # No(str)->{scheme,mode,activity,scale,level,en}
         "translations": L("working_translations_1224.json"),# No(str)->和訳
-        "inventory":  L("inventory_182to23.json"),          # No(str)->行為名
+        "inventory":  L("inventory_182to22.json"),          # No(str)->行為名
         "phases":     L("act_phases.json"),                 # 一行為二相の正準記録（第2周-1）
         "cross_axes": L("cross_axes.json"),                 # 横断軸＋行為分類（下位系・梯子型、第2周-4）
         "act_type":   L("act_to_satype.json"),              # 行為名->4類型
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     assert set(D["descriptors"])==set(D["translations"]), "No不一致"
     assert sum(1 for v in D["verdicts"].values() if v["verdict"]=="ADOPT")==182
     assert len(D["verdicts"])==265
-    assert len(set(D["inventory"].values()))==23
+    assert len(set(D["inventory"].values()))==22
     assert len(D["prototypes"])==4
     from collections import Counter
     assert dict(Counter(p["block"] for p in D["partition"].values())) == {
@@ -57,7 +57,23 @@ if __name__ == "__main__":
             check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
             n_verif_acts += 1
     assert n_verif_acts == 5, "検証範型の行為数不一致"
-    PHASE_SIZES = {"事実情報の授受": 31, "明確化・繰り返しの要求": 17}
+    # 第3周の全数シート（catalog_*.json）── 存在すれば照合（第3周-1: 意見表明）
+    cat_msg = ""
+    cat_path = os.path.join("prototypes", "catalog_opinion.json")
+    if os.path.exists(cat_path):
+        C = json.load(open(cat_path, encoding="utf-8"))["意見・見解の表明"]
+        acts = []
+        for r in C["rows"]:
+            no = str(r["no"])
+            assert r["en"] == D["descriptors"][no]["en"], f"catalog原文不一致 No.{no}"
+            assert r["level"] == D["descriptors"][no]["level"], f"catalogレベル不一致 No.{no}"
+            assert r["jp"] == D["translations"][no], f"catalog訳不一致 No.{no}"
+            assert D["inventory"].get(no) == "意見・見解の表明", f"catalog行為所属不一致 No.{no}"
+            acts.append(no)
+        assert len(C["rows"]) == 31 and len(set(acts)) == 31, "catalog件数不一致"
+        assert len(C["discussion"]) == 5, "catalog DISCUSSION段落数不一致"
+        cat_msg = " / 全数シート意見31照合"
+    PHASE_SIZES = {"事実情報の授受": 31, "明確化・繰り返しの要求": 17, "意見・見解の表明": 31}
     for act, expected in PHASE_SIZES.items():
         parts = [set(v) for v in D["phases"][act].values() if isinstance(v, list)]
         union = set().union(*parts)
@@ -71,4 +87,4 @@ if __name__ == "__main__":
     assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 8, "検証済件数の不一致"
     assert {a for a,c in cx.items() if c["梯子型"]=="二相接続型"} == set(D["phases"].keys()), "二相接続型とact_phasesの不一致"
     assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩265・ADOPT182 / 行為23 / 二相31+17 / 分類23・下位系12 / 範型4照合 / 検証範型5照合 / 区分分割7")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩265・ADOPT182 / 行為22 / 二相31+17+31 / 分類22・下位系12 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg)

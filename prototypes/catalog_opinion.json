@@ -1,0 +1,503 @@
+{
+ "意見・見解の表明": {
+  "title": "意見・見解の表明（Expressing opinions & views）── 全数シート",
+  "scope": "全数（意見・見解の表明27＋好悪の表明4＝31行。好悪統合の最終判定＝判断(l)を組み込み）",
+  "type": "表出的（expressive）＋主張的要素 ── 話者の心的態度（賛否・評価）を表明し、根拠で支える。下位系＝意見表明系（第一分類層）、梯子型＝管理梯子型（管理課題：対立管理）",
+  "essence": "ある事柄への評価スタンスを述べる行為。like/dislikeの直言（好悪）に始まり、I think枠・比較・根拠・維持を経て、他者の論の評価・再構成・反論へ深化する。梯子の実体は対立管理であり、上段はフォーマル場面で立つ。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 480,
+    "en": "Can exchange likes and dislikes for sports, foods, etc., using a limited repertoire of expressions, when addressed clearly, slowly and directly.",
+    "jp": "明瞭にゆっくり直接話しかけられれば、限られた表現のレパートリーで、スポーツや食べ物などの好き嫌いを伝え合える。",
+    "exponents": [
+     "I like soccer. And you?",
+     "I don't like fish. — Really? I like it!",
+     "I love this song."
+    ],
+    "scene": "友人との雑談で、スポーツや食べ物の好き嫌いを伝え合う（ゆっくり明瞭に話しかけてもらえる配慮つき）。",
+    "howwell": "語彙範囲（like/love/don't like の基本評価語の在庫）＋往復の応答。",
+    "l1": "「〜が好き」の直訳で like の目的語が落ちる（I like. で止まる）、対象を主語に立てる転移（Soccer is like）が典型。応答の在庫（Me too. / Really? I don't.）が無いと、好き嫌いの「交換（exchange）」が一方通行の表明で止まる。",
+    "delta": "（梯子の底）評価スタンスの最小形。like/dislike の直言と、その往復。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 448,
+    "en": "Can state what they like and dislike.",
+    "jp": "好きなものと嫌いなものを言える。",
+    "exponents": [
+     "I like Italian food, but I don't really like fast food.",
+     "I love old movies. — Oh, me too!",
+     "I don't like waiting."
+    ],
+    "scene": "会話の中で、自分の好き嫌いをはっきり述べる。",
+    "howwell": "文法（対比の but・don't really like の緩衝）。",
+    "l1": "really の位置問題 ── don't really like（やんわり）と really don't like（強否定）の交替を知らないと、緩衝のつもりが強否定になる。また日常の「苦手」に I hate を使うと強すぎる。",
+    "delta": "480との差＝聞き手の配慮条件が外れ、対比（but）で一文内に好悪を並べられる。「交換」から「陳述」へ自立。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 479,
+    "en": "Can express opinions in a limited way.",
+    "jp": "限られた形で意見を表明できる。",
+    "exponents": [
+     "I think it's good.",
+     "I like it. / I don't like it.",
+     "For me, it's too expensive."
+    ],
+    "scene": "身近な事柄に、ごく短く賛否や評価を述べる。",
+    "howwell": "文法（I think 節）：I think + 文 の骨格。",
+    "l1": "I think を付けずに It's good. と言い切ると断定に響く。日本語は「〜と思う」を多用して主観を和らげるが、英語でも I think は立場表明の基本枠。ただし日本語の「思う」ほど義務的ではなく、乱発すると自信なさげにも響く、という温度差がある。",
+    "delta": "好悪の直言に I think 枠が被さり、対象が「好き嫌い」から「良し悪しの評価」へ一般化する（評価梯子の蝶番その1）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 502,
+    "en": "Can express what they think about things when addressed directly in a formal meeting, provided they can ask for repetition of key points if necessary.",
+    "jp": "必要なら要点の繰り返しを求められるという条件で、公式の会議で直接話を向けられたときに、物事についての考えを表明できる。",
+    "exponents": [
+     "I think it's a good plan.",
+     "Sorry, could you say the last point again?",
+     "For me, plan A is better."
+    ],
+    "scene": "【フォーマル】公式の会議で直接意見を求められて答える（要点の繰り返しを求められる条件つき）。",
+    "howwell": "社会言語的適切さ（会議の場での最小の型）＋方略（繰り返し要求の併用）。",
+    "l1": "「公式の場＝上級」の通念に反し、A2で既に会議での意見表明が射程に入る。日本語話者は会議の発言を「完璧な英語で長く」と構えて沈黙しがちだが、CEFRの設計は「短くても、聞き返しながら、直接振られたら答える」をA2の達成とする。",
+    "delta": "479と同じ最小形の意見が、フォーマル場面＋修復方略の条件つきで成立する。行為は同じで、場面条件だけが異なる（フォーマルは行為でなく場面の刻み＝判断(r)）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 473,
+    "en": "Can exchange opinions and compare things and people using simple language.",
+    "jp": "簡単な言葉で意見を交換し、物や人を比較できる。",
+    "exponents": [
+     "I think summer is better than winter.",
+     "This one is nicer, but that one is cheaper.",
+     "What do you think? — I agree. / I'm not sure."
+    ],
+    "scene": "二つの選択肢を比べ、意見を交換し合う。",
+    "howwell": "文法（比較級）＋社会言語的適切さ：比較構文と同意/留保の応答。",
+    "l1": "比較級（better than, nicer）の構造は日本語の「〜より」と語順が逆で作りにくい。また I'm not sure.（やんわり不同意）のような中間的応答の層が薄く、賛成か沈黙かの二択になりがち。",
+    "delta": "「AよりBが良い」の比較は、評価に理由の原型が芽生える蝶番（その2）── 比較は根拠（462）の最初の形。単独の評価から交換と比較へ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 501,
+    "en": "Can exchange relevant information and give their opinion on practical problems when asked directly, provided they receive some help with formulation and can ask for repetition of key points if necessary.",
+    "jp": "言い方に多少の助けがあり、必要なら要点の繰り返しを求められるなら、直接尋ねられたときに関連情報を交換し、実際的問題について意見を述べられる。",
+    "exponents": [
+     "We have a problem with the time. I think we need one more week.",
+     "Sorry, what was the question? — About the money. — Ah. I think it's too much."
+    ],
+    "scene": "【フォーマル】実際的な問題について、直接尋ねられて情報と意見を述べる（言い方の助け・繰り返し要求の条件つき）。",
+    "howwell": "社会言語的適切さ＋方略（足場かけ：定式化の援助と聞き返し）。",
+    "l1": "意見（I think we need...）と情報（現状の報告）の抱き合わせが、このレベルの実務会議の基本形。日本語話者は「意見」と構えると評論調になりがちだが、求められているのは実際的問題への短い実用判断。",
+    "delta": "502との差＝受け答えに「関連情報の交換」が加わり、意見が実務判断として機能し始める。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 469,
+    "en": "Can give or seek personal views and opinions in discussing topics of interest.",
+    "jp": "関心のある話題を論じる中で、個人的な見解や意見を述べ、または求められる。",
+    "exponents": [
+     "Personally, I think we worry too much about it.",
+     "What do you think? / What's your view?",
+     "How about you?"
+    ],
+    "scene": "関心のある話題の議論で、意見を述べ合い、相手の意見も引き出す。",
+    "howwell": "話題の展開（意見の授受の双方向化）。",
+    "l1": "「求める」側の在庫（What do you think? / What's your view?）が薄いと、議論が自分の表明だけで途切れる。意見を求めることは相手を議論に招く行為で、往復軸の「する側／受ける側」の双方向性がここで明示化する。",
+    "delta": "表明の往復に「意見を求める」方向が加わり、議論の共同運営が始まる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 470,
+    "en": "Can make their opinions and reactions understood as regards solutions to problems or practical questions of where to go, what to do, or how to organise an event (e.g. an outing).",
+    "jp": "問題の解決策や、どこへ行くか・何をするか・行事（外出など）をどう企画するかといった実際的な問いについて、自分の意見や反応を理解させられる。",
+    "exponents": [
+     "I think we should take the train — it's cheaper.",
+     "Why don't we meet at six? That works for everyone.",
+     "I'd rather go on Saturday."
+    ],
+    "scene": "どこへ行くか・何をするかの実際的な相談で、自分の意見と反応を通じさせる。",
+    "howwell": "文法（should / Why don't we / I'd rather の提案・選好構文）。",
+    "l1": "選好の I'd rather、提案の Why don't we の在庫が要。日本語の「〜でいいよ」の消極的同意を It's OK. で写すと不承不承に響く ── 賛成なら Sounds good. / Works for me. の積極形を使う。",
+    "delta": "意見が「相談の中の実用判断」として機能する系列の口語版（514/515の協働と地続き）。469の話題論議と対をなす。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 471,
+    "en": "Can express beliefs, opinions and agreement and disagreement politely.",
+    "jp": "信念・意見・賛否を丁寧に表現できる。",
+    "exponents": [
+     "I see your point, but I think...",
+     "I agree with you up to a point.",
+     "Actually, I don't really think that's true."
+    ],
+    "scene": "議論の中で、賛成・反対を相手を立てつつ丁寧に表明する。",
+    "howwell": "社会言語的適切さ（不同意の緩衝）：反対を丁寧に包めるか。",
+    "l1": "ここが表出型最大のL1難所。日本語話者は不同意を避けて曖昧にするか、逆に But that's wrong. と裸で否定して角を立てるかに振れる。英語は I see your point, but... / I'm not sure I agree で、相手をまず受けてから反対する型が定石。この「受けてから返す」二段構えは明示的に教える必要がある。",
+    "delta": "単なる評価から「賛否の丁寧な表明」へ。不同意の緩衝が中心課題になる（受けてから返す型の登場）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 514,
+    "en": "Can make their opinions and reactions understood as regards possible solutions or the question of what to do next, giving brief reasons and explanations.",
+    "jp": "可能な解決策や次に何をするかの問いについて、簡単な理由や説明を添えて自分の意見や反応を理解させられる。",
+    "exponents": [
+     "I think plan B is better, because it's simpler.",
+     "Good idea, but it may cost too much.",
+     "Let's try this one first and see."
+    ],
+    "scene": "【協働】共同作業（料理・行事の企画・文書の検討）で、理由を添えて意見と反応を通じさせる。",
+    "howwell": "話題の展開（because による理由の添付）。",
+    "l1": "because 一語の理由添付がこの段の要。日本語話者は理由を言わず結論だけ置く（「Bがいいと思います」）か、逆に事情説明の前置きが長く結論が遅れるかに割れる。英語の実務相談は結論＋短い理由の順。",
+    "delta": "470との差＝「簡単な理由や説明を添える」が明文化される。意見に根拠の最小形が接続する（462の本格的論拠の前段）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 515,
+    "en": "Can invite others to give their views on how to proceed.",
+    "jp": "進め方について他の人に意見を求められる。",
+    "exponents": [
+     "What do you think we should do next?",
+     "Aya, how would you do this part?",
+     "Any ideas about the plan?"
+    ],
+    "scene": "【協働】共同作業の進め方について、他のメンバーに意見を求める。",
+    "howwell": "発言権（相手に回す）＋社会言語的適切さ。",
+    "l1": "469の「求める」の協働版。名指しで振る（Aya, what do you think?）は日本語の会議では上位者の役回りに感じられがちだが、英語の協働では対等な参加者の通常業務。振られる前に、振る側に回る在庫を持つ。",
+    "delta": "意見を求める行為が、議論（469）から作業の運営（進め方の合意形成）へ移る。往復軸の「する側」の能動化。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 464,
+    "en": "Can express their thoughts about abstract or cultural topics such as music or films.",
+    "jp": "音楽や映画などの抽象的・文化的な話題について考えを表現できる。",
+    "exponents": [
+     "What I like about this film is how it handles memory.",
+     "It's not really my kind of music, but I can see why people love it.",
+     "The story felt a bit slow, but the ending made up for it."
+    ],
+    "scene": "映画・音楽など抽象度の高い対象に、込み入った感想を述べる。",
+    "howwell": "叙述の正確さ＋語彙範囲：抽象的評価の語彙と構造。",
+    "l1": "抽象的対象の評価は、日本語では「よかった／いまいち」で済ませがちだが、英語では what I like about X is... のような焦点化構文や、譲歩（but I can see why...）を使って立場を立体的に述べる。この構文の層を持たないと、抽象評価が幼く聞こえる。",
+    "delta": "身近な物から「抽象的・文化的対象」へ。評価語彙と焦点化構文が加わる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 466,
+    "en": "Can give brief comments on the views of others.",
+    "jp": "他者の見解に短いコメントができる。",
+    "exponents": [
+     "That's a good point.",
+     "True, but there's another side to it.",
+     "Interesting — I hadn't thought of that."
+    ],
+    "scene": "議論で、他者の見解に短く反応を返す。",
+    "howwell": "社会言語的適切さ（受けの定型在庫）。",
+    "l1": "往復軸の「受ける側」の中核。日本語の相槌（「なるほど」「たしかに」）を無言のうなずきで写すと、英語議論では不参加に見える。That's a good point. / Fair enough. / I hadn't thought of that. の受け在庫が、議論への在席証明になる。",
+    "delta": "471の緩衝（受けてから返す）の「受け」部分が独立の行として立つ。※No.512（協働スケール）と同文言 ── CEFRが同一記述文を2スケールに再掲した重複対（DISCUSSION④参照）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 497,
+    "en": "Can put over a point of view clearly, but has difficulty engaging in debate.",
+    "jp": "見解を明確に伝えられるが、討論への参加は難しい。",
+    "exponents": [
+     "Our team's position is clear: we need more time for testing.",
+     "I understand the question, but I can't answer all the points now."
+    ],
+    "scene": "【フォーマル】会議で見解を明確に伝える（討論の応酬はまだ難しい、という上限つき）。",
+    "howwell": "叙述の正確さ（見解の明確な提示）。",
+    "l1": "この記述文は「できる」と「まだ難しい」の複合で、B1+の実像＝一方向の表明は立つが応酬（debate）は立たない。日本語話者はここで「討論ができないから発言しない」に振れがちだが、CEFRは表明単体を先に立ててよいと言っている。",
+    "delta": "表明の明確さが会議レジスターで一段上がる。ただし応酬は492/486の課題として残る（対立管理の梯子の中間標識）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 512,
+    "en": "Can give brief comments on the views of others.",
+    "jp": "他者の見解に短いコメントができる。",
+    "exponents": [
+     "Nice idea — let's keep it.",
+     "Hmm, that part may be a problem.",
+     "Sounds good to me."
+    ],
+    "scene": "【協働】共同作業で、メンバーの案に短くコメントを返す。",
+    "howwell": "社会言語的適切さ（受けの定型、作業文脈）。",
+    "l1": "466と同文言の協働版。作業では受けのコメントが次の一手の承認／保留として機能する（Sounds good = go サイン）。曖昧な相槌は進行の承認と誤読される ── 保留なら Let me think about it. と明示する。",
+    "delta": "466の受け在庫が、議論の相槌から作業進行の制御信号へ機能を変える。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 460,
+    "en": "Can take an active part in informal discussion in familiar contexts, commenting, putting a point of view clearly, evaluating alternative proposals and making and responding to hypotheses.",
+    "jp": "身近な文脈での非公式な議論に積極的に参加し、コメントをし、見解を明確に述べ、代替案を評価し、仮説を立て、それに応じられる。",
+    "exponents": [
+     "If we did it online, we'd save money — but we'd lose the social side.",
+     "Comparing the two plans, the second is more realistic.",
+     "Suppose we wait a month — what changes?"
+    ],
+    "scene": "身近な文脈の議論に積極参加し、代替案の評価や仮説の立て合いまで担う。",
+    "howwell": "柔軟さ＋話題の展開（仮定法・代替案評価）。",
+    "l1": "仮説の if 節（If we did..., we'd...）の仮定法が構造上の壁。日本語の「〜したらどうなる？」の感覚で直説法 If we do を使い続けると、現実の提案と思考実験の区別が消える。",
+    "delta": "462と対をなすB2の広がり（462＝深さ：維持、460＝幅：代替案・仮説）。意見表明が議論の運営技術群と束になる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 462,
+    "en": "Can account for and sustain their opinions in discussion by providing relevant explanations, arguments and comments.",
+    "jp": "適切な説明・論拠・コメントを提供して、議論の中で自分の意見を述べ、支持できる。",
+    "exponents": [
+     "I'd argue that... for two reasons. First,... Second,...",
+     "That's a fair point, but the evidence actually suggests otherwise.",
+     "I stand by what I said, because..."
+    ],
+    "scene": "議論で自分の立場を、根拠を挙げて主張し、反論にも耐えて維持する。",
+    "howwell": "話題の展開＋叙述の正確さ：意見を論拠で構造的に支える。",
+    "l1": "「意見を論拠で支え、維持する」は日本語話者に不慣れ。日本語の議論は結論を曖昧に残す作法もあるが、英語では I'd argue that... because... と立場と根拠を明示し、反論されても I stand by... と保持することが誠実とされる。撤回しすぎると立場が無いと見なされる。",
+    "delta": "B1+からの飛躍：感想の表明から「論拠で支え維持する主張」へ。表出が論証に接続する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 495,
+    "en": "Can contribute, account for and sustain their opinion, evaluate alternative proposals and make and respond to hypotheses.",
+    "jp": "自分の意見を述べ、その理由を挙げて支持し、代替案を評価し、仮説を立て、それに応じられる。",
+    "exponents": [
+     "I still think option A is right, and here's why.",
+     "Compared with the first idea, this one carries less risk.",
+     "What if we split the project into two parts?"
+    ],
+    "scene": "【フォーマル】公式の会議で、意見の提出・支持・維持、代替案の評価、仮説の応酬を担う。",
+    "howwell": "話題の展開＋社会言語的適切さ（会議での維持）。",
+    "l1": "460/462のフォーマル対。会議で立場を維持する（sustain）ことは日本語の会議作法では「頑固」に映りうるが、英語の公式討議では根拠つきの維持が貢献（contribute）と数えられる。撤回は根拠が崩れたときにのみ。",
+    "delta": "informal（460/462）の技術群が会議レジスターに移植される段。「述べ・支え・維持し・比べ・仮定する」一式が両場面で揃う。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 492,
+    "en": "Can express their ideas and opinions with precision, and present and respond to complex lines of argument convincingly.",
+    "jp": "自分のアイディアや意見を正確に表現し、複雑な論の筋道を説得力をもって提示し、それに応答できる。",
+    "exponents": [
+     "To be precise, the issue is not cost itself but how it grows over time.",
+     "Your argument rests on two claims — the first I accept, the second is more doubtful."
+    ],
+    "scene": "【フォーマル】会議で、複雑な論の筋道を精密に提示し、それに応答する。",
+    "howwell": "叙述の正確さ（精密さ precision）。",
+    "l1": "論の「精密さ」は語彙の難しさではなく、区別の明示（not X itself but how X...）と論の分解（two claims — first... second...）。日本語話者は精密さを丁寧さ・婉曲で代用しがちだが、英語の precision は構造の解像度。",
+    "delta": "B2の維持から「精密な提示と応答」へ。487の restate→challenge の直前段。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 486,
+    "en": "Can argue a formal position convincingly, responding to questions and comments and answering complex lines of counter-argument fluently, spontaneously and appropriately.",
+    "jp": "質問やコメントに応じ、複雑な反論に流暢・自発的・適切に答えながら、公式の立場を説得力をもって論じられる。",
+    "exponents": [
+     "Let me answer the three objections in turn.",
+     "That criticism would hold if X were true — but the data show otherwise."
+    ],
+    "scene": "【フォーマル】公式の立場を、質問・コメント・複雑な反論に即応しながら論じ切る。",
+    "howwell": "流暢さ＋柔軟さ（即応 spontaneously）。",
+    "l1": "課題は準備した論の再生でなく、反論への即時対応。日本語話者の会議英語は原稿依存になりやすく、想定外の反論で沈黙が生じる。反論の型を在庫化（That would hold if... / Fair point, and yet...）して即応可能にしておく。",
+    "delta": "492の精密さに「即応性」が加わる。守勢の応答から立場の防衛戦へ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 487,
+    "en": "Can restate, evaluate and challenge contributions from other participants about matters within their academic or professional competence.",
+    "jp": "自分の学術的・職業的能力の範囲内の事柄について、他の参加者の発言を言い直し、評価し、反論できる。",
+    "exponents": [
+     "If I understand your position correctly, you're saying... — but that assumes...",
+     "Your point about cost is well taken; the timing claim, however, doesn't hold."
+    ],
+    "scene": "【フォーマル】専門的能力の範囲内で、他の参加者の発言を言い直し、評価し、反論する。",
+    "howwell": "叙述の正確さ＋柔軟さ（restate→評価→challenge の三段制御）。",
+    "l1": "670（書面C1）の口頭対。restate（言い直して確認）を飛ばして直接反論する日本語話者の癖はここで最も高くつく ── 言い直しは礼節であると同時に、反論の照準を固定する技術。",
+    "delta": "486の防衛（自陣）から、他者の論への評価・反論（攻勢）へ。対立管理の最上段の入口。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C2",
+    "no": 482,
+    "en": "Can hold their own in formal discussion of complex issues, putting an articulate and persuasive argument, at no disadvantage to other participants.",
+    "jp": "複雑な問題の公式討議で、他の参加者に引けを取らず、明確で説得力のある論を述べて自分の立場を保てる。",
+    "exponents": [
+     "The question is not whether we act, but when — and every month of delay narrows our choices.",
+     "I've heard three arguments against this plan; none of them survives a close look at the numbers."
+    ],
+    "scene": "【フォーマル】複雑な問題の公式討議で、他の参加者に引けを取らずに論陣を張る。",
+    "howwell": "話題の展開＋流暢さ（論の構築力の総合）。",
+    "l1": "C2の「引けを取らない」は語学の完成ではなく議論の対等性 ── 母語話者の議論速度の中で発言権と論の一貫性を保つこと。日本語話者が最後まで残る癖は、自分の論の完成度に集中して場の論戦から遊離すること。",
+    "delta": "487の三段制御が、討議全体を通した立場の保持へ拡張する。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C2",
+    "no": 484,
+    "en": "Can deal with hostile questioning confidently, hold on to the turn and diplomatically rebut counter-arguments.",
+    "jp": "敵対的な質問に自信をもって対処し、発言権を保ち、反論を外交的に退けられる。",
+    "exponents": [
+     "I hear the anger behind the question — let me answer the substance of it.",
+     "If you'll let me finish — the figures you mention are exactly why we propose this.",
+     "With respect, that's not what the report says."
+    ],
+    "scene": "【フォーマル】敵対的な質問に対処し、発言権を保ち、反論を外交的に退ける。",
+    "howwell": "社会言語的適切さ（最大）＋発言権（敵対環境での保持）。",
+    "l1": "対立管理の最終段＝敵意の処理。日本語話者は敵対的質問に謝罪から入りがち（I'm sorry, but...）で、これは英語討議では非を認めたと記録される。With respect / If you'll let me finish の外交的定型は、「譲らないための丁寧さ」という逆説を体現する。",
+    "delta": "梯子の終点。評価→反論（487）→論戦の対等（482）→敵意の中の保持（484）。ここで行為は苦情・クレーム（対立管理系）の最上段と稜線を接する。"
+   },
+   {
+    "mode": "書面",
+    "level": "A1",
+    "no": 647,
+    "en": "Can compose messages and online postings as a series of very short sentences about hobbies and likes/dislikes, using simple words and formulaic expressions, with reference to a dictionary.",
+    "jp": "辞書を参照しながら、簡単な語や定型表現を使って、趣味や好き嫌いについてのごく短い文の連なりとして、メッセージやオンライン投稿を書ける。",
+    "exponents": [
+     "I like music and movies.",
+     "My hobby is cooking. I like it very much.",
+     "I don't like sports, but I like walking."
+    ],
+    "scene": "辞書を引きながら、趣味と好き嫌いをごく短い文の連なりで書く（私信・投稿）。",
+    "howwell": "語彙範囲（辞書という外部資源込みの最小産出）。",
+    "l1": "書面の底は「ツール込み」で定義される（辞書参照が条件に明記）。一文一情報のごく短い文を恐れず連ねる ── 日本語作文の感覚で複文にしようとすると、A1の書面はかえって壊れる。",
+    "delta": "（書面の梯子の底）好悪の列挙が、書面では自己紹介の中核コンテンツになる。"
+   },
+   {
+    "mode": "書面",
+    "level": "A1",
+    "no": 684,
+    "en": "Can formulate very simple messages and personal online postings as a series of very short sentences about hobbies, likes/dislikes, etc., relying on the aid of a translation tool.",
+    "jp": "翻訳ツールの助けを借りながら、趣味や好き嫌いなどについて、ごく短い文の連なりとして、ごく簡単なメッセージや個人的なオンライン投稿を作れる。",
+    "exponents": [
+     "I like this game. It is fun. I play it every day.",
+     "My hobby is drawing. I like cats."
+    ],
+    "scene": "翻訳ツールの助けを借りて、趣味・好き嫌いのごく短い投稿を作る。",
+    "howwell": "方略（翻訳ツールの活用）＋語彙範囲。",
+    "l1": "647の辞書が翻訳ツールに替わった現代版の底。ツール出力をそのまま貼ると文体が浮く ── ごく短い文に切り戻して使う判断が、この段の実質的スキル。",
+    "delta": "647と同段の対（紙の辞書↔翻訳ツール）。条件の書き分けだけでレベルは同じ ── CEFRは資源条件で書面の底を刻んでいる。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2",
+    "no": 683,
+    "en": "Can make brief positive or negative comments online about embedded links and media using a repertoire of basic language, though they will generally have to refer to an online translation tool and other resources.",
+    "jp": "通常はオンライン翻訳ツールなどの資料に頼る必要はあるものの、基本的な言葉のレパートリーで、埋め込みリンクやメディアについて短い肯定的・否定的コメントをオンラインでできる。",
+    "exponents": [
+     "Love this! 😍",
+     "Not for me, sorry.",
+     "So true!"
+    ],
+    "scene": "SNSの投稿やリンクに、短い賛否のコメントを付ける。",
+    "howwell": "社会言語的適切さ（オンライン簡略表現）：口語的な短評の型。",
+    "l1": "英語オンラインの超短評（So true! / Not for me / This!）の語彙が乏しく、硬い I think this is good. で返しがち。日本語の「わかる」「それな」に当たる口語共感表現を、英語の型として別途持つ必要がある。",
+    "delta": "好悪の投稿（647/684）が、対象（リンク・メディア）への肯定否定コメントへ ── 書面の評価スタンスが「自分の趣味」から「他者の投稿物」へ向きを変える蝶番。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2+",
+    "no": 681,
+    "en": "Can comment on other people’s online postings, provided they are written/signed in simple language, reacting to embedded media by expressing feelings of surprise, interest and indifference in a simple way.",
+    "jp": "簡単な言葉で書かれていれば、埋め込みメディアに驚き・関心・無関心を簡単な方法で表しながら、他の人のオンライン投稿にコメントできる。",
+    "exponents": [
+     "Wow, great photo!",
+     "Interesting! Where is this?",
+     "Nice! I want to try it too."
+    ],
+    "scene": "他の人の投稿に、驚き・関心を短く表しながらコメントを返す。",
+    "howwell": "社会言語的適切さ（SNSの反応レジスター）＋往復（受ける側）。",
+    "l1": "書面版の「受ける側」在庫（Wow / Nice! / Interesting!）。日本語のSNS感覚で絵文字だけを返すと、英語圏では言語的反応の省略＝関与の薄さに読まれることがある。一語＋一文の型が最小の受け。",
+    "delta": "683の発信（自分のコメント）に、他者の投稿を受けて返す往復が加わる。往復軸の書面版が立つ。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 677,
+    "en": "Can post a comprehensible contribution in an online discussion on a familiar topic of interest, provided they can prepare the text beforehand and use online tools to fill gaps in language and check accuracy.",
+    "jp": "事前にテキストを準備し、オンラインツールで言葉の欠落を補い正確さを確認できるなら、関心のある身近な話題のオンライン議論に理解可能な投稿ができる。",
+    "exponents": [
+     "I think the article raises a good point about remote work, but it overlooks the cost side.",
+     "In my experience, this approach works better for small teams."
+    ],
+    "scene": "準備の上で、オンライン議論に理由を添えた意見を投稿する。",
+    "howwell": "叙述の正確さ（書面）：準備された、自己完結した意見投稿。",
+    "l1": "書面の意見投稿では、口頭の往復に頼れず、立場＋理由を一つの投稿で自己完結させる必要がある。日本語話者は結論を最後に置き前置きを長くしがちだが、英語オンライン議論は要点先行（I think X, but Y）が読まれやすい。",
+    "delta": "超短評から「理由を添えた議論への投稿」へ。準備を挟んだ自己完結した表明。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 635,
+    "en": "Can compose personal letters giving news and expressing thoughts about abstract or cultural topics such as music or film.",
+    "jp": "近況を伝え、音楽や映画などの抽象的・文化的な話題についての考えを表現する個人的な手紙を書ける。",
+    "exponents": [
+     "I finally watched that film you recommended. I loved the visuals, though the plot lost me a bit.",
+     "Lately I've been getting into jazz — there's something about it that really calms me down."
+    ],
+    "scene": "私信で、近況とともに文化的対象への考えを綴る。",
+    "howwell": "叙述の正確さ＋語彙範囲：私信レジスターでの抽象的感想。",
+    "l1": "私信での考えの表明は、口語的親密さと一定の内容を両立させる。日本語の手紙の様式（時候の挨拶等）を英語に持ち込むと不自然で、英語私信は近況と感想を地続きに書く。この様式差は書面ならではの注意点。",
+    "delta": "議論投稿から「私信での考えの表明」へ。親密なレジスターでの抽象的感想（464の書面対）。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2",
+    "no": 672,
+    "en": "Can participate actively in an online discussion, stating and responding to opinions on topics of interest at some length, provided contributors avoid unusual or complex language and allow time for responses.",
+    "jp": "参加者が珍しい・複雑な言葉を避け、応答の時間をくれれば、関心のある話題について意見を述べ、それに応じながら、オンライン議論にある程度の長さで積極的に参加できる。",
+    "exponents": [
+     "I see this differently. In my country, the same plan failed, and here is what happened: ...",
+     "Good thread. One point I'd add: the costs fall on different people over time."
+    ],
+    "scene": "オンライン議論に、意見の表明と応答をある程度の長さで往復させながら積極参加する（相手が平易な言葉と応答時間をくれる条件つき）。",
+    "howwell": "話題の展開（書面での維持と応答）。",
+    "l1": "462（口頭B2）の書面対＝書いて維持する。非同期の利点（考える時間）で根拠を組めるが、逆に長文化して読まれなくなる ── 英語フォーラムの作法は一投稿一論点。",
+    "delta": "677の単発投稿から、応答の往復を含む「書面の議論参加」へ。書面にも維持（sustain）が現れる。"
+   },
+   {
+    "mode": "書面",
+    "level": "C1",
+    "no": 670,
+    "en": "Can evaluate, restate and challenge arguments in professional or academic live online chat and discussion.",
+    "jp": "職業的・学術的なライブのオンラインチャットや議論で、論点を評価し、言い直し、反論できる。",
+    "exponents": [
+     "If I understand your position correctly, you're saying... — but that assumes...",
+     "I'd push back on that slightly. The data you cite don't quite support...",
+     "Let me put the question differently: the real issue isn't X, it's Y."
+    ],
+    "scene": "職業的・学術的なライブのオンライン議論（打鍵チャット）で、論点を評価し、言い直し、反論する。",
+    "howwell": "叙述の正確さ＋柔軟さ（最大）：論の評価・言い直し・反論の精密制御を、ライブの打鍵速度で。",
+    "l1": "C1では相手の論を restate（言い直して確認）してから challenge する高度な型が要る。日本語話者は要約確認を飛ばして直接反論しがちで、議論がかみ合わない。書面ライブでは口頭より痕跡が残る分、restate の照準固定効果が大きい。",
+    "delta": "書面の対立管理の最上段。487（口頭C1）の restate→評価→challenge と完全な口頭書面対をなし、両モードの梯子がC1で同じ三段制御に収斂する。"
+   }
+  ],
+  "discussion": [
+   "【評価梯子は好悪の直言から他者の論の再構成まで一本で立つ】 全数シートが示す梯子の実体：like/dislike の直言と往復（480/448）→ I think 枠への一般化（479）→ 比較＝理由の原型（473）→ 意見の授受の双方向化（469/515）→ 不同意の緩衝（471）→ 理由の添付（514）→ 論拠による支持と維持（462/495）→ 精密化（492）→ 即応（486）→ restate・評価・challenge（487/670）→ 論戦の対等と敵意の処理（482/484）。効く how well 軸は、低位で語彙・文法（評価語の在庫・I think 節・比較級）、B1以降は社会言語的適切さと叙述の正確さ（論拠の構造）へ移る。管理梯子型（管理課題＝対立管理）の教科書的な長い梯子である。",
+   "【フォーマルは行為でなく場面 ── A2の502が通念を壊し、C1/C2はフォーマルでのみ立つ】 フォーマル討議9件の配置は対立管理の梯子の上段を実データで立てた（判断(r)）。だが下端のNo.502はA2にあり、「公式の場＝上級」という通念を壊す ── 修復方略（聞き返し）併用の条件つきなら、会議での意見表明はA2の達成である。中間のNo.497（B1+）は「表明はできるが応酬はまだ」という正直な中間標識で、学習者に「討論ができないなら黙る」以外の選択肢を与える。C1/C2の4件（486/487/482/484）がフォーマルのみで立つことは、対立管理の最上段が制度的な場を要求することを示す。フォーマルは行為の種類でなく scene 欄の刻みであり（判断(o)(p)(r)と整合）、同一行為が場面条件を変えながら深化する。",
+   "【往復・応答の三点はこの行為で完全に揃う】 テンプレート要件（判断(n)）の点検結果：する側＝469「求める」・515「振る」、受ける側＝466/512「短い受けの在庫」・681「書面の受け」、断る・返す型＝471「受けてから返す緩衝」・473「I'm not sure の留保」・484「外交的に退ける」。とりわけ466/512が「受ける側」だけで独立の記述文として立つことは、往復軸がこの行為の骨格であることの内部証拠。L1難所も一貫して往復の非対称（日本語話者は「する側」の表明は学ぶが、受け・振り・退けの在庫が系統的に薄い）。",
+   "【口頭書面は対をなすが、書面フォーマル一段（判断(o)）は非再現 ── 条件不成立】 口頭と書面の梯子は段ごとに対応する：462↔672（維持）、464↔635（抽象的対象）、487↔670（restate→challenge）。書面の底は資源条件で刻まれる（647辞書／684翻訳ツール／683ツール参照／677事前準備 ── 条件の緩和がレベルを刻むというCEFRの設計（判断(k)）の書面版）。一方、判断(o)の「Correspondence B2帯のレジスター制度化段」は意見表明には現れない ── Correspondence系列がB1+（635）で止まり、B2帯の書面はOnline discussion（672）に引き継がれるため。条件付き昇格の適用条件「書面系列を持つ行為では」をさらに絞る材料：Correspondence がB2帯まで伸びる行為（感謝詫び・授受）でのみ現れる。なおNo.466とNo.512の同文言は、CEFRが同一記述文をInformal discussionとGoal-oriented co-operationの2スケールに再掲した重複対と確認（No.は別、場面機能は分化：議論の相槌↔作業の制御信号）。二行を保持し相互参照とする。",
+   "【好悪統合の判定：三条件成立 ── 一行為二相（評価相＋対立管理相）としての統合を支持】 (a) delta連鎖は切れない：口頭480（交換の最小形）→448（陳述への自立）→479（I think枠への一般化）→473（比較＝理由の原型）、書面647/684（趣味好悪の列挙）→683（対象への肯定否定コメント）── いずれも条件の緩和と対象の一般化で継ぎ目なく接続し、562/557型の「条件句の脱落」に相当する接続（480の受信配慮条件→448で脱落）も確認できる。(b) L1注意は二相として説明できる：下段＝定型・語彙（like構文の目的語、応答在庫、really の位置、ツールとの付き合い方）、上段＝談話・作法（緩衝、受けてから返す、維持、restate）── 授受（統語→談話）と同型の質的転換がA2/A2+境界で起きる。(c) 感情叙述系の軸は不要：好悪4件の実例に強度階層（sad<upset<devastated）も -ed/-ing の区別も要らず、like/love/don't like の評価語で完結する。よって統合基準の三条件が成立し、「意見・見解の表明」を親名とする三例目の二相接続型（評価相4件 A1〜A2＋対立管理相27件 A2〜C2）への統合を支持する ── 最終裁定はHidekiの承認による（承認後：23→22行為、inventory・act_phases・cross_axes・対外数字の更新）。"
+  ]
+ }
+}
