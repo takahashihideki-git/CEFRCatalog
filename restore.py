@@ -59,8 +59,11 @@ if __name__ == "__main__":
     assert n_verif_acts == 5, "検証範型の行為数不一致"
     # 第3周の全数シート（catalog_*.json）── 登録表で照合（第3周-1: 意見／第3周-2: 苦情）
     CATALOGS = {
-        "catalog_opinion.json":   ("意見・見解の表明", 31, "意見31"),
-        "catalog_complaint.json": ("苦情・クレーム",    9, "苦情9"),
+        "catalog_opinion.json":       ("意見・見解の表明", 31, "意見31"),
+        "catalog_complaint.json":     ("苦情・クレーム",    9, "苦情9"),
+        "catalog_greeting.json":      ("挨拶・別れ・安否",  9, "挨拶9"),
+        "catalog_thanksapology.json": ("感謝・詫び・祝意",  6, "感謝詫び6"),
+        "catalog_request.json":       ("依頼・要求",        6, "依頼6"),
     }
     cat_done = []
     for fn, (act, n_rows, tag) in CATALOGS.items():
