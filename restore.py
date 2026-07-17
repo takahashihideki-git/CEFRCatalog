@@ -68,6 +68,7 @@ if __name__ == "__main__":
         "catalog_infoexchange.json":  ("事実情報の授受",   31, "授受31"),
         "catalog_conversation.json":  ("会話の開始・維持",  5, "会話維持5"),
         "catalog_emotion.json":       ("感情の表出",        8, "感情8"),
+        "catalog_clarification.json": ("明確化・繰り返しの要求", 17, "明確化17"),
     }
     cat_done = []
     for fn, (act, n_rows, tag) in CATALOGS.items():
@@ -99,7 +100,7 @@ if __name__ == "__main__":
     for act, c in cx.items():
         assert c["出自類型"] == D["act_type"][act], f"出自類型の不一致 {act}"
         assert c["梯子型"] in {"管理梯子型","定型履行型","外部化型","二相接続型"}, f"梯子型の不正値 {act}"
-    assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 8, "検証済件数の不一致"
+    assert sum(1 for c in cx.values() if c["判定状態"]=="検証済") == 9, "検証済件数の不一致"
     assert {a for a,c in cx.items() if c["梯子型"]=="二相接続型"} == set(D["phases"].keys()), "二相接続型とact_phasesの不一致"
     assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
     # 梯子型別テンプレート（第3周-4・判断(u)）── cross_axes・帳簿との整合

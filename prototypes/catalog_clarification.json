@@ -1,0 +1,272 @@
+{
+ "明確化・繰り返しの要求": {
+  "title": "明確化・繰り返しの要求（Asking for clarification & repetition）── 全数シート",
+  "scope": "全数（17件。口頭13＋書面4。二相：理解表明相〔合図〕3＋明確化要求相〔要求〕14）",
+  "type": "指示的（directive）── 理解の破れを示し、修復を求める。下位系＝修復系、梯子型＝二相接続型（下段＝理解表明相〔合図〕、上段＝明確化要求相〔要求〕。判断(m)・第2周-2統合。旧「理解状態の表明」は表出型から移管の上で統合）",
+  "essence": "「分からない」を隠さず出すことに始まり、何が分からないかを特定して要求に変える技術で梯子が刻まれる。レベルが上がるとは、修復の照準が語から発話へ、概念へ、相手の暗黙へと精密になることである。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 747,
+    "en": "Can indicate with simple words/signs, intonation and gestures that they do not understand.",
+    "jp": "簡単な語・イントネーション・身振りで、理解していないことを示せる。",
+    "exponents": [
+     "Sorry? （眉を上げて聞き返す）",
+     "I don't understand. （首を振りながら）"
+    ],
+    "scene": "対面のやりとりで、語・イントネーション・身振りを重ねて「分かっていない」を伝える。",
+    "howwell": "合図の即時性 ── 沈黙や愛想笑いで流さず、その場で出せるか。",
+    "l1": "日本語の相槌「はい」「うん」は「聞いています」の信号だが、英語で Yes / uh-huh を打ち続けると「分かっている」の主張になる ── 分からないまま頷く癖が、非理解の合図そのものを消す。",
+    "delta": "（理解表明相の起点）合図の最小形。CEFRは語だけでなくイントネーションと身振りを正規の道具として明記する ── 言えなくても示せる、が出発点。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A1",
+    "no": 748,
+    "en": "Can express in a simple way that they do not understand.",
+    "jp": "理解できないことを簡単な方法で表現できる。",
+    "exponents": [
+     "I don't understand.",
+     "Sorry, that's too difficult for me."
+    ],
+    "scene": "理解できないことを、簡単な言い方ではっきり口に出す。",
+    "howwell": "定型文の在庫 ── I don't understand. を塊として即座に出せるか。",
+    "l1": "「分かりません」の明言が場の空気を壊すという感覚から表明を先送りしがち。表明の遅れは、後段の要求の機会ごと消す。",
+    "delta": "747との対 ── 747が手段（多モード）を、748が言語表現を書く。A1の課題は「非理解は隠さず出す」の一点で、同じ地点が二方向から記述される。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 745,
+    "en": "Can indicate that they did not follow.",
+    "jp": "話についていけていないことを示せる。",
+    "exponents": [
+     "Sorry, I'm not following you.",
+     "Wait — you've lost me."
+    ],
+    "scene": "説明や話の流れの途中で、ついていけなくなったことをその場で示す。",
+    "howwell": "表示のタイミング ── 流れを止めるべき地点の判断。",
+    "l1": "「話の腰を折る」ことへの抵抗で区切りまで待ち、結局全部を聞き直す羽目になりがち。英語の談話では途中表示のほうが親切とされる ── 遮りの閾値の較差。",
+    "delta": "対象が一語一文（点）から話の流れ（線）へ。合図はまだ要求を含まない ── ここまでが下段。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 746,
+    "en": "Can signal non-understanding and ask for a word/sign to be spelt out.",
+    "jp": "理解していないことを示し、語のつづりを言ってもらうよう求められる。",
+    "exponents": [
+     "Sorry, I don't know that word. How do you spell it?",
+     "Can you spell that, please?"
+    ],
+    "scene": "知らない語（名前・地名・専門語）で流れを止め、つづりを言ってもらう。",
+    "howwell": "合図から要求への接続 ── 一呼吸で両方を言えるか。",
+    "l1": "つづり要求は日本語会話にほぼ対応物がなく（漢字は「どう書く？」）、アルファベットの聴取（B/V・L/R）自体が修復の第二関門になる。",
+    "delta": "蝶番記述文（判断(m)）── 「示し」と「求め」が一文でつながり、相境界の上に立つ。求める修復は「つづり」という最小・最具体の一手。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 743,
+    "en": "Can ask very simply for repetition when they do not understand.",
+    "jp": "理解できないとき、ごく簡単に繰り返しを求められる。",
+    "exponents": [
+     "Could you say that again, please?",
+     "Sorry — once more, please."
+    ],
+    "scene": "聞き取れなかった発話の繰り返しを、ごく簡単に求める。",
+    "howwell": "依頼形の最小限の丁寧さ（Could you ...? の枠）。",
+    "l1": "「え？」「もう一回」の感覚で Again? とだけ上げ調子で言うと、場面によって幼く・ぞんざいに響く。Could you say that again? を塊で。",
+    "delta": "つづり（746）から繰り返しへ ── 修復対象が語から発話全体に広がる。ただし要求はまだ「同じものをもう一度」の一種類。"
+   },
+   {
+    "mode": "口頭",
+    "level": "A2+",
+    "no": 744,
+    "en": "Can ask for clarification about key words/signs or phrases not understood, using stock phrases.",
+    "jp": "決まり文句を使って、理解できなかった鍵となる語や句の明確化を求められる。",
+    "exponents": [
+     "What does that word mean?",
+     "Sorry, what do you mean by that?"
+    ],
+    "scene": "理解できなかった鍵となる語・句について、決まり文句で意味の明確化を求める。",
+    "howwell": "決まり文句の在庫（What does X mean? / What do you mean by X?）。",
+    "l1": "日本語の聞き返し「どういうこと？」は全体照準だが、英語の型は X を切り出す部分照準 ── 何が分からないかを語単位で特定する習慣が要る。",
+    "delta": "繰り返し（743＝再放送）から意味（言い換え）へ、修復の質が変わる。「決まり文句を使って」という支え型の条件つき。"
+   },
+   {
+    "mode": "書面",
+    "level": "A2+",
+    "no": 704,
+    "en": "Can interact online with a supportive partner in a simple collaborative task, responding to basic instructions and seeking clarification, provided there are visual aids such as images, statistics or graphs to clarify the concepts involved.",
+    "jp": "関わる概念を明確にする画像・統計・グラフなどの視覚的補助があれば、協力的な相手との簡単な協働作業で、基本的な指示に応じ明確化を求めながらオンラインでやりとりできる。",
+    "exponents": [
+     "Sorry, which picture do you mean?",
+     "I don't understand this part. Can you show me?"
+    ],
+    "scene": "画像・統計・グラフの視覚的補助がある簡単なオンライン協働で、協力的な相手に明確化を求めながら基本的な指示に応じる。",
+    "howwell": "視覚物への参照（this one / which picture）で言葉の不足を補う方略。",
+    "l1": "文字チャットでは相槌が消え、無反応と非理解の区別が相手からつかない。分からない時こそ短くても打ち返す ── 沈黙が最も誤読される。",
+    "delta": "書面系列の起点。視覚的補助と協力的な相手という二重の支えつきで、明確化要求がオンラインに載る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 742,
+    "en": "Can ask someone to clarify or elaborate what they have just said.",
+    "jp": "相手が今言ったことの明確化や詳述を求められる。",
+    "exponents": [
+     "What do you mean exactly?",
+     "Could you explain that a little more?"
+    ],
+    "scene": "相手が直前に言ったことの明確化や詳述を、自由な言い方で求める。",
+    "howwell": "照準の柔軟さ ── 明確化（clarify）と詳述（elaborate）の求め分け。",
+    "l1": "明確化要求と詳述要求は日本語では同じ「詳しく」に潰れがちだが、「分からないから言い換えて」と「分かったからもっと聞かせて」は別の発話。混線すると相手は同じ説明を繰り返す。",
+    "delta": "744の「決まり文句を使って」という支えが外れ、直前の発話を自由に指せる ── 支え型条件の脱落によるレベル刻み（562/557型の同族）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 531,
+    "en": "Can ask in a shop for an explanation of the difference between two or more products serving the same purpose, in order to make a decision, posing follow-up questions as necessary.",
+    "jp": "決定するために、店で同じ目的の二つ以上の製品の違いの説明を求め、必要に応じて追加質問できる。",
+    "exponents": [
+     "What's the difference between this one and that one?",
+     "Which one is better for everyday use?"
+    ],
+    "scene": "店頭で、同じ目的の二つ以上の製品の違いの説明を求め、追加質問を重ねて購入を決める。",
+    "howwell": "追加質問の連鎖 ── 一往復で終えず、決定に足りるまで掘る。",
+    "l1": "店員への追加質問を「手間をかけて悪い」と一往復で切り上げがち。英語圏の接客では質問の連鎖が標準の購買行動で、遠慮はむしろ決定の放棄と映る。",
+    "delta": "明確化要求が取引の意思決定の道具になる（Obtaining goods and services スケールからの参入＝場面横断性）。追加質問（follow-up）の初出。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1",
+    "no": 702,
+    "en": "Can respond to instructions and ask questions or request clarifications in order to accomplish a shared task online.",
+    "jp": "共有課題をオンラインで達成するために、指示に応じ、質問や明確化の依頼ができる。",
+    "exponents": [
+     "Quick question: which file should I use?",
+     "Just to check — is the deadline this Friday?"
+    ],
+    "scene": "オンラインの共有課題で、指示に応じつつ、不明点を文字で質問・確認する。",
+    "howwell": "確認の短文化 ── 用件だけを一行で切り出す型（Quick question: / Just to check:）。",
+    "l1": "日本語のチャット作法で前置き（お疲れさまです・少しよろしいでしょうか）を重ねると、同期的な協働のテンポを削ぐ。切り出しの定型を使えば直行してよい。",
+    "delta": "704の二重の支え（視覚補助・協力的な相手）の一方が外れ、通常の共有課題で機能する ── 書面側の条件緩和接続。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1+",
+    "no": 741,
+    "en": "Can ask for further details and clarifications from other group members in order to move a discussion forward.",
+    "jp": "議論を前に進めるために、グループの他のメンバーに詳細や明確化を求められる。",
+    "exponents": [
+     "Could you give us a bit more detail on the schedule?",
+     "Can you say more about the costs? I think it would help us decide."
+    ],
+    "scene": "グループ討議で、議論を前に進めるために他のメンバーへ詳細・明確化を求める。",
+    "howwell": "談話運営への寄与 ── 要求を「議論のための問い」として枠づける。",
+    "l1": "会議で問うことが「進行を止める行為」と感じられ沈黙しがちだが、この段の問いは前進の道具 ── to move a discussion forward という目的句がCEFRの文言に入っている。",
+    "delta": "修復の受益者が自分（〜B1）から場（グループ）へ移る ── 明確化要求が集団の道具になる転回点。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 699,
+    "en": "Can interact online with a group that is working on a project, following straightforward instructions, seeking clarification and helping to accomplish the shared tasks.",
+    "jp": "プロジェクトに取り組むグループとオンラインでやりとりし、率直な指示に従い、明確化を求め、共有課題の達成を助けられる。",
+    "exponents": [
+     "Could you explain what you mean by 'final version'?",
+     "Sorry — which task is mine?"
+    ],
+    "scene": "プロジェクトに取り組むグループとオンラインでやりとりし、明確化を求めながら共有課題の達成を助ける。",
+    "howwell": "参照の明示 ── どの発言・どの項目への質問かをチャット上で特定する。",
+    "l1": "流れるスレッドに裸の質問を置くと、何への質問か迷子になる。引用・項目番号・語の引用符で照準を可視化する型が要る。",
+    "delta": "704→702→699 と支えが順に外れ、集団プロジェクトの実務で機能する ── 口頭741と同じ「場の道具」化の書面版。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 739,
+    "en": "Can ask for explanation or clarification to ensure they understand complex, abstract ideas.",
+    "jp": "複雑で抽象的な考えを確実に理解するために、説明や明確化を求められる。",
+    "exponents": [
+     "Could you explain what you mean by 'sustainable growth' here?",
+     "I'd like to make sure I understand — are you saying the model fails in small markets?"
+    ],
+    "scene": "複雑で抽象的な考えを確実に理解するために、説明や明確化を求める。",
+    "howwell": "抽象概念の照準 ── 概念語を引用して問い、命題を言い換えて確かめる。",
+    "l1": "抽象概念の理解の穴は「単語は全部知っているのに分からない」形で現れ、語彙不足用の聞き返し型（744）では拾えない ── 命題単位の確認へ道具替えが要る。",
+    "delta": "対象が発話・事物から複雑で抽象的な概念へ。「確実に理解するため（to ensure）」── 修復から予防的確認へ重心が移る。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 740,
+    "en": "Can formulate follow-up questions to a member of a group to clarify an issue that is implicit or poorly articulated.",
+    "jp": "暗示的または不十分にしか表現されていない問題を明確にするために、グループのメンバーに追加質問を組み立てられる。",
+    "exponents": [
+     "You mentioned some risks — which risks exactly?",
+     "Can we go back to your second point? What did you mean there?"
+    ],
+    "scene": "暗示的・不明瞭にしか語られていない問題を、グループの一員への追加質問を組み立てて表に出す。",
+    "howwell": "問いの設計 ── 相手の発話の穴を特定し、質問の形に組み立てる（formulate）。",
+    "l1": "「察して補う」訓練が強く働き、不明瞭な発言を聞き手側の解釈で埋めてしまう ── 補完でなく発掘（相手に言語化させる）への切り替えが要る。",
+    "delta": "739が「難しいものを分かる」なら、740は「言われていないものを言わせる」── 相手がまだ言語化していない領域へ問いが届く。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 738,
+    "en": "Can ask follow-up questions to check that they have understood what someone intended to say, and get clarification of ambiguous points.",
+    "jp": "相手の言おうとしたことを理解できたか確認する追加質問をし、曖昧な点の明確化を得られる。",
+    "exponents": [
+     "So if I've understood you correctly, you're suggesting we delay the launch — is that right?",
+     "When you said 'soon', did you mean this week?"
+    ],
+    "scene": "相手の言おうとしたことを理解できたかを追加質問で照合し、曖昧な点の明確化を得る。",
+    "howwell": "確認のメタ発話 ── 自分の理解を言語化して差し出し、相手に照合させる。",
+    "l1": "復唱確認を「くどい」「疑っているようだ」と感じて省きがちだが、英語の業務・交渉談話では標準装備 ── 授受B1+（555）の照合・確認と同じ分水嶺がここに再現する。",
+    "delta": "問いの向きが反転する ── 相手の発話でなく自分の理解が確認の対象になる。確認のメタ発話（管理課題）が主役に立つ段。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 737,
+    "en": "Can ask for explanation or clarification to ensure they understand complex, abstract ideas in professional or academic contexts, live or online.",
+    "jp": "職業的・学術的な文脈で（対面でもオンラインでも）、複雑で抽象的な考えを確実に理解するために説明や明確化を求められる。",
+    "exponents": [
+     "Could you walk me through the argument once more? I want to be sure I follow the logic.",
+     "How exactly does this differ from the standard approach?"
+    ],
+    "scene": "職業的・学術的な文脈（対面でもオンラインでも）で、複雑で抽象的な考えの説明・明確化を求める。",
+    "howwell": "レジスター管理 ── 専門的な場での問いの立て方（前置き・限定・根拠の要求）。",
+    "l1": "専門の場では「基本的なことを訊くと無能に見える」という抑制が最大化する。問いを理解の欠如でなく検討の作法として差し出す枠（I want to be sure ... / just for clarity）が武器になる。",
+    "delta": "739と同文言＋「職業的・学術的文脈（対面でもオンラインでも）」の付加 ── 負荷型条件の付加によるレベル刻み。支え型条件の脱落（744→742）と対をなす、条件刻みのもう一方の型。同スケール内の条件対として二行保持。"
+   },
+   {
+    "mode": "書面",
+    "level": "C1",
+    "no": 668,
+    "en": "Can participate effectively in live, online professional or academic discussion, asking for and giving further clarification of complex, abstract issues as necessary.",
+    "jp": "必要に応じて複雑で抽象的な問題の明確化を求め、与えながら、ライブのオンライン専門的・学術的議論に効果的に参加できる。",
+    "exponents": [
+     "Could you clarify how this framework applies outside the EU?",
+     "To clarify my earlier point: I meant the second case, not the first."
+    ],
+    "scene": "ライブのオンライン専門的・学術的議論で、複雑で抽象的な問題の明確化を必要に応じて求め、また与えながら、効果的に参加する。",
+    "howwell": "求めと与えの双方向運用 ── 議論への効果的参加の部品として。",
+    "l1": "求める側の型だけ在庫していると、求められた瞬間に沈黙する ── 与える側の型（What I mean is ... / To put it another way ...）は別在庫で、ここで初めてcan-doに現れる。",
+    "delta": "到達点で往復が完成する ── 求める一方向だった行為に「与える」が加わり（asking for and giving）、修復の授受が対称になる。"
+   }
+  ],
+  "discussion": [
+   "【一本の梯子 ── 「分からない」を出すことから、何が分からないかを言えることへ】 二相接続型の全数シート第3号（第1号＝意見31、第2号＝授受31）。下段＝理解表明相（合図、A1〜A2、3件）：非理解を隠さず出すことがすべてで、A1は同じ地点を手段（747＝語・イントネーション・身振りの多モード）と言語表現（748）の二方向から書き、A2（745）で対象が一語一文（点）から話の流れ（線）へ広がる。上段＝明確化要求相（要求、A2〜C1、14件）：つづり（746）→繰り返し（743）→鍵語の意味・決まり文句（744）→自由照準（742）→追加質問の連鎖（531）→場のための問い（741）→抽象概念（739）→暗黙の発掘（740）→理解の照合（738）→専門文脈（737）と、修復の照準がどこまで特定・精密になるかが梯子を刻む。相境界はA2帯の中を走り、蝶番記述文746（合図＋つづり要求を一文で遂行）が境界の上に立つ（判断(m)）。この行為ではさらに、CEFRの条件句に二つの型があることが露わになる ── 支え型の脱落（744「決まり文句を使って」→742／704「視覚的補助・協力的な相手」→702→699）と、負荷型の付加（739→737「職業的・学術的文脈」）。562/557型（条件によるレベル刻み）が両方向から再現し、行為の切れ目でなく条件がレベルを刻むことの追加証拠となる。how well の主役も相境界で交代する ── 下段は合図の即時性（方略・流暢さ）、上段は談話運営と確認のメタ発話、C1でレジスター管理が加わる。",
+   "【場面の広がり ── 場面を持たない中核と、場面を運ぶ参入組】 中核スケール（Asking for clarification、12件）は場面をいっさい指定しない ── 修復はあらゆるやりとりに寄生する営みで、固有の場面を持たないことこそがこの行為の場面特性である。場面は参入組が運ぶ：店頭の購買決定（531＝取引文脈）、オンライン協働（704/702/699）、オンラインの専門的議論（668）、そして737が職業・学術文脈を行為の条件として明示する。フォーマルの刻み方は特異で、レジスターがレベル条件に入るのはC1（737）が初 ── それ以前の梯子はレジスターでなく照準の精度で刻まれる。なお本行為は帳簿上、スキーム＝方略（Communicative language strategies）に置かれた記述文群から篩が採用した唯一の行為であり（判断(i)の手続き①「篩優先」が要る当の箇所）、修復という営みが行為と方略の境界に立つことをCEFR自身の帳簿配置が示している。カタログでは行為として立てつつ、全行為の「受ける側」在庫と地続きである性格を相互参照で保つ。",
+   "【往復・応答の点検 ── 全行為の「受け」を担う装置、その不発動という病理】 本行為は他のすべての行為にとっての「受ける側」の装置そのものである ── (n)の病理（受け側在庫の薄さ）は、ここでは行為そのものの不発動として現れる。日本語話者最大の敵は「分かったふり」であり、授受シート③が外側から指摘した病理の、これが当事者行為である。不発動の機構は三重：相槌体系の干渉（「はい」＝聴取継続の信号が Yes＝理解の主張に化ける）、遮りの閾値（話を止めることへの抵抗）、面子（訊くと無能に見えるという抑制、専門の場で最大化）。する側の定型＝聞き返し・照合の在庫（Sorry? / What do you mean by X? / If I've understood you correctly ...）。受ける側の定型＝与える側の言い換え在庫（What I mean is ... / In other words ... / To put it another way ...）── これは668で初めてcan-doに現れる。断る・返す型＝即答できないときの返し（Good question — let me think. / I'll get back to you on that.）。往復判定：求める側の梯子が主で、与える側は最上段C1でのみ帳簿に現れる ── 片側往復（苦情）と四役完備（依頼）の中間形。理由は役割でなく帳簿の分業：明確化を「与える」能力は言い換え・要約として仲介（第4柱）と談話構築に吸収されており、やり取りの帳簿には議論参加の部品として最上段でのみ顔を出す。",
+   "【口頭は本丸、書面はオンライン同期系のみ ── (o)判定＝非成立（Correspondence系列欠如型）】 口頭13＋書面4。書面系列はすべてオンライン同期系（704/702/699/668）で、Correspondence系列が存在しない ── 修復は非同期の書簡と根本的に相性が悪い（手紙は聞き返せない。書面での不明点は次信の用件となり、その記述文は授受・依頼の帳簿に吸収される）。書面梯子の実体は支えの脱落（704→702→699）と役割の対称化（668）であり、レジスターの制度化段は現れない。書面フォーマル一段（判断(o)）の3値判別＝**非成立**、ただし既存の下位区分（B2未達型・私的系列型）と異なり、判別対象の書簡系列そのものを欠く ── **Correspondence系列欠如型**として下位区分の追加を提案する（「書面系列なし」〔会話維持〕と非適用側で同じだが、書面行が存在する点で区別）。mode正準化：オンライン4件はNo.670先例（ライブ打鍵チャット＝書面）に従い書面へ。737の「対面でもオンラインでも」は行為核が口頭系スケールのため口頭に置き、オンライン拡張はscene注記で保つ。",
+   "【統合根拠と点検総括・語彙裁定】 統合根拠：判断(m)（第2周-2、理解状態の表明を表出型から指示型へ移管の上、明確化・繰り返しの要求と一行為二相統合）。証拠は (1) Asking for clarification スケールの共有、(2) レベル帯の相補性（理解表明A1〜A2／明確化要求A2〜C1）、(3) 蝶番記述文746（一文が両相をまたぐ、562/557の同文言性に相当）、(4) I don't understand の発語内効力＝修復の間接的要請。相境界のL1質的転換：下段の壁は文化的閾値（非理解を出す勇気・相槌干渉・遮りの作法）、上段の壁は談話技術（照準の特定化・問いの設計・確認のメタ発話）── 意見（定型語彙→談話作法）・授受（統語→談話）と並ぶ第三の転換形＝「開示→設計」。スケール再掲重複対はなし。737/739はスケール内の負荷型条件対として二行保持（④とdelta参照）。語彙裁定（判断(s)）：チェッカーのフラグ4語を裁定 ── understand（超過A2、A1行747/748）＝行為核（非理解の表明）が要求する正準定型 I don't understand. の中核語につきallowlist掲載／framework（未収録、C1行668）＝学術・業務談話の基本語につきallowlist掲載／version（超過B2、B1+行699）・sustainable（超過C1、B2行739）＝**引用スロット**として保持 ── 相手の用語を引用して照準する本行為の性質上、引用語は相手の発話由来の可変域で、学習者の産出負荷は枠（Could you explain what you mean by ...?）の側にある。判断(s)-1（スロット分業）の拡張：目的語スロットに加え、明確化要求では引用スロットが可変域となる。"
+  ]
+ }
+}
