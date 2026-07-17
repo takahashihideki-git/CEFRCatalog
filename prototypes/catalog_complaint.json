@@ -1,0 +1,157 @@
+{
+ "苦情・クレーム": {
+  "title": "苦情・クレーム（Complaining）── 全数シート",
+  "scope": "全数（9件。口頭5＝Obtaining goods and services／書面4＝Correspondence）",
+  "type": "指示的（directive）＋表出的要素 ── 現状が期待に反することを伝え、是正を求める。下位系＝対立管理系（第一分類層）、梯子型＝管理梯子型（管理課題：緩衝の精緻化 A2〜C1）",
+  "essence": "相手（店・機関・個人）に、現状が期待に反することを伝え、是正を求める。非難と要求の二面を持ち、両者のバランスが行為の成否を決める。レベルが上がるとは、緩衝（mitigation）の技法が精緻化することである。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 544,
+    "en": "Can point out when something is wrong (e.g. “The food is cold” or “There is no light in my room”).",
+    "jp": "何かがおかしいときに指摘できる（「料理が冷たい」「部屋の電気がつかない」など）。",
+    "exponents": [
+     "Excuse me, the food is cold.",
+     "Sorry, there is no light in my room.",
+     "Excuse me, this is not what I ordered."
+    ],
+    "scene": "レストランやホテルで、出されたもの・状態が違うとき、その事実を一言告げる。",
+    "howwell": "社会言語的適切さ（最小）：Excuse me / Sorry を頭に置けるか。",
+    "l1": "日本語話者は「事実の指摘」を非難と感じて言い出せない傾向。英語では The food is cold. と現状を述べること自体は失礼でなく、むしろ必要な情報提供。黙って我慢する方が不自然。ただし頭に Excuse me を欠くと唐突。",
+    "delta": "（起点）行為の最小形。まだ是正要求は含まず、問題の存在を告げるだけ。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 533,
+    "en": "Can make a complaint.",
+    "jp": "苦情を言える。",
+    "exponents": [
+     "Excuse me, I ordered the pasta but this is a pizza. Could you change it, please?",
+     "I'm sorry, but the room is really noisy. Would it be possible to move to another one?",
+     "There seems to be a problem with the bill — I think we've been charged twice."
+    ],
+    "scene": "注文違い・部屋の問題・請求の誤りなど、具体的な不都合について、是正を求めるところまで言う。",
+    "howwell": "社会言語的適切さ＋叙述の正確さ：問題の describe と要求の request を一続きにできるか。",
+    "l1": "日本語の「すみません、これ頼んでないんですけど……」は語尾を濁して相手に察してもらう構造。英語では Could you change it? まで言い切らないと要求が伝わらず、問題提起だけで終わると「ただ不機嫌な人」になる。緩衝（I'm sorry but / There seems to be）＋明示的要求、の二点セットが鍵。",
+    "delta": "A2からの飛躍：問題の指摘に「是正の要求」が加わる。行為が完結する最初のレベル。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 532,
+    "en": "Can cope with less routine situations in shops, post offices, banks, e.g. returning an unsatisfactory purchase.",
+    "jp": "満足できない買い物の返品など、店・郵便局・銀行でのあまり日常的でない状況に対処できる。",
+    "exponents": [
+     "I bought this shirt yesterday, but there's a hole in the sleeve. I'd like to return it, please.",
+     "This isn't working properly — can I get a refund or an exchange?",
+     "I'd like to return this. Do you need the receipt?"
+    ],
+    "scene": "店で不良品を返品する、想定外のやりとり（理由の説明・レシートの授受）に対応する。",
+    "howwell": "柔軟さ：相手の反応（レシートは？交換か返金か）に応じて言い足せるか。",
+    "l1": "返品は日本でも増えたが、英語圏では「正当な権利の行使」であり、過度に低姿勢だと逆に不審。I'd like to return this と平叙で切り出してよい。「返品してもらえますか」を Can I possibly...? と過剰に婉曲化すると、かえって要領を得ない。",
+    "delta": "同じB1でも、単発の苦情（533）から「一連のやりとりへの対処」へ。相手の応答を捌く柔軟さが問われる。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 526,
+    "en": "Can cope linguistically to negotiate a solution to a dispute like an undeserved traffic ticket, financial responsibility for damage in a flat, or blame regarding an accident.",
+    "jp": "不当な交通違反切符、住居の損傷の金銭的責任、事故の責めなど、争いの解決を交渉する言語的能力がある。",
+    "exponents": [
+     "I understand your position, but I don't think I'm liable for this. The damage was already there when I moved in.",
+     "I'd like to contest this. Could you tell me exactly which regulation I'm supposed to have broken?",
+     "I'm willing to cover part of it, but not the full amount — let me explain why."
+    ],
+    "scene": "責任の所在が争われる場面で、相手の主張を受けつつ自分の立場を通し、着地点を探る。",
+    "howwell": "叙述の正確さ＋柔軟さ＋社会言語的適切さ：反論しつつ関係を壊さない語調の制御。",
+    "l1": "日本語話者は対立局面で沈黙するか、逆に感情的に強く出るかの両極に振れやすい。英語の交渉苦情は I understand X, but Y（相手の承認→自分の主張）という型が定石で、冷静に but でつなぐ。謝罪の I'm sorry を安易に挟むと責任を認めた含意になり不利。",
+    "delta": "苦情から「交渉」へ。一方的要求ではなく、相手の立場の承認と自分の譲歩限度の提示が入る（断る・返す型の苦情版）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2+",
+    "no": 527,
+    "en": "Can outline a case for compensation, using persuasive language to demand satisfaction and state clearly the limits to any concession they are prepared to make.",
+    "jp": "説得力のある言葉で補償を求める主張を組み立て、満足を要求し、譲歩できる限度を明確に述べられる。",
+    "exponents": [
+     "Given the inconvenience caused, I believe a full refund plus compensation for the extra costs is reasonable.",
+     "I'm prepared to accept a replacement, but only if it's delivered by Friday — otherwise I'll expect a refund.",
+     "This has cost me two days of work. I'd like that reflected in whatever you're offering."
+    ],
+    "scene": "実害が生じた案件で、補償の根拠を筋道立てて示し、受け入れ条件と限度を明言する。",
+    "howwell": "叙述の正確さ（最大）＋話題の展開：根拠→要求→条件を論理的に積む構成力。",
+    "l1": "「譲歩の限度を明示する」は日本語の交渉文化と最も遠い。日本語では限度をあえて曖昧にして含みで交渉するが、英語では but only if... / otherwise I'll... と条件と帰結を言語化するのが誠実で強い。曖昧なままだと足元を見られる。",
+    "delta": "交渉（526）に「論理的な根拠づけ」と「条件の明示的言語化」が加わる。口頭系列の到達点。"
+   },
+   {
+    "mode": "書面",
+    "level": "B1+",
+    "no": 638,
+    "en": "Can compose basic formal e-mails/letters (e.g. to make a complaint and request action).",
+    "jp": "基本的な公式のメールや手紙（苦情を述べ対応を求めるなど）を書ける。",
+    "exponents": [
+     "Dear Sir or Madam, I am writing to complain about the delayed delivery of my order (#12345). I would like to request a full refund.",
+     "I ordered the item on 3 May, but it has still not arrived. Please let me know how you intend to resolve this."
+    ],
+    "scene": "【フォーマル】遅延・不良・誤請求について、公式メールで苦情と対応要求を伝える。",
+    "howwell": "社会言語的適切さ（書面レジスター）：I am writing to... の定型と Dear/Yours の枠を守れるか。",
+    "l1": "日本語のビジネス苦情メールは長い前置き（お世話になっております＋クッション）から入るが、英語は I am writing to complain about... と冒頭で用件を明示するのが正しい作法。前置きを長くすると要領を得ない印象。",
+    "delta": "口頭B1と並行して、書面系列が独立に立ち上がる。定型（I am writing to）とレジスターの獲得が核。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2+",
+    "no": 629,
+    "en": "Can compose a forceful but polite letter of complaint, including supporting details and a statement of the desired outcome.",
+    "jp": "裏づけの詳細と望む結果を明記した、力強くも丁寧な苦情の手紙を書ける。",
+    "exponents": [
+     "Despite my email of 3 May, the issue remains unresolved. I have now been waiting three weeks for a replacement.",
+     "I trust you will appreciate my frustration and arrange a full refund within seven days."
+    ],
+    "scene": "【フォーマル】一度目の苦情が解決されない案件で、経緯を裏づけつつ、丁寧さを保って強く要求する。",
+    "howwell": "話題の展開＋社会言語的適切さ：forceful と polite を両立させる語調設計。",
+    "l1": "「力強くも丁寧に」の両立が難所。日本語話者は polite に振れすぎて要求が弱まるか、直訳的に強く書いて無礼になるか。英語は I trust you will... / I would appreciate it if... で、丁寧な形式のまま圧をかける定型がある。この「丁寧な強さ」の語彙庫を持つことが鍵。",
+    "delta": "書面B1+からの飛躍：単発の苦情から、経緯の裏づけ・望む結果の明記・語調の制御へ。"
+   },
+   {
+    "mode": "書面",
+    "level": "B2+",
+    "no": 628,
+    "en": "Can compose formal correspondence such as letters of enquiry, request, application and complaint using appropriate register, structure and conventions.",
+    "jp": "適切な言語使用域・構成・慣習を使って、問い合わせ・依頼・応募・苦情などの公式の通信文を書ける。",
+    "exponents": [
+     "I am writing with reference to invoice #789, which appears to contain an error.",
+     "I would be grateful if you could look into this matter and respond at your earliest convenience."
+    ],
+    "scene": "【フォーマル】苦情を含む各種公式通信を、型・レジスター・慣習に則って書き分ける。",
+    "howwell": "社会言語的適切さ（慣習の体系）：with reference to / at your earliest convenience 等の定型群の運用。",
+    "l1": "英語の公式通信は定型表現の体系（with reference to, I would be grateful if, at your earliest convenience）で動く。日本語の敬語体系とは別物なので、日本語敬語を英語に写そうとせず、英語独自の formal 定型を丸ごと語彙として習得する必要がある。",
+    "delta": "個別の苦情から「公式通信文一般の型」への一般化。苦情が他の書面行為（依頼・応募）と型を共有する段＝書面フォーマル一段（判断(o)）の苦情版（DISCUSSION④参照）。"
+   },
+   {
+    "mode": "書面",
+    "level": "C1",
+    "no": 625,
+    "en": "Can, with good expression and accuracy, compose formal correspondence such as letters of clarification, application, recommendation, reference, complaint, sympathy and condolence.",
+    "jp": "明確化・応募・推薦・照会・苦情・見舞い・弔慰の手紙など、公式の通信文を、うまい表現と正確さで書ける。",
+    "exponents": [
+     "While I appreciate that delays can occur, a three-week silence following my formal complaint is difficult to justify.",
+     "I would ask that you treat this as a matter of urgency and confirm your proposed resolution in writing."
+    ],
+    "scene": "【フォーマル】洗練を要する公式通信で、含意・語調・正確さを制御して苦情を述べる。",
+    "howwell": "叙述の正確さ＋柔軟さ（最大）：含意・皮肉・緩衝を精密に制御する表現力。",
+    "l1": "C1では While I appreciate that..., ... is difficult to justify のような、譲歩節で相手を立てつつ論理で追い込む高度な緩衝が要る。日本語の高等な苦情（慇懃な圧）に感覚は近いが、英語独自のレトリックなので、日本語の語感からの類推は危険。個別の表現を範例で覚える段階。",
+    "delta": "B2+からの到達点：正確さに加え「うまい表現（good expression）」＝含意と語調の精密制御。書面系列の頂点。"
+   }
+  ],
+  "discussion": [
+   "【緩衝（mitigation）の精緻化がA2→C1を貫く ── 管理梯子型の背骨】 英語の苦情を貫く原理は「非難性の緩衝」である。同じ事実（料理が冷たい）を、A2では Excuse me を頭に置くだけ、B1では There seems to be... で事実を非人称化し、B2+では I understand your position, but... で相手を立て、C1では While I appreciate that... と譲歩節で包む ── レベルが上がるとは、緩衝の技法が精緻化することにほかならない（cross_axes の管理課題「緩衝の精緻化」と一致）。この行為において how well の主軸は一貫して社会言語的適切さであり、文法的正確さではない。文法的に完璧な The food is cold and I want a new one now. は、B1の緩衝された表現より「下手」なのである。",
+   "【日本語話者にとっての二重の壁】 第一の壁は「言い出せない」こと。日本語文化では苦情＝関係を損なう行為とされ、我慢が美徳になりやすい。だが英語圏では、正当な苦情は消費者の権利であり情報提供でもあって、黙る方が不自然に映る。第二の壁は、言い出せた場合に「振れすぎる」こと ── 過度に低姿勢で要求が伝わらないか、直訳的に強く出て無礼になるかの両極。英語の苦情は「丁寧な形式を保ったまま要求を明示する」ことを求めるが、これは日本語の「察してもらう」構造とも「けんか腰」とも異なる第三の様式であり、明示的に学ぶしかない。",
+   "【隣接行為との連続と、対立管理系内の文脈分業】 「部屋が寒い」（苦情）は「暖房を入れてほしい」（依頼）と表裏一体で、多くの苦情は是正の依頼を含意する。22行為インベントリで苦情と依頼は別行為（第1周④の統合否定・相互参照）だが、実運用では連続する ── 苦情を教えるとき、是正要求（依頼）まで一続きで示さないと行為が完結しない。日本語話者が問題提起だけで止まりがちなのは、この連続性が母語で言語化されないためでもある。さらに全数シートで確認された分業：苦情の梯子はC1（625）で止まり**C2を持たない**。対立管理系のC2（論戦の対等・敵対的応酬の保持）は意見・見解の表明のフォーマル討議側（482/484）にのみ立つ。すなわち対立管理系の内部は、苦情＝取引・サービス文脈の対立管理（A2〜C1）、意見表明＝討議文脈の対立管理（A1〜C2）という**文脈分業**であり、484のdelta「苦情・クレームの最上段と稜線を接する」の逆側からの確認である。",
+   "【口頭と書面は別の行為に近い ── 書面フォーマル一段（判断(o)）の再現を初確認】 CEFRが苦情を口頭スケール（Obtaining goods and services）と書面スケール（Correspondence）に分けて記述しているのは示唆的である。口頭の苦情は即時・対面で、緩衝も即興的（Excuse me, sorry）。書面の苦情は経緯の裏づけ・構成・レジスターが前面に出て、定型表現の体系（I am writing to, I would be grateful if）で動く。学習者にとっては習得順序も異なり、口頭A2から始まる系列と書面B1+から始まる系列は、並行して別々に登らせるのが自然である。そして No.628「個別の苦情から公式通信文一般の型への一般化」は、No.632（感謝詫び）・No.633（授受）と同一現象の**3例目**であり、判断(o)「書面フォーマル一段」が苦情で**再現**した。意見表明での非再現（Correspondence系列がB1+止まり）と対をなし、精緻化条件「Correspondence系列がB2帯まで伸びる行為でのみ現れる」の**成立側を初確認**（現れる段はB2+の628で、B2帯という帯指定と整合）。",
+   "【往復・応答の点検：苦情は「片側往復」の行為である ── 語彙裁定の記録】 テンプレート要件（判断(n)）の点検結果：9件すべてが「する側」で、**「受ける側」の記述文はゼロ**。苦情の受け手はサービス提供者・機関の役割であり、CEFRの学習者can-doには現れない ── 往復軸が行為の性質上「片側往復」になる初のケースである。(n)の病理（応答の不在が行為の不履行になる）は、苦情では「受け」でなく**「言い切り」**に現れる：要求（Could you change it?）まで言い切らないと行為が不履行になる（533のL1注意）。断る・返す型は526（相手の主張を受けつつ通す）・527（譲歩限度の明示）に内在する。語彙裁定（判断(s)の枠内、CEFRカタログ4）：liable（526）・inconvenience（527）・unresolved（629）・urgency（625）＝B2+〜C1行の交渉・公式通信の実態語彙として保持／madam（638・B1+）＝書面定型 Dear Sir or Madam の不可分の一部として保持／invoice（628・B2+）＝公式通信の実務語彙として保持。全件保持＝苦情の上位帯は語彙面でもB2+〜C1の実態と整合し、下位帯（544/533/532）にはフラグが無い ── 緩衝の梯子が語彙レベルの梯子とも並走している。"
+  ]
+ }
+}

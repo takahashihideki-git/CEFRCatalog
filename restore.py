@@ -57,22 +57,30 @@ if __name__ == "__main__":
             check_rows(proto["rows"], VERIF_ACT[name], jp_is_tr=True)  # 検証範型①〜⑤は作成時にjp==訳をassert済み
             n_verif_acts += 1
     assert n_verif_acts == 5, "検証範型の行為数不一致"
-    # 第3周の全数シート（catalog_*.json）── 存在すれば照合（第3周-1: 意見表明）
-    cat_msg = ""
-    cat_path = os.path.join("prototypes", "catalog_opinion.json")
-    if os.path.exists(cat_path):
-        C = json.load(open(cat_path, encoding="utf-8"))["意見・見解の表明"]
-        acts = []
+    # 第3周の全数シート（catalog_*.json）── 登録表で照合（第3周-1: 意見／第3周-2: 苦情）
+    CATALOGS = {
+        "catalog_opinion.json":   ("意見・見解の表明", 31, "意見31"),
+        "catalog_complaint.json": ("苦情・クレーム",    9, "苦情9"),
+    }
+    cat_done = []
+    for fn, (act, n_rows, tag) in CATALOGS.items():
+        cat_path = os.path.join("prototypes", fn)
+        if not os.path.exists(cat_path):
+            continue
+        C = json.load(open(cat_path, encoding="utf-8"))[act]
+        seen = set()
         for r in C["rows"]:
             no = str(r["no"])
             assert r["en"] == D["descriptors"][no]["en"], f"catalog原文不一致 No.{no}"
             assert r["level"] == D["descriptors"][no]["level"], f"catalogレベル不一致 No.{no}"
             assert r["jp"] == D["translations"][no], f"catalog訳不一致 No.{no}"
-            assert D["inventory"].get(no) == "意見・見解の表明", f"catalog行為所属不一致 No.{no}"
-            acts.append(no)
-        assert len(C["rows"]) == 31 and len(set(acts)) == 31, "catalog件数不一致"
-        assert len(C["discussion"]) == 5, "catalog DISCUSSION段落数不一致"
-        cat_msg = " / 全数シート意見31照合"
+            assert D["inventory"].get(no) == act, f"catalog行為所属不一致 No.{no}"
+            seen.add(no)
+        assert len(C["rows"]) == n_rows and len(seen) == n_rows, f"catalog件数不一致 {fn}"
+        assert seen == {n for n, a in D["inventory"].items() if a == act}, f"catalog全数性不一致 {fn}"
+        assert len(C["discussion"]) == 5, f"catalog DISCUSSION段落数不一致 {fn}"
+        cat_done.append(tag)
+    cat_msg = (" / 全数シート" + "・".join(cat_done) + "照合") if cat_done else ""
     PHASE_SIZES = {"事実情報の授受": 31, "明確化・繰り返しの要求": 17, "意見・見解の表明": 31}
     for act, expected in PHASE_SIZES.items():
         parts = [set(v) for v in D["phases"][act].values() if isinstance(v, list)]
