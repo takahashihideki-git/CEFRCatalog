@@ -93,7 +93,7 @@ Claude Code on Hideki local PC（ローカルリポジトリ）
 ## 新スレッドでの再開手順
 
 1. **必読2文書を必ずこの順で読む**：`deliverables/CEFR全貌カタログ_企画書.md`（グランドデザイン＝何を作るか）→ `deliverables/CEFRカタログ_引き継ぎ書.md`（作業仕様＝どう作り続けるか）。**引き継ぎ書だけで作業を始めないこと**（CEFRカタログ2で、企画書未読のまま確定済み設計判断への揺り戻しが起きかけた実績あり）。
-2. 必要なデータはこのリポジトリのraw URLから取得（例：`https://raw.githubusercontent.com/takahashihideki-git/CEFRCatalog/main/data/descriptors_en_1224.json`）。
+2. 必要なデータはこのリポジトリのraw URLから取得（例：`https://raw.githubusercontent.com/takahashihideki-git/CEFRCatalog/main/data/descriptors_en_1224.json`）。あわせて実例語彙チェッカー（`tools/exponent_level_check.py`）が参照するCEFR-Jデータ `https://github.com/openlanguageprofiles/olp-en-cefrj.git` も同階層に clone してください（詳細は「語彙レベル照合データ」節）。
 3. 引き継ぎ書§4の周回計画の続きから再開。
 
 ## 復元検証値
