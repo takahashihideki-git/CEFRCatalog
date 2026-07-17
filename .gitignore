@@ -20,3 +20,8 @@ Thumbs.db
 
 # 展開元アーカイブ
 CEFRCatalog_repo.zip
+
+# 成果物の受け取り用の作業ファイル（適用後に削除。リポジトリには残さない）
+files.zip
+*.patch
+申し送り*.md
