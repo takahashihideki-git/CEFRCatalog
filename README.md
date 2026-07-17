@@ -67,6 +67,26 @@ git clone https://github.com/openlanguageprofiles/olp-en-cefrj.git
 - Octanove Vocabulary Profile C1/C2 (ver 1.0), Octanove Labs. CC BY-SA 4.0.
 - 配布リポジトリ: Open Language Profiles https://github.com/openlanguageprofiles/olp-en-cefrj
 
+## 開発体制（claude.aiスレッド ↔ Claude Code の循環）
+
+```
+リモートリポジトリ (GitHub)
+   │  pull（clone / raw URL 参照）
+   ▼
+claude.ai「CEFRカタログn」スレッド
+   │  分析・設計判断（Hidekiと合意）・生成・検証
+   │  成果は 申し送り_ClaudeCode.md＋パッチ＋更新ファイル として download
+   ▼
+Claude Code on Hideki local PC（ローカルリポジトリ）
+   │  申し送りに従って適用 → 検証（restore.py ほか）→ commit → push
+   ▼
+リモートリポジトリ ──（次スレッドが pull して再開）
+```
+
+- **claude.aiスレッドはリポジトリへ直接pushしない**。変更は必ずパッチセット（申し送り＋diff＋必要に応じ更新ファイル実体）として渡す。
+- **Claude Code が適用・検証・コミットを担う**。適用後の検証は `python3 restore.py`（第3周-0以降は `python3 tools/exponent_level_check.py` の実行確認を含む）。
+- 設計判断はスレッド側で合意してから実装する（confirm → agree → edit → verify → output）。判断と根拠は引き継ぎ書§2に、周回の進捗はREADME「いまどこにいるか」と引き継ぎ書§1に反映する。
+
 ## 新スレッドでの再開手順
 
 1. **必読2文書を必ずこの順で読む**：`deliverables/CEFR全貌カタログ_企画書.md`（グランドデザイン＝何を作るか）→ `deliverables/CEFRカタログ_引き継ぎ書.md`（作業仕様＝どう作り続けるか）。**引き継ぎ書だけで作業を始めないこと**（CEFRカタログ2で、企画書未読のまま確定済み設計判断への揺り戻しが起きかけた実績あり）。
