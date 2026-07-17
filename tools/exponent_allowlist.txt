@@ -1,0 +1,6 @@
+# 実例語彙チェッカーの裁定保全ファイル（語<TAB>理由）
+# 機械は検出、人間が裁定、裁定はここに機械可読に保全（第3周-0、CEFRカタログ4）
+oh	CEFR-J未収録の間投詞。A1級の定型応答（Oh, I'm sorry / Oh really?）に必須
+goodbye	CEFR-J未収録（bye は A1 収録）。別れの基本定型
+congratulations	CEFR-J未収録の祝意定型。書面 Pre-A1〜A2 の中核 exponent
+congrats	CEFR-J未収録。congratulations の短縮形（書面カジュアル）

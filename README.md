@@ -34,6 +34,9 @@ analysis/      分析の生モジュール（監査・再実行用）
   verdicts.py                    篩判定のソース
   acts.py                        170→164個別行為タグ
   partition.py                   区分分割の生成・検証ソース（→ data/block_partition_1224.json）
+tools/         品質保証ツール
+  exponent_level_check.py        実例（exponent）語彙レベルチェッカー（CEFR-J照合、第3周-0）
+  exponent_allowlist.txt         チェッカーの裁定保全ファイル（語＋理由）
 deliverables/  成果物
   CEFR記述文_全数集計_実例付き.xlsx  12シートの分析台帳＋範型
   CEFR全貌カタログ_企画書.md          グランドデザイン（対外文書）
@@ -47,6 +50,22 @@ CEFR記述文の**原文テキスト**は `data/descriptors_en_1224.json` に収
 原典のExcelファイル `CEFR_Descriptors__2020_.xlsx` そのものは、CoEの配布ファイルであり本リポジトリには含めない。手話を含む全1,712件の再集計やxlsx実体処理など例外的な作業でのみ必要で、その際は欧州評議会公式（https://www.coe.int/en/web/common-european-framework-reference-languages ）から入手する。
 
 **出典**: Council of Europe (2020), *Common European Framework of Reference for Languages: Learning, teaching, assessment – Companion volume*. 作業訳はトピックメーカーによる自前訳であり、ゲーテ・インスティトゥート東京の公式日本語版（2024）とは独立（照合のみに使用）。
+
+## 語彙レベル照合データ（CEFR-J / Octanove）
+
+実例（exponent）の語彙レベル検証（`tools/exponent_level_check.py`）には以下のデータセットを使用する。**CSVは本リポジトリに含めない**（Octanove分のCC BY-SAのSA義務をリポジトリに混入させないため）。リポジトリと**同階層**に clone して使う：
+
+```
+git clone https://github.com/openlanguageprofiles/olp-en-cefrj.git
+```
+
+（別の場所に置く場合は環境変数 `OLP_CEFRJ_DIR` で指定。）
+
+**出典**:
+- The CEFR-J Wordlist Version 1.5. Compiled by Yukio Tono, Tokyo University of Foreign Studies.（東京外国語大学 投野由紀夫研究室。出典明記のもと研究・商用利用可。 http://www.cefr-j.org/ ）
+- The CEFR-J Grammar Profile Version 20180315.（同上。現時点では未使用・将来の文法レベル照合の候補）
+- Octanove Vocabulary Profile C1/C2 (ver 1.0), Octanove Labs. CC BY-SA 4.0.
+- 配布リポジトリ: Open Language Profiles https://github.com/openlanguageprofiles/olp-en-cefrj
 
 ## 新スレッドでの再開手順
 
