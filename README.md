@@ -93,7 +93,7 @@ Claude Code on Hideki local PC（ローカルリポジトリ）
 ```
 
 - **claude.aiスレッドはリポジトリへ直接pushしない**。変更は必ずパッチセット（申し送り＋diff＋必要に応じ更新ファイル実体）として渡す。
-- **Claude Code が適用・検証・コミットを担う**。適用後の検証は `python3 restore.py`（第3周-0以降は `python3 tools/exponent_level_check.py` の実行確認を含む）＋**数字を持つ生成器の自走確認**（`python3 analysis/partition.py` ほか ── 参照名・数字を変更したソースは参照の書き換えだけで済ませず必ず実行して確認する。CEFRカタログ6・第三陣適用時のEXPECTED_SUB追随漏れの教訓）。
+- **Claude Code が適用・検証・コミットを担う**。適用後の検証は `python3 restore.py`（第3周-0以降は `python3 tools/exponent_level_check.py` の実行確認を含む）＋**数字を持つ生成器の自走確認**（`python3 analysis/partition.py` ほか ── 参照名・数字を変更したソースは参照の書き換えだけで済ませず必ず実行して確認する。CEFRカタログ6・第三陣適用時のEXPECTED_SUB追随漏れの教訓）＋**生成ソース同期点検**（`python3 tools/source_sync_check.py` ── 成果物JSONだけが更新されて生成ソース側が取り残される事故が3回起きたため常設ゲート化。全数シート22枚のbuild()・旧範型9枚の全10列・`verdicts.py`↔篩帳簿・`ja_tr1〜9.py`↔作業訳を照合）。
 - **申し送りの適用手順は `git apply`＋自前コミットメッセージ（Co-Authored-By付き）で書く**。`git am` は使わない ── コミット作者はTakahashi Hideki名義で統一し、スレッドの寄与はCo-Authored-Byで記録する（CEFRカタログ6で確立）。
 - 設計判断はスレッド側で合意してから実装する（confirm → agree → edit → verify → output）。判断と根拠は引き継ぎ書§2に、周回の進捗はREADME「いまどこにいるか」と引き継ぎ書§1に反映する。
 
