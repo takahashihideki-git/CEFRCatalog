@@ -127,22 +127,27 @@ if __name__ == "__main__":
     ext_acts = set(lt["梯子型"]["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
-    # 第2柱第一号シート（CEFRカタログ7）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
-    P2_SCALE = "Sustained monologue: describing experience"
-    p2_path = os.path.join("prototypes", "catalog_p2_describing_experience.json")
-    P2 = list(json.load(open(p2_path, encoding="utf-8")).values())[0]
-    p2_seen = set()
-    for r in P2["rows"]:
-        no = str(r["no"])
-        assert r["en"] == D["descriptors"][no]["en"], f"p2原文不一致 No.{no}"
-        assert r["level"] == D["descriptors"][no]["level"], f"p2レベル不一致 No.{no}"
-        assert r["jp"] == D["translations"][no], f"p2訳不一致 No.{no}"
-        assert r["mode"] == "口頭", f"p2 modeが口頭でない No.{no}"
-        assert D["descriptors"][no]["scale"] == P2_SCALE, f"p2スケール所属不一致 No.{no}"
-        p2_seen.add(no)
-    p2_members = {n for n, d in D["descriptors"].items() if d.get("scale") == P2_SCALE}
-    assert p2_seen == p2_members and len(P2["rows"]) == 28, "p2全数性不一致"
-    assert len(P2["discussion"]) == 5, "p2 DISCUSSION段落数不一致"
+    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
+    P2_SHEETS = [
+        ("Sustained monologue: describing experience", "catalog_p2_describing_experience.json", "口頭", 28),
+        ("Creative writing", "catalog_p2_creative_writing.json", "書面", 24),
+    ]
+    p2_rows_by_scale = {}
+    for p2_scale, p2_fn, p2_mode, p2_n in P2_SHEETS:
+        P2 = list(json.load(open(os.path.join("prototypes", p2_fn), encoding="utf-8")).values())[0]
+        p2_seen = set()
+        for r in P2["rows"]:
+            no = str(r["no"])
+            assert r["en"] == D["descriptors"][no]["en"], f"p2原文不一致 No.{no}"
+            assert r["level"] == D["descriptors"][no]["level"], f"p2レベル不一致 No.{no}"
+            assert r["jp"] == D["translations"][no], f"p2訳不一致 No.{no}"
+            assert r["mode"] == p2_mode, f"p2 modeが{p2_mode}でない No.{no}"
+            assert D["descriptors"][no]["scale"] == p2_scale, f"p2スケール所属不一致 No.{no}"
+            p2_seen.add(no)
+        p2_members = {n for n, d in D["descriptors"].items() if d.get("scale") == p2_scale}
+        assert p2_seen == p2_members and len(P2["rows"]) == p2_n, f"p2全数性不一致 {p2_scale}"
+        assert len(P2["discussion"]) == 5, f"p2 DISCUSSION段落数不一致 {p2_scale}"
+        p2_rows_by_scale[p2_scale] = p2_seen
     # モード間並行対（判断(y)裁定d-2）── 両No実在・レベル一致・スケール正・完全同文はen一致・型式標本247/338
     MP = json.load(open(os.path.join("data", "mode_pairs.json"), encoding="utf-8"))
     assert len(MP["pairs"]) == 7, "並行対件数不一致"
@@ -154,4 +159,8 @@ if __name__ == "__main__":
         if p["relation"] == "完全同文":
             assert do["en"] == dw["en"], f"完全同文が同文でない {o}/{w}"
     assert any(p["oral"] == 247 and p["written"] == 338 and p["relation"] == "完全同文" for p in MP["pairs"]), "型式標本247/338の欠落"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱第一号28（スケール全数・口頭一様）/ 並行対7（型式標本247-338）")
+    # 並行対の両側が第2柱シートの行として実在（二号完成により両側実装 ── CEFRカタログ8）
+    for p in MP["pairs"]:
+        assert str(p["oral"]) in p2_rows_by_scale[MP["scales"]["oral"]], f"並行対の口頭側がシートに不在 {p['oral']}"
+        assert str(p["written"]) in p2_rows_by_scale[MP["scales"]["written"]], f"並行対の書面側がシートに不在 {p['written']}"
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装）")
