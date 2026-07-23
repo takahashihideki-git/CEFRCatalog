@@ -118,13 +118,14 @@ if __name__ == "__main__":
     assert len({c["下位系"] for c in cx.values()}) == 12, "下位系数の不一致"
     # 梯子型別テンプレート（第3周-4・判断(u)）── cross_axes・帳簿との整合
     lt = D["templates"]
-    assert set(lt["梯子型"].keys()) == set(D["cross_axes"]["横断軸"]["縦横分業"]["梯子型の値"]), "テンプレートと梯子型の値の不一致"
-    for t, body in lt["梯子型"].items():
+    lt_p1 = lt["第三層（型別差分）"]["第1柱（発語内行為）"]
+    assert set(lt_p1.keys()) == set(D["cross_axes"]["横断軸"]["縦横分業"]["梯子型の値"]), "テンプレートと梯子型の値の不一致"
+    for t, body in lt_p1.items():
         expected_acts = {a for a, c in cx.items() if c["梯子型"] == t}
         assert set(body["適用行為"]) == expected_acts, f"テンプレート適用行為の不一致 {t}"
     for axis in lt["運用注記"]["横断軸参照"]:
         assert axis in D["cross_axes"]["横断軸"], f"テンプレートが参照する横断軸が不在 {axis}"
-    ext_acts = set(lt["梯子型"]["外部化型"]["適用行為"])
+    ext_acts = set(lt_p1["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
     # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
@@ -172,6 +173,9 @@ if __name__ == "__main__":
         assert sorted(tagged) == sorted(p2_rows_by_scale[sc]), f"主タグが完全分割でない {sc}"
         for vs in rec["副タグ"].values():
             assert all(str(n) in p2_rows_by_scale[sc] for n in vs), f"副タグに帳簿外No {sc}"
+    # 構築梯子型（第三層・第2柱、判断(ab)）── 適用スケール＝p2_threadsの登録スケール
+    KO = lt["第三層（型別差分）"]["第2柱（産出・談話構築）"]["構築梯子型"]
+    assert set(KO["適用スケール"]) == set(TH["scales"].keys()), "構築梯子型の適用スケールとp2_threadsの不一致"
     def _main_tag(sc, no):
         for t, ns in TH["scales"][sc]["主タグ"].items():
             if no in ns:
@@ -180,4 +184,4 @@ if __name__ == "__main__":
         to = _main_tag(MP["scales"]["oral"], p["oral"])
         tw = _main_tag(MP["scales"]["written"], p["written"])
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装・糸保存）/ 糸正準2スケール（完全分割・語彙正準）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装・糸保存）/ 糸正準2スケール（完全分割・語彙正準）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")

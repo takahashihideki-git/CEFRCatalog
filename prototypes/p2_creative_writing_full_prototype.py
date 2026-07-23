@@ -229,7 +229,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
 
 DISCUSSION = [
  # ¶1 背骨＝構築梯子（書面版）
- "この24件の梯子も、管理課題（第1柱）でなく談話の組み立ての複雑化に宿る ── 構築梯子型（仮・第5型）が第二のスケールでも成立した。書面の背骨をCEFR原文語彙に係留すると：simple phrases and sentences（A1）→ a series of（A2・342）→ simple connectives \"and, but, because\"（A2・344）→ linked sentences（A2+・339）→ simple connected text（B1・336）→ clearly signal chronological sequence（B1+・333）→ clear, detailed（B2・331）→ marking the relationship between ideas ＋ conventions of the genre（B2+・330）→ well-structured ＋ style appropriate to the reader（C1・327）→ smoothly flowing, engaging ＋ style appropriate to the genre adopted ＋ exploit ... to enhance the impact（C2・325/326）。口頭の背骨（列挙→線形連鎖→意味づけ→統合→記憶に残る効果）と型は同じだが段の中身が違う：書面梯子は「意味づけ significance」の段を持たず、代わりに結束の明示化→ジャンル慣習→読者適合という社会的次元が入る。目の前の聞き手の記憶を意味づけで稼ぐ口頭に対し、不在の読者への伝達を慣習と構成で保証する書面 ── (y)(d)の「modeの差は解法の差」が、背骨の段名の差として記述文列に刻まれている。もう一つの書面固有の力学は結束条件句の昇格：and/but/because は A2 で条件句として梯子に入り（344）、linked（339）→ connected（336/330）と条件句のまま刻みを進め、B1+ で独立の can-do 行（333）に昇格する ── 条件句→独立行の昇格は第1柱の条件句二型（支え型・負荷型）のどちらでもない第三の形である。",
+ "この24件の梯子も、管理課題（第1柱）でなく談話の組み立ての複雑化に宿る ── 構築梯子型（第5型）が第二のスケールでも成立した（この再現を根拠に判断(ab)で本採用）。書面の背骨をCEFR原文語彙に係留すると：simple phrases and sentences（A1）→ a series of（A2・342）→ simple connectives \"and, but, because\"（A2・344）→ linked sentences（A2+・339）→ simple connected text（B1・336）→ clearly signal chronological sequence（B1+・333）→ clear, detailed（B2・331）→ marking the relationship between ideas ＋ conventions of the genre（B2+・330）→ well-structured ＋ style appropriate to the reader（C1・327）→ smoothly flowing, engaging ＋ style appropriate to the genre adopted ＋ exploit ... to enhance the impact（C2・325/326）。口頭の背骨（列挙→線形連鎖→意味づけ→統合→記憶に残る効果）と型は同じだが段の中身が違う：書面梯子は「意味づけ significance」の段を持たず、代わりに結束の明示化→ジャンル慣習→読者適合という社会的次元が入る。目の前の聞き手の記憶を意味づけで稼ぐ口頭に対し、不在の読者への伝達を慣習と構成で保証する書面 ── (y)(d)の「modeの差は解法の差」が、背骨の段名の差として記述文列に刻まれている。もう一つの書面固有の力学は結束条件句の昇格：and/but/because は A2 で条件句として梯子に入り（344）、linked（339）→ connected（336/330）と条件句のまま刻みを進め、B1+ で独立の can-do 行（333）に昇格する ── 条件句→独立行の昇格は第1柱の条件句二型（支え型・負荷型）のどちらでもない第三の形である。",
  # ¶2 糸の構造（主タグ完全分割＋副タグ）
  "糸は主タグ6本の完全分割＋多対多の副タグで切った（本スレッド裁定）：自己提示（346→342。下段専用、第1柱「自己に関する情報提供」と地続き）、静的描写（347/348→339→335→331。属性の言明→接続→詳細→幅と観点）、語り（343/344/345→340/341→337/338→333→330。ジャンルの芽→自立→物語る→順序の明示→慣習）、感情・評価（336のみ）、批評（334→332→329。書面固有）、統合（327/328→325/326）。裁定の含意は三つ。第一に「創作」は糸でなく副次元 ── 虚構は346（imaginary people）→343（伝記・詩）→345→341（未来の生活）→337/330（real or imagined/imaginary）→327（imaginative texts）と7行を貫いて寄生し、独立の梯子を持たない。Creative writing の Creative は課題ではなく、叙述・描写の各糸に A1 から寄生し C1 で文体（personal style）へ結晶する次元である。第二に技法行3件（333/328/326）は糸を立てず質フラグで係留 ──(y)(b)フラグ方式の初適用。第三に感情・評価は1行でも糸として保持 ── 並行対336↔242の糸保存のためで、口頭5行梯子が書面で1行に縮約され統合へ吸収される非対称自体が所見である。そして並行対7組はすべて糸を保存した（342↔254自己提示・339↔249/335↔240/331↔237静的描写・340↔250/338↔247語り・336↔242感情評価）── 糸はモードに先立ち、並行対は糸保存写像である。これは糸の正準化（保留②）の「主タグ完全分割＋副タグ」形式を第二スケールで支持する強い材料になる。",
  # ¶3 mode
@@ -273,7 +273,7 @@ def build(root="."):
     sheet = {
         "title": "創作の文章（Creative writing）── 第2柱第二号範型・全数シート",
         "scope": "全数（24件。書面24 ── mode一様、(d)裁定1）",
-        "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（仮・第5型）。談話課題糸＝自己提示／静的描写／語り／感情・評価／批評／統合（作業層）＋副タグ（虚構・結束条件句・ジャンル・支援条件・質フラグ）",
+        "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型。本採用＝判断(ab)・CEFRカタログ8）。談話課題糸＝自己提示／静的描写／語り／感情・評価／批評／統合（作業層）＋副タグ（虚構・結束条件句・ジャンル・支援条件・質フラグ）",
         "essence": "一人で、不在の読者に向けて、記述・物語・レビューを書き上げる。梯子は組み立ての複雑化（接続→結束の明示→ジャンル慣習→読者適合→効果）に宿り、「創作」は糸でなく全糸を貫く副次元である。並行対の口頭側は describing experience（型式標本338/247）。",
         "rows": rows,
         "discussion": DISCUSSION,
