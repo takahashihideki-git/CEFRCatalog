@@ -1,0 +1,22 @@
+{
+ "meta": {
+  "what": "モード間並行対の正準記録。同一の談話課題が口頭スケールと書面スケールに同一レベルで並行して立つ対（スケール再掲重複対＝第1柱466/512型の、第2柱・モード間版）。二行保持＋相互参照で扱う。",
+  "origin": "CEFRカタログ7・第2柱第一号範型（Sustained monologue: describing experience 28件）。4論点裁定(d)-2。機械検出（difflib類似度）＋人間裁定で帳簿化。",
+  "exemplar": "No.247（口頭）↔ No.338（書面）『Can narrate a story.』── 完全同文の型式標本。語りが mode を選ばないことの帳簿上の証拠。",
+  "reading": "mode の差は課題の差でなく解法の差 ── 口頭は時間拘束の中の結束（fluently, No.241）、書面は推敲可能性と明示結束（chronological signalling, No.333）で同じ組み立て課題を解く。",
+  "pending": "論証系の候補対（putting a case 277 ↔ Reports and essays 356〔B2+〕／Addressing audiences 305 ↔ Reports and essays 359〔B2〕）は当該スケールの範型作成時に裁定して追記する。レベル非対称の類似（278〔B2〕↔354〔C1〕）は並行対でなく梯子段差として扱う見込み。"
+ },
+ "pairs": [
+  {"oral": 254, "written": 342, "level": "A2",  "relation": "類似", "note": "家族・境遇の描写"},
+  {"oral": 249, "written": 339, "level": "A2+", "relation": "類似", "note": "身の回り環境の描写（書面側は linked sentences 条件つき）"},
+  {"oral": 250, "written": 340, "level": "A2+", "relation": "類似", "note": "出来事・活動の短い描写"},
+  {"oral": 240, "written": 335, "level": "B1",  "relation": "類似", "note": "関心分野の率直な描写"},
+  {"oral": 242, "written": 336, "level": "B1",  "relation": "類似", "note": "経験の詳細＋感情・反応（書面側は connected text 条件つき）"},
+  {"oral": 247, "written": 338, "level": "B1",  "relation": "完全同文", "note": "型式標本。Can narrate a story."},
+  {"oral": 237, "written": 331, "level": "B2",  "relation": "類似", "note": "幅広い主題の明快で詳細な描写"}
+ ],
+ "scales": {
+  "oral": "Sustained monologue: describing experience",
+  "written": "Creative writing"
+ }
+}
