@@ -163,4 +163,21 @@ if __name__ == "__main__":
     for p in MP["pairs"]:
         assert str(p["oral"]) in p2_rows_by_scale[MP["scales"]["oral"]], f"並行対の口頭側がシートに不在 {p['oral']}"
         assert str(p["written"]) in p2_rows_by_scale[MP["scales"]["written"]], f"並行対の書面側がシートに不在 {p['written']}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装）")
+    # 糸の正準記録（判断(aa)、CEFRカタログ8）── 主タグ完全分割／語彙正準／副タグ実在／並行対の糸保存
+    TH = json.load(open(os.path.join("data", "p2_threads.json"), encoding="utf-8"))
+    for sc, rec in TH["scales"].items():
+        allowed = set(TH["共通糸"]) | set(TH["固有糸"].get(sc, []))
+        assert set(rec["主タグ"].keys()) <= allowed, f"糸語彙が正準（共通糸∪固有糸）を逸脱 {sc}"
+        tagged = [str(n) for v in rec["主タグ"].values() for n in v]
+        assert sorted(tagged) == sorted(p2_rows_by_scale[sc]), f"主タグが完全分割でない {sc}"
+        for vs in rec["副タグ"].values():
+            assert all(str(n) in p2_rows_by_scale[sc] for n in vs), f"副タグに帳簿外No {sc}"
+    def _main_tag(sc, no):
+        for t, ns in TH["scales"][sc]["主タグ"].items():
+            if no in ns:
+                return t
+    for p in MP["pairs"]:
+        to = _main_tag(MP["scales"]["oral"], p["oral"])
+        tw = _main_tag(MP["scales"]["written"], p["written"])
+        assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装・糸保存）/ 糸正準2スケール（完全分割・語彙正準）")

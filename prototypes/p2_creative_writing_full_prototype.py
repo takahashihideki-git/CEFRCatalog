@@ -251,6 +251,10 @@ def build(root="."):
     tagged = [n for v in THREADS.values() for n in v]
     assert sorted(tagged) == sorted(ORDER), "主タグが完全分割でない"
     assert all(n in set(ORDER) for v in SUBTAGS.values() for n in v), "副タグに帳簿外のNo"
+    # 糸の正準照合（判断(aa)：jsonが正準、pyはassertで追随 ── mode_pairs方式）
+    th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
+    assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
+    assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     # 並行対：書面側キーは本シート所属、相手は口頭スケール（正準は data/mode_pairs.json）
     mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
     canon = {p["written"]: p["oral"] for p in mp["pairs"]}

@@ -34,6 +34,12 @@ THREADS = {
     "統合":       [236, 234],
 }
 
+# 副タグ（作業層。¶2の交差記録を判断(aa)で機械可読へ遡及昇格 ── 正準は data/p2_threads.json）
+SUBTAGS = {
+    "語り":       [242],  # 感情・評価糸の242は語りと交差
+    "感情・評価": [252],  # 静的描写糸の252は評価の芽と交差
+}
+
 # モード間並行対（(d)裁定2。相手は Creative writing。247/338=完全同文・型式標本）
 MODE_PAIRS = {254: 342, 249: 339, 250: 340, 240: 335, 242: 336, 247: 338, 237: 331}
 
@@ -261,6 +267,10 @@ def build(root="."):
     # 糸タグの完全分割（作業層の自己検証）
     tagged = [n for v in THREADS.values() for n in v]
     assert sorted(tagged) == sorted(ORDER), "糸タグが完全分割でない"
+    # 糸の正準照合（判断(aa)：jsonが正準、pyはassertで追随 ── mode_pairs方式）
+    th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
+    assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
+    assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     rows = []
     for no in ORDER:
         d = desc[str(no)]
