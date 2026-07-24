@@ -255,10 +255,12 @@ def build(root="."):
     th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
     assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
     assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
-    # 並行対：書面側キーは本シート所属、相手は口頭スケール（正準は data/mode_pairs.json）
+    # 並行対：書面側キーは本シート所属、相手は口頭スケール（正準は data/mode_pairs.json。
+    # 判断(ac)で系構造化 ── 本シートは叙述系のpairsと照合する）
     mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
-    canon = {p["written"]: p["oral"] for p in mp["pairs"]}
-    assert MODE_PAIRS == canon, "並行対がmode_pairs.jsonと不一致"
+    sys_rec = next(s for s in mp["systems"] if s["name"] == "叙述系")
+    canon = {p["written"]: p["oral"] for p in sys_rec["pairs"]}
+    assert MODE_PAIRS == canon, "並行対がmode_pairs.json（叙述系）と不一致"
     rows = []
     for no in ORDER:
         d = desc[str(no)]

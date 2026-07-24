@@ -224,19 +224,24 @@
   },
   "第2柱（産出・談話構築）": {
    "構築梯子型": {
-    "範型": "叙述・経験の語り（第一号、catalog_p2_describing_experience.json・口頭28行）＋創作の文章（第二号、catalog_p2_creative_writing.json・書面24行）",
+    "範型": "叙述・経験の語り（第一号、catalog_p2_describing_experience.json・口頭28行）＋創作の文章（第二号、catalog_p2_creative_writing.json・書面24行）＋論の提示（第三号、catalog_p2_putting_a_case.json・口頭13行）＋報告と小論（第四号、catalog_p2_reports_essays.json・書面18行）",
     "型式標本": {
      "247": "語りの自立（Can narrate a story. 口頭）",
      "238": "意味づけ（personal significance ── 口頭背骨の固有段）",
      "338": "247との完全同文＝モード間並行対の型式標本",
-     "333": "条件句→独立行の昇格（結束の梯子の書面固有形 ── 条件句二型のどちらでもない第三形、判断(z)）"
+     "333": "条件句→独立行の昇格（結束の梯子の書面固有形 ── 条件句二型のどちらでもない第三形、判断(z)）",
+     "277": "論証系の並行対（356と同文級 ── develops an argument systematically with appropriate highlighting ... が完全共通。口頭）",
+     "356": "277との同文級対＝論証系のモード間並行対の型式標本（書面）",
+     "351": "書面上端の横串溶解の書面論証版（読み手のための論理構造＝一貫性・結束性の行化。質フラグ・ライダー行）"
     },
-    "背骨": "談話の組み立ての複雑化。レベル梯子は管理課題（第1柱）でなく組み立ての複雑化に宿る（判断(y)(b)＝判断(p)「梯子は管理課題に宿る」の第2柱拡張）。段名はCEFR原文語彙に係留する。",
+    "背骨": "談話の組み立ての複雑化。レベル梯子は管理課題（第1柱）でなく組み立ての複雑化に宿る（判断(y)(b)＝判断(p)「梯子は管理課題に宿る」の第2柱拡張）。段名はCEFR原文語彙に係留する。 系（叙述／論証）をまたぐ検証（判断(ac)・第三号第四号）により精緻化：背骨は二層 ── 外枠（口頭＝受け手基準への漸近／書面＝接続に始まり読者適合に終わる）は系に依存せず、中身（叙述＝時間軸の組み立て／論証＝論理軸の組み立て）が系ごとに差し替わる。受け手基準の入る高さは系で異なる（叙述＝上端 memorable C2／論証＝B1+ followed ── 論証は最初から聞き手の追跡を人質に取る）。",
     "背骨の段名列": {
-     "口頭": "定型句→列挙 list→線形連鎖 sequence→詳細 detailed→意味づけ significance→統合 integrating→効果 memorable",
-     "書面": "孤立句→連なり series→接続 connectives/linked→まとまり connected→順序の明示 signal sequence→関係の明示＋ジャンル慣習 marking relationships / conventions→読者適合 style appropriate to the reader→効果 engaging / impact"
+     "口頭（叙述系）": "定型句→列挙 list→線形連鎖 sequence→詳細 detailed→意味づけ significance→統合 integrating→効果 memorable",
+     "書面（叙述系）": "孤立句→連なり series→接続 connectives/linked→まとまり connected→順序の明示 signal sequence→関係の明示＋ジャンル慣習 marking relationships / conventions→読者適合 style appropriate to the reader→効果 engaging / impact",
+     "口頭（論証系）": "直言 simple terms→比較 comparisons→理由 reasons→追跡可能 followed→連鎖 chain→体系化・強調 systematically/highlighting→精密化・相手視点・締め括り precisely/perspective/concluding",
+     "書面（論証系）": "接続 connectors→定型書式 format→器 essays→展開 develops→統合 synthesise→体系化・強調 systematically/highlighting→構成設計 introduction and conclusion→読者のための論理構造 logical structure/reader"
     },
-    "mode差の読み": "課題の差でなく解法の差（判断(y)(d)）。書面は「意味づけ」段を欠き、社会的次元（結束の明示化→ジャンル慣習→読者適合）が代わりに入る（判断(z)）。",
+    "mode差の読み": "課題の差でなく解法の差（判断(y)(d)）。書面は「意味づけ」段を欠き、社会的次元（結束の明示化→ジャンル慣習→読者適合）が代わりに入る（判断(z)）。 論証系（判断(ac)）：並行対は同文級1組（277/356）に限られ、同文級・同課題が書面で一段上に置かれる段差が2件（278 B2→354 C1／280 B2→358 B2+）── 推敲可能な媒体では肉づけ・考量に読み手の密度要求が加わる（読みは仮）。書面A2に口頭A2の支え型条件句（287・相手の忍耐）の対応物がない＝書面は待ってくれる媒体そのもの。",
     "deltaの読み": "組み立ての複雑化として読む。",
     "型固有の必須項目": [
      "背骨の段名をCEFR原文語彙に係留する",
@@ -253,7 +258,9 @@
     ],
     "適用スケール": [
      "Sustained monologue: describing experience",
-     "Creative writing"
+     "Creative writing",
+     "Sustained monologue: putting a case (e.g. in a debate)",
+     "Reports and essays"
     ],
     "採用": "第一号で仮設（CEFRカタログ7）、第二号での再現を根拠に本採用（判断(ab)・CEFRカタログ8）。適用対象は行為でなくスケール ── 第1柱4型のcross_axes整合に対し、本型はp2_threads.jsonのscalesと機械照合する。"
    }

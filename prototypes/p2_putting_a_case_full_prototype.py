@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""第2柱（産出・談話構築）第三号範型：Sustained monologue: putting a case 13件の全数シート。
+
+CEFRカタログ9・判断(ac)。論証系の口頭スケール。裁定：
+- 糸4本（立論2／理由づけ3／比較考量2／論構造6）の完全分割 ── 共通糸5の使用ゼロの初例
+- 論証系4糸は書面（Reports and essays）と共有＝糸はモードに先立つ（第二系での再現）
+- 並行対は277↔356のみ（同文級・論証系の型式標本）。278↔354は梯子段差（並行対でない）
+- 副タグ「対話者」＝独話スケールに対話者が現れる両端（287支え／276資源）
+"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+
+SCALE = "Sustained monologue: putting a case (e.g. in a debate)"
+ACT = "論の提示（第2柱：Sustained monologue: putting a case）"
+SYSTEM = "論証系"
+
+# レベル順→No昇順（表示順の正準）
+ORDER = [287, 286, 283, 284, 285, 281, 282, 278, 279, 280, 277, 275, 276]
+
+# 談話課題タグ（正準は data/p2_threads.json、本表はbuild()内assertで照合）
+THREADS = {
+    "立論":     [287, 283],
+    "理由づけ": [284, 285, 282],
+    "比較考量": [286, 280],
+    "論構造":   [281, 279, 278, 277, 275, 276],
+}
+SUBTAGS = {
+    "対話者":     [287, 276],
+    "感情・評価": [286],
+}
+
+# モード間並行対（口頭側の実装。相手は Reports and essays。277/356＝同文級・型式標本）
+MODE_PAIRS = {277: 356}
+
+R = {  # no -> (exponents, scene, howwell, l1, delta)
+287: (
+ ["I think soccer is the best sport. It is fun, and everyone can play it.",
+  "School should start later. We are very tired in the morning. Sorry... please wait... I mean, sleep is important for students."],
+ "聞き手が辛抱強く待ってくれる場（教室のディスカッション入門など）で、簡単な言葉で自分の意見をひとまとまり述べる。",
+ "I think の枠と理由一文。流暢さは求められない ── 相手の忍耐が条件句として行に書かれている。",
+ "意見を求められて沈黙しない ── 短くても I think X.＋理由一文で「立場を先に言う」。日本語の「〜と思うんですけど…」の語尾濁しを直訳して文末に立場を吊るさない（think は文頭の枠）。",
+ "論証梯子の起点＝支え型条件句（相手の忍耐）に支えられた意見の直言。第1柱・意見表明の評価相（A1〜A2）と地続きだが、こちらは応酬でなくひとまとまりの提示。",
+),
+286: (
+ ["I like the sea better than the mountains. The sea is more fun. You can swim, and the beach is beautiful.",
+  "I prefer trains to buses. Trains are faster, and you can read a book."],
+ "二つのものを並べて、どちらが好きか・なぜそちらを選ぶかを、直接的な比較で説明する。",
+ "比較級の正確な運用（better / more fun / faster）。理由が比較の形を取る最小形。",
+ "「〜のほうが好き」を ×more good としない（better）。比較級は理由の直前に置き、好き→比較→理由の順を崩さない。like A better than B の枠で目的語を落とさない。",
+ "立論（287）に比較という理由の原型が加わる。第1柱の比較蝶番（提案467・意見473・問題説明511）の第2柱側の起点 ── 五者連関へ。好悪・選好は感情・評価（叙述系共通糸）との交差（副タグ）。",
+),
+283: (
+ ["I think working part-time is good for students. You can learn about work and money, and you can meet many people."],
+ "日常生活に関わる主題（仕事・学校・買い物・住まい）について、簡単な表現で意見を述べる。",
+ "簡単な表現での意見の言い切り。主題が身近な範囲で安定していること。",
+ "主題が広がっても枠は同じ（I think＋理由）── 新しい話題ごとに新しい構文を探さない。「良し悪し」の評価語（good / not good / useful）を直言してよい。",
+ "立論糸：287から条件句（相手の忍耐）が脱落し、日常の主題一般へ ── 支え型条件句の脱落（744→742型）の論証系再現。",
+),
+284: (
+ ["I want to change my job because I need more time with my family.",
+  "We chose this hotel because it is near the station and not expensive."],
+ "意見・計画・行動について、理由や説明を手短に添える。",
+ "because 節の正確な接続。理由は一文で足りる（brief が行の設計）。",
+ "because 節を独立文にしない（×Because we were hungry. で切る）。理由の後置（主張→because）に慣れる ── 日本語の「〜なので、〜します」の理由先行を直訳しない。",
+ "理由づけ糸の起点：意見だけでなく計画・行動にも because の一文を添える。立論（何を思うか）と理由づけ（なぜか）がここで分業を始める。",
+),
+285: (
+ ["I think she did the right thing. She told the truth, and that was not easy.",
+  "I don't agree with his decision, because he didn't ask the team first."],
+ "誰かがしたことに賛成か否かを述べ、その意見を正当化する理由を挙げる。",
+ "賛否の言い切り（right / don't agree）と正当化の一文。評価と理由の接続。",
+ "人の行動への賛否は評価語（right / fair）を直言してよい ── 婉曲に流すと立場そのものが伝わらない。第1柱・同意不同意との分業：あちらは目の前の相手の発話への応諾管理、こちらは第三者の行動への単独の評価陳述。",
+ "理由づけ糸：対象が事物（284）から他者の行動へ ── 正当化（justify）という語が梯子に初めて入る。",
+),
+281: (
+ ["Cars in the city center are a problem. First, the air is bad. Also, the streets are not safe for children. So I think we need fewer cars and more buses. Buses can carry many people, and they are cheaper for everyone."],
+ "身近な問題について、聞き手がたいてい難なく追える程度のまとまった論を展開する。",
+ "談話標識（First / Also / So）による道筋の明示。聞き手の追跡可能性が判定基準。",
+ "「追える」ことが基準 ── 論点を一つずつ文にし、標識で並べる。日本語の「〜で、〜で、〜だから」の一文連結を切り分ける。結論（So I think）を最後に明示的に置く。",
+ "論構造糸の起点＝「追われる」こと（followed without difficulty）が課題になる。受け手基準の初出 ── 叙述系では上端（memorable・C2）まで現れない基準が、論証系ではB1+で早くも入る。",
+),
+282: (
+ ["School uniforms are a good idea for three reasons. First, they are easy in the morning. Second, they are cheaper than buying many clothes. And they make the class feel like one team."],
+ "身近な話題についての見解を、簡単な理由を並べて正当化する。",
+ "理由の列挙（for three reasons / First / Second）。列挙の予告と回収。",
+ "理由の数を先に宣言する（for three reasons）── 日本語では不自然に感じられるほど明示的な予告が、英語の論証では標識として働く。列挙の途中で理由と例の区別を保つ。",
+ "理由づけ糸の上端：単発の because（284）から理由の列挙へ。列挙 list は叙述系背骨のA2+段（248）の装置 ── 同じ装置が論証では一段上（B1+）に現れる。",
+),
+278: (
+ ["Remote work helps both workers and companies. Workers save two hours a day — a friend of mine used that time to finish a nursing course. Companies save money on offices. Of course, some meetings need a room, but that is a small part of the week."],
+ "自分の見解を、補助的な論点と適切な実例である程度の長さに広げ、裏づけながら明確な論を展開する。",
+ "主論点と補助論点の階層、実例による裏づけ、譲歩（Of course ... but）の一往復。",
+ "実例は「友人の話」レベルの具体で足りる ── 統計を持たないと論が張れない、と構えない。譲歩してから返す（Of course X, but Y）の順序 ── 反対材料を先に自分で出すのは日本語の論述でも高級技術だが、英語では B2 の標準装備。",
+ "論構造糸：連鎖（279）と同帯で幅が加わる ── 補助論点と実例による肉づけ。書面354（C1）と同文級だが一段上＝並行対でなく梯子段差（判断(ac)、mode_pairs段差帳簿）。",
+),
+279: (
+ ["If we want fewer cars in the center, we need better public transport. Better transport needs money. That money can come from a small charge on cars entering the city. So the charge is not against drivers — it pays for their alternative."],
+ "前提から結論まで、筋道立った論の連鎖をひとりで組み立てる。",
+ "連鎖の無切断（各文が前文を受ける）。前提→帰結の接続詞（If / So）と指示語（That money）の正確さ。",
+ "連鎖は指示語と反復で綴る（Better transport needs money. That money ...）── 日本語の「それ」の多義に頼らず、名詞句を繰り返して鎖の環を見せる。最後の一文で連鎖全体を意味づける（not against drivers）。",
+ "論構造糸：追跡可能な展開（281）→ 論の連鎖（chain）＝前提から結論への段階的接続そのものが課題化。",
+),
+280: (
+ ["How should our town deal with tourists? Building a big parking area is quick, but it destroys the park. Limiting buses protects the streets; on the other hand, shops lose customers. A day ticket seems best: visitors still come, and the money helps the town."],
+ "時事的な問題について、複数の選択肢の利点と欠点を挙げながら見解を説明する。",
+ "選択肢ごとの利欠点の対（but / on the other hand）と、考量の末の結論（seems best）。",
+ "選択肢を先に立ててから利欠点を対で付ける ── 結論だけ言って理由を後から探さない。on the other hand は選択肢間の対比、but は同一選択肢内の利欠点、と使い分ける。",
+ "比較考量糸の上端：直接比較（286）→ 選択肢群の利欠点の考量へ。書面359（同じB2）はこの考量を論の展開の中に折り畳む＝束スケールの折り畳みの実例。書面358（B2+）は考量が独立行として半段上に立つ（段差の第二例）。",
+),
+277: (
+ ["Let me make three points, and the second is the key one. First, our sales fell in every region — this is not a local problem. Second, and most importantly, the fall started exactly when we changed the price. Third, the customers who left mention the price in their reviews. So the price change is the most likely cause."],
+ "重要な点を適切に強調し、関連する詳細で裏づけながら、体系的に論を展開する。",
+ "強調の設計（the second is the key one / most importantly）。体系性＝論点の予告・配列・回収。",
+ "強調は語気でなく設計で行う ── どの論点が要かを言葉で宣言する（and most importantly）。日本語の文末詠嘆や繰り返しによる強調をそのまま持ち込まない。",
+ "論構造糸：体系化＋強調の設計（highlighting）。書面356と同文級＝論証系の型式標本対（モード間並行対、mode_pairs登録）。",
+),
+275: (
+ ["The question is not whether we regulate AI, but at which layer. Regulate the model itself, and you freeze today's technology into law. Regulate the use — medical, legal, financial — and the rules stay meaningful as models change. That is precisely why use-based regulation, and only use-based regulation, can last."],
+ "複雑な問題について、論点を精密に定式化し、効果的に強調を使いながら論を立てる。",
+ "定式化の精密さ（not whether X but Y）と強調の運用（and only ...）。命題の輪郭の鋭さ。",
+ "論点の切り出し（not whether X but Y）が強調そのものになる ── 問いを立て直す力。「規制の是非」を「どの層で規制するか」へ、と論点を自分で定式化し直すのは、与えられた問いに答える訓練だけでは身につかない。",
+ "論構造糸：精密な定式化（precisely）＋強調の効果的運用。体系化（277）の上に、論点そのものの設計が乗る。",
+),
+276: (
+ ["I understand the board's concern: a four-day week sounds like less work. But look at what actually happened in two large trials — output stayed level while sick days fell. Our own pilot team finished the quarter early. If the worry is customer coverage, we can stagger the days off. On every point the board has raised, the evidence points the same way — which is why I recommend we extend the pilot, not end it."],
+ "相手の視点を考慮に入れ、裏づけの例で重要な点を強調し、適切に締めくくりながら、よく構成された言葉で体系的に論を展開する。",
+ "相手視点の明示的取り込み（I understand ... / If the worry is ...）と締め括り（which is why ...）。構成の完結性。",
+ "相手の懸念を自分の言葉で先に言う（I understand the board's concern）── 論破でなく取り込み。締め括りは推奨の形（I recommend）で行為に着地させる。日本語の「ご検討いただければ」の委任型の締めを直訳しない。",
+ "論構造糸の上端：相手視点の取り込み＋適切な締め括り ── 下端の支え（287・相手の忍耐に依存）から上端の資源（相手の視点を論の内部へ）まで、対話者が論証梯子の両端に現れる（副タグ・対話者、判断(ac)）。",
+),
+}
+
+DISCUSSION = [
+ # ¶1 背骨
+ "この13件の梯子は、叙述・創作に続く第三の系（論証）で、構築梯子型の背骨を再現する ── ただし時間軸でなく論理軸の上で。段名列はCEFR原文語彙に係留する：意見の直言 simple terms（287）→ 直接比較 direct comparisons（286）→ 理由 reasons and explanations（284）→ 理由の列挙 simple reasons（282）→ 追跡可能性 followed without difficulty（281）→ 連鎖 chain of reasoned argument（279）→ 体系化と強調 systematically / highlighting（277）→ 精密化・強調の運用・相手視点・締め括り precisely / emphasis / interlocutor's perspective / concluding appropriately（275/276）。特筆すべきは受け手基準の早期出現である：叙述系で聞き手が判定基準に入るのは上端の memorable（C2・234）だが、論証系では followed without difficulty（B1+・281）で早くも入る ── 論証は最初から聞き手の追跡を人質に取る営みであり、組み立ての複雑化が受け手の負荷管理と不可分になる。列挙 list という同じ装置が叙述系ではA2+（248）、論証系ではB1+（282）に現れることも、系による背骨の目盛りのずれを示す。",
+ # ¶2 糸
+ "スケール内部には糸4本が走る（正準：data/p2_threads.json）：立論（287→283。意見の直言、条件句の脱落＝744→742型の論証系再現）、理由づけ（284→285→282。because一文→他者の行動の正当化→理由の列挙）、比較考量（286→280。直接比較→選択肢群の利欠点考量）、論構造（281→279→278→277→275→276。追跡可能性→連鎖→肉づけ→体系化→精密化→相手視点と締め括り）。共通糸5（自己提示・静的描写・語り・感情・評価・統合）の使用はゼロ ── 全数シート第三号にして初の事例であり、「共通糸」が実は叙述系糸だったことを露呈させた（語彙二層の系族への再編は判断(ac)保留①）。論証系4糸は書面（Reports and essays）と共有され、糸はモードに先立つという判断(z)の発見が第二の系で再現する。交差は2件：286の好悪・選好は感情・評価（叙述系共通糸）および第1柱・意見表明の評価相（480/448）と地続き（副タグ）── 好悪→比較→考量という論証への入口。比較の蝶番は第1柱の三つ巴（提案467・意見473・問題説明511)に286/280が加わり五者連関となる。",
+ # ¶3 mode
+ "modeは全行「口頭」（Sustained monologue）で一様。書面側の対はReports and essaysにあり、並行対は277↔356の一組のみ（同文級 ── develops an argument systematically with appropriate highlighting of significant points and relevant supporting detail が完全共通。論証系の型式標本、mode_pairs登録）。叙述系（同レベル7対）との対照が著しい：論証系では同文級・同課題が書面で一段上に置かれる段差事例が2件ある（278 B2→354 C1の同文級／280 B2→358 B2+の同課題）── 読み（仮）：叙述の並行対は課題が純粋な帯に立つが、論証の肉づけ・考量は推敲可能な媒体でこそ読み手の密度要求の分だけ格が上がる。また287の条件句「相手の辛抱強さ」は書面側A2（367）に対応物を持たない ── 書面は待ってくれる媒体そのものであり、mode差（解法の差）が条件句の消え方に現れる。第1柱との分業は批評糸の前例（判断(z)）と同型：意見・見解の表明＝応酬の中で立場を立て維持する（対立管理相）／本スケール＝聴衆の前で論をひとりで組み立てる。下段（287/283/284/285）の課題が第1柱と重なって見えるのはこの分業の帳簿上の現れで、行の移動はしない（判断(ac)）。",
+ # ¶4 L1
+ "L1注意は三段の質的転換をなす ── 授受・第一号・第二号・（本シート）で四例目、柱・モード・系を超えた日本語話者の一般構造。下段（〜B1）＝統語・定型：I think の文頭枠（語尾濁しの直訳禁止）・because節の独立文化禁止・比較級の直用。中段（B1+〜B2）＝談話：結論先行（日本語の帰納型「〜。だから〜と思う」を演繹型へ）・理由の数の事前宣言（for three reasons）・譲歩してから返す（Of course X, but Y）・連鎖を指示語と名詞句反復で綴る。上段（B2+〜C1）＝修辞・開示の再配置：強調を語気でなく設計で行う（most importantly の明示宣言 ── 文末詠嘆・繰り返しによる強調を持ち込まない）・論点の定式化し直し（not whether X but Y）・相手の懸念を自分の言葉で先に言う・締め括りを委任型（ご検討ください）でなく推奨型（I recommend）で行為に着地させる。",
+ # ¶5 横串
+ "効く how well 軸の主軸は一貫性・結束性（chain・談話標識）と話題の展開で、第一号と共有する。論証系固有の効き方が二つ：命題の精密さ（275 precisely ── 叙述の正確さの論証版）と、B2+以降の強調の設計（highlighting／emphasis ── 構成そのものが強調装置になる）。社会言語的適切さは応酬（第1柱）ほど前景化しない ── 対立はあるが相手がその場で返してこない。上端の横串溶解は叙述系（234が流暢さ・一貫性へ溶ける）より弱く、275/276はなお行為核（argue a case）を保つ ── 論証は最上段まで「何をするか」が残る系である。質フラグ該当行は0件（第一号と同じ。技法・資源行は書面束側〔351〕に現れる）。対話者の両端出現（287支え→276資源）は往復・応答(n)の第2柱版ではない ── 応酬でなく、独話の内部に畳み込まれた対話者である。",
+]
+
+
+def build(root="."):
+    desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
+    tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
+    members = {int(no) for no, d in desc.items() if d.get("scale") == SCALE}
+    assert members == set(ORDER), f"全数性不一致: {members ^ set(ORDER)}"
+    assert len(ORDER) == 13
+    tagged = [n for v in THREADS.values() for n in v]
+    assert sorted(tagged) == sorted(ORDER), "主タグが完全分割でない"
+    assert all(n in set(ORDER) for v in SUBTAGS.values() for n in v), "副タグに帳簿外のNo"
+    th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
+    assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
+    assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
+    mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
+    sys_rec = next(s for s in mp["systems"] if s["name"] == SYSTEM)
+    canon = {p["oral"]: p["written"] for p in sys_rec["pairs"]}
+    assert MODE_PAIRS == canon, "並行対がmode_pairs.json（論証系）と不一致"
+    rows = []
+    for no in ORDER:
+        d = desc[str(no)]
+        ex, scene, hw, l1, delta = R[no]
+        if no in MODE_PAIRS:
+            delta += f"（モード間並行対：書面 Reports and essays No.{MODE_PAIRS[no]}）"
+        rows.append({
+            "mode": "口頭", "level": d["level"], "no": no,
+            "en": d["en"], "jp": tr[str(no)],
+            "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta,
+        })
+    sheet = {
+        "title": "論の提示（Sustained monologue: putting a case）── 第2柱第三号範型・全数シート",
+        "scope": "全数（13件。口頭13 ── mode一様、(d)裁定1）",
+        "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。論証系での再現＝判断(ac)・CEFRカタログ9）。談話課題糸＝立論／理由づけ／比較考量／論構造（論証系4糸、書面Reports and essaysと共有）＋副タグ（対話者・感情・評価）",
+        "essence": "一人で、聴衆の前に、主張とその裏づけを組み立てて立てる。梯子は組み立ての複雑化（直言→比較→理由→追跡可能な展開→連鎖→体系化・強調→精密化・相手視点・締め括り）に宿り、受け手基準（followed）がB1+で早くも入る。並行対の書面側はReports and essays（型式標本277/356）。",
+        "rows": rows,
+        "discussion": DISCUSSION,
+    }
+    return {ACT: sheet}
+
+
+if __name__ == "__main__":
+    out = build()
+    path = os.path.join(HERE, "catalog_p2_putting_a_case.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    sheet = out[ACT]
+    from collections import Counter
+    print(f"生成OK: {path}")
+    print(f"行数: {len(sheet['rows'])} / DISCUSSION: {len(sheet['discussion'])}段落")
+    print("レベル分布:", dict(Counter(r["level"] for r in sheet["rows"])))

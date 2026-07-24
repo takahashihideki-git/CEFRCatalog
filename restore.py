@@ -128,10 +128,12 @@ if __name__ == "__main__":
     ext_acts = set(lt_p1["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
-    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
+    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8、三号四号=CEFRカタログ9・論証系）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
     P2_SHEETS = [
         ("Sustained monologue: describing experience", "catalog_p2_describing_experience.json", "口頭", 28),
         ("Creative writing", "catalog_p2_creative_writing.json", "書面", 24),
+        ("Sustained monologue: putting a case (e.g. in a debate)", "catalog_p2_putting_a_case.json", "口頭", 13),
+        ("Reports and essays", "catalog_p2_reports_essays.json", "書面", 18),
     ]
     p2_rows_by_scale = {}
     for p2_scale, p2_fn, p2_mode, p2_n in P2_SHEETS:
@@ -149,21 +151,33 @@ if __name__ == "__main__":
         assert p2_seen == p2_members and len(P2["rows"]) == p2_n, f"p2全数性不一致 {p2_scale}"
         assert len(P2["discussion"]) == 5, f"p2 DISCUSSION段落数不一致 {p2_scale}"
         p2_rows_by_scale[p2_scale] = p2_seen
-    # モード間並行対（判断(y)裁定d-2）── 両No実在・レベル一致・スケール正・完全同文はen一致・型式標本247/338
+    # モード間並行対（判断(y)裁定d-2。判断(ac)で系構造化）── 系ごとに両No実在・レベル一致・スケール正・完全同文はen一致
     MP = json.load(open(os.path.join("data", "mode_pairs.json"), encoding="utf-8"))
-    assert len(MP["pairs"]) == 7, "並行対件数不一致"
-    for p in MP["pairs"]:
-        o, w = str(p["oral"]), str(p["written"])
-        do, dw = D["descriptors"][o], D["descriptors"][w]
-        assert do["level"] == dw["level"] == p["level"], f"並行対レベル不一致 {o}/{w}"
-        assert do["scale"] == MP["scales"]["oral"] and dw["scale"] == MP["scales"]["written"], f"並行対スケール不一致 {o}/{w}"
-        if p["relation"] == "完全同文":
-            assert do["en"] == dw["en"], f"完全同文が同文でない {o}/{w}"
-    assert any(p["oral"] == 247 and p["written"] == 338 and p["relation"] == "完全同文" for p in MP["pairs"]), "型式標本247/338の欠落"
-    # 並行対の両側が第2柱シートの行として実在（二号完成により両側実装 ── CEFRカタログ8）
-    for p in MP["pairs"]:
-        assert str(p["oral"]) in p2_rows_by_scale[MP["scales"]["oral"]], f"並行対の口頭側がシートに不在 {p['oral']}"
-        assert str(p["written"]) in p2_rows_by_scale[MP["scales"]["written"]], f"並行対の書面側がシートに不在 {p['written']}"
+    assert [s["name"] for s in MP["systems"]] == ["叙述系", "論証系"], "並行対の系構成不一致"
+    assert [len(s["pairs"]) for s in MP["systems"]] == [7, 1], "並行対件数不一致"
+    mp_all_pairs = []
+    for s in MP["systems"]:
+        for p in s["pairs"]:
+            o, w = str(p["oral"]), str(p["written"])
+            do, dw = D["descriptors"][o], D["descriptors"][w]
+            assert do["level"] == dw["level"] == p["level"], f"並行対レベル不一致 {o}/{w}"
+            assert do["scale"] == s["oral"] and dw["scale"] == s["written"], f"並行対スケール不一致 {o}/{w}"
+            if p["relation"] == "完全同文":
+                assert do["en"] == dw["en"], f"完全同文が同文でない {o}/{w}"
+            # 両側が第2柱シートの行として実在（判断(aa)の不変条件を系横断で維持）
+            assert o in p2_rows_by_scale[s["oral"]], f"並行対の口頭側がシートに不在 {o}"
+            assert w in p2_rows_by_scale[s["written"]], f"並行対の書面側がシートに不在 {w}"
+            mp_all_pairs.append((s, p))
+    sys_narr = next(s for s in MP["systems"] if s["name"] == "叙述系")
+    assert any(p["oral"] == 247 and p["written"] == 338 and p["relation"] == "完全同文" for p in sys_narr["pairs"]), "型式標本247/338の欠落"
+    sys_arg = next(s for s in MP["systems"] if s["name"] == "論証系")
+    assert any(p["oral"] == 277 and p["written"] == 356 for p in sys_arg["pairs"]), "論証系型式標本277/356の欠落"
+    # 段差（並行対でない同文級・同課題のレベル非対称、判断(ac)）── 両No実在・レベル記載一致・非同レベル
+    for g in sys_arg.get("段差", []):
+        o, w = str(g["oral"]), str(g["written"])
+        assert D["descriptors"][o]["level"] == g["oral_level"] and D["descriptors"][w]["level"] == g["written_level"], f"段差レベル記載不一致 {o}/{w}"
+        assert g["oral_level"] != g["written_level"], f"段差が同レベル（並行対とすべき） {o}/{w}"
+    assert {(g["oral"], g["written"]) for g in sys_arg["段差"]} == {(278, 354), (280, 358)}, "論証系の段差帳簿不一致"
     # 糸の正準記録（判断(aa)、CEFRカタログ8）── 主タグ完全分割／語彙正準／副タグ実在／並行対の糸保存
     TH = json.load(open(os.path.join("data", "p2_threads.json"), encoding="utf-8"))
     for sc, rec in TH["scales"].items():
@@ -180,8 +194,8 @@ if __name__ == "__main__":
         for t, ns in TH["scales"][sc]["主タグ"].items():
             if no in ns:
                 return t
-    for p in MP["pairs"]:
-        to = _main_tag(MP["scales"]["oral"], p["oral"])
-        tw = _main_tag(MP["scales"]["written"], p["written"])
+    for s, p in mp_all_pairs:
+        to = _main_tag(s["oral"], p["oral"])
+        tw = _main_tag(s["written"], p["written"])
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型2枚（一号28口頭・二号24書面、スケール全数・mode一様）/ 並行対7（型式標本247-338・両側実装・糸保存）/ 糸正準2スケール（完全分割・語彙正準）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型4枚（一号28口頭・二号24書面・三号13口頭・四号18書面、スケール全数・mode一様）/ 並行対2系8（叙述系7・型式標本247-338／論証系1・型式標本277-356、両側実装・糸保存・段差2帳簿）/ 糸正準4スケール（完全分割・語彙正準・論証系4糸は口頭書面共有）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")

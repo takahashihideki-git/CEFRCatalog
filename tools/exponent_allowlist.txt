@@ -25,3 +25,16 @@ became	become(A2) の不規則過去形。ツールの不規則表欠落（bigge
 cookbook	cook(A1)+book(A1) の透明な複合語。B2行(No.331)の場面名詞として適正（CEFRカタログ8裁定）
 imperfect	perfect(A2)+im- の規則的否定派生。B2行(No.332)のレビュー評価語として適正（survivable 同族。CEFRカタログ8裁定）
 unfixable	un-+fix(A2)+-able の規則派生。C2行(No.325)の正当な生産的派生（survivable 同族。CEFRカタログ8裁定）
+app	CEFR-J未収録の現代日常語（語彙表策定後に一般化）。363の顧客報告実例の中核場面語（CEFRカタログ9裁定）
+login	CEFR-J未収録の現代日常語。363/358のIT場面語（app同族。CEFRカタログ9裁定）
+mode	CEFR-J未収録。dark mode のUI定型（363。app同族。CEFRカタログ9裁定）
+cannot	can(A1)+not(A1)の融合形。ツールのトークン化欠落（born/became同族。CEFRカタログ9裁定）
+dough	パン工程の場面名詞（357の過程記述に必須の具体物）。CEFR-J未収録（keynote同族。CEFRカタログ9裁定）
+module	CEFR-J未収録の学術・業務基本語（framework同族）。358の実例の対象物（CEFRカタログ9裁定）
+exposition	記述文原語（No.353 expositions）。シートの場面フレームでの使用は適正（CEFRカタログ9裁定）
+governance	CEFR-J未収録のC帯語彙。C1行（353）の論説対象語（framework同族。CEFRカタログ9裁定）
+childcare	child(A1)+care(A2)の透明複合（cookbook同族。CEFRカタログ9裁定）
+productivity	CEFR-J未収録の学術基本語（framework同族）。C1行（354）の実例語として適正（CEFRカタログ9裁定）
+rehiring	re-+hire+-ingの規則派生（survivable同族。CEFRカタログ9裁定）
+subsidiary	記述文原語（No.278/354 subsidiary points）。C1行の実例が記述文の語を用いるのは適正（CEFRカタログ9裁定）
+mikan	日本文化圏の事物名（借用語・英語辞書収録）。361の学習者エッセイの場面語（japan同族の文化固有名。CEFRカタログ9裁定）

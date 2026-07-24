@@ -1,22 +1,97 @@
 {
  "meta": {
   "what": "モード間並行対の正準記録。同一の談話課題が口頭スケールと書面スケールに同一レベルで並行して立つ対（スケール再掲重複対＝第1柱466/512型の、第2柱・モード間版）。二行保持＋相互参照で扱う。",
-  "origin": "CEFRカタログ7・第2柱第一号範型（Sustained monologue: describing experience 28件）。4論点裁定(d)-2。機械検出（difflib類似度）＋人間裁定で帳簿化。",
-  "exemplar": "No.247（口頭）↔ No.338（書面）『Can narrate a story.』── 完全同文の型式標本。語りが mode を選ばないことの帳簿上の証拠。",
-  "reading": "mode の差は課題の差でなく解法の差 ── 口頭は時間拘束の中の結束（fluently, No.241）、書面は推敲可能性と明示結束（chronological signalling, No.333）で同じ組み立て課題を解く。",
-  "pending": "論証系の候補対（putting a case 277 ↔ Reports and essays 356〔B2+〕／Addressing audiences 305 ↔ Reports and essays 359〔B2〕）は当該スケールの範型作成時に裁定して追記する。レベル非対称の類似（278〔B2〕↔354〔C1〕）は並行対でなく梯子段差として扱う見込み。"
+  "origin": "CEFRカタログ7・第2柱第一号範型（Sustained monologue: describing experience 28件）。4論点裁定(d)-2。機械検出（difflib類似度）＋人間裁定で帳簿化。 判断(ac)（CEFRカタログ9）で系（system）構造へ拡張 ── 並行対は「口頭スケール×書面スケール」の対システムごとに帳簿化する（叙述系＝describing experience↔Creative writing／論証系＝putting a case↔Reports and essays）。",
+  "exemplar": "No.247（口頭）↔ No.338（書面）『Can narrate a story.』── 完全同文の型式標本。語りが mode を選ばないことの帳簿上の証拠。 論証系の型式標本はNo.277↔No.356（B2+・同文級 ── develops an argument systematically with appropriate highlighting of significant points and relevant supporting detail が完全共通、356側は Can produce an essay or report which... の器差のみ）。",
+  "reading": "mode の差は課題の差でなく解法の差 ── 口頭は時間拘束の中の結束（fluently, No.241）、書面は推敲可能性と明示結束（chronological signalling, No.333）で同じ組み立て課題を解く。 論証系では叙述系（同レベル7対）と異なり、同文級・同課題が書面で一段上に置かれる段差事例が2件（278 B2→354 C1の同文級／280 B2→358 B2+の同課題）── 並行対でなく梯子段差として扱う（判断(ac)）。",
+  "pending": "Addressing audiences 系の候補対（305↔359〔B2〕ほか）は Addressing audiences 範型作成時に裁定して追記する。278〔B2〕↔354〔C1〕は裁定済み＝並行対でなく梯子段差（判断(ac)）。"
  },
- "pairs": [
-  {"oral": 254, "written": 342, "level": "A2",  "relation": "類似", "note": "家族・境遇の描写"},
-  {"oral": 249, "written": 339, "level": "A2+", "relation": "類似", "note": "身の回り環境の描写（書面側は linked sentences 条件つき）"},
-  {"oral": 250, "written": 340, "level": "A2+", "relation": "類似", "note": "出来事・活動の短い描写"},
-  {"oral": 240, "written": 335, "level": "B1",  "relation": "類似", "note": "関心分野の率直な描写"},
-  {"oral": 242, "written": 336, "level": "B1",  "relation": "類似", "note": "経験の詳細＋感情・反応（書面側は connected text 条件つき）"},
-  {"oral": 247, "written": 338, "level": "B1",  "relation": "完全同文", "note": "型式標本。Can narrate a story."},
-  {"oral": 237, "written": 331, "level": "B2",  "relation": "類似", "note": "幅広い主題の明快で詳細な描写"}
- ],
- "scales": {
-  "oral": "Sustained monologue: describing experience",
-  "written": "Creative writing"
- }
+ "systems": [
+  {
+   "name": "叙述系",
+   "oral": "Sustained monologue: describing experience",
+   "written": "Creative writing",
+   "pairs": [
+    {
+     "oral": 254,
+     "written": 342,
+     "level": "A2",
+     "relation": "類似",
+     "note": "家族・境遇の描写"
+    },
+    {
+     "oral": 249,
+     "written": 339,
+     "level": "A2+",
+     "relation": "類似",
+     "note": "身の回り環境の描写（書面側は linked sentences 条件つき）"
+    },
+    {
+     "oral": 250,
+     "written": 340,
+     "level": "A2+",
+     "relation": "類似",
+     "note": "出来事・活動の短い描写"
+    },
+    {
+     "oral": 240,
+     "written": 335,
+     "level": "B1",
+     "relation": "類似",
+     "note": "関心分野の率直な描写"
+    },
+    {
+     "oral": 242,
+     "written": 336,
+     "level": "B1",
+     "relation": "類似",
+     "note": "経験の詳細＋感情・反応（書面側は connected text 条件つき）"
+    },
+    {
+     "oral": 247,
+     "written": 338,
+     "level": "B1",
+     "relation": "完全同文",
+     "note": "型式標本。Can narrate a story."
+    },
+    {
+     "oral": 237,
+     "written": 331,
+     "level": "B2",
+     "relation": "類似",
+     "note": "幅広い主題の明快で詳細な描写"
+    }
+   ]
+  },
+  {
+   "name": "論証系",
+   "oral": "Sustained monologue: putting a case (e.g. in a debate)",
+   "written": "Reports and essays",
+   "pairs": [
+    {
+     "oral": 277,
+     "written": 356,
+     "level": "B2+",
+     "relation": "同文級",
+     "note": "論証系の型式標本。develops an argument systematically with appropriate highlighting of significant points and relevant supporting detail が完全共通（356は essay or report の器のみ加わる）。"
+    }
+   ],
+   "段差": [
+    {
+     "oral": 278,
+     "oral_level": "B2",
+     "written": 354,
+     "written_level": "C1",
+     "note": "同文級（expand and support points of view at some length with subsidiary points ... and relevant examples）だがレベル非対称 ── 並行対でなく梯子段差。書面の小論では同じ肉づけ操作が一段上の格に置かれる。"
+    },
+    {
+     "oral": 280,
+     "oral_level": "B2",
+     "written": 358,
+     "written_level": "B2+",
+     "note": "同課題（選択肢の利欠点の考量）の半段差。書面では考量が論証（359）から切り出され独立行として一段上に立つ。"
+    }
+   ]
+  }
+ ]
 }
