@@ -128,7 +128,7 @@ if __name__ == "__main__":
     ext_acts = set(lt_p1["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
-    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8、三号四号=CEFRカタログ9・論証系）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
+    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8、三号四号=CEFRカタログ9・論証族、五号=CEFRカタログ10・教示族）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
     P2_SHEETS = [
         ("Sustained monologue: describing experience", "catalog_p2_describing_experience.json", "口頭", 28),
         ("Creative writing", "catalog_p2_creative_writing.json", "書面", 24),

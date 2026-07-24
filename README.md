@@ -39,8 +39,8 @@ prototypes/    第1カタログの範型と検証範型
   catalog_*.json（第三陣13枚）    全数シート：取引12／問題説明8／提案8／面接6／伝言7／自己情報5／問い合わせ3／道案内3／助言3／同意不同意3／経験叙述1／応募1／指示応答1
   catalog_p2_describing_experience.json  第2柱第一号範型：叙述・経験の語り28行（CEFRカタログ7）
   catalog_p2_creative_writing.json       第2柱第二号範型：創作の文章24行（CEFRカタログ8）
-  catalog_p2_putting_a_case.json         第2柱第三号範型：論の提示13行（論証系口頭、CEFRカタログ9）
-  catalog_p2_reports_essays.json         第2柱第四号範型：報告と小論18行（論証系書面、CEFRカタログ9）
+  catalog_p2_putting_a_case.json         第2柱第三号範型：論の提示13行（論証族・口頭、CEFRカタログ9）
+  catalog_p2_reports_essays.json         第2柱第四号範型：報告と小論18行（論証族・書面、CEFRカタログ9）
   catalog_p2_giving_information.json     第2柱第五号範型：情報のまとまった提供10行（教示族口頭、CEFRカタログ10）
   *_full_prototype.py            全数シートのソース（en/jpはdataから構築時取得）
   verification_expressive.json   周回検証で作成した検証範型の統合JSON（感謝詫び祝意/感情の表出）
