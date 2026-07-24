@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """第2柱（産出・談話構築）第四号範型：Reports and essays 18件の全数シート。
 
-CEFRカタログ9・判断(ac)。論証系の書面スケール（束：書面論証＋報告＋出典管理＋構成）。裁定：
+CEFRカタログ9・判断(ac)。論証族の書面スケール（束：書面論証＋報告＋出典管理＋構成）。裁定：
 - 糸7本の完全分割（立論1／理由づけ1／比較考量1／論構造4＋報告5／出典統合2／構成4）
-- 論証系4糸は口頭（putting a case）と共有＝糸はモードに先立つ（第二系での再現）
+- 論証族4糸は口頭（putting a case）と共有＝糸はモードに先立つ（第二系での再現）
 - 並行対は356↔277のみ（同文級・型式標本）。354↔278・358↔280は梯子段差
 - 351＝質フラグ（構成の技法行、C2本体行350のライダー ── Creative 325+326と同配置）
 - 355の支援条件（推敲・修正の機会）＝支え型条件句が書面長文の上端C1に回帰
@@ -16,7 +16,8 @@ ROOT = os.path.dirname(HERE)
 
 SCALE = "Reports and essays"
 ACT = "報告と小論（第2柱：Reports and essays）"
-SYSTEM = "論証系"
+FAMILY = ["論証族", "教示族"]  # 判断(ad)：束スケール＝複数族の糸を同時に使う。教示族の糸（報告／手順357／説明353）を持つ
+SYSTEM = "論証族"
 
 # レベル順→No昇順（表示順の正準）
 ORDER = [366, 367, 364, 365, 361, 362, 363, 359, 360, 356, 357, 358, 353, 354, 355, 350, 351, 352]
@@ -27,7 +28,9 @@ THREADS = {
     "理由づけ": [362],
     "比較考量": [358],
     "論構造":   [359, 356, 354, 350],
-    "報告":     [364, 365, 363, 357, 353],
+    "報告":     [364, 365, 363],
+    "手順":     [357],
+    "説明":     [353],
     "出典統合": [360, 352],
     "構成":     [366, 361, 355, 351],
 }
@@ -112,14 +115,14 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "重要な点を適切に強調し、関連する裏づけの詳細を添えて、体系的に論を展開するエッセイや報告を書く。",
  "強調の設計（the second is decisive / this is the key point）と体系性（予告・配列・回収）。",
  "強調を構成そのもので行う ── 要の論点を宣言し（and this is the key point）、段落の配置で見せる。書面では語気の強調が使えないぶん、設計の強調が全てになる。",
- "論構造糸：体系化＋強調 ── 口頭277と同文級（develops an argument systematically with appropriate highlighting ... が完全共通）＝論証系の型式標本対（モード間並行対、mode_pairs登録）。",
+ "論構造糸：体系化＋強調 ── 口頭277と同文級（develops an argument systematically with appropriate highlighting ... が完全共通）＝論証族の型式標本対（モード間並行対、mode_pairs登録）。",
 ),
 357: (
  ["How our bread reaches the shops: flour arrives at the factory at night and is tested for quality. The dough is then mixed and left to rise twice — once all together, and once shaped in tins. After baking, the loaves cool for exactly one hour; warm bread cannot be sliced cleanly. Finally, the vans load at five in the morning, following a route that puts the farthest shop first."],
  "複雑な過程の詳細な記述を書く。",
  "工程の順序標識（then / After / Finally）と受動態の運用（is tested / is mixed）。細部の理由の添え書き。",
  "工程は受動態が基調（The dough is then mixed）── 動作主を毎回書かない。細部には理由を一言添える（warm bread cannot be sliced cleanly）── 記述が説明に変わる瞬間。",
- "報告糸：過程の詳細記述 ── 叙述系の静的描写（共通糸）に最も近づく行だが、時間順の工程＝報告の課題として報告糸に留置（副タグ・静的描写で交差を記録）。",
+ "手順糸：過程の詳細記述 ── 叙述族の静的描写糸に最も近づく行だが、時間順の工程＝手順の課題（判断(ae)で報告糸から再タグ。口頭267と段差対、mode_pairs登録）。副タグ・静的描写で交差を記録。",
 ),
 358: (
  ["Three fixes have been proposed for the login problem. Rewriting the module is cleanest but takes a quarter. A quick patch ships this week but adds debt we must repay later. Buying a licensed component is fast and solid, yet then we depend on an outside company. Judged by user impact per week, the patch wins now — provided the rewrite is scheduled, not forgotten."],
@@ -147,7 +150,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "話題が関心分野内で、推敲・修正の機会があれば、複雑な学術的・職業的話題の長めの報告・記事・論文にふさわしい序論と結論を書く。",
  "序論の機能定型（examines ... / It argues that ...）と結論の機能定型（The evidence reviewed here points to ...）。本体との呼応。",
  "序論は予告、結論は回収 ── どちらも本体の要約ではない。It argues that ... で主張を序論の末尾に置く（結論まで隠さない）のが英語論文の型。「まとめ」と書いて本体を繰り返さない。",
- "構成糸：器（361）→ 序論・結論の設計。支援条件（推敲・修正の機会）＝支え型条件句が書面長文の上端C1に回帰する ── 叙述系では下段の装置（口頭260事前準備・書面345辞書）だった支えが、長大なテキストでは上端に戻る（判断(ac)）。",
+ "構成糸：器（361）→ 序論・結論の設計。支援条件（推敲・修正の機会）＝支え型条件句が書面長文の上端C1に回帰する ── 叙述族では下段の装置（口頭260事前準備・書面345辞書）だった支えが、長大なテキストでは上端に戻る（判断(ac)）。",
 ),
 350: (
  ["(from a review-essay) The proposal is elegant, and its elegance is the problem. By funding the library through a hotel tax, the council ties culture to tourism — a marriage that flatters both parties until the first bad season. The plan deserves support, but only with a floor: a guaranteed minimum from the general budget, so that the library's opening hours do not rise and fall with the price of a hotel room."],
@@ -177,9 +180,9 @@ DISCUSSION = [
  # ¶1 背骨
  "この18件の梯子は、書面の構築梯子の外枠を Creative writing と共有しながら、中身を叙述から論証へ差し替える。段名列はCEFR原文語彙に係留する：接続 connectors（366）→ 定型書式 conventionalised format（364）→ 器 essays（361）→ 展開 develops an argument（359）→ 統合 synthesise（360）→ 体系化と強調 systematically / highlighting（356）→ 構成の設計 introduction and conclusion（355）→ 読者のための論理構造 logical structure / reader（351）・視点の区別 distinguishing（352）・よどみない一体化 smoothly flowing（350）。書面の背骨は二層をなす：接続に始まり読者適合に終わる外枠は系に依存せず（Creative と共有）、その中身（叙述の結束／論証の体系化）が系ごとに差し替わる ── 構築梯子型の背骨定義（判断(ab)）は「系非依存の外枠＋系依存の中身」へ精緻化を要する（ladder_templates追随、判断(ac)）。",
  # ¶2 糸
- "スケール内部には糸7本が走る（正準：data/p2_threads.json）。論証系4糸（立論367／理由づけ362／比較考量358／論構造359→356→354→350）は口頭 putting a case と共有 ── 糸はモードに先立つ（判断(z)の発見が第二の系で再現）。ただし書面側は各糸が萎縮し（立論1行・理由づけ1行・比較考量1行）、口頭で三行に分かれた課題が一行に折り畳まれる（362＝286比較＋284理由＋282列挙）── Creative の感情・評価糸（口頭5行→書面1行）と同じ束スケールの萎縮。スケール固有糸は3本：報告（364→365→363→357→353。定型書式→紙面設計→自前の要約→過程記述→論説）、出典統合（360→352。統合→自他の区別）、構成（366→361→355→351。接続語→器→序論結論→論理構造）。共通糸5の使用ゼロは口頭側と同じ（357の過程記述が静的描写と接するが報告に留置・副タグで交差記録）。束の構造：Creative＝書面叙述＋創作＋批評、本スケール＝書面論証＋報告＋出典管理＋構成。ライダー行の再現：351（質フラグ＝構成の技法行）が本体行350に付随する ── Creative の C1=327+328・C2=325+326 と同配置。報告糸の上端（353論説）は論構造糸の装置（強調）に合流する ── 報告と論証の上端収斂。",
+ "スケール内部には糸7本が走る（正準：data/p2_threads.json）。論証族4糸（立論367／理由づけ362／比較考量358／論構造359→356→354→350）は口頭 putting a case と共有 ── 糸はモードに先立つ（判断(z)の発見が第二の族で再現）。ただし書面側は各糸が萎縮し（立論1行・理由づけ1行・比較考量1行）、口頭で三行に分かれた課題が一行に折り畳まれる（362＝286比較＋284理由＋282列挙）── Creative の感情・評価糸（口頭5行→書面1行）と同じ束スケールの萎縮。残る5本のうち3本は**教示族**の糸で、その口頭側は Sustained monologue: giving information（判断(ad)(ae)）── 報告（364→365→363。定型書式→紙面設計→自前の要約）、手順（357。複雑な過程の詳細記述 ── 口頭267との類似度0.661が全比較中の最高値で、判断(ae)で報告糸から再タグ）、説明（353。論説＝expositions であって報告ではない、同じく判断(ae)で再タグ）。本スケールは論証族と教示族を同時に宣言する束スケールである。スケール固有糸は2本：出典統合（360→352。統合→自他の区別）、構成（366→361→355→351。接続語→器→序論結論→論理構造）。叙述族糸の使用ゼロは口頭側と同じ（357の過程記述が静的描写と接するが報告に留置・副タグで交差記録）。束の構造：Creative＝書面叙述＋創作＋批評、本スケール＝書面論証＋報告＋出典管理＋構成。ライダー行の再現：351（質フラグ＝構成の技法行）が本体行350に付随する ── Creative の C1=327+328・C2=325+326 と同配置。説明糸（353論説）は論構造糸の装置（強調）に合流する ── 教示族と論証族の上端収斂（判断(ac)(vii)の所見は再タグ後も維持される）。",
  # ¶3 mode
- "modeは全行「書面」で一様。並行対は356↔277の一組のみ（同文級・論証系の型式標本、mode_pairs登録）。叙述系の同レベル7対と対照的に、論証系では書面が一段上に置かれる段差が2件（354 C1↔278 B2の同文級／358 B2+↔280 B2の同課題）── 読み（仮）：推敲可能な媒体では肉づけ・考量に読み手の密度要求が加わり、同じ操作の格が上がる。367（A2）が口頭287の条件句「相手の辛抱強さ」を持たないことも mode差の解法を示す ── 書面は待ってくれる媒体そのものである。柱間の境界が二箇所で立つ：363の要約・360の統合は仲介（第4柱）と接する（自分の論のための統合 vs 他者の理解のための仲介、の分業）。350の批評的評価は Creative writing の批評糸（334→332→329）と合流 ── 単独構築の作品評という書面上端で、叙述系と論証系の糸が再結合する。",
+ "modeは全行「書面」で一様。並行対は356↔277の一組のみ（同文級・論証族の型式標本、mode_pairs登録）。叙述族の同レベル7対と対照的に、論証族では書面が一段上に置かれる段差が2件（354 C1↔278 B2の同文級／358 B2+↔280 B2の同課題）── 読み（仮）：推敲可能な媒体では肉づけ・考量に読み手の密度要求が加わり、同じ操作の格が上がる。367（A2）が口頭287の条件句「相手の辛抱強さ」を持たないことも mode差の解法を示す ── 書面は待ってくれる媒体そのものである。柱間の境界が二箇所で立つ：363の要約・360の統合は仲介（第4柱）と接する（自分の論のための統合 vs 他者の理解のための仲介、の分業）。350の批評的評価は Creative writing の批評糸（334→332→329）と合流 ── 単独構築の作品評という書面上端で、叙述族と論証族の糸が再結合する。",
  # ¶4 L1
  "L1注意は三段の質的転換をなす ── 五例目（授受・第一号・第二号・第三号・本シート）。下段（〜B1）＝統語・接続：and/because/then の選択・because節の独立禁止・定型書式への充填。中段（B1+〜B2）＝談話・パラグラフ：topic sentence 先行・利欠点の対比標識（on the other hand と but の使い分け）・反対側の論を自分の文章で立ててから返す・数字を文に埋め込む・出典を主語にする（「〜と言われている」の主語なし伝聞の禁止）。上段（B2+〜C2）＝修辞・帳簿：強調を構成そのもので行う（語気が使えない媒体の帰結）・挿入句による譲歩の畳み込み・序論＝予告／結論＝回収の機能定型（「まとめ」で本体を繰り返さない）・自他の視点の区画（My own view の明示 ── 日本語アカデミック作文でも課題だが、英語は帰属明示の規範が一段強い）。",
  # ¶5 横串
@@ -197,12 +200,13 @@ def build(root="."):
     assert sorted(tagged) == sorted(ORDER), "主タグが完全分割でない"
     assert all(n in set(ORDER) for v in SUBTAGS.values() for n in v), "副タグに帳簿外のNo"
     th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
+    assert th["族"] == FAMILY, "FAMILYがp2_threads.jsonの族宣言と不一致"
     assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
     assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
-    sys_rec = next(s for s in mp["systems"] if s["name"] == SYSTEM)
+    sys_rec = next(s for s in mp["systems"] if s["族"] == SYSTEM)
     canon = {p["written"]: p["oral"] for p in sys_rec["pairs"]}
-    assert MODE_PAIRS == canon, "並行対がmode_pairs.json（論証系）と不一致"
+    assert MODE_PAIRS == canon, "並行対がmode_pairs.json（論証族）と不一致"
     rows = []
     for no in ORDER:
         d = desc[str(no)]
@@ -217,7 +221,7 @@ def build(root="."):
     sheet = {
         "title": "報告と小論（Reports and essays）── 第2柱第四号範型・全数シート",
         "scope": "全数（18件。書面18 ── mode一様、(d)裁定1）",
-        "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。論証系での再現＝判断(ac)・CEFRカタログ9）。談話課題糸＝立論／理由づけ／比較考量／論構造（論証系4糸、口頭putting a caseと共有）＋報告／出典統合／構成（スケール固有）＋副タグ（ジャンル・結束条件句・支援条件・質フラグ・比較考量・静的描写）",
+        "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。論証族での再現＝判断(ac)・CEFRカタログ9）。談話課題糸＝立論／理由づけ／比較考量／論構造（論証族4糸、口頭putting a caseと共有）＋報告／出典統合／構成（スケール固有）＋副タグ（ジャンル・結束条件句・支援条件・質フラグ・比較考量・静的描写）",
         "essence": "一人で、不在の読者に向けて、論・報告・小論を書き上げる。梯子は組み立ての複雑化（接続→書式→器→展開→統合→体系化→構成設計→読者のための論理構造）に宿り、書面背骨の外枠（接続に始まり読者適合に終わる）はCreative writingと共有される。並行対の口頭側はputting a case（型式標本356/277）。",
         "rows": rows,
         "discussion": DISCUSSION,

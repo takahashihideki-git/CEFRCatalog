@@ -38,3 +38,4 @@ productivity	CEFR-J未収録の学術基本語（framework同族）。C1行（35
 rehiring	re-+hire+-ingの規則派生（survivable同族。CEFRカタログ9裁定）
 subsidiary	記述文原語（No.278/354 subsidiary points）。C1行の実例が記述文の語を用いるのは適正（CEFRカタログ9裁定）
 mikan	日本文化圏の事物名（借用語・英語辞書収録）。361の学習者エッセイの場面語（japan同族の文化固有名。CEFRカタログ9裁定）
+yen	CEFR-J未収録の通貨単位（dollar は A1 収録。語彙表の英米圏バイアス）。日本の学習者向けカタログでは既定の通貨で、B2行（266）の詳細情報の数値スロット（CEFRカタログ10裁定）

@@ -17,6 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 SCALE = "Sustained monologue: describing experience"
+FAMILY = ["叙述族"]  # 判断(ad)：系＝族。p2_threads.jsonのscales[SCALE]["族"]と照合
 ACT = "叙述・経験の語り（第2柱：Sustained monologue: describing experience）"
 
 # レベル順→No昇順（表示順の正準）
@@ -269,6 +270,7 @@ def build(root="."):
     assert sorted(tagged) == sorted(ORDER), "糸タグが完全分割でない"
     # 糸の正準照合（判断(aa)：jsonが正準、pyはassertで追随 ── mode_pairs方式）
     th = json.load(open(os.path.join(ROOT, "data", "p2_threads.json"), encoding="utf-8"))["scales"][SCALE]
+    assert th["族"] == FAMILY, "FAMILYがp2_threads.jsonの族宣言と不一致"
     assert {k: sorted(v) for k, v in THREADS.items()} == {k: sorted(v) for k, v in th["主タグ"].items()}, "THREADSがp2_threads.jsonと不一致"
     assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     rows = []
