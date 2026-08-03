@@ -128,7 +128,22 @@ if __name__ == "__main__":
     ext_acts = set(lt_p1["外部化型"]["適用行為"])
     assert all(cx[a].get("外部化先") for a in ext_acts), "外部化型行為に外部化先の欠落"
     assert set(D["cross_axes"]["横断軸"]["書面フォーマル一段"]["再現"].keys()) == {"632", "633", "628"}, "書面フォーマル一段の再現記録の不一致"
-    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8、三号四号=CEFRカタログ9・論証族、五号=CEFRカタログ10・教示族）── 全数性はスケール所属で照合（第2柱インベントリ整備までの代替）
+    # 第2柱インベントリ（判断(ah)、CEFRカタログ12）── 132件の完全分割（範型115＋留置17）を正とする
+    P2INV = json.load(open(os.path.join("data", "p2_inventory_132to7.json"), encoding="utf-8"))
+    p2_block = {n for n, v in D["partition"].items() if v["block"] == "産出・談話構築"}
+    inv_h, inv_r = P2INV["範型"], P2INV["留置"]
+    assert len(inv_h) == 115 and len(inv_r) == 17, "p2インベントリ件数不一致"
+    assert set(inv_h.keys()) | set(inv_r.keys()) == p2_block and not set(inv_h) & set(inv_r), "p2インベントリが区分分割132件の完全分割でない"
+    for n, sc in inv_h.items():
+        assert D["descriptors"][n]["scale"] == sc, f"p2インベントリ範型のスケール不整合 No.{n}"
+    ov_counts = {}
+    for n, row in inv_r.items():
+        assert D["descriptors"][n]["scale"] == row["scale"], f"p2インベントリ留置のスケール不整合 No.{n}"
+        assert D["descriptors"][n]["level"] == row["level"], f"p2インベントリ留置のレベル不整合 No.{n}"
+        assert row["note"], f"p2インベントリ留置に行別noteの欠落 No.{n}"
+        ov_counts[row["scale"]] = ov_counts.get(row["scale"], 0) + 1
+    assert ov_counts == {"Overall oral production": 8, "Overall written production": 9}, "p2留置のスケール構成不一致"
+    # 第2柱シート（一号=CEFRカタログ7、二号=CEFRカタログ8、三号四号=CEFRカタログ9・論証族、五号=CEFRカタログ10・教示族）── 全数性は帳簿（p2_inventory）で照合
     P2_SHEETS = [
         ("Sustained monologue: describing experience", "catalog_p2_describing_experience.json", "口頭", 28),
         ("Creative writing", "catalog_p2_creative_writing.json", "書面", 24),
@@ -150,8 +165,8 @@ if __name__ == "__main__":
             assert r["mode"] == p2_mode, f"p2 modeが{p2_mode}でない No.{no}"
             assert D["descriptors"][no]["scale"] == p2_scale, f"p2スケール所属不一致 No.{no}"
             p2_seen.add(no)
-        p2_members = {n for n, d in D["descriptors"].items() if d.get("scale") == p2_scale}
-        assert p2_seen == p2_members and len(P2["rows"]) == p2_n, f"p2全数性不一致 {p2_scale}"
+        p2_members = {n for n, sc in inv_h.items() if sc == p2_scale}
+        assert p2_seen == p2_members and len(P2["rows"]) == p2_n, f"p2全数性不一致（帳簿照合） {p2_scale}"
         assert len(P2["discussion"]) == 5, f"p2 DISCUSSION段落数不一致 {p2_scale}"
         p2_rows_by_scale[p2_scale] = p2_seen
     p2_mode_by_scale = {sc: md for sc, _fn, md, _n in P2_SHEETS}
@@ -232,4 +247,4 @@ if __name__ == "__main__":
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
         # 保存された糸は当該族の族糸であること（判断(ad)：糸保存＝族の内部で成り立つ写像）
         assert to in TH["族糸"][fam], f"並行対の糸が族外 {p['oral']}/{p['written']}: {to} ∉ {fam}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、スケール全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")

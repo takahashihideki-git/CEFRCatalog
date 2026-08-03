@@ -1,0 +1,213 @@
+{
+ "説明": "第2柱（産出・談話構築）132件のインベントリ正準（判断(ah)、CEFRカタログ12）。範型115件（7スケール＝全数シート化済み）＋留置17件（Overall系）で block_partition の産出・談話構築132件を完全分割する。restore.py の第2柱全数照合はスケール属性導出でなく本帳簿を正とする（第1柱の篩帳簿方式に対応。ただし第2柱は篩なし〔判断(y)(b)〕のためADOPT/DROPを持たず、完全分割の単一台帳とする）。",
+ "留置の一括理由": "判断(y)(a)：Overall oral/written production 17件は級の総括（既範型スケールの束の再記述＋質）であり、単一ジャンルの範型対象ではない。篩のR1/R2同族。素材区分＝レベル・ポートレート（提示レイヤの非採用収録方針①と同じ帳簿系。行別noteは各行がどの範型スケール・背骨段の束かを記録する）。",
+ "完全分割": {
+  "範型": 115,
+  "留置": 17,
+  "計": 132
+ },
+ "範型": {
+  "260": "Sustained monologue: describing experience",
+  "261": "Sustained monologue: describing experience",
+  "258": "Sustained monologue: describing experience",
+  "259": "Sustained monologue: describing experience",
+  "254": "Sustained monologue: describing experience",
+  "255": "Sustained monologue: describing experience",
+  "256": "Sustained monologue: describing experience",
+  "257": "Sustained monologue: describing experience",
+  "248": "Sustained monologue: describing experience",
+  "249": "Sustained monologue: describing experience",
+  "250": "Sustained monologue: describing experience",
+  "251": "Sustained monologue: describing experience",
+  "252": "Sustained monologue: describing experience",
+  "253": "Sustained monologue: describing experience",
+  "240": "Sustained monologue: describing experience",
+  "241": "Sustained monologue: describing experience",
+  "242": "Sustained monologue: describing experience",
+  "243": "Sustained monologue: describing experience",
+  "244": "Sustained monologue: describing experience",
+  "245": "Sustained monologue: describing experience",
+  "246": "Sustained monologue: describing experience",
+  "247": "Sustained monologue: describing experience",
+  "239": "Sustained monologue: describing experience",
+  "237": "Sustained monologue: describing experience",
+  "238": "Sustained monologue: describing experience",
+  "235": "Sustained monologue: describing experience",
+  "236": "Sustained monologue: describing experience",
+  "234": "Sustained monologue: describing experience",
+  "346": "Creative writing",
+  "347": "Creative writing",
+  "348": "Creative writing",
+  "342": "Creative writing",
+  "343": "Creative writing",
+  "344": "Creative writing",
+  "345": "Creative writing",
+  "339": "Creative writing",
+  "340": "Creative writing",
+  "341": "Creative writing",
+  "335": "Creative writing",
+  "336": "Creative writing",
+  "337": "Creative writing",
+  "338": "Creative writing",
+  "333": "Creative writing",
+  "334": "Creative writing",
+  "331": "Creative writing",
+  "332": "Creative writing",
+  "330": "Creative writing",
+  "327": "Creative writing",
+  "328": "Creative writing",
+  "329": "Creative writing",
+  "325": "Creative writing",
+  "326": "Creative writing",
+  "287": "Sustained monologue: putting a case (e.g. in a debate)",
+  "286": "Sustained monologue: putting a case (e.g. in a debate)",
+  "283": "Sustained monologue: putting a case (e.g. in a debate)",
+  "284": "Sustained monologue: putting a case (e.g. in a debate)",
+  "285": "Sustained monologue: putting a case (e.g. in a debate)",
+  "281": "Sustained monologue: putting a case (e.g. in a debate)",
+  "282": "Sustained monologue: putting a case (e.g. in a debate)",
+  "278": "Sustained monologue: putting a case (e.g. in a debate)",
+  "279": "Sustained monologue: putting a case (e.g. in a debate)",
+  "280": "Sustained monologue: putting a case (e.g. in a debate)",
+  "277": "Sustained monologue: putting a case (e.g. in a debate)",
+  "275": "Sustained monologue: putting a case (e.g. in a debate)",
+  "276": "Sustained monologue: putting a case (e.g. in a debate)",
+  "366": "Reports and essays",
+  "367": "Reports and essays",
+  "364": "Reports and essays",
+  "365": "Reports and essays",
+  "361": "Reports and essays",
+  "362": "Reports and essays",
+  "363": "Reports and essays",
+  "359": "Reports and essays",
+  "360": "Reports and essays",
+  "356": "Reports and essays",
+  "357": "Reports and essays",
+  "358": "Reports and essays",
+  "353": "Reports and essays",
+  "354": "Reports and essays",
+  "355": "Reports and essays",
+  "350": "Reports and essays",
+  "351": "Reports and essays",
+  "352": "Reports and essays",
+  "272": "Sustained monologue: giving information",
+  "271": "Sustained monologue: giving information",
+  "270": "Sustained monologue: giving information",
+  "268": "Sustained monologue: giving information",
+  "269": "Sustained monologue: giving information",
+  "266": "Sustained monologue: giving information",
+  "267": "Sustained monologue: giving information",
+  "265": "Sustained monologue: giving information",
+  "263": "Sustained monologue: giving information",
+  "264": "Sustained monologue: giving information",
+  "314": "Addressing audiences",
+  "312": "Addressing audiences",
+  "313": "Addressing audiences",
+  "310": "Addressing audiences",
+  "311": "Addressing audiences",
+  "308": "Addressing audiences",
+  "309": "Addressing audiences",
+  "307": "Addressing audiences",
+  "305": "Addressing audiences",
+  "306": "Addressing audiences",
+  "303": "Addressing audiences",
+  "304": "Addressing audiences",
+  "299": "Addressing audiences",
+  "300": "Addressing audiences",
+  "301": "Addressing audiences",
+  "302": "Addressing audiences",
+  "297": "Addressing audiences",
+  "298": "Addressing audiences",
+  "294": "Public announcements",
+  "293": "Public announcements",
+  "292": "Public announcements",
+  "291": "Public announcements"
+ },
+ "留置": {
+  "233": {
+   "scale": "Overall oral production",
+   "level": "Pre-A1",
+   "note": "自己描写の定型句段。叙述下端（260・258）の級総括で、第1柱「自己に関する情報提供」の産出側と地続き。"
+  },
+  "324": {
+   "scale": "Overall written production",
+   "level": "Pre-A1",
+   "note": "辞書使用可の条件句つき個人情報＝ツール依存条件句（684系）の総括版。第1柱「自己に関する情報提供」「応募・出願」の書面下端と地続き。"
+  },
+  "232": {
+   "scale": "Overall oral production",
+   "level": "A1",
+   "note": "人・場所の孤立句＝叙述A1帯の級総括。「孤立した（isolated）」は背骨の定型句〜列挙前段の署名で、323の口頭対。"
+  },
+  "322": {
+   "scale": "Overall written production",
+   "level": "A1",
+   "note": "好き嫌い・家族・ペット＝第1柱「意見・見解の表明」評価相（好悪647・684）＋「自己に関する情報提供」の産出側総括。346（Creative A1）と同帯。"
+  },
+  "323": {
+   "scale": "Overall written production",
+   "level": "A1",
+   "note": "孤立した句・文＝232の書面対。書面下端の級総括。"
+  },
+  "231": {
+   "scale": "Overall oral production",
+   "level": "A2",
+   "note": "linked into a list＝背骨list段の級総括。素材は叙述A2帯（254〜257）の束。presentation語がAddressing audiencesの帯を予告。"
+  },
+  "321": {
+   "scale": "Overall written production",
+   "level": "A2",
+   "note": "and・but・becauseの明示接続＝書面背骨「結束の明示化」段（342と同帯・同語法）の級総括。"
+  },
+  "230": {
+   "scale": "Overall oral production",
+   "level": "B1",
+   "note": "linear sequence of points＝背骨sequence段の級総括（叙述B1帯・情報提供270と同帯）。320の口頭対。"
+  },
+  "320": {
+   "scale": "Overall written production",
+   "level": "B1",
+   "note": "短い個別要素の直線連結＝sequence段の書面対（230の対）。叙述B1帯（336〜338）の束。"
+  },
+  "229": {
+   "scale": "Overall oral production",
+   "level": "B2",
+   "note": "subsidiary points・relevant examples＝背骨detailed段＋論証族の裏づけ語彙の束（putting a case B2帯と共有）。"
+  },
+  "319": {
+   "scale": "Overall written production",
+   "level": "B2",
+   "note": "複数情報源の統合・評価＝Reports and essays B2帯の級総括（356へ続く帯）。"
+  },
+  "228": {
+   "scale": "Overall oral production",
+   "level": "B2+",
+   "note": "appropriate highlighting＝356（B2+小論）と同語の級総括。体系的展開＝論構造糸の帯の口頭側。"
+  },
+  "227": {
+   "scale": "Overall oral production",
+   "level": "C1",
+   "note": "integrating sub-themes・rounding off＝背骨integrating段の級総括。299（講演C1）とほぼ同文の束、317の口頭対。"
+  },
+  "317": {
+   "scale": "Overall written production",
+   "level": "C1",
+   "note": "salient issuesの強調＋補助論点・理由・例＋結論＝353＋354の合成にほぼ一致する級総括。227の書面対。"
+  },
+  "318": {
+   "scale": "Overall written production",
+   "level": "C1",
+   "note": "ジャンル慣習と語調・文体・レジスターの使い分け＝書面背骨「ジャンル慣習→読者適合」段の純化。横串（社会言語的適切さ）への溶解に最接近する総括行（課題でなく使い分け能力そのものを総括）。"
+  },
+  "226": {
+   "scale": "Overall oral production",
+   "level": "C2",
+   "note": "受け手が気づき記憶するのを助ける＝受け手基準／memorable段（234と同力学）の級総括。316の口頭対。"
+  },
+  "316": {
+   "scale": "Overall written production",
+   "level": "C2",
+   "note": "読み手が重要点を見つけやすい＝受け手基準の書面対（226の対、325と同力学）。"
+  }
+ }
+}

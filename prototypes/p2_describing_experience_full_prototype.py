@@ -261,7 +261,7 @@ DISCUSSION = [
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
-    # 全数性：スケール所属集合＝ORDER集合（第2柱インベントリ未整備のためスケール所属で代替 ── (c)設計3）
+    # 全数性：スケール所属集合＝ORDER集合（スケール所属集合での内部健全性確認。帳簿正準はdata/p2_inventory_132to7.json、正式照合はrestore.py ── 判断(ah)）
     members = {int(no) for no, d in desc.items() if d.get("scale") == SCALE}
     assert members == set(ORDER), f"全数性不一致: {members ^ set(ORDER)}"
     assert len(ORDER) == 28
