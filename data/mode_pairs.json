@@ -3,8 +3,8 @@
   "what": "モード間並行対の正準記録。同一の談話課題が口頭スケールと書面スケールに同一レベルで並行して立つ対（スケール再掲重複対＝第1柱466/512型の、第2柱・モード間版）。二行保持＋相互参照で扱う。",
   "origin": "CEFRカタログ7・第2柱第一号範型（Sustained monologue: describing experience 28件）。4論点裁定(d)-2。機械検出（difflib類似度）＋人間裁定で帳簿化。 判断(ac)（CEFRカタログ9）で系（system）構造へ拡張。判断(ad)（CEFRカタログ10）で**系のキーを「口頭スケール×書面スケール」から族（p2_threads.jsonの族糸）へ移した** ── 残る第2柱3スケールが全て口頭で、書面側は既済スケールが束として受けるため、系とスケール対の1:1が壊れる（Reports and essays は論証族と教示族の両方の書面側）。スケール名はフィールドに持たず各Noの所属から導出する（restore.pyが両側の所属スケールの族宣言と口頭／書面の別を照合）。",
   "exemplar": "No.247（口頭）↔ No.338（書面）『Can narrate a story.』── 完全同文の型式標本。語りが mode を選ばないことの帳簿上の証拠。 論証族の型式標本はNo.277↔No.356（B2+・同文級 ── develops an argument systematically with appropriate highlighting of significant points and relevant supporting detail が完全共通、356側は Can produce an essay or report which... の器差のみ）。",
-  "reading": "mode の差は課題の差でなく解法の差 ── 口頭は時間拘束の中の結束（fluently, No.241）、書面は推敲可能性と明示結束（chronological signalling, No.333）で同じ組み立て課題を解く。 論証族では叙述族（同レベル7対）と異なり、同文級・同課題が書面で一段上に置かれる段差事例が2件（278 B2→354 C1の同文級／280 B2→358 B2+の同課題）── 並行対でなく梯子段差として扱う（判断(ac)）。 教示族（判断(ae)）：同レベルの対応はあるが**文言が共有されない**（270↔364は課題一致・類似度0.355）── 叙述族・論証族が同文級で対をなすのと対照的で、情報提示の記述文が場面・制度に係留された語彙で書かれることの帳簿上の現れ。段差は論証族と同型（267 B2→357 B2+）。",
-  "pending": "Addressing audiences（口頭）の候補対（305↔359〔B2〕ほか）は Addressing audiences 範型作成時に裁定して追記する（族の帰属も同時に決める）。278〔B2〕↔354〔C1〕は裁定済み＝並行対でなく梯子段差（判断(ac)）。教示族の候補対は判断(ae)で裁定済み（270↔364＝並行対／267↔357＝段差）。"
+  "reading": "mode の差は課題の差でなく解法の差 ── 口頭は時間拘束の中の結束（fluently, No.241）、書面は推敲可能性と明示結束（chronological signalling, No.333）で同じ組み立て課題を解く。 論証族では叙述族（同レベル7対）と異なり、同文級・同課題が書面で一段上に置かれる段差事例が2件（278 B2→354 C1の同文級／280 B2→358 B2+の同課題）── 並行対でなく梯子段差として扱う（判断(ac)）。 教示族（判断(ae)）：同レベルの対応はあるが**文言が共有されない**（270↔364は課題一致・類似度0.355）── 叙述族・論証族が同文級で対をなすのと対照的で、情報提示の記述文が場面・制度に係留された語彙で書かれることの帳簿上の現れ。段差は論証族と同型（267 B2→357 B2+）。 判断(af)（CEFRカタログ11）で段差の読みを改訂：非対称の軸はoral/writtenでなく準備・推敲可能性である。段差3件（278→354・280→358＝即応の討論、267→357＝即席の口頭情報提供）はすべて即応側が下に置かれ、準備済み口頭であるAddressing audiencesは書面と3段（B2/B2+/C1）にわたり同レベルで対をなす ── 即応口頭＜準備済み口頭≈推敲書面。「書面は待ってくれる媒体」は「準備・推敲が待ってくれる」へ一般化される（367↔287の非対称もこの読みで保存）。例外は277↔356（即応口頭が同段に届く唯一＝型式標本の注記維持）。",
+  "pending": "305↔359ほかAddressing audiencesの候補対は判断(af)（CEFRカタログ11）で裁定済み＝305↔359・303↔356・299↔354の3対を論証族へ採用（論証族4対）。Public announcementsは書面対応物ゼロ＝並行対を持たない初のスケール（族宣言なし、判断(ag)）。278↔354は段差のまま（299が同段の対を張る）。教示族は判断(ae)で裁定済み（270↔364＝並行対／267↔357＝段差）。残るpendingなし ── 第2柱範型7スケールで並行対の帳簿は完結。"
  },
  "systems": [
   {
@@ -70,6 +70,27 @@
      "level": "B2+",
      "relation": "同文級",
      "note": "論証族の型式標本。develops an argument systematically with appropriate highlighting of significant points and relevant supporting detail が完全共通（356は essay or report の器のみ加わる）。"
+    },
+    {
+     "oral": 305,
+     "written": 359,
+     "level": "B2",
+     "relation": "同文級",
+     "note": "講演↔小論のB2対。giving reasons in support of or against a particular point of view and ... the advantages and disadvantages of various options が共通（類似度0.824）。判断(af)で採用 ── カタログ10申し送りのpending。"
+    },
+    {
+     "oral": 303,
+     "written": 356,
+     "level": "B2+",
+     "relation": "同文級",
+     "note": "講演↔小論のB2+対。systematically developed / highlighting of significant points / relevant supporting detail が共通（類似度0.695）。書面側356は277（討論）とも対をなす＝一つの書面行が二つの口頭行を受けるn:1（判断(ad)の族キー化が許容）。口頭同士の303↔277（0.786）はスケール再掲重複対としてシート内相互参照（第2柱初の口頭×口頭重複対、判断(af)）。"
+    },
+    {
+     "oral": 299,
+     "written": 354,
+     "level": "C1",
+     "relation": "同文級",
+     "note": "講演↔小論のC1対。expand and support points of view at some length with subsidiary points, reasons and relevant examples が完全共通（354の全文が299から講演の器を外した残り、類似度0.751）。354は278（討論B2）の段差先でもある ── 同一書面行が講演とは同段・討論とは段差。"
     }
    ],
    "段差": [

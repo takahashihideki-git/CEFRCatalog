@@ -116,7 +116,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "重要な点を適切に強調し、関連する詳細で裏づけながら、体系的に論を展開する。",
  "強調の設計（the second is the key one / most importantly）。体系性＝論点の予告・配列・回収。",
  "強調は語気でなく設計で行う ── どの論点が要かを言葉で宣言する（and most importantly）。日本語の文末詠嘆や繰り返しによる強調をそのまま持ち込まない。",
- "論構造糸：体系化＋強調の設計（highlighting）。書面356と同文級＝論証族の型式標本対（モード間並行対、mode_pairs登録）。",
+ "論構造糸：体系化＋強調の設計（highlighting）。書面356と同文級＝論証族の型式標本対（モード間並行対、mode_pairs登録）。講演側303（Addressing audiences・B2+）とも同文級（類似度0.786）── 第2柱初の口頭×口頭スケール再掲重複対で、同じ体系化＋強調が応酬の中（討論）と準備の上（講演）の両帳簿に立つ（二行保持・相互参照、判断(af)）。356はこの二つの口頭行を受ける書面側でもある。",
 ),
 275: (
  ["The question is not whether we regulate AI, but at which layer. Regulate the model itself, and you freeze today's technology into law. Regulate the use — medical, legal, financial — and the rules stay meaningful as models change. That is precisely why use-based regulation, and only use-based regulation, can last."],
@@ -163,7 +163,7 @@ def build(root="."):
     assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
     sys_rec = next(s for s in mp["systems"] if s["族"] == SYSTEM)
-    canon = {p["oral"]: p["written"] for p in sys_rec["pairs"]}
+    canon = {p["oral"]: p["written"] for p in sys_rec["pairs"] if p["oral"] in set(ORDER)}  # 論証族4対のうち自スケール分（判断(af)）
     assert MODE_PAIRS == canon, "並行対がmode_pairs.json（論証族）と不一致"
     rows = []
     for no in ORDER:

@@ -135,6 +135,8 @@ if __name__ == "__main__":
         ("Sustained monologue: putting a case (e.g. in a debate)", "catalog_p2_putting_a_case.json", "口頭", 13),
         ("Reports and essays", "catalog_p2_reports_essays.json", "書面", 18),
         ("Sustained monologue: giving information", "catalog_p2_giving_information.json", "口頭", 10),
+        ("Addressing audiences", "catalog_p2_addressing_audiences.json", "口頭", 18),
+        ("Public announcements", "catalog_p2_public_announcements.json", "口頭", 4),
     ]
     p2_rows_by_scale = {}
     for p2_scale, p2_fn, p2_mode, p2_n in P2_SHEETS:
@@ -159,7 +161,7 @@ if __name__ == "__main__":
     #   ── 族ごとに両No実在・レベル一致・完全同文はen一致。スケールは所属から導出し、族宣言と口頭／書面の別を照合
     MP = json.load(open(os.path.join("data", "mode_pairs.json"), encoding="utf-8"))
     assert [s["族"] for s in MP["systems"]] == ["叙述族", "論証族", "教示族"], "並行対の族構成不一致"
-    assert [len(s["pairs"]) for s in MP["systems"]] == [7, 1, 1], "並行対件数不一致"
+    assert [len(s["pairs"]) for s in MP["systems"]] == [7, 4, 1], "並行対件数不一致"
     assert all(s["族"] in TH["族糸"] for s in MP["systems"]), "mode_pairsの族がp2_threadsの族糸に未登録"
     mp_all_pairs = []
     for s in MP["systems"]:
@@ -182,6 +184,7 @@ if __name__ == "__main__":
     assert any(p["oral"] == 247 and p["written"] == 338 and p["relation"] == "完全同文" for p in sys_narr["pairs"]), "型式標本247/338の欠落"
     sys_arg = next(s for s in MP["systems"] if s["族"] == "論証族")
     assert any(p["oral"] == 277 and p["written"] == 356 for p in sys_arg["pairs"]), "論証族型式標本277/356の欠落"
+    assert {(p["oral"], p["written"]) for p in sys_arg["pairs"]} == {(277, 356), (305, 359), (303, 356), (299, 354)}, "論証族の並行対帳簿不一致（判断(af)）"
     # 段差（並行対でない同文級・同課題のレベル非対称、判断(ac)）── 両No実在・レベル記載一致・非同レベル
     for g in sys_arg.get("段差", []):
         o, w = str(g["oral"]), str(g["written"])
@@ -218,4 +221,4 @@ if __name__ == "__main__":
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
         # 保存された糸は当該族の族糸であること（判断(ad)：糸保存＝族の内部で成り立つ写像）
         assert to in TH["族糸"][fam], f"並行対の糸が族外 {p['oral']}/{p['written']}: {to} ∉ {fam}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型5枚（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭、スケール全数・mode一様）/ 並行対3族9（叙述族7・型式標本247-338／論証族1・型式標本277-356／教示族1・270-364＝課題一致で採った対、両側実在・モード配置・族宣言・糸保存・段差3帳簿）/ 糸正準5スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、スケール全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")

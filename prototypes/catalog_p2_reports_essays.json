@@ -115,7 +115,7 @@
     "scene": "ある見解への賛否の理由を挙げ、さまざまな選択肢の利点・欠点を説明しながら、論を展開するエッセイや報告を書く。",
     "howwell": "賛否両論の展開（Supporters / Opponents ... yet）と選択肢の考量、結論の宣言（On balance）。",
     "l1": "反対側の論も自分の文章で立ててから返す（Opponents answer that ... — yet ...）── 賛成材料だけの「主張文」にしない。On balance のような考量の締め語で、比較したことを結論に刻む。",
-    "delta": "論構造糸の書面起点＝賛否両論の展開と選択肢の考量が一体化 ── 口頭280（同じB2）の考量を論の展開に折り畳む。束スケールでは糸の複数課題が一行に同居する。"
+    "delta": "論構造糸の書面起点＝賛否両論の展開と選択肢の考量が一体化 ── 口頭280（同じB2）の考量を論の展開に折り畳む。束スケールでは糸の複数課題が一行に同居する。（モード間並行対：口頭 Addressing audiences No.305）"
    },
    {
     "mode": "書面",
@@ -143,7 +143,7 @@
     "scene": "重要な点を適切に強調し、関連する裏づけの詳細を添えて、体系的に論を展開するエッセイや報告を書く。",
     "howwell": "強調の設計（the second is decisive / this is the key point）と体系性（予告・配列・回収）。",
     "l1": "強調を構成そのもので行う ── 要の論点を宣言し（and this is the key point）、段落の配置で見せる。書面では語気の強調が使えないぶん、設計の強調が全てになる。",
-    "delta": "論構造糸：体系化＋強調 ── 口頭277と同文級（develops an argument systematically with appropriate highlighting ... が完全共通）＝論証族の型式標本対（モード間並行対、mode_pairs登録）。（モード間並行対：口頭 putting a case No.277）"
+    "delta": "論構造糸：体系化＋強調 ── 口頭277と同文級（develops an argument systematically with appropriate highlighting ... が完全共通）＝論証族の型式標本対（モード間並行対、mode_pairs登録）。（モード間並行対：口頭 Sustained monologue: putting a case (e.g. in a debate) No.277／Addressing audiences No.303）"
    },
    {
     "mode": "書面",
@@ -199,7 +199,7 @@
     "scene": "補助的な論点・理由・適切な例を挙げて、見解をある程度の長さで展開し裏づける。",
     "howwell": "主論点と補助論点の階層（There are subsidiary benefits too）、挿入句による譲歩と評言（— of course they do —）。",
     "l1": "補助論点は「too」で格を下げて足す ── 全部を主論点の顔で並べない。挿入句（— of course they do —）で譲歩を文中に畳み込む ── 文を分けずに反対材料を処理する書面固有の技術。",
-    "delta": "論構造糸：肉づけ（補助論点・理由・実例）── 口頭278（B2）と同文級だが一段上（C1）＝並行対でなく梯子段差（判断(ac)）。推敲可能な媒体では、同じ肉づけ操作に読み手の密度要求が加わる。"
+    "delta": "論構造糸：肉づけ（補助論点・理由・実例）── 口頭278（B2）と同文級だが一段上（C1）＝並行対でなく梯子段差（判断(ac)）。推敲可能な媒体では、同じ肉づけ操作に読み手の密度要求が加わる。（モード間並行対：口頭 Addressing audiences No.299）"
    },
    {
     "mode": "書面",

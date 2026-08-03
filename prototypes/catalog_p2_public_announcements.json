@@ -1,0 +1,76 @@
+{
+ "公共アナウンス（第2柱：Public announcements）": {
+  "title": "公共アナウンス（Public announcements）── 第2柱第七号範型・全数シート",
+  "scope": "全数（4件。口頭4 ── mode一様、(d)裁定1）",
+  "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・判断(ab)）。単糸4行の最小構成・族宣言なし（並行対を持たない初のスケール、判断(ag)）",
+  "essence": "不特定多数へ、一方向に、確実に届ける。梯子は内容の構成でなく送達の精度に宿り（固定内容→分野内→一般の話題→韻律による陰影）、受け手の受信状態が全段で達成の定義になる。書面対応物ゼロ＝族無所属。質フラグ0件で口頭5スケールの反証テストが完結し、「質フラグは書面固有」が第2柱全域で確定した。",
+  "rows": [
+   {
+    "mode": "口頭",
+    "level": "A2",
+    "no": 294,
+    "en": "Can deliver very short, rehearsed announcements of predictable, learnt content which are intelligible to recipients who are prepared to concentrate.",
+    "jp": "予測可能な学習済みの内容のごく短い練習済みアナウンスを、集中して聞く用意のある相手に理解可能な形でできる。",
+    "exponents": [
+     "The store will close at eight o'clock. Thank you.",
+     "The next train leaves from Track 3 at ten fifteen. Track 3, ten fifteen."
+    ],
+    "scene": "店・駅・学校などで、決まりきった内容のごく短いアナウンスを読み上げる。",
+    "howwell": "予測可能な学習済み内容の送達。数字・場所は繰り返してよい（Track 3, ten fifteen.）。聞き手の集中が支えとして行に書かれている。",
+    "l1": "アナウンスの敬体を直訳しない ──「〜でございます」「ご利用いただき」を積むと文が立たない。事実＋Thank you. で足りる。数字は言い切り、不安なら繰り返す（言い換えではなく同じ形で）。",
+    "delta": "告知糸の起点＝内容が固定されたごく短い送達。集中して聞く用意のある受け手、という支え型条件句（受け手側の支え）が行に書かれる ── 287（相手の忍耐）・313（回答への助け）と同型の、糸の下端の支え。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B1",
+    "no": 293,
+    "en": "Can deliver short, rehearsed announcements on a topic pertinent to everyday occurrences in their field which, despite possible problems with stress and intonation (= non-manuals in a sign language), are nevertheless clearly intelligible.",
+    "jp": "自分の分野の日常的な出来事に関わる話題について、短い練習済みのアナウンスができる。強勢やイントネーションに問題があっても、明瞭に理解可能である。",
+    "exponents": [
+     "Attention, please. Today's meeting will start at three o'clock, not two. The room is the same, Room 5. Thank you.",
+     "May I have your attention? The bus for the station leaves in ten minutes from the main gate. Please do not be late."
+    ],
+    "scene": "自分の分野の日常的な出来事について、短い練習済みのアナウンスをする。",
+    "howwell": "呼びかけの定型（Attention, please.）と変更点の対比（at three, not two）。強勢・イントネーションに問題があっても、明瞭に理解可能であること。",
+    "l1": "変更のアナウンスでは新旧を対で言う（at three, not two ── 「三時からとなりました」だけでは旧情報との差分が届かない）。呼びかけ→本体→念押しの三部構成を守り、本体に一情報ずつ置く。",
+    "delta": "告知糸：固定内容の送達（294）から、自分の分野の出来事の告知へ。受け手の集中という支えが外れ、代わりに「韻律に問題があっても明瞭」という許容が入る ── 支えの脱落が許容として書き換わる中間形（309と同じ段の力学）。"
+   },
+   {
+    "mode": "口頭",
+    "level": "B2",
+    "no": 292,
+    "en": "Can deliver announcements on most general topics with a degree of clarity, fluency and spontaneity which causes no strain or inconvenience to the recipient.",
+    "jp": "大半の一般的な話題について、受け手に負担や不便をかけない明瞭さ・流暢さ・自発性でアナウンスできる。",
+    "exponents": [
+     "Ladies and gentlemen, a small change to today's programme. The two o'clock talk will move to the main hall — that is the big room on your left. Everything else stays the same. If you have any questions, the staff at the desk will help you."
+    ],
+    "scene": "大半の一般的な話題について、受け手に負担をかけない明瞭さ・流暢さ・自発性でアナウンスする。",
+    "howwell": "その場の変更への自発的対応と、受け手負担ゼロの送達（no strain）。補足の言い添え（that is the big room on your left）を淀みなく足せること。",
+    "l1": "予定外の内容でも原稿口調を保とうとして止まらない ── 補足は関係詞や挿入でなく、短文の言い足し（that is ...）で行う。案内の結びは相手の次の行動を示す（the staff will help you）。",
+    "delta": "告知糸：練習済みの範囲（293）から、一般的な話題への自発的対応へ。fluency / spontaneity が行の文言に入り（流暢さ明記）、基準は受け手の無負担 ── poses no strain の定型は講演の質疑306と共有される。韻律の許容（293）はここで消える。"
+   },
+   {
+    "mode": "口頭",
+    "level": "C1",
+    "no": 291,
+    "en": "Can deliver announcements fluently, almost effortlessly, using stress and intonation to convey finer shades of meaning precisely.",
+    "jp": "強勢とイントネーションで意味の微妙な陰影まで正確に伝えながら、ほとんど苦もなく流暢にアナウンスできる。",
+    "exponents": [
+     "This is the LAST call for flight two five one to Sapporo. Passengers Sato and Ito, please come to Gate 4 IMMEDIATELY. The gate closes in FIVE minutes — five, not fifteen.",
+     "Welcome to the hall. Please note: today's concert has NO interval, so we ask you to take your seats NOW. Doors close in two minutes."
+    ],
+    "scene": "強勢とイントネーションで意味の微妙な陰影まで正確に伝えながら、ほとんど苦もなく流暢にアナウンスする（大文字は強勢の位置）。",
+    "howwell": "音韻の運用が意味の精度を担う段 ── 強勢の置き所（LAST / IMMEDIATELY / FIVE）と、誤聴しやすい対の音の切り分け（five, not fifteen）。",
+    "l1": "強勢による対比を語順や語彙の追加で代用しない ── 「五分です、十五分ではありません」と文を増やすのでなく、FIVE, not fifteen と音で切る。日本語のピッチ平板をそのまま持ち込むと、緊急度の陰影（last / immediately）が消える。",
+    "delta": "告知糸の上端＝韻律が意味の担い手になる段。stress and intonation という言語資源の名指しを含むが、「アナウンスを届ける」という課題を持つ本体行であり質フラグではない（271の順序接続語・366の接続詞と同処理、判断(ae)(ag)）。本スケールはC1打ち止めでC2行を持たず、上端の横串溶解が起きない ── giving informationに続く二例目で、溶解のC2到達条件が裏側から再確認される。"
+   }
+  ],
+  "discussion": [
+   "この4件は、最小の構築梯子である ── 単糸・四段・厳密単調。段名列はCEFR原文語彙に係留する：予測可能な学習済み内容 predictable, learnt content（294）→ 分野の日常的な出来事・韻律の許容つき clearly intelligible despite possible problems（293）→ 一般的な話題・受け手の無負担 no strain or inconvenience（292）→ 意味の陰影の韻律的精度 finer shades of meaning precisely（291）。組み立ての複雑化はここでは内容の構成でなく送達の精度に宿る ── 内容の自由度（固定→分野内→一般）と韻律の精度が同じ梯子の上で同時に上がっていく。受け手は全段で基準の側にいる（集中する用意のある受け手→明瞭に理解可能→受け手の無負担→陰影まで届く）── 教示族が受け手基準を文言に持たなかったのと対照的に、告知は受け手の受信状態そのものが達成の定義であることを、行の文言が最初から最後まで言い続ける。",
+   "糸は告知の1本のみ（固有糸）、族宣言は空である（正準：data/p2_threads.json）。空でよい根拠（判断(ag)）：族は判断(ad)でモード間並行対の器として立てられた語彙であり、本スケールは書面第2柱に対応物を一件も持たない ── 並行対ゼロのスケールに族を割り当てる必要はなく、無所属が帳簿の実態をそのまま写す。副タグは2種：支援条件（294の受け手側の支え ── 294→293→292で支え→許容→無負担へと条件が減衰していく系列は、支え型条件句の脱落（744→742型）が三段かけて起きる引き延ばされた形）、流暢さ明記（292/291）。",
+   "modeは全行「口頭」で一様。並行対を一件も持たない初のスケールである ── 告知の書面形（掲示・通知・案内文）は現実には存在するが、CEFRはそれらを第2柱でなく第1柱・伝言の授受（Notes, messages and forms）の帳簿に置いており、モード間の対応は柱をまたぐ相互参照としてのみ立つ。同じ理由で、口頭の告知と口頭の伝言中継（No.612・電話伝言、判断(v)）の境界もここに走る ── 告知は不特定多数への一方向の送達、伝言は特定の受領者への三者中継であり、行の移動はない。",
+   "日本語話者にとって本スケールは、受容の在庫が最も厚く産出の在庫が最も薄い領域である ── 駅・機内・店内アナウンスを聞いた経験は膨大にあるのに、英語で行う側の定型（Attention, please. ／ This is the last call ／ May I have your attention?）はほぼ在庫されていない。転移の中心は三つ。第一に敬体の直訳 ── 「〜でございます」「ご利用いただきまして」の階層を英語に持ち込むと、情報の前に儀礼が立って文が沈む（英語の告知は事実＋Thank you.）。第二に対比の欠落 ── 変更の告知で新情報だけを言う（「三時からとなりました」）習慣は、not two ／ five, not fifteen の対比明示に置き換える必要がある。第三に韻律 ── 上段では強勢が意味の陰影の担い手になるが、日本語のピッチ平板を保ったまま語彙や文を足して代用しようとする。強勢は語を足さずに意味を足す装置である、という一点が上段の学習内容のすべてに近い。",
+   "効く how well 軸の主軸は音韻である ── 291はそれを行の文言で直接名指しする、第2柱で唯一のスケールであり、梯子の上端が音韻軸に貼り付く。次いで流暢さ（292/291、副タグ・流暢さ明記）と社会言語的適切さ（呼びかけ・結びの定型のレジスター）。ただし291は課題（アナウンスの送達）を保持した本体行であり、質フラグではない ── 271（順序接続語）・366（接続詞）と同じ、言語資源の名指しを含む課題行の三例目。本スケールの0件をもって、口頭5スケールすべてで質フラグ0件となり、「質フラグは全て書面側」の規則性は第2柱の全範型スケールで確定した ── 技法・資源が課題から切り離されて行として析出するのは、推敲可能な媒体の側に限られる（判断(ac)(x)の反証テスト完了、判断(ag)）。C1打ち止めで横串溶解が起きないことは giving information に続く二例目で、溶解にはC2到達が要るという条件の裏側の確認も再現された。"
+  ]
+ }
+}

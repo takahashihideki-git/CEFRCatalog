@@ -225,7 +225,7 @@
   },
   "第2柱（産出・談話構築）": {
    "構築梯子型": {
-    "範型": "叙述・経験の語り（第一号、catalog_p2_describing_experience.json・口頭28行）＋創作の文章（第二号、catalog_p2_creative_writing.json・書面24行）＋論の提示（第三号、catalog_p2_putting_a_case.json・口頭13行）＋報告と小論（第四号、catalog_p2_reports_essays.json・書面18行）",
+    "範型": "叙述・経験の語り（第一号、catalog_p2_describing_experience.json・口頭28行）＋創作の文章（第二号、catalog_p2_creative_writing.json・書面24行）＋論の提示（第三号、catalog_p2_putting_a_case.json・口頭13行）＋報告と小論（第四号、catalog_p2_reports_essays.json・書面18行）＋聴衆への講演（第六号、catalog_p2_addressing_audiences.json・口頭18行）＋公共アナウンス（第七号、catalog_p2_public_announcements.json・口頭4行）",
     "型式標本": {
      "247": "語りの自立（Can narrate a story. 口頭）",
      "238": "意味づけ（personal significance ── 口頭背骨の固有段）",
@@ -236,17 +236,25 @@
      "351": "書面上端の横串溶解の書面論証版（読み手のための論理構造＝一貫性・結束性の行化。質フラグ・ライダー行）",
      "270": "教示族の並行対（364と同レベル同課題だが文言非共有＝課題で採った初の対、口頭）",
      "267": "357との段差対（類似度0.661＝全比較中の最高値だがレベル非対称。判断(ac)(v)の第三族での再現）",
-     "264": "C2行を持たないスケールの上端＝横串溶解が起きない対照例（判断(ae)）"
+     "264": "C2行を持たないスケールの上端＝横串溶解が起きない対照例（判断(ae)）",
+     "303": "講演↔小論の同文級並行対（356）かつ討論277との口頭×口頭スケール再掲重複対（0.786）＝第2柱初の口頭同士の重複対（判断(af)）",
+     "354": "一つの書面行の二役：講演299とは同段の並行対・討論278とは段差 ── 段差の軸が準備・推敲可能性であることの帳簿上の実例（判断(af)）",
+     "308": "講述糸の中抜き入口（B1→C2）＝糸の可視性がレベルに単調でない糸版中抜き型（判断(x)の糸版、判断(ag)）",
+     "298": "質疑応答糸の上端（hostile questioning）＝第1柱・往復応答(n)が第2柱に糸として帳簿化される唯一の場所（判断(ag)）",
+     "291": "課題を持つ資源名指し行の三例目（stress/intonation。271/366と同処理）・音韻軸が上端に貼り付く唯一のスケール（判断(ag)）"
     },
-    "背骨": "談話の組み立ての複雑化。レベル梯子は管理課題（第1柱）でなく組み立ての複雑化に宿る（判断(y)(b)＝判断(p)「梯子は管理課題に宿る」の第2柱拡張）。段名はCEFR原文語彙に係留する。 系（叙述／論証）をまたぐ検証（判断(ac)・第三号第四号）により精緻化：背骨は二層 ── 外枠（口頭＝受け手基準への漸近／書面＝接続に始まり読者適合に終わる）は系に依存せず、中身（叙述＝時間軸の組み立て／論証＝論理軸の組み立て）が系ごとに差し替わる。受け手基準の入る高さは系で異なる（叙述＝上端 memorable C2／論証＝B1+ followed ── 論証は最初から聞き手の追跡を人質に取る）。 第三族（教示）の検証（判断(ae)・第五号）でさらに精緻化：中身の軸は時間軸・論理軸に続く第三の軸＝**精度の軸**（受け手が使える形にするための正確さ）。受け手基準の入る高さという指標は教示族では**そもそも文言に現れない** ── 基準語が reliably／precision／clearly と送り手側の精度に寄る（情報提示では受け手の理解が達成の定義そのものであるため独立した基準として析出しない）。受け手基準の出現位置（叙述＝C2／論証＝B1+／教示＝不在）が族の署名になる。",
+    "背骨": "談話の組み立ての複雑化。レベル梯子は管理課題（第1柱）でなく組み立ての複雑化に宿る（判断(y)(b)＝判断(p)「梯子は管理課題に宿る」の第2柱拡張）。段名はCEFR原文語彙に係留する。 系（叙述／論証）をまたぐ検証（判断(ac)・第三号第四号）により精緻化：背骨は二層 ── 外枠（口頭＝受け手基準への漸近／書面＝接続に始まり読者適合に終わる）は系に依存せず、中身（叙述＝時間軸の組み立て／論証＝論理軸の組み立て）が系ごとに差し替わる。受け手基準の入る高さは系で異なる（叙述＝上端 memorable C2／論証＝B1+ followed ── 論証は最初から聞き手の追跡を人質に取る）。 第三族（教示）の検証（判断(ae)・第五号）でさらに精緻化：中身の軸は時間軸・論理軸に続く第三の軸＝**精度の軸**（受け手が使える形にするための正確さ）。受け手基準の入る高さという指標は教示族では**そもそも文言に現れない** ── 基準語が reliably／precision／clearly と送り手側の精度に寄る（情報提示では受け手の理解が達成の定義そのものであるため独立した基準として析出しない）。受け手基準の出現位置（叙述＝C2／論証＝B1+／教示＝不在）が族の署名になる。 第六号（判断(af)(ag)・聴衆への講演）で初の口頭束スケールを確認：束は書面の専売でなく聴衆の実在する場の性質から生じ、族糸（論証）＋固有糸（講述・質疑応答）の重奏として書ける。受け手基準の最早出現はB1（308 followed without difficulty）で、聴衆の実在が基準を全域に浸透させる。第七号（公共アナウンス）は単糸4行の最小構成＝族無所属（並行対ゼロ）で、梯子は内容の構成でなく送達の精度（韻律）に宿る。",
     "背骨の段名列": {
      "口頭（叙述族）": "定型句→列挙 list→線形連鎖 sequence→詳細 detailed→意味づけ significance→統合 integrating→効果 memorable",
      "書面（叙述族）": "孤立句→連なり series→接続 connectives/linked→まとまり connected→順序の明示 signal sequence→関係の明示＋ジャンル慣習 marking relationships / conventions→読者適合 style appropriate to the reader→効果 engaging / impact",
      "口頭（論証族）": "直言 simple terms→比較 comparisons→理由 reasons→追跡可能 followed→連鎖 chain→体系化・強調 systematically/highlighting→精密化・相手視点・締め括り precisely/perspective/concluding",
      "書面（論証族）": "接続 connectors→定型書式 format→器 essays→展開 develops→統合 synthesise→体系化・強調 systematically/highlighting→構成設計 introduction and conclusion→読者のための論理構造 logical structure/reader",
-     "口頭（教示族）": "名指し name / indicate→順序接続語 sequential connectors→事実情報の報告 report straightforward factual information→要点 main points / reasonable precision・詳細な指示 detailed instructions→確実性 reliably・工程 detailed description of a procedure→職務全域と助言 full range / advice→微細な区別 detailed distinctions・一連の複雑な手順 a series of complex procedures"
+     "口頭（教示族）": "名指し name / indicate→順序接続語 sequential connectors→事実情報の報告 report straightforward factual information→要点 main points / reasonable precision・詳細な指示 detailed instructions→確実性 reliably・工程 detailed description of a procedure→職務全域と助言 full range / advice→微細な区別 detailed distinctions・一連の複雑な手順 a series of complex procedures",
+     "口頭（講演・講述糸）": "練習済みの一句 rehearsed statement→基本的な発表 basic presentation→難なく追える発表 followed without difficulty / reasonable precision→（中抜き＝中身は論証族3糸へ外部化）→聴衆適合 adapting to the audience's needs",
+     "口頭（講演・質疑応答糸）": "助けを借りた応答 with help→少数の質問 limited number→聞き返し許容 may ask repetition→無負担の連続応答 no strain→原稿からの離脱 depart spontaneously→不規則発言 interjections→敵対的質問 hostile questioning",
+     "口頭（告知糸）": "固定内容 predictable, learnt content→分野の日常・韻律許容 clearly intelligible despite problems→一般の話題・無負担 no strain→韻律による陰影 finer shades of meaning precisely"
     },
-    "mode差の読み": "課題の差でなく解法の差（判断(y)(d)）。書面は「意味づけ」段を欠き、社会的次元（結束の明示化→ジャンル慣習→読者適合）が代わりに入る（判断(z)）。 論証族（判断(ac)）：並行対は同文級1組（277/356）に限られ、同文級・同課題が書面で一段上に置かれる段差が2件（278 B2→354 C1／280 B2→358 B2+）── 推敲可能な媒体では肉づけ・考量に読み手の密度要求が加わる（読みは仮）。書面A2に口頭A2の支え型条件句（287・相手の忍耐）の対応物がない＝書面は待ってくれる媒体そのもの。",
+    "mode差の読み": "課題の差でなく解法の差（判断(y)(d)）。書面は「意味づけ」段を欠き、社会的次元（結束の明示化→ジャンル慣習→読者適合）が代わりに入る（判断(z)）。 論証族（判断(ac)）：並行対は同文級1組（277/356）に限られ、同文級・同課題が書面で一段上に置かれる段差が2件（278 B2→354 C1／280 B2→358 B2+）── 推敲可能な媒体では肉づけ・考量に読み手の密度要求が加わる（読みは仮 → 判断(af)で改訂）。書面A2に口頭A2の支え型条件句（287・相手の忍耐）の対応物がない＝書面は待ってくれる媒体そのもの。 **判断(af)（CEFRカタログ11）による改訂**：非対称の軸はoral/writtenでなく**準備・推敲可能性**である。準備済み口頭（Addressing audiences）は書面と3段（305/359 B2・303/356 B2+・299/354 C1）にわたり同レベルで対をなし、段差3件（278→354・280→358・267→357）はすべて即応側（討論・即席の情報提供）が下に置かれる ── 即応口頭＜準備済み口頭≈推敲書面。「書面は待ってくれる媒体」は「準備・推敲が待ってくれる」へ一般化（367↔287の非対称もこの読みで保存）。例外は277↔356（即応口頭が同段に届く唯一）。",
     "deltaの読み": "組み立ての複雑化として読む。",
     "型固有の必須項目": [
      "背骨の段名をCEFR原文語彙に係留する",
@@ -266,7 +274,9 @@
      "Creative writing",
      "Sustained monologue: putting a case (e.g. in a debate)",
      "Reports and essays",
-     "Sustained monologue: giving information"
+     "Sustained monologue: giving information",
+     "Addressing audiences",
+     "Public announcements"
     ],
     "採用": "第一号で仮設（CEFRカタログ7）、第二号での再現を根拠に本採用（判断(ab)・CEFRカタログ8）。適用対象は行為でなくスケール ── 第1柱4型のcross_axes整合に対し、本型はp2_threads.jsonのscalesと機械照合する。"
    }

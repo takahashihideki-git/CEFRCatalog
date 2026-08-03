@@ -44,7 +44,7 @@ SUBTAGS = {
 }
 
 # モード間並行対（書面側の実装。相手は putting a case。356/277＝同文級・型式標本）
-MODE_PAIRS = {356: 277}
+MODE_PAIRS = {354: [299], 356: [277, 303], 359: [305]}  # written -> [orals]。判断(af)で論証族4対＝書面行が複数の口頭行を受けるn:1（356は討論277と講演303の両方の書面側）
 
 R = {  # no -> (exponents, scene, howwell, l1, delta)
 366: (
@@ -205,14 +205,18 @@ def build(root="."):
     assert {k: sorted(v) for k, v in SUBTAGS.items()} == {k: sorted(v) for k, v in th["副タグ"].items()}, "SUBTAGSがp2_threads.jsonと不一致"
     mp = json.load(open(os.path.join(ROOT, "data", "mode_pairs.json"), encoding="utf-8"))
     sys_rec = next(s for s in mp["systems"] if s["族"] == SYSTEM)
-    canon = {p["written"]: p["oral"] for p in sys_rec["pairs"]}
+    canon = {}
+    for pp in sys_rec["pairs"]:
+        canon.setdefault(pp["written"], []).append(pp["oral"])
+    canon = {k: sorted(v) for k, v in canon.items()}
     assert MODE_PAIRS == canon, "並行対がmode_pairs.json（論証族）と不一致"
     rows = []
     for no in ORDER:
         d = desc[str(no)]
         ex, scene, hw, l1, delta = R[no]
         if no in MODE_PAIRS:
-            delta += f"（モード間並行対：口頭 putting a case No.{MODE_PAIRS[no]}）"
+            parts = "／".join(f"{desc[str(o)]['scale']} No.{o}" for o in MODE_PAIRS[no])
+            delta += f"（モード間並行対：口頭 {parts}）"
         rows.append({
             "mode": "書面", "level": d["level"], "no": no,
             "en": d["en"], "jp": tr[str(no)],
