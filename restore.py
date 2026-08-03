@@ -197,6 +197,17 @@ if __name__ == "__main__":
         assert D["descriptors"][o]["level"] == g["oral_level"] and D["descriptors"][w]["level"] == g["written_level"], f"段差レベル記載不一致 {o}/{w}"
         assert g["oral_level"] != g["written_level"], f"段差が同レベル（並行対とすべき） {o}/{w}"
     assert {(g["oral"], g["written"]) for g in sys_ins["段差"]} == {(267, 357)}, "教示族の段差帳簿不一致"
+    # 固有糸の規則（meta「固有糸の規則」の機械化、判断(ad)(ag)）──
+    #   ①固有糸名は全スケールで一意（同名の糸が二スケールに現れるなら族糸でなければならない）
+    #   ②固有糸名は族糸名と衝突しない ③族宣言が空のスケールは並行対を持たない
+    _own_names = [t for ts in TH["固有糸"].values() for t in ts]
+    assert len(_own_names) == len(set(_own_names)), "固有糸名がスケール間で重複（族糸化が必要）"
+    _fam_names = {t for ts in TH["族糸"].values() for t in ts}
+    assert not (set(_own_names) & _fam_names), "固有糸名が族糸名と衝突"
+    _paired_scales = {D["descriptors"][str(p["oral"])]["scale"] for _f, _so, _sw, p in mp_all_pairs} | {D["descriptors"][str(p["written"])]["scale"] for _f, _so, _sw, p in mp_all_pairs}
+    for sc, rec in TH["scales"].items():
+        if not rec["族"]:
+            assert sc not in _paired_scales, f"族宣言が空なのに並行対を持つ {sc}"
     # 糸の正準記録 ── 主タグ完全分割／語彙正準（宣言した族の族糸∪固有糸）／副タグ実在／並行対の糸保存
     for sc, rec in TH["scales"].items():
         assert all(f in TH["族糸"] for f in rec["族"]), f"未登録の族を宣言 {sc}"
@@ -221,4 +232,4 @@ if __name__ == "__main__":
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
         # 保存された糸は当該族の族糸であること（判断(ad)：糸保存＝族の内部で成り立つ写像）
         assert to in TH["族糸"][fam], f"並行対の糸が族外 {p['oral']}/{p['written']}: {to} ∉ {fam}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、スケール全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、スケール全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
