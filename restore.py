@@ -1,7 +1,7 @@
 """新スレッドでの復元ヘルパー。ローカルのdata/ から、または raw URL から主要データを読む。
 使い方: from restore import load_all; D = load_all()  （ローカル実行）
 raw URL版が要るときは BASE を使って個別に web_fetch する。"""
-import json, os
+import json, os, re
 BASE = "https://raw.githubusercontent.com/takahashihideki-git/CEFRCatalog/main"
 def load_all(root="."):
     d = os.path.join(root, "data")
@@ -250,6 +250,7 @@ if __name__ == "__main__":
     # 参照台帳（判断(ai)、CEFRカタログ12）── 設計条件①所有排他・②正準向き・③散文同期を機械検証
     CRF = json.load(open(os.path.join("data", "crossrefs.json"), encoding="utf-8"))
     assert set(CRF["edges"].keys()) == set(CRF["meta"]["kind定義"].keys()), "crossrefs: kind語彙がmeta定義と不一致"
+    _cited = lambda no, text: re.search(r"(?<!\d)" + re.escape(no) + r"(?!\d)", text) is not None  # 桁境界つき（4桁Noの部分文字列誤ヒット防止）
     # 全数シートの行散文・DISCUSSION索引（本ブロック内で自己完結に再読）
     import glob as _glob
     _prose, _disc, _sheet_of, _act_keys = {}, {}, {}, set()
@@ -284,12 +285,12 @@ if __name__ == "__main__":
             _seen_edges.add(_fs)
             if _kind == "留置対":
                 assert _a in inv_r and _b in inv_r, f"crossrefs: 留置対のNoが留置帳簿外 {_a}/{_b}"
-                assert _b in inv_r[_a]["note"] or _a in inv_r[_b]["note"], f"crossrefs: 留置対の散文証拠なし {_a}/{_b}"
+                assert _cited(_b, inv_r[_a]["note"]) or _cited(_a, inv_r[_b]["note"]), f"crossrefs: 留置対の散文証拠なし {_a}/{_b}"
             else:
                 assert _a in _prose and _b in _prose, f"crossrefs: エッジのNoがシート外 {_kind} {_a}/{_b}"
-                _ev = (_b in _prose[_a]) or (_a in _prose[_b]) or (
-                    _a in _disc[_sheet_of[_a]] and _b in _disc[_sheet_of[_a]]) or (
-                    _a in _disc[_sheet_of[_b]] and _b in _disc[_sheet_of[_b]])
+                _ev = _cited(_b, _prose[_a]) or _cited(_a, _prose[_b]) or (
+                    _cited(_a, _disc[_sheet_of[_a]]) and _cited(_b, _disc[_sheet_of[_a]])) or (
+                    _cited(_a, _disc[_sheet_of[_b]]) and _cited(_b, _disc[_sheet_of[_b]]))
                 assert _ev, f"crossrefs: 散文証拠なし（設計条件③） {_kind} {_a}/{_b}"
             if _kind == "行為内対":
                 assert _sheet_of[_a] == _sheet_of[_b], f"crossrefs: 行為内対が同一シートでない {_a}/{_b}"
@@ -317,4 +318,38 @@ if __name__ == "__main__":
             assert frozenset((_a, _b)) in _seen_edges, f"crossrefs: ADOPT裁定にエッジ不在 {_pk}"
         else:
             assert frozenset((_a, _b)) not in _seen_edges, f"crossrefs: DROP裁定なのにエッジ実在 {_pk}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）")
+    # ladder_templates第二層のスケール再掲重複対 ── 正準はcrossrefs（判断(ai)追随）。標本の対は台帳エッジ⊆であること
+    _dup_edges = {frozenset((str(_e["a"]), str(_e["b"]))) for _e in CRF["edges"]["スケール再掲重複対"]}
+    _dup_sec = lt["第二層（柱別の必須点検）"]["第1柱（発語内行為）"]["スケール再掲重複対"]
+    assert "crossrefs.json" in _dup_sec.get("正準", ""), "ladder_templates: 重複対の正準指し先がcrossrefsでない"
+    for _sp in _dup_sec["型式標本"].values():
+        _m = re.match(r"(\d{3})/(\d{3})", _sp)
+        assert _m and frozenset(_m.groups()) in _dup_edges, f"ladder_templates: 型式標本が台帳外 {_sp}"
+    # 軸台帳（判断(aj)、CEFRカタログ12）── 182件の13軸完全分割＋シート主軸（宣言は散文証拠つき）
+    AX = json.load(open(os.path.join("data", "howwell_axes_182to13.json"), encoding="utf-8"))
+    _hw_block = {n for n, v in D["partition"].items() if v["block"] == "how well"}
+    _ax_nos, _sc_owner = set(), {}
+    for _a, _rec in AX["軸"].items():
+        for _n in _rec["nos"]:
+            assert str(_n) not in _ax_nos, f"軸台帳: No重複 {_n}"
+            _ax_nos.add(str(_n))
+            assert D["descriptors"][str(_n)]["scale"] in _rec["scales"], f"軸台帳: スケール写像不整合 No.{_n}"
+        for _sc in _rec["scales"]:
+            assert _sc not in _sc_owner, f"軸台帳: スケールが二軸に所属 {_sc}"
+            _sc_owner[_sc] = _a
+    assert _ax_nos == _hw_block, "軸台帳: how well区分182件の完全分割でない"
+    assert len(AX["軸"]) == 13 and len(_sc_owner) == 15, "軸台帳: 13軸15スケールの構成不一致"
+    assert len(AX["軸"]["音韻"]["scales"]) == 3, "軸台帳: 音韻の3スケール束ね不一致"
+    _decl, _undecl = AX["シート主軸"]["宣言"], AX["シート主軸"]["未宣言"]
+    assert set(_decl.keys()) | set(_undecl) == _act_keys and not set(_decl.keys()) & set(_undecl), "軸台帳: シート主軸が29シートの完全分割でない"
+    _sheet_blob = {}
+    for _no, _p in _prose.items():
+        _sheet_blob.setdefault(_sheet_of[_no], []).append(_p)
+    for _act2 in _act_keys:
+        _sheet_blob[_act2] = _disc.get(_act2, "") + " " + " ".join(_sheet_blob.get(_act2, []))
+    for _act2, _rec in _decl.items():
+        assert _rec["主軸"], f"軸台帳: 主軸が空 {_act2}"
+        for _a in _rec["主軸"]:
+            assert _a in AX["軸"], f"軸台帳: 主軸が13軸語彙外 {_act2}:{_a}"
+            assert _a in _sheet_blob[_act2], f"軸台帳: 主軸の散文証拠なし {_act2}:{_a}"
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言11＝29完全分割〔判断(aj)〕）")
