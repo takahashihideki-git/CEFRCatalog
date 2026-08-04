@@ -247,4 +247,74 @@ if __name__ == "__main__":
         assert to is not None and to == tw, f"並行対の糸不一致 {p['oral']}/{p['written']}: {to}/{tw}"
         # 保存された糸は当該族の族糸であること（判断(ad)：糸保存＝族の内部で成り立つ写像）
         assert to in TH["族糸"][fam], f"並行対の糸が族外 {p['oral']}/{p['written']}: {to} ∉ {fam}"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）")
+    # 参照台帳（判断(ai)、CEFRカタログ12）── 設計条件①所有排他・②正準向き・③散文同期を機械検証
+    CRF = json.load(open(os.path.join("data", "crossrefs.json"), encoding="utf-8"))
+    assert set(CRF["edges"].keys()) == set(CRF["meta"]["kind定義"].keys()), "crossrefs: kind語彙がmeta定義と不一致"
+    # 全数シートの行散文・DISCUSSION索引（本ブロック内で自己完結に再読）
+    import glob as _glob
+    _prose, _disc, _sheet_of, _act_keys = {}, {}, {}, set()
+    for _fn in _glob.glob(os.path.join("prototypes", "catalog_*.json")):
+        _J = json.load(open(_fn, encoding="utf-8"))
+        _act, _body = next(iter(_J.items()))
+        _act_keys.add(_act)
+        _disc[_act] = " ".join(_body.get("discussion", []))
+        for _r in _body["rows"]:
+            _no = str(_r["no"])
+            _sheet_of[_no] = _act
+            _prose[_no] = " ".join(str(_r.get(_k, "") or "") for _k in ("delta", "l1", "scene", "howwell"))
+    # ①所有排他：既存帳簿の所有エッジ（並行対・段差・書面フォーマル一段）と無向集合で非交差
+    _owned = {frozenset((str(p["oral"]), str(p["written"]))) for _f, _so, _sw, p in mp_all_pairs}
+    for _sys in MP["systems"]:
+        for _g in _sys.get("段差", []):
+            _owned.add(frozenset((str(_g["oral"]), str(_g["written"]))))
+    for _x in ("632", "633"):
+        for _y in ("633", "628"):
+            if _x != _y:
+                _owned.add(frozenset((_x, _y)))
+    _owned.add(frozenset(("632", "628")))
+    _sym_kinds = ("スケール再掲重複対", "口頭スケール再掲対", "柱間対", "族間対", "行為内対", "留置対")
+    _seen_edges = set()
+    for _kind in _sym_kinds:
+        for _e in CRF["edges"][_kind]:
+            _a, _b = str(_e["a"]), str(_e["b"])
+            assert int(_a) < int(_b), f"crossrefs: 正準向き違反（a<bでない） {_kind} {_a}/{_b}"
+            _fs = frozenset((_a, _b))
+            assert _fs not in _owned, f"crossrefs: 既存帳簿所有エッジの重複登載 {_kind} {_a}/{_b}"
+            assert _fs not in _seen_edges, f"crossrefs: 台帳内のエッジ重複 {_a}/{_b}"
+            _seen_edges.add(_fs)
+            if _kind == "留置対":
+                assert _a in inv_r and _b in inv_r, f"crossrefs: 留置対のNoが留置帳簿外 {_a}/{_b}"
+                assert _b in inv_r[_a]["note"] or _a in inv_r[_b]["note"], f"crossrefs: 留置対の散文証拠なし {_a}/{_b}"
+            else:
+                assert _a in _prose and _b in _prose, f"crossrefs: エッジのNoがシート外 {_kind} {_a}/{_b}"
+                _ev = (_b in _prose[_a]) or (_a in _prose[_b]) or (
+                    _a in _disc[_sheet_of[_a]] and _b in _disc[_sheet_of[_a]]) or (
+                    _a in _disc[_sheet_of[_b]] and _b in _disc[_sheet_of[_b]])
+                assert _ev, f"crossrefs: 散文証拠なし（設計条件③） {_kind} {_a}/{_b}"
+            if _kind == "行為内対":
+                assert _sheet_of[_a] == _sheet_of[_b], f"crossrefs: 行為内対が同一シートでない {_a}/{_b}"
+                assert _e.get("axis") in ("口頭書面", "Informal-Formal"), f"crossrefs: 行為内対のaxis語彙外 {_a}/{_b}"
+            elif _kind != "留置対":
+                assert _sheet_of[_a] != _sheet_of[_b] or _kind == "スケール再掲重複対", f"crossrefs: {_kind}が同一シート内 {_a}/{_b}"
+    # 有向kind：行為間参照 ── from実在・field語彙・to実在・③fromの当該散文に「相互参照」
+    for _e in CRF["edges"]["行為間参照"]:
+        _f = str(_e["from"])
+        assert _f in _prose, f"crossrefs: 行為間参照のfromがシート外 {_f}"
+        assert _e["field"] in ("delta", "l1"), f"crossrefs: 行為間参照のfield語彙外 {_f}"
+        assert _e["to_acts"] or _e["to_nos"] or _e.get("to_pillar"), f"crossrefs: 行為間参照のto空 {_f}"
+        for _ta in _e["to_acts"]:
+            assert _ta in _act_keys, f"crossrefs: 行為間参照のto_actsが正準行為名でない {_f}→{_ta}"
+        for _tn in _e["to_nos"]:
+            assert str(_tn) in D["descriptors"], f"crossrefs: 行為間参照のto_nosが原典外 {_f}→{_tn}"
+        assert _e.get("to_pillar") in (None, "仲介"), f"crossrefs: 行為間参照のto_pillar語彙外 {_f}"
+        assert "相互参照" in _prose[_f], f"crossrefs: 行為間参照の散文証拠なし（設計条件③） {_f}"
+    assert len(CRF["edges"]["行為間参照"]) == 28, "crossrefs: 行為間参照の件数不一致"
+    # 検出裁定：ADOPTは対応エッジ実在・DROPはエッジ不在・語彙
+    for _pk, _v in CRF["検出裁定"].items():
+        _a, _b = _pk.split("-")
+        assert _v["verdict"] in ("ADOPT", "DROP"), f"crossrefs: 裁定語彙外 {_pk}"
+        if _v["verdict"] == "ADOPT":
+            assert frozenset((_a, _b)) in _seen_edges, f"crossrefs: ADOPT裁定にエッジ不在 {_pk}"
+        else:
+            assert frozenset((_a, _b)) not in _seen_edges, f"crossrefs: DROP裁定なのにエッジ実在 {_pk}"
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）")

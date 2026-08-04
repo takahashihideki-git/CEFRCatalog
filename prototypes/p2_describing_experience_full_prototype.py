@@ -220,7 +220,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "出来事や経験の個人的な意味を詳しく描写する。",
  "叙述の正確さ（意味づけの言語化）。時間の二視点（At the time / Looking back）。",
  "経験を教訓へ言語化する型（It taught me 〜 / It gave me 〜）を持つ ── 日本語の「いい経験になりました」という総括定型のままでは意味の中身が空く。当時の視点と現在の視点を往復させる時制管理。",
- "感情・評価糸の最上段：理由の説明（239）→ **人生の中での意味づけ（personal significance）**へ。構築梯子の「意味づけ」段の型式標本。語りの素材が同じでも、この段だけが経験を再解釈する。",
+ "感情・評価糸の最上段：理由の説明（239）→ **人生の中での意味づけ（personal significance）**へ。構築梯子の「意味づけ」段の型式標本。語りの素材が同じでも、この段だけが経験を再解釈する。431（第1柱・感情の表出 B2）と同文級の柱間再掲 ── 度合いの刻みと個人的意味の際立たせが、応酬の表出と独話の語りの両帳簿に立つ（相互参照、判断(ai)）。",
 ),
 235: (
  ["The slow decline of local shopping streets is usually blamed on online stores, but the reality is more complicated. Rents rise while the population ages; the owners' children move away and choose other careers; and the customers who say they love the old shops quietly buy elsewhere. Any one of these pressures might be survivable. Together, they form a silent weight that empties one shop after another."],
