@@ -371,6 +371,7 @@ if __name__ == "__main__":
     _fold = LP["meta"]["畳み込み規則"]["写像"]
     _lp_seen = {}
     for _ik, _rec in LP["幕間"].items():
+        assert set(_rec["levels"]) == {_L for _L, _v in _fold.items() if _v == _ik}, f"幕間台帳: levels欄が畳み込み写像と不整合 {_ik}"
         for _cat, _nos in _rec["素材"].items():
             for _n in _nos:
                 _n = str(_n)
