@@ -26,3 +26,6 @@ files.zip
 *.patch
 *.diff
 申し送り*.md
+
+# 手元の読み物（他モデルへの試読で得た手紙など。リポジトリには載せない）
+FromCodex.md
