@@ -76,7 +76,7 @@ def main():
             sheet_f, key = SHEET_REGISTRY[name]
             sheet = json.load(open(os.path.join(ROOT, 'prototypes', sheet_f), encoding='utf-8'))[key]
             rows = sheet['rows']
-            body_cites = cited_numbers(t)
+            body_cites = cited_numbers(t.split('出典：')[0])
             for r in rows:
                 if r['no'] not in body_cites:
                     errors.append(f"{name}: No.{r['no']} が本文に出現しない")
