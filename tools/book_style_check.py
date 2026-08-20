@@ -31,6 +31,12 @@ SHEET_REGISTRY = {
     '章_問題事情の説明.md':        ('catalog_problemexplain.json', '問題・事情の説明'),
     '章_面接での質問と応答.md':    ('catalog_interview.json', '面接での質問と応答'),
     '章_伝言の授受.md':            ('catalog_message.json', '伝言の授受'),
+    '章_明確化繰り返しの要求.md':  ('catalog_clarification.json', '明確化・繰り返しの要求'),
+    '章_取引購入注文.md':          ('catalog_transaction.json', '取引（購入・注文）'),
+    '章_問い合わせ.md':            ('catalog_enquiry.json', '問い合わせ'),
+    '章_道案内の依頼と提供.md':    ('catalog_directions.json', '道案内の依頼と提供'),
+    '章_応募出願.md':              ('catalog_application.json', '応募・出願'),
+    '章_指示への応答.md':          ('catalog_instructionresponse.json', '指示への応答'),
 }
 
 # 幕間 → level_portraits のキー
