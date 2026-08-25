@@ -86,14 +86,28 @@ def main():
             sheet = json.load(open(os.path.join(ROOT, 'prototypes', sheet_f), encoding='utf-8'))[key]
             rows = sheet['rows']
             body_cites = cited_numbers(t.split('出典：')[0])
+            # 段のブロック（### 見出し〜次の見出し）に閉じて照合する（カタログ19検品⑬：文書全体の部分文字列一致では、
+            # 見取り図に再掲された例文が段側の改変を隠す）。見出しの「（No.522・546）」のような束エントリも一つのブロック。
+            blocks = re.split(r'\n(?=### )', t)
+            def block_of(no):
+                for b in blocks:
+                    head = b.split('\n', 1)[0]
+                    if head.startswith('### ') and re.search(r'No\.(?:\d+[・,\s]+)*' + str(no) + r'(?!\d)', head):
+                        return b
+                return None
             for r in rows:
                 if r['no'] not in body_cites:
                     errors.append(f"{name}: No.{r['no']} が本文に出現しない")
-                if r['jp'] not in t:
-                    errors.append(f"{name}: No.{r['no']} の jp が無改変転写でない")
+                b = block_of(r['no'])
+                if b is None:
+                    errors.append(f"{name}: No.{r['no']} の段ブロック（### 見出しにNo.）が見つからない")
+                    continue
+                bb = strip_marks(b)
+                if r['jp'] not in b:
+                    errors.append(f"{name}: No.{r['no']} の jp が段内で無改変転写でない")
                 for ex in r['exponents']:
-                    if ex not in tt:
-                        errors.append(f"{name}: No.{r['no']} の例文が無改変転写でない: {ex[:30]}")
+                    if ex not in bb:
+                        errors.append(f"{name}: No.{r['no']} の例文が段内で無改変転写でない: {ex[:30]}")
             m = re.search(r'出典：.*?（No\.(.*?)）', t)
             if not m:
                 errors.append(f"{name}: 出典行が見つからない")
