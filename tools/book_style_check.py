@@ -104,8 +104,10 @@ def main():
                 for l in b.split('\n'):
                     if l.startswith('**例**'):
                         in_ex = True
-                        m = re.search(r'No\.(\d+)', l)
-                        sec_no = int(m.group(1)) if m else None
+                        nos_in_label = re.findall(r'\d+', ''.join(re.findall(r'No\.[\d・,\s]+', l)))
+                        if len(nos_in_label) > 1:
+                            errors.append(f"{name}: 「例」の節ラベルにNo.が複数ある（帰属は一つ：{l.strip()[:40]}）")
+                        sec_no = int(nos_in_label[0]) if nos_in_label else None
                     elif l.startswith('**'):
                         in_ex = False
                     elif in_ex and l.startswith('- '):
