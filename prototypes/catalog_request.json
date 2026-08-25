@@ -29,6 +29,7 @@
     "jp": "物を頼み、物を渡せる。",
     "exponents": [
      "Can I have a bag?",
+     "Can I have the menu?",
      "Could you pass me that one?",
      "Here you go."
     ],
@@ -46,7 +47,7 @@
     "exponents": [
      "A coffee, please.",
      "Water, please.",
-     "Can I have the menu?"
+     "Can I have a sandwich, please?"
     ],
     "scene": "カフェや食堂で、飲食物を注文する。",
     "howwell": "定型＋語彙（飲食名詞と冠詞）：名詞＋please の注文最小形。",

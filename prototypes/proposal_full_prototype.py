@@ -35,7 +35,7 @@ ROWS = [
  "提案と応答の対 ── する側（Why don't we）と受ける側（sounds good / how about ...）の定型。",
  "提案への応答在庫が薄いと沈黙が拒否に読まれる ── (n)の受け側問題の提案版で、受けの一言（Sounds good）が調整を回す。",
  "行為核の明文化 ── make and respond が対で書かれ、往復が行為の定義に入る。"),
-(467, '口頭', ["The bus is cheaper, but the train is faster.", "If we leave early, we can miss the traffic."],
+(467, '口頭', ["The bus is cheaper, but the train is faster.", "Driving is easier, but parking will be a problem."],
  "何をするか・どこへ行くか・誰を／どれを選ぶかを話し合いながら、選択肢を比較・対照する。",
  "比較の談話型（A is X, but B is Y）と条件文の運用。",
  "比較の本丸は -er/more の形態でなく、選択肢を並べて見せる談話の型 ── 「AよりB」の一文でなく、AとBの性質を対で陳列する。",
