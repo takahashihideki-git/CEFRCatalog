@@ -98,15 +98,27 @@ def main():
                         return b
                 return None
             def example_lines(b):
-                out, in_ex = [], False
+                """「例」欄のリスト行を (本文, 帰属No.) で返す。帰属は「**例**（… No.N）」の節ラベル、または行末の「（No.N）」。
+                束エントリ（見出しに複数No.）では帰属が必須（カタログ19検品⑯：束の中で例文がどの行のものか照合されなかった）。"""
+                out, in_ex, sec_no = [], False, None
                 for l in b.split('\n'):
                     if l.startswith('**例**'):
                         in_ex = True
+                        m = re.search(r'No\.(\d+)', l)
+                        sec_no = int(m.group(1)) if m else None
                     elif l.startswith('**'):
                         in_ex = False
                     elif in_ex and l.startswith('- '):
-                        out.append(strip_marks(l)[2:].strip())
+                        s = strip_marks(l)[2:].strip()
+                        m = re.search(r'（No\.(\d+)）\s*$', s)
+                        no = int(m.group(1)) if m else sec_no
+                        if m:
+                            s = s[:m.start()].rstrip()
+                        out.append((s, no))
                 return out
+            def bundle_nos(b):
+                head = b.split('\n', 1)[0]
+                return [int(x) for x in re.findall(r'\d+', re.search(r'No\.[\d・,\s]+', head).group(0))]
             for r in rows:
                 if r['no'] not in body_cites:
                     errors.append(f"{name}: No.{r['no']} が本文に出現しない")
@@ -117,9 +129,15 @@ def main():
                 if r['jp'] not in b:
                     errors.append(f"{name}: No.{r['no']} の jp が段内で無改変転写でない")
                 exl = example_lines(b)
+                if len(bundle_nos(b)) > 1:
+                    if any(no is None for _, no in exl):
+                        errors.append(f"{name}: No.{r['no']} の束エントリに、行の帰属ラベル（節「**例**（… No.N）」または行末「（No.N）」）のない例文がある")
+                    mine = [s for s, no in exl if no == r['no']]
+                else:
+                    mine = [s for s, _ in exl]
                 for ex in r['exponents']:
-                    if not any(ex in l for l in exl):
-                        errors.append(f"{name}: No.{r['no']} の例文が「例」欄で無改変転写でない: {ex[:30]}")
+                    if not any(ex in l for l in mine):
+                        errors.append(f"{name}: No.{r['no']} の例文が「例」欄（当該行の帰属分）で無改変転写でない: {ex[:30]}")
             m = re.search(r'出典：.*?（No\.(.*?)）', t)
             if not m:
                 errors.append(f"{name}: 出典行が見つからない")
