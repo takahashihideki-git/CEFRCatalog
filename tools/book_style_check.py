@@ -70,7 +70,7 @@ def strip_marks(s):
 
 def cited_numbers(s):
     """「No.412」「No.324, 622」等の No. 引用群から番号集合を取る。"""
-    groups = re.findall(r'No\.[\d,\s、]+', s)
+    groups = re.findall(r'No\.[\d,\s、・]+', s)
     return set(int(x) for g in groups for x in re.findall(r'\d+', g))
 
 
