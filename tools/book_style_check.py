@@ -210,6 +210,9 @@ def main():
             errors.append(f"{name}: 帳簿語彙「{m.group(0)}」（級の範囲は「級」で言う）")
         if '電報体' in t:
             errors.append(f"{name}: 時代語彙「電報体」（→短文・主語を省いた書き方）")
+        for pat in ('登り切ったいま', 'ここまで登り'):
+            if pat in t:
+                errors.append(f"{name}: 読書状態の仮定「{pat}」（→ 級の高さ・文書位置の記述へ、カタログ20検品）")
         if '章々' in t:
             errors.append(f"{name}: 用字「章々」（章の集合は「行為の章」「各章」等で言う、カタログ20検品）")
         if '系列' in t:
