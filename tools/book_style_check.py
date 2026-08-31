@@ -10,7 +10,8 @@ deliverables/book/*.md を対象に、執筆要綱の機械化可能な範囲を
   4. 呪文パターン   : 既知の比喩固有述語・帳簿圧縮表現（事故型②③の再発防止。適否の本判定は精読）
   5. 帳簿語彙       : 分析語彙の漏出（量産章・幕間のみ。範型章の命名済み語彙は対象外）
   6. 「門」残存     : 書物は「〜言葉」へ統一（判断(aq)。専門・入門・部門・関門は除外）
-  7. 出典定型文     : 章・幕間の定型文（No.帰属の断り）の存在
+  7. 出典定型文     : 章・幕間・総括章の定型文（No.帰属の断り）の存在
+  8. 総括章照合     : ブロック引用⇔作業訳の逐語（縮約は……表示つきのみ）・出典二群＝本文使用・質の群⊆軸台帳（カタログ21）
 
 比喩・対比の適否そのものは精読判定であり、本ツールは既知パターンの再発防止に限る
 （「greenは宣言の妥当性を保証しない」）。
@@ -55,7 +56,7 @@ PORTRAIT_REGISTRY = {
 
 INCANT = ['梯子を刻', 'を刻む', 'を刻んで', '梯子の主語', '梯子の中身']  # 事故型②③の既知形
 LEDGER = ['質問応答相', '情報管理相', '管理梯子', '梯子型', '外部化', '柱間',
-          '消失点', '判断(', '書面フォーマル一段', '語り糸', '並行対', '重複対']
+          '消失点', '判断(', '書面フォーマル一段', '語り糸', '並行対', '重複対', '横串']
 GATE_EXEMPT = ('専門', '入門', '部門', '関門')  # 「門」検査の除外複合語
 
 SRC_CH = 'No.は本書が原典の全件に付した通し番号'
@@ -167,6 +168,35 @@ def main():
                 if not (mat - exempt) <= nos:
                     errors.append(f"{name}: 出典に素材が欠落 {(mat - exempt) - nos}")
 
+        # 2.5 総括章照合（カタログ21）
+        if name == '総括章_十三のものさし.md':
+            wt = json.load(open(os.path.join(ROOT, 'data', 'working_translations_1224.json'), encoding='utf-8'))
+            ax = json.load(open(os.path.join(ROOT, 'data', 'howwell_axes_182to13.json'), encoding='utf-8'))['軸']
+            axis_nos = set(n for v in ax.values() for n in v['nos'])
+            body = t.split('出典：')[0]
+            for m in re.finditer(r'^> (.+?)（No\.(\d+)）\s*$', strip_marks(body), re.M):
+                q, no = m.group(1).strip(), m.group(2)
+                canon = wt[no]
+                if q == canon:
+                    continue
+                parts = [pp for pp in q.split('……') if pp]
+                if '……' in q and all(pp in canon for pp in parts):
+                    continue
+                errors.append(f"{name}: No.{no} のブロック引用が作業訳と不一致（無表示縮約の疑い）")
+            m = re.search(r'質のものさしのCan-Do記述文（No\.(.*?)）および行為・総括のCan-Do記述文（No\.(.*?)）', t)
+            if not m:
+                errors.append(f"{name}: 出典の二群（質のものさし／行為・総括）が見つからない")
+            else:
+                q_nos = set(int(x) for x in re.findall(r'\d+', m.group(1)))
+                a_nos = set(int(x) for x in re.findall(r'\d+', m.group(2)))
+                used = cited_numbers(body)
+                if (q_nos | a_nos) != used:
+                    errors.append(f"{name}: 出典 No 集合が本文使用と不一致 差分={sorted((q_nos | a_nos) ^ used)}")
+                if not q_nos <= axis_nos:
+                    errors.append(f"{name}: 質のものさしの群に軸台帳外の No {sorted(q_nos - axis_nos)}")
+                if a_nos & axis_nos:
+                    errors.append(f"{name}: 行為・総括の群に軸台帳の No が混入 {sorted(a_nos & axis_nos)}")
+
         # 3. 用字
         for m in re.finditer(r'記述文', t):
             pre = t[max(0, m.start() - 10):m.start()]
@@ -189,7 +219,7 @@ def main():
             para = t[t.rfind('\n\n', 0, first) + 2:first]
             if 'CEFR' not in para:
                 errors.append(f"{name}: 本文初出の Can-Do記述文 に段落内 CEFR 係留がない")
-        for m in re.finditer(r'Can-Do(?!記述文)', t):
+        for m in re.finditer(r'Can-Do(?!記述文|の軸)', t):
             errors.append(f"{name}: 「Can-Do」単独使用 …{t[max(0,m.start()-10):m.start()+15]}…")
         if 'ディスクリプタ' in t:
             errors.append(f"{name}: 「ディスクリプタ」混入")
@@ -200,7 +230,7 @@ def main():
                 errors.append(f"{name}: 呪文パターン「{w}」")
 
         # 5. 帳簿語彙（量産章・幕間のみ。範型は命名済み語彙を含むため対象外）
-        if name.startswith(('章_', '幕間_')):
+        if name.startswith(('章_', '幕間_', '総括章_')):
             for w in LEDGER:
                 if w in t:
                     errors.append(f"{name}: 帳簿語彙「{w}」の漏出")
@@ -217,6 +247,13 @@ def main():
             errors.append(f"{name}: 用字「章々」（章の集合は「行為の章」「各章」等で言う、カタログ20検品）")
         if '系列' in t:
             errors.append(f"{name}: 帳簿語彙「系列」（章内の下位区分は「〜の梯子」、判断(ar)検品）")
+        # 質の側の用字（カタログ21裁定：十三の内訳は平仮名「ものさし」、軸は二本の直交する軸と章内の「貫く軸」総称に限る）
+        for w in ('質の軸', '十三の軸', '質の13軸', '物差し'):
+            if w in t:
+                errors.append(f"{name}: 用字退役「{w}」（→「質のものさし」「十三のものさし」「ものさし」、カタログ21裁定）")
+        for w in ('How Well', 'HowWell', 'How-well', 'how-well', 'how well'):
+            if w in t:
+                errors.append(f"{name}: 「How-Well」の表記ゆれ「{w}」（H・W大文字・ハイフンで固定、カタログ21裁定）")
         # 読者の読書行為の言い切り（規律3追補、カタログ17検品＋18補遺。認知述語〔気づいただろう等〕は自章内可＝精読判定）
         for w in ('章で読んで', '読んだ読者', '読み終えた読者'):
             if w in t:
@@ -259,7 +296,7 @@ def main():
                 errors.append(f"{name}: 「門」残存 …{t[max(0,m.start()-12):m.start()+8]}…")
 
         # 7. 出典定型文
-        if (name.startswith(('章_', '範型章', '幕間_')) or '範型幕間' in name):
+        if (name.startswith(('章_', '範型章', '幕間_', '総括章_')) or '範型幕間' in name):
             if SRC_CH not in t:
                 errors.append(f"{name}: 出典定型文（No.帰属の断り）不在")
 
@@ -270,7 +307,7 @@ def main():
         for e in errors:
             print('  -', e)
         sys.exit(1)
-    print(f"書物用字検査OK: 対象{len(files)}ファイル ── データ層照合（章{len(SHEET_REGISTRY)}・幕間{len(PORTRAIT_REGISTRY)}）／用字／呪文パターン／帳簿語彙／「門」残存／出典定型文")
+    print(f"書物用字検査OK: 対象{len(files)}ファイル ── データ層照合（章{len(SHEET_REGISTRY)}・幕間{len(PORTRAIT_REGISTRY)}・総括章1）／用字／呪文パターン／帳簿語彙／「門」残存／出典定型文")
 
 
 if __name__ == '__main__':
