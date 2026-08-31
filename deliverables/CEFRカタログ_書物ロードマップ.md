@@ -6,6 +6,8 @@
 
 **この文書の用途**：長い行程の途中で現在地を見失わないための地図。心が折れそうなときに開く。
 
+**Artifact版（ブラウザで読む用）**：https://claude.ai/code/artifact/eeeacbff-dfad-484a-9b27-24e79e2e791b ── 同じURLへ再発行して中身を合わせる（一覧はターミナルの `/artifacts`、またはブラウザの claude.ai/code/artifacts）。
+
 ---
 
 ## 一行で言うと
