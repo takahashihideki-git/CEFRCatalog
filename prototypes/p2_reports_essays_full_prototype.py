@@ -136,7 +136,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "関連する重要な問題を強調しながら、複雑な主題の明快でよく構成された論説を書く。",
  "論点の階層化（Three issues ... The first / The second / The third）と強調の運用（the least visible）。",
  "論説は主張でなく問題の見取り図 ── 立場を売り込まずに要点を立てる。強調は評言で行う（and the least visible ──）── 挿入句の評言は日本語の論説文にない道具。",
- "説明糸：論説（exposition）。報告糸の上端に見えるが、事実の伝達が論点の強調（underlining salient issues）を獲得した時点で報告ではなく説明になり（判断(ae)の再タグ）、論構造糸（356 highlighting）と同じ装置に合流する ── 報告と論証の上端収斂。",
+ "説明糸：論説（exposition）。報告糸の上端に見えるが、事実の伝達が論点の強調（underlining salient issues）を獲得した時点で報告ではなく説明になり（判断(ae)の再タグ）、論構造糸（356 highlighting）と同じ装置に合流する ── 教示族と論証族の上端収斂。",
 ),
 354: (
  ["(from an essay) The four-day week deserves serious study, not because workers want it — of course they do — but because the output evidence keeps surprising us. Trials in several countries found productivity held steady; one bank even reported fewer errors, presumably because tired staff make mistakes. There are subsidiary benefits too: lower commuting costs, easier childcare, and — less obviously — better retention, which saves rehiring costs that rarely appear in the headline numbers."],
