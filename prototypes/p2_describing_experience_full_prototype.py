@@ -83,10 +83,11 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
 ),
 255: (
  ["My friend Sato is tall and very kind. He always helps me.",
-  "Our town is quiet. It has a big park and an old bridge. I like walking there."],
+  "Our town is quiet. It has a big park and an old bridge. I like walking there.",
+  "I have a small blue bike. It is old, but I like it very much."],
  "人・場所・持ち物を簡単な言葉で描写する。",
  "形容詞の選択と位置。has / there is の使い分け。",
- "冠詞と単複が描写で一斉に顕在化する（a big park / an old bridge）。日本語の「静かな町」の感覚で the をつけ忘れる・つけすぎる。人物描写は外見＋性格＋一言の行動でよい。",
+ "英語に特徴的な名詞の取り扱いが描写で一斉に顕在化する。とくに冠詞の使い分け ── 初出の物に the を置く（×It has the big park）。持ち物の描写では所有の型（I have a 〜）が入口になる。",
  "静的描写糸：日常の様相（259）→ 対象別の描写（人・場所・物）へ。まだ simple terms ── 解像度でなく対象の幅が広がる段。",
 ),
 256: (

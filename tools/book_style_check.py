@@ -84,6 +84,12 @@ def cited_numbers(s):
 def main():
     errors = []
     files = sorted(glob.glob(os.path.join(BOOK, '*.md')))
+    # 0. 登録ファイルの実在（カタログ23観察：登録あり・ファイルなしは「落ちずに検査対象外」になっていた。
+    #    登録漏れの裏面。以後、束の適用でコピー漏れがあれば赤くなる）
+    present = {os.path.basename(f) for f in files}
+    for reg_name in list(SHEET_REGISTRY) + list(PORTRAIT_REGISTRY):
+        if reg_name not in present:
+            errors.append(f"{reg_name}: 登録されているが deliverables/book/ に存在しない")
     for f in files:
         name = os.path.basename(f)
         t = open(f, encoding='utf-8').read()
