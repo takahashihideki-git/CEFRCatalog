@@ -45,6 +45,8 @@ SHEET_REGISTRY = {
     '章_意見見解の表明.md':        ('catalog_opinion.json', '意見・見解の表明'),
     '章_感情の表出.md':            ('catalog_emotion.json', '感情の表出'),
     '章_感謝詫び祝意.md':          ('catalog_thanksapology.json', '感謝・詫び・祝意'),
+    # 第2部（語る・書き上げる言葉）── 範型第一号（カタログ23、判断(ba)）
+    '範型章_経験を語る.md':        ('catalog_p2_describing_experience.json', '叙述・経験の語り（第2柱：Sustained monologue: describing experience）'),
 }
 
 # 幕間 → level_portraits のキー
@@ -233,7 +235,7 @@ def main():
                 errors.append(f"{name}: 呪文パターン「{w}」")
 
         # 5. 帳簿語彙（量産章・幕間のみ。範型は命名済み語彙を含むため対象外）
-        if name.startswith(('章_', '幕間_', '総括章_')):
+        if name.startswith(('章_', '幕間_', '総括章_')) or name == '範型章_経験を語る.md':  # 第2部範型は命名済み語彙を含まないため免除しない（カタログ23）
             for w in LEDGER:
                 if w in t:
                     errors.append(f"{name}: 帳簿語彙「{w}」の漏出")
