@@ -165,7 +165,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "経験について詳しく語り、気持ちや反応を描写する。",
  "叙述の正確さ（感情の解像度）。出来事と内面の交互織り。",
  "出来事だけ語って感情を落とさない ── 日本語の語りは評価・感情を聞き手の推論に委ねがちだが、英語の語りは evaluation（どう感じたか）を明示する節を要求する。感情語彙を very+基本語に潰さない（nervous / calm / proud / glad の使い分け ── 第1柱・感情の表出B1帯と同じ課題）。",
- "語り糸：出来事の連鎖（241）→ **出来事＋感情・反応の二重線**へ。detailed の中身は情報量でなく内面の解像度。モード間並行対：Creative writing No.336。第1柱・感情の表出（叙述解像度の梯子）との柱間接続点。",
+ "感情・評価糸（副タグ＝語り）：好悪の説明（253）→ 語り糸の出来事の連鎖（241）に感情・反応を重ねる**二重線**へ。detailed の中身は情報量でなく内面の解像度。モード間並行対：Creative writing No.336。第1柱・感情の表出（叙述解像度の梯子）との柱間接続点。",
 ),
 243: (
  ["Something strange happened on my way home yesterday. The bus stopped very suddenly, and some bags fell from the seats. A car had turned into our street without looking. Nobody was hurt, but we had to wait for the police for almost an hour. I finally got home at nine, two hours late."],
