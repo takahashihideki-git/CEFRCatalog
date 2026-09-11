@@ -47,6 +47,8 @@ SHEET_REGISTRY = {
     '章_感謝詫び祝意.md':          ('catalog_thanksapology.json', '感謝・詫び・祝意'),
     # 第2部（語る・書き上げる言葉）── 範型第一号（カタログ23、判断(ba)）
     '範型章_経験を語る.md':        ('catalog_p2_describing_experience.json', '叙述・経験の語り（第2柱：Sustained monologue: describing experience）'),
+    # 第2部量産（カタログ24〜）
+    '章_創作の文章.md':            ('catalog_p2_creative_writing.json', '創作の文章（第2柱：Creative writing）'),
 }
 
 # 幕間 → level_portraits のキー
