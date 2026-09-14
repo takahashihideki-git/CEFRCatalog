@@ -49,6 +49,7 @@ SHEET_REGISTRY = {
     '範型章_経験を語る.md':        ('catalog_p2_describing_experience.json', '叙述・経験の語り（第2柱：Sustained monologue: describing experience）'),
     # 第2部量産（カタログ24〜）
     '章_創作の文章.md':            ('catalog_p2_creative_writing.json', '創作の文章（第2柱：Creative writing）'),
+    '章_論の提示.md':              ('catalog_p2_putting_a_case.json', '論の提示（第2柱：Sustained monologue: putting a case）'),
 }
 
 # 幕間 → level_portraits のキー
