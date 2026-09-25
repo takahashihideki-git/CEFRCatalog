@@ -51,6 +51,7 @@ SHEET_REGISTRY = {
     '章_創作の文章.md':            ('catalog_p2_creative_writing.json', '創作の文章（第2柱：Creative writing）'),
     '章_論の提示.md':              ('catalog_p2_putting_a_case.json', '論の提示（第2柱：Sustained monologue: putting a case）'),
     '章_報告と小論.md':            ('catalog_p2_reports_essays.json', '報告と小論（第2柱：Reports and essays）'),
+    '章_情報のまとまった提供.md':  ('catalog_p2_giving_information.json', '情報のまとまった提供（第2柱：Sustained monologue: giving information）'),
 }
 
 # 幕間 → level_portraits のキー
