@@ -74,11 +74,11 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "理由づけ糸（論証族）が本スケールに入る最初の行。発表（312）に「理由を短く添える」操作が加わる ── 論証はここでは器でなく添え物で、器になるのはB2（305）から。",
 ),
 311: (
- ["Good question. The trip was three days. ... Yes, we went by train. ... Sorry, one more question only, please."],
+ ["Good question. The trip was three days. ... Yes, we went by train. ... The hotel? It was small, but very clean."],
  "発表のあとの、少数の率直な質問に答える。",
- "質問への応答定型（Good question. ／ Yes, ... ／ Sorry, ...）と、数の管理（limited number）。",
- "質問を受けたら一拍おいてよいが、沈黙を詫びで埋めない ── Good question. が間を作る定型として機能する。打ち切りは Sorry, one more question only. と明示してよい（無言の会釈で終えない）。",
- "質疑応答糸：助け船つきの一問一答（313）から、少数の質問を自力で受ける段へ。支え型条件句（回答定式化の助け）がここで脱落する ── 744→742型の質疑糸での再現。",
+ "質問への応答定型（Good question. ／ Yes, ...）。「限られた数の」は級の上限（少数の率直な質問なら自力で答えられる）であって、数を管理する技能ではない。",
+ "質問を受けたら一拍おいてよい ── Good question. が間を作る定型として機能する。",
+ "質疑応答糸：助け船つきの一問一答（313）から、少数の質問を自力で受ける段へ。支え型条件句（回答定式化の助け）がここで脱落し、残る限定は「限られた数の」＝上限の範囲句 ── 744→742型の質疑糸での再現。",
 ),
 308: (
  ["Today I will explain our plan for the school festival. There are three points: the place, the food, and the money. First, the place. We will use Room 12, because it is near the entrance. Second, the food. We will sell curry and rice; one plate will be three hundred yen. Third, the money. We need about twenty thousand yen, and the club will pay half. That is the plan. Thank you."],
@@ -88,11 +88,11 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "講述糸：短い発表（312）から、要点が立ち聴衆が難なく追える発表へ。followed without difficulty は論証族281（B1+）と完全同句だが本行はB1に立つ ── 受け手基準の最早出現。reasonable precision は教示族268の署名語と同語で、精度の軸がここに顔を出す（主タグは講述に留置）。この行のあと講述糸はC2（297）まで中抜きになる ── 中段の発表の中身が論証族3糸（310→307→305→303→299/300/301）へ外部化されるためで、判断(x)・助言（行為の中抜き型）の糸版。",
 ),
 309: (
- ["Could you speak a little more slowly, please? ... I see. You are asking about the cost. The cost is about fifty thousand yen for one term. That includes the books."],
+ ["Could you speak a little more slowly, please? ... I see. The cost is about fifty thousand yen for one term. That includes the books."],
  "発表のあとの質問を受ける。速い質問は聞き返してよい。",
- "聞き返し（Could you speak more slowly?）と、質問の言い換えによる照準（You are asking about X.）。",
- "聞き返しを恥じない ── 速い質問への繰り返し要求は行の文言に書かれた正当な手続き。答える前に You are asking about X. で照準を宣言すると、取り違えが半減する。",
- "質疑応答糸：数の管理（311）から、内容としては自立した応答へ。ただし速い質問には繰り返しを求めるという但し書きが残る ── 支えの残滓が許容として書かれる段。相手の用語を引用して照準する操作は第1柱・明確化の引用スロット（判断(s)-1拡張）と同じ機構（相互参照）。",
+ "聞き返し（Could you speak more slowly?）── 質問が速いときに残る手続き。相手の質問を正確に受け止める側の運用で、「繰り返しを求めなければならないことがある」は残る限界の但し書き。",
+ "速い質問を聞き取れないまま答え始めない ── 繰り返しの要求は行の文言に書かれた手続き。",
+ "質疑応答糸：少数の質問（311）から、数の限定が消えて内容としては自立した応答へ。ただし速い質問には繰り返しを求めるという但し書きが残る ── 受け止めの限界が許容として書かれる段。繰り返しの要求そのものは第1柱・明確化・繰り返しの要求の帳簿（746帯）にあり、本行はそれを聴衆の前で使う側（相互参照）。",
 ),
 307: (
  ["The two phones look similar, and the price is almost the same. The difference is the battery and the camera. Model A works for two days without charging, but the camera is simple. Model B has a very good camera, but you must charge it every night. If you travel a lot, Model A is better; if you take many photos, choose Model B."],
