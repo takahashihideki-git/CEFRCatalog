@@ -113,7 +113,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "一連の追加質問を、自分にも聴衆にも負担のない流暢さで受け続ける。",
  "複数質問の管理（one by one ／ ナンバリングして順に消す）と、保留の宣言（I will come back to that）。no strain ── 受け答えのテンポそのものが基準になる。",
  "複数の質問を受けたら、順番を自分で宣言して一つずつ消す ── 全部を一度に答えようとして混線させない。答えられない点は保留を明示する（I will come back to that.）── 日本語の「後ほど」を無言の省略にしない。",
- "質疑応答糸：単発の応答（309）から、一連の質問の管理へ。fluency and spontaneity という how well 語彙が行の文言に入り（流暢さ明記）、基準は「自分にも聴衆にも負担にならない」── 受け手負担の語（no strain）はPublic announcements 292（causes no strain or inconvenience to the recipient）と通じるが、定型句の共有ではない。第1柱・授受の情報管理相（複数情報の整理）と機構を共有するが、こちらは聴衆の前の一対多（相互参照）。",
+ "質疑応答糸：単発の応答（309）から、一連の質問の管理へ。fluency and spontaneity という how well 語彙が行の文言に入り（流暢さ明記）、基準は「自分にも聴衆にも負担にならない」── 無負担（no strain）という基準はPublic announcements 292（causes no strain or inconvenience to the recipient）と通じるが、306は自分にも聴衆にも、292は受け手だけで、定型句の共有ではない。第1柱・授受の情報管理相（複数情報の整理）と機構を共有するが、こちらは聴衆の前の一対多（相互参照）。",
 ),
 303: (
  ["My talk has three parts, and I will give you the main point now, at the start: we should keep the city library open in the evening. Part one shows who actually uses it — the key figure is this: six out of ten visits happen after six o'clock. Remember that number, six out of ten. Part two answers the main objection, the cost. Part three shows what we lose if we close early. Let me start with part one."],

@@ -46,14 +46,14 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
  "自分の分野の日常的な出来事について、短い練習済みのアナウンスをする。",
  "呼びかけの定型（Attention, please.）と変更点の対比（at three, not two）。強勢・イントネーションに問題があっても、明瞭に理解可能であること。",
  "変更のアナウンスでは新旧を対で言う（at three, not two ── 「三時からとなりました」だけでは旧情報との差分が届かない）。呼びかけ→本体→念押しの三部構成を守り、本体に一情報ずつ置く。",
- "告知糸：固定内容の送達（294）から、自分の分野の出来事の告知へ。受け手の集中という支えが外れ、代わりに「韻律に問題があっても明瞭」という許容が入る ── 支えの脱落が許容として書き換わる中間形（309と同じ段の力学）。",
+ "告知糸：固定内容の送達（294）から、自分の分野の出来事の告知へ。受け手の集中という支えが外れ、代わりに「韻律に問題があっても明瞭」という許容が入る ── 支えの脱落が許容として書き換わる中間形（講演の質疑糸で、313の支えが311で外れ、309に「速ければ繰り返しを求める」という但し書きだけが残るのと同じ力学）。",
 ),
 292: (
  ["Ladies and gentlemen, a small change to today's programme. The two o'clock talk will move to the main hall — that is the big room on your left. Everything else stays the same. If you have any questions, the staff at the desk will help you."],
  "大半の一般的な話題について、受け手に負担をかけない明瞭さ・流暢さ・自発性でアナウンスする。",
  "その場の変更への自発的対応と、受け手負担ゼロの送達（no strain）。補足の言い添え（that is the big room on your left）を淀みなく足せること。",
  "予定外の内容でも原稿口調を保とうとして止まらない ── 補足は関係詞や挿入でなく、短文の言い足し（that is ...）で行う。案内の結びは相手の次の行動を示す（the staff will help you）。",
- "告知糸：練習済みの範囲（293）から、一般的な話題への自発的対応へ。fluency / spontaneity が行の文言に入り（流暢さ明記）、基準は受け手の無負担 ── poses no strain の定型は講演の質疑306と共有される。韻律の許容（293）はここで消える。",
+ "告知糸：練習済みの範囲（293）から、一般的な話題への自発的対応へ。fluency / spontaneity が行の文言に入り（流暢さ明記）、基準は受け手の無負担（causes no strain or inconvenience to the recipient）── 無負担という基準は講演の質疑306（poses no strain for either themselves or the audience）と通じるが、あちらは話す側と聴衆の双方、こちらは受け手だけで、定型句の共有ではない。韻律の許容（293）はここで消える。",
 ),
 291: (
  ["This is the LAST call for flight two five one to Sapporo. Passengers Sato and Ito, please come to Gate 4 IMMEDIATELY. The gate closes in FIVE minutes — five, not fifteen.",
