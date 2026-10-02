@@ -53,6 +53,7 @@ SHEET_REGISTRY = {
     '章_報告と小論.md':            ('catalog_p2_reports_essays.json', '報告と小論（第2柱：Reports and essays）'),
     '章_情報のまとまった提供.md':  ('catalog_p2_giving_information.json', '情報のまとまった提供（第2柱：Sustained monologue: giving information）'),
     '章_聴衆への講演.md':          ('catalog_p2_addressing_audiences.json', '聴衆への講演（第2柱：Addressing audiences）'),
+    '章_公共アナウンス.md':        ('catalog_p2_public_announcements.json', '公共アナウンス（第2柱：Public announcements）'),
 }
 
 # 幕間 → level_portraits のキー
