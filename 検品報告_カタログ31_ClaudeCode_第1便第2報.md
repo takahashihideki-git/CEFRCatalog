@@ -1,6 +1,6 @@
 # 検品報告 カタログ31・第1便補遺1（ClaudeCode 第1便第2報）
 
-対象：`catalog31_2.diff`（2ファイル・5行）。統合コミットは下記。同梱の `catalog31_1.diff` は統合済みの `fb35707` と同一だった（逆適用で確認）。`catalog31_1_merged.diff` を b15d9b9 の上に当てた結果も、31_1＋31_2 を当てた結果と6ファイルすべてで一致した。
+対象：`catalog31_2.diff`（2ファイル・5行）。統合コミット `a7010bc`。同梱の `catalog31_1.diff` は統合済みの `fb35707` と同一だった（逆適用で確認）。`catalog31_1_merged.diff` を b15d9b9 の上に当てた結果も、31_1＋31_2 を当てた結果と6ファイルすべてで一致した。
 
 **件数：0件**。ゲートは全緑（restore／partition／source_sync／exponent_level／book_style 対象37）。
 
