@@ -1,7 +1,7 @@
 {
  "説明": "第3柱（受容）のインベントリ正準（判断(bq)、CEFRカタログ32）。受容197件（block_partition の「受容」）に、やり取りの篩対象外（留置40）のうち Understanding an interlocutor 12件を加えた209件を、範型183件（11スケール＝11章）＋肖像26件（Overall oral/written comprehension）で完全分割する。区分分割（block_partition_1224.json）は不変 ── 対話者の理解12件は区分上は「やり取り」のまま、本帳簿が第3柱の章として受ける（判断(r)収録方針②の回収。第2柱が留置17を範型母集団から外したのと同じ型の帳簿操作で、区分の数字〔やり取り306・受容197〕は動かさない）。restore.py の第3柱全数照合は本帳簿を正とする。",
  "肖像の一括理由": "Overall oral comprehension 16件＋Overall reading comprehension 10件は級の総括（各章の段の束の再記述＋条件）であり、単一スケールの範型対象ではない。幕間6本は完結済みのため幕間へは織り込まず、第3部の頭か尾に肖像「聞く人・読む人」一本を立てる素材とする（判断(bp)①）。行別noteは各行がどの章のどの級の束かを記録する。",
- "相互参照の一括理由": "篩DROP理由R3（受容の側の記述）29件は、やり取りのスケール（Conversation／Informal discussion／Goal-oriented co-operation／Information exchange／Online conversation／Formal discussion）の中に書かれた聞き手の側の段で、区分は「やり取り」のまま動かさない（判断(r)収録方針②）。本帳簿は各行に最も近い第3柱の行（範型または肖像）を機械検出（difflib、原文の [audially/visually]・/signed を除いた小文字比較）で添え、同文（類似度0.9以上）・近接（0.6以上）・同級の受容なし（0.6未満）に分ける。同文9件（近接6件を含めれば15件）は、対話者の理解（416/417/418/420/421）と他人どうしの会話（18/20/21/25/26）の二スケールが、やり取りの各スケールへ聞き手の段として再掲されていることの帳簿上の証拠 ── 対話者の理解と他人どうしの会話は、やり取りの帳簿に散った聞き手の段を一箇所に集めたスケールである。「同級の受容なし」の行（14件：Formal discussion の追う側 499/496/494/490、Online 667/674/675、Goal-oriented 510/513/518/521、Conversation 443/454、Informal 463。to は置かない＝最近傍が偶然の一致にしかならないため）は、受容の章では段として立たず、相手の章（第1部）から第3部へ向く扉の素材になる。台帳への収載（crossrefs の柱間対）は散文証拠が先（判断(ai)③）。",
+ "相互参照の一括理由": "篩DROP理由R3（受容の側の記述）29件は、やり取りのスケール（Conversation／Informal discussion／Goal-oriented co-operation／Information exchange／Online conversation／Formal discussion）の中に書かれた聞き手の側の段で、区分は「やり取り」のまま動かさない（判断(r)収録方針②）。本帳簿は各行に、第3柱の範型183＋肖像26のうち原文が最も近い行を機械検出で添える（手順は「判定の手順」、級は問わずに探す）。結果＝同文9・近接6・近い行なし14。同文と近接15件の相手は、対話者の理解7件・他人どうしの会話7件・告知と指示1件（507→55）── 対話者の理解と他人どうしの会話の二スケールは、やり取りの帳簿に散った聞き手の段を一箇所に集めたものである（435≡416・439≡418・449≡420・520≡573≡421・561≡417／458≡20・461≡21・472≡26）。近い行なしの14件は、最近傍の類似度が0.6に届かない行で、to はその最近傍（偶然の一致を含む）を記録として残すが対としては読まない ── 受容の章では段として立たず、第1部の章から第3部へ向く扉の素材になる。台帳への収載（crossrefs の柱間対）は散文証拠が先（判断(ai)③）。",
  "章〔仮〕": {
   "Understanding as a member of a live audience": {
    "章名": "聴衆として聞く",
@@ -348,7 +348,7 @@
    "scale": "Overall oral comprehension",
    "level": "Pre-A1",
    "区分": "聞く総括",
-   "note": "数字・価格・日付・曜日の認識＝告知66・相手の話を聞く424の級総括。受容の最下段が数の聞き取りで立つことの総括。"
+   "note": "数字・価格・日付・曜日の認識＝録音81（既知の名前と数字）・相手の話を聞く424（数字・価格・日付・曜日）の級総括。受容の最下段が数の聞き取りで立つことの総括。"
   },
   "97": {
    "scale": "Overall reading comprehension",
@@ -360,7 +360,7 @@
    "scale": "Overall reading comprehension",
    "level": "C2",
    "区分": "読む総括",
-   "note": "文体の微妙な違い、明示的・暗示的な意味を味わえる＝情報と論147・手紙109・楽しみ188の級総括。「味わえる」＝受容が鑑賞に達する終点。"
+   "note": "文体の微妙な違い、明示的・暗示的な意味を味わえる＝楽しみ188・情報と論147・手紙107の級総括。「味わえる」＝受容が鑑賞に達する終点。"
   },
   "99": {
    "scale": "Overall reading comprehension",
@@ -372,7 +372,7 @@
    "scale": "Overall reading comprehension",
    "level": "C1",
    "区分": "読む総括",
-   "note": "読み返しと参考資料があれば文学・記事・学術出版物を含む多種多様なテキスト＝楽しみ189/190・情報と論149/150の級総括。"
+   "note": "読み返しと参考資料があれば文学・記事・学術出版物を含む多種多様なテキスト＝楽しみ189/190・情報と論148・手紙108/109の級総括。"
   },
   "101": {
    "scale": "Overall reading comprehension",
@@ -412,6 +412,14 @@
   }
  },
  "相互参照": {
+  "判定の手順": {
+   "正規化": "\\[.*?\\]|/signed|/signs?|\\s+",
+   "説明": "原文（en）を小文字にし、角括弧の挿入（[audially/visually] 等）・/signed・/sign・/signs を除き、空白を一つに潰す。各R3行について範型183＋肖像26の全行と difflib.SequenceMatcher の ratio を取り、最大の行を to とする（同値はNo昇順で先の行）。similarity は小数2桁。kind＝同文（0.9以上）／近接（0.6以上0.9未満）／近い行なし（0.6未満）。同級＝to の級が自行と同じか。restore.py が同じ手順で再計算し、to・similarity・kind・同級・to_scale・to_level を照合する。",
+   "閾値": {
+    "同文": 0.9,
+    "近接": 0.6
+   }
+  },
   "件数": 29,
   "行": {
    "435": {
@@ -421,7 +429,8 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "B1",
     "similarity": 0.92,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "439": {
     "scale": "Conversation",
@@ -430,14 +439,18 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A2+",
     "similarity": 0.96,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "443": {
     "scale": "Conversation",
     "level": "A2",
-    "to": null,
+    "to": 419,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A2",
     "similarity": 0.54,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": true
    },
    "449": {
     "scale": "Conversation",
@@ -446,14 +459,18 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A1",
     "similarity": 0.91,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "454": {
     "scale": "Conversation",
     "level": "Pre-A1",
-    "to": null,
+    "to": 119,
+    "to_scale": "Reading correspondence",
+    "to_level": "A2",
     "similarity": 0.49,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "457": {
     "scale": "Informal discussion (with friends)",
@@ -462,7 +479,8 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "C1",
     "similarity": 0.89,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "458": {
     "scale": "Informal discussion (with friends)",
@@ -471,7 +489,8 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "B2+",
     "similarity": 0.92,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "461": {
     "scale": "Informal discussion (with friends)",
@@ -480,14 +499,18 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "B2",
     "similarity": 0.97,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "463": {
     "scale": "Informal discussion (with friends)",
     "level": "B1+",
-    "to": null,
+    "to": 43,
+    "to_scale": "Understanding as a member of a live audience",
+    "to_level": "B1",
     "similarity": 0.48,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "468": {
     "scale": "Informal discussion (with friends)",
@@ -496,7 +519,8 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "B1",
     "similarity": 0.8,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "472": {
     "scale": "Informal discussion (with friends)",
@@ -505,7 +529,8 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "A2+",
     "similarity": 1.0,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "485": {
     "scale": "Formal discussion (meetings)",
@@ -514,35 +539,48 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "C1",
     "similarity": 0.68,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "490": {
     "scale": "Formal discussion (meetings)",
     "level": "B2+",
-    "to": null,
+    "to": 24,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "B1+",
     "similarity": 0.48,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "494": {
     "scale": "Formal discussion (meetings)",
     "level": "B2",
-    "to": null,
+    "to": 111,
+    "to_scale": "Reading correspondence",
+    "to_level": "B2",
     "similarity": 0.51,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": true
    },
    "496": {
     "scale": "Formal discussion (meetings)",
     "level": "B1+",
-    "to": null,
+    "to": 37,
+    "to_scale": "Understanding as a member of a live audience",
+    "to_level": "B2+",
     "similarity": 0.47,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "499": {
     "scale": "Formal discussion (meetings)",
     "level": "B1",
-    "to": null,
+    "to": 43,
+    "to_scale": "Understanding as a member of a live audience",
+    "to_level": "B1",
     "similarity": 0.5,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": true
    },
    "500": {
     "scale": "Formal discussion (meetings)",
@@ -551,7 +589,8 @@
     "to_scale": "Understanding conversation between other people",
     "to_level": "A2+",
     "similarity": 0.74,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "507": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
@@ -560,21 +599,28 @@
     "to_scale": "Understanding announcements and instructions",
     "to_level": "B2",
     "similarity": 0.66,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "510": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
     "level": "B1+",
-    "to": null,
+    "to": 416,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "B1",
     "similarity": 0.49,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "513": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
     "level": "B1",
-    "to": null,
+    "to": 152,
+    "to_scale": "Reading for information and argument",
+    "to_level": "B2",
     "similarity": 0.43,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "516": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
@@ -583,14 +629,18 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A2+",
     "similarity": 0.66,
-    "kind": "近接"
+    "kind": "近接",
+    "同級": true
    },
    "518": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
     "level": "A2",
-    "to": null,
+    "to": 419,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A2",
     "similarity": 0.59,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": true
    },
    "520": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
@@ -599,14 +649,18 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A1",
     "similarity": 1.0,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "521": {
     "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
     "level": "A1",
-    "to": null,
+    "to": 63,
+    "to_scale": "Understanding announcements and instructions",
+    "to_level": "A2",
     "similarity": 0.53,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "561": {
     "scale": "Information exchange",
@@ -615,7 +669,8 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A2+",
     "similarity": 1.0,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "573": {
     "scale": "Information exchange",
@@ -624,28 +679,38 @@
     "to_scale": "Understanding an interlocutor",
     "to_level": "A1",
     "similarity": 1.0,
-    "kind": "同文"
+    "kind": "同文",
+    "同級": true
    },
    "667": {
     "scale": "Online conversation and discussion",
     "level": "C1",
-    "to": null,
+    "to": 147,
+    "to_scale": "Reading for information and argument",
+    "to_level": "C2",
     "similarity": 0.4,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "674": {
     "scale": "Online conversation and discussion",
     "level": "B2",
-    "to": null,
+    "to": 74,
+    "to_scale": "Understanding audio (or signed) media and recordings",
+    "to_level": "B1",
     "similarity": 0.47,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    },
    "675": {
     "scale": "Online conversation and discussion",
     "level": "B1+",
-    "to": null,
+    "to": 44,
+    "to_scale": "Understanding as a member of a live audience",
+    "to_level": "B1",
     "similarity": 0.38,
-    "kind": "同級の受容なし"
+    "kind": "近い行なし",
+    "同級": false
    }
   }
  }

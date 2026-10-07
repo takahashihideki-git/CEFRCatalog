@@ -194,14 +194,25 @@ if __name__ == "__main__":
     p3_x = P3INV["相互参照"]["行"]
     p3_r3 = {n for n, v in D["verdicts"].items() if v["verdict"] == "DROP" and v["reason"] == "R3"}
     assert set(p3_x) == p3_r3 and P3INV["相互参照"]["件数"] == len(p3_r3) == 29, "p3相互参照がR3 DROP 29件と不一致"
+    # 相互参照は帳簿の「判定の手順」どおりに再計算して照合する（写し欄・閾値・最近傍・同級をすべて機械で確かめる）
+    import re as _re, difflib as _difflib
+    _proc = P3INV["相互参照"]["判定の手順"]
+    _norm_re = _re.compile(_proc["正規化"])
+    _norm = lambda t: _norm_re.sub(" ", t.lower()).strip()
+    _th_same, _th_near = _proc["閾値"]["同文"], _proc["閾値"]["近接"]
+    assert _th_same > _th_near, "p3相互参照: 閾値の大小が逆"
+    _pool = sorted(set(p3_h) | set(p3_s), key=int)
     for n, row in p3_x.items():
         assert D["descriptors"][n]["scale"] == row["scale"] and D["descriptors"][n]["level"] == row["level"], f"p3相互参照の所属不整合 No.{n}"
-        assert row["kind"] in ("同文", "近接", "同級の受容なし"), f"p3相互参照のkind語彙外 No.{n}"
-        if row["kind"] == "同級の受容なし":
-            assert row["to"] is None, f"p3相互参照: 同級の受容なしにtoがある No.{n}"
-        else:
-            assert str(row["to"]) in p3_h or str(row["to"]) in p3_s, f"p3相互参照のtoが第3柱にない No.{n}"
-            assert (row["kind"] == "同文") == (row["similarity"] >= 0.9), f"p3相互参照のkindと類似度が不整合 No.{n}"
+        _src = _norm(D["descriptors"][n]["en"])
+        _sims = {r: _difflib.SequenceMatcher(None, _src, _norm(D["descriptors"][r]["en"])).ratio() for r in _pool}
+        _best = max(_pool, key=lambda r: _sims[r])  # 同値はNo昇順で先の行
+        assert str(row["to"]) == _best, f"p3相互参照のtoが最近傍でない No.{n}（帳簿{row['to']}／再計算{_best}）"
+        assert row["similarity"] == round(_sims[_best], 2), f"p3相互参照の類似度が再計算と不一致 No.{n}"
+        _kind = "同文" if row["similarity"] >= _th_same else ("近接" if row["similarity"] >= _th_near else "近い行なし")
+        assert row["kind"] == _kind, f"p3相互参照のkindが閾値と不整合 No.{n}（帳簿{row['kind']}／判定{_kind}）"
+        assert row["to_scale"] == D["descriptors"][_best]["scale"] and row["to_level"] == D["descriptors"][_best]["level"], f"p3相互参照のto_scale/to_levelが原典と不一致 No.{n}"
+        assert row["同級"] == (row["level"] == row["to_level"]), f"p3相互参照の同級欄が不整合 No.{n}"
     # 第3柱シート（一号=CEFRカタログ32）── 全数性は帳簿（p3_inventory）で照合
     P3_SHEETS = [
         ("Understanding as a member of a live audience", "catalog_p3_audience.json", "聞く", 18),
@@ -435,4 +446,4 @@ if __name__ == "__main__":
                 assert _fold[D["descriptors"][_n]["level"]] == _ik, f"幕間台帳: 級の畳み込み不整合 No.{_n}"
     assert set(_lp_seen) == set(_lp_src), "幕間台帳: 素材63件の完全分割でない"
     assert list(LP["幕間"].keys()) == LP["meta"]["幕間順序"] and len(LP["幕間"]) == 6, "幕間台帳: 幕間6本の順序不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言12＝30完全分割〔判断(aj)、第3柱一号は未宣言〕）/ 第3柱インベントリ209＝範型183＋肖像26（受容197＋対話者の理解12、区分分割不変、肖像は行別note、相互参照＝R3 DROP 29件〔同文9・近接6・同級の受容なし14〕〔判断(bq)〕）/ 第3柱範型1枚（一号18聞く、帳簿全数・mode一様・条件と深さの完全分割〔カタログ32〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言12＝30完全分割〔判断(aj)、第3柱一号は未宣言〕）/ 第3柱インベントリ209＝範型183＋肖像26（受容197＋対話者の理解12、区分分割不変、肖像は行別note、相互参照＝R3 DROP 29件〔帳簿の手順で再計算照合：同文9・近接6・近い行なし14〕〔判断(bq)〕）/ 第3柱範型1枚（一号18聞く、帳簿全数・mode一様・条件と深さの完全分割〔カタログ32〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
