@@ -117,6 +117,7 @@
 ## 素材の帳簿対応
 
 - 章29本 ← catalog_*.json（29シート）
+- 第3部の章11本〔予定〕 ← catalog_p3_*.json（`data/p3_inventory_209to11.json` が章の件数の正、判断(bq)）、肖像「聞く人・読む人」 ← 同帳簿の肖像26件
 - 幕間6本 ← `data/level_portraits.json`（判断(al)。幕間×素材63件の割り付け＝柱1総括18＋柱2総括17＋R1質28、restore.py検証）
 - 扉 ← crossrefs.json＋各シートDISCUSSION
 - 横串総括章 ← howwell_axes_182to13.json

@@ -170,7 +170,39 @@ if __name__ == "__main__":
         assert len(P2["discussion"]) == 5, f"p2 DISCUSSION段落数不一致 {p2_scale}"
         p2_rows_by_scale[p2_scale] = p2_seen
     p2_mode_by_scale = {sc: md for sc, _fn, md, _n in P2_SHEETS}
-    # 第3柱シート（一号=CEFRカタログ32）── インベントリ未整備のため全数性はスケール所属から導出（暫定。第2柱の判断(ah)前と同じ方式）
+    # 第3柱インベントリ（判断(bq)、CEFRカタログ32）── 受容197＋対話者の理解12＝209件の完全分割（範型183＋肖像26）を正とする。区分分割は不変
+    P3INV = json.load(open(os.path.join("data", "p3_inventory_209to11.json"), encoding="utf-8"))
+    p3_block = {n for n, v in D["partition"].items() if v["block"] == "受容"}
+    p3_il = {n for n, d in D["descriptors"].items() if d["scale"] == "Understanding an interlocutor"}
+    assert len(p3_il) == 12 and all(D["partition"][n]["block"] == "やり取り" and n not in D["verdicts"] for n in p3_il), "対話者の理解12件がやり取りの篩対象外でない"
+    p3_h, p3_s = P3INV["範型"], P3INV["肖像"]
+    assert len(p3_h) == 183 and len(p3_s) == 26, "p3インベントリ件数不一致"
+    assert set(p3_h) | set(p3_s) == p3_block | p3_il and not set(p3_h) & set(p3_s), "p3インベントリが209件（受容197＋対話者12）の完全分割でない"
+    assert P3INV["完全分割"] == {"範型": 183, "肖像": 26, "計": 209, "内訳": {"受容": 197, "対話者の理解（やり取り留置）": 12}}, "p3完全分割の記録不一致"
+    for n, sc in p3_h.items():
+        assert D["descriptors"][n]["scale"] == sc, f"p3インベントリ範型のスケール不整合 No.{n}"
+    assert set(p3_h.values()) == set(P3INV["章〔仮〕"]), "p3章〔仮〕がスケール集合と不一致"
+    for sc, rec in P3INV["章〔仮〕"].items():
+        assert rec["件数"] == sum(1 for v in p3_h.values() if v == sc), f"p3章〔仮〕の件数不一致 {sc}"
+    p3_sc_counts = {}
+    for n, row in p3_s.items():
+        assert D["descriptors"][n]["scale"] == row["scale"], f"p3肖像のスケール不整合 No.{n}"
+        assert D["descriptors"][n]["level"] == row["level"], f"p3肖像のレベル不整合 No.{n}"
+        assert row["note"], f"p3肖像に行別noteの欠落 No.{n}"
+        p3_sc_counts[row["scale"]] = p3_sc_counts.get(row["scale"], 0) + 1
+    assert p3_sc_counts == {"Overall oral comprehension": 16, "Overall reading comprehension": 10}, "p3肖像のスケール構成不一致"
+    p3_x = P3INV["相互参照"]["行"]
+    p3_r3 = {n for n, v in D["verdicts"].items() if v["verdict"] == "DROP" and v["reason"] == "R3"}
+    assert set(p3_x) == p3_r3 and P3INV["相互参照"]["件数"] == len(p3_r3) == 29, "p3相互参照がR3 DROP 29件と不一致"
+    for n, row in p3_x.items():
+        assert D["descriptors"][n]["scale"] == row["scale"] and D["descriptors"][n]["level"] == row["level"], f"p3相互参照の所属不整合 No.{n}"
+        assert row["kind"] in ("同文", "近接", "同級の受容なし"), f"p3相互参照のkind語彙外 No.{n}"
+        if row["kind"] == "同級の受容なし":
+            assert row["to"] is None, f"p3相互参照: 同級の受容なしにtoがある No.{n}"
+        else:
+            assert str(row["to"]) in p3_h or str(row["to"]) in p3_s, f"p3相互参照のtoが第3柱にない No.{n}"
+            assert (row["kind"] == "同文") == (row["similarity"] >= 0.9), f"p3相互参照のkindと類似度が不整合 No.{n}"
+    # 第3柱シート（一号=CEFRカタログ32）── 全数性は帳簿（p3_inventory）で照合
     P3_SHEETS = [
         ("Understanding as a member of a live audience", "catalog_p3_audience.json", "聞く", 18),
     ]
@@ -186,8 +218,8 @@ if __name__ == "__main__":
             assert D["descriptors"][no]["scale"] == p3_scale, f"p3スケール所属不一致 No.{no}"
             assert D["partition"][no]["block"] == "受容", f"p3区分が受容でない No.{no}"
             p3_seen.add(no)
-        p3_members = {n for n, d in D["descriptors"].items() if d.get("scale") == p3_scale}
-        assert p3_seen == p3_members and len(P3["rows"]) == p3_n, f"p3全数性不一致（スケール所属） {p3_scale}"
+        p3_members = {n for n, sc in p3_h.items() if sc == p3_scale}
+        assert p3_seen == p3_members and len(P3["rows"]) == p3_n, f"p3全数性不一致（帳簿照合） {p3_scale}"
         assert len(P3["discussion"]) == 5, f"p3 DISCUSSION段落数不一致 {p3_scale}"
         for _axname, _ax in P3["axes"].items():
             _tag = sorted(n for v in _ax.values() for n in v)
@@ -403,4 +435,4 @@ if __name__ == "__main__":
                 assert _fold[D["descriptors"][_n]["level"]] == _ik, f"幕間台帳: 級の畳み込み不整合 No.{_n}"
     assert set(_lp_seen) == set(_lp_src), "幕間台帳: 素材63件の完全分割でない"
     assert list(LP["幕間"].keys()) == LP["meta"]["幕間順序"] and len(LP["幕間"]) == 6, "幕間台帳: 幕間6本の順序不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言12＝30完全分割〔判断(aj)、第3柱一号は未宣言〕）/ 第3柱範型1枚（一号18聞く、スケール所属で全数・mode一様・条件と深さの完全分割〔カタログ32〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言12＝30完全分割〔判断(aj)、第3柱一号は未宣言〕）/ 第3柱インベントリ209＝範型183＋肖像26（受容197＋対話者の理解12、区分分割不変、肖像は行別note、相互参照＝R3 DROP 29件〔同文9・近接6・同級の受容なし14〕〔判断(bq)〕）/ 第3柱範型1枚（一号18聞く、帳簿全数・mode一様・条件と深さの完全分割〔カタログ32〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")

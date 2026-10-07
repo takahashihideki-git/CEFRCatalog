@@ -1,0 +1,652 @@
+{
+ "説明": "第3柱（受容）のインベントリ正準（判断(bq)、CEFRカタログ32）。受容197件（block_partition の「受容」）に、やり取りの篩対象外（留置40）のうち Understanding an interlocutor 12件を加えた209件を、範型183件（11スケール＝11章）＋肖像26件（Overall oral/written comprehension）で完全分割する。区分分割（block_partition_1224.json）は不変 ── 対話者の理解12件は区分上は「やり取り」のまま、本帳簿が第3柱の章として受ける（判断(r)収録方針②の回収。第2柱が留置17を範型母集団から外したのと同じ型の帳簿操作で、区分の数字〔やり取り306・受容197〕は動かさない）。restore.py の第3柱全数照合は本帳簿を正とする。",
+ "肖像の一括理由": "Overall oral comprehension 16件＋Overall reading comprehension 10件は級の総括（各章の段の束の再記述＋条件）であり、単一スケールの範型対象ではない。幕間6本は完結済みのため幕間へは織り込まず、第3部の頭か尾に肖像「聞く人・読む人」一本を立てる素材とする（判断(bp)①）。行別noteは各行がどの章のどの級の束かを記録する。",
+ "相互参照の一括理由": "篩DROP理由R3（受容の側の記述）29件は、やり取りのスケール（Conversation／Informal discussion／Goal-oriented co-operation／Information exchange／Online conversation／Formal discussion）の中に書かれた聞き手の側の段で、区分は「やり取り」のまま動かさない（判断(r)収録方針②）。本帳簿は各行に最も近い第3柱の行（範型または肖像）を機械検出（difflib、原文の [audially/visually]・/signed を除いた小文字比較）で添え、同文（類似度0.9以上）・近接（0.6以上）・同級の受容なし（0.6未満）に分ける。同文9件（近接6件を含めれば15件）は、対話者の理解（416/417/418/420/421）と他人どうしの会話（18/20/21/25/26）の二スケールが、やり取りの各スケールへ聞き手の段として再掲されていることの帳簿上の証拠 ── 対話者の理解と他人どうしの会話は、やり取りの帳簿に散った聞き手の段を一箇所に集めたスケールである。「同級の受容なし」の行（14件：Formal discussion の追う側 499/496/494/490、Online 667/674/675、Goal-oriented 510/513/518/521、Conversation 443/454、Informal 463。to は置かない＝最近傍が偶然の一致にしかならないため）は、受容の章では段として立たず、相手の章（第1部）から第3部へ向く扉の素材になる。台帳への収載（crossrefs の柱間対）は散文証拠が先（判断(ai)③）。",
+ "章〔仮〕": {
+  "Understanding as a member of a live audience": {
+   "章名": "聴衆として聞く",
+   "mode": "聞く",
+   "件数": 18
+  },
+  "Understanding announcements and instructions": {
+   "章名": "告知と指示を聞く",
+   "mode": "聞く",
+   "件数": 16
+  },
+  "Understanding conversation between other people": {
+   "章名": "他人どうしの会話を聞く",
+   "mode": "聞く",
+   "件数": 14
+  },
+  "Understanding audio (or signed) media and recordings": {
+   "章名": "録音と放送を聞く",
+   "mode": "聞く",
+   "件数": 13
+  },
+  "Understanding an interlocutor": {
+   "章名": "相手の話を聞く",
+   "mode": "聞く",
+   "件数": 12
+  },
+  "Watching TV, film and video": {
+   "章名": "テレビ・映画・動画を見る",
+   "mode": "見る",
+   "件数": 14
+  },
+  "Reading for information and argument": {
+   "章名": "情報と論を読む",
+   "mode": "読む",
+   "件数": 26
+  },
+  "Reading for orientation": {
+   "章名": "探して読む",
+   "mode": "読む",
+   "件数": 20
+  },
+  "Reading correspondence": {
+   "章名": "手紙を読む",
+   "mode": "読む",
+   "件数": 18
+  },
+  "Reading as a leisure activity": {
+   "章名": "楽しみに読む",
+   "mode": "読む",
+   "件数": 18
+  },
+  "Reading instructions": {
+   "章名": "指示を読む",
+   "mode": "読む",
+   "件数": 14
+  }
+ },
+ "完全分割": {
+  "範型": 183,
+  "肖像": 26,
+  "計": 209,
+  "内訳": {
+   "受容": 197,
+   "対話者の理解（やり取り留置）": 12
+  }
+ },
+ "範型": {
+  "17": "Understanding conversation between other people",
+  "18": "Understanding conversation between other people",
+  "19": "Understanding conversation between other people",
+  "20": "Understanding conversation between other people",
+  "21": "Understanding conversation between other people",
+  "22": "Understanding conversation between other people",
+  "23": "Understanding conversation between other people",
+  "24": "Understanding conversation between other people",
+  "25": "Understanding conversation between other people",
+  "26": "Understanding conversation between other people",
+  "27": "Understanding conversation between other people",
+  "28": "Understanding conversation between other people",
+  "29": "Understanding conversation between other people",
+  "30": "Understanding conversation between other people",
+  "32": "Understanding as a member of a live audience",
+  "33": "Understanding as a member of a live audience",
+  "34": "Understanding as a member of a live audience",
+  "35": "Understanding as a member of a live audience",
+  "36": "Understanding as a member of a live audience",
+  "37": "Understanding as a member of a live audience",
+  "38": "Understanding as a member of a live audience",
+  "39": "Understanding as a member of a live audience",
+  "40": "Understanding as a member of a live audience",
+  "41": "Understanding as a member of a live audience",
+  "42": "Understanding as a member of a live audience",
+  "43": "Understanding as a member of a live audience",
+  "44": "Understanding as a member of a live audience",
+  "45": "Understanding as a member of a live audience",
+  "46": "Understanding as a member of a live audience",
+  "47": "Understanding as a member of a live audience",
+  "48": "Understanding as a member of a live audience",
+  "49": "Understanding as a member of a live audience",
+  "52": "Understanding announcements and instructions",
+  "53": "Understanding announcements and instructions",
+  "54": "Understanding announcements and instructions",
+  "55": "Understanding announcements and instructions",
+  "56": "Understanding announcements and instructions",
+  "57": "Understanding announcements and instructions",
+  "58": "Understanding announcements and instructions",
+  "59": "Understanding announcements and instructions",
+  "60": "Understanding announcements and instructions",
+  "61": "Understanding announcements and instructions",
+  "62": "Understanding announcements and instructions",
+  "63": "Understanding announcements and instructions",
+  "64": "Understanding announcements and instructions",
+  "65": "Understanding announcements and instructions",
+  "66": "Understanding announcements and instructions",
+  "67": "Understanding announcements and instructions",
+  "69": "Understanding audio (or signed) media and recordings",
+  "70": "Understanding audio (or signed) media and recordings",
+  "71": "Understanding audio (or signed) media and recordings",
+  "72": "Understanding audio (or signed) media and recordings",
+  "73": "Understanding audio (or signed) media and recordings",
+  "74": "Understanding audio (or signed) media and recordings",
+  "75": "Understanding audio (or signed) media and recordings",
+  "76": "Understanding audio (or signed) media and recordings",
+  "77": "Understanding audio (or signed) media and recordings",
+  "78": "Understanding audio (or signed) media and recordings",
+  "79": "Understanding audio (or signed) media and recordings",
+  "80": "Understanding audio (or signed) media and recordings",
+  "81": "Understanding audio (or signed) media and recordings",
+  "83": "Watching TV, film and video",
+  "84": "Watching TV, film and video",
+  "85": "Watching TV, film and video",
+  "86": "Watching TV, film and video",
+  "87": "Watching TV, film and video",
+  "88": "Watching TV, film and video",
+  "89": "Watching TV, film and video",
+  "90": "Watching TV, film and video",
+  "91": "Watching TV, film and video",
+  "92": "Watching TV, film and video",
+  "93": "Watching TV, film and video",
+  "94": "Watching TV, film and video",
+  "95": "Watching TV, film and video",
+  "96": "Watching TV, film and video",
+  "107": "Reading correspondence",
+  "108": "Reading correspondence",
+  "109": "Reading correspondence",
+  "110": "Reading correspondence",
+  "111": "Reading correspondence",
+  "112": "Reading correspondence",
+  "113": "Reading correspondence",
+  "114": "Reading correspondence",
+  "115": "Reading correspondence",
+  "116": "Reading correspondence",
+  "117": "Reading correspondence",
+  "118": "Reading correspondence",
+  "119": "Reading correspondence",
+  "120": "Reading correspondence",
+  "121": "Reading correspondence",
+  "122": "Reading correspondence",
+  "123": "Reading correspondence",
+  "124": "Reading correspondence",
+  "127": "Reading for orientation",
+  "128": "Reading for orientation",
+  "129": "Reading for orientation",
+  "130": "Reading for orientation",
+  "131": "Reading for orientation",
+  "132": "Reading for orientation",
+  "133": "Reading for orientation",
+  "134": "Reading for orientation",
+  "135": "Reading for orientation",
+  "136": "Reading for orientation",
+  "137": "Reading for orientation",
+  "138": "Reading for orientation",
+  "139": "Reading for orientation",
+  "140": "Reading for orientation",
+  "141": "Reading for orientation",
+  "142": "Reading for orientation",
+  "143": "Reading for orientation",
+  "144": "Reading for orientation",
+  "145": "Reading for orientation",
+  "146": "Reading for orientation",
+  "147": "Reading for information and argument",
+  "148": "Reading for information and argument",
+  "149": "Reading for information and argument",
+  "150": "Reading for information and argument",
+  "151": "Reading for information and argument",
+  "152": "Reading for information and argument",
+  "153": "Reading for information and argument",
+  "154": "Reading for information and argument",
+  "155": "Reading for information and argument",
+  "156": "Reading for information and argument",
+  "157": "Reading for information and argument",
+  "158": "Reading for information and argument",
+  "159": "Reading for information and argument",
+  "160": "Reading for information and argument",
+  "161": "Reading for information and argument",
+  "162": "Reading for information and argument",
+  "163": "Reading for information and argument",
+  "164": "Reading for information and argument",
+  "165": "Reading for information and argument",
+  "166": "Reading for information and argument",
+  "167": "Reading for information and argument",
+  "168": "Reading for information and argument",
+  "169": "Reading for information and argument",
+  "170": "Reading for information and argument",
+  "171": "Reading for information and argument",
+  "172": "Reading for information and argument",
+  "174": "Reading instructions",
+  "175": "Reading instructions",
+  "176": "Reading instructions",
+  "177": "Reading instructions",
+  "178": "Reading instructions",
+  "179": "Reading instructions",
+  "180": "Reading instructions",
+  "181": "Reading instructions",
+  "182": "Reading instructions",
+  "183": "Reading instructions",
+  "184": "Reading instructions",
+  "185": "Reading instructions",
+  "186": "Reading instructions",
+  "187": "Reading instructions",
+  "188": "Reading as a leisure activity",
+  "189": "Reading as a leisure activity",
+  "190": "Reading as a leisure activity",
+  "191": "Reading as a leisure activity",
+  "192": "Reading as a leisure activity",
+  "193": "Reading as a leisure activity",
+  "194": "Reading as a leisure activity",
+  "195": "Reading as a leisure activity",
+  "196": "Reading as a leisure activity",
+  "197": "Reading as a leisure activity",
+  "198": "Reading as a leisure activity",
+  "199": "Reading as a leisure activity",
+  "200": "Reading as a leisure activity",
+  "201": "Reading as a leisure activity",
+  "202": "Reading as a leisure activity",
+  "203": "Reading as a leisure activity",
+  "204": "Reading as a leisure activity",
+  "205": "Reading as a leisure activity",
+  "413": "Understanding an interlocutor",
+  "414": "Understanding an interlocutor",
+  "415": "Understanding an interlocutor",
+  "416": "Understanding an interlocutor",
+  "417": "Understanding an interlocutor",
+  "418": "Understanding an interlocutor",
+  "419": "Understanding an interlocutor",
+  "420": "Understanding an interlocutor",
+  "421": "Understanding an interlocutor",
+  "422": "Understanding an interlocutor",
+  "423": "Understanding an interlocutor",
+  "424": "Understanding an interlocutor"
+ },
+ "肖像": {
+  "1": {
+   "scale": "Overall oral comprehension",
+   "level": "C2",
+   "区分": "聞く総括",
+   "note": "速い自然な速度でほぼあらゆる種類の言葉を容易に＝聴衆32・会話17・相手の話を聞く413の級総括。条件の弧の終着（条件なし）の総括文。"
+  },
+  "2": {
+   "scale": "Overall oral comprehension",
+   "level": "C1",
+   "区分": "聞く総括",
+   "note": "自分の分野を超えた抽象的で複雑な話題＝聴衆35・会話18・相手の話を聞く414の級総括。「時折細部の確認が必要」が残る最後の但し書き。"
+  },
+  "3": {
+   "scale": "Overall oral comprehension",
+   "level": "C1",
+   "区分": "聞く総括",
+   "note": "慣用表現・口語表現・使用域の変化の認識＝テレビ83・会話19・手紙110の級総括。質のものさし（社会言語的適切さ）の言葉で書かれた受容の総括。"
+  },
+  "4": {
+   "scale": "Overall oral comprehension",
+   "level": "C1",
+   "区分": "聞く総括",
+   "note": "明確に構成されず関係が暗示されるだけでも追える＝7（B2の標識条件）の脱落の総括。聴衆33（C2の推論）の一段手前。"
+  },
+  "5": {
+   "scale": "Overall oral comprehension",
+   "level": "B2+",
+   "区分": "聞く総括",
+   "note": "身近でも未知でも、生でも放送でも＝聴衆36/37・録音70・テレビ86の級総括。阻害要因（極端な雑音・不十分な構成・慣用表現）を列挙する総括＝逆境の予告。"
+  },
+  "6": {
+   "scale": "Overall oral comprehension",
+   "level": "B2",
+   "区分": "聞く総括",
+   "note": "命題的・言語的に複雑な談話の主旨、専門分野の技術的議論を含む＝聴衆38・会話22・テレビ87/88の級総括。"
+  },
+  "7": {
+   "scale": "Overall oral comprehension",
+   "level": "B2",
+   "区分": "聞く総括",
+   "note": "長い談話と複雑な論の展開、明示的な標識があれば＝聴衆38の条件（話題が身近・構成の標識）の総括。C1の4（標識なしでも追える）と対で条件の脱落を示す。"
+  },
+  "8": {
+   "scale": "Overall oral comprehension",
+   "level": "B1+",
+   "区分": "聞く総括",
+   "note": "全体の趣旨と具体的詳細の両方＝聴衆42（主旨と裏づけの区別）・録音72の級総括。深さ「区別」の初出の総括。"
+  },
+  "9": {
+   "scale": "Overall oral comprehension",
+   "level": "B1",
+   "区分": "聞く総括",
+   "note": "身近な事柄の要点、短い物語を含む＝聴衆43/45・録音73/74・他人の会話25の級総括。条件が速さから「明瞭な標準語か馴染みの変種」へ移る折れ目の総括。"
+  },
+  "10": {
+   "scale": "Overall oral comprehension",
+   "level": "A2+",
+   "区分": "聞く総括",
+   "note": "具体的な必要を満たせる程度＝相手の話を聞く417（やり取りR3の561と同文）の級総括。理解の深さを「用が足りるか」で測る。"
+  },
+  "11": {
+   "scale": "Overall oral comprehension",
+   "level": "A2",
+   "区分": "聞く総括",
+   "note": "最も差し迫った領域の句と表現＝相手の話を聞く419・他人の会話28の級総括。語彙の領域（個人・家族・買い物・地元・仕事）が条件に入る唯一の段。"
+  },
+  "12": {
+   "scale": "Overall oral comprehension",
+   "level": "A1",
+   "区分": "聞く総括",
+   "note": "非常にゆっくり・長い間＝聴衆49の条件の総括。「言葉についていける」が理解の最小形。"
+  },
+  "13": {
+   "scale": "Overall oral comprehension",
+   "level": "A1",
+   "区分": "聞く総括",
+   "note": "具体的情報（場所・時刻）の認識＝録音80・告知64/65の級総括。"
+  },
+  "14": {
+   "scale": "Overall oral comprehension",
+   "level": "Pre-A1",
+   "区分": "聞く総括",
+   "note": "ゆっくり・明瞭・視覚と身振り・繰り返しの四重の支え＝条件の弧の起点。相手の話を聞く422/423と告知67の級総括。"
+  },
+  "15": {
+   "scale": "Overall oral comprehension",
+   "level": "Pre-A1",
+   "区分": "聞く総括",
+   "note": "既知の語の認識。明確に限定された身近な文脈が支え。相手の話を聞く424と録音81の級総括。"
+  },
+  "16": {
+   "scale": "Overall oral comprehension",
+   "level": "Pre-A1",
+   "区分": "聞く総括",
+   "note": "数字・価格・日付・曜日の認識＝告知66・相手の話を聞く424の級総括。受容の最下段が数の聞き取りで立つことの総括。"
+  },
+  "97": {
+   "scale": "Overall reading comprehension",
+   "level": "C2",
+   "区分": "読む総括",
+   "note": "抽象的・構造的に複雑・きわめて口語的な文学・非文学テキスト＝楽しみ188・手紙107の級総括。条件なし。"
+  },
+  "98": {
+   "scale": "Overall reading comprehension",
+   "level": "C2",
+   "区分": "読む総括",
+   "note": "文体の微妙な違い、明示的・暗示的な意味を味わえる＝情報と論147・手紙109・楽しみ188の級総括。「味わえる」＝受容が鑑賞に達する終点。"
+  },
+  "99": {
+   "scale": "Overall reading comprehension",
+   "level": "C1",
+   "区分": "読む総括",
+   "note": "難しい箇所を読み返せるなら長く複雑なテキストを詳細に＝情報と論148・指示174・手紙108の級総括。再読の機会が最後の条件。"
+  },
+  "100": {
+   "scale": "Overall reading comprehension",
+   "level": "C1",
+   "区分": "読む総括",
+   "note": "読み返しと参考資料があれば文学・記事・学術出版物を含む多種多様なテキスト＝楽しみ189/190・情報と論149/150の級総括。"
+  },
+  "101": {
+   "scale": "Overall reading comprehension",
+   "level": "B2",
+   "区分": "読む総括",
+   "note": "読み方と速度の調整・参考資料の選択＝探す128/129・楽しみ191・情報と論151-153の級総括。「高い自立性」が受容側で明記される唯一の総括。低頻度の慣用句の但し書きが残る。"
+  },
+  "102": {
+   "scale": "Overall reading comprehension",
+   "level": "B1",
+   "区分": "読む総括",
+   "note": "関心分野の率直な事実的テキストを満足のいく理解度で＝情報と論158-160・探す132-135・指示177-179の級総括。"
+  },
+  "103": {
+   "scale": "Overall reading comprehension",
+   "level": "A2+",
+   "区分": "読む総括",
+   "note": "高頻度の日常語・仕事の言葉で書かれた身近で具体的な事柄＝情報と論161-164・手紙117/118・指示180/181の級総括。"
+  },
+  "104": {
+   "scale": "Overall reading comprehension",
+   "level": "A2",
+   "区分": "読む総括",
+   "note": "最高頻度語彙と国際共通語彙の短いテキスト＝情報と論165-169・探す138-140の級総括。語彙の頻度が条件に入る。"
+  },
+  "105": {
+   "scale": "Overall reading comprehension",
+   "level": "A1",
+   "区分": "読む総括",
+   "note": "一句ずつ・既知の語を拾い・読み返しながら＝情報と論170/171・手紙121/122の級総括。「読み返す」が条件として立つ最初の段＝読む側の弧の起点。"
+  },
+  "106": {
+   "scale": "Overall reading comprehension",
+   "level": "Pre-A1",
+   "区分": "読む総括",
+   "note": "絵に添えられた既知の語の認識＝情報と論172・探す145/146の級総括。"
+  }
+ },
+ "相互参照": {
+  "件数": 29,
+  "行": {
+   "435": {
+    "scale": "Conversation",
+    "level": "B1",
+    "to": 416,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "B1",
+    "similarity": 0.92,
+    "kind": "同文"
+   },
+   "439": {
+    "scale": "Conversation",
+    "level": "A2+",
+    "to": 418,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A2+",
+    "similarity": 0.96,
+    "kind": "同文"
+   },
+   "443": {
+    "scale": "Conversation",
+    "level": "A2",
+    "to": null,
+    "similarity": 0.54,
+    "kind": "同級の受容なし"
+   },
+   "449": {
+    "scale": "Conversation",
+    "level": "A1",
+    "to": 420,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A1",
+    "similarity": 0.91,
+    "kind": "同文"
+   },
+   "454": {
+    "scale": "Conversation",
+    "level": "Pre-A1",
+    "to": null,
+    "similarity": 0.49,
+    "kind": "同級の受容なし"
+   },
+   "457": {
+    "scale": "Informal discussion (with friends)",
+    "level": "C1",
+    "to": 18,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "C1",
+    "similarity": 0.89,
+    "kind": "近接"
+   },
+   "458": {
+    "scale": "Informal discussion (with friends)",
+    "level": "B2+",
+    "to": 20,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "B2+",
+    "similarity": 0.92,
+    "kind": "同文"
+   },
+   "461": {
+    "scale": "Informal discussion (with friends)",
+    "level": "B2",
+    "to": 21,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "B2",
+    "similarity": 0.97,
+    "kind": "同文"
+   },
+   "463": {
+    "scale": "Informal discussion (with friends)",
+    "level": "B1+",
+    "to": null,
+    "similarity": 0.48,
+    "kind": "同級の受容なし"
+   },
+   "468": {
+    "scale": "Informal discussion (with friends)",
+    "level": "B1",
+    "to": 25,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "B1",
+    "similarity": 0.8,
+    "kind": "近接"
+   },
+   "472": {
+    "scale": "Informal discussion (with friends)",
+    "level": "A2+",
+    "to": 26,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "A2+",
+    "similarity": 1.0,
+    "kind": "同文"
+   },
+   "485": {
+    "scale": "Formal discussion (meetings)",
+    "level": "C1",
+    "to": 18,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "C1",
+    "similarity": 0.68,
+    "kind": "近接"
+   },
+   "490": {
+    "scale": "Formal discussion (meetings)",
+    "level": "B2+",
+    "to": null,
+    "similarity": 0.48,
+    "kind": "同級の受容なし"
+   },
+   "494": {
+    "scale": "Formal discussion (meetings)",
+    "level": "B2",
+    "to": null,
+    "similarity": 0.51,
+    "kind": "同級の受容なし"
+   },
+   "496": {
+    "scale": "Formal discussion (meetings)",
+    "level": "B1+",
+    "to": null,
+    "similarity": 0.47,
+    "kind": "同級の受容なし"
+   },
+   "499": {
+    "scale": "Formal discussion (meetings)",
+    "level": "B1",
+    "to": null,
+    "similarity": 0.5,
+    "kind": "同級の受容なし"
+   },
+   "500": {
+    "scale": "Formal discussion (meetings)",
+    "level": "A2+",
+    "to": 26,
+    "to_scale": "Understanding conversation between other people",
+    "to_level": "A2+",
+    "similarity": 0.74,
+    "kind": "近接"
+   },
+   "507": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "B2",
+    "to": 55,
+    "to_scale": "Understanding announcements and instructions",
+    "to_level": "B2",
+    "similarity": 0.66,
+    "kind": "近接"
+   },
+   "510": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "B1+",
+    "to": null,
+    "similarity": 0.49,
+    "kind": "同級の受容なし"
+   },
+   "513": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "B1",
+    "to": null,
+    "similarity": 0.43,
+    "kind": "同級の受容なし"
+   },
+   "516": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "A2+",
+    "to": 417,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A2+",
+    "similarity": 0.66,
+    "kind": "近接"
+   },
+   "518": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "A2",
+    "to": null,
+    "similarity": 0.59,
+    "kind": "同級の受容なし"
+   },
+   "520": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "A1",
+    "to": 421,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A1",
+    "similarity": 1.0,
+    "kind": "同文"
+   },
+   "521": {
+    "scale": "Goal-oriented co-operation (cooking together, discussing a document, organising an event, etc.)",
+    "level": "A1",
+    "to": null,
+    "similarity": 0.53,
+    "kind": "同級の受容なし"
+   },
+   "561": {
+    "scale": "Information exchange",
+    "level": "A2+",
+    "to": 417,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A2+",
+    "similarity": 1.0,
+    "kind": "同文"
+   },
+   "573": {
+    "scale": "Information exchange",
+    "level": "A1",
+    "to": 421,
+    "to_scale": "Understanding an interlocutor",
+    "to_level": "A1",
+    "similarity": 1.0,
+    "kind": "同文"
+   },
+   "667": {
+    "scale": "Online conversation and discussion",
+    "level": "C1",
+    "to": null,
+    "similarity": 0.4,
+    "kind": "同級の受容なし"
+   },
+   "674": {
+    "scale": "Online conversation and discussion",
+    "level": "B2",
+    "to": null,
+    "similarity": 0.47,
+    "kind": "同級の受容なし"
+   },
+   "675": {
+    "scale": "Online conversation and discussion",
+    "level": "B1+",
+    "to": null,
+    "similarity": 0.38,
+    "kind": "同級の受容なし"
+   }
+  }
+ }
+}
