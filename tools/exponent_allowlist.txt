@@ -43,3 +43,10 @@ au-gust	月名August（A1収録）の音節区切り表記 ── A2質疑行313
 tenant	C1行299の賃貸文脈の基本名詞。CEFR-J・Octanoveとも未収録 ── C帯語彙governance/productivityと同裁定（CEFRカタログ11）
 grid	C2行297の主題名詞（電力網）。未収録 ── 行の課題「専門語を聴衆の生活語へ着地させる」を実例内で演じる語であり、直後に road system at rush hour へ翻訳される（CEFRカタログ11）
 gentlemen	gentleman（B1収録）の不規則複数形がツールの見出し照合から漏れたもの ── Ladies and gentlemen はB2告知行292の教育対象の定型そのもの（cannot/moduleのツール側欠落と同裁定）（CEFRカタログ11）
+president	A2行48の記述文原語（“This is where the President lives” ── 原文の例そのもの）。記述文由来語彙の裁定（flu/available/delivery/single/madam と同種）（CEFRカタログ32）
+empirical	B2+行36「命題的にも言語的にも複雑な学術的・職業的プレゼンテーション」の学術語。C帯語彙governance/productivityと同裁定（CEFRカタログ32）
+faffing	C2行32の記述文が要求する口語・地域的用法（Britishism）そのもの ── 行の課題を実例内で演じる語（grid と同裁定）（CEFRカタログ32）
+upshot	C2行32の口語（the upshot is）。同上（CEFRカタログ32）
+kernel	C2行32の記述文が要求する「馴染みのない術語」（OSの中核部）。同上（CEFRカタログ32）
+latency	C2行32の術語。同上（CEFRカタログ32）
+reordering	reorder（未収録）の派生。C2行32の術語の言い直し部分。同上（CEFRカタログ32）

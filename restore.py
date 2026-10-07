@@ -170,6 +170,28 @@ if __name__ == "__main__":
         assert len(P2["discussion"]) == 5, f"p2 DISCUSSION段落数不一致 {p2_scale}"
         p2_rows_by_scale[p2_scale] = p2_seen
     p2_mode_by_scale = {sc: md for sc, _fn, md, _n in P2_SHEETS}
+    # 第3柱シート（一号=CEFRカタログ32）── インベントリ未整備のため全数性はスケール所属から導出（暫定。第2柱の判断(ah)前と同じ方式）
+    P3_SHEETS = [
+        ("Understanding as a member of a live audience", "catalog_p3_audience.json", "聞く", 18),
+    ]
+    for p3_scale, p3_fn, p3_mode, p3_n in P3_SHEETS:
+        P3 = list(json.load(open(os.path.join("prototypes", p3_fn), encoding="utf-8")).values())[0]
+        p3_seen = set()
+        for r in P3["rows"]:
+            no = str(r["no"])
+            assert r["en"] == D["descriptors"][no]["en"], f"p3原文不一致 No.{no}"
+            assert r["level"] == D["descriptors"][no]["level"], f"p3レベル不一致 No.{no}"
+            assert r["jp"] == D["translations"][no], f"p3訳不一致 No.{no}"
+            assert r["mode"] == p3_mode, f"p3 modeが{p3_mode}でない No.{no}"
+            assert D["descriptors"][no]["scale"] == p3_scale, f"p3スケール所属不一致 No.{no}"
+            assert D["partition"][no]["block"] == "受容", f"p3区分が受容でない No.{no}"
+            p3_seen.add(no)
+        p3_members = {n for n, d in D["descriptors"].items() if d.get("scale") == p3_scale}
+        assert p3_seen == p3_members and len(P3["rows"]) == p3_n, f"p3全数性不一致（スケール所属） {p3_scale}"
+        assert len(P3["discussion"]) == 5, f"p3 DISCUSSION段落数不一致 {p3_scale}"
+        for _axname, _ax in P3["axes"].items():
+            _tag = sorted(n for v in _ax.values() for n in v)
+            assert _tag == sorted(r["no"] for r in P3["rows"]), f"p3 {_axname}が完全分割でない"
     # 糸の正準記録（判断(aa)、CEFRカタログ8。判断(ad)で語彙二層を族糸へ再編）を先に読む
     TH = json.load(open(os.path.join("data", "p2_threads.json"), encoding="utf-8"))
     # モード間並行対（判断(y)裁定d-2。判断(ac)で系構造化、判断(ad)で系＝族へ）
@@ -341,7 +363,7 @@ if __name__ == "__main__":
     assert len(AX["軸"]) == 13 and len(_sc_owner) == 15, "軸台帳: 13軸15スケールの構成不一致"
     assert len(AX["軸"]["音韻"]["scales"]) == 3, "軸台帳: 音韻の3スケール束ね不一致"
     _decl, _undecl = AX["シート主軸"]["宣言"], AX["シート主軸"]["未宣言"]
-    assert set(_decl.keys()) | set(_undecl) == _act_keys and not set(_decl.keys()) & set(_undecl), "軸台帳: シート主軸が29シートの完全分割でない"
+    assert set(_decl.keys()) | set(_undecl) == _act_keys and not set(_decl.keys()) & set(_undecl), f"軸台帳: シート主軸が全{len(_act_keys)}シートの完全分割でない"
     _sheet_blob = {}
     for _no, _p in _prose.items():
         _sheet_blob.setdefault(_sheet_of[_no], []).append(_p)
@@ -381,4 +403,4 @@ if __name__ == "__main__":
                 assert _fold[D["descriptors"][_n]["level"]] == _ik, f"幕間台帳: 級の畳み込み不整合 No.{_n}"
     assert set(_lp_seen) == set(_lp_src), "幕間台帳: 素材63件の完全分割でない"
     assert list(LP["幕間"].keys()) == LP["meta"]["幕間順序"] and len(LP["幕間"]) == 6, "幕間台帳: 幕間6本の順序不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言11＝29完全分割〔判断(aj)〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言12＝30完全分割〔判断(aj)、第3柱一号は未宣言〕）/ 第3柱範型1枚（一号18聞く、スケール所属で全数・mode一様・条件と深さの完全分割〔カタログ32〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")

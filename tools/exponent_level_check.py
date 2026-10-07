@@ -190,6 +190,8 @@ def _tokens(text):
                      or m.end() >= len(text)
     return toks
 
+SPEAKER_LABEL = re.compile(r"(?m)^[A-Z][A-Za-z]*(?: [A-Z])?: ")
+
 def check_sentence(sentence: str, row_level: str, single: dict, multi: dict,
                    allow: dict = None):
     """戻り値: {"over": [(語, レベル)], "unknown": [語], "proper": [語],
@@ -197,6 +199,9 @@ def check_sentence(sentence: str, row_level: str, single: dict, multi: dict,
     allow = allow or {}
     limit = LEVEL_ORDER[base_level(row_level)]
     text = sentence.replace("’", "'")
+    # 話し手ラベル（行頭の "Guide: " "Speaker A: " "You: " 等）は実例の英語ではないので照合から外す
+    # ── 第3柱（受容）シートの例の形「ラベル: 聞こえる言葉 ／ You: （分かったしるし）」（CEFRカタログ32）
+    text = SPEAKER_LABEL.sub("", text)
     toks = _tokens(text)
     lowers = [t.lower() for t, _ in toks]
     # 多語表現の n-gram 照合（当たった区間は語照合から除外）

@@ -1,0 +1,335 @@
+{
+ "聴衆として聞く（第3柱：Understanding as a member of a live audience）": {
+  "title": "聴衆として聞く（Understanding as a member of a live audience）── 第3柱第一号範型・全数シート",
+  "scope": "全数（18件。聞く18 ── mode一様）",
+  "type": "第3柱（受容）。梯子＝条件の解除の一本（支え→明快な標準語→標準語→条件なし→逆境）、深さは段の属性。糸は立てない。",
+  "essence": "聞き手は最後まで「分かる」の形で書かれ、段を区切るのは入力の側の手加減である。支えから逆境までの条件の弧が背骨、概略から冗談の意図までの深さが段の中身。語る側（聴衆への講演）とは同級の対が六つ立ち、読む側（情報と論を読む）とは区別と含意の段で同級に並ぶ。",
+  "axes": {
+   "条件": {
+    "支え": [
+     49,
+     47,
+     48,
+     46
+    ],
+    "明快な標準語": [
+     43,
+     44,
+     45,
+     41,
+     42,
+     38
+    ],
+    "標準語": [
+     39,
+     37
+    ],
+    "条件なし": [
+     40,
+     36,
+     35
+    ],
+    "逆境": [
+     32,
+     33,
+     34
+    ]
+   },
+   "深さ": {
+    "概略": [
+     49,
+     48,
+     46,
+     43
+    ],
+    "追う": [
+     47,
+     44,
+     41,
+     38,
+     35,
+     32
+    ],
+    "要点": [
+     45,
+     36
+    ],
+    "区別": [
+     42,
+     39,
+     40
+    ],
+    "見解": [
+     37
+    ],
+    "含意": [
+     33,
+     34
+    ]
+   }
+  },
+  "rows": [
+   {
+    "mode": "聞く",
+    "level": "A1",
+    "no": 49,
+    "en": "Can understand in outline very simple information being explained in a predictable situation like a guided tour, provided the delivery is very slow and clear and that there are long pauses from time to time.",
+    "jp": "ガイドツアーのような予測可能な状況で、非常にゆっくり明瞭に説明され、時々長い間が置かれれば、ごく簡単な情報の概略を理解できる。",
+    "exponents": [
+     "Guide: This is the old town. … Very old. … Here is the church. … It is very old, too. … Now we go to the river.\nYou: （教会の前で足を止め、次は川だと分かってついて行く。）",
+     "Guide: We start at half past ten. … Half past ten. … We finish at one. … We meet here at one.\nYou: （集合は一時、と時計を見て確かめる。）"
+    ],
+    "scene": "ガイドツアーのように何が語られるか予測できる場で、案内役が非常にゆっくり、はっきり、ところどころ長い間を置いて説明する。",
+    "howwell": "条件は三重（非常にゆっくり・明瞭・長い間）で、状況の予測可能性がさらに支える。分かるのはごく簡単な情報の概略 ── 何の話か、いくつか、何時か。",
+    "l1": "時刻を「十時半」の順で待つため、half past ten のように数の前に半が来る言い方で、数を聞き取る構えが遅れる。",
+    "delta": "受容の梯子の起点。入力の側が全部の手加減をしている（速さ・明瞭さ・間・状況の予測可能性）。語る側では「聴衆への講演」の章のNo.314（ごく短い準備済みテキストの送達）がA1の同じ場に立つ ── 向こうは原稿を読み上げ、こちらは間を頼りにその概略を受け取る。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 47,
+    "en": "Can follow a very simple, well-structured presentation or demonstration, provided it is illustrated with slides, concrete examples or diagrams, it is delivered slowly and clearly with repetition, and the topic is familiar.",
+    "jp": "スライド・具体例・図で示され、ゆっくり明瞭に繰り返しつきで伝えられ、話題が身近であれば、ごく簡単でよく構成されたプレゼンテーションや実演を追える。",
+    "exponents": [
+     "Presenter: Today, my topic is my school. [slide: a photo] This is my school. It is in Nagoya. [slide: a map] It is near the station. Near the station. We have three hundred students. Three hundred.\nYou: （スライドの写真と地図で学校の場所をつかみ、人数の三百を聞き取る。）"
+    ],
+    "scene": "授業や集まりで、スライド・具体例・図を使った、ごく簡単でよく構成された発表や実演を聞く。話題は身近で、話し手はゆっくり明瞭に、繰り返しながら進める。",
+    "howwell": "支えが四つ並ぶ（視覚・ゆっくり明瞭・繰り返し・身近な話題）。この級で「追える」のは、構成がよく（話題→場所→人数）、各項が視覚で裏打ちされる発表に限られる。",
+    "l1": "カタカナで知っている語（スクール、ステーション、スタディ）を日本語の音形で待つため、stúdent・státion のように強勢が頭にある英語の音形を同じ語と結びつけにくい。",
+    "delta": "ガイドツアーの概略（No.49）から、発表を「追う」へ。間と繰り返しに加えて視覚の支えが入り、話し手の側の構成（よく構成された）が初めて条件に書かれる。語る側では「聴衆への講演」の章のNo.312（身近な主題の短い練習済み発表）が同じA2に立ち、この行はその聞き手の側である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 48,
+    "en": "Can understand the outline of simple information given in a predictable situation, such as on a guided tour (e.g. “This is where the President lives”).",
+    "jp": "ガイドツアーのような予測可能な状況で与えられる簡単な情報（「ここが大統領官邸です」など）の概略を理解できる。",
+    "exponents": [
+     "Guide: This is where the President lives. … The house is white. It has one hundred rooms.\nYou: （大統領の住まいと部屋数を受け取り、建物を見る。）",
+     "Guide: This bridge is very old. It is from 1900. … Cars cannot go here. Only people.\nYou: （車は通れないと分かり、歩いて渡る。）"
+    ],
+    "scene": "ガイドツアーのような予測できる状況で、案内役が簡単な情報を与える。",
+    "howwell": "条件は状況の予測可能性だけ（速さの但し書きがNo.49から落ちる）。分かるのは簡単な情報の概略。",
+    "l1": "年号を「千九百年」の桁で待つため、nineteen hundred のような二桁ずつの読みで、数を聞き終える前に次の文が始まる。",
+    "delta": "No.49と同じ場で、条件が一つ減る ── 非常にゆっくり・長い間の但し書きが落ち、「予測できる状況」だけが残る。深さは概略のまま。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2+",
+    "no": 46,
+    "en": "Can follow the general outline of a demonstration or presentation on a familiar or predictable topic, where the message is expressed slowly and clearly in simple language and there is visual support (e.g. slides, handouts).",
+    "jp": "身近で予測可能な話題についての実演やプレゼンテーションで、簡単な言葉でゆっくり明瞭に伝えられ、視覚的補助（スライド・配布資料など）があれば、概略を追える。",
+    "exponents": [
+     "Presenter: Good morning. I will show you how to use this app. [slide] First, open the app. Second, choose your language. [slide: three flags] Third, touch Start. That’s all. Any questions?\nYou: （三つの手順を手元の配布資料で確かめ、Start を押す。）"
+    ],
+    "scene": "身近で予測できる話題の実演や発表を、簡単な言葉で、ゆっくり明瞭に、スライドや配布資料の支えつきで聞く。",
+    "howwell": "条件は四つ（身近・簡単な言葉・ゆっくり明瞭・視覚の支え）だが、No.47にあった「繰り返し」が落ち、「概略を追う」が深さになる。手順の列挙（First / Second / Third）が概略の骨になる。",
+    "l1": "手順の数え方を「まず・次に・それから」で待つため、Third のあとの That’s all（終わり）を手順の続きと聞くことがある。",
+    "delta": "発表を「追う」（No.47）から「概略を追う」へ。繰り返しの支えが落ち、視覚の支え（スライド・配布資料）と簡単な言葉で補う。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 43,
+    "en": "Can follow in outline straightforward short talks on familiar topics, provided these are delivered in clearly articulated standard language or a familiar variety.",
+    "jp": "明快な標準語または馴染みのある変種で話されれば、身近な話題の率直な短い講演の概略を追える。",
+    "exponents": [
+     "Speaker: I’m going to talk about recycling in our town. We have three problems. First, people don’t separate plastic and paper. Second, the bins are too small. Third, nobody knows the rules. I think the town should make a simple guide.\nYou: （三つの問題と提案の一文を聞き取り、「それで、ガイドは誰が作るの？」と聞き返す。）"
+    ],
+    "scene": "身近な話題について、率直な短い講演を聞く。話し手ははっきり発音された標準語か馴染みのある変種で話す。",
+    "howwell": "条件が速さから言葉の種類へ移る ── ゆっくりの但し書きが消え、「明快な標準語か馴染みのある変種」が条件になる。深さは概略で、三つの問題と結論の一文が拾えればよい。",
+    "l1": "日本語の話の型（結論は最後）で待つため、冒頭の I think the town should … のような主張を前置きとして聞き流し、終わりで結論を探す。",
+    "delta": "条件の弧の最初の折れ目。No.46までは速さと支えが条件だったが、ここから先は言葉の種類（標準語・変種）と構成が条件になる。語る側の「聴衆への講演」の章のNo.308（身近な話題の準備済み発表）がB1の対で、向こうが「たいてい難なく追える程度に明確に」話すことの、聞き手の側の記述文がこの行である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 44,
+    "en": "Can follow a straightforward conference presentation or demonstration with visual support (e.g. slides, handouts) on a topic or product within their field, understanding explanations given.",
+    "jp": "自分の分野の話題や製品についての、視覚的補助（スライド・配布資料など）のある率直な会議発表や実演を、与えられる説明を理解しながら追える。",
+    "exponents": [
+     "Presenter: This is our new printer. [slide] It prints both sides. That means, two pages on one sheet. [slide] And it is fast: thirty pages a minute. Let me show you. … See? Thirty pages.\nYou: （両面印刷の意味を説明で理解し、一分三十枚の数を資料で確かめる。）"
+    ],
+    "scene": "自分の分野の話題や製品についての会議発表や実演を、スライドや配布資料の支えつきで聞く。説明が与えられる。",
+    "howwell": "条件は「自分の分野」と視覚の支え。深さは「追う」に「与えられる説明を理解しながら」が加わる ── 用語（両面印刷）の説明を受け取って追える。",
+    "l1": "製品の数値を「一分に三十枚」の順で待つため、thirty pages a minute のように数が先に来る言い方で、単位（分）を聞き落とす。",
+    "delta": "No.43と同級で、場が仕事の会議へ移る。身近な話題の代わりに「自分の分野」が条件になり、視覚の支えが戻る。分野の知識が言葉の支えの代わりをする段。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 45,
+    "en": "Can understand the main points of what is said in a straightforward monologue (e.g. a guided tour), provided the delivery is clear and relatively slow.",
+    "jp": "明瞭で比較的ゆっくりした話し方であれば、率直な一人語り（ガイドツアーなど）の要点を理解できる。",
+    "exponents": [
+     "Guide: On your left, you can see the market. It is open every day except Monday. The best time is the morning, before ten. In the afternoon, many shops close.\nYou: （月曜は休み、朝十時前が良い、と要点を取り、翌朝の予定に入れる。）"
+    ],
+    "scene": "ガイドツアーのような率直な一人語りを、明瞭で比較的ゆっくりした話し方で聞く。",
+    "howwell": "条件は明瞭さと比較的ゆっくり（No.49の「非常にゆっくり」から一段緩む）。深さは要点 ── 概略でなく、使える情報（休みの日・良い時間）を拾う。",
+    "l1": "every day except Monday の except を「月曜以外」と訳して整理する間に次の文が進む ── 日本語の「〜以外は毎日」の語順で待つため、除外が後ろに来る言い方に遅れる。",
+    "delta": "ガイドツアーの三段目（No.49→48→45）。概略から要点へ深さが一段進み、条件は「明瞭で比較的ゆっくり」まで緩む。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1+",
+    "no": 41,
+    "en": "Can follow a lecture or talk within their own field, provided the subject matter is familiar and the presentation straightforward and clearly structured.",
+    "jp": "主題が身近で、提示が平明で構成が明確なら、自分の分野の講義や講演を追える。",
+    "exponents": [
+     "Lecturer: Today’s lecture has three parts. First, what is a market. Second, how prices change. Third, some problems. Let’s start with the first part. A market is …\nYou: （三部構成を聞き取り、いまどの部にいるかを追いながら聞く。）"
+    ],
+    "scene": "自分の分野の講義や講演を聞く。主題は身近で、提示は平明、構成は明確。",
+    "howwell": "条件は三つ（主題が身近・提示が平明・構成が明確）で、速さと言葉の種類の但し書きがない ── 講義の構成そのものが条件になる最初の段。深さは「追う」。",
+    "l1": "講義の区切りを「では次に」「以上が」で待つため、Let’s start with / Now, the second part のような前向きの標識を区切りと聞き取りにくい。",
+    "delta": "率直な短い講演（No.43）から、自分の分野の講義へ。分野の知識（No.44）と構成の明確さ（No.47）が、速さの支えの代わりに条件として残る。語る側では「聴衆への講演」の章のNo.307（類似点と相違点を概説する準備済み発表）が同級に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1+",
+    "no": 42,
+    "en": "Can distinguish between main ideas and supporting details in standard lectures on familiar subjects, provided these are delivered in clearly articulated standard language or a familiar variety.",
+    "jp": "明快な標準語または馴染みのある変種で話されれば、身近な主題の標準的な講義で、主要なアイディアと補助的詳細を区別できる。",
+    "exponents": [
+     "Lecturer: The main point is this: cities need more trees. Now, some details. In Tokyo, for example, trees lower the temperature by two degrees. In Osaka, the number is similar. But the main point stays the same: more trees, cooler cities.\nYou: （主張は「木を増やせ」、東京と大阪の数字はその裏づけ、と分けて聞く。）"
+    ],
+    "scene": "身近な主題の標準的な講義を、はっきり発音された標準語か馴染みのある変種で聞く。",
+    "howwell": "条件はNo.43と同じ（明快な標準語・身近な主題）。深さが変わる ── 追うだけでなく、主要なアイディアと補助的な詳細を区別する。",
+    "l1": "日本語の話の型（例を積んで結論へ）で待つため、冒頭の The main point is this のような先出しの主張を聞いても、例の列挙を主張の続きと受け取り、区別の構えができない。",
+    "delta": "No.41と同級で、深さが「追う」から「区別する」へ。区別の最初の形は主旨と裏づけで、以後No.39（主題と余談）・No.40（意見と事実）へ続く。読む側では「情報と論を読む」の章のNo.156（明示された論証文の主要な結論を見分ける）が同じB1+に立ち、同じ区別を文字で行う。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 38,
+    "en": "Can follow complex lines of argument in a clearly articulated lecture, provided the topic is reasonably familiar.",
+    "jp": "話題がある程度身近であれば、明快に話された講義の複雑な論の筋道を追える。",
+    "exponents": [
+     "Lecturer: Some people say remote work lowers productivity. The data say otherwise. If we compare 2019 and 2023, output per worker rose. Granted, some teams struggled. But overall, the effect was positive, and the reason is simple: fewer interruptions.\nYou: （反論→データ→譲歩→結論→理由、の筋道を追い、「譲歩した部分は例外扱いだな」と読む。）"
+    ],
+    "scene": "明快に話された講義で、話題はある程度身近。",
+    "howwell": "条件は「明快に話された」と「話題がある程度身近」。深さは複雑な論の筋道を追う ── 反論の提示、データ、譲歩、結論、理由、という折れ曲がりを見失わない。",
+    "l1": "Granted, … But … の譲歩を日本語の「〜が、」の弱い逆接で聞くため、譲歩した側が主張だと取り違える。",
+    "delta": "区別（No.42）の上に、論の筋道の複雑さが乗る。条件は明快さだけで、構成の明確さ（No.41）の但し書きは落ちる ── 構成が明快でなくても筋を追う。語る側の「聴衆への講演」の章のNo.305（賛否の理由と選択肢の利点・欠点を挙げる発表）がB2の対で、向こうが組み立てる論を、こちらは折れ目ごとに追う。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 39,
+    "en": "Can distinguish main themes from asides, provided the lecture or talk is delivered in standard language or a familiar variety.",
+    "jp": "標準語または馴染みのある変種で話されれば、講義や講演の主題と余談を区別できる。",
+    "exponents": [
+     "Lecturer: Our topic is water use in cities. By the way, I grew up in a town with no running water until I was ten. Anyway. Water use has doubled since 1980, and the main reason is not population but lifestyle.\nYou: （By the way からの思い出話を余談と聞き分け、Anyway で本題に戻る。）"
+    ],
+    "scene": "講義や講演を、標準語か馴染みのある変種で聞く。",
+    "howwell": "条件は「標準語か馴染みのある変種」だけ（明快さの但し書きが落ちる）。深さは主題と余談の区別。",
+    "l1": "余談の出入りを「話は変わりますが」「それはさておき」で待つため、By the way の入りと Anyway の戻りを、同じ話の続きと聞く。",
+    "delta": "区別の第二の形。No.42の主旨と裏づけの区別が、主題と余談の区別へ広がる。条件は言葉の種類だけになる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 40,
+    "en": "Can recognise the point of view expressed and distinguish this from facts being reporting.",
+    "jp": "表明された見解を認識し、報告されている事実と区別できる。",
+    "exponents": [
+     "Speaker: Last year the city spent twelve million on the new stadium. Attendance was up fifteen per cent. Now, I’d argue the money would have been better spent on schools. That’s my view, of course.\nYou: （支出額と来場者数は事実、「学校に使うべきだった」は話し手の見解、と分けて聞く。）"
+    ],
+    "scene": "講演の中で、話し手の見解と報告される事実が混じる。",
+    "howwell": "条件の但し書きがない。深さは、表明された見解を認識し、報告されている事実と区別する。",
+    "l1": "「〜と思われる」が日本語では客観の書き方として使われるため、I’d argue / I think を事実の弱い言い方と聞き、見解の印として受け取らない。",
+    "delta": "区別の第三の形。主旨と裏づけ（No.42）、主題と余談（No.39）に続いて、見解と事実。読む側では「情報と論を読む」の章のNo.152（事実の提供と説得の文章を見分ける）が同じB2に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2+",
+    "no": 36,
+    "en": "Can follow the essentials of lectures, talks and reports and other forms of academic/professional presentation which are propositionally and linguistically complex.",
+    "jp": "命題的にも言語的にも複雑な講義・講演・報告など、学術的・職業的なプレゼンテーションの要点を追える。",
+    "exponents": [
+     "Lecturer: The framework rests on three assumptions, each of which has been contested in the recent literature. I will set out the first two briefly and spend most of the time on the third, since that is where the empirical evidence is weakest.\nYou: （三つの前提のうち第三が本題、と要点をつかみ、第三の部分で集中して聞く。）"
+    ],
+    "scene": "学術的・職業的な講義・講演・報告を聞く。内容も言葉も複雑。",
+    "howwell": "条件の但し書きがない代わりに、入力の側に「命題的にも言語的にも複雑」が書かれる。深さは要点 ── 複雑な提示から本題の所在をつかむ。",
+    "l1": "",
+    "delta": "条件が消え、入力の複雑さが行の主語になる。要点（No.45）が、率直な一人語りでなく学術・職業の複雑な提示に対して求められる。語る側では「聴衆への講演」の章のNo.303（重要な点を強調し詳細で裏づけた体系的な発表）がB2+の対で、向こうの「強調」をこちらは「要点」として受け取る。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2+",
+    "no": 37,
+    "en": "Can understand the point of view expressed on topics that are of current interest or that relate to their specialised field, provided the talk is delivered in standard language or a familiar variety.",
+    "jp": "標準語または馴染みのある変種で話されれば、時事的な、または自分の専門分野に関わる話題について表明された見解を理解できる。",
+    "exponents": [
+     "Speaker: My position on the new tax is simple: it will hurt small shops more than large ones, and the government knows this. I’m not saying the tax is wrong in principle. I’m saying the timing is wrong.\nYou: （原則には反対していない、時期に反対している、という見解の輪郭をつかむ。）"
+    ],
+    "scene": "時事的な話題、または自分の専門分野に関わる話題について表明された見解を、標準語か馴染みのある変種で聞く。",
+    "howwell": "条件は「標準語か馴染みのある変種」。深さは見解の理解 ── 区別（No.40）を越えて、見解の中身（何に反対し、何には反対しないか）を理解する。",
+    "l1": "",
+    "delta": "見解を事実と区別する（No.40）段から、見解そのものを理解する段へ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C1",
+    "no": 35,
+    "en": "Can follow most lectures, discussions and debates with relative ease.",
+    "jp": "たいていの講義・討議・討論を比較的容易に追える。",
+    "exponents": [
+     "Speaker A: —so if we accept the premise, then the conclusion follows, doesn’t it?\nSpeaker B: Not necessarily. You’re assuming the sample is representative.\nSpeaker A: Fair point, but—\nYou: （講演のあとの討論で、前提への反論が出た瞬間に論点の移りを追い、どちらが優勢か分かる。）"
+    ],
+    "scene": "たいていの講義・討議・討論を聞く。",
+    "howwell": "条件の但し書きがない。深さは「比較的容易に追う」── 複数の話し手の応酬でも、追うこと自体に労力がかからない。",
+    "l1": "",
+    "delta": "労力の消滅。追う（No.38）が、講義だけでなく討議・討論まで広がり、「比較的容易に」が付く。語る側の「聴衆への講演」の章のNo.302（不規則な発言をほとんど苦もなく処理する）が同じC1に立ち、向こうの「苦もなく」とこちらの「容易に」が対になる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C2",
+    "no": 32,
+    "en": "Can follow specialised lectures and presentations employing colloquialism, regional usage or unfamiliar terminology.",
+    "jp": "口語表現・地域的用法・馴染みのない術語を用いる専門的な講義やプレゼンテーションを追える。",
+    "exponents": [
+     "Lecturer: Right, so the kernel’s got this scheduler, yeah, and it’s basically faffing about with priorities—sorry, that’s a Britishism—it’s reordering tasks, and the upshot is latency drops.\nYou: （faffing about が分からなくても、言い直しと upshot から話を追い、専門用語は文脈で取る。）"
+    ],
+    "scene": "専門的な講義やプレゼンテーションで、話し手が口語表現・地域的な用法・馴染みのない術語を使う。",
+    "howwell": "条件が逆向きに付く ── 口語・方言・術語という、理解を妨げる側の但し書き。深さは「追う」。",
+    "l1": "術語をカタカナ（カーネル、スケジューラ）の音形で知っているため、英語の強勢とリズムで言われた同じ語を結びつけにくい。",
+    "delta": "条件の弧の終着。No.35で但し書きが消えたあと、C2では但し書きが逆向きに付く ── 口語・地域的用法・術語という逆境の下で追える。語る側では「聴衆への講演」の章のNo.297（話題に馴染みのない聞き手に複雑な話題を提示する）が対で、向こうは聞き手の不慣れを引き受け、こちらは話し手の癖を引き受ける。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C2",
+    "no": 33,
+    "en": "Can make appropriate inferences when links or implications are not made explicit.",
+    "jp": "つながりや含意が明示されていない場合に、適切な推論ができる。",
+    "exponents": [
+     "Speaker: We ran the test twice. The second run was, let’s say, more informative.\nYou: （一度目はうまくいかなかったのだ、と言われていないことを推論する。）"
+    ],
+    "scene": "講演の中で、つながりや含意が明示されない。",
+    "howwell": "条件は逆境（明示されない）。深さは推論 ── 言われていないことを適切に補う。",
+    "l1": "",
+    "delta": "追う（No.32）から推論へ。言われたことの理解が、言われていないことの理解へ進む。読む側では「情報と論を読む」の章のNo.147（複雑な報告や記事の細かい点と含意）が同じC2に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C2",
+    "no": 34,
+    "en": "Can get the point of jokes or allusions in a presentation.",
+    "jp": "プレゼンテーションの中の冗談やほのめかしの意図をつかめる。",
+    "exponents": [
+     "Presenter: Our budget this year is, as you can see, generous. [slide: a tiny number] I’ll pause for applause.\nYou: （皮肉の冗談に、場の笑いと同じ瞬間に笑う。）"
+    ],
+    "scene": "プレゼンテーションの中で、話し手が冗談やほのめかしを言う。",
+    "howwell": "条件は逆境（冗談・ほのめかし）。深さは意図 ── 字義でなく、なぜそう言ったかをつかむ。",
+    "l1": "",
+    "delta": "推論（No.33）の最上段。含意の理解が、冗談の意図の理解まで届く。聴衆の側の梯子はここで終わり、「分かる」の形は最後まで崩れない ── 語る側の最上段（No.297・298）が聞き手の側から書かれているのに対して、聞く側の最上段は話し手の側の癖と意図で書かれている。"
+   }
+  ],
+  "discussion": [
+   "受容の梯子は、学習者が何をするかではなく、入力の側が何を手加減するかに宿る。本スケール18行の条件句を並べると一本の弧になる ── 支え（非常にゆっくり・間・繰り返し・視覚・予測できる状況：No.49/47/48/46）→ 明快な標準語か馴染みの変種（No.43/44/45/41/42/38）→ 標準語か馴染みの変種だけ（No.39/37）→ 但し書きの消滅（No.40/36/35）→ 逆境（口語・方言・術語／非明示／冗談：No.32/33/34）。幕間が六本で追った条件句の弧は、受容では梯子の背骨そのものである。深さは第二の軸で、概略→追う→要点→区別（主旨と裏づけ／主題と余談／見解と事実）→見解→含意（推論／冗談）と上がるが、深さは級に対して単調ではない（追うはA2からC2まで六段にある）。段を決めるのは条件の弧、深さは段の中身 ── 第1部の管理課題、第2部の組み立ての複雑化に続く、第三の梯子の宿り方。",
+   "本スケールは「聴衆への講演」（Addressing audiences、第2柱、18行）の裏面である。同級の対が七つ立つ ── 49↔314（A1・ごく短い準備済みテキスト）、47↔312（A2・短い練習済み発表）、43↔308（B1・準備済みの率直な発表）、38↔305（B2・賛否と利点欠点の論）、36↔303（B2+・強調と裏づけ）、35↔302（C1・苦もなく）、32↔297（C2・馴染みのない聞き手／馴染みのない用法）。向こうの段が「聞き手にとって明確に」「聞き手が追えるように」と聞き手を基準に書かれ、こちらの段が「話し手がゆっくり明瞭なら」と話し手を基準に書かれる ── 同じ場を両側から書いた対で、柱間対（判断(ai)の種類）に当たる。ただし向こうの質問を受ける梯子（313→298）は、こちらには対応する段がない。聞き手が質問する側の記述文は受容ではなくやり取り（明確化・繰り返しの要求）の帳簿にある。台帳への収載は散文証拠（本段落と各行delta）を先に置いた上で、第3柱の対の器を裁定するときに行う。",
+   "同じ深さの理解は読む側にも同級で立つ。42↔156（B1+・主旨と裏づけ／主要な結論）、40↔152（B2・見解と事実）、33↔147（C2・含意）が同級の対の候補で、聞く↔読むの対は第2柱の口頭↔書面の並行対と同じ器（同一柱・モード間）に乗る。ただし条件の弧は聞くと読むで形が違う ── 読む側の条件は速さや明瞭さでなく、再読の機会・辞書・図版で、「待ってくれる媒体」の条件句は第2柱の書面と同じ向きに現れる見込み。並行対の候補は、読む側の範型（情報と論を読む、26行）を立てる際に機械検出で確かめる。",
+   "「日本語話者の落とし穴」は受容では立て直しが要る。産出の規律6-1（日本語の元の形を添えられるか）の受容版として、本シートでは三つの水準に限った ── (1) 音形：カタカナ語の音形で待つために英語の強勢・リズムで言われた同じ語が結びつかない（No.47・32）、(2) 数と時刻の数え方：「十時半」「千九百年」「一分に三十枚」の順で待つために英語の語順に遅れる（No.49・48・44・45）、(3) 話の型の期待：結論は最後・余談の標識・「〜と思われる」の客観用法・「〜が」の弱い逆接（No.43・42・39・40・38・41・46）。いずれも日本語の元の形が書ける。態度・習慣（「聞き返すのを遠慮する」等）は書かない。条件が消えた段（No.36・37・35）と逆境の段（No.33・34）には日本語の形で言える持ち込みがなく、空欄とした ── 上級で欄が消えるのは第1部・第2部と同じ。",
+   "語彙裁定（判断(s)）：例文は入力（話し手の言葉）と、しるしのうち英語で書いた部分を照合対象とする。日本語で書いたしるし（行動）は照合外。チェッカーの結果と裁定は申し送りに記録する。質フラグ相当は0件（受容に技法・資源行はない）。帳簿の留保：①第3柱インベントリ（受容197＋対話者の理解12の扱い、総括26の肖像素材化）は本シートを材料に次に立てる ②条件（CONDITION）と深さ（DEPTH）の語彙は本ソース内で完全分割をassertしているが正準台帳はまだない ③対話者の理解12件のうちNo.421（質問と指示を理解し簡単な道順に従う）は「告知と指示を聞く」のNo.64とほぼ同文で、受容の内側の重複対候補。"
+  ]
+ }
+}
