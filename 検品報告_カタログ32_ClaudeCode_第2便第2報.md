@@ -1,6 +1,6 @@
 # 検品報告 カタログ32・第2便（ClaudeCode 第2便第2報）
 
-対象：`catalog32_3.diff`（第2便 補遺1、5ファイル）。統合コミットは本報の直前。
+対象：`catalog32_3.diff`（第2便 補遺1、5ファイル）。統合コミット `8f37d5b`。
 
 **件数：0件**。ゲートは全緑（restore／partition／source_sync／exponent_level 793文／book_style）。第2便は裁定待ちゼロ。
 
