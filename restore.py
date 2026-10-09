@@ -242,7 +242,7 @@ if __name__ == "__main__":
         for r in P3["rows"]:
             for _f in ("scene", "howwell", "delta"):
                 assert r[_f], f"p3 {_f}が空 No.{r['no']}"
-            for _w in ("条件の弧", "受容の梯子", "区分名"):
+            for _w in ("条件の弧", "受容", "逆境", "帳簿", "シート", "スケール", "柱"):
                 for _f in ("scene", "howwell", "l1", "delta"):
                     assert _w not in r[_f], f"p3 四欄に帳簿語「{_w}」 No.{r['no']} {_f}"
             assert "変種" not in r["jp"] and "変種" not in r["scene"], f"p3 読者語彙「変種」残置 No.{r['no']}"
