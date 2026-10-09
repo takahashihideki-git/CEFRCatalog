@@ -50,3 +50,4 @@ upshot	C2行32の口語（the upshot is）。同上（CEFRカタログ32）
 kernel	C2行32の記述文が要求する「馴染みのない術語」（OSの中核部）。同上（CEFRカタログ32）
 latency	C2行32の術語。同上（CEFRカタログ32）
 reordering	reorder（未収録）の派生。C2行32の術語の言い直し部分。同上（CEFRカタログ32）
+repetitive	C2行33「つながりや含意が明示されていない場合に、適切な推論ができる」の例が演じる、褒め言葉の形をした批判の形容詞（thorough—if a little repetitive）。C帯の未収録語の裁定（upshot と同種）（CEFRカタログ34）
