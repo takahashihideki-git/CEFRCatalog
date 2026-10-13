@@ -50,3 +50,7 @@ upshot	C2行32の口語（the upshot is）。同上（CEFRカタログ32）
 kernel	C2行32の記述文が要求する「馴染みのない術語」（OSの中核部）。同上（CEFRカタログ32）
 latency	C2行32の術語。同上（CEFRカタログ32）
 reordering	reorder（未収録）の派生。C2行32の術語の言い直し部分。同上（CEFRカタログ32）
+roman	B1行160（博物館の展示解説）の固有形容詞 Roman（大文字始まり。チェッカーが小文字化して照合するため未収録に出る）。固有名の裁定（president と同種）（CEFRカタログ34）
+antibiotic	B2+行149「自分の分野の高度に専門的な情報源」が要求する専門語。例は医学誌の抄録で、分野の読者には既知の語（empirical と同裁定）（CEFRカタログ34）
+randomised	B2+行149 同上。専門誌の抄録の定型語（CEFRカタログ34）
+non-inferiority	B2+行149 同上。臨床試験の術語そのもの ── 行の課題（高度に専門的な情報源）を実例内で演じる語（faffing と同裁定）（CEFRカタログ34）
