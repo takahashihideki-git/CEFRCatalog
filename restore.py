@@ -218,6 +218,7 @@ if __name__ == "__main__":
         ("Understanding as a member of a live audience", "catalog_p3_audience.json", "聞く", 18),
         ("Reading for information and argument", "catalog_p3_reading.json", "読む", 26),
     ]
+    p3_rows_by_scale, p3_mode_by_scale, p3_layer_of = {}, {}, {}  # 対の台帳（判断(bu)）の照合に使う
     for p3_scale, p3_fn, p3_mode, p3_n in P3_SHEETS:
         P3 = list(json.load(open(os.path.join("prototypes", p3_fn), encoding="utf-8")).values())[0]
         p3_seen = set()
@@ -239,6 +240,10 @@ if __name__ == "__main__":
         # 深さの語彙は『受容の課題』§2の七層で固定（判断(br)(bs)、CEFRカタログ34）── 条件の語彙はスケールごと
         P3_SEVEN = ["形", "命題", "筋", "要点", "全体", "含意", "立場"]
         assert list(P3["axes"]["深さ"].keys()) == P3_SEVEN, f"p3 深さの語彙が七層でない {p3_scale}"
+        p3_rows_by_scale[p3_scale], p3_mode_by_scale[p3_scale] = p3_seen, p3_mode
+        for _layer, _nos in P3["axes"]["深さ"].items():
+            for _n in _nos:
+                p3_layer_of[str(_n)] = _layer
         # 四欄（scene・howwell・l1・delta）は書物の本文（判断(bs)）── 帳簿語を出さない。l1は空欄可（欄ごと省く段）
         for r in P3["rows"]:
             for _f in ("scene", "howwell", "delta"):
@@ -249,14 +254,33 @@ if __name__ == "__main__":
             assert "変種" not in r["jp"] and "変種" not in r["scene"], f"p3 読者語彙「変種」残置 No.{r['no']}"
     # 糸の正準記録（判断(aa)、CEFRカタログ8。判断(ad)で語彙二層を族糸へ再編）を先に読む
     TH = json.load(open(os.path.join("data", "p2_threads.json"), encoding="utf-8"))
-    # モード間並行対（判断(y)裁定d-2。判断(ac)で系構造化、判断(ad)で系＝族へ）
-    #   ── 族ごとに両No実在・レベル一致・完全同文はen一致。スケールは所属から導出し、族宣言と口頭／書面の別を照合
+    # モード間並行対（判断(y)裁定d-2。判断(ac)で系構造化、判断(ad)で系＝族へ、判断(bu)で四柱化＝系に柱属性）
+    #   ── 第2柱の系（族）：両No実在・レベル一致・完全同文はen一致。スケールは所属から導出し、族宣言と口頭／書面の別を照合
+    #   ── 第3柱の系（受容）：両No実在・レベル一致・聞く側／読む側の配置・深さ区分（七層）の一致・relation＝課題一致。族・糸は持たない
     MP = json.load(open(os.path.join("data", "mode_pairs.json"), encoding="utf-8"))
-    assert [s["族"] for s in MP["systems"]] == ["叙述族", "論証族", "教示族"], "並行対の族構成不一致"
-    assert [len(s["pairs"]) for s in MP["systems"]] == [7, 4, 1], "並行対件数不一致"
-    assert all(s["族"] in TH["族糸"] for s in MP["systems"]), "mode_pairsの族がp2_threadsの族糸に未登録"
+    assert [s.get("柱") for s in MP["systems"]] == ["第2柱", "第2柱", "第2柱", "第3柱"], "並行対の柱構成不一致（判断(bu)）"
+    MP_P2 = [s for s in MP["systems"] if s["柱"] == "第2柱"]
+    MP_P3 = [s for s in MP["systems"] if s["柱"] == "第3柱"]
+    assert [s["族"] for s in MP_P2] == ["叙述族", "論証族", "教示族"], "並行対の族構成不一致"
+    assert [len(s["pairs"]) for s in MP_P2] == [7, 4, 1], "並行対件数不一致"
+    assert all(s["族"] in TH["族糸"] for s in MP_P2), "mode_pairsの族がp2_threadsの族糸に未登録"
+    assert all("族" not in s and "段差" not in s for s in MP_P3), "第3柱の系が族・段差を持つ（判断(bu)：族・糸なし、段差は実例が出た便で）"
+    assert [s["系"] for s in MP_P3] == ["受容"] and [len(s["pairs"]) for s in MP_P3] == [3], "第3柱の系の構成不一致（受容3対）"
+    mp_p3_pairs = []
+    for s in MP_P3:
+        for p in s["pairs"]:
+            o, w = str(p["oral"]), str(p["written"])
+            do, dw = D["descriptors"][o], D["descriptors"][w]
+            assert do["level"] == dw["level"] == p["level"], f"第3柱の対レベル不一致 {o}/{w}"
+            assert p["relation"] == "課題一致", f"第3柱の対のrelation語彙外 {o}/{w}"
+            so, sw = do["scale"], dw["scale"]
+            assert o in p3_rows_by_scale.get(so, set()) and w in p3_rows_by_scale.get(sw, set()), f"第3柱の対がシートに不在 {o}/{w}"
+            assert p3_mode_by_scale[so] == "聞く" and p3_mode_by_scale[sw] == "読む", f"第3柱の対の媒体配置不正（oral＝聞く・written＝読む） {o}/{w}"
+            assert p["層"] == p3_layer_of[o] == p3_layer_of[w], f"第3柱の対の層がシートの深さ区分と不一致 {o}/{w}（{p['層']}／{p3_layer_of[o]}／{p3_layer_of[w]}）"
+            mp_p3_pairs.append(p)
+    assert {(p["oral"], p["written"]) for p in mp_p3_pairs} == {(42, 156), (40, 152), (33, 147)}, "第3柱の対の帳簿不一致（判断(bu)）"
     mp_all_pairs = []
-    for s in MP["systems"]:
+    for s in MP_P2:
         fam = s["族"]
         for p in s["pairs"]:
             o, w = str(p["oral"]), str(p["written"])
@@ -272,9 +296,9 @@ if __name__ == "__main__":
             # 両側のスケールが当該族を宣言していること（束スケールが複数族に属することを許す ── 判断(ad)）
             assert fam in TH["scales"][so]["族"] and fam in TH["scales"][sw]["族"], f"並行対の族宣言不一致 {o}/{w}（{fam}）"
             mp_all_pairs.append((fam, so, sw, p))
-    sys_narr = next(s for s in MP["systems"] if s["族"] == "叙述族")
+    sys_narr = next(s for s in MP_P2 if s["族"] == "叙述族")
     assert any(p["oral"] == 247 and p["written"] == 338 and p["relation"] == "完全同文" for p in sys_narr["pairs"]), "型式標本247/338の欠落"
-    sys_arg = next(s for s in MP["systems"] if s["族"] == "論証族")
+    sys_arg = next(s for s in MP_P2 if s["族"] == "論証族")
     assert any(p["oral"] == 277 and p["written"] == 356 for p in sys_arg["pairs"]), "論証族型式標本277/356の欠落"
     assert {(p["oral"], p["written"]) for p in sys_arg["pairs"]} == {(277, 356), (305, 359), (303, 356), (299, 354)}, "論証族の並行対帳簿不一致（判断(af)）"
     # 段差（並行対でない同文級・同課題のレベル非対称、判断(ac)）── 両No実在・レベル記載一致・非同レベル
@@ -283,7 +307,7 @@ if __name__ == "__main__":
         assert D["descriptors"][o]["level"] == g["oral_level"] and D["descriptors"][w]["level"] == g["written_level"], f"段差レベル記載不一致 {o}/{w}"
         assert g["oral_level"] != g["written_level"], f"段差が同レベル（並行対とすべき） {o}/{w}"
     assert {(g["oral"], g["written"]) for g in sys_arg["段差"]} == {(278, 354), (280, 358)}, "論証族の段差帳簿不一致"
-    sys_ins = next(s for s in MP["systems"] if s["族"] == "教示族")
+    sys_ins = next(s for s in MP_P2 if s["族"] == "教示族")
     for g in sys_ins.get("段差", []):
         o, w = str(g["oral"]), str(g["written"])
         assert D["descriptors"][o]["level"] == g["oral_level"] and D["descriptors"][w]["level"] == g["written_level"], f"段差レベル記載不一致 {o}/{w}"
@@ -342,6 +366,7 @@ if __name__ == "__main__":
             _prose[_no] = " ".join(str(_r.get(_k, "") or "") for _k in ("delta", "l1", "scene", "howwell"))
     # ①所有排他：既存帳簿の所有エッジ（並行対・段差・書面フォーマル一段）と無向集合で非交差
     _owned = {frozenset((str(p["oral"]), str(p["written"]))) for _f, _so, _sw, p in mp_all_pairs}
+    _owned |= {frozenset((str(p["oral"]), str(p["written"]))) for p in mp_p3_pairs}
     for _sys in MP["systems"]:
         for _g in _sys.get("段差", []):
             _owned.add(frozenset((str(_g["oral"]), str(_g["written"]))))
@@ -374,6 +399,10 @@ if __name__ == "__main__":
                 assert _e.get("axis") in ("口頭書面", "Informal-Formal"), f"crossrefs: 行為内対のaxis語彙外 {_a}/{_b}"
             elif _kind != "留置対":
                 assert _sheet_of[_a] != _sheet_of[_b] or _kind == "スケール再掲重複対", f"crossrefs: {_kind}が同一シート内 {_a}/{_b}"
+            if _kind == "柱間対":
+                # 柱をまたぐ同レベル再掲（判断(ai)。判断(bu)で第2柱↔第3柱へ拡張）── 記載レベルが両側の正準レベルと一致すること
+                assert D["descriptors"][_a]["level"] == D["descriptors"][_b]["level"] == _e["level"], f"crossrefs: 柱間対のレベル不一致 {_a}/{_b}"
+    assert len(CRF["edges"]["柱間対"]) == 11, "crossrefs: 柱間対の件数不一致（第1柱↔第2柱3＋第2柱↔第3柱8）"
     # 有向kind：行為間参照 ── from実在・field語彙・to実在・③fromの当該散文に「相互参照」
     for _e in CRF["edges"]["行為間参照"]:
         _f = str(_e["from"])
@@ -458,4 +487,4 @@ if __name__ == "__main__":
                 assert _fold[D["descriptors"][_n]["level"]] == _ik, f"幕間台帳: 級の畳み込み不整合 No.{_n}"
     assert set(_lp_seen) == set(_lp_src), "幕間台帳: 素材63件の完全分割でない"
     assert list(LP["幕間"].keys()) == LP["meta"]["幕間順序"] and len(LP["幕間"]) == 6, "幕間台帳: 幕間6本の順序不一致"
-    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種46エッジ（重複対4・口頭再掲1・柱間3・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定17〔判断(ai)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言13＝31完全分割〔判断(aj)、第3柱一号・二号は未宣言〕）/ 第3柱インベントリ209＝範型183＋肖像26（受容197＋対話者の理解12、区分分割不変、肖像は行別note、相互参照＝R3 DROP 29件〔帳簿の手順で再計算照合：同文9・近接6・近い行なし14〕〔判断(bq)〕）/ 第3柱範型2枚（一号18聞く・二号26読む、帳簿全数・mode一様・条件と深さの完全分割・深さ＝七層・四欄の帳簿語なし〔カタログ32・34〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
+    print("復元検証OK: descriptors1224 / translations1224 / 篩266・ADOPT183 / 行為22 / 二相31+17+31 / 分類22・下位系12 / テンプレート4型整合 / 範型4照合 / 検証範型5照合 / 区分分割7" + cat_msg + " / 第2柱インベントリ132＝範型115＋留置17（Overall口頭8書面9・レベル・ポートレート素材・行別note、区分分割と完全分割一致〔判断(ah)〕）/ 第2柱範型7枚＝範型母集団115件完（一号28口頭・二号24書面・三号13口頭・四号18書面・五号10口頭・六号18口頭・七号4口頭、帳簿全数・mode一様）/ 並行対4系15＝第2柱3族12（叙述族7・型式標本247-338／論証族4・型式標本277-356＋判断(af)の305-359/303-356/299-354／教示族1・270-364、両側実在・モード配置・族宣言・糸保存・段差3帳簿＝軸は準備・推敲可能性〔判断(af)〕）＋第3柱の系「受容」3（42-156・40-152・33-147、課題一致・聞く↔読む配置・深さ区分一致、柱属性〔判断(bu)〕）/ 糸正準7スケール（完全分割・語彙正準＝宣言族の族糸∪固有糸、族糸3族〔叙述5・論証4・教示3〕・族無所属1〔告知、判断(ag)〕・固有糸規則照合）/ テンプレート三層（第1柱4型＋構築梯子型・適用スケール一致）/ 参照台帳7種54エッジ（重複対4・口頭再掲1・柱間11〔第1↔第2柱3＋第2↔第3柱8、レベル照合〕・族間1・行為内5・留置4・行為間参照28、所有排他・正準向き・散文同期・検出裁定25〔判断(ai)(bu)〕）/ 軸台帳13軸182件（完全分割・音韻3スケール束ね・15スケール一意所属・シート主軸＝宣言18〔散文証拠つき〕＋未宣言13＝31完全分割〔判断(aj)、第3柱一号・二号は未宣言〕）/ 第3柱インベントリ209＝範型183＋肖像26（受容197＋対話者の理解12、区分分割不変、肖像は行別note、相互参照＝R3 DROP 29件〔帳簿の手順で再計算照合：同文9・近接6・近い行なし14〕〔判断(bq)〕）/ 第3柱範型2枚（一号18聞く・二号26読む、帳簿全数・mode一様・条件と深さの完全分割・深さ＝七層・四欄の帳簿語なし〔カタログ32・34〕）/ 出自類型の表示訳4門（述べる・働きかける・表す・つなぐ＝語彙一致〔判断(ak)〕）/ 幕間台帳6本63件（柱1総括18＋柱2総括17＋R1質28の完全分割・素材区分整合・プラス級畳み込み〔判断(al)〕）")
