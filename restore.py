@@ -279,6 +279,13 @@ if __name__ == "__main__":
             assert p["層"] == p3_layer_of[o] == p3_layer_of[w], f"第3柱の対の層がシートの深さ区分と不一致 {o}/{w}（{p['層']}／{p3_layer_of[o]}／{p3_layer_of[w]}）"
             mp_p3_pairs.append(p)
     assert {(p["oral"], p["written"]) for p in mp_p3_pairs} == {(42, 156), (40, 152), (33, 147)}, "第3柱の対の帳簿不一致（判断(bu)）"
+    # relation 語彙は柱を問わず meta「relation語彙」の四種、課題一致（文言を共有しない対）は similarity 欄を持つ（判断(bu)補遺1）
+    for s in MP["systems"]:
+        for p in s["pairs"]:
+            assert p["relation"] in ("完全同文", "同文級", "類似", "課題一致"), f"並行対のrelation語彙外 {p['oral']}/{p['written']}: {p['relation']}"
+            if p["relation"] == "課題一致":
+                assert isinstance(p.get("similarity"), float) and p["similarity"] < 0.70, f"課題一致の対に閾値未満のsimilarityがない {p['oral']}/{p['written']}"
+    assert {(p["oral"], p["written"]) for s in MP["systems"] for p in s["pairs"] if p["relation"] == "課題一致"} == {(270, 364), (42, 156), (40, 152), (33, 147)}, "課題一致の対の集合不一致（教示族1＋受容3）"
     mp_all_pairs = []
     for s in MP_P2:
         fam = s["族"]
