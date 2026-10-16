@@ -1,0 +1,313 @@
+{
+ "告知と指示を聞く（第3柱：Understanding announcements and instructions）": {
+  "title": "告知と指示を聞く（Understanding announcements and instructions）── 第3柱量産第一号・全数シート",
+  "scope": "全数（16件。聞く16 ── mode一様）",
+  "type": "第3柱（受容）。梯子＝条件の解除の一本（支え→ゆっくり→簡単さ→明快な標準語→条件なし→逆境）、深さ＝七層（『受容の課題』§2）は段の属性。糸は立てない。四欄（scene＝聞くもの・howwell＝分かること・l1・delta）は書物の本文そのもの（判断(bs)）。",
+  "essence": "放送と指示を聞く段は、数・場所・手順という具体の聞き取りから立ち、「分かる」が行動（従う・動く・操作する）として外に出る。但し書きは支えから逆境まで一本の列をなすが、「ゆっくり」がA2で一度消えてA2+で戻る。上端は放送の側（歪んだ音から一点を拾う命題）と指示の側（複雑な技術情報の全体）に割れ、言外へ出る段はない。",
+  "axes": {
+   "条件": {
+    "支え": [
+     67
+    ],
+    "ゆっくり": [
+     64,
+     65,
+     66,
+     59,
+     60
+    ],
+    "簡単さ": [
+     61,
+     62,
+     63,
+     56
+    ],
+    "明快な標準語": [
+     58,
+     54
+    ],
+    "条件なし": [
+     57,
+     55,
+     53
+    ],
+    "逆境": [
+     52
+    ]
+   },
+   "深さ": {
+    "形": [
+     66
+    ],
+    "命題": [
+     67,
+     64,
+     65,
+     63,
+     52
+    ],
+    "筋": [
+     62,
+     59,
+     57
+    ],
+    "要点": [
+     61
+    ],
+    "全体": [
+     60,
+     56,
+     58,
+     54,
+     55,
+     53
+    ],
+    "含意": [],
+    "立場": []
+   }
+  },
+  "rows": [
+   {
+    "mode": "聞く",
+    "level": "Pre-A1",
+    "no": 67,
+    "en": "Can understand short, simple instructions for actions such as “Stop”, “Close the door”, etc., provided they are delivered slowly face-to-face, accompanied by pictures or manual gestures and repeated if necessary.",
+    "jp": "「止まって」「ドアを閉めて」などの短く簡単な指示を、対面でゆっくり伝えられ、絵や身振りが添えられ、必要なら繰り返されれば理解できる。",
+    "exponents": [
+     "Teacher: Stop. [hand up] … Stop. Now close the door. [points at the door] Close the door, please.\nYou: （手の合図で止まり、指された戸を閉める。）",
+     "Friend: Sit here. [touches the chair] … Here. Good.\nYou: （触れられた椅子に座る。）"
+    ],
+    "scene": "向かい合った相手から、その場で直接言われる、ごく短い指示。「止まって」「ドアを閉めて」のような一語か二語で、ゆっくり言われ、絵や身振りが添えられ、必要なら繰り返される。",
+    "howwell": "命題 ── 一つの指示が何をさせたいか。文ではなく、動作一つを指す言葉として受け取り、その動作をすればよい。",
+    "l1": "",
+    "delta": "聞く側の梯子の、この章での起点。相手が目の前にいて、ゆっくり、身振りつきで、繰り返してくれる ── 入力の側が手加減の全部をしている。言葉が分からなくても身振りで動作が立つので、言葉はそれに添えられている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A1",
+    "no": 64,
+    "en": "Can understand instructions addressed carefully and slowly to them and follow short, simple directions.",
+    "jp": "注意深くゆっくり自分に向けられた指示を理解し、短く簡単な道順の指示に従える。",
+    "exponents": [
+     "Friend: Go straight. … Then turn left at the bank. … The park is on the right.\nYou: （まっすぐ進み、銀行のところで左へ曲がって、右手に公園を見つける。）",
+     "Clerk: Please write your name here. … Here. … And sign here.\nYou: （指された欄に名前を書き、次の欄に署名する。）"
+    ],
+    "scene": "自分に向けて、注意深くゆっくり言われる指示と、短く簡単な道順。相手は一つずつ区切って言い、道順は「まっすぐ、左、右手に」のような短い指示の並びでできている。",
+    "howwell": "命題 ── 一つ一つの指示が何を求めているか。「銀行で左」が一つの命題として立ち、そのとおりに動ければよい。指示が二つ三つ並んでも、一つずつ受け取って従う。",
+    "l1": "向きを先に、目印を後に言う並び（左へ、銀行のところで）を、目印を先に言う日本語の並びで待つため、向きを聞いた時点で曲がり、あとに続く目印を聞き流して、一つ手前の角で曲がってしまう。",
+    "delta": "身振りつきの一語の指示（No.67）から、言葉だけの指示へ。身振りと絵は消え、代わりに「注意深くゆっくり、自分に向けて」が条件になる。やり取りする言葉の側では、相手の話を聞くNo.421（注意深くゆっくり向けられた質問と指示を理解し、短く簡単な道順に従う）がほぼ同じ文で同じA1に立つ ── 向こうは質問を含み、こちらは指示だけである。読む側では「指示を読む」の章のNo.186（XからYへの短く簡単な道順に従う）が同じA1に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A1",
+    "no": 65,
+    "en": "Can understand when someone tells them slowly and clearly where something is, provided the object is in the immediate environment.",
+    "jp": "対象が身の回りにあれば、何かがどこにあるかをゆっくり明瞭に教えられたときに理解できる。",
+    "exponents": [
+     "Friend: Your keys? They are on the table. … On the table, by the window.\nYou: （窓のそばのテーブルへ行き、鍵を取る。）",
+     "Clerk: The toilets are over there. … Near the door. … Behind the door, on the left.\nYou: （戸の裏手、左へ回る。）"
+    ],
+    "scene": "身の回りにある物について、それがどこにあるかを、ゆっくり明瞭に教えてもらう場面。「テーブルの上」「エレベーターの横」のように、見える範囲の場所が、短い句で言われる。",
+    "howwell": "命題 ── どこにあるか、の一点。言われた場所の句を、目の前の物の配置に結びつけられればよい。",
+    "l1": "場所を大きい区分から小さい区分へ言う順（窓のそばの、テーブルの上）で待つため、小さいほうから順に言われる場所の句（テーブルの上、窓のそばの）を、二つの別の場所と聞いてしまい、どちらへ目を向けるか迷う。",
+    "delta": "指示に従う段（No.64）と同じA1に立つ、もう一つの命題の段 ── 動作ではなく、物の場所が言われる。条件は「ゆっくり明瞭に」と「対象が身の回りにある」で、見えるものについて言われるのが支えになっている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A1",
+    "no": 66,
+    "en": "Can understand figures, prices and times given slowly and clearly in an announcement by loudspeaker, e.g. at a railway station or in a shop.",
+    "jp": "駅や店の構内放送などで、ゆっくり明瞭に伝えられる数字・価格・時刻を理解できる。",
+    "exponents": [
+     "Announcer: The train to London leaves from platform four. … Platform four. … At half past ten.\nYou: （四番乗り場へ向かい、十時半の発車に間に合うよう時計を見る。）",
+     "Announcer: Today, all T-shirts are nine ninety-nine. … Nine ninety-nine.\nYou: （九・九九と分かり、棚の値札を確かめる。）"
+    ],
+    "scene": "駅や店の構内放送。放送はゆっくり明瞭で、数字・価格・時刻を言い、多くの場合それを繰り返す。",
+    "howwell": "形 ── 数字・価格・時刻を、知っている数として聞き取ること。文の意味ではなく、数そのものが聞き取れればよい。",
+    "l1": "時刻を「十時半」「三時十五分前」の順で待つため、分のほうを先に、時を後に言う言い方（半、過ぎて、十時）では、先に聞いた分だけが残り、時のほうを聞き落として、何時の話だったかが分からなくなる。",
+    "delta": "同じA1の三つ目の段で、層がいちばん下へ戻る ── 指示（No.64）と場所（No.65）が一つの命題だったのに対して、ここは数そのものの聞き取りである。相手が目の前にいない放送が初めて現れ、「ゆっくり明瞭に」の条件が放送に付く。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 61,
+    "en": "Can catch the main point in short, clear, simple messages and announcements.",
+    "jp": "短く明瞭で簡単なメッセージやアナウンスの要点をつかめる。",
+    "exponents": [
+     "Announcer: Attention, please. The shop closes in ten minutes. Please go to the tills now.\nYou: （あと十分で閉店と分かり、レジへ向かう。）",
+     "Announcer: This is a message for Mr Tanaka. Please come to the information desk. Mr Tanaka, to the information desk.\nYou: （自分が呼ばれた、と気づいて案内所へ向かう。）"
+    ],
+    "scene": "短く、明瞭で、簡単なメッセージやアナウンス。店内放送、呼び出し、短いお知らせで、一つの用件を言う。",
+    "howwell": "要点 ── 何が用件か。細部（何分、どこへ）より先に、閉店なのか呼び出しなのかという用件そのものがつかめればよい。",
+    "l1": "",
+    "delta": "ここで条件の種類が変わる。「ゆっくり」の但し書きが消え、代わりに入力の側の短さと簡単さが条件になる。層は命題から要点へ ── 一つの文ではなく、短い放送全体から用件を取る。語る側では「公共アナウンス」の章のNo.294（予測できる学習済みの内容の、ごく短い練習済みアナウンス）が同じA2に立ち、向こうが読み上げる短い放送を、こちらは用件として受け取る。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 62,
+    "en": "Can understand simple directions on how to get from X to Y, by foot or public transport.",
+    "jp": "徒歩や公共交通機関でXからYへ行く簡単な道順を理解できる。",
+    "exponents": [
+     "Friend: Take the number twelve bus from the station. Get off at the park. Then walk to the end of the road. The school is on the left.\nYou: （十二番のバス、公園で降りる、道の端まで歩く、左、と順に頭に入れて出発する。）"
+    ],
+    "scene": "徒歩や公共交通機関で、ある場所から別の場所へ行くための簡単な道順。乗る路線、降りる場所、歩く向きが、順に言われる。",
+    "howwell": "筋 ── 指示の並びを、順路として追うこと。一つ一つの指示（No.64）ではなく、「バス、降りる、歩く、左」という順序そのものが分かればよい。",
+    "l1": "一つの指示を日本語に置き換えてから次を聞く聞き方のため、三つ目の指示が言われているあいだに二つ目を置き換えていて、順路の途中が一つ抜けたまま出発してしまう。",
+    "delta": "一つの指示（No.64）から、指示の並びへ。層は命題から筋へ上がり、条件は「簡単な道順」という入力の簡単さだけになる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 63,
+    "en": "Can understand basic instructions on times, dates and numbers, etc., and on routine tasks and assignments to be carried out.",
+    "jp": "時間・日付・数字などの基本的な指示や、こなすべき日常的な作業や課題についての指示を理解できる。",
+    "exponents": [
+     "Manager: The meeting is on the third of March, at two. Please bring the report. And send me the file by Friday.\nYou: （三月三日の二時、報告書を持参、金曜までにファイル、と手帳に書く。）",
+     "Teacher: Homework: pages ten to twelve. Questions one to five. For Monday.\nYou: （十〜十二ページの一〜五問、月曜まで、とメモする。）"
+    ],
+    "scene": "時間・日付・数字についての基本的な指示と、こなすべき日常の作業や課題についての指示。会議の日時、宿題の範囲、締め切りのように、数と用件が一緒に言われる。",
+    "howwell": "命題 ── いつ、どのページを、何を、という一つ一つの指定。数（No.66）が、作業の指示の中に入って、それぞれが一つの命題として立つ。",
+    "l1": "日付を月から日の順で待つため、日が先に言われる言い方（三日、三月の）では、先に聞いた数を月と取り、日と月を入れ替えて書き留めてしまう。",
+    "delta": "数そのもの（No.66）から、数を含む指示へ。層は形から命題へ戻り、放送ではなく自分に向けた指示になる。条件は「基本的な」という入力の簡単さ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2+",
+    "no": 59,
+    "en": "Can understand and follow a series of instructions for familiar everyday activities such as sports, cooking, etc., provided they are delivered slowly and clearly.",
+    "jp": "ゆっくり明瞭に伝えられれば、スポーツや料理など身近な日常活動についての一連の指示を理解し、それに従える。",
+    "exponents": [
+     "Coach: OK. First, stand with your legs apart. … Now bend your knees a little. … Keep your back straight. … And throw the ball slowly. Slowly.\nYou: （足を開き、膝を曲げ、背を伸ばし、ゆっくり投げる、と一つずつ動く。）",
+     "Chef: Cut the onion. … Put it in the pan with a little oil. … Cook it for five minutes. … Then add the tomatoes.\nYou: （玉ねぎを切って鍋へ、五分、トマト、と手を動かしながら追う。）"
+    ],
+    "scene": "スポーツや料理のような身近な日常活動についての、一連の指示。実演や練習の場で、指導する人がゆっくり明瞭に、一つずつ区切って言う。",
+    "howwell": "筋 ── 一連の指示を、順序のある手順として追い、そのとおりに動くこと。道順（No.62）と同じく並びが問われるが、ここでは自分の体を動かしながら追う。",
+    "l1": "",
+    "delta": "道順（No.62）から、動作の手順へ。指示の数が増え、「ゆっくり明瞭に」の条件が戻る ── 一連の指示を体で追うには、話し手の速さがもう一度手加減になる。読む側では「指示を読む」の章のNo.181（一段階ずつ絵で示された短い指示）が同じA2+に立ち、向こうは絵が段を区切り、こちらは話し手の間が段を区切る。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2+",
+    "no": 60,
+    "en": "Can understand straightforward announcements (e.g. of a cinema programme or sports event, that a train has been delayed), provided the delivery is slow and clear.",
+    "jp": "ゆっくり明瞭に伝えられれば、率直なアナウンス（映画の上映案内、スポーツの試合、列車の遅延など）を理解できる。",
+    "exponents": [
+     "Announcer: Good evening. Tonight’s film starts at eight. The doors open at half past seven. Please have your tickets ready.\nYou: （八時開始、七時半開場、と分かってチケットを出しておく。）",
+     "Announcer: We are sorry. The train to Bath is delayed. The train will leave at ten forty, from platform two.\nYou: （バース行きは十時四十分に二番から、と遅れを頭に入れて待つ。）"
+    ],
+    "scene": "映画の上映案内、スポーツの試合の案内、列車の遅延のような、率直なアナウンス。放送はゆっくり明瞭で、何が、いつ、どこで、を順に言う。",
+    "howwell": "全体 ── 放送で言われたことの大半が頭に入り、開始時刻も開場時刻も乗り場も、全部そろって分かる。要点（No.61）だけでなく、細部まで。",
+    "l1": "",
+    "delta": "用件だけ（No.61）から、放送の全体へ。層は要点から全体へ上がり、そのぶん「ゆっくり明瞭に」の条件が戻る。この段で初めて、放送の中身を全部受け取ることが求められる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 56,
+    "en": "Can understand simple technical information, such as operating instructions for everyday equipment.",
+    "jp": "日常機器の操作説明など、簡単な技術情報を理解できる。",
+    "exponents": [
+     "Clerk: To start it, press the power button and hold it for three seconds. Then choose the language. To cancel, press the button on the left.\nYou: （電源ボタンを三秒、言語を選ぶ、取り消しは左、と順に操作する。）"
+    ],
+    "scene": "日常の機器の操作説明のような、簡単な技術情報。店の人や同僚が、新しい機器の使い方を口頭で説明する。",
+    "howwell": "全体 ── 説明された操作が、全部そろって分かる。起動の仕方も、選び方も、取り消し方も。技術的な言葉が入っても、簡単なものであれば全体を取る。",
+    "l1": "電源・ボタン・キャンセルのように日本語でも使う語ほど、カタカナの音形で待っているため、強勢の位置が違う英語の音形がその語と結びつかず、知っているはずの語を聞き落とす。",
+    "delta": "日常の用件（No.60）から、技術的な説明へ。言葉の種類が変わり、条件は「簡単な」という入力の簡単さだけになる ── 「ゆっくり明瞭に」はここで消える。読む側では「指示を読む」の章のNo.177（機器についての明快で率直な指示）が同じB1に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 57,
+    "en": "Can follow detailed directions.",
+    "jp": "詳細な道順の指示を追える。",
+    "exponents": [
+     "Friend: Go down this road until you reach the second set of traffic lights. Turn right there, and you’ll see a big grey building on your right, just after the church. The entrance is round the back.\nYou: （二つ目の信号で右、教会の先の灰色の建物、入口は裏、と順路を組み立てる。）"
+    ],
+    "scene": "詳細な道順。曲がる場所、目印、建物の見え方、入口の位置まで、細かく言われる。",
+    "howwell": "筋 ── 細かい指示の並びを、順路として最後まで追うこと。簡単な道順（No.62）より指示が多く、目印の説明が長くなる。",
+    "l1": "目印を言う語句が名詞のあとに続く（建物、灰色の、右手の、教会の先の）ため、名詞を聞いた時点で目印が決まったと思い、あとに続く限定の部分を次の指示の始まりと聞いて、目印を一つ多く数えてしまう。",
+    "delta": "簡単な道順（No.62）から、詳細な道順へ。層は筋のまま、入力の複雑さが上がり、但し書きは消える ── 「簡単な」も「ゆっくり」もない。やり取りする言葉の側では「道案内の依頼と提供」の章のNo.558（詳細な道順を尋ね、それに従う）が同じB1に立ち、こちらはその「従う」の側だけを取り出した形である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 58,
+    "en": "Can understand public announcements at airports, stations and on planes, buses and trains, provided these are clearly articulated with minimum interference from [auditory/visual] background noise.",
+    "jp": "雑音の妨げが最小限で明快に伝えられれば、空港・駅・飛行機・バス・列車の公共アナウンスを理解できる。",
+    "exponents": [
+     "Announcer: This is a platform announcement. The ten fifteen service to Brighton will depart from platform six. Passengers for Lewes should travel in the front four coaches.\nYou: （十時十五分発ブライトン行きは六番、ルイスへ行くなら前の四両、と確かめて乗り場を移る。）",
+     "Announcer: Ladies and gentlemen, we will be landing in twenty minutes. Please return to your seats and fasten your seat belts.\nYou: （二十分で着陸、席に戻って帯を締める、と動く。）"
+    ],
+    "scene": "空港・駅・飛行機・バス・列車の公共アナウンス。明快に発音され、雑音の妨げが最小限であれば、という条件つき。",
+    "howwell": "全体 ── 放送の全部が分かる。どの列車が、何番線から、どの車両に乗るか、まで。率直なアナウンス（No.60）より情報が多く、場面も広がる。",
+    "l1": "列車を名前や種別で呼ぶ日本の駅の像で待つため、発車時刻と行き先だけで列車を指す案内（十時十五分の何々行き）を、まだ列車を特定していない前置きのように聞いて、肝心の案内を聞き逃す。",
+    "delta": "率直なアナウンス（No.60）から、公共交通の本番の放送へ。「ゆっくり」はなくなり、代わりに「明快に、雑音が最小限で」が条件になる ── 放送を聞く条件が、話し手の速さから聞き取りの環境へ移る。語る側では「公共アナウンス」の章のNo.293（自分の専門に関わる短い練習済みアナウンス）が同じB1に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 54,
+    "en": "Can understand announcements and messages on concrete and abstract topics delivered in standard language or a familiar variety at normal speed.",
+    "jp": "普通の速さで標準語または馴染みのある地域の方言やアクセントで伝えられれば、具体的・抽象的な話題のアナウンスやメッセージを理解できる。",
+    "exponents": [
+     "Announcer: Due to a signalling problem, services on this line are subject to delay. We advise customers to allow extra time for their journey.\nYou: （信号の問題で遅れが出る、余裕を見ろ、と受け取って出発を早める。）",
+     "Announcer: As part of our new policy, this store no longer provides plastic bags. Bags are for sale at the tills.\nYou: （レジ袋はもうない、袋はレジで買える、と分かる。）"
+    ],
+    "scene": "具体的な話題でも抽象的な話題でも、標準語か馴染みのある地域の方言やアクセントで、普通の速さで伝えられるアナウンスやメッセージ。運行の方針、店の方針のような、目の前の物を指さない内容を含む。",
+    "howwell": "全体 ── 放送で言われたことの全部が分かる。公共交通の放送（No.58）と同じ層だが、内容が具体から抽象へ広がり、速さが普通になる。",
+    "l1": "",
+    "delta": "明快さと雑音の条件（No.58）が、言葉の種類と速さの条件に変わる ── 標準語か馴染みのある地域の方言やアクセントで、普通の速さで。「ゆっくり」はこの章でここに至って完全に裏返る。語る側では「公共アナウンス」の章のNo.292（たいていの一般的な話題についてのアナウンス）が同じB2に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 55,
+    "en": "Can understand detailed instructions well enough to be able to follow them successfully.",
+    "jp": "詳細な指示を、それに従って実行できる程度に十分理解できる。",
+    "exponents": [
+     "Manager: Before you leave tonight, back up the files to the server, then switch off the machines in order: printer first, then the two computers, and the router last. If the router light stays red, leave it and send me a message.\nYou: （バックアップ、印刷機、二台、最後にルーター、赤なら触らず連絡、と順に実行する。）"
+    ],
+    "scene": "詳細な指示。手順が多く、順序があり、条件（こうなったら、こうする）が含まれる。",
+    "howwell": "全体 ── 指示の全部が、そのとおりに実行できる程度に分かる。「それに従って実行できる程度に十分」という記述文の言い方は、分かることの基準を、行動の成功に置いている。",
+    "l1": "",
+    "delta": "簡単な技術情報（No.56）から、詳細な指示へ。層は全体のまま、但し書きが消える ── 入力の詳しさが主語になる。やり取りする言葉の側では、共同作業の場面のNo.507（詳細な指示を確実に理解する）が同じB2に近い文で立ち、読む側では「指示を読む」の章のNo.175（自分の専門の長く複雑な指示）が同じB2に立つ。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C1",
+    "no": 52,
+    "en": "Can extract specific information from poor quality, [audibly and/or visually] distorted public announcements, e.g. in a station or sports stadium, or on an old recording.",
+    "jp": "駅やスタジアムの構内放送や古い録音など、品質の悪い歪んだ公共アナウンスから、特定情報を抽出できる。",
+    "exponents": [
+     "Announcer: [noise] —tention please. The —fifteen to —ington is now —arting from platform —ven. [noise] —form seven.\nYou: （行き先は聞き取れないが「七番線」と「十五分」だけ拾い、発車案内板で確かめる。）"
+    ],
+    "scene": "駅やスタジアムの構内放送や古い録音のような、品質が悪く、音の歪んだ公共アナウンス。語が欠け、雑音が重なる。",
+    "howwell": "命題 ── 歪んだ音から、特定の情報（番線、時刻、名前）を抜き出すこと。全部を聞き取る必要はなく、要る一点が取れればよい。",
+    "l1": "語の認識を、音の全部が聞こえることに頼っている（文字で確かめる読み方で身についた）ため、欠けた音を場面の型 ── 放送なら番線と時刻が来る ── から補うことができず、歪みのなかから数を拾えない。",
+    "delta": "条件の列の終わり。但し書きが消えた段（No.55）のあと、条件が逆向きに付く ── 雑音が最小限（No.58）の裏返しで、雑音のなかから取る。層は命題へ下がり、全体ではなく一点を拾う段になる。語る側では「公共アナウンス」の章のNo.291（強勢とイントネーションで細かい意味合いを伝える）が同じC1に立つが、向こうは送達の精度、こちらは歪みからの抽出で、対の形ではない。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C1",
+    "no": 53,
+    "en": "Can understand complex technical information, such as operating instructions or specifications for familiar products and services.",
+    "jp": "操作説明書や馴染みのある製品・サービスの仕様書など、複雑な技術情報を理解できる。",
+    "exponents": [
+     "Clerk: The unit runs on either mains or battery. On battery, it gives you about eight hours of continuous use, but charging drops to half speed if the temperature goes above thirty-five degrees. The warranty covers parts but not labour.\nYou: （電源は二通り、電池で八時間、暑いと充電が半分、保証は部品だけ、と仕様を頭に入れる。）"
+    ],
+    "scene": "操作説明書や、馴染みのある製品・サービスの仕様のような、複雑な技術情報。条件つきの性能、保証の範囲、例外が含まれる。",
+    "howwell": "全体 ── 複雑な技術情報の全部が分かる。簡単な技術情報（No.56）と同じ層だが、条件や例外を含む説明を、そのまま受け取る。",
+    "l1": "",
+    "delta": "簡単な技術情報（No.56）の上の段。詳細な指示（No.55）と同じく但し書きがなく、入力の複雑さが主語になる。この章の、指示の側の最上段 ── 放送の側の最上段が歪んだ音からの抽出（No.52）であるのに対して、こちらは複雑な内容をそのまま受け取る。読む側では「指示を読む」の章のNo.174（新しい機械や手順についての長く複雑な指示）が同じC1に立つ。"
+   }
+  ],
+  "discussion": [
+   "本スケール16行の条件句を並べると一本の列になる ── 支え（対面・ゆっくり・絵や身振り・繰り返し：No.67）→ ゆっくり（No.64/65/66/59/60）→ 簡単さ（短く・簡単な・基本的な：No.61/62/63/56）→ 明快な標準語（明快に・雑音が最小限／標準語か馴染みのある地域の方言やアクセントで普通の速さ：No.58/54）→ 条件なし（詳細な・複雑な：No.57/55/53）→ 逆境（品質が悪く歪んだ：No.52）。聴衆の章と違い、「ゆっくり」がA2で一度消えて（61/62/63は短さと簡単さだけが条件）A2+で戻る（59/60）── 入力が短いあいだは速さが条件にならず、一連の指示や放送の全体へ伸びると話し手の速さがもう一度手加減になる。深さは七層で引く ── 形（66）・命題（67/64/65/63/52）・筋（62/59/57）・要点（61）・全体（60/56/58/54/55/53）。聴衆の章にない層1・層2がここには立つ：構内放送の数の聞き取り（66）と、一つの指示・一つの場所（67/64/65/63）、そして最上級の歪んだ音からの抽出（52）が命題である。層は級に対して単調でない ── 命題がPre-A1からC1まで、全体がA2+からC1まで散り、C1は命題（52）と全体（53）の両方を持つ。",
+   "本スケールは語る側の「公共アナウンス」（Public announcements、第2柱、4行）の裏面に当たるが、対になるのは放送の側の段だけである ── 61↔294（A2・ごく短い練習済みアナウンス／短く簡単なアナウンスの要点）、58↔293（B1・自分の専門の短い練習済みアナウンス／空港・駅の公共アナウンス）、54↔292（B2・一般的な話題のアナウンス／具体的・抽象的な話題のアナウンス）。C1の291（強勢とイントネーションで細かい意味合いを伝える）と52（歪んだ放送から特定情報を抽出する）は同級だが、向こうは送達の精度、こちらは歪みからの抽出で、課題が一致しない。指示の側（67/64/65/63/59/62/57/56/55/53）には語る側の対がない ── 指示を与える段は、やり取りする言葉の「指示への応答」の章の裏面や、仲介の段として立つ。この三つの対は参照台帳（crossrefs.json の柱間対）に収載した（判断(by)）。",
+   "指示の側は、読む側の「指示を読む」（Reading instructions、14行）と課題で対になる ── 64↔186（A1・短く簡単な道順に従う）、59↔181（A2+・一連の指示／一段階ずつ絵で示された短い指示）、56↔177（B1・日常の機器の操作説明／機器についての明快で率直な指示）、55↔175（B2・詳細な指示／長く複雑な指示）、53↔174（C1・複雑な技術情報／新しい機械や手順についての長く複雑な指示）。聞く↔読むの対はここでも文言を共有せず、層と課題の一致で読む。読む側の手加減は絵（181）と「明快に書かれた」（177）で、聞く側の「ゆっくり」に当たるものは文字では最初から与えられている ── 一連の指示を体で追うときに、聞く側は話し手の間が段を区切り、読む側は絵が段を区切る。やり取りする言葉の側との重なりもこの章は持つ ── A1の64は、相手の話を聞くNo.421（注意深くゆっくり向けられた質問と指示を理解し、短く簡単な道順に従う）とほぼ同じ文で、B2の55は共同作業のNo.507（詳細な指示を確実に理解する）と近い文で立つ。B1の57（詳細な道順を追える）は、道案内の依頼と提供のNo.558（詳細な道順を尋ね、それに従う）に文言ごと含まれる ── やり取りの段が尋ねる側と従う側を一文に持ち、受容の段はその後半だけを取り出している。この対は参照台帳の柱間対に収載した（判断(by)、やり取りする言葉↔聞く・読む言葉の初の対）。対の台帳（mode_pairs.json の系「受容」）への収載は「指示を読む」のシートが立ってから。",
+   "日本語話者の落とし穴は、この章では下の級に集まる。源で分けると、数と場所の言い方の順（66の時刻、63の日付、65の場所）、語順（64の向きと目印の順、57の名詞のあとに続く目印の限定）、聞き方（62の一つずつ置き換える聞き方、52の音の全部に頼る語の認識）、カタカナ語の音形（56）、日本の駅の像の持ち込み（58）の五つで、九つの段に欄が立つ。放送と指示という場面は、数・時刻・場所・向きの言い方が中心になるため、聴衆の章で中心だった話の型（結論の位置、主と従）の穴がなく、代わりに数と順の穴が厚い ── 落とし穴の源が、章の場面で入れ替わる。\n\n穴のない段は七つ ── 身振りと絵が言葉を補う段（67）、短い放送から用件を取る段（61）、話し手がゆっくり区切ってくれる手順と放送（59・60）、標準語で普通の速さの放送（54）、詳細な指示と複雑な技術情報（55・53）。いずれも、日本語からの持ち込みとして指せる形が確かめられない段で、上の級に集まっているが（54・55・53）、下にも散る（67・61・59・60）。",
+   "この梯子を測るものさしは、聴衆の章と同じく二つで、どちらも入力の側にある ── 但し書きの数と向き、そして層。ただしこの章には、聴衆の章にない測り方が一つ加わる。「それに従って実行できる程度に十分」（No.55）、「〜に従える」（No.64/59/57）── 分かったかどうかを、行動の成功で測る段がある。指示を聞く段では、理解は頭の中に留まらず、曲がる・動く・操作する、という行動として外に出る。だからこの章の「分かったしるし」は、ほとんどが行動である。上端が含意で閉じる聴衆の章と違い、この章の上端は二つに割れる ── 放送の側は歪んだ音から一点を拾う命題の段（52）で、指示の側は複雑な技術情報を全部受け取る全体の段（53）で終わる。言外へ出る段はなく、「分かる」は最後まで、言われたことの範囲にある。"
+  ]
+ }
+}
