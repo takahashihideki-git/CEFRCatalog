@@ -37,6 +37,8 @@ SHORT_CHAPTER_NAMES = {
     '授受': '事実情報の授受', '依頼': '依頼・要求', '講演': '聴衆への講演', '会話の維持': '会話の開始・維持',
     '買い物': '取引（購入・注文）', '意見表明': '意見・見解の表明', '意見': '意見・見解の表明', '感謝・詫び': '感謝・詫び・祝意', '道案内': '道案内の依頼と提供',
     '創作': '創作の文章',
+    # 第3部の言い換え（カタログ36第4便検品：正式名以外で指した5箇所＝「聴衆の席で聞く章」「聴衆の席で講義を聞く章」「講義を聞く章」「講義の章」）
+    '講義': '聴衆として聞く', '講義を聞く': '聴衆として聞く', '聴衆の席で聞く': '聴衆として聞く', '聴衆の席で講義を聞く': '聴衆として聞く',
 }
 
 SHEET_REGISTRY = {
@@ -385,7 +387,7 @@ def main():
         for ttl in sorted(CHAPTER_TITLES, key=len, reverse=True):
             masked = re.sub(r'「?' + re.escape(ttl) + r'」?(?:の)?章', lambda m: '＠' * len(m.group(0)), masked)
         for short, full in SHORT_CHAPTER_NAMES.items():
-            for m in re.finditer(r'「?' + re.escape(short) + r'」?の章', masked):
+            for m in re.finditer(r'「?' + re.escape(short) + r'」?(?:の)?章', masked):  # 「講義を聞く章」のように「の」を介さない形も落とす（カタログ36第4便補遺1）
                 errors.append(f"{name}: 章名の短縮形 …{t[max(0,m.start()-10):m.end()+4]}…（→「{full}」の章）")
 
         # 5.6 裸の通し番号（No.なし。連番継続・英語例・件数は許容）
