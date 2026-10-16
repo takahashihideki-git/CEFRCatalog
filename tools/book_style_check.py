@@ -22,13 +22,14 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 BOOK = os.path.join(ROOT, 'deliverables', 'book')
 
 # 章 → (全数シートjson, キー)。新章の追加時はここへ登録する。
-# 章名の表記（規律4、カタログ31）：正式な章題29（他章参照では「 」で括る）と、使わない短縮形
+# 章名の表記（規律4、カタログ31）：正式な章題29＋第3部3（聴衆として聞く・知るために読む・告知と指示を聞く、カタログ35）（他章参照では「 」で括る）と、使わない短縮形
 CHAPTER_TITLES = (
     '挨拶・別れ・安否', '会話の開始・維持', '意見・見解の表明', '感情の表出', '感謝・詫び・祝意',
     '事実情報の授受', '問題・事情の説明', '面接での質問と応答', '伝言の授受', '自己に関する情報提供', '経験・出来事の叙述',
     '明確化・繰り返しの要求', '取引（購入・注文）', '苦情・クレーム', '提案・誘い・計画の相談', '依頼・要求',
     '問い合わせ', '道案内の依頼と提供', '助言', '同意・不同意', '応募・出願', '指示への応答',
     '経験を語る', '創作の文章', '論の提示', '報告と小論', '情報のまとまった提供', '聴衆への講演', '公共アナウンス',
+    '聴衆として聞く', '知るために読む', '告知と指示を聞く',
 )
 SHORT_CHAPTER_NAMES = {
     '取引': '取引（購入・注文）', '挨拶': '挨拶・別れ・安否', '明確化': '明確化・繰り返しの要求', '苦情': '苦情・クレーム',
@@ -69,7 +70,11 @@ SHEET_REGISTRY = {
     '章_情報のまとまった提供.md':  ('catalog_p2_giving_information.json', '情報のまとまった提供（第2柱：Sustained monologue: giving information）'),
     '章_聴衆への講演.md':          ('catalog_p2_addressing_audiences.json', '聴衆への講演（第2柱：Addressing audiences）'),
     '章_公共アナウンス.md':        ('catalog_p2_public_announcements.json', '公共アナウンス（第2柱：Public announcements）'),
+    # 第3部（聞く・読む言葉）── 範型第一号（カタログ35、判断(bv)）。四欄（聞くもの／読むもの・分かること・落とし穴・前の段から）も無改変転写＝P3_SIX_FIELDS
+    '範型章_聴衆として聞く.md':    ('catalog_p3_audience.json', '聴衆として聞く（第3柱：Understanding as a member of a live audience）'),
 }
+# 第3部の章（判断(bs)：帳簿の四欄が書物の本文そのもの）── データ層照合を六欄へ広げる対象
+P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
 
 # 幕間 → level_portraits のキー
 PORTRAIT_REGISTRY = {
@@ -138,7 +143,17 @@ def main():
                 """「例」欄のリスト行を (本文, 帰属No.) で返す。帰属は「**例**（… No.N）」の節ラベル、または行末の「（No.N）」。
                 束エントリ（見出しに複数No.）では帰属が必須（カタログ19検品⑯：束の中で例文がどの行のものか照合されなかった）。"""
                 out, in_ex, sec_no = [], False, None
-                for l in b.split('\n'):
+                lines = b.split('\n')
+                if name in P3_SIX_FIELDS:
+                    # 第3部の例は一要素＝複数行（話し手ラベル行＋ You: 行）。リスト行の下の入れ子の項目（「  - 」）を同じ要素へ畳む（変換規則1追補、判断(bv)）
+                    folded = []
+                    for l in lines:
+                        if l.startswith('  - ') and folded and folded[-1].startswith('- '):
+                            folded[-1] += '\n' + l[4:]
+                        else:
+                            folded.append(l)
+                    lines = folded
+                for l in lines:
                     if l.startswith('**例**'):
                         in_ex = True
                         nos_in_label = re.findall(r'\d+', ''.join(re.findall(r'No\.[\d・,\s]+', l)))
@@ -149,7 +164,7 @@ def main():
                         in_ex = False
                     elif in_ex and l.startswith('- '):
                         s = strip_marks(l)[2:].strip()
-                        m = re.search(r'（No\.(\d+)）\s*$', s)
+                        m = re.search(r'（No\.(\d+)）\s*$', s) if '\n' not in s else None
                         no = int(m.group(1)) if m else sec_no
                         if m:
                             s = s[:m.start()].rstrip()
@@ -177,6 +192,23 @@ def main():
                 for ex in r['exponents']:
                     if not any(ex in l for l in mine):
                         errors.append(f"{name}: No.{r['no']} の例文が「例」欄（当該行の帰属分）で無改変転写でない: {ex[:30]}")
+                if name in P3_SIX_FIELDS:
+                    # 四欄の無改変転写（判断(bs)(bv)）：欄ラベル直後の本文が帳簿の値と完全一致。l1 が空の段は欄がないこと
+                    def field_text(label):
+                        m = re.search(r'^\*\*' + re.escape(label) + r'\*\* (.+)$', b, re.M)
+                        return m.group(1).strip() if m else None
+                    scene_label = P3_SIX_FIELDS[name]
+                    for label, key in ((scene_label, 'scene'), ('分かること', 'howwell')):
+                        if field_text(label) != r[key]:
+                            errors.append(f"{name}: No.{r['no']} の「{label}」欄が帳簿の {key} と無改変転写でない")
+                    l1 = field_text('日本語話者の落とし穴')
+                    if r['l1'] and l1 != r['l1']:
+                        errors.append(f"{name}: No.{r['no']} の「日本語話者の落とし穴」欄が帳簿の l1 と無改変転写でない")
+                    if not r['l1'] and l1 is not None:
+                        errors.append(f"{name}: No.{r['no']} は帳簿の l1 が空なのに落とし穴欄がある")
+                    delta = field_text('前の段から') or field_text('この段の位置')
+                    if delta != r['delta']:
+                        errors.append(f"{name}: No.{r['no']} の「前の段から／この段の位置」欄が帳簿の delta と無改変転写でない")
             m = re.search(r'出典：.*?（No\.(.*?)）', t)
             if not m:
                 errors.append(f"{name}: 出典行が見つからない")

@@ -43,10 +43,10 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
 293: (
  ["Attention, please. Today's meeting will start at three o'clock, not two. The room is the same, Room 5. Thank you.",
   "May I have your attention? The bus for the station leaves in ten minutes from the main gate. Please do not be late."],
- "自分の分野の日常的な出来事について、短い練習済みのアナウンスをする。",
+ "自分の専門の日常的な出来事について、短い練習済みのアナウンスをする。",
  "呼びかけの定型（Attention, please.）と変更点の対比（at three, not two）。強勢・イントネーションに問題があっても、明瞭に理解可能であること。",
  "変更のアナウンスでは新旧を対で言う（at three, not two ── 「三時からとなりました」だけでは旧情報との差分が届かない）。呼びかけ→本体→念押しの三部構成を守り、本体に一情報ずつ置く。",
- "告知糸：固定内容の送達（294）から、自分の分野の出来事の告知へ。受け手の集中という支えが外れ、代わりに「韻律に問題があっても明瞭」という許容が入る ── 支えの脱落が許容として書き換わる中間形（講演の質疑糸で、313の支えが311で外れ、309に「速ければ繰り返しを求める」という但し書きだけが残るのと同じ力学）。",
+ "告知糸：固定内容の送達（294）から、自分の専門の出来事の告知へ。受け手の集中という支えが外れ、代わりに「韻律に問題があっても明瞭」という許容が入る ── 支えの脱落が許容として書き換わる中間形（講演の質疑糸で、313の支えが311で外れ、309に「速ければ繰り返しを求める」という但し書きだけが残るのと同じ力学）。",
 ),
 292: (
  ["Ladies and gentlemen, a small change to today's programme. The two o'clock talk will move to the main hall — that is the big room on your left. Everything else stays the same. If you have any questions, the staff at the desk will help you."],

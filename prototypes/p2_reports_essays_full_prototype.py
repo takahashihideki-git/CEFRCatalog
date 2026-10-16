@@ -91,7 +91,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
 ),
 363: (
  ["In the last three months, we received 42 customer messages about the new app. Most messages (31) are about login problems. Nine ask for a dark mode. In my view, we should fix the login first, because it stops people using the app at all."],
- "自分の分野の身近な事柄について、蓄積した事実情報をある程度自信をもって要約・報告し、意見を添える。",
+ "自分の専門の身近な事柄について、蓄積した事実情報をある程度自信をもって要約・報告し、意見を添える。",
  "数量の正確な要約（42 / 31 / Nine）と、要約→報告→意見の三段の連結。",
  "数字は文に埋め込む（Most messages (31) are ...）── 表を貼って終わりにしない。意見は In my view で報告から区画して始める ── 事実と意見の混線は報告の信用を落とす。",
  "報告糸：定型書式（364）から自前の要約へ。要約は仲介（第4柱・テクストの仲介）と境界を接するが、ここでは自分の報告のための要約 ── 他者の理解を助ける仲介と区別（柱間相互参照）。",

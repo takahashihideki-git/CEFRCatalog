@@ -82,11 +82,11 @@
     "level": "B1",
     "no": 308,
     "en": "Can give a prepared straightforward presentation on a familiar topic within their field which is clear enough to be followed without difficulty most of the time, and in which the main points are explained with reasonable precision.",
-    "jp": "自分の分野の身近な話題について、たいてい難なく追える程度に明確で、要点がある程度正確に説明された、準備済みの率直なプレゼンテーションができる。",
+    "jp": "自分の専門の身近な話題について、たいてい難なく追える程度に明確で、要点がある程度正確に説明された、準備済みの率直なプレゼンテーションができる。",
     "exponents": [
      "Today I will explain our plan for the school festival. There are three points: the place, the food, and the money. First, the place. We will use Room 12, because it is near the entrance. Second, the food. We will sell curry and rice; one plate will be three hundred yen. Third, the money. We need about twenty thousand yen, and the club will pay half. That is the plan. Thank you."
     ],
-    "scene": "自分の分野の身近な話題について、要点を立てて過不足なく伝わる発表をする。",
+    "scene": "自分の専門の身近な話題について、要点を立てて過不足なく伝わる発表をする。",
     "howwell": "要点の先出しと番号立て（There are three points. First ... Second ...）。「たいてい難なく追える」明確さと、要点の reasonable precision。",
     "l1": "「いろいろあるんですけど」から入らず、数を先に宣言して番号で刻む。各要点の中で理由を一つだけ添える（because it is near the entrance）── 詳細を足しすぎて要点の輪郭を失わない。",
     "delta": "講述糸：短い発表（312）から、要点が立ち聴衆が難なく追える発表へ。followed without difficulty は論証族281（B1+）と完全同句だが本行はB1に立つ ── 受け手基準の最早出現。reasonable precision は教示族268の署名語と同語で、精度の軸がここに顔を出す（主タグは講述に留置）。この行のあと講述糸はC2（297）まで中抜きになる ── 中段の発表の中身が論証族3糸（310→307→305→303→299/300/301）へ外部化されるためで、判断(x)・助言（行為の中抜き型）の糸版。"
@@ -110,7 +110,7 @@
     "level": "B1+",
     "no": 307,
     "en": "Can give a prepared presentation on a familiar topic within their field, outlining similarities and differences (e.g. between products, countries/regions, plans).",
-    "jp": "自分の分野の身近な話題について、類似点と相違点（製品間、国・地域間、計画間など）を概説する準備済みのプレゼンテーションができる。",
+    "jp": "自分の専門の身近な話題について、類似点と相違点（製品間、国・地域間、計画間など）を概説する準備済みのプレゼンテーションができる。",
     "exponents": [
      "The two phones look similar, and the price is almost the same. The difference is the battery and the camera. Model A works for two days without charging, but the camera is simple. Model B has a very good camera, but you must charge it every night. If you travel a lot, Model A is better; if you take many photos, choose Model B."
     ],

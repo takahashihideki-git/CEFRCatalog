@@ -82,7 +82,7 @@ R = {  # no -> (exponents, scene, howwell, l1, delta)
 ),
 308: (
  ["Today I will explain our plan for the school festival. There are three points: the place, the food, and the money. First, the place. We will use Room 12, because it is near the entrance. Second, the food. We will sell curry and rice; one plate will be three hundred yen. Third, the money. We need about twenty thousand yen, and the club will pay half. That is the plan. Thank you."],
- "自分の分野の身近な話題について、要点を立てて過不足なく伝わる発表をする。",
+ "自分の専門の身近な話題について、要点を立てて過不足なく伝わる発表をする。",
  "要点の先出しと番号立て（There are three points. First ... Second ...）。「たいてい難なく追える」明確さと、要点の reasonable precision。",
  "「いろいろあるんですけど」から入らず、数を先に宣言して番号で刻む。各要点の中で理由を一つだけ添える（because it is near the entrance）── 詳細を足しすぎて要点の輪郭を失わない。",
  "講述糸：短い発表（312）から、要点が立ち聴衆が難なく追える発表へ。followed without difficulty は論証族281（B1+）と完全同句だが本行はB1に立つ ── 受け手基準の最早出現。reasonable precision は教示族268の署名語と同語で、精度の軸がここに顔を出す（主タグは講述に留置）。この行のあと講述糸はC2（297）まで中抜きになる ── 中段の発表の中身が論証族3糸（310→307→305→303→299/300/301）へ外部化されるためで、判断(x)・助言（行為の中抜き型）の糸版。",

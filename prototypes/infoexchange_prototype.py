@@ -50,7 +50,7 @@ ROWS = [
   "一往復の授受から、掘り下げの連鎖へ。ここで授受が談話になる。"),
  ("口頭","B1+",555,
   'Can exchange, check and confirm accumulated factual information on familiar routine and non-routine matters within their field with some confidence.',
-  "自分の分野の身近な日常的・非日常的な事柄について、蓄積した事実情報をある程度自信をもって交換・照合・確認できる。",
+  "自分の専門の身近な日常的・非日常的な事柄について、蓄積した事実情報をある程度自信をもって交換・照合・確認できる。",
   ["So just to confirm, the order was placed on the 12th, right?", "Let me double-check the figures with you."],
   "蓄積した情報を相手と突き合わせ、齟齬がないかを照合・確認する。",
   "談話運営＋正確さ：確認のメタ発話（Just to confirm... / So you're saying...）。",
