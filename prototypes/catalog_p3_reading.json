@@ -207,7 +207,7 @@
     "en": "Can identify specific information in simpler material they encounter such as letters, brochures and short news articles describing events.",
     "jp": "手紙・パンフレット・出来事を報じる短いニュース記事など、より簡単な資料から特定情報を特定できる。",
     "exponents": [
-     "Letter: Dear Ms Tanaka, Thank you for your order. Your books will arrive on Thursday 12 May. If you are not at home, the driver will leave them with a neighbour. Best wishes, Green Books\nYou: （いつ届くか、だけを知りたくて手紙を見、十二日の木曜、不在なら隣人に預ける、の二点を拾う。）"
+     "Letter: Dear Ms Tanaka, Thank you for your order. Your books will arrive on Thursday 12 May. If you are not at home, the driver will leave them with a neighbour. Best wishes, Green Books\nYou: （いつ届くか、だけを知りたくて手紙を見、十二日の木曜、という一点だけを拾う。）"
     ],
     "scene": "手紙・パンフレット・出来事を報じる短いニュース記事など、簡単な資料。全部を読む必要はなく、自分が要る情報がどこかにある。",
     "howwell": "命題 ── 要る情報の一項目。日付、場所、条件。資料のなかから、その項目だけを見つけて読み取る。",

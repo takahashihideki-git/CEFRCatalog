@@ -111,7 +111,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "全体を取る段の三つめ（No.165・168・169）。読むものが人の自己紹介になり、書き手の好みと求めが中身になる。A2の「全体」は、暮らし・仕事・人の三つの場面で揃う。",
 ),
 161: (
- ["Letter: Dear Ms Tanaka, Thank you for your order. Your books will arrive on Thursday 12 May. If you are not at home, the driver will leave them with a neighbour. Best wishes, Green Books\nYou: （いつ届くか、だけを知りたくて手紙を見、十二日の木曜、不在なら隣人に預ける、の二点を拾う。）"],
+ ["Letter: Dear Ms Tanaka, Thank you for your order. Your books will arrive on Thursday 12 May. If you are not at home, the driver will leave them with a neighbour. Best wishes, Green Books\nYou: （いつ届くか、だけを知りたくて手紙を見、十二日の木曜、という一点だけを拾う。）"],
  "手紙・パンフレット・出来事を報じる短いニュース記事など、簡単な資料。全部を読む必要はなく、自分が要る情報がどこかにある。",
  "命題 ── 要る情報の一項目。日付、場所、条件。資料のなかから、その項目だけを見つけて読み取る。",
  "文章は頭から順に読むものだという読み方のため、要る情報が一項目だけのときも最初の文から全部を日本語に置き換えて読み進め、探している項目だけを見つけて取り出す読み方ができない。",
