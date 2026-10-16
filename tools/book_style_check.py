@@ -193,6 +193,19 @@ def main():
                     if not any(ex in l for l in mine):
                         errors.append(f"{name}: No.{r['no']} の例文が「例」欄（当該行の帰属分）で無改変転写でない: {ex[:30]}")
                 if name in P3_SIX_FIELDS:
+                    # 第3部は「含む」でなく完全一致（要素の集合として）── 入れ子の項目の追加・You行への追記を落とす（カタログ35補遺1、検品⑥）
+                    if sorted(mine) != sorted(r['exponents']):
+                        errors.append(f"{name}: No.{r['no']} の「例」欄が帳簿の要素と完全一致でない（過不足または改変）")
+                    # 欄のラベルは段ブロック内に一度だけ（できること・例・聞くもの／読むもの・分かること・落とし穴〔0か1〕・前の段から／この段の位置〔合わせて1〕）
+                    def label_count(label):
+                        return len(re.findall(r'^\*\*' + re.escape(label) + r'\*\*', b, re.M))
+                    for label, want in (('できること', 1), ('例', 1), (P3_SIX_FIELDS[name], 1), ('分かること', 1)):
+                        if label_count(label) != want:
+                            errors.append(f"{name}: No.{r['no']} の「{label}」ラベルが{label_count(label)}回（1回のはず）")
+                    if label_count('日本語話者の落とし穴') > 1:
+                        errors.append(f"{name}: No.{r['no']} の「日本語話者の落とし穴」ラベルが重複")
+                    if label_count('前の段から') + label_count('この段の位置') != 1:
+                        errors.append(f"{name}: No.{r['no']} の「前の段から／この段の位置」ラベルが合わせて1回でない")
                     # 四欄の無改変転写（判断(bs)(bv)）：欄ラベル直後の本文が帳簿の値と完全一致。l1 が空の段は欄がないこと
                     def field_text(label):
                         m = re.search(r'^\*\*' + re.escape(label) + r'\*\* (.+)$', b, re.M)
