@@ -4,7 +4,7 @@
 
 deliverables/book/*.md を対象に、執筆要綱の機械化可能な範囲を検査する:
   1. データ層照合   : 章⇔全数シートの No 出現・jp 無改変転写・例文無改変転写（イタリック記号除去後）・出典 No 集合一致
-  2. 肖像素材照合   : 級の肖像⇔level_portraits の素材 No 全使用・出典包含（帳簿キーは「幕間」のまま＝目次上の機能名）
+  2. 肖像素材照合   : 級の肖像⇔level_portraits の素材 No 全使用・出典包含（帳簿キーは「幕間」のまま＝目次上の機能名）／柱の肖像「聞く人・読む人」⇔p3_inventory の肖像26件
   3. 用字           : 裸の「記述文」禁止／「能力記述文」は巻頭の係留1回のみ／各章・肖像の初出は同段落内に CEFR 係留／
                       「Can-Do」単独・「ディスクリプタ」禁止（巻頭の「Can-doリスト」係留は許容）
   4. 呪文パターン   : 既知の比喩固有述語・帳簿圧縮表現（事故型②③の再発防止。適否の本判定は精読）
@@ -85,6 +85,8 @@ PORTRAIT_REGISTRY = {
     '肖像_B2という人.md': 'B2',
     '肖像_C1という人.md': 'C1',
     '肖像_C2という人.md': 'C2',
+    # 柱の肖像（カタログ36・判断(bx)裁定2）── 素材の正は p3_inventory_209to11.json の「肖像」26件（Overall oral/reading comprehension）。
+    '肖像_聞く人読む人.md': 'p3:肖像',
 }
 
 INCANT = ['梯子を刻', 'を刻む', 'を刻んで', '梯子の主語', '梯子の中身']  # 事故型②③の既知形
@@ -234,8 +236,12 @@ def main():
 
         # 2. 肖像素材照合（級の肖像）
         if name in PORTRAIT_REGISTRY:
-            lp = json.load(open(os.path.join(ROOT, 'data', 'level_portraits.json'), encoding='utf-8'))
-            mat = set(sum(lp['幕間'][PORTRAIT_REGISTRY[name]]['素材'].values(), []))
+            if PORTRAIT_REGISTRY[name] == 'p3:肖像':
+                p3 = json.load(open(os.path.join(ROOT, 'data', 'p3_inventory_209to11.json'), encoding='utf-8'))
+                mat = set(int(n) for n in p3['肖像'])
+            else:
+                lp = json.load(open(os.path.join(ROOT, 'data', 'level_portraits.json'), encoding='utf-8'))
+                mat = set(sum(lp['幕間'][PORTRAIT_REGISTRY[name]]['素材'].values(), []))
             exempt = KNOWN_GAPS.get(name, set())
             body_cites = cited_numbers(t.split('出典：')[0])
             for n in sorted(mat - exempt):
