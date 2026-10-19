@@ -190,7 +190,7 @@ def _tokens(text):
                      or m.end() >= len(text)
     return toks
 
-SPEAKER_LABEL = re.compile(r"(?m)^[A-Z][A-Za-z]*(?: [a-z]+)?(?: [A-Z])?: ")  # 二語のラベル（Host mother / Shop assistant）も外す（CEFRカタログ37）
+SPEAKER_LABEL = re.compile(r"(?m)^[A-Z][A-Za-z]*(?: (?:mother|father|assistant))?(?: [A-Z])?: ")  # 二語のラベルは閉じた語形（Host mother / Host father / Shop assistant）だけ外す ── 「Quick question: 」のような発話を外さない（CEFRカタログ37補遺1）
 
 def check_sentence(sentence: str, row_level: str, single: dict, multi: dict,
                    allow: dict = None):
