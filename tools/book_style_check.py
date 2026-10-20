@@ -12,6 +12,7 @@ deliverables/book/*.md を対象に、執筆要綱の機械化可能な範囲を
   6. 「門」残存     : 書物は「〜言葉」へ統一（判断(aq)。専門・入門・部門・関門は除外）
   7. 出典定型文     : 章・肖像・総括章の定型文（No.帰属の断り）の存在
   8. 総括章照合     : ブロック引用⇔作業訳の逐語（縮約は……表示つきのみ）・出典二群＝本文使用・質の群⊆軸台帳（カタログ21）
+  9. 段の見出しの住所印 : 段の見出し行の No. は「＊No.N」（全角アスタリスク＝段の住所、カタログ37・判断(cb)）。丸カッコ「（No.N）」は本文の帰属の形
 
 比喩・対比の適否そのものは精読判定であり、本ツールは既知パターンの再発防止に限る
 （「greenは宣言の妥当性を保証しない」）。
@@ -78,9 +79,10 @@ SHEET_REGISTRY = {
     '範型章_知るために読む.md':    ('catalog_p3_reading.json', '知るために読む（第3柱：Reading for information and argument）'),
     # 第3部量産（カタログ36〜）
     '章_告知と指示を聞く.md':      ('catalog_p3_announcements.json', '告知と指示を聞く（第3柱：Understanding announcements and instructions）'),
+    '章_他人どうしの会話を聞く.md': ('catalog_p3_conversation.json', '他人どうしの会話を聞く（第3柱：Understanding conversation between other people）'),
 }
 # 第3部の章（判断(bs)：帳簿の四欄が書物の本文そのもの）── データ層照合を六欄へ広げる対象
-P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
+P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
 
 # 級の肖像（旧称・幕間。読者語彙は「肖像」＝カタログ36・判断(bx)、ファイル名も追随） → level_portraits のキー（帳簿側は「幕間」のまま）
 PORTRAIT_REGISTRY = {
@@ -389,6 +391,14 @@ def main():
         for short, full in SHORT_CHAPTER_NAMES.items():
             for m in re.finditer(r'「?' + re.escape(short) + r'」?(?:の)?章', masked):  # 「講義を聞く章」のように「の」を介さない形も落とす（カタログ36第4便補遺1）
                 errors.append(f"{name}: 章名の短縮形 …{t[max(0,m.start()-10):m.end()+4]}…（→「{full}」の章）")
+
+        # 5.9 段の見出しの住所印（カタログ37、判断(cb)）：段の見出し行でNo.は「＊No.N」（全角アスタリスク＝段の住所）。
+        #     丸カッコ「（No.N）」は本文中の帰属（引用元）の形で、見出しでは使わない。束エントリは「＊No.327・328」か、
+        #     文ごとに「文1 ＊No.327 文2 ＊No.328」。見出しの No. は全部が ＊ 付き、行末も ＊No. で終わる。
+        for m in re.finditer(r'^### .*No\..*$', t, re.M):
+            h = m.group(0)
+            if '（No.' in h or h.count('No.') != h.count('＊No.') or not re.search(r'＊No\.[\d・, ]+$', h):
+                errors.append(f"{name}: 段の見出しの住所印が「＊No.N」形でない …{h[:12]}…{h[-14:]}（判断(cb)）")
 
         # 5.6 裸の通し番号（No.なし。連番継続・英語例・件数は許容）
         body = t.split('出典：')[0]
