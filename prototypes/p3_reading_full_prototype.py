@@ -128,7 +128,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  ["News: Bridge to close for six months ── [photo: the bridge] The Old Bridge will close from 1 June for repairs. The work will cost £2 million. The city said the bridge is “safe but tired”. Buses will use the New Bridge.\nYou: （六か月の閉鎖、六月一日から、二百万ポンド、バスは新橋へ、と見出しと数字から要点を拾う。）"],
  "短いニュースや簡単な記事。見出し・数字・名前・図が目立つ作りで、それらが本文の意味を支える。",
  "要点 ── 主要な情報。見出しが何の話かを言い、数字と名前が核を与える。本文は全部読まなくてよい。",
- "見出しや数字を本文の添え物として扱い、頭から全部訳す読み方で本文の文章へ入るため、見出しと数字だけで取れたはずの要点に、本文を読み終えてから戻る。",
+ "見出しや数字を本文の添え物として扱い、頭から全部訳す読み方で本文の文章へ入るため、見出しと数字だけでつかめたはずの要点に、本文を読み終えてから戻る。",
  "筋（No.162）から要点へ。テキストの作り（見出し・数字・図）がサポートになる最初の段で、言葉の簡単さでなく紙面の形が条件になる。",
 ),
 164: (
