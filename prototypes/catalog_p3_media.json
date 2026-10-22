@@ -1,0 +1,267 @@
+{
+ "録音と放送を聞く（第3柱：Understanding audio (or signed) media and recordings）": {
+  "title": "録音と放送を聞く（Understanding audio (or signed) media and recordings）── 第3柱量産第三号・全数シート",
+  "scope": "全数（13件。聞く13 ── mode一様。C2なし）",
+  "type": "第3柱（受容）。梯子＝条件の解除の一本（ゆっくり→短さ→明快な標準語→標準語→逆境、条件なしの段はない）、深さ＝七層（『受容の課題』§2）は段の属性。糸は立てない。四欄（scene＝聞くもの・howwell＝分かること・l1・delta）は書物の本文そのもの（判断(bs)）。",
+  "essence": "録音と放送を聞く段は、聞き手の位置がいちばん遠い ── 話し手は同じ場になく、速さも明瞭さも収録のときに固定されている。但し書きは相手に頼むものでなく自分が選ぶもので、「ゆっくり」がB1まで残り、但し書きが全部消える段はなく、標準語がC1で非標準へ裏返る。層は中身の列（知っている言葉→一つの項目→要点→全体→含意）と語り手の列（好悪→気分・態度→視点→暗黙の態度と人間関係）の二列で、上端は放送を通して社会の言葉の変種と人の関係を聞き分ける段で閉じる。",
+  "axes": {
+   "条件": {
+    "ゆっくり": [
+     81,
+     80,
+     77,
+     79,
+     76,
+     73,
+     74
+    ],
+    "短さ": [
+     78,
+     75
+    ],
+    "明快な標準語": [
+     72
+    ],
+    "標準語": [
+     71,
+     70
+    ],
+    "逆境": [
+     69
+    ]
+   },
+   "深さ": {
+    "形": [
+     81
+    ],
+    "命題": [
+     80
+    ],
+    "筋": [
+     79
+    ],
+    "要点": [
+     77,
+     78,
+     75,
+     73,
+     74
+    ],
+    "全体": [
+     72,
+     71,
+     70
+    ],
+    "含意": [
+     69
+    ],
+    "立場": [
+     76
+    ]
+   }
+  },
+  "rows": [
+   {
+    "mode": "聞く",
+    "level": "Pre-A1",
+    "no": 81,
+    "en": "Can recognise words/signs, names and numbers that they already know in simple, short recordings, provided these are delivered very slowly and clearly.",
+    "jp": "非常にゆっくり明瞭であれば、簡単で短い録音の中の既知の語・名前・数字を認識できる。",
+    "exponents": [
+     "Recording: Hello. My name is Tom. … I am from London. … I am twenty-five.\nYou: （「トム」「ロンドン」「二十五」が、知っている語として聞き取れる。）",
+     "Recording: Bus number twelve. … Bus number twelve. … To the station.\nYou: （「十二」と「駅」が聞き取れる。）"
+    ],
+    "scene": "簡単で短い録音。学習者向けに吹き込まれた短い音声や、乗り場の録音案内のような、顔の見えない声。声は非常にゆっくり、非常に明瞭で、言うのは名前や場所の名、数のような、知っている語である。聞き取れなくても、聞き返す相手はそこにいない。",
+    "howwell": "知っている言葉 ── 録音の中に、知っている語・名前・数字が出た、と気づくこと。文の意味ではなく、自分の知っている言葉がそこにある、と分かればよい。",
+    "l1": "人名や地名は日本語でもカタカナで知っている語が多く、その音形で待っているため、強勢の位置や母音の違う英語の音形で言われると、知っているはずの名前がそれだと結びつかず、聞き取れたのは数字だけ、ということになる。",
+    "delta": "この章の梯子の起点。聞く側の章の起点のうち、「告知と指示を聞く」の章（No.67）が向かい合った相手の身振りつきの指示から、「他人どうしの会話を聞く」の章（No.29）が食卓の会話から始まるのに対して、この章は顔も身振りもない録音の声から始まる ── 話し手は同じ場におらず、聞き取れなかったときに見る顔も、聞き返す口もない。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A1",
+    "no": 80,
+    "en": "Can pick out concrete information (e.g. places and times) from short recordings on familiar everyday topics, provided they are delivered very slowly and clearly.",
+    "jp": "非常にゆっくり明瞭に伝えられれば、身近な日常の話題の短い録音から具体的情報（場所や時刻など）を拾える。",
+    "exponents": [
+     "Anna: Hi, it’s Anna. … The party is at my house. … On Saturday, at seven. … See you.\nYou: （場所はアンナの家、時は土曜の七時、と拾える。）",
+     "Recording: This is the City Library. … We open at nine. … We close at five. … Thank you.\nYou: （九時に開いて五時に閉まる、と時刻が拾える。）"
+    ],
+    "scene": "友だちが吹き込んだ留守電や、施設の短い録音案内のような、身近な日常の話題の短い録音。非常にゆっくり明瞭に話され、場所や時刻が一つずつ区切って言われる。留守電では、吹き込んだ相手が自分を知っていて、ゆっくり話してくれることもある ── ただしその配慮は録音の中で済んでいて、分からなくてもその場で聞き返すことはできない。",
+    "howwell": "一つの項目 ── どこで、何時に、という具体的な一項目。録音の全部ではなく、要る情報を一つ取り出せればよい。知っている語が出たと気づく段（No.81）から、その語が何を言っているかを一つ受け取る段へ。",
+    "l1": "短い録音でも頭から一語ずつ全部を聞き取ってから意味を取ろうとするため、要るのは場所と時刻の一項目だけなのに、その前の文の聞き取りに手間取っているあいだに肝心の一項目が過ぎてしまい、聞き取れた語はあるのに、どこで何時かは拾えていない。",
+    "delta": "知っている言葉（No.81）から一つの項目へ。聞き取るものが知っている語そのものから、場所と時刻という一項目の意味へ上がる。条件は「非常にゆっくり明瞭に」のまま。「告知と指示を聞く」の章の同じA1（No.66）が構内放送の数字・価格・時刻を数として聞き取る段であるのに対し、こちらは録音からどこで何時かを拾う段で、分かるものが数から項目へ変わる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 77,
+    "en": "Can understand and extract the essential information from short, recorded passages dealing with predictable everyday matters which are delivered slowly and clearly.",
+    "jp": "ゆっくり明瞭に伝えられれば、予測可能な日常の事柄を扱う短い録音から本質的な情報を理解し抽出できる。",
+    "exponents": [
+     "Recording: Thank you for calling Green Café. … We are open from Monday to Friday, from nine to six. … We are closed on Saturday and Sunday. … Thank you for calling.\nYou: （平日の九時から六時、土日は休み、という肝心の情報だけが取り出せる。）",
+     "Recording: Welcome to the museum. … Tickets are five dollars. … Children are free. … The museum closes at six. … Please do not take photos.\nYou: （大人五ドル、子どもは無料、六時まで、と要るものが抜き出せる。）"
+    ],
+    "scene": "店の電話の録音案内や、施設の入口で流れる案内のような、予測できる日常の事柄についての短い録音。不特定の人に向けて作られていて、ゆっくり明瞭に読み上げられ、何が言われるかは録音の種類からおおよそ見当がつく。",
+    "howwell": "要点 ── 録音の肝心の情報。全部ではなく、営業時間と休み、料金と閉館時刻、という用件の核を取り出せればよい。場所や時刻を一つ拾う段（No.80）から、用件として必要なものをそろえて抜き出す段へ。",
+    "l1": "",
+    "delta": "一つの項目（No.80）から用件の核へ。層は要点へ上がり、条件は「非常にゆっくり」から「ゆっくり」へ緩む。聞くものは自分に宛てられた伝言から、誰にでも向けた録音案内へ移り、「予測可能な」が付いて、録音の種類が次に来るものを予告する。「告知と指示を聞く」の章の同じA2（No.61）が短く簡単なアナウンスの要点をつかむ段で、向こうはその場で流れる放送、こちらは録音を自分で聞く。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 78,
+    "en": "Can extract important information from short broadcasts (e.g. the weather forecast, concert announcements, sports results), provided people talk clearly.",
+    "jp": "明瞭に話されれば、短い放送（天気予報、コンサート案内、スポーツ結果など）から重要情報を抽出できる。",
+    "exponents": [
+     "Radio: And now the weather. … Tomorrow will be cloudy, with some rain in the afternoon. … Temperatures around twelve degrees.\nYou: （明日は曇りで午後に雨、気温は十二度くらい、と要る情報が拾える。）",
+     "Radio: Football results. … City two, Town one. … And tickets for Saturday’s concert at the City Hall go on sale tomorrow at ten.\nYou: （シティが二対一で勝ち、コンサートの発売は明日十時、と分かる。）"
+    ],
+    "scene": "天気予報、コンサートの案内、スポーツの結果のような、短い放送。不特定の聞き手に向けて、決まった型で読み上げられる。速さの但し書きはなく、明瞭に話されていれば、という条件だけが残る。",
+    "howwell": "要点 ── 放送が伝えたい重要な情報。明日の天気、試合の結果、いつどこで、を放送の型どおりに受け取れればよい。録音案内の用件（No.77）と同じ層で、聞くものが自分のための録音から、誰にでも向けた放送へ変わる。",
+    "l1": "",
+    "delta": "条件の種類が変わる。「ゆっくり」が消え、入力の側の短さが条件になる ── 短い放送であれば、明瞭に話されてさえいれば、と。この章で初めて、伝言や案内ではなく放送を聞く段であり、速さは放送の側が決めている。「告知と指示を聞く」の章のA2+（No.60）が映画の上映案内や試合の案内、列車の遅延のような率直なアナウンスをその場で聞く段で、向こうはゆっくり明瞭にという条件が残り、こちらはそれがない。語る・書き上げる言葉の「公共アナウンス」の章のA2（No.294）が、短い定型のアナウンスを読み上げる側から立てている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2",
+    "no": 79,
+    "en": "Can understand the important points of a story and manage to follow the plot, provided the story is told slowly and clearly.",
+    "jp": "ゆっくり明瞭に語られれば、物語の重要な点を理解し、筋を追える。",
+    "exponents": [
+     "Narrator: There was a boy called Tom. … He had a small dog. … One day, the dog ran away. … Tom looked in the park. … He looked in the street. … Then he heard a noise in the garden. … The dog was there, under a tree.\nYou: （犬が逃げて、公園と通りを探し、最後に庭で見つけた、と筋が追える。）",
+     "Narrator: One day, Maria wanted to go to the sea. … But the train was late. … She waited and waited. … Then she took the bus. … She arrived at six, and she walked by the sea.\nYou: （海へ行こうとして、電車が遅れ、バスに乗り換えて着いて海辺を歩いた、という運びが追える。）"
+    ],
+    "scene": "短い物語の録音。語り手は一人で、聞き手のために作られた音声として、ゆっくり明瞭に語る。出来事は一つずつ順に語られ、間が置かれる。",
+    "howwell": "筋 ── 物語の重要な点と、出来事の運び。一文ごとの意味ではなく、何が起きて、次に何が起きて、どう終わったかが、はじめから終わりまで追えればよい。この章で、情報の録音から離れて物語を聞く最初の段。",
+    "l1": "",
+    "delta": "情報の録音（No.80・77）と同じA2に立つ、物語の段。層は一つの項目でも要点でもなく筋 ── 一項目を取り出すのでも用件の核を抜くのでもなく、出来事の運びを追う。条件は「ゆっくり明瞭に」で同じ。この章の物語の線はここで立ち、B1のNo.74（物語の要点と重要な詳細）へ続く。語る・書き上げる言葉の「経験を語る」の章では、A2+のNo.248（物語を簡単な箇条の並びで語る）が同じ運びを語る側から立てている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2+",
+    "no": 75,
+    "en": "Can understand the most important information contained in short commercials concerning goods and services of interest (e.g. CDs, video games, travel).",
+    "jp": "関心のある商品やサービス（CD、ゲーム、旅行など）の短いコマーシャルに含まれる最重要情報を理解できる。",
+    "exponents": [
+     "Advert: New from Sunny Travel. … Three days in Rome, flights and hotel, from one hundred and ninety-nine dollars. … Book before Friday. … Sunny Travel.\nYou: （ローマ三日間、航空券とホテル込みで百九十九ドルから、申し込みは金曜まで、と肝心の情報が拾える。）",
+     "Advert: The new Star Driver is here. … Play with your friends online. … In shops from Monday. … Only twenty-nine ninety-nine.\nYou: （新作のゲームが月曜に発売、二十九・九九、と要るものだけ拾える。）"
+    ],
+    "scene": "関心のある商品やサービスの、短いコマーシャル。売る側が作った音声で、速さにも明瞭さにも但し書きはない。残る条件は、自分が関心を持っている商品であること ── 何が売られているかを知っていることが、聞き取りを支える。",
+    "howwell": "要点 ── コマーシャルの最重要情報。何が、いくらで、いつから、いつまで。宣伝の言葉の全部ではなく、自分が買うかどうかを決めるのに要る情報が取り出せればよい。",
+    "l1": "",
+    "delta": "短い放送の重要情報（No.78）と同じ層で、聞くものが天気や結果の放送から売る側の音声へ。条件は短さのまま、「明瞭に」も消えて、代わりに「関心のある」が付く ── 話し手の側の条件が一つもなくなり、聞き手の側の条件だけが残る最初の段。この章では、速さを相手に頼めない代わりに、自分の知っている題材を選ぶことが聞き手の手加減になり、それがここで始まる。"
+   },
+   {
+    "mode": "聞く",
+    "level": "A2+",
+    "no": 76,
+    "en": "Can understand in an interview what people say they do in their free time, what they particularly like doing and what they do not like doing, provided they speak slowly and clearly.",
+    "jp": "ゆっくり明瞭に話されれば、インタビューで人々が余暇に何をするか、特に何をするのが好きか、何が好きでないかを理解できる。",
+    "exponents": [
+     "Interviewer: What do you do at the weekend, Sam?\nSam: Well, on Saturday I play football. I love it. … And on Sunday I stay at home. … I’m not a big fan of shopping.\nYou: （サッカーが好きで、買い物は好きでない、と分かる。）",
+     "Interviewer: Do you like cooking?\nGuest: Cooking? … Not really, no. … I like eating! … I watch a lot of films, though.\nYou: （料理は好きでなく、映画が好き、と振り分けられる。）"
+    ],
+    "scene": "録音されたインタビュー。聞き手役が尋ね、相手が余暇に何をするか、何が好きで何が好きでないかを答える。ゆっくり明瞭に話されていれば、という条件。",
+    "howwell": "立場 ── 話している人が、何を好み、何を好まないか。何をするかという事実だけでなく、その人がそれをどう思っているかを、答えから聞き取る。この章で、話し手の側に立って聞く最初の段。",
+    "l1": "好きでないことが「あまり好きではない」「特に熱心というわけではない」のような弱めた否定で言われる型に慣れていないため、それをどちらでもないという答えとして聞いてしまい、相手が好きでないと言ったものを、好き嫌いの外に置いてしまう。",
+    "delta": "同じA2+に立つ、もう一つの段。コマーシャルの最重要情報（No.75）とは層が違い、事実ではなく話し手の好悪を聞き取る ── この章の語り手の列はここで立ち、B2のNo.71（気分・態度）、B2+のNo.70（視点・態度）を経て、C1のNo.69（暗黙の態度と人間関係）へ続く。「他人どうしの会話を聞く」の章の同じA2+（No.27）が、誰が同意し誰が反対したかを聞き分ける段で、向こうは話し手どうしの関係、こちらは話し手と物事の関係である。語る・書き上げる言葉の「経験を語る」の章のA2+（No.253）が、何が好きで何が嫌いかを説明する側から立てている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 73,
+    "en": "Can understand the main points of news bulletins and simpler recorded material about familiar subjects delivered relatively slowly and clearly.",
+    "jp": "比較的ゆっくり明瞭に伝えられれば、ニュースや身近な題材の簡単な録音素材の要点を理解できる。",
+    "exponents": [
+     "Newsreader: Good evening. … The city’s new bridge opened today, two months late. … Hundreds of people walked across it this morning. … The old bridge will close next week. … And in sport, City won again, two one.\nYou: （新しい橋が二か月遅れで開通し、古い橋は来週閉鎖、市のチームはまた勝った、と項目ごとの要点がつかめる。）",
+     "Narrator: Many people in Britain keep a dog. … Dogs need a walk every day, even in the rain. … A small dog is a good choice if you live in a flat.\nYou: （イギリスでは犬を飼う人が多く、毎日の散歩が要り、集合住宅なら小型犬、と要点がつかめる。）"
+    ],
+    "scene": "ニュースの放送と、身近な題材についての簡単な録音素材。学習者を含む不特定の聞き手に向けて、比較的ゆっくり明瞭に読み上げられる。題材が身近であること、話す速さが抑えられていることの二つが支えになる。",
+    "howwell": "要点 ── ニュースの項目ごとに、何が起きたか。身近な題材の録音なら、何について何を言っているか。細部まで追う必要はなく、各項目の核がつかめればよい。",
+    "l1": "",
+    "delta": "「ゆっくり」が戻る段。A2で短い放送（No.78）、A2+でコマーシャル（No.75）と、速さの但し書きがない段が続いたあと、B1のニュースで「比較的ゆっくり」が付く ── 放送のなかでも、学習者向けに速さを抑えて読まれるニュースという素材が、この級の手の届く範囲として言われている。層は要点のまま、聞くものが短い放送からニュース一本へ長くなる。「聴衆として聞く」の章の同じB1（No.45）が率直な一人語りの要点をつかむ段で、向こうは目の前の話し手、こちらは放送の声である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1",
+    "no": 74,
+    "en": "Can understand the main points and important details in stories and other narratives (e.g. a description of a holiday), provided the delivery is slow and clear.",
+    "jp": "ゆっくり明瞭に語られれば、物語などの語り（休暇の描写など）の要点と重要な詳細を理解できる。",
+    "exponents": [
+     "Speaker: Last summer we went to Cornwall. … We stayed in a small house by the sea. … Every morning we walked on the beach, … and one day we saw dolphins. … The weather was great, except for the last day. … It rained all day.\nYou: （コーンウォールの海辺の家に泊まり、毎朝浜を歩き、ある日イルカを見て、最後の日だけ雨だった、と要点と細部がつかめる。）"
+    ],
+    "scene": "物語や、休暇の描写のような語りの録音。一人の語り手が、聞き手のために作られた音声として、ゆっくり明瞭に語る。",
+    "howwell": "要点と重要な詳細 ── 語りの核と、それを支える細部。筋を追う段（No.79）の先で、何が起きたかだけでなく、どこで、どんなふうに、という語りの重要な細部までつかめればよい。",
+    "l1": "",
+    "delta": "物語の線の二段目。A2の筋（No.79）から、要点と重要な細部へ。層は筋から要点へ上がり、条件は「ゆっくり明瞭に」で同じ。ニュースの要点（No.73）と同じB1に立ち、向こうは出来事の報告、こちらは一人の語り。語る・書き上げる言葉の「経験を語る」の章の同じB1（No.241・247）が、物語を語る側から立てている。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B1+",
+    "no": 72,
+    "en": "Can understand the information content of the majority of recorded or broadcast material on topics of personal interest delivered in clear standard language.",
+    "jp": "明瞭な標準語で伝えられる、個人的関心のある話題の録音・放送素材の大部分の情報内容を理解できる。",
+    "exponents": [
+     "Host: Welcome back to the show. … This week, winter cycling. … The first thing is lights. Get good ones, front and back. … Then clothing. … You don’t need much, but you need the right things. … Gloves, and something for your ears.\nYou: （冬の自転車は前後のライトと、手袋と耳当てのような装備、と放送の大部分が頭に入る。）",
+     "Narrator: Making bread at home is easier than people think. … You need flour, water, salt and yeast. … Mix, wait an hour, … then bake for thirty minutes.\nYou: （材料四つ、混ぜて一時間おいて三十分焼く、と言われたことのほとんどが分かる。）"
+    ],
+    "scene": "自分の関心のある話題についての録音や放送。趣味の番組、入門の講座のような素材で、明瞭な標準語で話される。話題を知っていることと、言葉が標準的で明瞭であることの二つが支えになる。",
+    "howwell": "全体 ── 情報内容の大部分。要点だけでなく、言われたことの大半が一つの像として頭に入る。ただし求められているのは情報内容であって、話し手の態度や含みはまだ問われない。",
+    "l1": "",
+    "delta": "「ゆっくり」が消える段。B1のニュース（No.73）で戻った速さの但し書きがここで外れ、代わりに「明瞭な標準語で」と「個人的関心のある話題」が条件になる ── 速さを素材に頼めなくなった聞き手が、自分の知っている話題を選ぶことで理解を支える。層は要点から全体へ上がる。「聴衆として聞く」の章の同じB1+（No.42）が、自分の専門の明瞭な講義の要点を追う段で、向こうは要点、こちらは大部分である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2",
+    "no": 71,
+    "en": "Can understand most documentaries and most other recorded or broadcast material delivered in the standard form of the language and can identify mood, attitude, etc.",
+    "jp": "標準語で伝えられるドキュメンタリーその他の録音・放送素材の大半を理解し、気分・態度などを特定できる。",
+    "exponents": [
+     "Narrator: In 1950, the town had three mines, and nearly everyone worked in them. … Today there is one, and it closes next year.\nMiner: We knew it was coming. Everybody knew. … Still, it’s the end of something, isn’t it.\nYou: （鉱山の町の盛衰という中身と、元鉱夫の諦めと寂しさが混じった気分が分かる。）",
+     "Presenter: The new line was supposed to open in 2020. … It is now 2026, and the first train has still not run.\nResident: Oh, we’ve stopped asking. We just laugh about it now.\nYou: （鉄道の遅れという事実と、住民の呆れた態度が分かる。）"
+    ],
+    "scene": "ドキュメンタリーや、その他の録音・放送素材。標準語で伝えられていれば、という条件だけが残り、速さも明瞭さも話題も、もう条件ではない。制作された番組で、語り手の声と、取材された人の声が混じる。",
+    "howwell": "全体 ── ドキュメンタリーの大半。それに加えて、語り手や取材された人の気分・態度。何が語られたかだけでなく、それをどういう気持ちで語っているかまで聞き取る。",
+    "l1": "ドキュメンタリーが扱う制度や暮らしの仕組みを、日本の同じ名前の仕組みの像で聞いてしまうため、語は聞き取れているのに、何が問題にされ、なぜ人がそれを嘆いているのかが組み上がらない。",
+    "delta": "「明瞭な」と「関心のある話題」（No.72）が外れ、標準語であることだけが条件になる。層は全体のまま、気分・態度という語り手の側の要素が加わる ── A2+のインタビューの好悪（No.76）で立った語り手の列が、ここで中身の列と同じ段に同居する。「聴衆として聞く」の章の同じB2（No.40）が、表明された視点を報告された事実と区別する段で、向こうは目の前の話し手、こちらは番組の声である。"
+   },
+   {
+    "mode": "聞く",
+    "level": "B2+",
+    "no": 70,
+    "en": "Can understand recordings in the standard form of the language likely to be encountered in social, professional or academic life and identify viewpoints and attitudes as well as the information content.",
+    "jp": "社会・職業・学術生活で出会いそうな標準語の録音を理解し、情報内容だけでなく視点や態度も特定できる。",
+    "exponents": [
+     "Speaker: Let me say where I stand. … I’d argue the data don’t support a full launch yet. … The pilot shows a ten per cent gain, which is real, … but the sample is small, and it’s one site.\nYou: （十パーセントの改善という情報と、全面導入にはまだ慎重だという話し手の視点を、分けて聞き取れる。）",
+     "Lecturer: The usual story is that the printing press caused the Reformation. … It seems to me that gets the order wrong. … The demand came first; the press met it.\nYou: （通説と、それに対する講師自身の見方とが区別できる。）"
+    ],
+    "scene": "会議の録音、講義の録音、職場や学会の音声配信のような、社会生活・職業生活・学術生活で出会う録音。標準語であることが条件で、話し手は専門の聞き手に向けて話している。",
+    "howwell": "全体 ── 録音の情報内容。それに加えて、話し手の視点と態度。何が言われたかと、話し手がそれをどう見ているかを、別のものとして聞き分ける。",
+    "l1": "話し手が自分の見方を示すときの弱めの言い回し（「私としては」「〜と言えそうだ」のような印）を聞き流してしまうため、話し手の見解を情報内容と同じ事実として聞いてしまい、何が情報で何が視点かの区別がつかない。",
+    "delta": "同じ「標準語で」の条件のまま、聞くものがドキュメンタリー（No.71）から自分の生活の場の録音へ、分かるものが気分・態度から視点へ。層は全体のままで、語り手の列の要素が「どういう気持ちか」から「どういう見方か」へ進む。「聴衆として聞く」の章の同じB2+（No.37）が、時事や自分の専門の話題について表明された視点を理解する段で、向こうは生の講演、こちらは録音 ── 同じ課題を聴衆の席と録音の前から見た裏面だが、場面が違うので対としては採らない。"
+   },
+   {
+    "mode": "聞く",
+    "level": "C1",
+    "no": 69,
+    "en": "Can understand a wide range of recorded and broadcast material, including some non-standard usage, and identify finer points of detail including implicit attitudes and relationships between people.",
+    "jp": "一部の非標準的な語法を含む幅広い録音・放送素材を理解し、暗黙の態度や人間関係を含む細かな点を特定できる。",
+    "exponents": [
+     "Woman: Ye’ll be wanting your tea, then.\nMan: Aye.\nWoman: Sit yourself down. … I’ve not seen you since the funeral.\nMan: No. … No, you haven’t.\nYou: （方言混じりの短いやりとりから、二人が近い間柄で、葬儀以来のわだかまりがある、と言われていない関係まで分かる。）",
+     "Interviewer: You worked with him for twenty years.\nGuest: I did, aye. … He was … thorough, like. Very thorough.\nInterviewer: You didn’t get on.\nGuest: I never said that.\nYou: （方言の混じる短い答えから、「几帳面だった」の言い方と間に含まれた、好意はなかったという態度が分かる。）"
+    ],
+    "scene": "ドラマ、インタビュー、討論など、幅広い録音・放送素材。標準語という条件が外れ、一部に地域の方言や口語的な言い方を含んでいても、という逆向きの条件になる。",
+    "howwell": "含意 ── 言われていないことまで含む細かな点。言葉に出された態度や関係ではなく、言い方と間と呼び方に含まれた態度、二人のあいだの関係を読み取る。この章の最上段で、梯子はここで言外へ出て終わる。",
+    "l1": "",
+    "delta": "条件の列の終わり。「標準語で」（No.71・70）という助ける条件が、「非標準的な語法を含んでも」という妨げの条件へ形を変える。層は全体から含意へ出て、語り手の列（76→71→70）もここで言外に合流する ── 視点として示されたもの（No.70）から、示すつもりのない態度と関係へ。この尺度にC2の段はない。「他人どうしの会話を聞く」の章の最上段（No.17）が言葉づかいの社会文化的な含意で閉じるのに対し、こちらは放送を通して、その社会の言葉の変種と人の関係を聞き分ける段で閉じる。"
+   }
+  ],
+  "discussion": [
+   "この尺度13行の条件句を並べると一本の列になる ── ゆっくり（非常にゆっくり明瞭に・ゆっくり明瞭に・比較的ゆっくり明瞭に：No.81/80/77/79/76/73/74）→ 短さ（短い放送・短いコマーシャル：No.78/75）→ 明快な標準語（No.72）→ 標準語（No.71/70）→ 逆境（一部の非標準的な語法を含んでも：No.69）。他の聞く側の章にはない形が二つある。一つは「ゆっくり」がB1まで残ること ── 「他人どうしの会話を聞く」の章でも「告知と指示を聞く」の章でもA2+で消える速さの但し書きが、ここではB1のニュース（No.73）と語り（No.74）に付く。もう一つは但し書きが全部消える段がないこと ── B1+で明瞭な標準語、B2・B2+で標準語と、言葉の標準性が最後まで条件に残り、C1で「非標準的な語法を含んでも」へ裏返る。深さは七層で引く ── 知っている言葉（81）・一つの項目（80）・筋（79）・要点（77/78/75/73/74）・全体（72/71/70）・含意（69）・立場（76）。層は二つの列をなす。中身の列は知っている言葉から一つの項目、要点、全体を経て含意へ出る。語り手の列はA2+のインタビューの好悪（76）で立ち、B2の気分・態度（71）、B2+の視点（70）では中身の列の段に第二の求めとして同居して、C1の暗黙の態度と人間関係（69）で言外に合流する。物語を聞く段が二つ（79の筋、74の要点と細部）、情報の列と並んで立つ。この尺度にC2の段はない。",
+   "CEFRは聞く側の尺度を、聞き手の位置で分けている ── やり取りの参加者（「相手の話を聞く」）から外へ出て、傍らで聞く者（「他人どうしの会話を聞く」）、生の聴衆の一員（「聴衆として聞く」）、そしてメディアを介した遠くの視聴者。この章はいちばん外の円である。「他人どうしの会話を聞く」の章で聞き手が失ったのは、話し手の手加減と聞き返す権利だった。この章では、話し手がそもそも同じ場にいない ── 顔も身振りも見えず、速さも明瞭さも収録のときに固定されていて、聞き手がそこにいても何一つ変わらない。素材は二種に割れる。下の段の伝言や短い録音（81・80・77）は、吹き込んだ相手が自分を知っていて配慮することもあるが、その配慮は録音のなかで済んでいて、分からなくても聞き返せない。上の段の放送・コマーシャル・インタビュー・ニュース・ドキュメンタリー（78以上）は不特定の聞き手に向けて制作された素材で、配慮は制作の側が最初から作り込むものになる。「ゆっくり」がB1まで残るのはそのためで、学習者向けに速さを抑えて作られた素材が存在するかぎり、その段は立つ。",
+   "聞く側のほかの章とは、同じ級に裏面を持ちながら、文言を共有しない。「告知と指示を聞く」の章のA2+（No.60）はその場で流れる率直なアナウンス、この章のA2（No.78）は短い放送で、向こうには「ゆっくり明瞭に」が残り、こちらにはない。「聴衆として聞く」の章のB2（No.40）・B2+（No.37）が表明された視点を聞き分ける段で、この章のB2（No.71）・B2+（No.70）が気分・態度・視点を聞き取る段 ── 同じ課題を聴衆の席と録音の前から見ているが、場面が違うので対としては採らない。語る・書き上げる言葉の側では、「経験を語る」の章のA2+（No.253＝好き嫌いの説明、No.248＝箇条の並びで物語を語る）とB1（No.241・247＝物語を語る）が、この章の76・79・74の語る側に当たり、「公共アナウンス」の章のA2（No.294）が78の読み上げる側に当たる。読む側に「知るために読む」の章があるのは、この章の素材が読むものに近いからである ── 書かれてから声になり、編集され、ジャンルの型を持つ談話を、実時間で、読み返しなしに受け取る。再スキャン（母集団34枚385行）で閾値内の対は0件で、最近傍は74/45（0.64、「聴衆として聞く」の章のB1の一人語りの要点）。参照台帳への新規収載はない。次の章「テレビ・映画・動画を見る」との違いは、映像の有無である。",
+   "日本語話者の落とし穴は五つの段に立つ。知っている言葉の段（81）では、人名・地名をカタカナの音形で待つこと。一つの項目を拾う段（80）では、全部を聞き取ってからでないと分かったことにならないという構えが、要る一項目を待ち構えて拾う聞き方を妨げること。全体の段では、話題の条件が消えて初めて効く日本の文脈の持ち込み（71）と、視点を示す弱めの印を聞き流して見解を事実として聞くこと（70）。語り手の列の起点（76）では、好きでないことが弱めた否定で言われる型に慣れていないこと。穴のない段は八つ ── 予測できる録音の用件（77）と順に語られる物語（79・74）には、80と同じ構え以外の要因がなく、条件がすでに型を与えている。短い放送（78）とコマーシャル（75）の型について日本語話者が外す形は指せない。関心のある話題（72）は条件が内容の知識を与えている。ニュース（73）が各項目を要点から始める型は、日本語の聞き手も慣れている。最上段（69）で呼び方や言葉づかいが関係を告げる型は、「他人どうしの会話を聞く」の章のNo.17と同じ形になり、非標準的な語法そのものは言葉の聞き取りの負荷であって含意の穴ではない。",
+   "この梯子を測るものさしは、ほかの聞く側の章と同じく、但し書きの数と向き、そして層である。ただしこの章では、但し書きの意味が違う。他の章の「ゆっくり明瞭に」は、目の前の相手が聞き手に向けてする手加減で、分からない顔をすれば引き出せる。この章の「ゆっくり明瞭に」は素材の属性で、再生する前に決まっている ── 但し書きは相手に頼むものではなく、自分が選ぶものである。だからこの尺度には、話し手の側の条件が一つもない段（コマーシャルのNo.75）があり、代わりに聞き手の側の条件（関心のある、身近な、個人的関心のある：75・73・72）が三つ付く。速さを頼めない聞き手は、自分の知っている題材を選ぶことで理解を支える。上端は暗黙の態度と人間関係（69）で閉じる ── 「聴衆として聞く」の章が一人の話し手の含みと冗談で、「他人どうしの会話を聞く」の章が言葉づかいの含意で閉じるのに対して、この章は放送という公共のものを通して、その社会の言葉の変種と人の関係を聞き分ける段で閉じる。"
+  ]
+ }
+}
