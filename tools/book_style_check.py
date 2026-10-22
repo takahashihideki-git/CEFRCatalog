@@ -80,9 +80,10 @@ SHEET_REGISTRY = {
     # 第3部量産（カタログ36〜）
     '章_告知と指示を聞く.md':      ('catalog_p3_announcements.json', '告知と指示を聞く（第3柱：Understanding announcements and instructions）'),
     '章_他人どうしの会話を聞く.md': ('catalog_p3_conversation.json', '他人どうしの会話を聞く（第3柱：Understanding conversation between other people）'),
+    '章_録音と放送を聞く.md': ('catalog_p3_media.json', '録音と放送を聞く（第3柱：Understanding audio (or signed) media and recordings）'),  # 量産第三号（カタログ38、判断(cd)）
 }
 # 第3部の章（判断(bs)：帳簿の四欄が書物の本文そのもの）── データ層照合を六欄へ広げる対象
-P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
+P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの', '章_録音と放送を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
 
 # 級の肖像（旧称・幕間。読者語彙は「肖像」＝カタログ36・判断(bx)、ファイル名も追随） → level_portraits のキー（帳簿側は「幕間」のまま）
 PORTRAIT_REGISTRY = {
