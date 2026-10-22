@@ -247,6 +247,7 @@ if __name__ == "__main__":
         _lv_order = ["Pre-A1", "A1", "A2", "A2+", "B1", "B1+", "B2", "B2+", "C1", "C2"]
         _prev_min = -1
         for _c, _nos in P3["axes"]["条件"].items():
+            assert _nos, f"p3 条件の区分が空 {p3_scale}: {_c}"  # 空区分は min() の ValueError でなく名指しで落とす（カタログ38補遺1）
             _mn = min(_lv_order.index(D["descriptors"][str(_n)]["level"]) for _n in _nos)
             assert _mn >= _prev_min, f"p3 条件の区分が級順でない {p3_scale}: {_c}"
             _prev_min = _mn
