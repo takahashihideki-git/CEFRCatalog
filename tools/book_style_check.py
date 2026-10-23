@@ -81,9 +81,10 @@ SHEET_REGISTRY = {
     '章_告知と指示を聞く.md':      ('catalog_p3_announcements.json', '告知と指示を聞く（第3柱：Understanding announcements and instructions）'),
     '章_他人どうしの会話を聞く.md': ('catalog_p3_conversation.json', '他人どうしの会話を聞く（第3柱：Understanding conversation between other people）'),
     '章_録音と放送を聞く.md': ('catalog_p3_media.json', '録音と放送を聞く（第3柱：Understanding audio (or signed) media and recordings）'),  # 量産第三号（カタログ38、判断(cd)）
+    '章_相手の話を聞く.md': ('catalog_p3_interlocutor.json', '相手の話を聞く（第3柱：Understanding an interlocutor）'),  # 量産第四号（カタログ40、判断(cf)）
 }
 # 第3部の章（判断(bs)：帳簿の四欄が書物の本文そのもの）── データ層照合を六欄へ広げる対象
-P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの', '章_録音と放送を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
+P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの', '章_録音と放送を聞く.md': '聞くもの', '章_相手の話を聞く.md': '聞くもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
 
 # 級の肖像（旧称・幕間。読者語彙は「肖像」＝カタログ36・判断(bx)、ファイル名も追随） → level_portraits のキー（帳簿側は「幕間」のまま）
 PORTRAIT_REGISTRY = {
@@ -384,7 +385,7 @@ def main():
         # 5.8 章名の表記（規律4「章名の表記」、カタログ31＝判断(bo)補遺）：他章を指す章名は正式名を「 」で括る。
         #     ①正式な章題＋「の章」が「 」なしで現れる（直前が「・」でも検査する＝中黒の列挙を見逃さない、カタログ31補遺3）②短縮形（取引の章・苦情の章 等）は「 」の有無を問わず不可。
         #     並べて挙げた名の前のほう（「Aと「B」の章」）は原理的に見えない ── そこは精読の受け持ち。
-        #     指示語（この章・あちらの章・行為の章）とまとまり名の修飾（やり取りする言葉の「X」の章）は対象外。
+        #     指示語（この章・あちらの章・行為の章）とまとまり名の修飾（やりとりする言葉の「X」の章）は対象外。
         for ttl in CHAPTER_TITLES:
             for m in re.finditer(r'(?<!「)' + re.escape(ttl) + r'(?:の)?章(?!題)', t):
                 errors.append(f"{name}: 章名が「 」で括られていない …{t[max(0,m.start()-10):m.end()+4]}…（「{ttl}」の章）")
