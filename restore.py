@@ -254,7 +254,7 @@ if __name__ == "__main__":
             _mn = min(_lv_order.index(D["descriptors"][str(_n)]["level"]) for _n in _nos)
             assert _mn >= _prev_min, f"p3 条件の区分が級順でない {p3_scale}: {_c}"
             _prev_min = _mn
-        if p3_scale == "Reading for orientation":  # 量産第六号（判断(cj)）：探す読みはC級の段を持たず（上端B2+）、深さは形・命題・要点だけで閉じる（筋・全体・含意・立場は空）
+        if p3_scale == "Reading for orientation":  # 量産第六号（判断(cj)）：探し読みはC級の段を持たず（上端B2+）、深さは形・命題・要点だけで閉じる（筋・全体・含意・立場は空）
             assert not {D["descriptors"][str(r["no"])]["level"] for r in P3["rows"]} & {"C1", "C2"}, "p3 探して読むにC級の段がある"
             assert all(not P3["axes"]["深さ"][_l] for _l in ("筋", "全体", "含意", "立場")), "p3 探して読むの深さが形・命題・要点の外に出ている"
         p3_rows_by_scale[p3_scale], p3_mode_by_scale[p3_scale] = p3_seen, p3_mode
