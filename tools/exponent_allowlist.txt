@@ -70,3 +70,13 @@ quid	C1行83「かなりの俗語や慣用表現を使う映画」が要求す�
 telly	C1行83 同上（television の口語）（CEFRカタログ41）
 lift	A1行142 記述文原語 lifts（店内案内の「エレベーターの場所」）を実例内で演じる語。記述文由来語彙の裁定（platform と同種）（CEFRカタログ42）
 lifts	A1行142 同上（複数形）（CEFRカタログ42）
+beneficiary	C1行108「時々辞書を使えばどんな通信文でも」の、辞書を引く語そのもの（法律事務所の手紙の術語。antibiotic と同裁定）（CEFRカタログ43）
+executors	C1行108 同上（CEFRカタログ43）
+solicitor	C1行108 同上（CEFRカタログ43）
+skint	C1行110「私的な通信文の俗語・慣用表現・冗談」が要求する俗語そのもの（quid・telly と同裁定）（CEFRカタログ43）
+unreal	C1行110 同上（CEFRカタログ43）
+payday	C1行110 同上（CEFRカタログ43）
+bail	C1行110 同上（bail on ＝土壇場で逃げる、の俗語）（CEFRカタログ43）
+regulator	C2行107「複雑な話題の専門的・公式な通信文」の差出人の場面名詞（角括弧。antibiotic と同裁定）（CEFRカタログ43）
+amended	C2行107 同上（規制当局の手紙の術語）（CEFRカタログ43）
+emission	C2行107 同上（CEFRカタログ43）
