@@ -124,7 +124,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "A2の起点。A1のちらしや案内（No.144・142・143）が一枚の紙面で項目を拾う段であったのに対して、ここでは資料の種類が広がり、「予測できる」が条件に書かれる。どこに何があるかを知っている資料なら、見るべき場所へまっすぐ行ける。",
 ),
 139: (
- ["List: [local shops and companies, A to Z] Supermarkets … ／ Swimming pools … ／ Taxis — City Cabs, 24 hours, 0162 555 0199 · Star Taxis, 0162 555 0120 ／ Tyres …\nYou: （夜のタクシーなら「Taxis」の見出しへ跳び、二十四時間の会社の番号だけを選び出す。）"],
+ ["List: [local shops and companies, A to Z] Supermarkets … ／ Swimming pools … ／ Taxis — City Cabs, 24 hours, 0162-555-0199 · Star Taxis, 0162-555-0120 ／ Tyres …\nYou: （夜のタクシーなら「Taxis」の見出しへ跳び、二十四時間の会社の番号だけを選び出す。）"],
  "一覧。職業別の電話帳、店や施設のリスト、名簿。見出しの順（五十音順ならぬアルファベット順）で項目が並び、要る一件はその中のどこかにある。",
  "一つの項目 ── 一覧の中から要る一件を探し出し、それだけを選び出すこと。一覧の全部を読むのではなく、見出しで跳んで、条件に合う一件を取り出せればよい。",
  "文章は頭から順に読むものだという読み方のため、一覧を上から一件ずつ読んでいき、見出しで跳んで要る一件だけを選び出す読み方にならず、要る一件に行き着く前に読むのをやめてしまう。",
@@ -138,7 +138,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "標識の列の三段目。一語の標識（No.145）、知っている名前と句の掲示（No.141）の先で、公共の場と職場の掲示の全部が分かる。聞く側では「告知と指示を聞く」の章のA2（No.63）が時刻・日付・数の基本的な指示を聞く段で、職場の指示を、向こうは言われて、こちらは掲示で知る。この段の掲示を命令の形で書かれた指示として読む側は、「指示を読む」の章が受け持つ。",
 ),
 136: (
- ["Guidebook: Old Town — The market is on Saturday mornings in the old square. The castle is open from 10 to 5 (closed on Mondays). Buses 3 and 7 stop at the castle gate.\nYou: （城は月曜休み、三番か七番のバスで門まで、と行く日と行き方だけを探して読む。）"],
+ ["Guidebook: Old Town — The market is on Saturday mornings in the old square. The castle is open from 10 to 5 (closed on Mondays). Buses 3 and 7 stop at the castle gate.\nYou: （城は月曜休み、三番か七番のバスで城の入口まで、と行く日と行き方だけを探して読む。）"],
  "旅行ガイドやレシピのような、実用的で具体的な、何が書かれるか予測できるテキスト。簡単な言葉で書かれている。項目でなく文で書かれているが、作りは決まっている。",
  "一つの項目 ── 文章の中から、特定の情報を見つけること。ガイドなら開いている日と行き方、レシピなら材料の量。文章を読み通すのではなく、要る一点を探して読み取る。",
  "",
@@ -152,7 +152,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "No.136と同級で、探す段の列に初めて「主な点」をつかむ段が立つ。一つの項目を見つけるのでなく、短い説明の中で主な点と添えられた点を分ける。商品説明は短く簡単で、項目で並ぶので、要点を取る読みの中では最も軽い。",
 ),
 132: (
- ["Letter: [from the city council] Dear Resident, From 1 September, rubbish will be collected on Thursdays instead of Mondays. Please put your bins out by 7 a.m. on Thursday. Recycling days do not change. If you have any questions, call 0162 555 0100.\nYou: （九月からごみの日が木曜に変わる、七時までに出す、資源ごみはそのまま、と自分に関わる点を見つけて読む。）"],
+ ["Letter: [from the city council] Dear Resident, From 1 September, rubbish will be collected on Thursdays instead of Mondays. Please put your bins out by 7 a.m. on Thursday. Recycling days do not change. If you have any questions, call 0162-555-0100.\nYou: （九月からごみの日が木曜に変わる、七時までに出す、資源ごみはそのまま、と自分に関わる点を見つけて読む。）"],
  "手紙・パンフレット・短い公式文書のような日常の資料。役所からの通知、学校からの手紙、保険や契約の短い書類。簡単な言葉という但し書きはもうない。",
  "一つの項目 ── 資料の中から、自分に関係のある情報を見つけて理解すること。全部を読むのではなく、自分が何をすればよいか、いつからかが分かればよい。",
  "日本の通知が、挨拶の前文のあとに日時や持ち物を箇条書きで下にまとめる書式で待つため、最初の一文で用件を言い切る役所からの手紙を読み流し、自分のすべきことを文書の下のほうに探してしまう。",
@@ -175,7 +175,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "B1の探す読みの三段目。手紙（No.132）とラベル（No.133）が資料の中の一点を探す段であるのに対して、ここでは一本の記事を読むか読まないかを決める ── 読まずに済ませる、という判断がこの段で初めて課題になる。「知るために読む」の章のB1（No.158）が率直な記事の重要な点を読む段で、こちらはその記事を読む前に、読む価値を見きわめる。",
 ),
 135: (
- ["Advert: [in a newspaper] FLAT TO LET — 2 bedrooms, 3rd floor, near station. £850 per month, bills not included. No pets. Available 1 October. Call Mr Shaw, 0162 555 0177\nYou: （二部屋、駅近く、月八百五十ポンド、光熱費別、十月から、と重要な点をつかむ。）"],
+ ["Advert: [in a newspaper] FLAT TO LET — 2 bedrooms, 3rd floor, near station. £850 per month, bills not included. No pets. Available 1 October. Call Mr Shaw, 0162-555-0177\nYou: （二部屋、駅近く、月八百五十ポンド、光熱費別、十月から、と重要な点をつかむ。）"],
  "新聞や雑誌の広告。簡単で明確に書かれ、略語が多すぎない。部屋の貸し出し、求人、中古品の売買。",
  "要点 ── 広告の重要な情報は何か。部屋なら広さ・場所・家賃・いつから。広告の全部ではなく、応じるかどうかを決めるのに効く点がつかめればよい。",
  "",
@@ -187,7 +187,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "長めのテキスト。ウェブのページ、案内の冊子、複数のページにわたる資料。要る情報は一か所にまとまっておらず、一つのテキストの各所や、別々のテキストに散っている。",
  "一つの項目 ── 長めのテキストを走査して要る情報を探し出し、各所から、あるいは複数のテキストから集めること。一点を拾うのでなく、課題を果たすのに要る数点を、散った場所から集める。",
  "",
- "B1+の探す読み。B1の資料（No.132・133）が一枚か一通の中で探す段であったのに対して、ここでは長さが増え、要る情報が散っている。「走査する」が記述文に初めて書かれ、目を走らせて要る場所で止まる読み方が課題になる。",
+ "B1+の探す読み。B1の資料（No.132・133）が一枚か一通の中で探す段であったのに対して、ここでは長さが増え、要る情報が散っている。「走査する」がCan-Do記述文に初めて書かれ、目を走らせて要る場所で止まる読み方が課題になる。",
 ),
 131: (
  ["Magazine: [first page of a long article] Headline: Growing vegetables on a balcony ／ Subheadings: What to grow · Pots and soil · Watering · Common problems\nYou: （ベランダの菜園について、何を植えるか・鉢と土・水やり、と見出しの並びから、自分に使える話だと決めて読み始める。）"],
@@ -201,7 +201,7 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
  "長く複雑なテキスト。報告書、規約、専門の記事。要る細部は、何十ページかの中のどこかにある。",
  "一つの項目 ── 長く複雑なテキストを素早く走査して、関係のある細部を見つけること。テキストの難しさは問題でなく、要る一点に速く行き着けるかが問われる。",
  "一文ごとに日本語の語順に組み替えて読む読み方のため、目を走らせて要る語だけを拾う速い読みができず、長いテキストを頭から読み進めるうちに、探していた細部に着く前に時間が尽きる。",
- "B2で初めて「素早く」が記述文に書かれる。B1+（No.130）の長めの率直なテキストから、長く複雑なテキストへ。探す読み方は同じで、変わるのはテキストの長さと複雑さと、速さである。聞く側では「告知と指示を聞く」の章のC1（No.52）が、質の悪いアナウンスから特定の情報を抜き出す段で、向こうも上の級に一つの項目の段を残す。",
+ "B2で初めて「素早く」がCan-Do記述文に書かれる。B1+（No.130）の長めの率直なテキストから、長く複雑なテキストへ。探す読み方は同じで、変わるのはテキストの長さと複雑さと、速さである。聞く側では「告知と指示を聞く」の章のC1（No.52）が、質の悪いアナウンスから特定の情報を抜き出す段で、向こうも上の級に一つの項目の段を残す。",
 ),
 129: (
  ["Article: [a trade journal for transport companies] Headline: Ports face new delays as customs rules change ／ Lead: From April, all goods entering the country will need a new digital form, and port operators warn that the first weeks could bring delays of up to three days.\nYou: （見出しと冒頭で、四月からの通関の変更が自分の仕事に関わると判断し、詳しく読む価値があると決める。）",
