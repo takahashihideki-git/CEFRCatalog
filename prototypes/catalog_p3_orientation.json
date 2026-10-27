@@ -1,0 +1,374 @@
+{
+ "探して読む（第3柱：Reading for orientation）": {
+  "title": "探して読む（Reading for orientation）── 第3柱量産第六号・全数シート",
+  "scope": "全数（20件。読む20 ── mode一様。C級なし＝上端B2+、Pre-A1あり）",
+  "type": "第3柱（受容）。梯子＝条件の解除の一本（標識と掲示→項目の紙面→簡単な言葉→日常の資料→率直な文章→長く複雑→複数を並行）、深さ＝七層（『受容の課題』§2）は段の属性。糸は立てない。四欄（scene＝読むもの・howwell＝分かること・l1・delta）は書物の本文そのもの（判断(bs)）。",
+  "essence": "探して読む段は、但し書きの担い手が紙面の作りと読み手の用事にある ── 一語の標識は場が、ポスターや一覧は項目の順が、文章では見出しと節が探す場所を与え、上の段ではそれも外れて長さと複雑さと情報源の数が増える。読み手は最後まで全部を読まず、分かる深さは上の段でも一つの項目のままで、上がっていくのは読まずに済ませる範囲と速さである。全体の段を持たず、C級の段がなく、梯子はB2+の並行する走査で尽きる。",
+  "axes": {
+   "条件": {
+    "標識と掲示": [
+     145,
+     141,
+     140
+    ],
+    "項目の紙面": [
+     146,
+     142,
+     143,
+     144,
+     138,
+     139
+    ],
+    "簡単な言葉": [
+     136,
+     137,
+     135
+    ],
+    "日常の資料": [
+     132,
+     133
+    ],
+    "率直な文章": [
+     134,
+     131,
+     130
+    ],
+    "長く複雑": [
+     128,
+     129
+    ],
+    "複数を並行": [
+     127
+    ]
+   },
+   "深さ": {
+    "形": [
+     145,
+     141
+    ],
+    "命題": [
+     146,
+     142,
+     143,
+     144,
+     138,
+     139,
+     140,
+     136,
+     132,
+     130,
+     131,
+     128,
+     127
+    ],
+    "筋": [],
+    "要点": [
+     137,
+     133,
+     134,
+     135,
+     129
+    ],
+    "全体": [],
+    "含意": [],
+    "立場": []
+   }
+  },
+  "rows": [
+   {
+    "mode": "読む",
+    "level": "Pre-A1",
+    "no": 145,
+    "en": "Can understand simple everyday signs such as “Parking”, “Station”, “Dining room”, “No smoking”, etc.",
+    "jp": "「駐車場」「駅」「食堂」「禁煙」などの簡単な日常の標識を理解できる。",
+    "exponents": [
+     "Sign: [on a door] DINING ROOM\nYou: （食堂だ、と分かって入る。）",
+     "Sign: [by the street] P PARKING ／ [on a wall] NO SMOKING\nYou: （駐車場、禁煙、と一語ずつ分かる。）"
+    ],
+    "scene": "駐車場・駅・食堂・禁煙のような、日常の簡単な標識。一語か二語で、どこに掛かっているか（ドア・道端・壁）が何の標識かを先に教える。",
+    "howwell": "知っている言葉 ── 標識の語が、知っている語だと分かること。文を読むのではなく、一語が目に入って、場所と結びつけばよい。",
+    "l1": "知っている語でも、標識が大文字だけで書かれていると、教科書で見慣れた小文字の語形と結びつかず、一語の標識を一文字ずつ読んでしまう。",
+    "delta": "この章の梯子の起点。読む側のもう一つの起点（「知るために読む」の章のNo.172）が写真つきのメニューで品名と値段を読むのに対して、こちらは一語の標識で、探すまでもなく目に入るものを読む。この章の梯子は、目に入るものを読む段から、探して読む段へ、読まずに済ませる段へと上がる。"
+   },
+   {
+    "mode": "読む",
+    "level": "Pre-A1",
+    "no": 146,
+    "en": "Can find information about places, times and prices on posters, flyers and notices.",
+    "jp": "ポスター・チラシ・掲示から、場所・時間・価格についての情報を見つけられる。",
+    "exponents": [
+     "Poster: [on a wall] Music Night ／ Friday 13 June, 7.30pm ／ Riverside Hall ／ Tickets £5 at the door\nYou: （金曜の夜七時半、リバーサイドホール、入口で五ポンド、と場所と時間と値段を拾う。）"
+    ],
+    "scene": "ポスター・ちらし・掲示。催しの名前の下に、日時・場所・値段が一行ずつ並び、どこに何が書いてあるかを紙面の作りが教える。",
+    "howwell": "一つの項目 ── 場所・時間・値段という、要る項目を一つずつ見つけて読むこと。ポスター全体を読むのではなく、知りたい一行が見つかればよい。",
+    "l1": "午前・午後を時刻の前に置く日本語の書き方で待つため、時刻のあとに小さく添えられた午前・午後の印を落として読み、夜の催しの時刻を昼の時刻と読み違える。",
+    "delta": "標識の一語（No.145）から、紙面の中の一行へ。読むものが一語の標識からポスターになり、要る項目を探す読み方がここで初めて立つ。同じPre-A1で、聞く側の「告知と指示を聞く」の章の起点（No.67）が身振りつきの一語の指示であるのに対して、読む側は紙面が項目を並べてくれる。"
+   },
+   {
+    "mode": "読む",
+    "level": "A1",
+    "no": 141,
+    "en": "Can recognise familiar names, words/signs and very basic phrases on simple notices in the most common everyday situations.",
+    "jp": "最も一般的な日常の状況で、簡単な掲示の中の馴染みのある名前・語・ごく基本的な句を認識できる。",
+    "exponents": [
+     "Notice: [in the station] Trains to Leicester — this way ／ Way out →\nYou: （レスター行きはこちら、出口は右、と知っている名前と語を拾う。）"
+    ],
+    "scene": "最もよくある日常の場面の簡単な掲示。駅の案内板、店の張り紙、建物の入口の札。知っている名前と語と、ごく基本的な句が目に入る。",
+    "howwell": "知っている言葉 ── 掲示の中に、知っている名前と語と句を認めること。掲示の全文ではなく、行き先の名前と「こちら」「出口」のような基本の句が分かればよい。",
+    "l1": "旅行の案内書で片仮名で覚えた地名を、その音の形で待っているため、綴りが音と離れた地名が掲示に出ても同じ名前だと気づかず、知っているはずの行き先の案内を読み過ごす。",
+    "delta": "A1の起点。一語の標識（No.145）から掲示へ上がり、知っている語に名前と基本の句が加わる。同じ「知っている言葉」でも、標識は場が意味を与え、掲示は名前が意味を与える。聞く側では「録音と放送を聞く」の章の起点（No.81）が録音の中の知っている名前と語で立つ ── 向こうは音の中から、こちらは紙の上から。"
+   },
+   {
+    "mode": "読む",
+    "level": "A1",
+    "no": 142,
+    "en": "Can understand store guides (information on which floors departments are on) and directions (e.g. where to find lifts).",
+    "jp": "店内案内（各階の売り場情報）や道案内（エレベーターの場所など）を理解できる。",
+    "exponents": [
+     "Guide: [by the door of a big shop] 3 Toys · Books ／ 2 Men’s clothes ／ 1 Women’s clothes · Shoes ／ G Food · Cafe ／ Lifts: at the back\nYou: （本は三階、食品は地上階、エレベーターは奥、と売り場の階と場所を読む。）"
+    ],
+    "scene": "店内の案内板。各階の売り場と、エレベーターやトイレの場所が、階ごとに一行で並ぶ。",
+    "howwell": "一つの項目 ── 探している売り場がどの階にあり、エレベーターがどこにあるか。案内板の中で、自分の要る一行を見つけて読む。",
+    "l1": "地上の階を「一階」と数える日本の数え方で待つため、地上の階を別に数えて、その上を「一」から数え始める店内案内を読み違え、一つ下の階で売り場を探してしまう。",
+    "delta": "ポスターの一行（No.146）から、案内板の一行へ。探すものが催しの時間から場所（階・方向）になる。聞く側では「告知と指示を聞く」の章の同じA1（No.65）が、目の前の物がどこにあるかをゆっくり言われて分かる段で、同じ所在を、向こうは相手の言葉で、こちらは案内板で知る。"
+   },
+   {
+    "mode": "読む",
+    "level": "A1",
+    "no": 143,
+    "en": "Can understand basic hotel information (e.g. times when meals are served).",
+    "jp": "ホテルの基本情報（食事の時間など）を理解できる。",
+    "exponents": [
+     "Hotel: [card in the room] Breakfast 7.00–10.00, Garden Room ／ Dinner 6.30–9.30 ／ Pool: open 8.00–20.00 ／ Towels: ask at the desk\nYou: （朝食は七時から十時、ガーデンルーム、夕食は六時半から、プールは八時まで、と要る一行を読む。）"
+    ],
+    "scene": "ホテルの基本的な案内。部屋のカードや受付の掲示に、食事の時間と場所、設備の開いている時間が一行ずつ書かれている。",
+    "howwell": "一つの項目 ── 食事が何時から何時までか、どこで食べるか。案内の全部でなく、自分に要る一行が読めればよい。",
+    "l1": "",
+    "delta": "店内案内（No.142）と同じA1で、読むものがホテルの案内になる。探すものは場所から時間へ戻り、No.146のポスターの時刻を、今度は自分の泊まる場所で読む。"
+   },
+   {
+    "mode": "読む",
+    "level": "A1",
+    "no": 144,
+    "en": "Can find and understand simple, important information in advertisements, programmes for special events, leaflets and brochures (e.g. what is proposed, costs, the date and place of the event, departure times).",
+    "jp": "広告・特別行事のプログラム・チラシ・パンフレットから、簡単で重要な情報（内容・費用・日時・場所・出発時刻など）を見つけて理解できる。",
+    "exponents": [
+     "Leaflet: Boat Trip on the River ／ Every day, 11.00 and 14.00 from Town Bridge ／ 1 hour ／ Tickets £8, children £4 ／ Tea and cake on the boat\nYou: （何をする催しか、いくらか、いつどこから出るか、と要る点を見つけて読む。）",
+     "Programme: [for a town festival] Saturday 5 July ／ 10.00 Shops open ／ 14.00 Music in the park ／ 19.00 Dance by the river\nYou: （ダンスは七時、川のそば、と行きたい催しの時間と場所だけを拾う。）"
+    ],
+    "scene": "広告、特別な催しのプログラム、ちらし、パンフレット。何をするか・費用・日時と場所・出発時刻のような、簡単で重要な情報が項目で並ぶ。",
+    "howwell": "一つの項目 ── 内容・費用・日時・場所・出発時刻のうち、自分に要る項目を見つけて読むこと。ちらしの全部を読むのではなく、行くかどうかを決めるのに要る数点が拾えればよい。",
+    "l1": "",
+    "delta": "A1の三段目。ポスター（No.146）・店内案内（No.142）・ホテルの案内（No.143）が一枚の中の一行を読む段であるのに対して、ちらしとプログラムでは、要る項目が内容・費用・日時・場所と複数になり、拾う数が増える。読む側のもう一つの章（「知るために読む」の章のNo.170）が同じA1で同じちらしの見当をつける段で、向こうは何の催しかという像を、こちらは行くのに要る数点を取り出す。聞く側では「録音と放送を聞く」の章の同じA1（No.80）が、短い録音から場所と時間のような具体的な情報を拾い出す段で、同じ具体的な情報を、向こうは録音から、こちらはちらしから拾う。"
+   },
+   {
+    "mode": "読む",
+    "level": "A2",
+    "no": 138,
+    "en": "Can find specific, predictable information in simple everyday material such as advertisements, prospectuses, menus, reference lists and timetables.",
+    "jp": "広告・案内・メニュー・一覧・時刻表など、簡単な日常の資料から特定の予測可能な情報を見つけられる。",
+    "exponents": [
+     "Timetable: [bus 12, Saturday] Station 9.05 9.35 10.05 … ／ Hospital 9.20 9.50 10.20 … ／ Airport 9.50 10.20 10.50 …\nYou: （十時五分の駅発なら空港には十時五十分に着く、と要る一本だけを時刻表から拾う。）",
+     "Menu: Soups — Tomato £3.50 · Chicken £4 ／ Hot food — Chicken and rice £9 · Vegetable curry £8\nYou: （カレーは八ポンド、と探していた一行だけを見る。）"
+    ],
+    "scene": "広告・案内・メニュー・一覧・時刻表のような、簡単な日常の資料。何がどこに書かれているかが予測でき、要る情報は決まった場所にある。",
+    "howwell": "一つの項目 ── 予測できる特定の情報を見つけること。時刻表なら一本の時刻、メニューなら一品の値段。資料の作りが決まっているので、見るべき場所は読む前に分かっている。",
+    "l1": "",
+    "delta": "A2の起点。A1のちらしや案内（No.144・142・143）が一枚の紙面で項目を拾う段であったのに対して、ここでは資料の種類が広がり、「予測できる」が条件に書かれる。どこに何があるかを知っている資料なら、見るべき場所へまっすぐ行ける。"
+   },
+   {
+    "mode": "読む",
+    "level": "A2",
+    "no": 139,
+    "en": "Can locate specific information in lists and isolate the information required (e.g. use the Yellow Pages to find a service or tradesman).",
+    "jp": "リストの中から特定の情報を探し出し、必要な情報を選び出せる（例：職業別電話帳で業者を探す）。",
+    "exponents": [
+     "List: [local shops and companies, A to Z] Supermarkets … ／ Swimming pools … ／ Taxis — City Cabs, 24 hours, 0162 555 0199 · Star Taxis, 0162 555 0120 ／ Tyres …\nYou: （夜のタクシーなら「Taxis」の見出しへ跳び、二十四時間の会社の番号だけを選び出す。）"
+    ],
+    "scene": "一覧。職業別の電話帳、店や施設のリスト、名簿。見出しの順（五十音順ならぬアルファベット順）で項目が並び、要る一件はその中のどこかにある。",
+    "howwell": "一つの項目 ── 一覧の中から要る一件を探し出し、それだけを選び出すこと。一覧の全部を読むのではなく、見出しで跳んで、条件に合う一件を取り出せればよい。",
+    "l1": "文章は頭から順に読むものだという読み方のため、一覧を上から一件ずつ読んでいき、見出しで跳んで要る一件だけを選び出す読み方にならず、要る一件に行き着く前に読むのをやめてしまう。",
+    "delta": "No.138と同級で、読むものが時刻表やメニューから一覧へ。資料の作りが与えるのは項目の順（アルファベット順・分類）で、読み手はその順を使って跳ぶ。見出しで跳んで選び出す読み方がここで初めて立ち、この章のこの先の段はすべて、この跳ぶ読み方の上にある。"
+   },
+   {
+    "mode": "読む",
+    "level": "A2",
+    "no": 140,
+    "en": "Can understand everyday signs and notices, etc. in public places, such as streets, restaurants, railway stations; in workplaces, such as directions, instructions, hazard warnings.",
+    "jp": "街路・レストラン・駅などの公共の場や、職場の案内・指示・危険警告など、日常の標識や掲示を理解できる。",
+    "exponents": [
+     "Notice: [at the station] Keep left ／ Do not enter ／ [in a factory] Danger: hot. Do not touch ／ Hard hats must be worn here\nYou: （左側通行、立入禁止、熱いので触らない、ヘルメット着用、と掲示の指示と警告を一つずつ分かる。）"
+    ],
+    "scene": "街路・レストラン・駅のような公共の場の標識と掲示と、職場の案内・指示・危険の警告。一語の標識より長く、命令の形で書かれた一文の掲示が増える。",
+    "howwell": "一つの項目 ── 掲示が何をせよ、何をするなと言っているか。標識の語を知っているだけでなく、一文の指示と警告が一つずつ分かる。",
+    "l1": "",
+    "delta": "標識の列の三段目。一語の標識（No.145）、知っている名前と句の掲示（No.141）の先で、公共の場と職場の掲示の全部が分かる。聞く側では「告知と指示を聞く」の章のA2（No.63）が時刻・日付・数の基本的な指示を聞く段で、職場の指示を、向こうは言われて、こちらは掲示で知る。この段の掲示を命令の形で書かれた指示として読む側は、「指示を読む」の章が受け持つ。"
+   },
+   {
+    "mode": "読む",
+    "level": "A2+",
+    "no": 136,
+    "en": "Can find specific information in practical, concrete, predictable texts (e.g. travel guidebooks, recipes), provided they are produced in simple language.",
+    "jp": "簡単な言葉で書かれていれば、実用的で具体的・予測可能なテキスト（旅行ガイド、レシピなど）から特定情報を見つけられる。",
+    "exponents": [
+     "Guidebook: Old Town — The market is on Saturday mornings in the old square. The castle is open from 10 to 5 (closed on Mondays). Buses 3 and 7 stop at the castle gate.\nYou: （城は月曜休み、三番か七番のバスで門まで、と行く日と行き方だけを探して読む。）"
+    ],
+    "scene": "旅行ガイドやレシピのような、実用的で具体的な、何が書かれるか予測できるテキスト。簡単な言葉で書かれている。項目でなく文で書かれているが、作りは決まっている。",
+    "howwell": "一つの項目 ── 文章の中から、特定の情報を見つけること。ガイドなら開いている日と行き方、レシピなら材料の量。文章を読み通すのではなく、要る一点を探して読み取る。",
+    "l1": "",
+    "delta": "項目の紙面（No.138・139）から、文で書かれたテキストへ。探す読み方は同じだが、見出しや項目の順が探す場所を与えてくれず、文章の中から要る一点を見つける。その代わりに「簡単な言葉で」が条件に書かれる。レシピの手順を順に追って作る側は「指示を読む」の章にあり、こちらは材料の量や所要時間を探す側。"
+   },
+   {
+    "mode": "読む",
+    "level": "A2+",
+    "no": 137,
+    "en": "Can understand the main information in short and simple descriptions of goods in brochures and websites (e.g. portable digital devices, cameras).",
+    "jp": "パンフレットやウェブサイトの商品（携帯情報端末、カメラなど）の短く簡単な説明の主要情報を理解できる。",
+    "exponents": [
+     "Website: Travel Camera X20 — small and light (180 g) · takes photos and video · battery for 400 photos · £199\nYou: （軽い、動画も撮れる、電池が長持ち、二百ポンド弱、と商品の主な点をつかむ。）"
+    ],
+    "scene": "パンフレットやウェブサイトの商品説明。携帯機器やカメラのような品物について、短く簡単に、売りになる点が項目で並ぶ。",
+    "howwell": "要点 ── この商品の主な点は何か。大きさ・機能・値段のうち、買うかどうかを決めるのに効く点がつかめればよい。細かな仕様までは求められない。",
+    "l1": "",
+    "delta": "No.136と同級で、探す段の列に初めて「主な点」をつかむ段が立つ。一つの項目を見つけるのでなく、短い説明の中で主な点と添えられた点を分ける。商品説明は短く簡単で、項目で並ぶので、要点を取る読みの中では最も軽い。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1",
+    "no": 132,
+    "en": "Can find and understand relevant information in everyday material, such as letters, brochures and short official documents.",
+    "jp": "手紙・パンフレット・短い公式文書など、日常の資料から関連情報を見つけ理解できる。",
+    "exponents": [
+     "Letter: [from the city council] Dear Resident, From 1 September, rubbish will be collected on Thursdays instead of Mondays. Please put your bins out by 7 a.m. on Thursday. Recycling days do not change. If you have any questions, call 0162 555 0100.\nYou: （九月からごみの日が木曜に変わる、七時までに出す、資源ごみはそのまま、と自分に関わる点を見つけて読む。）"
+    ],
+    "scene": "手紙・パンフレット・短い公式文書のような日常の資料。役所からの通知、学校からの手紙、保険や契約の短い書類。簡単な言葉という但し書きはもうない。",
+    "howwell": "一つの項目 ── 資料の中から、自分に関係のある情報を見つけて理解すること。全部を読むのではなく、自分が何をすればよいか、いつからかが分かればよい。",
+    "l1": "日本の公的な通知が前文のあとに「記」として要点を箇条書きで下に置く型で待つため、第一段落に用件を言い切る役所からの手紙を読み流し、自分のすべきことを文書の下のほうに探してしまう。",
+    "delta": "文で書かれたテキストで、簡単な言葉という但し書きが外れる最初の段。旅行ガイド（No.136）が簡単な言葉で書かれた実用のテキストであったのに対して、役所の手紙や短い公式文書は言葉を選んでくれない。同じ手紙を、便りとして読む側は「手紙を読む」の章にあり、「知るために読む」の章のA2+（No.161）は同じ簡単な資料から要る情報を一点だけ拾う。こちらは資料の種類が公式文書まで広がり、関係のある情報を見つけたうえで理解する。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1",
+    "no": 133,
+    "en": "Can pick out important information about preparation and usage on the labels on foodstuff and medicine.",
+    "jp": "食品や薬品のラベルから、調理・使用についての重要情報を拾える。",
+    "exponents": [
+     "Label: [on a box of tablets] Take one tablet twice a day with water. Do not take more than two tablets in 24 hours. Not for children under 12. Use by 03/05/2026\nYou: （一回一錠、一日二回、二十四時間に二錠まで、十二歳未満は不可、期限は五月三日、と要る点だけを拾う。）",
+     "Label: [on a bag of rice] Cooking: Add 1 cup of rice to 2 cups of boiling water. Cover and cook for 12 minutes. Keep in a cool, dry place.\nYou: （水は米の二倍、十二分、と作り方の肝心な点を拾う。）"
+    ],
+    "scene": "食品や薬のラベル。調理の仕方、飲み方、量、期限、保存の仕方が、小さな字で詰めて書かれている。",
+    "howwell": "要点 ── 調理と使用について重要な情報は何か。ラベルの全部ではなく、どれだけ、どう、いつまでに、という使うのに効く点が拾えればよい。",
+    "l1": "日と月の順で書かれた期限を、月と日の順で読んでしまい、賞味期限や使用期限の日付を取り違える。",
+    "delta": "No.132と同級で、読むものが手紙からラベルへ。公式文書が自分に関係のある点を見つける段であるのに対して、ラベルは重要な点を拾う段で、使い方の要点を求める。薬の飲み方の指示に従う側は「指示を読む」の章にあり、こちらはラベルから要る点を拾い出す側。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1",
+    "no": 134,
+    "en": "Can assess whether an article, report or review is on the required topic.",
+    "jp": "記事・報告・レビューが求めている話題を扱っているかどうか判断できる。",
+    "exponents": [
+     "Article: [looking for something on cycling to work] Headline: City to build new bike lanes across the town by 2027 ／ First paragraph: The council said on Monday that it will build the lanes along five main roads …\nYou: （見出しと第一段落で、求めていた自転車通勤の話題だと判断し、本文へ進む。）",
+     "Review: Headline: A quiet hotel by the sea ／ First lines: We stayed three nights in May. The rooms were small but clean …\nYou: （探しているのは街なかのホテルなので、読まずに次へ行く。）"
+    ],
+    "scene": "記事・報告・レビュー。何かを探していて、目の前の一本がその話題を扱っているかどうかを決めたい。",
+    "howwell": "要点 ── この一本が、求めている話題を扱っているかどうか。中身を理解することではなく、見出しと冒頭から、読む価値があるかを判断する。",
+    "l1": "英文は頭から終わりまで全部読むものだという読み方のため、見出しと冒頭から話題を判断することができず、記事を終わりまで読んでから「求めていた話題ではなかった」と分かる。",
+    "delta": "B1の探す読みの三段目。手紙（No.132）とラベル（No.133）が資料の中の一点を探す段であるのに対して、ここでは一本の記事を読むか読まないかを決める ── 読まずに済ませる、という判断がこの段で初めて課題になる。「知るために読む」の章のB1（No.158）が率直な記事の重要な点を読む段で、こちらはその記事を読む前に、読む価値を見きわめる。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1",
+    "no": 135,
+    "en": "Can understand the important information in simple, clearly drafted adverts in newspapers or magazines, provided there are not too many abbreviations.",
+    "jp": "略語が多すぎなければ、新聞や雑誌の簡単で明確な広告の重要情報を理解できる。",
+    "exponents": [
+     "Advert: [in a newspaper] FLAT TO LET — 2 bedrooms, 3rd floor, near station. £850 per month, bills not included. No pets. Available 1 October. Call Mr Shaw, 0162 555 0177\nYou: （二部屋、駅近く、月八百五十ポンド、光熱費別、十月から、と重要な点をつかむ。）"
+    ],
+    "scene": "新聞や雑誌の広告。簡単で明確に書かれ、略語が多すぎない。部屋の貸し出し、求人、中古品の売買。",
+    "howwell": "要点 ── 広告の重要な情報は何か。部屋なら広さ・場所・家賃・いつから。広告の全部ではなく、応じるかどうかを決めるのに効く点がつかめればよい。",
+    "l1": "",
+    "delta": "商品説明（No.137）と同じ、要点を取る軽い段で、読むものが広告になる。但し書きの「略語が多すぎなければ」は、詰めて書かれた広告の紙面に固有のもので、言葉の簡単さがここでは略語の少なさとして書かれる。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1+",
+    "no": 130,
+    "en": "Can scan longer texts in order to locate desired information, and gather information from different parts of a text, or from different texts in order to fulfil a specific task.",
+    "jp": "長めのテキストを走査して必要な情報を探し出し、特定の課題を果たすためにテキストの各部や複数のテキストから情報を集められる。",
+    "exponents": [
+     "Website: [planning a weekend trip, three pages open] Page 1 — train times and prices ／ Page 2 — the museum’s opening hours and ticket prices ／ Page 3 — a cafe guide for the old town\nYou: （出発の列車、博物館が開く時間、昼食の店、と三つのページの要るところだけを拾って、一日の予定を組む。）",
+     "Text: [a long page about the city library] … Opening hours … ／ … How to join … ／ … Late fees …\nYou: （長いページを走らせて「How to join」の節だけ読み、会員になる方法を取り出す。）"
+    ],
+    "scene": "長めのテキスト。ウェブのページ、案内の冊子、複数のページにわたる資料。要る情報は一か所にまとまっておらず、一つのテキストの各所や、別々のテキストに散っている。",
+    "howwell": "一つの項目 ── 長めのテキストを走査して要る情報を探し出し、各所から、あるいは複数のテキストから集めること。一点を拾うのでなく、課題を果たすのに要る数点を、散った場所から集める。",
+    "l1": "",
+    "delta": "B1+の探す読み。B1の資料（No.132・133）が一枚か一通の中で探す段であったのに対して、ここでは長さが増え、要る情報が散っている。「走査する」が記述文に初めて書かれ、目を走らせて要る場所で止まる読み方が課題になる。"
+   },
+   {
+    "mode": "読む",
+    "level": "B1+",
+    "no": 131,
+    "en": "Can scan through straightforward, factual texts in magazines, brochures or on the web, identify what they are about and decide whether they contain information that might be of practical use.",
+    "jp": "雑誌・パンフレット・ウェブの率直な事実的テキストを走査して、何についてか特定し、実用的な情報を含むか判断できる。",
+    "exponents": [
+     "Magazine: [first page of a long article] Headline: Growing vegetables on a balcony ／ Subheadings: What to grow · Pots and soil · Watering · Common problems\nYou: （ベランダの菜園について、何を植えるか・鉢と土・水やり、と見出しの並びから、自分に使える話だと決めて読み始める。）"
+    ],
+    "scene": "雑誌・パンフレット・ウェブの率直な事実のテキスト。長めで、見出しと小見出しがある。",
+    "howwell": "一つの項目 ── 走査して、何についてのテキストかを特定し、実用になる情報を含むかどうかを決めること。中身を読むのではなく、見出しと小見出しの並びから、読む価値を判断する。",
+    "l1": "",
+    "delta": "No.130と同級で、走査の目的が、要る情報を集めることから、読むかどうかを決めることへ。B1のNo.134が一本の記事を話題で見きわめる段であったのに対して、ここでは率直な事実のテキストを、実用になるかどうかで見きわめる。"
+   },
+   {
+    "mode": "読む",
+    "level": "B2",
+    "no": 128,
+    "en": "Can scan quickly through long and complex texts, locating relevant details.",
+    "jp": "長く複雑なテキストを素早く走査し、関連する詳細を見つけられる。",
+    "exponents": [
+     "Report: [a 60-page report on housing; you need the number of empty homes] … 4.2 Empty homes — At the end of 2025 the city recorded 3,120 empty homes, of which 1,040 had been empty for more than two years …\nYou: （目次と見出しで4.2へ跳び、三千百二十戸、うち千四十戸が二年超、という一点だけを拾い出す。）"
+    ],
+    "scene": "長く複雑なテキスト。報告書、規約、専門の記事。要る細部は、何十ページかの中のどこかにある。",
+    "howwell": "一つの項目 ── 長く複雑なテキストを素早く走査して、関係のある細部を見つけること。テキストの難しさは問題でなく、要る一点に速く行き着けるかが問われる。",
+    "l1": "一文ごとに日本語の語順に組み替えて読む読み方のため、目を走らせて要る語だけを拾う速い読みができず、長いテキストを頭から読み進めるうちに、探していた細部に着く前に時間が尽きる。",
+    "delta": "B2で初めて「素早く」が記述文に書かれる。B1+（No.130）の長めの率直なテキストから、長く複雑なテキストへ。探す読み方は同じで、変わるのはテキストの長さと複雑さと、速さである。聞く側では「告知と指示を聞く」の章のC1（No.52）が、質の悪いアナウンスから特定の情報を抜き出す段で、向こうも上の級に一つの項目の段を残す。"
+   },
+   {
+    "mode": "読む",
+    "level": "B2",
+    "no": 129,
+    "en": "Can quickly identify the content and relevance of news items, articles and reports on a wide range of professional topics, deciding whether closer study is worthwhile.",
+    "jp": "幅広い職業的話題のニュース・記事・報告の内容と関連性を素早く見きわめ、詳しく読む価値があるか判断できる。",
+    "exponents": [
+     "Article: [a trade journal for transport companies] Headline: Ports face new delays as customs rules change ／ Lead: From April, all goods entering the country will need a new digital form, and port operators warn that the first weeks could bring delays of up to three days.\nYou: （見出しと冒頭で、四月からの通関の変更が自分の仕事に関わると判断し、詳しく読む価値があると決める。）",
+     "Report: Headline: Annual review of office energy use ／ Lead: Energy use fell by 4% across the company’s offices in 2025, mainly because of new lighting.\nYou: （自分の仕事には関わらないと見て、読まずに置く。）"
+    ],
+    "scene": "幅広い職業的話題のニュース・記事・報告。自分の仕事に直接は関わらない話題も含めて、目の前に次々と現れる。",
+    "howwell": "要点 ── 内容と関連を素早く見きわめ、詳しく読む価値があるかどうかを決めること。読むのは見出しと冒頭で、そこから中身と自分との関わりを判断する。",
+    "l1": "英語の記事や報告は第一段落で何を扱い何が起きたかを言い切るのに、結論を最後に置く文章の型で待つため、第一段落では関わりを判断できず、終わりまで読んでから読む価値がなかったと分かる。",
+    "delta": "B1のNo.134（一本の記事が求める話題か）から、幅広い職業的話題の記事を素早く見きわめる段へ。話題の幅が広がり、速さが加わる。「知るために読む」の章のB2（No.151）が書き手の側の決まった記事を読む段で、こちらはその記事を読むかどうかを決める側。"
+   },
+   {
+    "mode": "読む",
+    "level": "B2+",
+    "no": 127,
+    "en": "Can scan quickly through several sources (articles, reports, websites, books, etc.) in parallel, in both their own field and in related fields, and can identify the relevance and usefulness of particular sections for the task at hand.",
+    "jp": "自分の専門と関連する分野の複数の情報源（記事、報告書、ウェブサイト、書籍など）を並行して素早く走査し、目下の課題に対する各部分の関連性と有用性を特定できる。",
+    "exponents": [
+     "Sources: [open side by side: a journal article in your field, a government report, a company website, a textbook chapter in a related field] Article — the method section ／ Report — table 3, regional figures ／ Website — the product details ／ Textbook — the chapter summary\nYou: （四つを並べて走らせ、方法の節、表3、製品の仕様、章末のまとめ、と課題に使える箇所だけを一つずつ見きわめる。）"
+    ],
+    "scene": "複数の情報源 ── 記事・報告書・ウェブサイト・本 ── を並行して。自分の専門だけでなく、関連する分野のものも混じる。",
+    "howwell": "一つの項目 ── 複数の情報源を並行して素早く走査し、目の前の課題に対して、どの箇所が関係があり役に立つかを見きわめること。一つの情報源を読み通すのではなく、いくつもの情報源の使える箇所だけを取り出す。",
+    "l1": "",
+    "delta": "この章の梯子の終点。一本の長く複雑なテキスト（No.128）から、複数の情報源へ。読まずに済ませる範囲が、一つのテキストの大半から、いくつもの情報源の大半へ広がる。関連する分野まで及ぶが、求められるのは分野の内容を理解することではなく、使える箇所を見きわめることで、梯子は最後まで探す読みの形のまま尽きる。読む側のもう一つの章（「知るために読む」の章）の終点（No.147）が専門外の報告の含意を読む段であるのと、ちょうど裏返しの終点である。"
+   }
+  ],
+  "discussion": [
+   "探す読みの梯子も、入力の側の但し書きが外れていく列に宿る。本スケール20行の記述文を並べると、標識と掲示（No.145/141/140）→ 項目の紙面（146/142/143/144/138/139）→ 簡単な言葉（136/137/135）→ 日常の資料（132/133）→ 率直な文章（134/131/130）→ 長く複雑（128/129）→ 複数を並行（127）の七区分になる。但し書きの担い手は紙面の作りである ── 一語の標識は場が意味を与え、ポスターや時刻表や一覧は項目の順が探す場所を与え、文で書かれたテキストでは見出しと節がその代わりをし、上の段ではそれも外れて、長さと複雑さと情報源の数だけが増える。深さは七層で引くと、知っている言葉（145/141）・一つの項目（146/142/143/144/138/139/140/136/132/130/131/128/127の13段）・要点（137/133/134/135/129の5段）の三つに収まり、筋・全体・含意・立場の段がない。一つの項目の段がPre-A1からB2+まで13段あるのは、第3柱の既稿7シートのどれよりも厚く（「知るために読む」4・「告知と指示を聞く」5・「相手の話を聞く」4）、全体の段を一つも持たないのはこのシートだけである（『受容の課題』付録Aでは、残る三スケールにも全体の段がある）。上端はB2+（127）で、C級の段がなく、終点の層は一つの項目 ── 深さが上がる梯子ではなく、読まずに済ませる範囲と速さが上がる梯子である。",
+   "CEFR増補版は、読む尺度を読む目的で分けている。「探して読む」と「知るために読む」の違いは根本的だとされ、前者は探す読み（search reading）── 読む価値を判断するために速く読むこと（skimming）と、特定の情報を探すこと（scanning）── であり、後者は関連があると判断したテキストを注意深く読むことである（第3章 p.53）。この尺度の鍵概念は五つ ── テキストの種類の幅（短い掲示から記事や本まで）、紙面の作りから具体的な情報（時刻・値段）を拾うこと、重要な情報を特定すること、散文を走査して関連を判断すること、そして速さ（B2で現れる）（p.55）。つまりCEFRが自分で立てた軸は、テキストの種類と、探す技法の二本で、速さがその上に乗る。本書が但し書きの担い手を紙面の作りに置き、梯子を「読まずに済ませる範囲が広がる列」として読むのは本書の読みで、CEFRは目的と技法を言い、読まない範囲の広がりを軸には立てていない。『受容の課題』§5.2が訳読の転移の第二の形としてこのスケール全体を名指す（全部を順に訳す構えが、探す読みを頭から全部読む読みに置き換える）のも、本書の側の読みである。",
+   "境は四つある。「知るために読む」との境はCEFRが目的で引いており、同じ資料が両側に現れる ── 簡単な資料から要る情報を拾う段（向こうのNo.161、A2+／こちらのNo.132、B1）、見出しと数字から要点を拾う段（向こうの163、A2+／こちらの137・135）、専門の情報源から要るものを取り出す段（向こうの149、B2+／こちらの127、B2+）。向こうは読むと決めたテキストの中で層を上げ、こちらは読むかどうかを決め、読む場所を選ぶ。両スケールの文言は共有されず（再スキャンで閾値内の対はない）、対には載せない。「指示を読む」との境は、同じ掲示とラベルとレシピを、指示に従う側（向こう）と、要る点を探す側（こちら）で読むことにある（140の職場の掲示・133の薬のラベル・136のレシピ）。「手紙を読む」との境は、同じ手紙を便りとして読む側（向こう）と、要る情報の置き場として読む側（こちら、132）。聞く側との対は、同級で同じ層に立つ段を機械で並べ、課題まで一致するものを目で選ぶと二組ある ── 具体的な情報を拾う段（144↔「録音と放送を聞く」のNo.80、A1・一つの項目：ちらしから内容・費用・日時・場所を／短い録音から場所と時間を）と、所在を知る段（142↔「告知と指示を聞く」のNo.65、A1・一つの項目：案内板で売り場の階を／目の前の物がどこにあるかを言われて）。時刻と値段を拾う段（146・143↔No.66）は級と層が揃わない（66はA1・知っている言葉）。二組は散文に記録し、対の台帳（系「受容」）への収載は裁定事項として申し送る。",
+   "日本語話者の落とし穴は、この章では持ち込みがどこから来るかで三つに分かれる。一つは文字と数の形 ── 大文字だけの標識（145）、片仮名で覚えた地名の綴り（141）、時刻の午前・午後の位置（146）、階の数え方（142）、日付の順（133）で、紙面から一点を拾う段に集まる。もう一つは訳読で身についた読み方 ── 一覧を頭から読んで要る一件に着く前にやめる（139）、終わりまで読んでから求めていた話題でないと分かる（134）、一文ごとに組み替える読み方で速さが出ない（128）。三つめは文章の型 ── 公的な通知の「記」の型で待って第一段落の用件を読み流す（132）、結論を最後に置く型で待って第一段落で関わりを判断できない（129）。欄のある段は10、空欄は10で、空欄の理由は、同じ形しかない段（143・144・138・136・130・131）、段の条件が穴を支える段（簡単な言葉で書かれた136・略語の少ない135・短く簡単な137）、日本語話者に固有の持ち込みの形を『受容の課題』§5から指せない段（公共の掲示の命令形140、並行して見きわめる127）である。この章の欄は、文章の型と文脈の穴（§5.3・§5.4）が「知るために読む」より少なく、読み方の構えの穴（§5.2第二の形）が多い ── 探す読みは全体を組み立てないので、内容の持ち込みで外す段がなく、読み方そのもので外す。",
+   "この梯子を測るものさしは、読み手が読まずに済ませた範囲と、要る一点に着くまでの速さである。読み手は何も産出せず、「分かる」の形で書かれるのは他の章と同じだが、分かる深さは上の段でも一つの項目のままで、上がっていくのは、どれだけの長さと複雑さのテキストを、いくつの情報源を、読まずに済ませられるかである。ある段が自分にできるかどうかは、どんな紙面で、何を探していて、どれだけ読まずに要る点に着けるか、で確かめる。聞く・読む言葉の章の中で、いちばん上の段が一つの項目だけで閉じ、C級の段を持たないのはこの章だけで、梯子はB2+の並行する走査で尽きる ── 探す読みは、それ以上深くなる必要がない。"
+  ]
+ }
+}
