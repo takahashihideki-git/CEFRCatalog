@@ -258,7 +258,7 @@ if __name__ == "__main__":
         if p3_scale == "Reading for orientation":  # 量産第六号（判断(cj)）：探し読みはC級の段を持たず（上端B2+）、深さは形・命題・要点だけで閉じる（筋・全体・含意・立場は空）
             assert not {D["descriptors"][str(r["no"])]["level"] for r in P3["rows"]} & {"C1", "C2"}, "p3 探して読むにC級の段がある"
             assert all(not P3["axes"]["深さ"][_l] for _l in ("筋", "全体", "含意", "立場")), "p3 探して読むの深さが形・命題・要点の外に出ている"
-        if p3_scale == "Reading correspondence":  # 量産第七号（判断(cl)）：手紙は全部読む＝全体の段が過半（11／18、第3柱で唯一）、筋の段なし、要点は主題が広がる二段（113・111）だけ
+        if p3_scale == "Reading correspondence":  # 量産第七号（判断(cl)）：手紙は全部読む＝全体の段が過半（11／18、既稿9枚で本シートだけ＝付録Aでは「楽しみに読む」も11／18）、筋の段なし、要点は主題が広がる二段（113・111）だけ
             assert len(P3["axes"]["深さ"]["全体"]) == 11 and len(P3["axes"]["深さ"]["全体"]) * 2 > len(P3["rows"]), "p3 手紙を読むの全体の段が11段（過半）でない"
             assert not P3["axes"]["深さ"]["筋"], "p3 手紙を読むに筋の段がある"
             assert set(P3["axes"]["深さ"]["要点"]) == {113, 111}, "p3 手紙を読むの要点の段が113・111でない"
