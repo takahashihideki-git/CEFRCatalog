@@ -41,14 +41,14 @@
 | 1 形 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 9 |
 | 2 命題 | 7 | 8 | 8 | 3 | 1 | 2 | 1 | 2 | 1 | 0 | 33 |
 | 3 筋 | 1 | 4 | 8 | 7 | 7 | 2 | 2 | 0 | 0 | 0 | 31 |
-| 4 要点 | 0 | 0 | 5 | 6 | 10 | 4 | 4 | 2 | 0 | 0 | 31 |
-| 5 全体 | 0 | 4 | 8 | 5 | 9 | 6 | 11 | 3 | 9 | 4 | 59 |
-| 6 含意 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 4 | 10 |
+| 4 要点 | 0 | 0 | 5 | 6 | 10 | 5 | 4 | 2 | 0 | 0 | 32 |
+| 5 全体 | 0 | 4 | 8 | 5 | 9 | 5 | 11 | 3 | 8 | 3 | 56 |
+| 6 含意 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 5 | 12 |
 | 7 立場 | 0 | 0 | 0 | 2 | 1 | 1 | 4 | 1 | 1 | 0 | 10 |
 
 所見は四つ。
 
-1. **層5「全体」はPre-A1を除く全級にある**（A1からC2まで、59件、最多）。ごく簡単な言葉で書かれた関心の主題の短いテキストを理解する段（A1、No.171）と、長く複雑な幅広いテキストを詳細に理解する段（C1、No.148）は、求める表象の層としては同じで、違うのは入力の側である。深さが級を決めないことの、帳簿上の確認。
+1. **層5「全体」はPre-A1を除く全級にある**（A1からC2まで、56件、最多）。ごく簡単な言葉で書かれた関心の主題の短いテキストを理解する段（A1、No.171）と、長く複雑な幅広いテキストを詳細に理解する段（C1、No.148）は、求める表象の層としては同じで、違うのは入力の側である。深さが級を決めないことの、帳簿上の確認。
 2. **層6「含意」だけが級に縛られる**（C1・C2のみ）。言われていないことを補うには、言われたことの全体が組み上がっていなければならず、その全体が複雑な入力に対して求められる段でしか、記述文は含意を書かない。受容の梯子の上端が「含意」で閉じるのはこのため。
 3. **層1「形」と層2「命題」は下の級に集中し、層3「筋」はA2〜B1に集中する**。入力の側の条件がきつい段（ゆっくり・簡単な言葉・絵つき）では、求める層が低い。条件が緩むにつれて、求める層が上がる ── ただし一対一ではなく、同じ級に層2から層5までが並ぶ。
 4. **層7「立場」は散在する**（A2+の、会話で同意しているか反対しているかを認識する段〔No.27〕や、インタビューで余暇に何をするかを理解する段〔No.76〕から、C1の各参加者の態度を見分ける段〔No.19〕まで）。語り手の表象は、入力が簡単なら低い級でも求められる。
@@ -106,6 +106,8 @@
 型の不一致は、文章や語りだけでなく、用事のやりとりの手順にもある。宿の受付、バスの乗車、店の支払いのような決まったやりとりは、言語文化ごとに決まった順序で進む ── 英語圏のバスでは乗るときに運転手が行き先を尋ねて運賃を言い、宿では予約の有無・名前・泊数・朝食の時間・鍵の順に進む。日本語話者は日本の同じ用事の手順（降りるときに払う、名前を言えば部屋へ案内される）で次に来るものを待つので、相手が別の順で尋ねてくると、何を聞かれたかが一拍遅れる。決まったやりとりを無理なくこなせるだけ理解する段（No.417）で、やりとりの型が次に来るものを与えるという支えは、聞き手が持っている型が英語圏の手順であるときにだけ働く。層4（全体＝用事が済むだけの理解）の疎外要因で、相手が目の前にいる聞き方に現れる。
 
 型の不一致は手紙にもある。日本語の手紙は、宛名のあとに時候と安否の前文を置き、主文で用件を言い、末文で結ぶ ── 用件は中ほどに来る。公式の文書では本文のあとに「記」として日時や持ち物を下にまとめる。英語の手紙は、宛名の一行のすぐあとに用件か近況に入り（私的な手紙は礼の一言から本題へ、公式の手紙は第一段落に何の件かを言い、最後の段落に相手に求めること ── 返事・支払い・出席 ── を置く）。日本語の手紙の型で待つ読み手は、第一段落で言い切られた用件を前文の挨拶として読み流し、何の件かを文書の中ほどと下に探す。要る点を探して読む側では、役所からの通知の最初の一文を読み流す形で現れ（「探して読む」の章、No.132）、手紙を読む側では、あまり馴染みのない主題の公式の通信文を回すべき相手が分かる程度に理解する段（No.113）で、第一段落で何の件かをつかめず、誰に回すかが決まらない形で現れる（カタログ43）。層4（要点＝何の件か）の疎外要因で、読む側に現れる。
+
+型の不一致は、漫画のコマ運びにもある。日本の漫画はページの右上から左下へ、コマも吹き出しも右から左へ読む。英語の漫画は左から右へ進み、吹き出しも左のものから読む。右から左へ読む習慣で待つ読み手は、一つのコマの中の二つの吹き出しを逆の順に読み、コマの並びを逆にたどって、やりとりの前後と話の落ちを取り違える。高頻度の日常語で書かれた短く簡単な物語や漫画を読める程度に理解する段（「楽しみに読む」の章、No.198）で測られる筋の追い方は、コマの順が与えるものである（カタログ44）。層3（筋＝順序）の疎外要因で、読む側に現れる。
 
 ### 5.4 層4・層5 ── 内容スキーマの不一致
 
@@ -235,7 +237,7 @@
 
 ## 付録A ── 受容209件の層への写像
 
-（レベル順→No順。層の割付は本書の七層の定義による。相互参照29件は含めない。）
+（レベル順→No順。層の割付は本書の七層の定義による。相互参照29件は含めない。「楽しみに読む」の三段はカタログ44〔判断(cn)〕で写し直した ── 193は understand the main points で要点、190・188は implicit meanings を味わう段で含意〔「知るために読む」148と同じ基準〕。§3の表もそれに合わせた。）
 
 ### 聴衆として聞く（Understanding as a member of a live audience）
 
@@ -448,13 +450,13 @@
 | B1 | 195 | 5 全体 | understand descriptions of places, events, explicitly expressed feelings and perspectives in na… |
 | B1 | 196 | 5 全体 | understand a travel diary mainly describing the events of a journey and the experiences and dis… |
 | B1 | 197 | 3 筋 | follow the plot of stories, simple novels and comics with a clear linear storyline and high fre… |
-| B1+ | 193 | 5 全体 | read newspaper/magazine accounts of films, books, concerts, etc. produced for a wider audience … |
+| B1+ | 193 | 4 要点 | read newspaper/magazine accounts of films, books, concerts, etc. produced for a wider audience … |
 | B1+ | 194 | 5 全体 | understand simple poems and song lyrics provided these employ straightforward language and styl… |
 | B2 | 191 | 5 全体 | read for pleasure with a large degree of independence, adapting style and speed of reading to d… |
 | B2 | 192 | 5 全体 | read novels with a strong, narrative plot and that use straightforward, unelaborated language, … |
 | C1 | 189 | 6 含意 | read and appreciate a variety of literary texts, provided they can reread certain sections and … |
-| C1 | 190 | 5 全体 | read contemporary literary texts and non-fiction produced in the standard form of the language … |
-| C2 | 188 | 5 全体 | read virtually all forms of texts including classical or colloquial literary and non-literary t… |
+| C1 | 190 | 6 含意 | read contemporary literary texts and non-fiction produced in the standard form of the language … |
+| C2 | 188 | 6 含意 | read virtually all forms of texts including classical or colloquial literary and non-literary t… |
 
 ### 指示を読む（Reading instructions）
 
