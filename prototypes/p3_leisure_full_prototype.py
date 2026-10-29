@@ -172,8 +172,8 @@ R = {  # no -> (exponents, scene=読むもの, howwell=分かること, l1=落�
 ),
 191: (
  ["Magazine: [a travel page] Ten things to do in Lisbon this weekend ── 1. Take the old yellow tram up the hill. 2. Eat a sweet cake by the river. 3. …\nYou: （週末の旅先の十項目を、見出しと番号だけ追って速く読み、二つだけ覚えて先へ行く。）",
-  "History book: [chapter 3, with a map at the back of the book] In the spring of 1755 the city was the richest port in Europe. Ships from Brazil brought gold and sugar up the river, and the king’s new palace stood on the hill above the harbour. Nobody expected what came in November.\nYou: （巻末の地図で川と港と丘の位置を確かめながら、一文ずつゆっくり読む。）",
-  "Poem: [four lines] The city fell in a single hour, ／ the river rose and took the shore; ／ the king kept nothing but the hill, ／ and on the hill, the king lives still.\nYou: （一度読んで、二度目は「still」が何を言っているかを考えながら読み返す。雑誌は速く、歴史書はゆっくり、詩は二度 ── 文章ごとに読み方を変えて、楽しみのための読書が続く。）"],
+  "History book: [chapter 3, with a map at the back of the book] In the spring of 1755 the city was the richest port in Europe. Ships from Brazil brought gold and sugar up the river, and the king’s palace stood on the great square by the water. Nobody expected what came in November.\nYou: （巻末の地図で川と港と広場の位置を確かめながら、一文ずつゆっくり読む。）",
+  "Poem: [four lines] The city fell in a single hour, ／ the river rose and took the square; ／ the king went up the hill to sleep in a tent, ／ and the king, they say, is sleeping there still.\nYou: （一度読んで、二度目は「still」が何を言っているかを考えながら読み返す。雑誌は速く、歴史書はゆっくり、詩は二度 ── 文章ごとに読み方を変えて、楽しみのための読書が続く。）"],
  "雑誌、平易な小説、歴史書、伝記、紀行、ガイド、歌詞、詩。楽しみのために読む文章のほとんどで、参考資料は自分で選んで使う。",
  "全体 ── 文章に応じて読み方と速さを変えながら、楽しみのために読めること。何がどこまで分かるかではなく、雑誌は飛ばし、小説は追い、詩は読み返すと、文章ごとに読み方を変えて、高い自立性で読み続けられればよい。",
  "与えられた文章を頭から同じ速さで全部訳す読み方で育っているため、雑誌は飛ばし、小説は追い、詩は読み返す、と文章ごとに読み方と速さを変えず、どの文章も頭から一つの速さで読んで、楽しみのために読む時間が続かない。",
