@@ -45,7 +45,7 @@ CLAUDE.md の「書物層には専用ゲート `tools/book_style_check.py` が�
 
 ## 字数を照合するとき
 
-申し送りの「全角換算N字」は、ロードマップと同じ数え方（生の全文・W/F/A を1.0、それ以外0.5）でしか合わない。`tools/roadmap_measure.py` の `width()` を使う。空白を除いて数えると逆向きの指摘になる。
+申し送りの「全角換算N字」は、ロードマップと同じ数え方（取り決めは `tools/roadmap_measure.py` 冒頭）でしか合わない。`tools/roadmap_measure.py` の `width()` を使う。空白を除いて数えると逆向きの指摘になる。
 
 ## その他の事実上の規約
 
