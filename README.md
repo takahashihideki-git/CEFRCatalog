@@ -72,6 +72,8 @@ tools/         品質保証ツール
   exponent_level_check.py        実例（exponent）語彙レベルチェッカー（CEFR-J照合、第3周-0）
   book_style_check.py            書物用字・散文規律チェッカー（執筆要綱の機械化可能部分、カタログ16・判断(ap)）
   exponent_allowlist.txt         チェッカーの裁定保全ファイル（語＋理由）
+  roadmap_measure.py             書物ロードマップの測り直し（セッションのクローズ手順。前回の根拠コミットで前回値を再現してから今回を測る。ゲートではない）
+gatekeeper/    検品係（Claude Code）の作業ノート（現在地・受け取りの補足・書物層の検品レシピ・ロードマップの測り方。CLAUDE.md後半の補い）
 deliverables/  成果物
   CEFR記述文_全数集計_実例付き.xlsx  12シートの分析台帳＋範型
   CEFR全貌カタログ_企画書.md          グランドデザイン（対外文書）
