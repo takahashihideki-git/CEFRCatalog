@@ -44,7 +44,7 @@ CoE配布の `CEFR Descriptors (2020).xlsx` とゲーテ版PDFは `.gitignore` �
 
 ## 成果物の受け取りと統合（このリポジトリでの主な役割）
 
-カタログ本体（範型・データ・ドキュメント）の執筆は**claude.ai の別スレッド**（「CEFRカタログN」）で行われ、ここでの役割は**検証・整合確認・コミット**。**検品係の作業ノート（現在地・受け取りの補足・書物層の検品レシピ・ロードマップの測り方）は `gatekeeper/` にある**（`gatekeeper/README.md` から読む）。教訓と現在地の更新もそこに書いてコミットし、Claude Code のOSローカルの自動メモリには書かない ── どのマシンで開いても同じものを引くため。成果物は通常、`files.zip` に入った パッチ（`*.patch`／`*.diff`）＋`申し送り_ClaudeCode*.md` で届く。手順：
+カタログ本体（範型・データ・ドキュメント）の執筆は**claude.ai の別スレッド**（「CEFRカタログN」）で行われ、ここでの役割は**検証・整合確認・コミット**。**検品係の作業ノート（現在地・受け取りの補足・書物層の検品レシピ・ロードマップの測り方）は `gatekeeper/` にある**（`gatekeeper/README.md` から読む）。教訓と現在地の更新もそこに書いてコミットし、Claude Code のOSローカルの自動メモリには書かない ── どのマシンで開いても同じものを引くため。**新しいマシンでは、最初の受け取りの前に `gatekeeper/README.md` の「新しいマシンでの準備」を済ませる**（CEFR-J データの clone など）。データがないまま語彙チェッカー（`tools/exponent_level_check.py`）を「未検証」で済ませて先へ進まない ── 別マシンが一度この形で申告し、こちらで1本を埋め直した実績がある。成果物は通常、`files.zip` に入った パッチ（`*.patch`／`*.diff`）＋`申し送り_ClaudeCode*.md` で届く。手順：
 
 1. （WSL機のみ）`bash tools/clean_zone_identifier.sh` で `*:Zone.Identifier` を掃除
 2. `申し送り_ClaudeCode.md` を読み、`git apply --stat` / `--check` と **diff本文の目視**で内容を申し送りと突き合わせる
