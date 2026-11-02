@@ -80,3 +80,15 @@ bail	C1行110 同上（bail on ＝土壇場で逃げる、の俗語）（CEFRカ
 regulator	C2行107「複雑な話題の専門的・公式な通信文」の差出人の場面名詞（角括弧。antibiotic と同裁定）（CEFRカタログ43）
 amended	C2行107 同上（規制当局の手紙の術語）（CEFRカタログ43）
 emission	C2行107 同上（CEFRカタログ43）
+illustrated	Reading instructions No.181 の記述文原語（illustrated step by step）。角括弧の作りの記述（CEFRカタログ45裁定）
+router	No.181（A2+）の行の課題＝新技術の設置手順の対象物（installing new technology）。段の題名の場面語（CEFRカタログ45裁定）
+cable	No.181の設置手順の中核語（router 同族。CEFRカタログ45裁定）
+password	No.181の設置手順の最終段の語（router 同族。CEFRカタログ45裁定）
+manual	Reading instructions No.176・179 の記述文原語（in a manual／in manuals）。読むもののラベルと角括弧の作り（CEFRカタログ45裁定）
+compressor	No.175（B2）の行の課題＝自分の専門の長く複雑な説明書の術語（研究室の冷凍庫）。CEFRカタログ45裁定
+flammable	No.175 の警告の術語（compressor 同族。CEFRカタログ45裁定）
+reset	No.175 の説明書の操作語（compressor 同族。CEFRカタログ45裁定）
+reread	Reading instructions No.174・175 の記述文原語（reread difficult sections）。角括弧の作りの記述（CEFRカタログ45裁定）
+hinge	No.174（C1）の行の課題＝専門外の機械の取り付け手順の術語（防火扉のドアクローザー）。CEFRカタログ45裁定
+latch	No.174 の取り付け手順の術語（hinge 同族。CEFRカタログ45裁定）
+valve	No.174 の取り付け手順の術語（hinge 同族。CEFRカタログ45裁定）
