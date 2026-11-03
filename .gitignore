@@ -23,6 +23,8 @@ CEFRCatalog_repo.zip
 
 # 成果物の受け取り用の作業ファイル（適用後に削除。リポジトリには残さない）
 files.zip
+files*.zip
+精読用*.md
 *.patch
 *.diff
 申し送り*.md
