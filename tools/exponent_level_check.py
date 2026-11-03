@@ -190,7 +190,7 @@ def _tokens(text):
                      or m.end() >= len(text)
     return toks
 
-SPEAKER_LABEL = re.compile(r"(?m)^[A-Z][A-Za-z]*(?: (?:mother|father|assistant))?(?: [A-Z])?: ")  # 二語のラベルは閉じた語形（Host mother / Host father / Shop assistant）だけ外す ── 「Quick question: 」のような発話を外さない（CEFRカタログ37補遺1）
+SPEAKER_LABEL = re.compile(r"(?m)^[A-Z][A-Za-z]*(?: (?:mother|father|assistant))?(?: [A-Z])?(?: \([^()\n]*\))?: ")  # 二語のラベルは閉じた語形（Host mother / Host father / Shop assistant）だけ外す ── 「Quick question: 」のような発話を外さない（CEFRカタログ37補遺1）。ラベル直後の丸括弧の注記「You (to a colleague): 」「Notice (on the shop door): 」は第4柱の例の形（判断(cs)）で、注記ごと外す（CEFRカタログ46）
 
 def check_sentence(sentence: str, row_level: str, single: dict, multi: dict,
                    allow: dict = None):
