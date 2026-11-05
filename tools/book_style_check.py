@@ -87,9 +87,26 @@ SHEET_REGISTRY = {
     '章_手紙を読む.md': ('catalog_p3_correspondence.json', '手紙を読む（第3柱：Reading correspondence）'),  # 量産第七号（カタログ43、判断(cm)）── 欄名「読むもの」
     '章_楽しみに読む.md': ('catalog_p3_leisure.json', '楽しみに読む（第3柱：Reading as a leisure activity）'),  # 量産第八号（カタログ44、判断(co)）── 欄名「読むもの」
     '章_指示を読む.md': ('catalog_p3_instructions.json', '指示を読む（第3柱：Reading instructions）'),  # 量産第九号（カタログ45、判断(cq)）── 欄名「読むもの」、読む側の最後
+    # 第4部（橋渡しする言葉）── 範型第一号（カタログ47、判断(cv)）。四欄（受けるもの・渡すもの・落とし穴・前の段から）は無改変転写＝P4_SIX_FIELDS、「できること」は作業訳から Language A／B の括弧を外した形（変換規則、book_jp_p4）
+    '範型章_テキストをまとめて伝える口頭.md': ('catalog_p4_processing_speech.json', 'テキストをまとめて伝える（口頭）（第4柱：Processing text in speech or sign）'),
 }
 # 第3部の章（判断(bs)：帳簿の四欄が書物の本文そのもの）── データ層照合を六欄へ広げる対象。値は scene の欄名＝聞く章「聞くもの」・読む章「読むもの」・見る章「見るもの」（カタログ41）
 P3_SIX_FIELDS = {'範型章_聴衆として聞く.md': '聞くもの', '範型章_知るために読む.md': '読むもの', '章_告知と指示を聞く.md': '聞くもの', '章_他人どうしの会話を聞く.md': '聞くもの', '章_録音と放送を聞く.md': '聞くもの', '章_相手の話を聞く.md': '聞くもの', '章_テレビ映画動画を見る.md': '見るもの', '章_探して読む.md': '読むもの', '章_手紙を読む.md': '読むもの', '章_楽しみに読む.md': '読むもの', '章_指示を読む.md': '読むもの'}  # 値＝scene欄の書物での見出し（聞く章＝聞くもの／読む章＝読むもの）
+
+# 第4部の章（判断(cs)④：帳簿の四欄が書物の本文そのもの）── 値＝(scene の欄名, howwell の欄名)＝「受けるもの」「渡すもの」（カタログ47、判断(cv)）
+P4_SIX_FIELDS = {'範型章_テキストをまとめて伝える口頭.md': ('受けるもの', '渡すもの')}
+# 六欄照合の対象（第3部＋第4部）：値＝(scene の欄名, howwell の欄名)
+SIX_FIELDS = {k: (v, '分かること') for k, v in P3_SIX_FIELDS.items()}
+SIX_FIELDS.update(P4_SIX_FIELDS)
+
+
+def book_jp_p4(jp):
+    """第4部の変換規則（判断(cv)、カタログ47）：作業訳の「（A言語）」「（B言語で）」「（B言語の）」「（B言語）」「（A言語の）」を取り去る。
+    別の語と同じ括弧に入る形（No.825「…旅行パンフレットなど。A言語）」）は「。A言語」の部分だけを取り去る。帳簿の jp は不変で、書物の「できること」だけがこの形。"""
+    jp = re.sub(r'（[AB]言語[でのを]?）', '', jp)
+    jp = re.sub(r'。[AB]言語）', '）', jp)
+    return jp
+
 
 # 級の肖像（旧称・幕間。読者語彙は「肖像」＝カタログ36・判断(bx)、ファイル名も追随） → level_portraits のキー（帳簿側は「幕間」のまま）
 PORTRAIT_REGISTRY = {
@@ -161,8 +178,8 @@ def main():
                 束エントリ（見出しに複数No.）では帰属が必須（カタログ19検品⑯：束の中で例文がどの行のものか照合されなかった）。"""
                 out, in_ex, sec_no = [], False, None
                 lines = b.split('\n')
-                if name in P3_SIX_FIELDS:
-                    # 第3部の例は一要素＝複数行（話し手ラベル行＋ You: 行）。リスト行の下の入れ子の項目（「  - 」）を同じ要素へ畳む（変換規則1追補、判断(bv)）
+                if name in SIX_FIELDS:
+                    # 第3部・第4部の例は一要素＝複数行（話し手ラベル行＋ You: 行）。リスト行の下の入れ子の項目（「  - 」）を同じ要素へ畳む（変換規則1追補、判断(bv)）
                     folded = []
                     for l in lines:
                         if l.startswith('  - ') and folded and folded[-1].startswith('- '):
@@ -197,8 +214,9 @@ def main():
                 if b is None:
                     errors.append(f"{name}: No.{r['no']} の段ブロック（### 見出しにNo.）が見つからない")
                     continue
-                if r['jp'] not in b:
-                    errors.append(f"{name}: No.{r['no']} の jp が段内で無改変転写でない")
+                want_jp = book_jp_p4(r['jp']) if name in P4_SIX_FIELDS else r['jp']
+                if want_jp not in b:
+                    errors.append(f"{name}: No.{r['no']} の jp が段内で無改変転写でない" + ('（第4部は変換規則＝Language A／Bの括弧を外した形）' if name in P4_SIX_FIELDS else ''))
                 exl = example_lines(b)
                 if len(bundle_nos(b)) > 1:
                     if any(no is None for _, no in exl):
@@ -209,14 +227,14 @@ def main():
                 for ex in r['exponents']:
                     if not any(ex in l for l in mine):
                         errors.append(f"{name}: No.{r['no']} の例文が「例」欄（当該行の帰属分）で無改変転写でない: {ex[:30]}")
-                if name in P3_SIX_FIELDS:
-                    # 第3部は「含む」でなく完全一致（要素の集合として）── 入れ子の項目の追加・You行への追記を落とす（カタログ35補遺1、検品⑥）
+                if name in SIX_FIELDS:
+                    # 第3部・第4部は「含む」でなく完全一致（要素の集合として）── 入れ子の項目の追加・You行への追記を落とす（カタログ35補遺1、検品⑥）
                     if sorted(mine) != sorted(r['exponents']):
                         errors.append(f"{name}: No.{r['no']} の「例」欄が帳簿の要素と完全一致でない（過不足または改変）")
                     # 欄のラベルは段ブロック内に一度だけ（できること・例・聞くもの／読むもの・分かること・落とし穴〔0か1〕・前の段から／この段の位置〔合わせて1〕）
                     def label_count(label):
                         return len(re.findall(r'^\*\*' + re.escape(label) + r'\*\*', b, re.M))
-                    for label, want in (('できること', 1), ('例', 1), (P3_SIX_FIELDS[name], 1), ('分かること', 1)):
+                    for label, want in (('できること', 1), ('例', 1), (SIX_FIELDS[name][0], 1), (SIX_FIELDS[name][1], 1)):
                         if label_count(label) != want:
                             errors.append(f"{name}: No.{r['no']} の「{label}」ラベルが{label_count(label)}回（1回のはず）")
                     if label_count('日本語話者の落とし穴') > 1:
@@ -227,8 +245,8 @@ def main():
                     def field_text(label):
                         m = re.search(r'^\*\*' + re.escape(label) + r'\*\* (.+)$', b, re.M)
                         return m.group(1).strip() if m else None
-                    scene_label = P3_SIX_FIELDS[name]
-                    for label, key in ((scene_label, 'scene'), ('分かること', 'howwell')):
+                    scene_label, howwell_label = SIX_FIELDS[name]
+                    for label, key in ((scene_label, 'scene'), (howwell_label, 'howwell')):
                         if field_text(label) != r[key]:
                             errors.append(f"{name}: No.{r['no']} の「{label}」欄が帳簿の {key} と無改変転写でない")
                     l1 = field_text('日本語話者の落とし穴')
@@ -354,6 +372,10 @@ def main():
         for m in re.finditer(r'(?<![のをま])持ち込み(?!やす)', t):
             errors.append(f"{name}: 用字「{t[max(0, m.start()-6):m.end()+6]}」（裸の「持ち込み」は退役＝何を当てて読むかを添える。カタログ45、執筆要綱・規律4）")
             break
+        #     指示語で受ける「その型／形を（そのまま）持ち込むと」も同じ作り手語（カタログ47・判断(cv)補遺1、Hideki精読）── 日本語の形→英語に出る形→結果、の観察文で書く
+        for m in re.finditer(r'その(型|形)を(そのまま)?持ち込', t):
+            errors.append(f"{name}: 用字「{t[max(0, m.start()-6):m.end()+4]}」（「その型／形を持ち込むと」は作り手語＝日本語の形が英語でどう出るかを観察文で。カタログ47、執筆要綱・規律4）")
+            break
         # 5.10 落とし穴を主語にした「立つ」の退役（カタログ44 Hideki精読、§7⑳。カタログ45で登録）：帳簿の判定の動詞（欄が立つ）の漏出。読者語は「落とし穴がある」「〜で外す」「穴になる」。
         for m in re.finditer(r'穴が立|穴は立|穴の立|穴も立|落とし穴は、?[^。]{0,24}段に立', t):
             errors.append(f"{name}: 用字「{t[max(0, m.start()-6):m.end()+2]}」（落とし穴を主語にした「立つ」は退役＝「落とし穴がある」「〜で外す」へ。カタログ45、執筆要綱・規律4）")
@@ -377,7 +399,7 @@ def main():
         for w in ('在庫し', '在庫する', '在庫化', '受け在庫', '在庫が薄', '在庫が要る', '在庫を持', '在庫で回', '在庫として', 'の在庫が', 'の在庫を', 'の在庫と', 'の在庫で'):
             if w in t:
                 errors.append(f"{name}: 用字「在庫」の比喩用法「{w}」（語彙・表現パターン・手持ち等の平明語へ、カタログ22裁定。商品在庫の実義は可）")
-        if name in P3_SIX_FIELDS or name.startswith('章_') or name.startswith('範型章_'):
+        if name in SIX_FIELDS or name.startswith('章_') or name.startswith('範型章_'):
             for m in re.finditer(r'(要点|核|情報|項目|時間|場所|値段|結果|天気|用件|筋|細部|視点|態度|気分|関係|理由)が(一つ)?取れ|(?<![聞読見受])取れたはずの(要点|核|情報|項目)', t):
                 errors.append(f"{name}: 可能形「{m.group(0)}」（要点は「つかめる」、情報は「取り出せる」「拾える」。カタログ38 Hideki精読、既稿9箇所は補遺1で、語順を返した形〔No.164「取れたはずの要点」〕と「情報が一つ取れれば」〔No.52〕の2箇所は補遺2で遡及）")
         if re.sub('時系列', '', t).count('系列'):  # 「時系列」は普通の語（No.23の作業訳）で帳簿語彙でない ── 伏せてから検査（CEFRカタログ37）
