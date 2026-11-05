@@ -19,6 +19,8 @@
   - 未執筆 第3部は11章183段、第4部は18章242段（いずれも帳簿の範型の件数＝p3_inventory・p4_inventory）。
            第4部はカタログ45までは14章211段の推計だったので、--prev にカタログ46より前のコミットを渡すと
            字数・一本式・R²・第3部は再現するが、第4部と全巻は当時の公表値と一致しない（前提が実測に変わったため）。
+           第4部の章（SHEET_REGISTRY のシートが p4_）が書かれたら、その章数・段数を未執筆から引く（カタログ47クローズ。
+           それまで第4部の章はなかったので、過去の値は変わらない）。幅には「第4部の実測型」（書いた第4部の章の平均）を足す。
   - 層     第3部の章について、見出しに「＊No.」を持つ ### ブロック＝段の層、"## 議論" 節＝議論、残り＝章の層。
            例欄は段ブロック内の **例** から欄ラベル（読むもの・聞くもの・見るもの）の手前まで。
   - 帳簿の名指し  第3部のシートの散文（scene・howwell・l1・delta・discussion）が名指す他行の番号。
@@ -119,7 +121,7 @@ def measure(root):
             rows, sj = sheet_rows(root, sheet)
             own = {int(r["no"]) for r in rows}
             ext = {int(x) for x in re.findall(r"No\.(\d+)", text)} - own
-            part = "第3部" if "p3_" in sheet else ("第2部" if "p2_" in sheet else "第1部")
+            part = "第4部" if "p4_" in sheet else ("第3部" if "p3_" in sheet else ("第2部" if "p2_" in sheet else "第1部"))
             ch = {"name": name, "part": part, "segs": len(rows), "secs": len(re.findall(r"(?m)^## ", text)),
                   "ext": len(ext), "ext_set": sorted(ext), "chars": w}
             if part == "第3部":
@@ -153,7 +155,10 @@ def measure(root):
     rem_segs = P3_SEGS - sum(c["segs"] for c in p3)
     rem_ch = P3_CHAPTERS - len(p3)
     one_p3 = rem_ch * a + b * rem_segs
-    one_p4 = P4_CHAPTERS * a + b * P4_SEGS
+    p4 = [c for c in chs if c["part"] == "第4部"]
+    rem4_segs = P4_SEGS - sum(c["segs"] for c in p4)
+    rem4_ch = P4_CHAPTERS - len(p4)
+    one_p4 = rem4_ch * a + b * rem4_segs
     out["pages"] = {"now": total / PAGE, "p3done": (total + one_p3) / PAGE,
                     "p4done": (total + one_p3 + one_p4) / PAGE,
                     "final": (total + one_p3 + one_p4 + APPENDIX) / PAGE,
@@ -163,12 +168,14 @@ def measure(root):
     mean_e = sum(c["ext"] for c in p3) / len(p3)
     out["p3_mean"] = (mean_s, mean_e)
     types = TYPES + [("第3部の実測型", round(mean_s), round(mean_e))]
+    if p4:
+        types.append(("第4部の実測型", round(sum(c["secs"] for c in p4) / len(p4)), round(sum(c["ext"] for c in p4) / len(p4))))
     c0, cs, cn, ce = co3
     out["range"] = []
     for label, s, e in types:
         per = c0 + cn * s + ce * e
         f3 = rem_ch * per + cs * rem_segs
-        f4 = P4_CHAPTERS * per + cs * P4_SEGS
+        f4 = rem4_ch * per + cs * rem4_segs
         out["range"].append((label, s, e, (p3cur + f3) / PAGE, f4 / PAGE, (total + f3 + f4 + APPENDIX) / PAGE))
     return out
 
