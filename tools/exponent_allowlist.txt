@@ -101,3 +101,7 @@ scornful	No.818（B2）の行の課題＝著者の態度を説明する段の態
 foreground	No.810（C1）の行の課題＝事実と論拠の提示の仕方（何を前に出すか）を説明する段の語。CEFRカタログ46裁定
 dismissive	No.812（C1）の行の課題＝原文の態度を言い切る段の態度語。CEFRカタログ46裁定
 suggestive	No.812（C1）の例で原文から引く評価の語（'suggestive at best'）＝態度の裏づけとして原文の箇所を示す段の課題。CEFRカタログ46裁定
+english	No.849（A2）の例の固有名（English class＝書き写す段の素材の語）。CEFRカタログ48裁定
+unfunded	No.841（B2+）の例で原文から引く評価の語（'unfunded'）＝立場の裏づけとして原文の箇所を示す段の課題。CEFRカタログ48裁定
+enforcement	No.837（C1）の行の課題＝監督官庁の報告の専門語（advice, not enforcement）。用語を確かめてよい段の語。CEFRカタログ48裁定
+untested	No.838（C1）の例の語＝原文の慎重な調子（untested for …）を文体として移す段の課題。CEFRカタログ48裁定

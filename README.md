@@ -61,9 +61,9 @@ prototypes/    第1カタログの範型と検証範型
   catalog_p3_correspondence.json         第3柱量産第七号：手紙を読む18行（受容・読む、条件の列×七層、Pre-A1〜C2、全体の段が過半11／18・筋なし、便りの線と用件の線、CEFRカタログ43）
   catalog_p3_leisure.json                第3柱量産第八号：楽しみに読む18行（受容・読む、条件の列×七層、A1〜C2＝Pre-A1なし、含意はC1・C2の全段＝味わう三段、物語の線と記事と記述の線、辞書と参考資料の線が四段、CEFRカタログ44）
   catalog_p3_instructions.json           第3柱量産第九号：指示を読む14行（受容・読む、条件の列×七層、Pre-A1〜C1＝C2なし、深さは三つの線＝一つの項目・筋・全体＝命令の線・手順の線・説明書の線、要点・含意・立場なし、CEFRカタログ45）
-  catalog_p4_processing_speech.json      第4柱第一号範型：テキストをまとめて伝える（口頭）28行（仲介・口頭、Language A＝B＝英語、条件八区分×七層〔形なし〕、例は入力＋You (to …): の出力、落とし穴は出力側だけ、CEFRカタログ46）
+  catalog_p4_processing_speech.json      第4柱第一号範型：テキストをまとめて伝える（口頭）28行（仲介・口頭、渡す側は英語〔判断(cs)②・(cx)〕、条件八区分×七層〔形なし〕、例は入力＋You (to …): の出力、落とし穴は出力側だけ、CEFRカタログ46）
   catalog_p4_collaborating_meaning.json  第4柱第二号範型：一緒に考える18行（仲介・概念の仲介・口頭、条件三区分×役割七区分〔深さなし〕、例は相手の言葉＋You (to …): の寄与、CEFRカタログ46・判断(ct)）
-  catalog_p4_processing_writing.json     第4柱量産第一号：テキストをまとめて伝える（書面）17行（仲介・書面、Language A＝B＝英語、条件七区分×七層〔形2＝書き写す段、筋なし〕、本章だけの列＝原文の言葉をどこまで使うか、例は入力＋You (to …, 書く形): の出力、落とし穴6欄、CEFRカタログ48・判断(cw)）
+  catalog_p4_processing_writing.json     第4柱量産第一号：テキストをまとめて伝える（書面）17行（仲介・書面、渡す側は英語〔判断(cs)②・(cx)〕、条件七区分×七層〔形2＝書き写す段、筋なし〕、本章だけの列＝原文の言葉をどこまで使うか、例は入力＋You (to …, 書く形): の出力、落とし穴6欄、CEFRカタログ48・判断(cw)）
   *_full_prototype.py            全数シートのソース（en/jpはdataから構築時取得）
   verification_expressive.json   周回検証で作成した検証範型の統合JSON（感謝詫び祝意/感情の表出）
   *_prototype.py                 各範型のソース（苦情/挨拶/事実Q&A/意見表明/感謝詫び祝意/感情）
@@ -131,7 +131,7 @@ Claude Code on Hideki local PC（ローカルリポジトリ）
 ```
 
 - **claude.aiスレッドはリポジトリへ直接pushしない**。変更は必ずパッチセット（申し送り＋diff＋必要に応じ更新ファイル実体）として渡す。分担の表は引き継ぎ書§6「分担」にある ── 執筆スレッドは帳簿・章・申し送り・パッチまで、検品係（Claude Code）が適用・ゲートの外の精読・コミット・push・クローズ時のロードマップの測り直しを担う。`CLAUDE.md` は前半（「原典ファイルはコミットしない」まで＝データを変えるときの規律）を両者が守り、後半（「成果物の受け取りと統合」から＝受け取り・検品・クローズ・WSL・git）は検品係の作業で執筆スレッドは適用しない（冒頭の断り、`3251791`）。
-- **Claude Code が適用・検証・コミットを担う**。適用後の検証は `python3 restore.py`（第3周-0以降は `python3 tools/exponent_level_check.py` の実行確認を含む。カタログ16以降は `python3 tools/book_style_check.py` ＝書物ゲートの機械化部分も含む。精読ゲートは別途）＋**数字を持つ生成器の自走確認**（`python3 analysis/partition.py` ほか ── 参照名・数字を変更したソースは参照の書き換えだけで済ませず必ず実行して確認する。CEFRカタログ6・第三陣適用時のEXPECTED_SUB追随漏れの教訓）＋**生成ソース同期点検**（`python3 tools/source_sync_check.py` ── 成果物JSONだけが更新されて生成ソース側が取り残される事故が3回起きたため常設ゲート化。全数シート42枚〔第1柱22＋第2柱7＋第3柱11＋第4柱2〕のbuild()・旧範型9枚の全10列・`verdicts.py`↔篩帳簿・`ja_tr1〜9.py`↔作業訳を照合）。
+- **Claude Code が適用・検証・コミットを担う**。適用後の検証は `python3 restore.py`（第3周-0以降は `python3 tools/exponent_level_check.py` の実行確認を含む。カタログ16以降は `python3 tools/book_style_check.py` ＝書物ゲートの機械化部分も含む。精読ゲートは別途）＋**数字を持つ生成器の自走確認**（`python3 analysis/partition.py` ほか ── 参照名・数字を変更したソースは参照の書き換えだけで済ませず必ず実行して確認する。CEFRカタログ6・第三陣適用時のEXPECTED_SUB追随漏れの教訓）＋**生成ソース同期点検**（`python3 tools/source_sync_check.py` ── 成果物JSONだけが更新されて生成ソース側が取り残される事故が3回起きたため常設ゲート化。全数シート43枚〔第1柱22＋第2柱7＋第3柱11＋第4柱3〕のbuild()・旧範型9枚の全10列・`verdicts.py`↔篩帳簿・`ja_tr1〜9.py`↔作業訳を照合）。
 - **申し送りの適用手順は `git apply`＋自前コミットメッセージ（Co-Authored-By付き）で書く**。`git am` は使わない ── コミット作者はTakahashi Hideki名義で統一し、スレッドの寄与はCo-Authored-Byで記録する（CEFRカタログ6で確立）。
 - 設計判断はスレッド側で合意してから実装する（confirm → agree → edit → verify → output）。判断と根拠は引き継ぎ書§2に、周回の進捗はREADME「いまどこにいるか」と引き継ぎ書§1に反映する。
 

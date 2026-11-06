@@ -68,7 +68,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
  "この章の起点の一つ。同じA1に、原文の形を運ぶ段（No.851）と原文の意味を運ぶこの段が並ぶ。「テキストをまとめて伝える（口頭）」の章の起点（No.833＝掲示の一つの項目を伝える）と同じ級で、向こうは辞書なしに隣の人へ声にし、こちらは辞書を引く時間を持って紙に残す。訳す営みとの境目はここで接していて、「書かれたテキストを訳す（書面）」の章のA1（No.870）は同じ辞書の助けで語や句を訳す。「探して読む」の章のA1（No.144＝広告や催しのプログラムから簡単で重要な情報を見つける）が自分のために読む段。",
 ),
 851: (
- ["Sign (printed, at the bus stop): No. 14 — City Centre. Every 20 minutes.\nYou (to your flatmate, on a sticky note): No. 14 — City Centre. Every 20 minutes."],
+ ["Sign (printed, at the bus stop): No. 14 — Station. Every 20 minutes.\nYou (to your flatmate, on a sticky note): No. 14 — Station. Every 20 minutes."],
  "標準的な印刷の形で提示された単語や短いテキスト ── バス停の表示、商品の名札、掲示の一行。活字で、読みやすく、一語か数語。",
  "知っている言葉 ── 紙の上の語や短い文を、形のまま書き写して渡す。意味を言い換えるのではなく、そこにあるものをそのまま、その場にいない相手の手元に残す。",
  "",
@@ -89,14 +89,14 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
  "書き写す段の二つめ。No.851との差は素材の側で、活字だけだったものに手書きが加わり、一語から短いテキストへ伸びる。書き写しはここで尽き、次の段からは原文の言葉を選び、言い換え、やがて自分の言葉にしていく。",
 ),
 846: (
- ["Email (from the course office): The trip to the castle is on Friday 15 May. The coach leaves from the main gate at 8:30. Tickets cost £12, which includes lunch. Wear comfortable shoes, and bring a raincoat in case.\nYou (to the class group chat): Castle trip:\n- Fri 15 May\n- coach from the main gate, 8:30\n- £12 (lunch included)\n- comfortable shoes + raincoat"],
+ ["Email (from the course office): The trip to the castle is on Friday 15 May. The coach leaves from the front gate at 8:30. Tickets cost £12, which includes lunch. Wear comfortable shoes, and bring a raincoat in case.\nYou (to the class group chat): Castle trip:\n- Friday 15 May\n- coach from the front gate, 8:30\n- £12 (lunch included)\n- comfortable shoes + raincoat"],
  "具体的で身近な主題で、簡単な日常語だけで書かれた短く簡単なテキスト ── 遠足の案内メール、職場の短い連絡、商品の説明。",
  "一つの項目 ── テキストの中の関連する情報を、箇条書きにして渡す。文で要約するのではなく、項目を一つずつ切り出して並べる。相手に関係のあるものだけを選ぶところに、この段の仕事がある。",
  "",
  "鍵になる語や文を拾う（No.847）から、項目を切り出して並べるへ。同じA2+に、原文の言葉をそのまま残す段と、情報を項目の形に直す段が並ぶ。「テキストをまとめて伝える（口頭）」の章の同じA2+（No.830）が表の項目を文に起こすのと、向きがちょうど逆である ── 口で渡すには文が要り、紙で渡すなら箇条書きのほうが相手に使いやすい。「知るために読む」の章のA2+（No.161＝簡単な資料の中の特定の情報を見分ける）が自分のために読む段。",
 ),
 847: (
- ["Leaflet (from the library): Opening hours: Mon–Fri 9–7, Sat 10–4. Children's story time: Saturday 11 a.m. Free Wi-Fi. Printing 10p per page.\nYou (to your host family's daughter, on a note): Library: Mon–Fri 9–7, Sat 10–4. Story time Saturday 11 a.m. Free Wi-Fi."],
+ ["Leaflet (from the library): Opening hours: Monday to Friday 9–7, Saturday 10–4. Children's story time: Saturday 11 a.m. Free Wi-Fi. Printing 10p a page.\nYou (to your host family's daughter, on a note): Library: Monday to Friday 9–7, Saturday 10–4. Story time Saturday 11 a.m. Free Wi-Fi."],
  "短いテキスト ── 図書館のちらし、学校からの案内、店の掲示。自分の持っている語彙と経験の範囲で読めるものに限られる。",
  "一つの項目 ── テキストの中の鍵になる語、句、短い文を拾い出して、そのまま書き写して渡す。全部を写す（No.849）のでも自分の言葉にする（No.848）のでもなく、何を残すかを選ぶ仕事がここで始まる。原文の言葉はまだそのまま。",
  "",
@@ -117,7 +117,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
  "項目を並べる（No.846）から、文章を文章のまま言い換えるへ。この章で「言い換える」の動詞を持つ段はここだけで、原文の言葉を使ってよいという但し書きが、書き写す段（No.849・851）からの続きをここまで引く。「テキストをまとめて伝える（口頭）」の章には対応する段がなく、口で渡すときは最初から自分の言葉になる。「知るために読む」の章のB1（No.159＝身近な主題の事実情報の大半を理解する）が自分のために分かる段。",
 ),
 843: (
- ["Article (from a magazine, on whether schools should start later): …\nYou (to your study group, in a shared document): The article argues that secondary schools should start at 9:30 instead of 8:30. The main reason is sleep: teenagers' body clocks run late, so early starts cut their sleep by about an hour. Schools that have tried it report better attendance. The counter-argument is practical — parents' work hours and bus timetables — and the writer admits this is the real obstacle."],
+ ["Article (from a magazine, on whether schools should start later): …\nYou (to your study group, in a shared document): The article argues that schools should start at 9:30 instead of 8:30. The main reason is sleep: teenagers' body clocks run late, so early starts cut their sleep by about an hour. Schools that have tried it say more students arrive on time. The counter-argument is practical — parents' work hours and bus timetables — and the writer admits this is the real obstacle."],
  "たとえば、始業時刻の是非を論じた雑誌の記事、関心のある趣味や生活の話題についての特集。一般的または個人的な関心のある主題で、情報だけでなく論点 ── 主張と、その理由と、反対の考え ── を含む。長さや簡単さの但し書きはもうない。",
  "全体 ── テキストに含まれる情報と論点を、書いて要約する。何が言われているかに加えて、何が主張され、何がその理由で、何が反論かを、つながりを保ったまま渡す。",
  "日本語で文章の内容をまとめるとき、「筆者は〜と述べている。また、〜とも述べている。さらに、〜。」と、「また」「さらに」で項目を足していく書き方が自然なので、英語でも *The writer says X. Also, he says Y. Also, …* と並べてしまい、主張と理由と反論が同じ重さで横に並んで、論点のつながりが要約から消える。英語で論点を渡すには、*because*、*so*、*but* のような接続で主張と理由と反論の関係を文の中に書くのが普通で、*also* の列は情報の列挙にしかならない。",
@@ -145,7 +145,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
  "主な内容（No.839）から、複数の出版物の統合へ。「テキストをまとめて伝える（口頭）」の章の統合の段（No.815）はB2で、こちらは一級上に、分野の但し書きつきで立つ。「報告と小論」の章のB2（No.360＝複数の情報源からの情報と論点を統合する）が書く側の同じ組み立てで、こちらが一級上。",
 ),
 841: (
- ["Editorial (on the new housing bill): …\nYou (to a colleague who hasn't read it, in an email): The editorial is against the bill, though it never says so outright. Two things give it away: it calls the targets 'ambitious' in the first paragraph and 'unfunded' in the last, and the only expert it quotes at length is the one who predicts the bill will fail. So its position is that the bill will not deliver, and that the government knows it."],
+ ["Editorial (on the new housing bill): …\nYou (to a colleague who hasn't read it, in an email): The editorial is against the bill, though it never says so directly. Two things give it away: it calls the targets 'ambitious' in the first paragraph and 'unfunded' in the last, and the only expert it quotes at length is the one who predicts the bill will fail. So its position is that the bill will not deliver, and that the government knows it."],
  "たとえば、住宅法案についての社説、ある政策を評価する論評、研究方法を論じる論文。複雑なテキストで、見解が表明されてはいるが、言い切りでなく語の選び方や引用の選び方に表れている。",
  "立場 ── テキストで表明された見解を説明し、自分の推論を、原文の特定の情報に言及して裏づける。書き手がどの側に立っているかを言い、その根拠を原文の箇所で示す。",
  "日本語で書き手の立場を文章にするとき、「筆者は法案に反対していると考えられる」「〜ではないかと思われる」と、誰が考えるのかを言わない受身の形で結ぶのが控えめで適切とされるので、英語でも *It is thought that the editorial is against the bill.* *It can be considered that…* と書いてしまい、推論が自分のものでなく、裏づけが何かも読み手に見えない。英語でこの段に求められるのは、自分の主語で言い切り（*The editorial is against the bill*）、根拠を原文の箇所で添える書き方で、*it is thought that* の形は根拠を隠す言い方として読まれる。",

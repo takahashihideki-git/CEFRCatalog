@@ -93,7 +93,7 @@
     "en": "Can copy out single words and short texts presented in standard printed format.",
     "jp": "標準的な印刷形式で提示された単語や短いテキストを書き写せる。",
     "exponents": [
-     "Sign (printed, at the bus stop): No. 14 — City Centre. Every 20 minutes.\nYou (to your flatmate, on a sticky note): No. 14 — City Centre. Every 20 minutes."
+     "Sign (printed, at the bus stop): No. 14 — Station. Every 20 minutes.\nYou (to your flatmate, on a sticky note): No. 14 — Station. Every 20 minutes."
     ],
     "scene": "標準的な印刷の形で提示された単語や短いテキスト ── バス停の表示、商品の名札、掲示の一行。活字で、読みやすく、一語か数語。",
     "howwell": "知っている言葉 ── 紙の上の語や短い文を、形のまま書き写して渡す。意味を言い換えるのではなく、そこにあるものをそのまま、その場にいない相手の手元に残す。",
@@ -135,7 +135,7 @@
     "en": "Can list as a series of bullet points (in Language B) the relevant information contained in short simple texts (in Language A), provided the texts concern concrete, familiar subjects and contain only simple everyday language.",
     "jp": "具体的で身近な主題で簡単な日常語のみを含むなら、短く簡単なテキスト（A言語）の関連情報を、箇条書きの形で（B言語で）列挙できる。",
     "exponents": [
-     "Email (from the course office): The trip to the castle is on Friday 15 May. The coach leaves from the main gate at 8:30. Tickets cost £12, which includes lunch. Wear comfortable shoes, and bring a raincoat in case.\nYou (to the class group chat): Castle trip:\n- Fri 15 May\n- coach from the main gate, 8:30\n- £12 (lunch included)\n- comfortable shoes + raincoat"
+     "Email (from the course office): The trip to the castle is on Friday 15 May. The coach leaves from the front gate at 8:30. Tickets cost £12, which includes lunch. Wear comfortable shoes, and bring a raincoat in case.\nYou (to the class group chat): Castle trip:\n- Friday 15 May\n- coach from the front gate, 8:30\n- £12 (lunch included)\n- comfortable shoes + raincoat"
     ],
     "scene": "具体的で身近な主題で、簡単な日常語だけで書かれた短く簡単なテキスト ── 遠足の案内メール、職場の短い連絡、商品の説明。",
     "howwell": "一つの項目 ── テキストの中の関連する情報を、箇条書きにして渡す。文で要約するのではなく、項目を一つずつ切り出して並べる。相手に関係のあるものだけを選ぶところに、この段の仕事がある。",
@@ -149,7 +149,7 @@
     "en": "Can pick out and reproduce key words and phrases or short sentences from a short text within the learner’s limited competence and experience.",
     "jp": "自分の限られた能力と経験の範囲内で、短いテキストからキーワードや句、短い文を拾って再現できる。",
     "exponents": [
-     "Leaflet (from the library): Opening hours: Mon–Fri 9–7, Sat 10–4. Children's story time: Saturday 11 a.m. Free Wi-Fi. Printing 10p per page.\nYou (to your host family's daughter, on a note): Library: Mon–Fri 9–7, Sat 10–4. Story time Saturday 11 a.m. Free Wi-Fi."
+     "Leaflet (from the library): Opening hours: Monday to Friday 9–7, Saturday 10–4. Children's story time: Saturday 11 a.m. Free Wi-Fi. Printing 10p a page.\nYou (to your host family's daughter, on a note): Library: Monday to Friday 9–7, Saturday 10–4. Story time Saturday 11 a.m. Free Wi-Fi."
     ],
     "scene": "短いテキスト ── 図書館のちらし、学校からの案内、店の掲示。自分の持っている語彙と経験の範囲で読めるものに限られる。",
     "howwell": "一つの項目 ── テキストの中の鍵になる語、句、短い文を拾い出して、そのまま書き写して渡す。全部を写す（No.849）のでも自分の言葉にする（No.848）のでもなく、何を残すかを選ぶ仕事がここで始まる。原文の言葉はまだそのまま。",
@@ -191,7 +191,7 @@
     "en": "Can summarise in writing (in Language B) the information and arguments contained in texts (in Language A) on subjects of general or personal interest.",
     "jp": "一般的または個人的関心のある主題のテキスト（A言語）に含まれる情報と論点を（B言語で）書いて要約できる。",
     "exponents": [
-     "Article (from a magazine, on whether schools should start later): …\nYou (to your study group, in a shared document): The article argues that secondary schools should start at 9:30 instead of 8:30. The main reason is sleep: teenagers' body clocks run late, so early starts cut their sleep by about an hour. Schools that have tried it report better attendance. The counter-argument is practical — parents' work hours and bus timetables — and the writer admits this is the real obstacle."
+     "Article (from a magazine, on whether schools should start later): …\nYou (to your study group, in a shared document): The article argues that schools should start at 9:30 instead of 8:30. The main reason is sleep: teenagers' body clocks run late, so early starts cut their sleep by about an hour. Schools that have tried it say more students arrive on time. The counter-argument is practical — parents' work hours and bus timetables — and the writer admits this is the real obstacle."
     ],
     "scene": "たとえば、始業時刻の是非を論じた雑誌の記事、関心のある趣味や生活の話題についての特集。一般的または個人的な関心のある主題で、情報だけでなく論点 ── 主張と、その理由と、反対の考え ── を含む。長さや簡単さの但し書きはもうない。",
     "howwell": "全体 ── テキストに含まれる情報と論点を、書いて要約する。何が言われているかに加えて、何が主張され、何がその理由で、何が反論かを、つながりを保ったまま渡す。",
@@ -247,7 +247,7 @@
     "en": "Can explain in writing (in Language B) the viewpoint articulated in a complex text (in Language A), supporting inferences they make with reference to specific information in the original.",
     "jp": "複雑なテキスト（A言語）で表明された見解を、原文の特定の情報に言及して自分の推論を裏づけながら、（B言語で）書いて説明できる。",
     "exponents": [
-     "Editorial (on the new housing bill): …\nYou (to a colleague who hasn't read it, in an email): The editorial is against the bill, though it never says so outright. Two things give it away: it calls the targets 'ambitious' in the first paragraph and 'unfunded' in the last, and the only expert it quotes at length is the one who predicts the bill will fail. So its position is that the bill will not deliver, and that the government knows it."
+     "Editorial (on the new housing bill): …\nYou (to a colleague who hasn't read it, in an email): The editorial is against the bill, though it never says so directly. Two things give it away: it calls the targets 'ambitious' in the first paragraph and 'unfunded' in the last, and the only expert it quotes at length is the one who predicts the bill will fail. So its position is that the bill will not deliver, and that the government knows it."
     ],
     "scene": "たとえば、住宅法案についての社説、ある政策を評価する論評、研究方法を論じる論文。複雑なテキストで、見解が表明されてはいるが、言い切りでなく語の選び方や引用の選び方に表れている。",
     "howwell": "立場 ── テキストで表明された見解を説明し、自分の推論を、原文の特定の情報に言及して裏づける。書き手がどの側に立っているかを言い、その根拠を原文の箇所で示す。",
