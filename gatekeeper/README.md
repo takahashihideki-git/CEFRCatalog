@@ -23,4 +23,5 @@ CLAUDE.md の後半（「成果物の受け取りと統合」以降）を、ど�
 - `python3`（3.9以上。外部パッケージは不要）
 - CEFR-J データ：`tools/exponent_level_check.py` が参照する。リポジトリと同じ階層に `git clone https://github.com/openlanguageprofiles/olp-en-cefrj.git` するか、環境変数 `OLP_CEFRJ_DIR` で場所を渡す。これがないと語彙チェッカーだけ回らない（実際にMacで「未検証」になった例がある）
 - 原典xlsx・ゲーテ版PDFは不要（CLAUDE.md「原典ファイルはコミットしない」）
+- 増補版（Companion Volume）PDF：英語版 `CEFR Companion Volume_eng.pdf`・日本語版 `cefr-cv-jap-*.pdf` をリポジトリ直下に置いてよい（どちらも `.gitignore` 済み）。執筆スレッドから原文の引用を頼まれたときに使う。抽出は PyMuPDF（`import fitz`、ユーザーsite にあるので `python3 -I` では読めない）。日本語版の抽出テキストは漢字が化ける（「泺動」等）ので、ページの対応を取るだけにして、引用は画面で確かめてもらう。英語版は印刷ページ＝PDFページ、日本語版は印刷ページ＋20＝PDFページ
 - Artifact版ロードマップの再発行には、同じ claude.ai アカウントでログインしていること（roadmap-measure.md）
