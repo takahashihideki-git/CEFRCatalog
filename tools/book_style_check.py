@@ -146,6 +146,7 @@ def cited_numbers(s):
 
 def main():
     errors = []
+    ladder_checked = []  # 梯子の所属を持つ章（判断(db)）── 最終行に出す＝検査が空振りでないことの見える化
     files = sorted(glob.glob(os.path.join(BOOK, '*.md')))
     # 0. 登録ファイルの実在（カタログ23観察：登録あり・ファイルなしは「落ちずに検査対象外」になっていた。
     #    登録漏れの裏面。以後、束の適用でコピー漏れがあれば赤くなる）
@@ -259,6 +260,32 @@ def main():
                     delta = field_text('前の段から') or field_text('この段の位置')
                     if delta != r['delta']:
                         errors.append(f"{name}: No.{r['no']} の「前の段から／この段の位置」欄が帳簿の delta と無改変転写でない")
+            # 1.5 梯子の照合（判断(db)、検品係の器の便）── 帳簿が梯子の所属を持つシートだけが対象。
+            #     まだ所属を持たないシート（第3部の既稿10章・第4部の既稿2章）は遡及ごとに入る＝ここは静かに素通りする。
+            #     章の中見出し（`##` から 見取り図・議論・「〜から続く扉」を除いたもの）の名と段の列が、帳簿の梯子と順序ごと一致すること。
+            #     名は「 ── 」の前（判断(da)③④＝梯子の名は本文で縮めない）。見取り図にも同じ名が出ること（呼び名を揃える）
+            ladders = sheet.get('axes', {}).get('梯子')
+            if ladders:
+                ladder_checked.append(name)
+                secs = [b for b in re.split(r'\n(?=## )', t) if b.startswith('## ')]
+                def sec_name(b):
+                    return strip_marks(b.split('\n', 1)[0])[3:].split(' ── ')[0].strip()
+                overview = next((b for b in secs if sec_name(b).startswith('見取り図')), '')
+                lad_secs = [b for b in secs
+                            if not sec_name(b).startswith('見取り図') and not sec_name(b).startswith('議論') and '続く扉' not in sec_name(b)]
+                got_names = [sec_name(b) for b in lad_secs]
+                if got_names != list(ladders.keys()):
+                    errors.append(f"{name}: 中見出しの梯子の名と並びが帳簿と不一致（章={got_names} / 帳簿={list(ladders.keys())}）")
+                else:
+                    for b, (ld, want_nos) in zip(lad_secs, ladders.items()):
+                        # 束エントリ（`### … ＊No.522・546`）は見出し一つに複数の段 ── 住所印のNo.を出た順に全部拾う
+                        got_nos = [int(x) for g in re.findall(r'^### .*?＊No\.([\d・,\s]+)', b, re.M) for x in re.findall(r'\d+', g)]
+                        if got_nos != list(want_nos):
+                            errors.append(f"{name}: 梯子「{ld}」の段の列が帳簿と不一致（章={got_nos} / 帳簿={list(want_nos)}）")
+                for ld in ladders:
+                    if ld not in strip_marks(overview):
+                        errors.append(f"{name}: 梯子「{ld}」の名が見取り図に出ない（帳簿と章で呼び名を揃える）")
+
             m = re.search(r'出典：.*?（No\.(.*?)）', t)
             if not m:
                 errors.append(f"{name}: 出典行が見つからない")
@@ -508,7 +535,7 @@ def main():
         for e in errors:
             print('  -', e)
         sys.exit(1)
-    print(f"書物用字検査OK: 対象{len(files)}ファイル ── データ層照合（章{len(SHEET_REGISTRY)}・肖像{len(PORTRAIT_REGISTRY)}・総括章1）／用字／呪文パターン／帳簿語彙／「門」残存／出典定型文")
+    print(f"書物用字検査OK: 対象{len(files)}ファイル ── データ層照合（章{len(SHEET_REGISTRY)}・肖像{len(PORTRAIT_REGISTRY)}・総括章1）／用字／呪文パターン／帳簿語彙／「門」残存／出典定型文／梯子（章の中見出し⇔帳簿）{len(ladder_checked)}章")
 
 
 if __name__ == '__main__':
