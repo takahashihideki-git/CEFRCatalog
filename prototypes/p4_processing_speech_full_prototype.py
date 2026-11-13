@@ -113,7 +113,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
 826: (
  ["Anna (to Ben): So the meeting moves to Thursday?\nBen: Yes, two o'clock. And Sam wants the figures before then.\nAnna: Fine, I'll send them on Wednesday.\nYou (to a colleague who arrived late): They've moved the meeting to Thursday at two. Sam wants the figures first, and Anna is sending them on Wednesday."],
  "個人的または時事的な関心のある主題についての、他の人たちの会話。話し手がはっきり話していること。",
- "要点 ── 会話の要点を、その場にいなかった相手に要約して渡す。誰が何を言ったかを全部再現するのではなく、何が決まり、何がまだかを。",
+ "要点 ── 会話の要点をまとめて、その場にいなかった相手に渡す。誰が何を言ったかを全部再現するのではなく、何が決まり、何がまだかを。",
  "日本語では人から聞いたことを渡すとき、文ごとに「〜だそうです」「〜って言ってました」と伝聞の形を添えるのが自然なので、英語でも *It seems that the meeting is Thursday. It seems that Sam wants the figures.* と一文ごとに言い切りを弱めてしまう。英語の要約では出どころを一度言えば（*They've moved the meeting*）、あとは言い切りの文が並び、文ごとの伝聞の印は要らない。",
  "入力が書かれたものから、他人どうしの会話へ。「他人どうしの会話を聞く」の章の同じB1（No.25＝議論の要点を追う）と同じ場に立ち、向こうが自分のために要点を追うのに対して、こちらはそれを人に渡す。級が揃うのは、この章の段が受ける側の段に対して置かれる最も普通の形である。",
 ),
@@ -204,7 +204,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
 814: (
  ["Meeting (one hour, on moving the office): …\nYou (to a colleague who was away): Finance wants to move because of the rent; sales wants to stay because of the clients. The compromise on the table is a smaller office in the same area. Nobody argued for staying as we are — that's the main thing."],
  "たとえば、オフィスの移転をめぐる一時間の会議、三つの部署が別々の理由で別々の案を推す討論。発言者が多く、見解が三つ以上に割れ、互いに部分的に重なる。",
- "全体 ── 複雑な議論の要点を、異なる見解を比較検討しながら要約する。誰がどちら側かではなく、見解どうしの重さを量って渡す。",
+ "全体 ── 複雑な議論の要点を、異なる見解を比較検討しながらまとめる。誰がどちら側かではなく、見解どうしの重さを量って渡す。",
  "",
  "会話の要約（No.826）が、複雑な議論の比較検討になる。「他人どうしの会話を聞く」の章のB2（No.22＝賛否の理由を振り分ける）の一級上に、振り分けた理由を量って人に渡す段として立つ。",
 ),
@@ -225,7 +225,7 @@ R = {  # no -> (exponents, scene=受けるもの, howwell=渡すもの, l1=落�
 809: (
  ["Article (economics, in a field that is not yours): …\nYou (to a colleague, after checking two terms): The main point is that the central bank is holding interest rates because it thinks inflation has settled. The critics say the job market is still too tight and that waiting risks a second rise in prices. The author sides with the critics, but admits the data could go either way."],
  "たとえば、経済学の記事を工学の人が、医学の論文を法律の人が読む。自分の専門外の分野の、複雑なテキストで、専門の概念は時折辞書や人に確かめてよい。",
- "全体 ── 専門外の要点を、よく構成された言葉で明快に要約する。",
+ "全体 ── 専門外の要点を、よく構成された言葉で明快にまとめる。",
  "",
  "専門の内外が、最後の但し書きになる。「知るために読む」の章のC2（No.147＝専門外の複雑な報告の細部と含意）の一級下に、専門外のテキストを明快に渡す段として立つ。",
 ),
