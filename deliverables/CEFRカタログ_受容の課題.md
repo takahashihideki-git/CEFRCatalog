@@ -39,9 +39,9 @@
 | 層 | Pre-A1 | A1 | A2 | A2+ | B1 | B1+ | B2 | B2+ | C1 | C2 | 計 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 形 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 9 |
-| 2 命題 | 7 | 8 | 8 | 3 | 1 | 2 | 1 | 2 | 1 | 0 | 33 |
+| 2 命題 | 7 | 8 | 8 | 3 | 1 | 1 | 1 | 2 | 1 | 0 | 32 |
 | 3 筋 | 1 | 4 | 8 | 7 | 7 | 2 | 2 | 0 | 0 | 0 | 31 |
-| 4 要点 | 0 | 0 | 5 | 6 | 10 | 5 | 4 | 2 | 0 | 0 | 32 |
+| 4 要点 | 0 | 0 | 5 | 6 | 10 | 6 | 4 | 2 | 0 | 0 | 33 |
 | 5 全体 | 0 | 4 | 8 | 5 | 9 | 5 | 11 | 3 | 8 | 3 | 56 |
 | 6 含意 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 5 | 12 |
 | 7 立場 | 0 | 0 | 0 | 2 | 1 | 1 | 4 | 1 | 1 | 0 | 10 |
@@ -239,7 +239,7 @@
 
 ## 付録A ── 受容209件の層への写像
 
-（レベル順→No順。層の割付は本書の七層の定義による。相互参照29件は含めない。「楽しみに読む」の三段はカタログ44〔判断(cn)〕で写し直した ── 193は understand the main points で要点、190・188は implicit meanings を味わう段で含意〔「知るために読む」148と同じ基準〕。§3の表もそれに合わせた。）
+（レベル順→No順。層の割付は本書の七層の定義による。相互参照29件は含めない。「楽しみに読む」の三段はカタログ44〔判断(cn)〕で写し直した ── 193は understand the main points で要点、190・188は implicit meanings を味わう段で含意〔「知るために読む」148と同じ基準〕。「探して読む」の131はカタログ50〔判断(da)〕で要点へ写し直した ── scan through … identify what they are about and decide は読む価値を決める段で、見きわめる三段〔134・131・129〕を揃える。§3の表もそれに合わせた。）
 
 ### 聴衆として聞く（Understanding as a member of a live audience）
 
@@ -409,7 +409,7 @@
 | B1 | 134 | 4 要点 | assess whether an article, report or review is on the required topic. |
 | B1 | 135 | 4 要点 | understand the important information in simple, clearly drafted adverts in newspapers or magazi… |
 | B1+ | 130 | 2 命題 | scan longer texts in order to locate desired information, and gather information from different… |
-| B1+ | 131 | 2 命題 | scan through straightforward, factual texts in magazines, brochures or on the web, identify wha… |
+| B1+ | 131 | 4 要点 | scan through straightforward, factual texts in magazines, brochures or on the web, identify wha… |
 | B2 | 128 | 2 命題 | scan quickly through long and complex texts, locating relevant details. |
 | B2 | 129 | 4 要点 | quickly identify the content and relevance of news items, articles and reports on a wide range … |
 | B2+ | 127 | 2 命題 | scan quickly through several sources (articles, reports, websites, books, etc.) in parallel, in… |
