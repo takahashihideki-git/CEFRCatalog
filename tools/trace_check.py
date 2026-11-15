@@ -13,6 +13,7 @@
   A 判断の記録（引き継ぎ書§2） → 現行仕様・執筆要綱      ＝記号の鎖
   B 設計文書『受容の課題』付録A → 帳簿の深さ軸（第3部11枚）
   C 設計文書『受容の課題』§4の手加減の表 → 帳簿の条件の区分（第3部11枚68区分）
+  D 設計文書『受容の課題』§5の疎外の節   → 帳簿の落とし穴の欄（第3部11枚69欄）
 
 Aが要るのは、現行仕様が判断の圧縮であり、圧縮から推論すると器を誤診するため
 （実例：条件の軸を「読むものを条件に流用した崩れ」と誤診し、判断(bp)(cj)と
@@ -26,6 +27,10 @@ Cが要るのは、条件の区分が何の手加減を実現しているかの�
 あって帳簿に無かったため（判断(cj)根拠(b)が「紙面の作りは§4の『明示された構成・
 標識』（層4）と『短さ』の、項目の紙面での形」と書いて捨てていた）。宣言を強制すると
 **区分名が手加減でなく載せ物・物・内容を取っている箇所がその場で見える**。
+
+Dが要るのは、落とし穴の欄がどの§5の要因に拠るかの宣言が、現行仕様・第3部§2の
+三行方式の②として毎便書かれ、申し送りと一緒に捨てられていたため（判断(dg)）。
+§5を直したときにどの欄が影響を受けるかが、これで機械で出る。
 
 限界：記号の抽出は括弧つき小文字列の単純一致なので、散文の列挙記号 (a)(b) を
 拾いうる。誤って拾っても「到達する」側に倒れるので、偽の赤は出ない。
@@ -175,6 +180,37 @@ else:
     notes.append("C: §4の手加減 %d 行 ↔ 第3部11枚の条件 68区分。使われていない手加減 %d 件%s"
                  % (len(support), len(unused), ("：" + "／".join(unused)) if unused else ""))
 
+# ---------- D 設計文書§5の疎外の節 → 帳簿の落とし穴の欄 ----------
+i5 = doc.find('## 5. 第二言語学習者')
+if i5 < 0:
+    errors.append("D0: 『受容の課題』に§5の見出しがない")
+else:
+    sec5 = doc[i5:doc.find('\n## ', i5 + 5)]
+    valid = {'§' + m.group(1) for m in re.finditer(r'^### (5\.[1-6])', sec5, re.M)}
+    if len(valid) != 6:
+        errors.append("D0: §5の節見出しが %d 件（6件を期待）── 文書の形が変わった" % len(valid))
+    dist = {}
+    for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
+        base = os.path.basename(f)
+        d = json.load(io.open(f, encoding='utf-8'))
+        sheet = d[list(d)[0]]
+        src = sheet.get('落とし穴の源')
+        if src is None:
+            errors.append("D1: %s に「落とし穴の源」が無い" % base)
+            continue
+        filled = {str(r['no']) for r in sheet['rows'] if (r.get('l1') or '').strip()}
+        if set(src) != filled:
+            errors.append("D1: %s の「落とし穴の源」が欄のある行と一致しない（宣言なし %s／欄が空なのに宣言 %s）"
+                          % (base, sorted(filled - set(src)), sorted(set(src) - filled)))
+        for no, v in src.items():
+            if v not in valid:
+                errors.append("D2: %s の No.%s の源「%s」が§5の節でない" % (base, no, v))
+            else:
+                dist[v] = dist.get(v, 0) + 1
+    notes.append("D: §5の節 %d ↔ 第3部11枚の落とし穴 %d欄（%s）"
+                 % (len(valid), sum(dist.values()),
+                    "／".join("%s:%d" % (k, dist[k]) for k in sorted(dist))))
+
 # ---------- 報告 ----------
 for n in notes:
     print("  " + n)
@@ -185,4 +221,4 @@ if errors:
     for e in errors:
         print("  - " + e)
     sys.exit(1)
-print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ")
+print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ・条件の手加減・落とし穴の源")
