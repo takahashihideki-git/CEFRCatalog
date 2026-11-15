@@ -190,6 +190,31 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "955": ["using very simple words/signs and phrases", "provided they can prepare in advance"],
+    "953": ["simple remarks", "occasional questions"],
+    "954": ["in a simple way"],
+    "952": [],
+    "950": [],
+    "951": [],
+    "948": ["a straightforward collaborative task", "in a simple manner"],
+    "949": ["simple reformulations"],
+    "945": [],
+    "946": [],
+    "947": [],
+    "942": [],
+    "943": [],
+    "944": [],
+    "939": [],
+    "940": [],
+    "941": [],
+    "938": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -224,7 +249,7 @@ def build(root="."):
         "type": "第4柱（仲介）・概念の仲介。梯子＝役割の列（出す→示す→確かめる→尋ねる→整理する→発展させ量る→結ぶ）、入力の側の条件は三区分（準備できれば→簡単な言葉で→条件なし）でA2+で尽きる。深さ（七層）は立てない。四欄（scene＝受けるもの・howwell＝渡すもの・l1・delta）は書物の本文そのもの。Language A／Bなし。",
         "essence": "グループの一員として、自分の言葉で話し合いを前へ進める。段を区切るのは役割 ── 自分の考えを出すところから、他人の考えを伸ばし、量り、異を唱え、結ぶところへ。同じ提案や不同意の言葉が、自分の用事でなく話し合いの進行のために使われる。",
         "axes": {"条件": CONDITION, "役割": ROLE},
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

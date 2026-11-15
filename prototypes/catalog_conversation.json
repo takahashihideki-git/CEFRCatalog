@@ -4,6 +4,28 @@
   "scope": "全数（5件。口頭5・書面0＝書面系列なし）",
   "type": "交話・儀礼（phatic）── 下位系＝関係運営系、梯子型＝管理梯子型（管理課題＝談話運営：参加→運営→関係構築）。型の履行では済まない即興と運営の技能として深まる",
   "essence": "会話に加わり、始め、続くように支え、会話を通じて相手との関係を築く。レベルが上がるとは、会話への関与の主体性が上がることである ── 参加者から、運営者へ、関係の構築者へ。",
+  "原文の限定句": {
+   "450": [
+    "simple conversation",
+    "basic factual nature",
+    "a predictable topic"
+   ],
+   "445": [
+    "in simple language",
+    "most routine matters"
+   ],
+   "434": [
+    "unprepared",
+    "familiar topics"
+   ],
+   "432": [
+    "relatively spontaneous",
+    "familiar subjects"
+   ],
+   "427": [
+    "if appropriate"
+   ]
+  },
   "rows": [
    {
     "mode": "口頭",

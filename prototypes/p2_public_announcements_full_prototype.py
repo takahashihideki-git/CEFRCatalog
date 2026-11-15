@@ -79,6 +79,17 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "294": ["very short, rehearsed", "predictable, learnt content", "who are prepared to concentrate"],
+    "293": ["short, rehearsed", "in their field", "despite possible problems with stress and intonation"],
+    "292": ["most general topics", "with a degree of clarity, fluency and spontaneity"],
+    "291": ["almost effortlessly"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -114,7 +125,7 @@ def build(root="."):
         "scope": "全数（4件。口頭4 ── mode一様、(d)裁定1）",
         "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・判断(ab)）。単糸4行の最小構成・族宣言なし（並行対を持たない初のスケール、判断(ag)）",
         "essence": "不特定多数へ、一方向に、確実に届ける。梯子は内容の構成でなく送達の精度に宿り（固定内容→分野内→一般の話題→韻律による陰影）、受け手の受信状態が全段で達成の定義になる。書面対応物ゼロ＝族無所属。質フラグ0件で口頭5スケールの反証テストが完結し、「質フラグは書面固有」が第2柱全域で確定した。",
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

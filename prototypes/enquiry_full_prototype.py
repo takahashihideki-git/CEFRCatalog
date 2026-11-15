@@ -37,6 +37,16 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 3件全てが依頼系の「情報の依頼」特化形で、依頼シート（物・行為の依頼）との分業が下位系内で立つ。語彙裁定（判断(s)）：available（706・A2行）＝記述文由来（availability of a product or feature）として保持。heating・advertisement（637行）は収録内で通過。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "706": ["basic"],
+    "637": [],
+    "528": ["more complex services"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -48,7 +58,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

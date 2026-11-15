@@ -4,6 +4,28 @@
   "scope": "全数（6件。口頭6）",
   "type": "主張的（assertive）── 面接という構造化された場で答え、伝え、尋ねる。下位系＝情報授受系、梯子型＝管理梯子型（管理課題＝主導権の移行、A2〜B2+。第3周-5第三陣で確定）",
   "essence": "面接という構造化された場で、答え、自分を理解させ、話題を持ち出し、やがて尋ねる側に回る。梯子は主導権の移行 ── 依存的な応答から、話題の提起、そして質問の設計へ。",
+  "原文の限定句": {
+   "597": [
+    "simple questions",
+    "simple statements"
+   ],
+   "595": [
+    "familiar topics",
+    "provided they can ask for clarification occasionally, and are given some help to express what they want to"
+   ],
+   "592": [
+    "some initiative",
+    "but is very dependent on the interviewer in the interaction"
+   ],
+   "594": [
+    "prepared questionnaire",
+    "with some spontaneous follow-up questions"
+   ],
+   "589": [
+    "with little help or prodding from an interviewer"
+   ],
+   "588": []
+  },
   "rows": [
    {
     "mode": "口頭",

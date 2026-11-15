@@ -4,6 +4,53 @@
   "scope": "全数（18件。書面18 ── mode一様、(d)裁定1）",
   "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。論証族での再現＝判断(ac)・CEFRカタログ9）。談話課題糸＝立論／理由づけ／比較考量／論構造（論証族4糸、口頭putting a caseと共有）＋報告／出典統合／構成（スケール固有）＋副タグ（ジャンル・結束条件句・支援条件・質フラグ・比較考量・静的描写）",
   "essence": "一人で、不在の読者に向けて、論・報告・小論を書き上げる。梯子は組み立ての複雑化（接続→書式→器→展開→統合→体系化→構成設計→読者のための論理構造）に宿り、書面背骨の外枠（接続に始まり読者適合に終わる）はCreative writingと共有される。並行対の口頭側はputting a case（型式標本356/277）。",
+  "原文の限定句": {
+   "366": [
+    "simple texts",
+    "familiar subjects",
+    "linking sentences with connectors"
+   ],
+   "367": [
+    "topics of personal interest",
+    "using basic everyday vocabulary and expressions"
+   ],
+   "364": [
+    "very brief reports",
+    "in a standard conventionalised format",
+    "routine factual information"
+   ],
+   "365": [
+    "a short report or poster",
+    "short blocks of text"
+   ],
+   "361": [
+    "short, simple essays",
+    "topics of interest"
+   ],
+   "362": [
+    "a topical subject of personal interest",
+    "using simple language"
+   ],
+   "363": [
+    "within their field",
+    "with some confidence"
+   ],
+   "359": [],
+   "360": [],
+   "356": [],
+   "357": [],
+   "358": [],
+   "353": [],
+   "354": [
+    "at some length"
+   ],
+   "355": [
+    "provided the topic is within their field of interest and there are opportunities for redrafting and revision"
+   ],
+   "350": [],
+   "351": [],
+   "352": []
+  },
   "rows": [
    {
     "mode": "書面",

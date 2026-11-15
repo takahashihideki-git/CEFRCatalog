@@ -27,6 +27,14 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 外部化型で確定（仮判定どおり）。横串は社会言語（書簡の制度的丁寧さ）。語彙裁定（判断(s)）：madam（641・B1行）＝応募書簡の制度定型（Dear Sir or Madam）の構成語として保持 ── 苦情638と同裁定。CV は収録内で通過。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "641": ["basic", "with limited supporting details"],
+}
+
+
 def build(root="."):
     import json, os
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
@@ -39,7 +47,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     import json, os

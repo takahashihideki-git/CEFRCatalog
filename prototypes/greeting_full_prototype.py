@@ -89,6 +89,22 @@ DISCUSSION = [
 "【点検総括と語彙裁定】 書面フォーマル一段（判断(o)）は非適用 ── 書面系列は648（A1）・682（A2）で消え、Correspondence がB2帯まで伸びない。精緻化条件「Correspondence系列がB2帯まで伸びる行為でのみ現れる」の不成立側と整合し、これで条件は3値で判別的に働く（伸びる→現れる：感謝詫び632・授受633・苦情628／伸びない→現れない：挨拶・意見表明）。語彙裁定（判断(s)の枠内、CEFRカタログ4）：greetings（648・A1行）＝絵葉書定型 Greetings from X! の不可分の一部として保持／madam（444・A2行）＝呼びかけ定型 Excuse me, madam の一部として保持（苦情638の Dear Sir or Madam と同語・同理由）。固有名詞（Kenji/Aya/Kyoto/Tanaka）は実例の登場人物として正当。oh/goodbye/congratulations/congrats はCEFR-J未収録の間投詞・定型として allowlist 裁定済み（判断(s)-2）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "453": ["basic, formulaic expressions"],
+    "455": ["in a simple way"],
+    "451": ["basic greeting and leave-taking expressions"],
+    "452": [],
+    "444": ["simple, everyday, polite forms"],
+    "438": [],
+    "686": ["simple online greetings", "using basic formulaic expressions and emoticons"],
+    "648": ["short, simple"],
+    "682": ["basic social communication"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -99,7 +115,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {'挨拶・別れ・安否': {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                      "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                      "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

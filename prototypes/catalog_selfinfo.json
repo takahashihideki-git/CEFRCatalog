@@ -4,6 +4,26 @@
   "scope": "全数（5件。口頭2＋書面3）",
   "type": "主張的（assertive）── 自分が何者かを伝える。下位系＝情報授受系、梯子型＝外部化型（消失点A2。外部化先＝事実情報の授受・情報管理相と面接。第3周-5第三陣で確定）",
   "essence": "自分が何者かを伝える。Pre-A1〜A2で出尽くす起点行為 ── 名前・国籍・職業の粒から自己紹介の型まで。深化は事実情報の授受（情報管理相）と面接へ外部化される。",
+  "原文の限定句": {
+   "650": [
+    "basic personal information",
+    "short phrases and sentences",
+    "with reference to a dictionary"
+   ],
+   "687": [
+    "short simple statements",
+    "provided they can select them from a menu and/or refer to an online translation tool"
+   ],
+   "599": [
+    "simple direct questions",
+    "put very slowly and clearly in direct, non-idiomatic language"
+   ],
+   "571": [],
+   "643": [
+    "of a routine nature",
+    "short"
+   ]
+  },
   "rows": [
    {
     "mode": "書面",

@@ -71,6 +71,71 @@
     ]
    }
   },
+  "原文の限定句": {
+   "850": [
+    "with the help of a dictionary",
+    "simple phrases",
+    "familiar and everyday themes"
+   ],
+   "851": [
+    "single words and short texts",
+    "in standard printed format"
+   ],
+   "848": [
+    "simple language",
+    "very short texts",
+    "familiar and everyday themes",
+    "the highest frequency vocabulary",
+    "despite errors"
+   ],
+   "849": [
+    "short texts",
+    "in printed or clearly handwritten format"
+   ],
+   "846": [
+    "short simple texts",
+    "provided the texts concern concrete, familiar subjects and contain only simple everyday language"
+   ],
+   "847": [
+    "key words and phrases or short sentences",
+    "a short text",
+    "within the learner’s limited competence and experience"
+   ],
+   "844": [
+    "straightforward, informational texts",
+    "of personal or current interest",
+    "provided oral texts are clearly articulated"
+   ],
+   "845": [
+    "short passages",
+    "in a simple fashion",
+    "using the original text wording and ordering"
+   ],
+   "843": [
+    "of general or personal interest"
+   ],
+   "842": [
+    "related to their fields of interest and specialisation"
+   ],
+   "839": [
+    "within their fields of professional, academic and personal interest"
+   ],
+   "840": [
+    "in their fields of special interest"
+   ],
+   "841": [],
+   "837": [
+    "provided they can occasionally check the precise meaning of unusual, technical terms"
+   ],
+   "838": [
+    "for a specific audience",
+    "respecting the style and register of the original"
+   ],
+   "835": [
+    "particularly when someone else’s position is being reported"
+   ],
+   "836": []
+  },
   "rows": [
    {
     "mode": "書面",

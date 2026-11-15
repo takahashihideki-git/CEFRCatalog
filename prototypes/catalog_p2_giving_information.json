@@ -4,6 +4,32 @@
   "scope": "全数（10件。口頭10 ── mode一様、(d)裁定1）",
   "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。教示族での再現＝判断(ae)・CEFRカタログ10）。談話課題糸＝報告／手順／説明（教示族3糸、書面Reports and essaysと共有）＋副タグ（結束条件句・支援条件・静的描写）",
   "essence": "一人で、相手が使える形にして情報を渡す。梯子は組み立ての複雑化に宿るが、その軸は時間でも論理でもなく精度（名指し→順序→事実の報告→要点と詳細な指示→確実な伝達と工程→職務全域と助言→微細な区別と一連の複雑な手順）。受け手基準が文言に現れない唯一の族で、上端では婉曲が誤伝達として罰される。並行対の書面側はReports and essays（270/364、文言でなく課題で採った初の対）。",
+  "原文の限定句": {
+   "272": [
+    "using basic words/signs, phrases and formulaic expressions",
+    "provided they can prepare in advance"
+   ],
+   "271": [
+    "simple directions",
+    "using basic expressions"
+   ],
+   "270": [
+    "straightforward factual information",
+    "a familiar topic",
+    "provided they can prepare beforehand"
+   ],
+   "268": [
+    "with reasonable precision"
+   ],
+   "269": [],
+   "266": [],
+   "267": [],
+   "265": [
+    "related to their occupational role"
+   ],
+   "263": [],
+   "264": []
+  },
   "rows": [
    {
     "mode": "口頭",

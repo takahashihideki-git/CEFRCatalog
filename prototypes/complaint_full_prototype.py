@@ -98,6 +98,22 @@ DISCUSSION = [
 "【往復・応答の点検：苦情は「片側往復」の行為である ── 語彙裁定の記録】 テンプレート要件（判断(n)）の点検結果：9件すべてが「する側」で、**「受ける側」の記述文はゼロ**。苦情の受け手はサービス提供者・機関の役割であり、CEFRの学習者can-doには現れない ── 往復軸が行為の性質上「片側往復」になる初のケースである。(n)の病理（応答の不在が行為の不履行になる）は、苦情では「受け」でなく**「言い切り」**に現れる：要求（Could you change it?）まで言い切らないと行為が不履行になる（533のL1注意）。断る・返す型は526（相手の主張を受けつつ通す）・527（譲歩限度の明示）に内在する。語彙裁定（判断(s)の枠内、CEFRカタログ4）：liable（526）・inconvenience（527）・unresolved（629）・urgency（625）＝B2+〜C1行の交渉・公式通信の実態語彙として保持／madam（638・B1+）＝書面定型 Dear Sir or Madam の不可分の一部として保持／invoice（628・B2+）＝公式通信の実務語彙として保持。全件保持＝苦情の上位帯は語彙面でもB2+〜C1の実態と整合し、下位帯（544/533/532）にはフラグが無い ── 緩衝の梯子が語彙レベルの梯子とも並走している。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "544": [],
+    "533": [],
+    "532": ["less routine situations"],
+    "526": ["linguistically"],
+    "527": ["using persuasive language"],
+    "638": ["basic"],
+    "629": ["forceful but polite"],
+    "628": ["using appropriate register, structure and conventions"],
+    "625": ["with good expression and accuracy"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -108,7 +124,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {"苦情・クレーム": {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                            "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                            "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

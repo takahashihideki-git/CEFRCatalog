@@ -52,6 +52,19 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 梯子型＝管理梯子型で確定。588の「深掘り」は明確化740（暗黙の発掘）・授受489（質問の設計）と最上段で合流し、B2+〜C1帯に「問いの設計」という行為横断の技能圏があることを示す。語彙裁定（判断(s)）：フラグなし（part-time・app は実例の書き換えで回避）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "597": ["simple questions", "simple statements"],
+    "595": ["familiar topics", "provided they can ask for clarification occasionally, and are given some help to express what they want to"],
+    "592": ["some initiative", "but is very dependent on the interviewer in the interaction"],
+    "594": ["prepared questionnaire", "with some spontaneous follow-up questions"],
+    "589": ["with little help or prodding from an interviewer"],
+    "588": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -63,7 +76,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

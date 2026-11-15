@@ -4,6 +4,93 @@
   "scope": "全数（意見・見解の表明27＋好悪の表明4＝31行。好悪統合の最終判定＝判断(l)を組み込み）",
   "type": "表出的（expressive）＋主張的要素 ── 話者の心的態度（賛否・評価）を表明し、根拠で支える。下位系＝意見表明系（第一分類層）、梯子型＝二相接続型（評価相＋対立管理相、判断(t)）",
   "essence": "ある事柄への評価スタンスを述べる行為。like/dislikeの直言（好悪）に始まり、I think枠・比較・根拠・維持を経て、他者の論の評価・再構成・反論へ深化する。梯子の実体は対立管理であり、上段はフォーマル場面で立つ。",
+  "原文の限定句": {
+   "480": [
+    "using a limited repertoire of expressions",
+    "when addressed clearly, slowly and directly"
+   ],
+   "448": [],
+   "479": [
+    "in a limited way"
+   ],
+   "502": [
+    "when addressed directly in a formal meeting",
+    "provided they can ask for repetition of key points if necessary"
+   ],
+   "473": [
+    "using simple language"
+   ],
+   "501": [
+    "when asked directly",
+    "provided they receive some help with formulation and can ask for repetition of key points if necessary"
+   ],
+   "469": [
+    "topics of interest"
+   ],
+   "470": [],
+   "471": [
+    "politely"
+   ],
+   "514": [
+    "giving brief reasons and explanations"
+   ],
+   "515": [],
+   "464": [],
+   "466": [
+    "brief comments"
+   ],
+   "497": [
+    "but has difficulty engaging in debate"
+   ],
+   "512": [
+    "brief comments"
+   ],
+   "460": [
+    "familiar contexts"
+   ],
+   "462": [],
+   "495": [],
+   "492": [
+    "with precision"
+   ],
+   "486": [],
+   "487": [
+    "within their academic or professional competence"
+   ],
+   "482": [
+    "at no disadvantage to other participants"
+   ],
+   "484": [],
+   "647": [
+    "a series of very short sentences",
+    "using simple words and formulaic expressions",
+    "with reference to a dictionary"
+   ],
+   "684": [
+    "very simple messages",
+    "a series of very short sentences",
+    "relying on the aid of a translation tool"
+   ],
+   "683": [
+    "brief",
+    "using a repertoire of basic language",
+    "though they will generally have to refer to an online translation tool and other resources"
+   ],
+   "681": [
+    "provided they are written/signed in simple language",
+    "in a simple way"
+   ],
+   "677": [
+    "a familiar topic of interest",
+    "provided they can prepare the text beforehand and use online tools to fill gaps in language and check accuracy"
+   ],
+   "635": [],
+   "672": [
+    "topics of interest",
+    "provided contributors avoid unusual or complex language and allow time for responses"
+   ],
+   "670": []
+  },
   "rows": [
    {
     "mode": "口頭",

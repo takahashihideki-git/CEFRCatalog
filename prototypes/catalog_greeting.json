@@ -4,6 +4,32 @@
   "scope": "全数（9件。口頭6＋書面3）",
   "type": "交話・儀礼（phatic）── 接触の確認そのものを目的とする定型の履行。下位系＝定型履行系（第一分類層）、出自類型＝交話・儀礼、梯子型＝定型履行型（型の履行で完結、難所は横＝レジスター・テンポへ）",
   "essence": "出会いと別れの区切りに定型表現を交わし、相手との社会的接触を開き・保ち・閉じる。内容の正しさより、型の適切さとテンポが行為の成否を決める。",
+  "原文の限定句": {
+   "453": [
+    "basic, formulaic expressions"
+   ],
+   "455": [
+    "in a simple way"
+   ],
+   "451": [
+    "basic greeting and leave-taking expressions"
+   ],
+   "452": [],
+   "444": [
+    "simple, everyday, polite forms"
+   ],
+   "438": [],
+   "686": [
+    "simple online greetings",
+    "using basic formulaic expressions and emoticons"
+   ],
+   "648": [
+    "short, simple"
+   ],
+   "682": [
+    "basic social communication"
+   ]
+  },
   "rows": [
    {
     "mode": "口頭",

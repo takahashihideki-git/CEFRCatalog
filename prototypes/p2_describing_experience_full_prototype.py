@@ -259,6 +259,41 @@ DISCUSSION = [
  "効く how well 軸の主役は**一貫性・結束性**と**話題の展開**であり、後者が主軸に立つのは全カタログを通じて本スケールが初 ── 第1柱の主軸（社会言語的適切さ・文法的正確さ）との明確な対照をなす。叙述は対立を含まないため社会言語的適切さの関与は低く、代わりに**叙述の正確さ**（感情の解像度：242/239）と**語彙範囲**（描写の解像度：237。第1柱・感情の表出と共有）、**流暢さ**（241）が段ごとに前景化する。最上段では can-do 記述が品質語彙とほぼ一体化し（234：clear, smoothly flowing, memorable）、梯子の上端が横串へ溶ける ── (a)裁定で見た総括系＝束の再記述と同じ力学がスケール内部の終端にも働いている。なお(b)裁定1の軽量点検の結果、本スケールに「質のみ行」は無い（234も memorable な**描写をする**という行為核を保持）── フラグ0件。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "260": ["using simple words/signs and formulaic expressions", "provided they can prepare in advance"],
+    "261": ["using simple adjectives", "accompanied by body language"],
+    "258": [],
+    "259": ["simple aspects", "in a series of simple sentences", "using simple words/signs and basic phrases", "provided they can prepare in advance"],
+    "254": [],
+    "255": ["in simple terms"],
+    "256": [],
+    "257": ["briefly"],
+    "248": ["in a simple list of points"],
+    "249": ["everyday aspects"],
+    "250": ["short, basic descriptions"],
+    "251": [],
+    "252": ["simple descriptive language", "brief statements"],
+    "253": [],
+    "240": ["straightforward", "familiar subjects", "within their field of interest"],
+    "241": ["reasonably fluently", "straightforward", "as a sequence of points"],
+    "242": [],
+    "243": [],
+    "244": [],
+    "245": [],
+    "246": [],
+    "247": [],
+    "239": [],
+    "237": ["related to their field of interest"],
+    "238": ["in detail"],
+    "235": [],
+    "236": [],
+    "234": ["often memorable"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -290,7 +325,7 @@ def build(root="."):
         "scope": "全数（28件。口頭28 ── mode一様、(d)裁定1）",
         "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型。仮設＝CEFRカタログ7、本採用＝判断(ab)・CEFRカタログ8）。談話課題糸＝自己提示／静的描写／語り／感情・評価／統合（作業層）",
         "essence": "一人で、時間軸と観点をもった談話を組み立てて、経験・出来事・対象を聞き手に手渡す。梯子は組み立ての複雑化（定型句→列挙→線形連鎖→意味づけ→統合→効果）に宿る。第1柱の窓口はNo.680（経験・出来事の叙述）。",
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

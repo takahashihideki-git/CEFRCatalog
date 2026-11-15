@@ -58,6 +58,20 @@ DISCUSSION = [
 "【No.612の採否判定（判断(v)）── 採用】 (r)で留置したUsing telecommunications 6件のうち612のみを単独で掛け直し、採用（篩266・ADOPT183）。理由：(a) 受領→確認→中継の行為核が一つの記述文で完結して読め、実例可能。(b) 本行為の既存6件は全て書面系で、行為の原風景（口頭の電話伝言）が帳簿に不在 ── この欠落を埋める唯一の記述文。(c) (r)の留置理由「チャネル条件を除けば既存記述文の再記述」が当てはまらない ── 中継ループ（confirm and pass on）は658（受ける）にも662（残す）にも書かれていない固有の核。残るUsing telecommunications 5件は留置のまま（対象外40件）。語彙裁定（判断(s)）：固有名詞（Ken・612行）はallowlist裁定。beforehand は実例の書き換えで回避、他フラグなし。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "662": ["simple message"],
+    "612": ["simple message"],
+    "658": ["short, simple message", "provided they can ask for repetition and reformulation"],
+    "657": ["provided the caller dictates these clearly and sympathetically"],
+    "654": ["routine messages"],
+    "655": [],
+    "653": ["provided they can ask for clarification or elaboration if necessary"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -69,7 +83,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

@@ -27,6 +27,14 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 外部化型で確定（仮判定どおり）。第2柱の範型2枚の完成を受け、窓口の参照は語り糸へ張り替え済み（判断(aa)・CEFRカタログ8）── 680（書面投稿）の近接はCreative writingの語り糸、口頭はその並行対であり、糸がモードに先立つ構造がそのまま参照に写る。語彙裁定（判断(s)）：ramen・noodles（680・A2+行）＝食物対象スロット（(s)-1）として保持（hiking は収録内で通過）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "680": ["short descriptive", "with simple key details"],
+}
+
+
 def build(root="."):
     import json, os
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
@@ -39,7 +47,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     import json, os

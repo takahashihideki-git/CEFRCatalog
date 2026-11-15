@@ -26,6 +26,18 @@ DISCUSSION = [
 "【点検総括と語彙裁定】 往復・応答（判断(n)）の点検：この行為は往復の運営そのものが対象であり、する側＝開始・質問・話題提供、受ける側＝反応標識・相槌・経験の接ぎ木（432 の expressing reactions が受け在庫の明文化）、断る・返す型＝会話からの退出定型で、退出は挨拶の閉じる定型との分業になる。往復軸の病理（受け在庫の欠落が不関心・冷淡に化ける）は L1 難所 (a) とそのまま重なり、この行為では往復点検と L1 点検が一体化する。書面フォーマル一段：判定対象外（第4段落）。語彙裁定（判断(s)）：keynote（427・B2+ 行）は CEFR-J 未収録の会議場面名詞 ── B2+ 行の実例の場面語として保持を裁定（allowlist 記載）。他の実例は検証範型⑤から変更なし。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "450": ["simple conversation", "basic factual nature", "a predictable topic"],
+    "445": ["in simple language", "most routine matters"],
+    "434": ["unprepared", "familiar topics"],
+    "432": ["relatively spontaneous", "familiar subjects"],
+    "427": ["if appropriate"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -39,7 +51,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": r["exponents"], "scene": r["scene"],
                      "howwell": r["howwell"], "l1": r["l1"], "delta": r["delta"]})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                  "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                  "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

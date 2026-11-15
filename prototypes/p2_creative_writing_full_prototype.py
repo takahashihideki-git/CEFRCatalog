@@ -241,6 +241,37 @@ DISCUSSION = [
  "効く how well 軸の主役は一貫性・結束性（背骨の中身がそのまま結束の梯子である）と話題の展開で、第2柱の二スケールで一致した。書面固有の観察は質フラグ3行（333/328/326）の存在：結束性（333）と語彙の使いこなし・柔軟さ（328/326）という横串の軸が、このスケールでは can-do 行として梯子の内部に立っている ── 横串の軸がどこで can-do 化するかは柱・モードごとに違う、という横串埋め込み（判断(d)）の設計への直接の材料である（(y)(b)の軽量点検はフラグ3件：第一号の0件と対照）。正書法（orthographic control）は書面専用の横串だが記述文には一度も現れない ── 完全に横串側で完結している。そして最上段では can-do 記述が品質語彙と一体化し（325：clear, smoothly flowing, engaging）、梯子の上端が横串へ溶ける現象が口頭（234）と書面（325）の両モードで再現した ── 総括系＝束の再記述（(y)(a)）と同じ力学がスケール終端に働くことも二例目となり、C帯の提示は「行為の追加」でなく「質の統御」として設計すべきだという第1柱以来の像が第2柱でも確定した。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "346": ["simple phrases and sentences"],
+    "347": ["in very simple language"],
+    "348": ["simple words/signs and phrases", "certain everyday objects"],
+    "342": ["a series of simple phrases and sentences"],
+    "343": ["short, simple", "simple poems"],
+    "344": ["using basic, concrete vocabulary and simple phrases and sentences with simple connectives"],
+    "345": ["provided they can consult a dictionary and references"],
+    "339": ["everyday aspects", "in linked sentences"],
+    "340": ["very short, basic descriptions"],
+    "341": ["a simple story"],
+    "335": ["straightforward, detailed", "familiar subjects", "within their field of interest"],
+    "336": ["in simple, connected text"],
+    "337": [],
+    "338": [],
+    "333": [],
+    "334": ["a simple review", "using a limited range of language"],
+    "331": ["related to their field of interest"],
+    "332": [],
+    "330": ["following established conventions of the genre concerned"],
+    "327": ["appropriate to the reader in mind"],
+    "328": ["though use of the latter is not always appropriate"],
+    "329": [],
+    "325": ["in a style appropriate to the genre adopted"],
+    "326": ["appropriately"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -279,7 +310,7 @@ def build(root="."):
         "scope": "全数（24件。書面24 ── mode一様、(d)裁定1）",
         "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型。本採用＝判断(ab)・CEFRカタログ8）。談話課題糸＝自己提示／静的描写／語り／感情・評価／批評／統合（作業層）＋副タグ（虚構・結束条件句・ジャンル・支援条件・質フラグ）",
         "essence": "一人で、不在の読者に向けて、記述・物語・レビューを書き上げる。梯子は組み立ての複雑化（接続→結束の明示→ジャンル慣習→読者適合→効果）に宿り、「創作」は糸でなく全糸を貫く副次元である。並行対の口頭側は describing experience（型式標本338/247）。",
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

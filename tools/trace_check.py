@@ -218,40 +218,46 @@ else:
 
 # ---------- E 原典 en の限定句 → 帳簿の宣言 ----------
 e_rows = e_q = e_empty = 0
-for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
+e_undeclared = []
+# 全数シート43枚が対象。宣言のないシートは「未宣言」として所見に出す（落とさない）──
+# 第2柱7枚と第4柱3枚はまだ宣言していない（判断(dh)の留保①）。
+for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_*.json'))):
     base = os.path.basename(f)
     d = json.load(io.open(f, encoding='utf-8'))
-    sheet = d[list(d)[0]]
-    lim = sheet.get('原文の限定句')
-    if lim is None:
-        errors.append("E1: %s に「原文の限定句」が無い" % base)
-        continue
-    en_of = {str(r['no']): r['en'] for r in sheet['rows']}
-    if set(lim) != set(en_of):
-        errors.append("E1: %s の「原文の限定句」が行と一致しない（宣言なし %s／行に無い %s）"
-                      % (base, sorted(set(en_of) - set(lim)), sorted(set(lim) - set(en_of))))
-    for no, qs in lim.items():
-        if no not in en_of:
+    for act, sheet in d.items():
+        if not (isinstance(sheet, dict) and 'rows' in sheet):
             continue
-        e_rows += 1
-        if not qs:
-            e_empty += 1
-        for q in qs:
-            e_q += 1
-            # 単なる部分文字列では末尾を削る改変（illustrations → illustration）が通ってしまう ──
-            # 狭くなる方向そのものなので、語境界で留める（反例で空振りして分かった）。
-            hit = False
-            for m in re.finditer(re.escape(q), en_of[no]):
-                before = en_of[no][m.start() - 1] if m.start() else ''
-                after = en_of[no][m.end()] if m.end() < len(en_of[no]) else ''
-                if not (before.isalpha() or after.isalpha()):
-                    hit = True
-                    break
-            if not hit:
-                errors.append("E2: %s の No.%s の限定句「%s」が原文に語として現れない（部分文字列でない、または語の途中で切れている）"
-                              % (base, no, q))
-notes.append("E: 第3部11枚 %d行／限定句 %d句（限定句のない行 %d）── すべて en に語として現れる"
-             % (e_rows, e_q, e_empty))
+        lim = sheet.get('原文の限定句')
+        if lim is None:
+            e_undeclared.append(base)
+            continue
+        en_of = {str(r['no']): r['en'] for r in sheet['rows']}
+        if set(lim) != set(en_of):
+            errors.append("E1: %s の「原文の限定句」が行と一致しない（宣言なし %s／行に無い %s）"
+                          % (base, sorted(set(en_of) - set(lim)), sorted(set(lim) - set(en_of))))
+        for no, qs in lim.items():
+            if no not in en_of:
+                continue
+            e_rows += 1
+            if not qs:
+                e_empty += 1
+            for q in qs:
+                e_q += 1
+                # 単なる部分文字列では末尾を削る改変（illustrations → illustration）が通ってしまう ──
+                # 狭くなる方向そのものなので、語境界で留める（反例で空振りして分かった）。
+                hit = False
+                for m in re.finditer(re.escape(q), en_of[no]):
+                    before = en_of[no][m.start() - 1] if m.start() else ''
+                    after = en_of[no][m.end()] if m.end() < len(en_of[no]) else ''
+                    if not (before.isalpha() or after.isalpha()):
+                        hit = True
+                        break
+                if not hit:
+                    errors.append("E2: %s の No.%s の限定句「%s」が原文に語として現れない（部分文字列でない、または語の途中で切れている）"
+                                  % (base, no, q))
+notes.append("E: 宣言済み %d行／限定句 %d句（限定句のない行 %d）── すべて en に語として現れる。未宣言 %d枚%s"
+             % (e_rows, e_q, e_empty, len(e_undeclared),
+                "（" + "・".join(sorted(set(x[8:-5] for x in e_undeclared))) + "）" if e_undeclared else ""))
 
 # ---------- 報告 ----------
 for n in notes:

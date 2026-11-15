@@ -269,6 +269,44 @@ DISCUSSION = [
 "【好悪統合は三条件成立により確定（判断(t)）── 一行為二相（評価相＋対立管理相）】 判断(l)の判定基準を全数シート組み込みで検証し、三条件すべての成立を確認、CEFRカタログ4の裁定で統合を確定した。(a) delta連鎖は切れない：口頭480（交換の最小形）→448（陳述への自立）→479（I think枠への一般化）→473（比較＝理由の原型）、書面647/684（趣味好悪の列挙）→683（対象への肯定否定コメント）── いずれも条件の緩和と対象の一般化で継ぎ目なく接続し、562/557型の「条件句の脱落」に相当する接続（480の受信配慮条件→448で脱落）も確認できた。(b) L1注意は二相として説明できる：下段＝定型・語彙（like構文の目的語、応答在庫、really の位置、ツールとの付き合い方）、上段＝談話・作法（緩衝、受けてから返す、維持、restate）── 授受（統語→談話）と同型の質的転換がA2/A2+境界で起きる。(c) 感情叙述系の軸は不要：好悪4件の実例に強度階層（sad<upset<devastated）も -ed/-ing の区別も要らず、like/love/don't like の評価語で完結する。よって「意見・見解の表明」を親名とする三例目の二相接続型（評価相4件 A1〜A2＋対立管理相27件 A2〜C2）。正準記録は data/act_phases.json、23→22行為（inventory_182to22）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "480": ["using a limited repertoire of expressions", "when addressed clearly, slowly and directly"],
+    "448": [],
+    "479": ["in a limited way"],
+    "502": ["when addressed directly in a formal meeting", "provided they can ask for repetition of key points if necessary"],
+    "473": ["using simple language"],
+    "501": ["when asked directly", "provided they receive some help with formulation and can ask for repetition of key points if necessary"],
+    "469": ["topics of interest"],
+    "470": [],
+    "471": ["politely"],
+    "514": ["giving brief reasons and explanations"],
+    "515": [],
+    "464": [],
+    "466": ["brief comments"],
+    "497": ["but has difficulty engaging in debate"],
+    "512": ["brief comments"],
+    "460": ["familiar contexts"],
+    "462": [],
+    "495": [],
+    "492": ["with precision"],
+    "486": [],
+    "487": ["within their academic or professional competence"],
+    "482": ["at no disadvantage to other participants"],
+    "484": [],
+    "647": ["a series of very short sentences", "using simple words and formulaic expressions", "with reference to a dictionary"],
+    "684": ["very simple messages", "a series of very short sentences", "relying on the aid of a translation tool"],
+    "683": ["brief", "using a repertoire of basic language", "though they will generally have to refer to an online translation tool and other resources"],
+    "681": ["provided they are written/signed in simple language", "in a simple way"],
+    "677": ["a familiar topic of interest", "provided they can prepare the text beforehand and use online tools to fill gaps in language and check accuracy"],
+    "635": [],
+    "672": ["topics of interest", "provided contributors avoid unusual or complex language and allow time for responses"],
+    "670": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -279,7 +317,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {"意見・見解の表明": {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                              "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                              "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

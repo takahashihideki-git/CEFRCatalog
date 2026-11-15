@@ -273,6 +273,41 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "833": ["simple, predictable information", "short, very simple"],
+    "832": ["clearly structured, short, simple texts", "supplementing their limited repertoire with other means"],
+    "829": ["simple TV or radio news items", "provided the topics concerned are familiar and the delivery is slow and clear"],
+    "830": ["in simple sentences", "clearly structured, short, simple texts", "that have illustrations or tables"],
+    "831": ["simple, short informational texts", "familiar topics"],
+    "824": ["clear, well-structured texts", "familiar or of personal interest", "although lexical limitations cause difficulty with formulation at times"],
+    "825": ["simply", "straightforward texts", "familiar subjects"],
+    "826": ["provided people articulated clearly"],
+    "827": ["in their fields of interest", "provided they can listen or view several times"],
+    "828": ["provided they can view them several times"],
+    "821": ["in their fields of interest", "provided they can check the meaning of certain expressions"],
+    "822": ["a short narrative or article"],
+    "823": ["short pieces of information"],
+    "815": [],
+    "816": [],
+    "817": ["including their fields of special interest"],
+    "818": ["on a topic of interest"],
+    "819": [],
+    "820": [],
+    "813": ["related to their fields of interest and specialisation"],
+    "814": [],
+    "807": [],
+    "808": ["within their academic or professional competence"],
+    "809": ["although they may occasionally check particular technical concepts"],
+    "810": [],
+    "811": [],
+    "812": [],
+    "806": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -309,7 +344,7 @@ def build(root="."):
         "type": "第4柱（仲介）。梯子＝入力の側の条件の解除の一本（支え→身近な主題と明瞭な構成→何度も聞ける・確かめられる→短い素材→関心分野→条件なし→専門の内外→逆境）、深さ＝渡す中身の七層（『受容の課題』§2）は段の属性。四欄（scene＝受けるもの・howwell＝渡すもの・l1・delta）は書物の本文そのもの（判断(cs)、判断(bs)と同じ）。Language A＝B＝英語（判断(cs)②）。",
         "essence": "聞いたか読んだかしたテキストを、別の相手に英語で渡す。段を区切るのは入力の側の条件と渡し方（伝える→要約する→統合する→コメントして論じる→説明する）で、渡す中身の深さ（一つの項目から含意まで）がその中身。受ける側（第3部）の段と同じ級に並ぶのが常で（一級の差は但し書きの差、二級以上は受ける側の梯子を下から辿った参照）、要約の言葉の質が問われる段から語る側（第2部）と並ぶ。",
         "axes": {"条件": CONDITION, "深さ": DEPTH},
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

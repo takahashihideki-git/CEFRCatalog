@@ -83,6 +83,25 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 スケール再掲対1件（545/598、二行保持・相互参照）。梯子型＝管理梯子型で確定（仮判定どおり）。語彙裁定（判断(s)）：delivery（703・A2+行）＝記述文由来（delivery dates）として保持。固有名詞（Ken/Sakura・705行）はallowlist裁定。stock は実例の書き換えで回避。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "549": ["simple purchases", "when pointing or other gesture can support the verbal reference"],
+    "543": [],
+    "542": ["simple purchases"],
+    "540": ["simple transactions"],
+    "539": ["simple information"],
+    "545": ["perhaps using gestures and body language"],
+    "705": ["simple online transactions", "by filling in an online form or questionnaire"],
+    "537": ["as long as it is of a straightforward, non-specialised nature"],
+    "703": ["formulaic language", "routine problems"],
+    "700": ["simple clarification or explanation"],
+    "695": ["within their area(s) of expertise"],
+    "691": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -94,7 +113,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

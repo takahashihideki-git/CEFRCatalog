@@ -4,6 +4,76 @@
   "scope": "全数（24件。書面24 ── mode一様、(d)裁定1）",
   "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型。本採用＝判断(ab)・CEFRカタログ8）。談話課題糸＝自己提示／静的描写／語り／感情・評価／批評／統合（作業層）＋副タグ（虚構・結束条件句・ジャンル・支援条件・質フラグ）",
   "essence": "一人で、不在の読者に向けて、記述・物語・レビューを書き上げる。梯子は組み立ての複雑化（接続→結束の明示→ジャンル慣習→読者適合→効果）に宿り、「創作」は糸でなく全糸を貫く副次元である。並行対の口頭側は describing experience（型式標本338/247）。",
+  "原文の限定句": {
+   "346": [
+    "simple phrases and sentences"
+   ],
+   "347": [
+    "in very simple language"
+   ],
+   "348": [
+    "simple words/signs and phrases",
+    "certain everyday objects"
+   ],
+   "342": [
+    "a series of simple phrases and sentences"
+   ],
+   "343": [
+    "short, simple",
+    "simple poems"
+   ],
+   "344": [
+    "using basic, concrete vocabulary and simple phrases and sentences with simple connectives"
+   ],
+   "345": [
+    "provided they can consult a dictionary and references"
+   ],
+   "339": [
+    "everyday aspects",
+    "in linked sentences"
+   ],
+   "340": [
+    "very short, basic descriptions"
+   ],
+   "341": [
+    "a simple story"
+   ],
+   "335": [
+    "straightforward, detailed",
+    "familiar subjects",
+    "within their field of interest"
+   ],
+   "336": [
+    "in simple, connected text"
+   ],
+   "337": [],
+   "338": [],
+   "333": [],
+   "334": [
+    "a simple review",
+    "using a limited range of language"
+   ],
+   "331": [
+    "related to their field of interest"
+   ],
+   "332": [],
+   "330": [
+    "following established conventions of the genre concerned"
+   ],
+   "327": [
+    "appropriate to the reader in mind"
+   ],
+   "328": [
+    "though use of the latter is not always appropriate"
+   ],
+   "329": [],
+   "325": [
+    "in a style appropriate to the genre adopted"
+   ],
+   "326": [
+    "appropriately"
+   ]
+  },
   "rows": [
    {
     "mode": "書面",

@@ -4,6 +4,31 @@
   "scope": "全数（8件。口頭8）",
   "type": "主張的（assertive）── 何が起きているか、なぜ問題かを伝わる形で述べる。下位系＝叙述系、梯子型＝管理梯子型（管理課題＝説明の精密さ、A1〜B2。第3周-5第三陣で確定）",
   "essence": "何が起きているか、なぜ問題なのかを相手に伝わる形で説明する。梯子は説明の精密さ ── 身振り込みの一点表示から、症状の記述、理由の明示、譲歩を導く説明へ。",
+  "原文の限定句": {
+   "600": [
+    "in simple language",
+    "simple questions",
+    "even though they have to rely on gestures and body language to reinforce the message"
+   ],
+   "598": [
+    "in simple language",
+    "perhaps using gestures and body language"
+   ],
+   "596": [
+    "very basic symptoms and ailments"
+   ],
+   "593": [
+    "in a simple way",
+    "provided this is given clearly in everyday language"
+   ],
+   "590": [
+    "concrete information",
+    "but with limited precision"
+   ],
+   "465": [],
+   "511": [],
+   "529": []
+  },
   "rows": [
    {
     "mode": "口頭",

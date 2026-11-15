@@ -47,6 +47,18 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 外部化型で確定（仮判定どおり）。横串は方略（道具の使用＝650/687）と社会言語（自己紹介の文化差＝643）。語彙裁定（判断(s)）：single（687・Pre-A1行）＝記述文由来（relationship status のメニュー選択肢）、固有名詞（Japan・K-E-N ほか）＝allowlist裁定。engineer は収録内で通過。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "650": ["basic personal information", "short phrases and sentences", "with reference to a dictionary"],
+    "687": ["short simple statements", "provided they can select them from a menu and/or refer to an online translation tool"],
+    "599": ["simple direct questions", "put very slowly and clearly in direct, non-idiomatic language"],
+    "571": [],
+    "643": ["of a routine nature", "short"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -58,7 +70,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

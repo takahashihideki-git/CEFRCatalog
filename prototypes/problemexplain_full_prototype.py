@@ -62,6 +62,21 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 スケール再掲対2件（545/598・465/511、いずれも二行保持・相互参照 ── 511は465の完全包含＋拡張という新しい形の対で、場面横断性に加えて「束への埋め込み」を示す）。梯子型＝管理梯子型で確定。語彙裁定（判断(s)）：flu（596・A2+行）＝記述文由来（such as a cold or the flu）、cough（596・A2+行）＝症状スロット（(s)-1）として保持。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "600": ["in simple language", "simple questions", "even though they have to rely on gestures and body language to reinforce the message"],
+    "598": ["in simple language", "perhaps using gestures and body language"],
+    "596": ["very basic symptoms and ailments"],
+    "593": ["in a simple way", "provided this is given clearly in everyday language"],
+    "590": ["concrete information", "but with limited precision"],
+    "465": [],
+    "511": [],
+    "529": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -73,7 +88,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

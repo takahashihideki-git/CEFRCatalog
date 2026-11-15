@@ -4,6 +4,43 @@
   "scope": "全数（12件。口頭7＋書面5）",
   "type": "指示的（directive）── 欲しいものを言い、取引を成立させる。下位系＝取引系、梯子型＝管理梯子型（管理課題＝取引の複雑化、Pre-A1〜C1。第3周-5第三陣で確定）",
   "essence": "欲しいものを言い、値段を尋ね、注文し、取引を閉じる。梯子は取引の複雑化 ── 指差しで足りる購買から、定型の取引、問題への対応、条件の交渉、そしてサービスを提供する側へ。",
+  "原文の限定句": {
+   "549": [
+    "simple purchases",
+    "when pointing or other gesture can support the verbal reference"
+   ],
+   "543": [],
+   "542": [
+    "simple purchases"
+   ],
+   "540": [
+    "simple transactions"
+   ],
+   "539": [
+    "simple information"
+   ],
+   "545": [
+    "perhaps using gestures and body language"
+   ],
+   "705": [
+    "simple online transactions",
+    "by filling in an online form or questionnaire"
+   ],
+   "537": [
+    "as long as it is of a straightforward, non-specialised nature"
+   ],
+   "703": [
+    "formulaic language",
+    "routine problems"
+   ],
+   "700": [
+    "simple clarification or explanation"
+   ],
+   "695": [
+    "within their area(s) of expertise"
+   ],
+   "691": []
+  },
   "rows": [
    {
     "mode": "口頭",

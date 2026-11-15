@@ -68,6 +68,19 @@ DISCUSSION = [
 "【点検総括と語彙裁定 ── 判断(s)-1の発祥地】 書面フォーマル一段（判断(o)）は原理的非適用（書面記述文ゼロ。書面の依頼は授受の帳簿に吸収）。語彙裁定（CEFRカタログ4）：scissors/tape/menu/pass（A1行のA2語）は**行為の枠（Can I have...? ＝A1）と目的語スロット（実物名詞＝A2）の分業**であり、判断(s)-1「レベル保証は行為の枠に適用し、目的語スロットは可変域として扱う」の発祥地にして運用第1号として保持。依頼はこの原理が最も純粋に現れる ── 枠は3語（Can I have）で固定され、スロットに何が入るかは場面の物資が決める。量産テンプレートでは、依頼系・取引系の実例のスロット語彙をレベル保証の対象外と明記する。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "522": [],
+    "546": [],
+    "547": ["food and drink", "using basic expressions"],
+    "519": ["simple and routine tasks", "using simple phrases"],
+    "538": [],
+    "442": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -78,7 +91,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {'依頼・要求': {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                      "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                      "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

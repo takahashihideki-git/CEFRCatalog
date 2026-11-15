@@ -134,6 +134,23 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "272": ["using basic words/signs, phrases and formulaic expressions", "provided they can prepare in advance"],
+    "271": ["simple directions", "using basic expressions"],
+    "270": ["straightforward factual information", "a familiar topic", "provided they can prepare beforehand"],
+    "268": ["with reasonable precision"],
+    "269": [],
+    "266": [],
+    "267": [],
+    "265": ["related to their occupational role"],
+    "263": [],
+    "264": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -172,7 +189,7 @@ def build(root="."):
         "scope": "全数（10件。口頭10 ── mode一様、(d)裁定1）",
         "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。教示族での再現＝判断(ae)・CEFRカタログ10）。談話課題糸＝報告／手順／説明（教示族3糸、書面Reports and essaysと共有）＋副タグ（結束条件句・支援条件・静的描写）",
         "essence": "一人で、相手が使える形にして情報を渡す。梯子は組み立ての複雑化に宿るが、その軸は時間でも論理でもなく精度（名指し→順序→事実の報告→要点と詳細な指示→確実な伝達と工程→職務全域と助言→微細な区別と一連の複雑な手順）。受け手基準が文言に現れない唯一の族で、上端では婉曲が誤伝達として罰される。並行対の書面側はReports and essays（270/364、文言でなく課題で採った初の対）。",
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

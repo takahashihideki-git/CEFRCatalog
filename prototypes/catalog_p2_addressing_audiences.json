@@ -4,6 +4,60 @@
   "scope": "全数（18件。口頭18 ── mode一様、(d)裁定1）",
   "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・判断(ab)）。初の口頭束スケール：論証族宣言（理由づけ／比較考量／論構造）＋固有糸2本（講述・質疑応答）── 講演族は立てない（判断(ag)）",
   "essence": "聴衆の前で、準備の上に立って話す。器（講述）はB1で中抜きし中身は論証族へ外部化されてC2の聴衆適合で再浮上、質疑応答はA2の支えからC2の敵意処理まで七段の固有糸として並走する。並行対3件（305/359・303/356・299/354）が論証族を4対にし、段差の軸を準備・推敲可能性へ読み直させた（判断(af)）。質フラグ0件 ── 口頭側の反証テスト最終回を通過。",
+  "原文の限定句": {
+   "314": [
+    "very short prepared text",
+    "rehearsed"
+   ],
+   "312": [
+    "short, rehearsed, basic",
+    "a familiar subject"
+   ],
+   "313": [
+    "straightforward follow-up questions",
+    "if they can ask for repetition and if some help with the formulation of their reply is possible"
+   ],
+   "310": [
+    "short, rehearsed",
+    "briefly"
+   ],
+   "311": [
+    "a limited number of straightforward follow-up questions"
+   ],
+   "308": [
+    "prepared straightforward",
+    "within their field",
+    "most of the time",
+    "with reasonable precision"
+   ],
+   "309": [
+    "but may have to ask for repetition if the delivery is rapid"
+   ],
+   "307": [
+    "prepared",
+    "within their field"
+   ],
+   "305": [
+    "clear, prepared"
+   ],
+   "306": [
+    "with a degree of fluency and spontaneity"
+   ],
+   "303": [],
+   "304": [
+    "often showing remarkable fluency and ease of expression"
+   ],
+   "299": [
+    "at some length"
+   ],
+   "300": [],
+   "301": [],
+   "302": [
+    "almost effortlessly"
+   ],
+   "297": [],
+   "298": []
+  },
   "rows": [
    {
     "mode": "口頭",

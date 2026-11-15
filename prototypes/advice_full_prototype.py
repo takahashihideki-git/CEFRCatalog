@@ -39,6 +39,16 @@ DISCUSSION = [
 "【点検総括・語彙裁定】 外部化型（中抜き型）で確定。中抜きの帳簿的意味は「行為の可視性はレベルに対して単調でない」── 行為は一度他の帳簿に潜り、条件が変わると再浮上する。この知見は仮判定行為の型判定一般に効く（帯の飛び＝即・低信頼ではない）。語彙裁定（判断(s)）：フラグなし。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "560": ["simple matters", "within their field of experience"],
+    "456": ["without awkwardness"],
+    "483": ["complex, delicate or contentious issues", "provided they have the necessary specialised knowledge"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -50,7 +60,7 @@ def build(root="."):
         rows.append({"mode": mode, "level": d["level"], "no": no, "en": d["en"], "jp": tr[str(no)],
                      "exponents": ex, "scene": scene, "howwell": hw, "l1": l1, "delta": delta})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_, "essence": ESSENCE,
-                  "rows": rows, "discussion": DISCUSSION}}
+                  "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)

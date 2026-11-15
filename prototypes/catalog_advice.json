@@ -4,6 +4,19 @@
   "scope": "全数（3件。口頭3）",
   "type": "指示的（directive）── 相手の状況に行動の指針を差し出す。下位系＝協調調整系、梯子型＝外部化型（中抜き型：中段B1+〜C1は意見表明・提案へ外部化、C2で再浮上。判断(x)・第3周-5第三陣で確定）",
   "essence": "相手の状況に対して、経験・知識から行動の指針を差し出す。B1の「経験分野内の簡単な助言」の後、帯はC2まで飛ぶ ── 中段の助言実務は意見表明・提案へ外部化され、デリケートな案件の扱いとして上端に再浮上する。",
+  "原文の限定句": {
+   "560": [
+    "simple matters",
+    "within their field of experience"
+   ],
+   "456": [
+    "without awkwardness"
+   ],
+   "483": [
+    "complex, delicate or contentious issues",
+    "provided they have the necessary specialised knowledge"
+   ]
+  },
   "rows": [
    {
     "mode": "口頭",

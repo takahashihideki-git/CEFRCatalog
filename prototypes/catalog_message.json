@@ -4,6 +4,28 @@
   "scope": "全数（7件。口頭1＋書面6。No.612は判断(v)で採用）",
   "type": "主張的（assertive）── 人から人へ、内容を損なわずに言葉を運ぶ。下位系＝情報授受系、梯子型＝管理梯子型（管理課題＝中継内容の複雑化、A1〜B2。第3周-5第三陣で確定）",
   "essence": "人から人へ、内容を損なわずに言葉を運ぶ。梯子は中継内容の複雑化と中継の完結性 ── 一行のメモから、電話の受領・確認・伝達のループ、複数の要点、そして複雑な用件へ。",
+  "原文の限定句": {
+   "662": [
+    "simple message"
+   ],
+   "612": [
+    "simple message"
+   ],
+   "658": [
+    "short, simple message",
+    "provided they can ask for repetition and reformulation"
+   ],
+   "657": [
+    "provided the caller dictates these clearly and sympathetically"
+   ],
+   "654": [
+    "routine messages"
+   ],
+   "655": [],
+   "653": [
+    "provided they can ask for clarification or elaboration if necessary"
+   ]
+  },
   "rows": [
    {
     "mode": "書面",

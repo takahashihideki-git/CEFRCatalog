@@ -144,6 +144,44 @@ DISCUSSION = [
 "【統合根拠と点検総括・語彙裁定】 統合根拠：判断(k)（第2周-1、質問応答↔授受の一行為二相統合）。証拠は (1) レベル帯の相補性（下段 Pre-A1〜A2+／上段 A1〜C1）、(2) 562/557 の条件緩和型接続、(3) 同一 Information exchange スケールの分有。相境界で L1 注意は質的に転換する ── 下段は統語（do 支持・疑問詞語順・時制の疑問文・it の脱落）、上段は談話（確認のメタ発話・伝聞標識・重要度順の再構成）。この転換点ゆえに、統合後も二相の別立て記述を保つ（一行為二相、act_phases.json が正準）。語彙裁定（判断(s)）：新規16行の実例は各レベルの語彙枠内で作成（スロット語彙の固有名詞 Ken / Kyoto は実例の登場人物・地名として正当、判断(s)-1 の枠）。継承15行のうち検証範型③で未裁定だった超過3語を量産時裁定（判断(s)-3）：pharmacy（562・A2+行）＝場所スロット、workshop（642・A2+行）＝行事スロット、plumber（656・B1行）＝職業スロット ── いずれもレベル保証は行為の枠（The X closes at ... — I checked. 等）に適用し、スロット名詞は可変域として保持（判断(s)-1）。keynote（会話維持427）は未収録につき allowlist 記載。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "579": [],
+    "581": [],
+    "582": [],
+    "583": [],
+    "584": [],
+    "585": ["very simple questions", "one- or two-word/sign answers"],
+    "574": ["simple questions", "simple statements", "areas of immediate need or on very familiar topics"],
+    "575": [],
+    "578": ["familiar objects"],
+    "649": ["short, very simple"],
+    "569": [],
+    "570": ["referring to a map or plan"],
+    "572": ["simple questions"],
+    "541": [],
+    "568": ["limited information", "familiar and routine operational matters"],
+    "659": ["short, simple", "areas of immediate need"],
+    "563": [],
+    "564": [],
+    "565": [],
+    "562": ["straightforward factual information"],
+    "642": ["short letters"],
+    "679": ["simple exchanges", "predictable everyday topics", "provided enough time is allowed to formulate responses, and that they interact with one interlocutor at a time"],
+    "557": ["straightforward factual information"],
+    "559": ["more detailed information"],
+    "640": ["basic"],
+    "656": ["simple information", "of immediate relevance"],
+    "555": ["within their field", "with some confidence"],
+    "591": ["prepared", "though they may occasionally have to ask for repetition if the other person’s response is rapid or extended"],
+    "554": [],
+    "633": ["using appropriate structure and conventions", "provided these are restricted to matters of fact"],
+    "489": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -162,7 +200,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": r["exponents"], "scene": r["scene"],
                      "howwell": r["howwell"], "l1": r["l1"], "delta": r["delta"]})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                  "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                  "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

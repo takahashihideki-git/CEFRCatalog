@@ -148,6 +148,26 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "287": ["in simple terms", "provided interlocutors are patient"],
+    "286": ["simple, direct comparisons"],
+    "283": ["relating to everyday life", "using simple expressions"],
+    "284": ["briefly"],
+    "285": [],
+    "281": ["well enough to be followed without difficulty most of the time"],
+    "282": ["simple reasons", "a familiar topic"],
+    "278": ["at some length"],
+    "279": [],
+    "280": [],
+    "277": [],
+    "275": [],
+    "276": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -181,7 +201,7 @@ def build(root="."):
         "scope": "全数（13件。口頭13 ── mode一様、(d)裁定1）",
         "type": "第2柱（産出・談話構築）。梯子型＝構築梯子型（第5型・本採用＝判断(ab)。論証族での再現＝判断(ac)・CEFRカタログ9）。談話課題糸＝立論／理由づけ／比較考量／論構造（論証族4糸、書面Reports and essaysと共有）＋副タグ（対話者・感情・評価）",
         "essence": "一人で、聴衆の前に、主張とその裏づけを組み立てて立てる。梯子は組み立ての複雑化（直言→比較→理由→追跡可能な展開→連鎖→体系化・強調→精密化・相手視点・締め括り）に宿り、受け手基準（followed）がB1+で早くも入る。並行対の書面側はReports and essays（型式標本277/356）。",
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

@@ -141,6 +141,30 @@ DISCUSSION = [
 "【統合根拠と点検総括・語彙裁定】 統合根拠：判断(m)（第2周-2、理解状態の表明を表出型から指示型へ移管の上、明確化・繰り返しの要求と一行為二相統合）。証拠は (1) Asking for clarification スケールの共有、(2) レベル帯の相補性（理解表明A1〜A2／明確化要求A2〜C1）、(3) 蝶番記述文746（一文が両相をまたぐ、562/557の同文言性に相当）、(4) I don't understand の発語内効力＝修復の間接的要請。相境界のL1質的転換：下段の壁は文化的閾値（非理解を出す勇気・相槌干渉・遮りの作法）、上段の壁は談話技術（照準の特定化・問いの設計・確認のメタ発話）── 意見（定型語彙→談話作法）・授受（統語→談話）と並ぶ第三の転換形＝「開示→設計」。スケール再掲重複対はなし。737/739はスケール内の負荷型条件対として二行保持（④とdelta参照）。語彙裁定（判断(s)）：チェッカーのフラグ4語を裁定 ── understand（超過A2、A1行747/748）＝行為核（非理解の表明）が要求する正準定型 I don't understand. の中核語につきallowlist掲載／framework（未収録、C1行668）＝学術・業務談話の基本語につきallowlist掲載／version（超過B2、B1+行699）・sustainable（超過C1、B2行739）＝**引用スロット**として保持 ── 相手の用語を引用して照準する本行為の性質上、引用語は相手の発話由来の可変域で、学習者の産出負荷は枠（Could you explain what you mean by ...?）の側にある。判断(s)-1（スロット分業）の拡張：目的語スロットに加え、明確化要求では引用スロットが可変域となる。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "747": ["simple words/signs, intonation and gestures"],
+    "748": ["in a simple way"],
+    "745": [],
+    "746": [],
+    "743": ["very simply"],
+    "744": ["using stock phrases"],
+    "704": ["simple collaborative task", "supportive partner", "provided there are visual aids such as images, statistics or graphs to clarify the concepts involved"],
+    "742": [],
+    "531": ["as necessary"],
+    "702": [],
+    "741": [],
+    "699": ["straightforward instructions"],
+    "739": [],
+    "740": [],
+    "738": [],
+    "737": [],
+    "668": ["as necessary"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -156,7 +180,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": r["exponents"], "scene": r["scene"],
                      "howwell": r["howwell"], "l1": r["l1"], "delta": r["delta"]})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                  "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                  "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

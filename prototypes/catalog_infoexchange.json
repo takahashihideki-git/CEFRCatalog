@@ -4,6 +4,86 @@
   "scope": "全数（31件。口頭24＋書面7。二相：質問応答相〔構造〕15＋情報管理相〔運用〕16）",
   "type": "主張的（assertive）── 世界の事実を尋ね、答え、確実に引き渡す。下位系＝情報授受系、梯子型＝二相接続型（下段＝質問応答相〔構造〕、上段＝情報管理相〔運用〕。判断(k)・第2周-1統合）",
   "essence": "事実を尋ね、答え、引き渡す。下段では「尋ねる文が作れる」ことが、上段では「情報を確実に運べる」ことが梯子を刻む。レベルが上がるとは、主語が疑問文から情報そのものへ移ることである。",
+  "原文の限定句": {
+   "579": [],
+   "581": [],
+   "582": [],
+   "583": [],
+   "584": [],
+   "585": [
+    "very simple questions",
+    "one- or two-word/sign answers"
+   ],
+   "574": [
+    "simple questions",
+    "simple statements",
+    "areas of immediate need or on very familiar topics"
+   ],
+   "575": [],
+   "578": [
+    "familiar objects"
+   ],
+   "649": [
+    "short, very simple"
+   ],
+   "569": [],
+   "570": [
+    "referring to a map or plan"
+   ],
+   "572": [
+    "simple questions"
+   ],
+   "541": [],
+   "568": [
+    "limited information",
+    "familiar and routine operational matters"
+   ],
+   "659": [
+    "short, simple",
+    "areas of immediate need"
+   ],
+   "563": [],
+   "564": [],
+   "565": [],
+   "562": [
+    "straightforward factual information"
+   ],
+   "642": [
+    "short letters"
+   ],
+   "679": [
+    "simple exchanges",
+    "predictable everyday topics",
+    "provided enough time is allowed to formulate responses, and that they interact with one interlocutor at a time"
+   ],
+   "557": [
+    "straightforward factual information"
+   ],
+   "559": [
+    "more detailed information"
+   ],
+   "640": [
+    "basic"
+   ],
+   "656": [
+    "simple information",
+    "of immediate relevance"
+   ],
+   "555": [
+    "within their field",
+    "with some confidence"
+   ],
+   "591": [
+    "prepared",
+    "though they may occasionally have to ask for repetition if the other person’s response is rapid or extended"
+   ],
+   "554": [],
+   "633": [
+    "using appropriate structure and conventions",
+    "provided these are restricted to matters of fact"
+   ],
+   "489": []
+  },
   "rows": [
    {
     "mode": "口頭",

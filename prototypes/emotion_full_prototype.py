@@ -28,6 +28,21 @@ DISCUSSION = [
 "【点検総括と語彙裁定】 往復・応答（判断(n)）の点検：する側＝感情の名指しと叙述、受ける側＝共感の応答定型（437 で記述文レベルに明文化 ── 往復軸がこの行為では B1 の梯子の段そのものになっている）、断る・返す型＝ネガティブな知らせへの応答（I'm sorry to hear that.）。受け在庫の欠落が冷淡さに化ける往復軸の病理は、L1 難所 (d) と一体である。書面 678 の返信（コメントへの個別応答）は書面側の受け在庫。語彙裁定（判断(s)）：refreshed（678・B1 行、B2 語）── SNS の感想投稿の自然な感情語彙であり、この行為の律速段階が語彙解像度であることを踏まえ、B1 行の実例語として保持を裁定（超過裁定につき本段落に保全、判断(s)-3）。他の実例は検証範型①から変更なし（685 reply の裁定は感謝詫びシートの裁定を継承）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "447": ["using very basic stock expressions"],
+    "437": [],
+    "639": ["in some detail"],
+    "678": ["in some detail", "though lexical limitations sometimes cause repetition and inappropriate formulation"],
+    "636": ["detailed"],
+    "676": [],
+    "431": [],
+    "630": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -41,7 +56,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": r["exponents"], "scene": r["scene"],
                      "howwell": r["howwell"], "l1": r["l1"], "delta": r["delta"]})
     return {ACT: {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                  "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                  "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))

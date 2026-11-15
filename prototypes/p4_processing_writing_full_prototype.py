@@ -195,6 +195,30 @@ DISCUSSION = [
 ]
 
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "850": ["with the help of a dictionary", "simple phrases", "familiar and everyday themes"],
+    "851": ["single words and short texts", "in standard printed format"],
+    "848": ["simple language", "very short texts", "familiar and everyday themes", "the highest frequency vocabulary", "despite errors"],
+    "849": ["short texts", "in printed or clearly handwritten format"],
+    "846": ["short simple texts", "provided the texts concern concrete, familiar subjects and contain only simple everyday language"],
+    "847": ["key words and phrases or short sentences", "a short text", "within the learner’s limited competence and experience"],
+    "844": ["straightforward, informational texts", "of personal or current interest", "provided oral texts are clearly articulated"],
+    "845": ["short passages", "in a simple fashion", "using the original text wording and ordering"],
+    "843": ["of general or personal interest"],
+    "842": ["related to their fields of interest and specialisation"],
+    "839": ["within their fields of professional, academic and personal interest"],
+    "840": ["in their fields of special interest"],
+    "841": [],
+    "837": ["provided they can occasionally check the precise meaning of unusual, technical terms"],
+    "838": ["for a specific audience", "respecting the style and register of the original"],
+    "835": ["particularly when someone else’s position is being reported"],
+    "836": [],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(ROOT, "data", "descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(ROOT, "data", "working_translations_1224.json"), encoding="utf-8"))
@@ -238,7 +262,7 @@ def build(root="."):
         "type": "第4柱（仲介）。梯子＝入力の側の条件の解除の一本（支え→身近な主題と簡単な言葉→率直で短い素材→関心のある主題→関心分野→条件なし→用語を確かめられれば）、深さ＝渡す中身の七層（『受容の課題』§2）は段の属性。本章だけの列＝原文の言葉をどこまで使うか（書き写す→拾って写す→項目を切り出す→原文の語句で言い換える→自分の言葉で要約する→原文の文体を保って要約する）。四欄（scene＝受けるもの・howwell＝渡すもの・l1・delta）は書物の本文そのもの（判断(cs)④）。渡す側は英語、受けるものは同一言語内を標準（判断(cs)②・(cx)）。",
         "essence": "読んだか聞いたかしたテキストを、別の相手に英語で書いて渡す。段を区切るのは入力の側の条件と、原文の言葉をどこまで使うか（書き写す→拾う→言い換える→自分の言葉で要約する→文体を保って要約する）で、渡す中身の深さ（見たまま写した文字から含意まで）がその中身。受ける側（第3部）の段と同じ級に並ぶのが常で（一級の差は書く側の仕事の差）、口で渡す側（第4部）とも同じ級に並ぶのが常（統合は書く側が上、立場の説明は書く側が下）。統合と組み直しで書く側（第2部）と並ぶ。",
         "axes": {"条件": CONDITION, "深さ": DEPTH},
-        "rows": rows,
+        "原文の限定句": ORIGINAL_LIMITS, "rows": rows,
         "discussion": DISCUSSION,
     }
     return {ACT: sheet}

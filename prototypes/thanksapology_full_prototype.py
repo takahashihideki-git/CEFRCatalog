@@ -68,6 +68,19 @@ DISCUSSION = [
 "【点検総括と語彙裁定】 往復・応答（判断(n)）の三点：する側＝全6件、受ける側＝446の受諾定型が記述文に明記（往復の双方向が記述文レベルで立つ、挨拶と並ぶ教科書例）、断る・返す型＝詫びの受諾（That's OK.）がその機能を担う。書面フォーマル一段（判断(o)）＝成立の原点（第3段落）。語彙裁定（判断(s)の枠内、CEFRカタログ4）：reply（685・A1行）＝オンライン定型 Sorry for the late reply. の不可分の一部として保持／inconvenience（632・B2行）＝公式詫び定型 apologies for the inconvenience caused の実態語彙として保持（苦情527と同語・同裁定）。congratulations/congrats は allowlist 裁定済み（判断(s)-2）。",
 ]
 
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)補、矢印 原典→帳簿／書物）。
+# 規律5（判断(au)、No.547の事故）と観点⑥の指差しをデータで残す。キーは No.（文字列）、
+# 値は en の部分文字列の列。限定句のない行は空リスト。検査Eが語境界で留めて照合する。
+ORIGINAL_LIMITS = {
+    "446": [],
+    "441": ["in simple terms"],
+    "685": ["formulaic expressions and combinations of simple words/signs", "short positive and negative reactions", "with standard expressions of thanks and apology"],
+    "644": ["very simple"],
+    "646": ["short"],
+    "632": ["using appropriate registers and conventions"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -78,7 +91,7 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {'感謝・詫び・祝意': {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                      "essence": ESSENCE, "rows": rows, "discussion": DISCUSSION}}
+                      "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
