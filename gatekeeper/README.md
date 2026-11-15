@@ -11,6 +11,8 @@ CLAUDE.md の後半（「成果物の受け取りと統合」以降）を、ど�
    - 書物層（`deliverables/book/`）の章・肖像の受け取り → [book-inspection-recipe.md](book-inspection-recipe.md)
    - セッションのクローズ → [roadmap-measure.md](roadmap-measure.md)
 
+- `layers.md` ── 層とゲートの地図（判断(dc)）。**既存の規則に反することを言おうとしたときに引く** ── その規則がどの層の圧縮かを確かめ、張られた記号を開くため。規則集ではないので、更新はゲートを足したとき・被覆が動いたときだけ
+
 ## 書き足す場所
 
 検品で得た教訓や現在地の更新は、**このディレクトリに書いてコミットする**。Claude Code のOSローカルの自動メモリ（`~/.claude/projects/<パス>/memory/`）には書かない ── そこはマシンごと・パスごとに別物で、別の機械からは見えない。
