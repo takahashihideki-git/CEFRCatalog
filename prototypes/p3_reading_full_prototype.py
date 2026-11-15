@@ -113,6 +113,40 @@ ORIGINAL_LIMITS = {
     "148": ["in detail"],
     "147": [],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "写真と絵、そしてごく簡単な言葉": {"Q1": "写真と絵が内容を担い、言葉がごく簡単であること", "Q2": "*illustrated with photos*（172）・*visual support*（170）・*very simple language*（171）", "判定": "体験"},
+    "簡単な言葉と身近": {"Q1": "簡単な言葉で身近なことが書かれていること", "Q2": "*provided they use simple language*（165）・*subjects of personal interest*（167）", "判定": "体験"},
+    "身近な主題を率直に書いた文章": {"Q1": "身近な主題が率直に書かれた記事や論説", "Q2": "*straightforward news articles on familiar subjects*（158）・*clearly signalled*（156）", "判定": "体験"},
+    "立場を取った記事と論説": {"Q1": "書き手が立場を持って書いた文章", "Q2": "*particular stances or viewpoints are adopted*（151）・*seeks to convince*（152）", "判定": "体験"},
+    "分野か辞書": {"Q1": "自分の分野であるか、辞書を使えること", "Q2": "*within their field*（149）・*use a dictionary occasionally*（150）", "判定": "体験"},
+    "逆境": {"Q1": "専門外の長く複雑な文章に出会うこと", "Q2": "*even outside their area of specialisation*（147）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "170": "記録",
+    "171": "引き直し",
+    "165": "引き直し",
+    "166": "記録",
+    "161": "記録",
+    "162": "引き直し",
+    "163": "記録",
+    "164": "引き直し",
+    "158": "引き直し",
+    "156": "引き直し",
+    "151": "記録",
+    "152": "引き直し",
+    "148": "引き直し",
+}
 # 深さ＝七層（『受容の課題』§6.1・付録A）
 DEPTH = {
     "形":   [],
@@ -357,6 +391,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

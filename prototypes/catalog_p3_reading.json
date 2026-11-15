@@ -133,6 +133,53 @@
    ],
    "147": []
   },
+  "区分名の判定": {
+   "写真と絵、そしてごく簡単な言葉": {
+    "Q1": "写真と絵が内容を担い、言葉がごく簡単であること",
+    "Q2": "*illustrated with photos*（172）・*visual support*（170）・*very simple language*（171）",
+    "判定": "体験"
+   },
+   "簡単な言葉と身近": {
+    "Q1": "簡単な言葉で身近なことが書かれていること",
+    "Q2": "*provided they use simple language*（165）・*subjects of personal interest*（167）",
+    "判定": "体験"
+   },
+   "身近な主題を率直に書いた文章": {
+    "Q1": "身近な主題が率直に書かれた記事や論説",
+    "Q2": "*straightforward news articles on familiar subjects*（158）・*clearly signalled*（156）",
+    "判定": "体験"
+   },
+   "立場を取った記事と論説": {
+    "Q1": "書き手が立場を持って書いた文章",
+    "Q2": "*particular stances or viewpoints are adopted*（151）・*seeks to convince*（152）",
+    "判定": "体験"
+   },
+   "分野か辞書": {
+    "Q1": "自分の分野であるか、辞書を使えること",
+    "Q2": "*within their field*（149）・*use a dictionary occasionally*（150）",
+    "判定": "体験"
+   },
+   "逆境": {
+    "Q1": "専門外の長く複雑な文章に出会うこと",
+    "Q2": "*even outside their area of specialisation*（147）",
+    "判定": "体験"
+   }
+  },
+  "落とし穴の源の出どころ": {
+   "170": "記録",
+   "171": "引き直し",
+   "165": "引き直し",
+   "166": "記録",
+   "161": "記録",
+   "162": "引き直し",
+   "163": "記録",
+   "164": "引き直し",
+   "158": "引き直し",
+   "156": "引き直し",
+   "151": "記録",
+   "152": "引き直し",
+   "148": "引き直し"
+  },
   "axes": {
    "条件": {
     "写真と絵、そしてごく簡単な言葉": [

@@ -14,7 +14,9 @@
   B 設計文書『受容の課題』付録A → 帳簿の深さ軸（第3部11枚）
   C 設計文書『受容の課題』§4の手加減の表 → 帳簿の条件の区分（第3部11枚68区分）
   D 設計文書『受容の課題』§5の疎外の節   → 帳簿の落とし穴の欄（第3部11枚69欄）
-  E 原典 en の限定句                     → 帳簿の宣言（第3部11枚183行310句）
+  E 原典 en の限定句                     → 帳簿の宣言（全43枚544行676句）
+  F 区分名の判定（二問）                 → 帳簿の宣言（第3部11枚68区分）
+  G 落とし穴の源の出どころ               → 記録からの復元か、引き直しか（69欄）
 
 Aが要るのは、現行仕様が判断の圧縮であり、圧縮から推論すると器を誤診するため
 （実例：条件の軸を「読むものを条件に流用した崩れ」と誤診し、判断(bp)(cj)と
@@ -36,6 +38,11 @@ Dが要るのは、落とし穴の欄がどの§5の要因に拠るかの宣言�
 Eが要るのは、規律5と観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
 位置のいずれかに残っているかを確かめる）も毎便やって捨てていたため（判断(dh)）。
 句が残っているかの判定は人が読むが、**列挙が原文に忠実であること**は機械で見られる。
+
+FとGが要るのは、判断(de)の判定機構の核が「**判定の入力が変わったら判定は無効**」
+だからである。判定を区分名でキーにすると、改名で判定が外れて検査Fが落ちる ──
+指紋を持たせる必要がない。Gは、源が記録からの復元か検品係の引き直しかを区別して
+残す（引き直しは独立の再判定を受けていない）。
 
 限界：記号の抽出は括弧つき小文字列の単純一致なので、散文の列挙記号 (a)(b) を
 拾いうる。誤って拾っても「到達する」側に倒れるので、偽の赤は出ない。
@@ -259,6 +266,51 @@ notes.append("E: 宣言済み %d行／限定句 %d句（限定句のない行 %d
              % (e_rows, e_q, e_empty, len(e_undeclared),
                 "（" + "・".join(sorted(set(x[8:-5] for x in e_undeclared))) + "）" if e_undeclared else ""))
 
+# ---------- F 区分名の判定 ／ G 落とし穴の源の出どころ ----------
+VERDICTS = ("体験", "構造の語り", "言い足りない", "事実の誤り")
+ORIGINS = ("記録", "引き直し")
+f_n = {}
+g_n = {}
+for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
+    base = os.path.basename(f)
+    d = json.load(io.open(f, encoding='utf-8'))
+    sheet = d[list(d)[0]]
+    cond = (sheet.get('axes') or {}).get('条件', {})
+    nv = sheet.get('区分名の判定')
+    if nv is None:
+        errors.append("F1: %s に「区分名の判定」が無い" % base)
+    else:
+        if set(nv) != set(cond):
+            errors.append("F1: %s の「区分名の判定」が条件の区分と一致しない（判定なし %s／区分に無い %s）"
+                          % (base, sorted(set(cond) - set(nv)), sorted(set(nv) - set(cond))))
+        for name, v in nv.items():
+            if not isinstance(v, dict) or set(v) != {"Q1", "Q2", "判定"}:
+                errors.append("F2: %s の区分「%s」の判定が Q1・Q2・判定の三つを持たない" % (base, name))
+                continue
+            if not v["Q1"].strip() or not v["Q2"].strip():
+                errors.append("F2: %s の区分「%s」の Q1 か Q2 が空（何が分かるかを一文で書く）" % (base, name))
+            if v["判定"] not in VERDICTS:
+                errors.append("F3: %s の区分「%s」の判定「%s」が四つのいずれでもない" % (base, name, v["判定"]))
+            else:
+                f_n[v["判定"]] = f_n.get(v["判定"], 0) + 1
+    src = sheet.get('落とし穴の源') or {}
+    og = sheet.get('落とし穴の源の出どころ')
+    if og is None:
+        errors.append("G1: %s に「落とし穴の源の出どころ」が無い" % base)
+    else:
+        if set(og) != set(src):
+            errors.append("G1: %s の「落とし穴の源の出どころ」が源と一致しない（出どころなし %s／源に無い %s）"
+                          % (base, sorted(set(src) - set(og)), sorted(set(og) - set(src))))
+        for no, v in og.items():
+            if v not in ORIGINS:
+                errors.append("G2: %s の No.%s の出どころ「%s」が「記録」「引き直し」のいずれでもない" % (base, no, v))
+            else:
+                g_n[v] = g_n.get(v, 0) + 1
+notes.append("F: 第3部11枚の区分名の判定 %d件（%s）── 立てたのは検品係、二人目の判定者は Hideki"
+             % (sum(f_n.values()), "／".join("%s:%d" % (k, f_n[k]) for k in sorted(f_n))))
+notes.append("G: 落とし穴の源の出どころ %d件（%s）"
+             % (sum(g_n.values()), "／".join("%s:%d" % (k, g_n[k]) for k in sorted(g_n))))
+
 # ---------- 報告 ----------
 for n in notes:
     print("  " + n)
@@ -269,4 +321,4 @@ if errors:
     for e in errors:
         print("  - " + e)
     sys.exit(1)
-print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ・条件の手加減・落とし穴の源／原文の限定句")
+print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ・条件の手加減・落とし穴の源／原文の限定句／区分名の判定・落とし穴の源の出どころ")

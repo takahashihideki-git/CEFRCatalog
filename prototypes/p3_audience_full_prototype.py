@@ -101,6 +101,36 @@ ORIGINAL_LIMITS = {
     "33": ["when links or implications are not made explicit"],
     "34": [],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "予測できる場で、図を添えて、ゆっくり": {"Q1": "見学や実演のような先の読める場で、図を添えてゆっくり話される席", "Q2": "*a predictable situation like a guided tour*（49）・*illustrated with slides, concrete examples or diagrams*（47）", "判定": "体験"},
+    "明快な標準語": {"Q1": "はっきりした標準語の講演", "Q2": "*clearly articulated standard language or a familiar variety*（43・42）", "判定": "体験"},
+    "標準語": {"Q1": "標準語でさえあればよい講演", "Q2": "*standard language or a familiar variety*（39・37）", "判定": "体験"},
+    "込み入った講演と討論": {"Q1": "中身の濃い講演・討論の席（視点と事実がからまっている）", "Q2": "*propositionally and linguistically complex*（36）・*lectures, discussions and debates*（35）", "判定": "体験"},
+    "逆境": {"Q1": "口語・方言・術語が混じり、含みが明示されない話に出会うこと", "Q2": "*employing colloquialism, regional usage or unfamiliar terminology*（32）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "49": "引き直し",
+    "48": "引き直し",
+    "46": "引き直し",
+    "43": "引き直し",
+    "42": "引き直し",
+    "38": "引き直し",
+    "40": "引き直し",
+    "37": "引き直し",
+    "32": "引き直し",
+    "33": "引き直し",
+}
 # 深さ＝七層（行ごとに一つ、完全分割。『受容の課題』§6.1 の再割付）
 DEPTH = {
     "形":   [],
@@ -293,6 +323,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

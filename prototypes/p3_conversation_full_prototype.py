@@ -100,6 +100,32 @@ ORIGINAL_LIMITS = {
     "19": ["delivered at a natural speed in varieties that are familiar"],
     "17": ["most of", "at a natural speed"],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "ゆっくり": {"Q1": "周囲の人がゆっくり明瞭に話していること", "Q2": "*the delivery is slow and clear*（29）", "判定": "体験"},
+    "明快な標準語": {"Q1": "周囲の話がはっきりした標準語であること", "Q2": "*clearly articulated in standard language or a familiar variety*（25・24）", "判定": "体験"},
+    "熟達した話し手どうしの活発な会話": {"Q1": "達者な二人が速くやりとりしている場", "Q2": "*animated conversation between proficient users*（20）", "判定": "体験"},
+    "逆境": {"Q1": "重なり・脱線・口語が混じる会話に出会うこと", "Q2": "*overlapping turns, digressions and colloquialisms*（19）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "29": "引き直し",
+    "26": "記録",
+    "27": "引き直し",
+    "25": "引き直し",
+    "22": "引き直し",
+    "23": "記録",
+    "17": "引き直し",
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [29, 30],
@@ -266,6 +292,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

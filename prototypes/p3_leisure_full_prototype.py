@@ -119,6 +119,33 @@ ORIGINAL_LIMITS = {
     "190": ["in the standard form of the language or a familiar variety"],
     "188": [],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "絵と写真": {"Q1": "絵と写真が場面を与えること", "Q2": "*illustrated*（204）・*the images help them to guess*（205）", "判定": "体験"},
+    "短く簡単な言葉": {"Q1": "短く簡単な言葉で書かれた読み物", "Q2": "*composed in simple language*（200）・*a short description*（202）", "判定": "体験"},
+    "身近で具体的な状況と日常語": {"Q1": "身近で具体的な話が日常語で書かれていること", "Q2": "*familiar, concrete situations*・*high frequency everyday language*（198）", "判定": "体験"},
+    "出来事の記述と明示された気持ち": {"Q1": "気持ちや見方がはっきり書かれた記述", "Q2": "*explicitly expressed feelings and perspectives*（195）", "判定": "体験"},
+    "辞書と参考資料": {"Q1": "辞書や参考資料を使えること", "Q2": "*given regular use of a dictionary*（197）・*use a dictionary*（192）", "判定": "体験"},
+    "広い読者向けの記事と平明な文体": {"Q1": "広い読者に向けて平明に書かれた文章", "Q2": "*produced for a wider audience*（193）・*straightforward language and style*（194）", "判定": "体験"},
+    "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある書き方であること", "Q2": "*in the standard form of the language or a familiar variety*（190）", "判定": "体験"},
+    "古典から口語まで、あらゆる文章": {"Q1": "ジャンルを問わず何でも読む場面", "Q2": "*virtually all forms of texts including classical or colloquial*（188）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "203": "記録",
+    "198": "記録",
+    "197": "記録",
+    "191": "記録",
+}
 # 深さ＝七層（『受容の課題』付録A の写像。本便で 193→要点・190・188→含意 に修正）
 DEPTH = {
     "形":   [],
@@ -330,6 +357,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

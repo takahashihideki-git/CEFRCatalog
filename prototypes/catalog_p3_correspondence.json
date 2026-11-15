@@ -99,6 +99,54 @@
    "110": [],
    "107": []
   },
+  "区分名の判定": {
+   "日時と場所": {
+    "Q1": "便りから、いつとどこを読み取ること",
+    "Q2": "*day, time and location*（123）・*times and places*（124）",
+    "判定": "体験"
+   },
+   "短く簡単": {
+    "Q1": "短くて簡単な便りを読むこと",
+    "Q2": "*short, simple*（121・122・119）",
+    "判定": "体験"
+   },
+   "身近な主題と定型": {
+    "Q1": "身近な話題の私信と、型の決まった用件の手紙",
+    "Q2": "*familiar subjects*（117）・*standard routine letters*（118）",
+    "判定": "体験"
+   },
+   "私的な便りと自分の職業領域": {
+    "Q1": "親しい相手からの便りと、自分の仕事の領域の文書",
+    "Q2": "*personal letters*（114・115）・*their area of professional interest*（116）",
+    "判定": "体験"
+   },
+   "馴染みの薄い主題と関心分野": {
+    "Q1": "馴染みの薄い主題の公式文書と、自分の関心分野の文書",
+    "Q2": "*less familiar subjects*（113）・*their field of interest*（111）",
+    "判定": "体験"
+   },
+   "口語と俗語": {
+    "Q1": "口語や俗語、冗談が混じった私信",
+    "Q2": "*some colloquial language*（112）・*slang, idiomatic expressions and jokes*（110）",
+    "判定": "体験"
+   },
+   "辞書とじっくり読む時間": {
+    "Q1": "辞書を引き、読み返す時間をかけられること",
+    "Q2": "*the occasional use of a dictionary*（108）・*opportunities for rereading*（109）",
+    "判定": "体験"
+   },
+   "専門的で複雑な公式の手紙": {
+    "Q1": "専門的で複雑な公式文書が届く場面",
+    "Q2": "*specialised, formal correspondence on a complex topic*（107）",
+    "判定": "体験"
+   }
+  },
+  "落とし穴の源の出どころ": {
+   "120": "記録",
+   "114": "記録",
+   "113": "記録",
+   "109": "記録"
+  },
   "axes": {
    "条件": {
     "日時と場所": [

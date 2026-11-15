@@ -94,6 +94,32 @@ ORIGINAL_LIMITS = {
     "414": ["in detail", "though they may need to confirm occasional details, especially if the variety is unfamiliar"],
     "413": ["given an opportunity to adjust to a less familiar variety"],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "ゆっくり": {"Q1": "相手がゆっくり明瞭に、自分に向けて話してくれること", "Q2": "*slowly and clearly*（422・423・424）", "判定": "体験"},
+    "決まったやりとり": {"Q1": "宿や店のような型の決まった用事", "Q2": "*simple, routine exchanges*（417）", "判定": "体験"},
+    "聞き返せれば": {"Q1": "聞き返しや言い直しを頼めること", "Q2": "*ask for repetition or reformulation*（418）・*ask for repetition*（416）", "判定": "体験"},
+    "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある言い方であること", "Q2": "*the standard language or a familiar variety*（415）", "判定": "体験"},
+    "馴染みのない方言でも": {"Q1": "馴染みのない言い方でも分かること（条件が逆に付く）", "Q2": "*especially if the variety is unfamiliar*（414）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "424": "引き直し",
+    "419": "引き直し",
+    "417": "記録",
+    "418": "記録",
+    "416": "引き直し",
+    "414": "引き直し",
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [424],
@@ -261,6 +287,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

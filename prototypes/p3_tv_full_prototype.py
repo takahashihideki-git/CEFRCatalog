@@ -108,6 +108,31 @@ ORIGINAL_LIMITS = {
     "84": ["in detail"],
     "85": ["most films, plays and TV programmes", "provided these are delivered in standard language or a familiar variety"],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "言葉を助ける映像": {"Q1": "映像が言葉の代わりに内容を運ぶこと", "Q2": "*visual information*（96）・*the visuals support the commentary*（92）", "判定": "体験"},
+    "ニュースの型": {"Q1": "ニュースの決まった型が次に来るものを告げること", "Q2": "*factual TV news items*（94）", "判定": "体験"},
+    "ゆっくり": {"Q1": "番組が比較的ゆっくり明瞭であること", "Q2": "*the delivery is relatively slow and clear*（91・89）", "判定": "体験"},
+    "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある言い方の作品", "Q2": "*in the standard form of the language or a familiar variety*（88・85）", "判定": "体験"},
+    "ニュースと時事番組の論": {"Q1": "時事番組で交わされる議論に向かうこと", "Q2": "*news and current affairs programmes*（87・86）・*demanding television broadcasts*（84）", "判定": "体験"},
+    "逆境": {"Q1": "俗語や慣用表現が混じった映画に出会うこと", "Q2": "*a considerable degree of slang and idiomatic usage*（83）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "95": "記録",
+    "87": "記録",
+    "86": "記録",
+    "85": "記録",
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [95],
@@ -292,6 +317,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

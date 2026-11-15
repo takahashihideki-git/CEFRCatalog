@@ -123,6 +123,33 @@ ORIGINAL_LIMITS = {
     "110": [],
     "107": [],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "日時と場所": {"Q1": "便りから、いつとどこを読み取ること", "Q2": "*day, time and location*（123）・*times and places*（124）", "判定": "体験"},
+    "短く簡単": {"Q1": "短くて簡単な便りを読むこと", "Q2": "*short, simple*（121・122・119）", "判定": "体験"},
+    "身近な主題と定型": {"Q1": "身近な話題の私信と、型の決まった用件の手紙", "Q2": "*familiar subjects*（117）・*standard routine letters*（118）", "判定": "体験"},
+    "私的な便りと自分の職業領域": {"Q1": "親しい相手からの便りと、自分の仕事の領域の文書", "Q2": "*personal letters*（114・115）・*their area of professional interest*（116）", "判定": "体験"},
+    "馴染みの薄い主題と関心分野": {"Q1": "馴染みの薄い主題の公式文書と、自分の関心分野の文書", "Q2": "*less familiar subjects*（113）・*their field of interest*（111）", "判定": "体験"},
+    "口語と俗語": {"Q1": "口語や俗語、冗談が混じった私信", "Q2": "*some colloquial language*（112）・*slang, idiomatic expressions and jokes*（110）", "判定": "体験"},
+    "辞書とじっくり読む時間": {"Q1": "辞書を引き、読み返す時間をかけられること", "Q2": "*the occasional use of a dictionary*（108）・*opportunities for rereading*（109）", "判定": "体験"},
+    "専門的で複雑な公式の手紙": {"Q1": "専門的で複雑な公式文書が届く場面", "Q2": "*specialised, formal correspondence on a complex topic*（107）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "120": "記録",
+    "114": "記録",
+    "113": "記録",
+    "109": "記録",
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [124],
@@ -326,6 +353,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

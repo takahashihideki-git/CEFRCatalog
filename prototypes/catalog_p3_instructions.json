@@ -89,6 +89,51 @@
     "provided they can reread difficult sections"
    ]
   },
+  "区分名の判定": {
+   "絵と図解": {
+    "Q1": "絵や図解が添えられていること",
+    "Q2": "*there are illustrations*（187）・*illustrated*（183）",
+    "判定": "体験"
+   },
+   "短く簡単な指示": {
+    "Q1": "一行の短く簡単な指示を読むこと",
+    "Q2": "*short, simple directions*（186）・*a simple command*（184）",
+    "判定": "体験"
+   },
+   "簡単な言葉": {
+    "Q1": "簡単な言葉で書かれていること",
+    "Q2": "*expressed in simple language*（180）・*simple instructions*（178）",
+    "判定": "体験"
+   },
+   "短い安全指示": {
+    "Q1": "短い安全指示を読むこと",
+    "Q2": "*most short safety instructions*（179）",
+    "判定": "体験"
+   },
+   "明確で率直": {
+    "Q1": "明確で率直に書かれていること",
+    "Q2": "*clearly expressed, straightforward*（177）",
+    "判定": "体験"
+   },
+   "工程や製品の種類に馴染み": {
+    "Q1": "対象の工程や製品に馴染みがあること",
+    "Q2": "*familiar with the type of process or product concerned*（176）",
+    "判定": "体験"
+   },
+   "自分の専門と読み返し": {
+    "Q1": "自分の専門で、難しい箇所を読み返せること",
+    "Q2": "*in their field*・*reread difficult sections*（175）",
+    "判定": "体験"
+   },
+   "読み返せれば、専門外でも": {
+    "Q1": "専門外でも読み返せること",
+    "Q2": "*whether or not the instructions relate to their own area of speciality*（174）",
+    "判定": "体験"
+   }
+  },
+  "落とし穴の源の出どころ": {
+   "176": "記録"
+  },
   "axes": {
    "条件": {
     "絵と図解": [

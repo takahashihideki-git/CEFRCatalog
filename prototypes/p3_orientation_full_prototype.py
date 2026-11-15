@@ -136,6 +136,36 @@ ORIGINAL_LIMITS = {
     "129": ["quickly"],
     "127": ["quickly", "in parallel", "in both their own field and in related fields"],
 }
+
+# 区分名の判定（判断(di)、機構は判断(de)）── 二問の答えと判定をデータで残す。
+# キーは区分名なので、**改名すると判定が外れて検査Fが落ちる**（判定の入力が変わったら
+# 判定は無効、という機構の核。指紋を持たせる必要がない）。値は三つのキー ──
+# Q1＝前の段を知らない読者が読んで何が分かるか、Q2＝原文のどこにあるか、判定。
+# 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
+# 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
+NAME_VERDICT = {
+    "標識と掲示": {"Q1": "短い表示が場所に掛かっていて、目に入ること", "Q2": "*simple everyday signs*（145）・*signs and notices*（140）", "判定": "体験"},
+    "項目で並ぶ表示": {"Q1": "情報が項目で並んでいて、見るべき場所が読む前に分かること", "Q2": "*posters, flyers and notices*（146）・*store guides*（142）・*timetables*（138）", "判定": "体験"},
+    "簡単な言葉": {"Q1": "簡単な言葉で書かれていること", "Q2": "*produced in simple language*（136）", "判定": "体験"},
+    "日常の資料": {"Q1": "手紙・パンフレット・ラベルのような日常の文書", "Q2": "*everyday material*（132）・*labels on foodstuff and medicine*（133）", "判定": "体験"},
+    "記事と長めのテキスト": {"Q1": "記事や報告、長めの文章に向かうこと", "Q2": "*an article, report or review*（134）・*longer texts*（130）", "判定": "体験"},
+    "長く複雑な文章": {"Q1": "長く複雑な文章を素早く走査すること", "Q2": "*long and complex texts*（128）", "判定": "体験"},
+    "複数を並行": {"Q1": "いくつもの情報源を並べて見ること", "Q2": "*several sources … in parallel*（127）", "判定": "体験"},
+}
+
+# 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から
+# 機械で復元したもの、「引き直し」＝検品係が欄の文面から§5へ引いたもので独立の再判定を
+# 受けていない（判断(dg)）。検査Gが enum と欄との一致を見る。
+L1_SOURCE_ORIGIN = {
+    "145": "記録",
+    "146": "記録",
+    "141": "記録",
+    "142": "記録",
+    "132": "記録",
+    "133": "記録",
+    "128": "記録",
+    "129": "記録",
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [145, 141],
@@ -345,6 +375,8 @@ def build(root="."):
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
         "原文の限定句": ORIGINAL_LIMITS,
+        "区分名の判定": NAME_VERDICT,
+        "落とし穴の源の出どころ": L1_SOURCE_ORIGIN,
         "axes": {"梯子": LADDER, "条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

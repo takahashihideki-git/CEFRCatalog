@@ -110,6 +110,54 @@
    ],
    "188": []
   },
+  "区分名の判定": {
+   "絵と写真": {
+    "Q1": "絵と写真が場面を与えること",
+    "Q2": "*illustrated*（204）・*the images help them to guess*（205）",
+    "判定": "体験"
+   },
+   "短く簡単な言葉": {
+    "Q1": "短く簡単な言葉で書かれた読み物",
+    "Q2": "*composed in simple language*（200）・*a short description*（202）",
+    "判定": "体験"
+   },
+   "身近で具体的な状況と日常語": {
+    "Q1": "身近で具体的な話が日常語で書かれていること",
+    "Q2": "*familiar, concrete situations*・*high frequency everyday language*（198）",
+    "判定": "体験"
+   },
+   "出来事の記述と明示された気持ち": {
+    "Q1": "気持ちや見方がはっきり書かれた記述",
+    "Q2": "*explicitly expressed feelings and perspectives*（195）",
+    "判定": "体験"
+   },
+   "辞書と参考資料": {
+    "Q1": "辞書や参考資料を使えること",
+    "Q2": "*given regular use of a dictionary*（197）・*use a dictionary*（192）",
+    "判定": "体験"
+   },
+   "広い読者向けの記事と平明な文体": {
+    "Q1": "広い読者に向けて平明に書かれた文章",
+    "Q2": "*produced for a wider audience*（193）・*straightforward language and style*（194）",
+    "判定": "体験"
+   },
+   "標準語か馴染みのある方言": {
+    "Q1": "標準語か馴染みのある書き方であること",
+    "Q2": "*in the standard form of the language or a familiar variety*（190）",
+    "判定": "体験"
+   },
+   "古典から口語まで、あらゆる文章": {
+    "Q1": "ジャンルを問わず何でも読む場面",
+    "Q2": "*virtually all forms of texts including classical or colloquial*（188）",
+    "判定": "体験"
+   }
+  },
+  "落とし穴の源の出どころ": {
+   "203": "記録",
+   "198": "記録",
+   "197": "記録",
+   "191": "記録"
+  },
   "axes": {
    "条件": {
     "絵と写真": [

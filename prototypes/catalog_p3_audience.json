@@ -109,6 +109,45 @@
    ],
    "34": []
   },
+  "区分名の判定": {
+   "予測できる場で、図を添えて、ゆっくり": {
+    "Q1": "見学や実演のような先の読める場で、図を添えてゆっくり話される席",
+    "Q2": "*a predictable situation like a guided tour*（49）・*illustrated with slides, concrete examples or diagrams*（47）",
+    "判定": "体験"
+   },
+   "明快な標準語": {
+    "Q1": "はっきりした標準語の講演",
+    "Q2": "*clearly articulated standard language or a familiar variety*（43・42）",
+    "判定": "体験"
+   },
+   "標準語": {
+    "Q1": "標準語でさえあればよい講演",
+    "Q2": "*standard language or a familiar variety*（39・37）",
+    "判定": "体験"
+   },
+   "込み入った講演と討論": {
+    "Q1": "中身の濃い講演・討論の席（視点と事実がからまっている）",
+    "Q2": "*propositionally and linguistically complex*（36）・*lectures, discussions and debates*（35）",
+    "判定": "体験"
+   },
+   "逆境": {
+    "Q1": "口語・方言・術語が混じり、含みが明示されない話に出会うこと",
+    "Q2": "*employing colloquialism, regional usage or unfamiliar terminology*（32）",
+    "判定": "体験"
+   }
+  },
+  "落とし穴の源の出どころ": {
+   "49": "引き直し",
+   "48": "引き直し",
+   "46": "引き直し",
+   "43": "引き直し",
+   "42": "引き直し",
+   "38": "引き直し",
+   "40": "引き直し",
+   "37": "引き直し",
+   "32": "引き直し",
+   "33": "引き直し"
+  },
   "axes": {
    "条件": {
     "予測できる場で、図を添えて、ゆっくり": [
