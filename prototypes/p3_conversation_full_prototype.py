@@ -109,7 +109,7 @@ ORIGINAL_LIMITS = {
 # 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
 NAME_VERDICT = {
     "ゆっくり": {"Q1": "周囲の人がゆっくり明瞭に話していること", "Q2": "*the delivery is slow and clear*（29）", "判定": "体験"},
-    "明快な標準語": {"Q1": "周囲の話がはっきりした標準語であること", "Q2": "*clearly articulated in standard language or a familiar variety*（25・24）", "判定": "体験"},
+    "明快な標準語": {"Q1": "周囲の話がはっきりした標準語であること", "Q2": "*clearly articulated in standard language*（25・24）", "判定": "体験"},
     "熟達した話し手どうしの活発な会話": {"Q1": "達者な二人が速くやりとりしている場", "Q2": "*animated conversation between proficient users*（20）", "判定": "体験"},
     "逆境": {"Q1": "重なり・脱線・口語が混じる会話に出会うこと", "Q2": "*overlapping turns, digressions and colloquialisms*（19）", "判定": "体験"},
 }

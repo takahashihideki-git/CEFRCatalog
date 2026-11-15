@@ -110,7 +110,7 @@ ORIGINAL_LIMITS = {
 # 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
 NAME_VERDICT = {
     "目の前で、ゆっくり、絵か身振りを添えて": {"Q1": "目の前の相手がゆっくり、絵や身振りを添えて言ってくれる場面", "Q2": "*delivered slowly face-to-face, accompanied by pictures or manual gestures*（67）", "判定": "体験"},
-    "ゆっくり": {"Q1": "ゆっくり言ってもらえること", "Q2": "*slowly*（64・65・66・59・60）", "判定": "体験"},
+    "ゆっくり": {"Q1": "ゆっくり言ってもらえること", "Q2": "*slowly*（64・65・66・59）・*the delivery is slow and clear*（60）", "判定": "体験"},
     "短く簡単な放送と指示": {"Q1": "短くて簡単な放送や指示に出会うこと", "Q2": "*short, clear, simple messages and announcements*（61）・*simple directions*（62）", "判定": "体験"},
     "明快な標準語": {"Q1": "はっきりした標準語で言われること", "Q2": "*clearly articulated*（58）・*standard language or a familiar variety*（54）", "判定": "体験"},
     "詳しい指示と複雑な技術の説明": {"Q1": "細かい指示や機器の仕様を聞く場面", "Q2": "*detailed directions*（57）・*complex technical information*（53）", "判定": "体験"},

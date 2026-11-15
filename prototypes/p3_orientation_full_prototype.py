@@ -150,7 +150,7 @@ NAME_VERDICT = {
     "日常の資料": {"Q1": "手紙・パンフレット・ラベルのような日常の文書", "Q2": "*everyday material*（132）・*labels on foodstuff and medicine*（133）", "判定": "体験"},
     "記事と長めのテキスト": {"Q1": "記事や報告、長めの文章に向かうこと", "Q2": "*an article, report or review*（134）・*longer texts*（130）", "判定": "体験"},
     "長く複雑な文章": {"Q1": "長く複雑な文章を素早く走査すること", "Q2": "*long and complex texts*（128）", "判定": "体験"},
-    "複数を並行": {"Q1": "いくつもの情報源を並べて見ること", "Q2": "*several sources … in parallel*（127）", "判定": "体験"},
+    "複数を並行": {"Q1": "いくつもの情報源を並べて見ること", "Q2": "*several sources*・*in parallel*（127）", "判定": "体験"},
 }
 
 # 落とし穴の源の出どころ（判断(di)）── 「記録」＝判断の記録と『受容の課題』§5本文から

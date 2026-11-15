@@ -289,6 +289,25 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
                 continue
             if not v["Q1"].strip() or not v["Q2"].strip():
                 errors.append("F2: %s の区分「%s」の Q1 か Q2 が空（何が分かるかを一文で書く）" % (base, name))
+            # Q2 の引用（*原文の句*（No.…）の形）も照合する ── 自由文のままだと
+            # 引用が原文と食い違っていても素通りする（実際に5件あった）。
+            # **その区分に属する行だけ**を引けることにする ── シート全行から作ると、
+            # 別の区分の No. を引いても通ってしまう（反例で分かった）。
+            all_en = {str(r['no']): r['en'] for r in sheet['rows']}
+            en_of = {n: all_en[n] for n in (str(x) for x in cond.get(name, [])) if n in all_en}
+            for mg in re.finditer(r'((?:\*[^*]+\*・?)+)（([0-9・]+)）', v["Q2"]):
+                frags = re.findall(r'\*([^*]+)\*', mg.group(1))
+                for no in mg.group(2).split('・'):
+                    if no not in en_of:
+                        errors.append("F4: %s の区分「%s」の Q2 が No.%s を引いているが、その区分の行ではない"
+                                      % (base, name, no))
+                        continue
+                    for fr in frags:
+                        if not any(not ((en_of[no][m.start() - 1] if m.start() else '').isalpha()
+                                        or (en_of[no][m.end()] if m.end() < len(en_of[no]) else '').isalpha())
+                                   for m in re.finditer(re.escape(fr), en_of[no])):
+                            errors.append("F4: %s の区分「%s」の Q2 の引用「%s」が No.%s の原文に語として現れない"
+                                          % (base, name, fr, no))
             if v["判定"] not in VERDICTS:
                 errors.append("F3: %s の区分「%s」の判定「%s」が四つのいずれでもない" % (base, name, v["判定"]))
             else:

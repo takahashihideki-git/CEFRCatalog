@@ -119,7 +119,7 @@ NAME_VERDICT = {
     "言葉を助ける映像": {"Q1": "映像が言葉の代わりに内容を運ぶこと", "Q2": "*visual information*（96）・*the visuals support the commentary*（92）", "判定": "体験"},
     "ニュースの型": {"Q1": "ニュースの決まった型が次に来るものを告げること", "Q2": "*factual TV news items*（94）", "判定": "体験"},
     "ゆっくり": {"Q1": "番組が比較的ゆっくり明瞭であること", "Q2": "*the delivery is relatively slow and clear*（91・89）", "判定": "体験"},
-    "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある言い方の作品", "Q2": "*in the standard form of the language or a familiar variety*（88・85）", "判定": "体験"},
+    "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある言い方の作品", "Q2": "*in the standard form of the language or a familiar variety*（88）・*in standard language or a familiar variety*（85）", "判定": "体験"},
     "ニュースと時事番組の論": {"Q1": "時事番組で交わされる議論に向かうこと", "Q2": "*news and current affairs programmes*（87・86）・*demanding television broadcasts*（84）", "判定": "体験"},
     "逆境": {"Q1": "俗語や慣用表現が混じった映画に出会うこと", "Q2": "*a considerable degree of slang and idiomatic usage*（83）", "判定": "体験"},
 }

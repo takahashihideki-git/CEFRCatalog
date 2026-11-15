@@ -102,7 +102,7 @@ ORIGINAL_LIMITS = {
 # 判定は「体験／構造の語り／言い足りない／事実の誤り」の四つ（判断(de)）。
 # 立てたのは検品係なので、二人目の判定者は Hideki（判断(de)④の形）。
 NAME_VERDICT = {
-    "ゆっくり": {"Q1": "相手がゆっくり明瞭に、自分に向けて話してくれること", "Q2": "*slowly and clearly*（422・423・424）", "判定": "体験"},
+    "ゆっくり": {"Q1": "相手がゆっくり明瞭に、自分に向けて話してくれること", "Q2": "*slowly and clearly*（422・423）・*very slow, with repetition*（424）", "判定": "体験"},
     "決まったやりとり": {"Q1": "宿や店のような型の決まった用事", "Q2": "*simple, routine exchanges*（417）", "判定": "体験"},
     "聞き返せれば": {"Q1": "聞き返しや言い直しを頼めること", "Q2": "*ask for repetition or reformulation*（418）・*ask for repetition*（416）", "判定": "体験"},
     "標準語か馴染みのある方言": {"Q1": "標準語か馴染みのある言い方であること", "Q2": "*the standard language or a familiar variety*（415）", "判定": "体験"},
