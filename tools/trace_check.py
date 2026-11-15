@@ -12,6 +12,7 @@
 
   A 判断の記録（引き継ぎ書§2） → 現行仕様・執筆要綱      ＝記号の鎖
   B 設計文書『受容の課題』付録A → 帳簿の深さ軸（第3部11枚）
+  C 設計文書『受容の課題』§4の手加減の表 → 帳簿の条件の区分（第3部11枚68区分）
 
 Aが要るのは、現行仕様が判断の圧縮であり、圧縮から推論すると器を誤診するため
 （実例：条件の軸を「読むものを条件に流用した崩れ」と誤診し、判断(bp)(cj)と
@@ -20,6 +21,11 @@ Aが要るのは、現行仕様が判断の圧縮であり、圧縮から推論�
 
 Bが要るのは、深さの割り付けが付録A・帳簿・restore.pyの固有assertの三重管理で、
 同期を見るものが無かったため。
+
+Cが要るのは、条件の区分が何の手加減を実現しているかの矢印が、判断の散文にだけ
+あって帳簿に無かったため（判断(cj)根拠(b)が「紙面の作りは§4の『明示された構成・
+標識』（層4）と『短さ』の、項目の紙面での形」と書いて捨てていた）。宣言を強制すると
+**区分名が手加減でなく載せ物・物・内容を取っている箇所がその場で見える**。
 
 限界：記号の抽出は括弧つき小文字列の単純一致なので、散文の列挙記号 (a)(b) を
 拾いうる。誤って拾っても「到達する」側に倒れるので、偽の赤は出ない。
@@ -123,6 +129,51 @@ else:
             errors.append("B2: No.%d の層が食い違う ── 付録A「%s」／帳簿「%s」（%s）"
                           % (n, LAYER[appendix[n]], name, f))
     notes.append("B: 付録A %d 行 ↔ 第3部11枚 %d 行、層の不一致 0 件" % (len(appendix), len(ledger)))
+
+# ---------- C 設計文書§4の手加減の表 → 帳簿の条件の区分 ----------
+i4 = doc.find('## 4. 条件')
+if i4 < 0:
+    errors.append("C0: 『受容の課題』に§4の見出しがない")
+else:
+    tbl = doc[i4:doc.find('\n## ', i4 + 5)]
+    support = {}                      # 手加減名 → 下げる層（表の第3列）
+    for m in re.finditer(r'^\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]+?)\s*\|', tbl, re.M):
+        nm = m.group(1)
+        if nm in ('手加減', '---') or set(nm) <= set('-'):
+            continue
+        support[nm] = m.group(3)
+    if len(support) != 11:
+        errors.append("C0: §4の手加減の表から読めた行が %d 件（11件を期待）── 表の形が変わった" % len(support))
+    MODE_ONLY = {'（聞く）': ('聞く',), '（読む）': ('読む',)}
+    used = {}
+    for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
+        base = os.path.basename(f)
+        d = json.load(io.open(f, encoding='utf-8'))
+        sheet = d[list(d)[0]]
+        cond = (sheet.get('axes') or {}).get('条件', {})
+        decl = sheet.get('条件の手加減')
+        if decl is None:
+            errors.append("C1: %s に「条件の手加減」が無い" % base)
+            continue
+        if set(decl) != set(cond):
+            errors.append("C1: %s の「条件の手加減」が条件の区分と一致しない（不足 %s／余分 %s）"
+                          % (base, sorted(set(cond) - set(decl)), sorted(set(decl) - set(cond))))
+        modes = {r.get('mode') for r in sheet['rows']}
+        for name, vals in decl.items():
+            if not vals:
+                errors.append("C3: %s の区分「%s」の手加減が空" % (base, name))
+            for v in vals:
+                if v not in support:
+                    errors.append("C2: %s の区分「%s」の手加減「%s」が§4の表に無い" % (base, name, v))
+                    continue
+                used.setdefault(v, []).append(base)
+                for tag, ok_modes in MODE_ONLY.items():
+                    if tag in v and not (modes & set(ok_modes)):
+                        warnings.append("C4: %s（mode %s）の区分「%s」が%s限定の手加減「%s」を宣言している"
+                                        % (base, '・'.join(sorted(modes)), name, tag.strip('（）'), v))
+    unused = [k for k in support if k not in used]
+    notes.append("C: §4の手加減 %d 行 ↔ 第3部11枚の条件 68区分。使われていない手加減 %d 件%s"
+                 % (len(support), len(unused), ("：" + "／".join(unused)) if unused else ""))
 
 # ---------- 報告 ----------
 for n in notes:
