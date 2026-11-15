@@ -79,6 +79,29 @@ L1_SOURCE = {
     "71": "§5.4",
     "70": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "81": ["simple, short", "that they already know", "provided these are delivered very slowly and clearly"],
+    "80": ["short recordings", "familiar everyday topics", "provided they are delivered very slowly and clearly"],
+    "77": ["short", "predictable everyday matters", "delivered slowly and clearly"],
+    "78": ["short broadcasts", "provided people talk clearly"],
+    "79": ["the important points of", "provided the story is told slowly and clearly"],
+    "75": ["short commercials", "of interest"],
+    "76": ["provided they speak slowly and clearly"],
+    "73": ["the main points of", "simpler recorded material about familiar subjects", "delivered relatively slowly and clearly"],
+    "74": ["the main points and important details", "provided the delivery is slow and clear"],
+    "72": ["the majority of", "topics of personal interest", "delivered in clear standard language"],
+    "71": ["most", "delivered in the standard form of the language"],
+    "70": ["in the standard form of the language"],
+    "69": ["including some non-standard usage"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [81],
@@ -249,6 +272,7 @@ def build(root="."):
         "essence": "録音と放送を聞く段は、聞き手の位置がいちばん遠い ── 話し手は同じ場になく、速さも明瞭さも収録のときに固定されている。但し書きは相手に頼むものでなく自分が選ぶもので、速さの但し書きがB1に二段残り、但し書きが全部消える段はなく、標準語がC1で非標準へ裏返る。層は中身の列（知っている言葉→一つの項目→要点→全体→含意）と語り手の列（好悪→気分・態度→視点→暗黙の態度と人間関係）の二列で、上端は放送を通して社会の言葉の変種と人の関係を聞き分ける段で閉じる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

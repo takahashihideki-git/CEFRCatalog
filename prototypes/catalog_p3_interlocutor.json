@@ -29,6 +29,58 @@
    "416": "§5.2",
    "414": "§5.4"
   },
+  "原文の限定句": {
+   "422": [
+    "simple",
+    "that directly concern them",
+    "if the person is asking slowly and clearly"
+   ],
+   "423": [
+    "simple",
+    "slowly and clearly, directly to them",
+    "though the questions may need to be repeated"
+   ],
+   "424": [
+    "provided the delivery is very slow, with repetition if necessary"
+   ],
+   "420": [
+    "simple needs of a concrete type",
+    "delivered directly to them clearly and slowly, with repetition, by a sympathetic interlocutor"
+   ],
+   "421": [
+    "carefully and slowly",
+    "short, simple"
+   ],
+   "419": [
+    "clearly, slowly and directly to them",
+    "simple everyday conversation",
+    "if the interlocutor can take the trouble"
+   ],
+   "417": [
+    "simple, routine exchanges",
+    "without undue effort"
+   ],
+   "418": [
+    "generally",
+    "clear, standard speech/sign on familiar matters",
+    "provided they can ask for repetition or reformulation from time to time"
+   ],
+   "416": [
+    "clearly articulated",
+    "though will sometimes have to ask for repetition"
+   ],
+   "415": [
+    "in detail",
+    "in the standard language or a familiar variety"
+   ],
+   "414": [
+    "in detail",
+    "though they may need to confirm occasional details, especially if the variety is unfamiliar"
+   ],
+   "413": [
+    "given an opportunity to adjust to a less familiar variety"
+   ]
+  },
   "axes": {
    "条件": {
     "ゆっくり": [

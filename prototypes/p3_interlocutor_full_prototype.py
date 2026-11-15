@@ -72,6 +72,28 @@ L1_SOURCE = {
     "416": "§5.2",
     "414": "§5.4",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "422": ["simple", "that directly concern them", "if the person is asking slowly and clearly"],
+    "423": ["simple", "slowly and clearly, directly to them", "though the questions may need to be repeated"],
+    "424": ["provided the delivery is very slow, with repetition if necessary"],
+    "420": ["simple needs of a concrete type", "delivered directly to them clearly and slowly, with repetition, by a sympathetic interlocutor"],
+    "421": ["carefully and slowly", "short, simple"],
+    "419": ["clearly, slowly and directly to them", "simple everyday conversation", "if the interlocutor can take the trouble"],
+    "417": ["simple, routine exchanges", "without undue effort"],
+    "418": ["generally", "clear, standard speech/sign on familiar matters", "provided they can ask for repetition or reformulation from time to time"],
+    "416": ["clearly articulated", "though will sometimes have to ask for repetition"],
+    "415": ["in detail", "in the standard language or a familiar variety"],
+    "414": ["in detail", "though they may need to confirm occasional details, especially if the variety is unfamiliar"],
+    "413": ["given an opportunity to adjust to a less familiar variety"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [424],
@@ -238,6 +260,7 @@ def build(root="."):
         "essence": "相手の話を聞く段は、聞き手の位置がいちばん近い ── 相手は自分に向けて話し、答えや動作を待っている。但し書きは相手に頼めるもので、担い手が相手の配慮（ゆっくり・繰り返し・好意的な相手・手間をかけてくれれば）から聞き手の求め（聞き返せれば）へ移り、B2で相手に求めるものがなくなり、C1・C2で馴染みのない方言へ裏返って慣れる時間だけが残る。但し書きが全部消える段はない。層は知っている言葉・一つの項目・筋・全体の四つで、含意と立場の段がなく、上端はどんな相手の話でも全部分かる段で閉じる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

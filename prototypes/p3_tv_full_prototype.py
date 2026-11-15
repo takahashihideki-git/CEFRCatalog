@@ -84,6 +84,30 @@ L1_SOURCE = {
     "86": "§5.3",
     "85": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "96": ["on the basis of visual information and previous knowledge"],
+    "95": ["familiar words/signs and phrases", "by exploiting visual information and general knowledge"],
+    "94": ["an idea of the main content"],
+    "92": ["the main point of", "where the visuals support the commentary"],
+    "93": ["provided the images are a great help in understanding and the delivery is clear and relatively slow"],
+    "90": ["many films", "in which visuals and action carry much of the storyline", "delivered clearly in straightforward language"],
+    "91": ["the main points", "familiar topics", "when the delivery is relatively slow and clear"],
+    "89": ["a large part of", "topics of personal interest", "when the delivery is relatively slow and clear"],
+    "87": ["most"],
+    "88": ["the majority of films", "in the standard form of the language or a familiar variety"],
+    "86": ["the main points"],
+    "83": [],
+    "84": ["in detail"],
+    "85": ["most films, plays and TV programmes", "provided these are delivered in standard language or a familiar variety"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [95],
@@ -267,6 +291,7 @@ def build(root="."):
         "essence": "テレビ・映画・動画を見る段は、但し書きの担い手が画面にある ── 相手に頼むのでも自分で選ぶのでもなく、素材が映しているものが理解を担い、言葉を一つも要らない起点から梯子が立つ。画面の支えが外れたあとは聞く側と同じ三つの但し書き（速さ・言葉・条件なしと裏返り）だが、速さがB1+まで残り、上端のC1は三段が三つの顔（俗語でも・但し書きなし・標準語で）に割れる。層は番組の線（知っている言葉→項目の移り→要点→全体→議論の要点→論の細部）と作り物の線（話題→筋→全体→俗語の映画→含み）の二線で、含みで閉じる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

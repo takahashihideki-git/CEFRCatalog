@@ -36,6 +36,61 @@
    "58": "§5.4",
    "52": "§5.6"
   },
+  "原文の限定句": {
+   "67": [
+    "short, simple",
+    "provided they are delivered slowly face-to-face, accompanied by pictures or manual gestures and repeated if necessary"
+   ],
+   "64": [
+    "carefully and slowly",
+    "short, simple"
+   ],
+   "65": [
+    "slowly and clearly",
+    "provided the object is in the immediate environment"
+   ],
+   "66": [
+    "slowly and clearly"
+   ],
+   "61": [
+    "short, clear, simple"
+   ],
+   "62": [
+    "simple"
+   ],
+   "63": [
+    "basic"
+   ],
+   "59": [
+    "familiar everyday activities",
+    "provided they are delivered slowly and clearly"
+   ],
+   "60": [
+    "straightforward",
+    "provided the delivery is slow and clear"
+   ],
+   "56": [
+    "simple"
+   ],
+   "57": [
+    "detailed"
+   ],
+   "58": [
+    "provided these are clearly articulated with minimum interference from [auditory/visual] background noise"
+   ],
+   "54": [
+    "delivered in standard language or a familiar variety at normal speed"
+   ],
+   "55": [
+    "well enough to be able to follow them successfully"
+   ],
+   "52": [
+    "poor quality, [audibly and/or visually] distorted"
+   ],
+   "53": [
+    "familiar products and services"
+   ]
+  },
   "axes": {
    "条件": {
     "目の前で、ゆっくり、絵か身振りを添えて": [

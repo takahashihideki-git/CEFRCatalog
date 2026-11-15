@@ -73,6 +73,34 @@ L1_SOURCE = {
     "32": "§5.2",
     "33": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "49": ["in outline", "very simple", "a predictable situation", "provided the delivery is very slow and clear and that there are long pauses from time to time"],
+    "47": ["very simple, well-structured", "provided it is illustrated with slides, concrete examples or diagrams, it is delivered slowly and clearly with repetition, and the topic is familiar"],
+    "48": ["the outline of", "simple", "a predictable situation"],
+    "46": ["the general outline of", "a familiar or predictable topic", "where the message is expressed slowly and clearly in simple language and there is visual support"],
+    "43": ["in outline", "straightforward short", "familiar topics", "provided these are delivered in clearly articulated standard language or a familiar variety"],
+    "44": ["straightforward", "with visual support", "within their field"],
+    "45": ["the main points of", "straightforward", "provided the delivery is clear and relatively slow"],
+    "41": ["within their own field", "provided the subject matter is familiar and the presentation straightforward and clearly structured"],
+    "42": ["standard lectures on familiar subjects", "provided these are delivered in clearly articulated standard language or a familiar variety"],
+    "38": ["clearly articulated", "provided the topic is reasonably familiar"],
+    "39": ["provided the lecture or talk is delivered in standard language or a familiar variety"],
+    "40": [],
+    "36": ["the essentials of", "propositionally and linguistically complex"],
+    "37": ["topics that are of current interest or that relate to their specialised field", "provided the talk is delivered in standard language or a familiar variety"],
+    "35": ["most", "with relative ease"],
+    "32": ["employing colloquialism, regional usage or unfamiliar terminology"],
+    "33": ["when links or implications are not made explicit"],
+    "34": [],
+}
 # 深さ＝七層（行ごとに一つ、完全分割。『受容の課題』§6.1 の再割付）
 DEPTH = {
     "形":   [],
@@ -264,6 +292,7 @@ def build(root="."):
         "essence": "聞き手は最後まで「分かる」の形で書かれ、段を区切るのは入力の側の手加減である。支えから逆境までの条件の列が背骨、筋から含意までの層が段の中身。語る側（聴衆への講演）とは同級の対が八つ立ち、読む側（知るために読む）とは要点・立場・含意の段で同級に並ぶ。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

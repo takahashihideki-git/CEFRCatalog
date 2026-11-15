@@ -36,6 +36,79 @@
    "32": "§5.2",
    "33": "§5.5"
   },
+  "原文の限定句": {
+   "49": [
+    "in outline",
+    "very simple",
+    "a predictable situation",
+    "provided the delivery is very slow and clear and that there are long pauses from time to time"
+   ],
+   "47": [
+    "very simple, well-structured",
+    "provided it is illustrated with slides, concrete examples or diagrams, it is delivered slowly and clearly with repetition, and the topic is familiar"
+   ],
+   "48": [
+    "the outline of",
+    "simple",
+    "a predictable situation"
+   ],
+   "46": [
+    "the general outline of",
+    "a familiar or predictable topic",
+    "where the message is expressed slowly and clearly in simple language and there is visual support"
+   ],
+   "43": [
+    "in outline",
+    "straightforward short",
+    "familiar topics",
+    "provided these are delivered in clearly articulated standard language or a familiar variety"
+   ],
+   "44": [
+    "straightforward",
+    "with visual support",
+    "within their field"
+   ],
+   "45": [
+    "the main points of",
+    "straightforward",
+    "provided the delivery is clear and relatively slow"
+   ],
+   "41": [
+    "within their own field",
+    "provided the subject matter is familiar and the presentation straightforward and clearly structured"
+   ],
+   "42": [
+    "standard lectures on familiar subjects",
+    "provided these are delivered in clearly articulated standard language or a familiar variety"
+   ],
+   "38": [
+    "clearly articulated",
+    "provided the topic is reasonably familiar"
+   ],
+   "39": [
+    "provided the lecture or talk is delivered in standard language or a familiar variety"
+   ],
+   "40": [],
+   "36": [
+    "the essentials of",
+    "propositionally and linguistically complex"
+   ],
+   "37": [
+    "topics that are of current interest or that relate to their specialised field",
+    "provided the talk is delivered in standard language or a familiar variety"
+   ],
+   "35": [
+    "most",
+    "with relative ease"
+   ],
+   "32": [
+    "employing colloquialism, regional usage or unfamiliar terminology"
+   ],
+   "33": [
+    "when links or implications are not made explicit"
+   ],
+   "34": []
+  },
   "axes": {
    "条件": {
     "予測できる場で、図を添えて、ゆっくり": [

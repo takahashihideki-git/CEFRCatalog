@@ -40,6 +40,65 @@
    "113": "§5.3",
    "109": "§5.5"
   },
+  "原文の限定句": {
+   "123": [
+    "the event to which they are being invited and the information given about day, time and location"
+   ],
+   "124": [
+    "very simple",
+    "provided there are no abbreviations"
+   ],
+   "121": [
+    "short, simple"
+   ],
+   "122": [
+    "short, simple"
+   ],
+   "119": [
+    "short, simple"
+   ],
+   "120": [
+    "very simple"
+   ],
+   "117": [
+    "a simple personal letter",
+    "familiar subjects"
+   ],
+   "118": [
+    "basic types of standard routine letters",
+    "familiar topics"
+   ],
+   "114": [
+    "well enough to correspond regularly with a pen friend"
+   ],
+   "115": [
+    "straightforward",
+    "relatively detailed"
+   ],
+   "116": [
+    "standard formal correspondence",
+    "in their area of professional interest"
+   ],
+   "113": [
+    "less familiar subjects",
+    "well enough to redirect it to someone else"
+   ],
+   "111": [
+    "relating to their field of interest",
+    "the essential meaning"
+   ],
+   "112": [
+    "even where some colloquial language is used"
+   ],
+   "108": [
+    "given the occasional use of a dictionary"
+   ],
+   "109": [
+    "provided there are opportunities for rereading and they have access to reference tools"
+   ],
+   "110": [],
+   "107": []
+  },
   "axes": {
    "条件": {
     "日時と場所": [

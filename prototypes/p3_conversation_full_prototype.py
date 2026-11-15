@@ -76,6 +76,30 @@ L1_SOURCE = {
     "23": "§5.3",
     "17": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "29": ["some expressions", "provided the delivery is slow and clear"],
+    "30": ["words/signs and short sentences", "a simple conversation", "provided people communicate very slowly and very clearly"],
+    "28": ["in outline", "short, simple", "conducted very slowly and clearly"],
+    "26": ["generally", "when it is conducted slowly and clearly"],
+    "27": ["conducted slowly and clearly"],
+    "25": ["generally", "the main points of", "provided it is clearly articulated in standard language or a familiar variety"],
+    "24": ["much of", "provided it is clearly articulated in standard language or in a familiar variety"],
+    "21": ["with some effort", "much of", "but may find it difficult to participate effectively"],
+    "22": ["conducted in clear standard language or a familiar variety"],
+    "23": [],
+    "20": ["animated conversation between proficient users"],
+    "18": ["easily", "even on abstract, complex, unfamiliar topics"],
+    "19": ["delivered at a natural speed in varieties that are familiar"],
+    "17": ["most of", "at a natural speed"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [29, 30],
@@ -241,6 +265,7 @@ def build(root="."):
         "essence": "自分に向けられていない会話を聞く段は、視覚的なサポートなしに「ゆっくり明瞭に」から立ち、話し手が言葉を調整しない段（B2）で分かることと参加できることの差が書き込まれる。層は話の流れを追う列（形→筋→要点→全体）と誰がどちら側かを聞く列（立場三段→含意）の二列で、立場の段が三つ立ち、上端は言葉づかいの社会文化的な含意で閉じる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

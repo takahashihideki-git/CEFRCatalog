@@ -91,6 +91,34 @@ L1_SOURCE = {
     "197": "§5.2",
     "191": "§5.2",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "204": ["short, illustrated", "described in simple words"],
+    "205": ["in outline", "short", "provided the images help them to guess at a lot of the content"],
+    "200": ["short", "composed in simple language"],
+    "201": [],
+    "202": ["much of", "a short description"],
+    "203": ["the main point of", "a short article", "a predictable pattern", "provided it is composed clearly in simple language"],
+    "198": ["short, simple", "familiar, concrete situations", "high frequency everyday language"],
+    "199": ["the main points made in", "short", "concrete everyday topics"],
+    "195": ["explicitly expressed", "high frequency everyday language"],
+    "196": ["mainly describing"],
+    "197": ["simple novels", "a clear linear storyline and high frequency everyday language", "given regular use of a dictionary"],
+    "193": ["produced for a wider audience", "the main points"],
+    "194": ["simple poems", "provided these employ straightforward language and style"],
+    "191": ["with a large degree of independence", "using appropriate reference sources selectively"],
+    "192": ["straightforward, unelaborated language", "provided they can take their time and use a dictionary"],
+    "189": ["provided they can reread certain sections and that they can access reference tools if they wish"],
+    "190": ["in the standard form of the language or a familiar variety"],
+    "188": [],
+}
 # 深さ＝七層（『受容の課題』付録A の写像。本便で 193→要点・190・188→含意 に修正）
 DEPTH = {
     "形":   [],
@@ -301,6 +329,7 @@ def build(root="."):
         "essence": "楽しみに読む段は、但し書きの担い手が読み物の作りにある ── 絵と写真、短さと簡単さと日常語、明示された記述、辞書と参考資料が段ごとに外れ、辞書と参考資料の線は四段をかけてB1からC1まで薄くなる。読むものは物語の線と記事と記述の線に分かれ、物語は筋を追う段で上がって小説で全体になり、上端の三段は「分かる」から「味わう」へ出る。分かったことは返事でなく、読み続けるという読み手の振る舞いで示される。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

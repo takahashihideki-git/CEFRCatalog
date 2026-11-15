@@ -95,6 +95,34 @@ L1_SOURCE = {
     "113": "§5.3",
     "109": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "123": ["the event to which they are being invited and the information given about day, time and location"],
+    "124": ["very simple", "provided there are no abbreviations"],
+    "121": ["short, simple"],
+    "122": ["short, simple"],
+    "119": ["short, simple"],
+    "120": ["very simple"],
+    "117": ["a simple personal letter", "familiar subjects"],
+    "118": ["basic types of standard routine letters", "familiar topics"],
+    "114": ["well enough to correspond regularly with a pen friend"],
+    "115": ["straightforward", "relatively detailed"],
+    "116": ["standard formal correspondence", "in their area of professional interest"],
+    "113": ["less familiar subjects", "well enough to redirect it to someone else"],
+    "111": ["relating to their field of interest", "the essential meaning"],
+    "112": ["even where some colloquial language is used"],
+    "108": ["given the occasional use of a dictionary"],
+    "109": ["provided there are opportunities for rereading and they have access to reference tools"],
+    "110": [],
+    "107": [],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [124],
@@ -297,6 +325,7 @@ def build(root="."):
         "essence": "手紙を読む段は、但し書きの担い手が書き手にある ── 文章は読み手に宛てて書かれ、便りの線では書き手の言葉が、用件の線では手紙の型と主題が外れていく。手紙は読まずに済ませられず、分かる深さは十八段のうち十一段で全体のまま動かず、上がっていくのは手紙の長さ・言葉・主題である。分かったことは返事で示され、二つの段では分かる程度が読んだあとの仕事（文通を続ける・回す）で区切られる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

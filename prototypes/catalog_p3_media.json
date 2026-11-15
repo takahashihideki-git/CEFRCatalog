@@ -28,6 +28,62 @@
    "71": "§5.4",
    "70": "§5.5"
   },
+  "原文の限定句": {
+   "81": [
+    "simple, short",
+    "that they already know",
+    "provided these are delivered very slowly and clearly"
+   ],
+   "80": [
+    "short recordings",
+    "familiar everyday topics",
+    "provided they are delivered very slowly and clearly"
+   ],
+   "77": [
+    "short",
+    "predictable everyday matters",
+    "delivered slowly and clearly"
+   ],
+   "78": [
+    "short broadcasts",
+    "provided people talk clearly"
+   ],
+   "79": [
+    "the important points of",
+    "provided the story is told slowly and clearly"
+   ],
+   "75": [
+    "short commercials",
+    "of interest"
+   ],
+   "76": [
+    "provided they speak slowly and clearly"
+   ],
+   "73": [
+    "the main points of",
+    "simpler recorded material about familiar subjects",
+    "delivered relatively slowly and clearly"
+   ],
+   "74": [
+    "the main points and important details",
+    "provided the delivery is slow and clear"
+   ],
+   "72": [
+    "the majority of",
+    "topics of personal interest",
+    "delivered in clear standard language"
+   ],
+   "71": [
+    "most",
+    "delivered in the standard form of the language"
+   ],
+   "70": [
+    "in the standard form of the language"
+   ],
+   "69": [
+    "including some non-standard usage"
+   ]
+  },
   "axes": {
    "条件": {
     "ゆっくり": [

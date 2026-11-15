@@ -77,6 +77,42 @@ L1_SOURCE = {
     "152": "§5.5",
     "148": "§5.5",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "172": ["the simplest informational material", "illustrated with photos", "formulated in very simple everyday words/signs"],
+    "170": ["an idea of the content", "simpler informational material", "short, simple descriptions", "especially if there is visual support"],
+    "171": ["short texts", "subjects of personal interest", "composed in very simple language and supported by illustrations and pictures"],
+    "165": ["provided they use simple language"],
+    "166": ["illustrated brochures and maps"],
+    "167": ["the main points", "short news items", "subjects of personal interest"],
+    "168": ["short", "within their own field", "provided simple language is used and that it does not contain unpredictable detail"],
+    "169": ["most of"],
+    "161": ["simpler material"],
+    "162": ["the general outline of", "a familiar type of event", "provided the contents are familiar and predictable"],
+    "163": ["short news reports or simple articles", "in which figures, names, illustrations and titles play a prominent role and support the meaning of the text"],
+    "164": ["the main points of short texts", "everyday topics"],
+    "158": ["straightforward news articles on familiar subjects"],
+    "159": ["most", "familiar subjects of interest", "provided they have sufficient time for rereading"],
+    "160": ["the main points"],
+    "154": ["straightforward, factual texts", "relating to their interests or studies"],
+    "155": ["short texts", "familiar or of current interest"],
+    "156": ["clearly signalled argumentative texts"],
+    "157": ["though not necessarily in detail"],
+    "151": [],
+    "152": [],
+    "153": [],
+    "149": ["within their field"],
+    "150": ["provided they can use a dictionary occasionally to confirm their interpretation of terminology"],
+    "148": ["in detail"],
+    "147": [],
+}
 # 深さ＝七層（『受容の課題』§6.1・付録A）
 DEPTH = {
     "形":   [],
@@ -320,6 +356,7 @@ def build(root="."):
         "essence": "読み手は最後まで「分かる」の形で書かれ、段を区切るのは入力の側の手加減である。写真から専門外までの条件の列が背骨、命題から含意までの層が段の中身。読む側だけの手加減（読み返し・辞書・紙面の作り）が条件に現れ、要点の層が厚く、命題の層が上の級まで残る。聞く側（聴衆として聞く）とは筋・要点・立場・含意の段で同級に並び、課題まで一致する三組（156↔42・152↔40・147↔33）を対として読む。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

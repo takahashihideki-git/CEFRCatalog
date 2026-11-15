@@ -75,6 +75,32 @@ L1_SOURCE = {
     "58": "§5.4",
     "52": "§5.6",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "67": ["short, simple", "provided they are delivered slowly face-to-face, accompanied by pictures or manual gestures and repeated if necessary"],
+    "64": ["carefully and slowly", "short, simple"],
+    "65": ["slowly and clearly", "provided the object is in the immediate environment"],
+    "66": ["slowly and clearly"],
+    "61": ["short, clear, simple"],
+    "62": ["simple"],
+    "63": ["basic"],
+    "59": ["familiar everyday activities", "provided they are delivered slowly and clearly"],
+    "60": ["straightforward", "provided the delivery is slow and clear"],
+    "56": ["simple"],
+    "57": ["detailed"],
+    "58": ["provided these are clearly articulated with minimum interference from [auditory/visual] background noise"],
+    "54": ["delivered in standard language or a familiar variety at normal speed"],
+    "55": ["well enough to be able to follow them successfully"],
+    "52": ["poor quality, [audibly and/or visually] distorted"],
+    "53": ["familiar products and services"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [66],
@@ -259,6 +285,7 @@ def build(root="."):
         "essence": "放送と指示を聞く段は、数・場所・手順という具体の聞き取りから立ち、「分かる」が行動（従う・動く・操作する）として外に出る。但し書きは支えから逆境まで一本の列をなすが、「ゆっくり」がA2で一度消えてA2+で戻る。上端は放送の側（歪んだ音から必要な情報を一つ拾う命題）と指示の側（複雑な技術情報の全体）に割れ、言外へ出る段はない。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

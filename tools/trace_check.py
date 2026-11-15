@@ -14,6 +14,7 @@
   B 設計文書『受容の課題』付録A → 帳簿の深さ軸（第3部11枚）
   C 設計文書『受容の課題』§4の手加減の表 → 帳簿の条件の区分（第3部11枚68区分）
   D 設計文書『受容の課題』§5の疎外の節   → 帳簿の落とし穴の欄（第3部11枚69欄）
+  E 原典 en の限定句                     → 帳簿の宣言（第3部11枚183行310句）
 
 Aが要るのは、現行仕様が判断の圧縮であり、圧縮から推論すると器を誤診するため
 （実例：条件の軸を「読むものを条件に流用した崩れ」と誤診し、判断(bp)(cj)と
@@ -31,6 +32,10 @@ Cが要るのは、条件の区分が何の手加減を実現しているかの�
 Dが要るのは、落とし穴の欄がどの§5の要因に拠るかの宣言が、現行仕様・第3部§2の
 三行方式の②として毎便書かれ、申し送りと一緒に捨てられていたため（判断(dg)）。
 §5を直したときにどの欄が影響を受けるかが、これで機械で出る。
+
+Eが要るのは、規律5と観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+位置のいずれかに残っているかを確かめる）も毎便やって捨てていたため（判断(dh)）。
+句が残っているかの判定は人が読むが、**列挙が原文に忠実であること**は機械で見られる。
 
 限界：記号の抽出は括弧つき小文字列の単純一致なので、散文の列挙記号 (a)(b) を
 拾いうる。誤って拾っても「到達する」側に倒れるので、偽の赤は出ない。
@@ -211,6 +216,43 @@ else:
                  % (len(valid), sum(dist.values()),
                     "／".join("%s:%d" % (k, dist[k]) for k in sorted(dist))))
 
+# ---------- E 原典 en の限定句 → 帳簿の宣言 ----------
+e_rows = e_q = e_empty = 0
+for f in sorted(glob.glob(os.path.join(ROOT, 'prototypes/catalog_p3_*.json'))):
+    base = os.path.basename(f)
+    d = json.load(io.open(f, encoding='utf-8'))
+    sheet = d[list(d)[0]]
+    lim = sheet.get('原文の限定句')
+    if lim is None:
+        errors.append("E1: %s に「原文の限定句」が無い" % base)
+        continue
+    en_of = {str(r['no']): r['en'] for r in sheet['rows']}
+    if set(lim) != set(en_of):
+        errors.append("E1: %s の「原文の限定句」が行と一致しない（宣言なし %s／行に無い %s）"
+                      % (base, sorted(set(en_of) - set(lim)), sorted(set(lim) - set(en_of))))
+    for no, qs in lim.items():
+        if no not in en_of:
+            continue
+        e_rows += 1
+        if not qs:
+            e_empty += 1
+        for q in qs:
+            e_q += 1
+            # 単なる部分文字列では末尾を削る改変（illustrations → illustration）が通ってしまう ──
+            # 狭くなる方向そのものなので、語境界で留める（反例で空振りして分かった）。
+            hit = False
+            for m in re.finditer(re.escape(q), en_of[no]):
+                before = en_of[no][m.start() - 1] if m.start() else ''
+                after = en_of[no][m.end()] if m.end() < len(en_of[no]) else ''
+                if not (before.isalpha() or after.isalpha()):
+                    hit = True
+                    break
+            if not hit:
+                errors.append("E2: %s の No.%s の限定句「%s」が原文に語として現れない（部分文字列でない、または語の途中で切れている）"
+                              % (base, no, q))
+notes.append("E: 第3部11枚 %d行／限定句 %d句（限定句のない行 %d）── すべて en に語として現れる"
+             % (e_rows, e_q, e_empty))
+
 # ---------- 報告 ----------
 for n in notes:
     print("  " + n)
@@ -221,4 +263,4 @@ if errors:
     for e in errors:
         print("  - " + e)
     sys.exit(1)
-print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ・条件の手加減・落とし穴の源")
+print("\n出自検査OK: 記号の鎖（到達性・改定の鎖・連番）／設計文書→帳簿の深さ・条件の手加減・落とし穴の源／原文の限定句")

@@ -85,6 +85,30 @@ CONDITION_SUPPORT = {
 L1_SOURCE = {
     "176": "§5.2",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "187": ["very short, simple,", "familiar everyday contexts", "especially if there are illustrations"],
+    "186": ["short, simple"],
+    "182": ["simple", "encountered in everyday life"],
+    "183": ["simple, brief", "provided they are illustrated and not presented in continuous text"],
+    "184": ["expressed as a simple command"],
+    "185": ["a simple recipe", "especially if there are pictures to illustrate the most important steps"],
+    "180": ["when expressed in simple language"],
+    "181": ["short", "illustrated step by step"],
+    "177": ["clearly expressed, straightforward"],
+    "178": ["simple"],
+    "179": ["most short safety instructions"],
+    "176": ["provided they are familiar with the type of process or product concerned"],
+    "175": ["in their field", "provided they can reread difficult sections"],
+    "174": ["in detail", "whether or not the instructions relate to their own area of speciality", "provided they can reread difficult sections"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像、修正なし）
 DEPTH = {
     "形":   [],
@@ -264,6 +288,7 @@ def build(root="."):
         "essence": "指示を読む段は、読んだ内容を行動に移すまで覚えておかなければならない文章を読む段で、但し書きの担い手が下では指示の作り（絵と図解、一行の命令、簡単な言葉、明確で率直な書き方）に、上では読み手の側（馴染み、自分の専門、読み返し）にあり、B1+で担い手が紙面から読み手へ移る。読むものは命令の線・手順の線・説明書の線に分かれ、線は深さ（一つの項目・筋・全体）と一致し、要点・含意・立場の段がない。分かったことは返事でも振る舞いでもなく、そのとおりにできることで示される。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,

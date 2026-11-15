@@ -106,6 +106,36 @@ L1_SOURCE = {
     "128": "§5.2",
     "129": "§5.3",
 }
+
+# 原文（en）の限定句 ── 条件句・様態句・範囲句（判断(dh)、矢印 原典→帳簿／書物）。
+# 規律5と CLAUDE.md 観点⑥の指差し（段ごとに原文の限定句を列挙し、見出し・場面・段の
+# 位置のいずれかに残っているかを確かめる）を、毎便捨てずにデータで残す。キーは No.
+# （文字列）、値は en の部分文字列の列。限定句のない行は空リストを持つ（欄の有無では
+# なく全行が対象）。tools/trace_check.py の検査Eが部分文字列であることを照合する ──
+# en が変われば落ちる。標語・見出しが原文より狭くなる事故（No.547「飲み物を、一言で」
+# ＝*food and drink* の脱落）に対応する。句が残っているかの判定は人が読む。
+ORIGINAL_LIMITS = {
+    "145": ["simple everyday signs"],
+    "146": ["posters, flyers and notices"],
+    "141": ["familiar names", "very basic phrases", "simple notices", "the most common everyday situations"],
+    "142": [],
+    "143": ["basic hotel information"],
+    "144": ["simple, important information"],
+    "138": ["specific, predictable information", "simple everyday material"],
+    "139": ["specific information"],
+    "140": ["everyday signs and notices"],
+    "136": ["practical, concrete, predictable texts", "provided they are produced in simple language"],
+    "137": ["short and simple descriptions"],
+    "132": ["everyday material", "short official documents"],
+    "133": [],
+    "134": [],
+    "135": ["simple, clearly drafted adverts", "provided there are not too many abbreviations"],
+    "130": ["longer texts"],
+    "131": ["straightforward, factual texts"],
+    "128": ["quickly", "long and complex texts"],
+    "129": ["quickly"],
+    "127": ["quickly", "in parallel", "in both their own field and in related fields"],
+}
 # 深さ＝七層（『受容の課題』付録A の写像）
 DEPTH = {
     "形":   [145, 141],
@@ -314,6 +344,7 @@ def build(root="."):
         "essence": "探して読む段は、但し書きの担い手が紙面の作りと読み手の用事にある ── 一語の標識は場が、ポスターや一覧は項目の順が、文章では見出しと節が探す場所を与え、上の段ではそれも外れて長さと複雑さと情報源の数が増える。読み手は最後まで全部を読まず、分かる深さは上の段でも一つの項目のままで、上がっていくのは読まずに済ませる範囲と速さである。全体の段を持たず、C級の段がなく、五本の梯子はB2+で探し出す梯子と見きわめる梯子が合わさる一段に尽きる。",
         "条件の手加減": CONDITION_SUPPORT,
         "落とし穴の源": L1_SOURCE,
+        "原文の限定句": ORIGINAL_LIMITS,
         "axes": {"梯子": LADDER, "条件": CONDITION, "深さ": DEPTH},
         "rows": rows,
         "discussion": DISCUSSION,
