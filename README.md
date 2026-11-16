@@ -122,7 +122,7 @@ git clone https://github.com/openlanguageprofiles/olp-en-cefrj.git
 
 ```
 リモートリポジトリ (GitHub)
-   │  pull（clone / raw URL 参照）
+   │  clone / pull（スレッドがリポジトリを読む。単発のファイルだけ要るときは raw URL でもよい）
    ▼
 claude.ai「CEFRカタログn」スレッド
    │  分析・設計判断（Hidekiと合意）・生成・検証
@@ -142,7 +142,7 @@ Claude Code on Hideki local PC（ローカルリポジトリ）
 ## 新スレッドでの再開手順
 
 1. **この順で読む**：`deliverables/CEFR全貌カタログ_企画書.md`（何を作るか）→ `deliverables/CEFRカタログ_現行仕様_共通.md`（いま効いている規則と読む順）→ その部の現行仕様 → `deliverables/CEFRカタログ_執筆要綱.md` → その仕事の指示書。**企画書を読まずに始めないこと**（CEFRカタログ2で、企画書未読のまま確定済み設計判断への揺り戻しが起きかけた実績あり）。引き継ぎ書は記録で、通読しない（判断(cz)、カタログ49）。
-2. 必要なデータはこのリポジトリのraw URLから取得（例：`https://raw.githubusercontent.com/takahashihideki-git/CEFRCatalog/main/data/descriptors_en_1224.json`）。あわせて実例語彙チェッカー（`tools/exponent_level_check.py`）が参照するCEFR-Jデータ `https://github.com/openlanguageprofiles/olp-en-cefrj.git` も同階層に clone してください（詳細は「語彙レベル照合データ」節）。
+2. **リポジトリを clone（既にあれば pull）して読む** ── 指示書・素材票・現行仕様・帳簿・章はすべてリポジトリにある（検品係が push したものが正。スレッドは push しない）。単発のファイルだけ要るときは raw URL でもよい（例：`https://raw.githubusercontent.com/takahashihideki-git/CEFRCatalog/main/data/descriptors_en_1224.json`）。あわせて実例語彙チェッカー（`tools/exponent_level_check.py`）が参照するCEFR-Jデータ `https://github.com/openlanguageprofiles/olp-en-cefrj.git` も同階層に clone してください（詳細は「語彙レベル照合データ」節）。
 3. 指示書（なければ引き継ぎ書§7の生きた留保）の続きから再開。第3部（受容）の作業に入るときは `deliverables/CEFRカタログ_受容の課題.md` も必読（理解の七層・落とし穴の判定・欄の分担・章名の正準）。
 
 ## 復元検証値
