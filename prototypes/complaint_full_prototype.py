@@ -114,6 +114,24 @@ ORIGINAL_LIMITS = {
 }
 
 
+# 行ごとの質の軸（判断(dl)、CEFRカタログ52のあとの検品係の便＝判断(aj)の「案イ」の昇格）
+# No.→ 13軸（data/howwell_axes_182to13.json の「軸」）の名の列。**順は効きの順で、先頭がその段の主役**。
+# 値は `howwell` 欄の軸部の文面から移したもので、新しい判定ではない（程度の注記〔（最小）（最大）〕と
+# 相の限定〔（書面レジスター）（慣習の体系）〕は第一版では取らない ── 級と梯子の位置が持つ）。
+# restore.py が 13軸語彙・全行の網羅・非空・軸台帳の主軸との整合（宣言済みシートでは散文証拠に代えてこれを見る）を検査する。
+QUALITY_AXES = {
+    "544": ["社会言語的適切さ"],
+    "533": ["社会言語的適切さ", "叙述の正確さ"],
+    "532": ["柔軟さ"],
+    "526": ["叙述の正確さ", "柔軟さ", "社会言語的適切さ"],
+    "527": ["叙述の正確さ", "話題の展開"],
+    "638": ["社会言語的適切さ"],
+    "629": ["話題の展開", "社会言語的適切さ"],
+    "628": ["社会言語的適切さ"],
+    "625": ["叙述の正確さ", "柔軟さ"],
+}
+
+
 def build(root="."):
     desc = json.load(open(os.path.join(root, "data/descriptors_en_1224.json"), encoding="utf-8"))
     tr = json.load(open(os.path.join(root, "data/working_translations_1224.json"), encoding="utf-8"))
@@ -124,7 +142,8 @@ def build(root="."):
                      "jp": tr[str(no)], "exponents": ex, "scene": scene,
                      "howwell": hw, "l1": l1, "delta": delta})
     return {"苦情・クレーム": {"title": TITLE, "scope": SCOPE, "type": TYPE_,
-                            "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "rows": rows, "discussion": DISCUSSION}}
+                            "essence": ESSENCE, "原文の限定句": ORIGINAL_LIMITS, "質の軸": QUALITY_AXES,
+                            "rows": rows, "discussion": DISCUSSION}}
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
