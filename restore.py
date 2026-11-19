@@ -605,7 +605,7 @@ if __name__ == "__main__":
         _sheet_blob[_act2] = _disc.get(_act2, "") + " " + " ".join(_sheet_blob.get(_act2, []))
     # 行ごとの質の軸の宣言（判断(dl)、判断(aj)の「案イ」の昇格）── 移行中の登録表。
     # 登録漏れは落ちずに検査対象外になるだけなので、枚数と行数を出力の最終行に出す（判断(db)と同型）
-    _QAX_SHEETS = {"苦情・クレーム"}
+    _QAX_SHEETS = {"苦情・クレーム", "明確化・繰り返しの要求"}
     assert set(_qax) == _QAX_SHEETS, f"質の軸: 宣言のあるシートと登録表の不一致 {set(_qax) ^ _QAX_SHEETS}"
     for _act2, _rec2 in _qax.items():
         assert set(_rec2) == _rows_of[_act2], f"質の軸: 宣言がシートの全行でない {_act2}"
