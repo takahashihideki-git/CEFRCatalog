@@ -26,7 +26,8 @@ python3 tools/roadmap_measure.py --prev <前回の根拠コミット> --detail
 
 - URL：https://claude.ai/code/artifact/eeeacbff-dfad-484a-9b27-24e79e2e791b（短縮形 https://claude.ai/artifact/WW9SzpzoFP1cf6RY1WxEmg ── 同一）
 - ページは md の素通しではなく専用の HTML（明朝の題字・進捗バー・行程のはしご）。ソースはリポジトリにない
-- 手順：`Artifact` ツールの `action:"read"` に URL を渡す（生HTMLが返る。読んでいない Artifact への publish は拒否されるので read は必須）→ `<title>` から最後の `</div>` までをスクラッチへ書き出す（`<!doctype>`〜`<body>` は publish 時に付け直されるので書かない）→ 数字と記述を差し替え → `url` を指定して publish（favicon は 🗺️ を渡す＝据え置き。省略すると `favicon required to publish` で拒否される。2026-11-14に確認）→ `action:"list"` で1本だけかを確かめる
+- 手順：`Artifact` ツールの `action:"read"` に URL を渡す（生HTMLが返る。読んでいない Artifact への publish は拒否されるので read は必須）→ `<title>` から最後の `</div>` までをスクラッチへ書き出す（`<!doctype>`〜`<body>` は publish 時に付け直されるので書かない）→ 数字と記述を差し替え → `url` を指定して publish（**アイコンは渡さない**＝据え置き。2026-11-19に省略で通ることを確認。2026-11-14〜18は `favicon` 🗺️ が必須だった）→ `action:"list"` で1本だけかを確かめる
+- 生HTMLは `action:"read"` に `path:"index.html"` を足すとスクラッチの `artifact-files/<id>/index.html` に落ちる（会話に書き写さずに済む）。ただし**それだけでは「読んだ」に数えられない**ので、`path` なしの read も一度呼ぶ
 - 進捗バーの `width`（2か所）と tick の `left` は、いま／全巻 の百分率
 - タイトルは「CEFRカタログ 書物版ロードマップ」で固定
 
