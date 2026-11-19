@@ -616,7 +616,7 @@ if __name__ == "__main__":
                 assert _a2 in AX["軸"], f"質の軸: 13軸語彙外 {_act2} No.{_n2}:{_a2}"
     # 掃く前の枚では、宣言が `howwell` 欄の軸部からの移送であることを照合する（出現順も見る）。
     # 掃いた枚はこの表から外す ── 軸名が散文から消えるので照合できなくなる。表から外すのは便の中の明示の行為で、枚数は出力に出る
-    _QAX_PROSE = {"苦情・クレーム"}
+    _QAX_PROSE = set()  # 苦情・クレームはカタログ53第1便で掃いた
     assert _QAX_PROSE <= set(_qax), f"質の軸: 移送照合の登録表が宣言のない枚を含む {_QAX_PROSE - set(_qax)}"
     for _act2 in sorted(_QAX_PROSE):
         for _n2, _axs in sorted(_qax[_act2].items()):
